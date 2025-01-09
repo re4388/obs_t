@@ -1,0 +1,13 @@
+[[ubuntu]]
+[[atuin]]
+[[vps-choose]]
+[[科技lion linux 腳本]]
+[[ssh 設定 in gcp]]
+[[acer linux]]
+[[sbrina asus 設定]]
+[[cli_tool_idx]]
+[[eBPF]]
+[[ubuntu 開 port 給外部服務用 via firewall]]
+[[port_checker]]
+[[auto mount external disk into linux]]
+

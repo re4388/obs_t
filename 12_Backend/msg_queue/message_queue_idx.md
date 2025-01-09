@@ -1,0 +1,16 @@
+- [[msg queue 的 essential design]]
+- [[queue, 消息隊列]]
+- [[when to use async operation]]
+- [[when use Request Response，when use Pub Sub]]
+- [[發佈订阅 (Publish-Subscribe) 模式有什么缺点]]
+- kafka
+	- [[kafka_intro]]
+	- [[Kafka vs other message queue]]
+	- [[kafka 是如何處理消息顺序问题？]]
+- bull queue
+	- [test on bull queue (notion)](https://www.notion.so/nture4388/test-on-bull-queue-not-graceful-shutdown-angelia-41268ab0973247788a92fe2479af4d8f?pvs=4)
+	- [[use bull queue JOB or use Node EventEmitter?]]
+	- [graceful shut down on queue (notion)](https://www.notion.so/nture4388/queue-ensure-graceful-shut-down-work-angelia-1c47bea89b0a444bb8dfabcebb46b963?pvs=4)
+	- [[bull queue 是如何處理消息顺序问题]]
+- related code
+	- see this branch in hermes: edu/kafka-client-publisher

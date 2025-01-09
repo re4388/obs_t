@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "c884c4db9df958f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a66b7f2fa686f1dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "579ad13a4f24129f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30_程式語言/第 07 章_面向对象编程 (进阶).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第 07 章_面向对象编程 (进阶)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "88813a908cd21c31",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "902c0c33bc4d6e1d",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "11e56d3b06da2894",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "d6d297c0b24e9868",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          },
+          "icon": "lucide-file",
+          "title": "Plugin no longer active"
+        }
+      },
+      {
+        "id": "44d99206bc0ce4f1",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "ddf83754f4ca0939",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c175a088d47056cf",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "03_career/interview_2024/wemo highlight.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "4dc04bac3b5145c4",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "00_inbox/log - personal.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "00a92fc99290571f",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "3_resource/wemo/wemo_pass_note.md"
+          },
+          "icon": "lucide-file",
+          "title": "Plugin no longer active"
+        }
+      },
+      {
+        "id": "7fc1b79379682698",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "calendar-with-checkmark",
+          "title": "Calendar"
+        }
+      },
+      {
+        "id": "99de77861ff4b59b",
+        "type": "leaf",
+        "state": {
+          "type": "QUICKSHARE_SIDE_VIEW",
+          "state": {},
+          "icon": "cloud",
+          "title": "QuickShare"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "edit-history:Open edit history": false,
+      "switcher:Open quick switcher": false,
+      "workspaces:Manage workspace layouts": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-importer:Open Importer": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "579ad13a4f24129f",
+  "lastOpenFiles": [
+    "30_程式語言/尚硅谷 Java 入门教程 2023.md",
+    "30_程式語言/第 06 章_面向对象编程（基础）.md",
+    "30_程式語言/Java_idx.md",
+    "30_程式語言/Effective Java 3rd.md",
+    "100_attachements/CleanShot 2025-01-01 at 10.11.04.png",
+    "100_attachements/CleanShot 2025-01-01 at 10.58.57.png",
+    "100_attachements/CleanShot 2025-01-01 at 11.17.18.png",
+    "00_inbox/log_personal.md",
+    "901_fleeting_note/cs61b 4.2- Extends, Casting, Higher Order Functions.md",
+    "30_程式語言/java Spring Boot.md.edtz",
+    "30_程式語言/1 min kick off - java.md",
+    "30_程式語言/java Spring Boot.md",
+    "30_程式語言/jre, jdk, jvm, jcp, jsr.md",
+    "30_程式語言/1 min kick off - java.md.edtz",
+    "30_程式語言/jre, jdk, jvm, jcp, jsr.md.edtz",
+    "100_attachements/CleanShot 2024-12-10 at 10.40.37.png",
+    "100_attachements/CleanShot 2024-12-11 at 09.00.58.png",
+    "100_attachements/CleanShot 2024-12-10 at 19.45.57.png",
+    "100_attachements/CleanShot 2024-12-11 at 13.44.15.png",
+    "100_attachements/CleanShot 2024-12-10 at 21.27.01.png",
+    "100_attachements/CleanShot 2024-12-10 at 21.31.58.png",
+    "100_attachements/CleanShot 2024-12-10 at 09.17.26.png",
+    "15_algo/CS61B Data Structures and Algorithms.md",
+    "901_fleeting_note/cs61b 4.1 inheritance.md",
+    "30_程式語言/java_idx.md",
+    "30_程式語言/java_idx.md.edtz",
+    "30_程式語言/lang_idx.md",
+    "30_程式語言/lang_idx.md.edtz",
+    "03_career/interview_2024/company/TSMC/hr 通知.md.edtz",
+    "03_career/interview_2024/company/TSMC/quit 預估時間.md",
+    "03_career/interview_2024/company/TSMC/quit 預估時間.md.edtz",
+    "03_career/interview_2024/company/TSMC/hr 通知.md",
+    "10_軟體設計/Core Design Principles for Software Developers by Venkat Subramaniam.md",
+    "10_軟體設計/Core Design Principles for Software Developers by Venkat Subramaniam.md.edtz",
+    "03_career/interview_2024/wemo highlight.md",
+    "50_book/禪與摩托車維修的藝術 Zen and the Art of Motorcycle Maintenance.md",
+    "30_程式語言/kotlin_inx.md.edtz",
+    "30_程式語言/kotlin_inx.md",
+    "03_career/interview_2024/company/TSMC/第二次面試 lance 陳慧猛.md.edtz",
+    "03_career/interview_2024/company/TSMC/福利.md",
+    "03_career/interview_2024/company/TSMC/第二次面試 lance 陳慧猛.md",
+    "03_career/career/advance youtube vid for coder.md",
+    "12_Backend/msg_queue/msg queue 的 essential design.md",
+    "00_inbox/pricing plan and pricing group 目前是對應到什麼.md",
+    "04_family/restaurant, 餐廳.md",
+    "10_軟體設計/How to Think Like an Architect - Mark Richards.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "try Obsidian/未命名 1.canvas",
+    "未命名.canvas"
+  ]
+}

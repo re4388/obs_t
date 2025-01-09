@@ -1,0 +1,7 @@
+- 作者後拿到華頓終身教職
+- 然後寫書給其他人 review, 幾乎全部都要重寫
+- 作者懷疑自己是不是無法做到
+- Many people dream of achieving goals. They measure their progress by the status they acquire and the accolades they collect. But the gains that count the most are the hardest to count. **The most meaningful growth is not building our careers— it’s building our character**.
+-  重點不是獲得大家欽羨的獎杯，和拿到傲人的成就，而是建 building our character
+- **Success is more than reaching our goals— it’s living our values.**
+- There’s no higher value than aspiring to be better tomorrow than we are today. There’s no greater accomplishment than unleashing our hidden potential.
