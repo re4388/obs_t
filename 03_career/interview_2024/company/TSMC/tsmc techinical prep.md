@@ -1,4 +1,8 @@
 
+https://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@github.com/re4388/<REPO>.git
+
+
+[Page not found · GitHub · GitHub](https://github.com/re4388/obsidian0)
 
 # 整體準備大方向
 - Java
