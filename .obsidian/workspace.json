@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_程式語言/Item 15 使类和成员的可访问性最小化 v0.md",
+                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Item 15 使类和成员的可访问性最小化 v0"
+              "title": "tsmc techinical prep"
             }
           },
           {
@@ -67,8 +67,7 @@
               "title": "Spring"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -232,14 +231,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0adb5ac661970d48",
+  "active": "a0811d6ce2e38c1d",
   "lastOpenFiles": [
+    "30_程式語言/Item 15 使类和成员的可访问性最小化 v0.md",
+    "43_軟體工具tools/win_idx.md",
     "00_inbox/log_personal.md",
     "15_algo/leetcode/dp/DP 1D.md",
-    "43_軟體工具tools/win_idx.md",
     "30_程式語言/Spring.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "30_程式語言/Item 15 使类和成员的可访问性最小化 v0.md",
     "30_程式語言/Effective Java 3rd.md",
     "100_attachements/CleanShot 2024-12-06 at 20.23.31.png",
     "100_attachements/CleanShot 2024-12-06 at 20.22.34.png",

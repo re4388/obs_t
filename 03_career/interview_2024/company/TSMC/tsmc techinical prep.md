@@ -29,14 +29,15 @@
 - [x] [[Spring#【尚硅谷】SpringBoot3 零基础教程]]
 - [x] [[Spring#SpringBoot3响应式编程]]
 - [x] [[Spring#Spring6：尚硅谷Spring零基础入门到进阶]]
+- [x] [Maven: 尚硅谷新版Maven教程](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
+	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
 
 
 
 ## 正在看
 - [ ] [[k8s_idx#尚硅谷 Kubernetes课程内容介绍 - YouTube]]
 
-- [ ] Maven: 尚硅谷新版Maven教程（高效入门maven，上手又快又稳）](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
-	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
+
 
 - [ ] [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
 
