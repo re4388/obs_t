@@ -26,10 +26,15 @@
             "id": "0adb5ac661970d48",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "43_軟體工具tools/win_idx.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "win_idx"
             }
           },
           {
@@ -63,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -227,8 +232,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "668985352c7707e9",
+  "active": "0adb5ac661970d48",
   "lastOpenFiles": [
+    "00_inbox/log_personal.md",
     "15_algo/leetcode/dp/DP 1D.md",
     "43_軟體工具tools/win_idx.md",
     "30_程式語言/Spring.md",
@@ -273,7 +279,6 @@
     "04_family/kid/edu_idx.md",
     "04_family/溝通_idx.md",
     "04_family/溝通 with wife, family.md",
-    "04_family/家裡附近餐廳的manu.md",
-    "04_family/安睿宏觀.md"
+    "04_family/家裡附近餐廳的manu.md"
   ]
 }
