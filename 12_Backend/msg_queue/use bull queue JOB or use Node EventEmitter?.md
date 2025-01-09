@@ -1,7 +1,0 @@
-- use job 可以去重, 也更好 handle 自動伸縮下 pod 起 pod 落
-- 用 eventEmitter, 因為 是 pod 內的機制，如果發的當下 pod down, 這個 event 就漏球了
-- 目前沒有使用機制 handle
-- redis bull queue, 可以中央管理這些 job
-- 觀念釐清
-    - event emit → 到 event on → 基本上不會超過 30s, 30s is our current pod waiting time to close, it’s enough time to node.js emit and node.js on
-    - 怕的是 subscribe 裡面跑的邏輯出問題, 且會超過 30 秒才會處理完的話，且又跟錢有關 → 就建議用 job
