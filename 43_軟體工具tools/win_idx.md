@@ -1,6 +1,14 @@
 
 
 
+# capslock issue
+
+在一些特定畫面，類似 advance setting, set path
+caplock 會異常，導致我需要去停止autohotkey然後重新使用capslock 變回小寫
+我寫用下面的方法，間接  disable capklock, let's see if it work
+
+
+
 
 # shall know hot key
 
