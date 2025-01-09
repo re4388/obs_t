@@ -1,17 +1,25 @@
 
 
 
-# capslock issue
+# autohotkey  bug
 
-在一些特定畫面，類似 advance setting, set path
+
+在一些特定情境，類似 advance setting, set path
 caplock 會異常，導致我需要去停止autohotkey然後重新使用capslock 變回小寫
 我用下面的方法，間接  disable capklock, let's see if it work
-![[Pasted image 20250109175243.png|1010]]
+
+possible solution:
+- use autohotkey v2
+	- need to learn it, several syntax changes
+- use other way to remap cpas lock to ctrl, not use autohotkey
 
 
+目前會壞掉的情境
+- 設定 advance system setting 下的環境變數
+- use f3 and I want to copy the pic to paste
 
-![[Pasted image 20250109184019.png]]
 
+app to show keyboard shortcut on screen
 [GitHub - mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ and 🖱️ mouse actions in real-time.](https://github.com/mulaRahul/keyviz)
 
 
