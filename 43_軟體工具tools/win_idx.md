@@ -10,6 +10,7 @@ caplock 會異常，導致我需要去停止autohotkey然後重新使用capslock
 
 
 
+![[Pasted image 20250109184019.png]]
 
 [GitHub - mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ and 🖱️ mouse actions in real-time.](https://github.com/mulaRahul/keyviz)
 
