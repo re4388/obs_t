@@ -23,6 +23,12 @@
         "Shift"
       ],
       "key": "E"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "E"
     }
   ],
   "editor:toggle-fold": [
@@ -156,6 +162,12 @@
         "Mod"
       ],
       "key": "["
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Q"
     }
   ],
   "heycalmdown-navigate-cursor-history:cursor-position-forward": [
@@ -164,6 +176,12 @@
         "Mod"
       ],
       "key": "]"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
     }
   ],
   "app:toggle-right-sidebar": [
@@ -245,5 +263,19 @@
       "key": "/"
     }
   ],
-  "editor:toggle-comments": []
+  "editor:toggle-comments": [],
+  "app:open-settings": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": ","
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": ","
+    }
+  ]
 }
