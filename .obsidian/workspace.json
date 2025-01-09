@@ -67,8 +67,7 @@
               "title": "Spring"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -228,18 +227,19 @@
       "templater-obsidian:Templater": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
       "edit-history:Open edit history": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0adb5ac661970d48",
+  "active": "a0811d6ce2e38c1d",
   "lastOpenFiles": [
+    "43_軟體工具tools/win_idx.md",
     "100_attachements/Pasted image 20250109184019.png",
     "100_attachements/Pasted image 20250109183947.png",
     "100_attachements/Pasted image 20250109175319.png",
     "100_attachements/Pasted image 20250109175243.png",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "30_程式語言/Item 15 使类和成员的可访问性最小化 v0.md",
-    "43_軟體工具tools/win_idx.md",
     "00_inbox/log_personal.md",
     "15_algo/leetcode/dp/DP 1D.md",
     "30_程式語言/Spring.md",
@@ -250,7 +250,6 @@
     "100_attachements/CleanShot 2024-12-06 at 19.45.28.png",
     "100_attachements/CleanShot 2024-12-06 at 19.42.23.png",
     "100_attachements/CleanShot 2024-12-06 at 19.40.56.png",
-    "100_attachements/CleanShot 2024-12-06 at 19.38.12.png",
     "100_attachements/99e2da02b4c2ef17a628ea90c94df14a_MD5.jpeg.md",
     "100_attachements",
     "04_family/travel/日本機票.md.edtz",
