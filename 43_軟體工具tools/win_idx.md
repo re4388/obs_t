@@ -5,12 +5,13 @@
 
 在一些特定畫面，類似 advance setting, set path
 caplock 會異常，導致我需要去停止autohotkey然後重新使用capslock 變回小寫
-我寫用下面的方法，間接  disable capklock, let's see if it work
+我用下面的方法，間接  disable capklock, let's see if it work
+![[Pasted image 20250109175243.png|1010]]
 
 
 
 
-# shall know hot key
+# shall know hotkey
 
 
 Wiindows + 方向鍵：調整視窗大小和最小化應用程式
