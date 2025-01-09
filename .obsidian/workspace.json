@@ -63,7 +63,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -228,8 +228,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "930211c24f543223",
+  "active": "668985352c7707e9",
   "lastOpenFiles": [
+    "30_程式語言/Spring.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "30_程式語言/Item 15 使类和成员的可访问性最小化 v0.md",
     "30_程式語言/Effective Java 3rd.md",
@@ -274,7 +275,6 @@
     "04_family/溝通 with wife, family.md",
     "04_family/家裡附近餐廳的manu.md",
     "04_family/安睿宏觀.md",
-    "04_family/在麥肯錫工作會發現一些有趣的事.md",
-    "04_family/restaurant, 餐廳.md"
+    "04_family/在麥肯錫工作會發現一些有趣的事.md"
   ]
 }

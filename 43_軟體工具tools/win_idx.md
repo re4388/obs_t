@@ -27,6 +27,9 @@ ctrl+shift+v: paste w/o formatting
 IrfanView
 
 
+shareX and [Snipaste](https://www.snipaste.com/)
+
+
 
 
 
