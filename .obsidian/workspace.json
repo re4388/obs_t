@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+                "file": "30_程式語言/Item 15 使类和成员的可访问性最小化 v0.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tsmc techinical prep"
+              "title": "Item 15 使类和成员的可访问性最小化 v0"
             }
           },
           {
@@ -47,8 +47,7 @@
               "title": "win_idx"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 302.5
   },
   "right": {
     "id": "a138ca7a8d2ed5fa",
@@ -213,9 +212,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "668985352c7707e9",
+  "active": "a0811d6ce2e38c1d",
   "lastOpenFiles": [
+    "30_程式語言/Effective Java 3rd.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "43_軟體工具tools/win_idx.md",
     "100_attachements/CleanShot 2024-12-06 at 20.23.31.png",
     "100_attachements/CleanShot 2024-12-06 at 20.22.34.png",
     "100_attachements/CleanShot 2024-12-06 at 19.47.58.png",
@@ -258,8 +259,6 @@
     "04_family/安睿宏觀.md",
     "04_family/在麥肯錫工作會發現一些有趣的事.md",
     "04_family/restaurant, 餐廳.md",
-    "04_family/personal finance.md",
-    "04_family/Movie to see.md",
-    "04_family/home_idx.md"
+    "04_family/personal finance.md"
   ]
 }

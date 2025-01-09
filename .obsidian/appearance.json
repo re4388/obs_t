@@ -1,10 +1,10 @@
 {
   "accentColor": "",
   "theme": "moonstone",
-  "baseFontSize": 15,
+  "baseFontSize": 16,
   "cssTheme": "Atom",
   "monospaceFontFamily": "JetBrainsMonoNL Nerd Font Mono",
   "enabledCssSnippets": [],
-  "textFontFamily": "Verdana",
+  "textFontFamily": "Helvetica",
   "interfaceFontFamily": ""
 }

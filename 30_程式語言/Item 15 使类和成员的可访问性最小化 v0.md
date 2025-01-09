@@ -100,6 +100,7 @@ interface不太一樣: 如果一個 class 實現了一個接口（interface）�
 
 
 
+
 通常有兩種解法。
 你可以改為private, 然後提供一個public 去拿一個 immutable list
 ![[IMG-Item 15 使类和成员的可访问性最小化 v0-20241225153641516.png]]
