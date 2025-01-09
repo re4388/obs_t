@@ -2,11 +2,19 @@
 
 
 
+# shall know hot key
+
+
+Wiindows + 方向鍵：調整視窗大小和最小化應用程式
+Ctrl + Shift + Esc：快速開啟工作管理員
 
 
 
 # app
 
+
+看圖軟體 
+IrfanView
 
 
 
