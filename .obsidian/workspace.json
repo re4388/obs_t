@@ -38,6 +38,21 @@
             }
           },
           {
+            "id": "5068c3f3bf69f714",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "43_軟體工具tools/autohotkey  bug.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "autohotkey  bug"
+            }
+          },
+          {
             "id": "668985352c7707e9",
             "type": "leaf",
             "state": {
@@ -68,7 +83,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -228,13 +243,16 @@
       "templater-obsidian:Templater": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
       "edit-history:Open edit history": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0adb5ac661970d48",
+  "active": "5068c3f3bf69f714",
   "lastOpenFiles": [
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/win_idx.md",
+    "43_軟體工具tools/autohotkey  bug.md",
+    "43_軟體工具tools/autohotkey  bug.md.edtz",
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "100_attachements/Pasted image 20250110081832.png",
     "100_attachements/Pasted image 20250109184019.png",
     "100_attachements/Pasted image 20250109183947.png",
@@ -269,14 +287,12 @@
     "04_family/kid/kid_vid_combine_ffmpg.md",
     "04_family/kid/kid_vid.md.edtz",
     "04_family/kid/kid_vid.md",
-    "04_family/kid/kid_idx.md.edtz",
     "04_family/kid/kid_idx.md",
     "04_family/kid/kid_edu_thoughts.md",
     "04_family/kid/kid _亞斯_伯格症候群.md",
     "04_family/kid/kid health.md",
     "04_family/kid/kid edu overview.md",
     "04_family/kid/edu_idx.md",
-    "04_family/溝通_idx.md",
-    "04_family/溝通 with wife, family.md"
+    "04_family/溝通_idx.md"
   ]
 }
