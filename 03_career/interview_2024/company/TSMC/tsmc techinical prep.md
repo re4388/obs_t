@@ -38,7 +38,6 @@
 - [ ] [[k8s_idx#尚硅谷 Kubernetes课程内容介绍 - YouTube]]
 
 
-
 - [ ] [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
 
 
@@ -46,15 +45,13 @@
 	- [【宋红康】MySQL数据库（入门到高级，菜鸟到大牛）【2022】/MySQL數據庫（入門到高級，菜鳥到大牛） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFi4x7rZ5wpUKts3u7cDx21&si=rihU2pN3RzS8QVrj)
 
 
+- [ ] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
+	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
+
+
 
 
 ## 優先看
-
-
-
-- kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
-	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
-
 
 
 - [ ] [尚硅谷全新JavaWeb教程，企业主流javaweb技术栈\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
@@ -76,9 +73,6 @@
 
 
 - MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
-
-
-
 
 
 
