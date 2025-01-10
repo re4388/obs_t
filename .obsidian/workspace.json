@@ -67,7 +67,8 @@
               "title": "Spring"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -231,10 +232,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a0811d6ce2e38c1d",
+  "active": "0adb5ac661970d48",
   "lastOpenFiles": [
-    "43_軟體工具tools/win_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "43_軟體工具tools/win_idx.md",
     "100_attachements/Pasted image 20250110081832.png",
     "100_attachements/Pasted image 20250109184019.png",
     "100_attachements/Pasted image 20250109183947.png",

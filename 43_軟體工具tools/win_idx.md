@@ -14,6 +14,7 @@ possible solution:
 - use autohotkey v2
 	- need to learn it, several syntax changes
 - use other way to remap cpas lock to ctrl, not use autohotkey
+- 在 DDDDD
 
 
 目前會壞掉的情境
