@@ -39,6 +39,9 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 IrfanView
 
 
+[Winaero Tweaker](https://winaero.com/winaero-tweaker/#download) -> to fix need to extra "show more option" when right click the stuff in explorer 
+
+
 shareX and [Snipaste](https://www.snipaste.com/)
 
 
