@@ -8,6 +8,12 @@
 
 
 
+## powershell
+
+win10上可以裝多個 powershell, 放profile的位置也不同，使用  `echo $profile` 來確認 profile檔案位置。
+linux 的 `source`, 在 win變成是 `. $profile`
+
+
 
 # shall know hotkey
 

@@ -83,7 +83,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -155,6 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "43_軟體工具tools/win_idx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +165,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for win_idx"
             }
           },
           {
@@ -173,11 +174,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "43_軟體工具tools/win_idx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from win_idx"
             }
           },
           {
@@ -222,13 +224,23 @@
               "icon": "cloud",
               "title": "QuickShare"
             }
+          },
+          {
+            "id": "42ede5c553f9565f",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 380.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -247,8 +259,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "930211c24f543223",
+  "active": "42ede5c553f9565f",
   "lastOpenFiles": [
+    "30_程式語言/Spring.md",
     "43_軟體工具tools/mac_idx.md",
     "43_軟體工具tools/autohotkey  bug.md",
     "43_軟體工具tools/win_idx.md",
@@ -262,7 +275,6 @@
     "30_程式語言/Item 15 使类和成员的可访问性最小化 v0.md",
     "00_inbox/log_personal.md",
     "15_algo/leetcode/dp/DP 1D.md",
-    "30_程式語言/Spring.md",
     "30_程式語言/Effective Java 3rd.md",
     "100_attachements/CleanShot 2024-12-06 at 20.23.31.png",
     "100_attachements/CleanShot 2024-12-06 at 20.22.34.png",
