@@ -21,7 +21,7 @@ app to show keyboard shortcut on screen
 [GitHub - mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ and 🖱️ mouse actions in real-time.](https://github.com/mulaRahul/keyviz)
 
 
-
+code C:\Users\re438\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 
 
