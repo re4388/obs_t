@@ -2,6 +2,10 @@
 
 
 
+
+
+## bug
+
 [[autohotkey  bug]]
 
 
@@ -40,7 +44,7 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 IrfanView
 
 
-## win11 優化
+## 優化
 - [Winaero Tweaker](https://winaero.com/winaero-tweaker/#download) -> to fix need to extra "show more option" when right click the stuff in explorer 
 - [window11性能提升 打造高性能\_windows11优化设置12项-CSDN博客](https://blog.csdn.net/Wantfly9951/article/details/124368363)
 
@@ -51,6 +55,9 @@ make win11 faster [Windows 11 如何調整至最佳化? 2個軟體簡單搞定 -
 
 shareX and [Snipaste](https://www.snipaste.com/)
 
+
+
+# find stuff in window
 
 window host file
 ![[CleanShot 2025-01-08 at 15.57.29.png]]

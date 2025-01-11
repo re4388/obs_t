@@ -3,7 +3,7 @@
 
 # true, null, false 的 真值表
 只要有一個是 null 結果就是 null
-![[CleanShot 2024-11-16 at 14.39.06.png|527]]
+![[IMG-null in pg-20250111095257566.png|527]]
 
 
 

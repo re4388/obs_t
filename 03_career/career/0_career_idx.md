@@ -53,6 +53,11 @@ how to do it? reference from?
 
 
 
+- [[外包接案思考]]
+
+
+
+
 # 文章/影片心得
 
 [环境 ｜ 决定你一大半的成败 - YouTube](https://youtu.be/pZtubarL0KA?si=qhSF9y9RfB28Y2XT) 

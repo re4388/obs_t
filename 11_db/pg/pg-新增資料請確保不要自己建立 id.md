@@ -55,7 +55,7 @@ ALTER SEQUENCE "pricing-qat".pricing_rule_id_seq RESTART (SELECT MAX(id) + 1 FRO
 ```
 
 
-![[CleanShot 2024-11-19 at 13.40.02.png]]
+![[IMG-pg-新增資料請確保不要自己建立 id-20250111095309872.png]]
 
 
 
@@ -74,7 +74,7 @@ ALTER SEQUENCE "pricing-qat".pricing_rule_id_seq RESTART (SELECT MAX(id) + 1 FRO
 
 WeMo Pass Apollo 新增方案時無法新增，遇到 500 回應，追蹤 Kibana Log 出現以下紀錄
 
-![[IMG-pg-新增資料請確保不要自己建立 id-20241110151634765.png]]
+![[IMG-pg-新增資料請確保不要自己建立 id-20250111095310396.png]]
   
 
 ## 發生原因
@@ -120,7 +120,7 @@ Example
 
 
 
-![[IMG-pg-新增資料請確保不要自己建立 id-20241110151634919.png]]
+![[IMG-pg-新增資料請確保不要自己建立 id-20250111095311258.png]]
 
 # 參考資料
 - [https://www.postgresql.org/docs/current/functions-info.html#FUNCTIONS-INFO-CATALOG-TABLE](https://www.postgresql.org/docs/current/functions-info.html#FUNCTIONS-INFO-CATALOG-TABLE)
