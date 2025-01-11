@@ -27,3 +27,8 @@ code C:\Users\re438\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_pr
 
 ref:
 [AutoHotkey script to change Caps Lock to Control on hold and Escape on press and release · GitHub](https://gist.github.com/volks73/1e889e01ad0a736159a5d56268a300a8)
+
+
+
+
+111]]
