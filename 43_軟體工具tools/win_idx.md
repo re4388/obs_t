@@ -6,7 +6,7 @@
 
 ## bug
 
-[[autohotkey  bug]]
+[[autohotkey  - capslock]]
 
 
 
