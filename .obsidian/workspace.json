@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+                "file": "30_程式語言/Spring.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tsmc techinical prep"
+              "title": "Spring"
             }
           },
           {
@@ -82,8 +82,7 @@
               "title": "Spring"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -255,17 +254,18 @@
       "templater-obsidian:Templater": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
       "edit-history:Open edit history": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "42ede5c553f9565f",
+  "active": "a0811d6ce2e38c1d",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "43_軟體工具tools/win_idx.md",
     "30_程式語言/Spring.md",
     "43_軟體工具tools/mac_idx.md",
     "43_軟體工具tools/autohotkey  bug.md",
-    "43_軟體工具tools/win_idx.md",
     "43_軟體工具tools/autohotkey  bug.md.edtz",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "100_attachements/Pasted image 20250110081832.png",
     "100_attachements/Pasted image 20250109184019.png",
     "100_attachements/Pasted image 20250109183947.png",

@@ -82,7 +82,7 @@ Spring Framework 中文文档PDF
 ## 尚硅谷 雷神 SpringSecurity
 - [(836) 01 尚硅谷 SpringSecurity 课程介绍 - YouTube](https://www.youtube.com/watch?v=_2v7C9wBH1M&list=PLmOn9nNkQxJEnBjOMEXPLRjoTRNvhHIl2&index=1)
 	- code
-	- [shuhongfan/SpringSecurity_Demo03: 尚硅谷 SpringSecurity 框架教程（spring security 源码剖析从入门到精通）](https://github.com/shuhongfan/SpringSecurity_Demo03)
+		- [shuhongfan/SpringSecurity_Demo03: 尚硅谷 SpringSecurity 框架教程（spring security 源码剖析从入门到精通）](https://github.com/shuhongfan/SpringSecurity_Demo03)
 	- check source code /Users/re4388/project/personal/lang/java/SpringSecurity_Demo03
 	- check pdf -> see book
 	- [ ] [Spring Security 介紹 - HackMD](https://hackmd.io/@_PtoT9O9TUSKocZJdzQ7ew/H1XWLrwin)
