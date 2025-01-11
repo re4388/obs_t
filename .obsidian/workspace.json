@@ -81,8 +81,24 @@
               "icon": "lucide-file",
               "title": "Spring"
             }
+          },
+          {
+            "id": "e5135f9f868ab443",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30_程式語言/尚硅谷-juc-高并发.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "尚硅谷-juc-高并发"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -258,11 +274,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a0811d6ce2e38c1d",
+  "active": "e5135f9f868ab443",
   "lastOpenFiles": [
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "43_軟體工具tools/win_idx.md",
+    "30_程式語言/尚硅谷 Java 入门教程 2023.md",
     "30_程式語言/Spring.md",
+    "43_軟體工具tools/win_idx.md",
     "43_軟體工具tools/mac_idx.md",
     "43_軟體工具tools/autohotkey  bug.md",
     "43_軟體工具tools/autohotkey  bug.md.edtz",
@@ -304,7 +321,6 @@
     "04_family/kid/kid _亞斯_伯格症候群.md",
     "04_family/kid/kid health.md",
     "04_family/kid/kid edu overview.md",
-    "04_family/kid/edu_idx.md",
-    "04_family/溝通_idx.md"
+    "04_family/kid/edu_idx.md"
   ]
 }
