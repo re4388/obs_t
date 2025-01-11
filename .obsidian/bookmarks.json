@@ -20,11 +20,6 @@
     },
     {
       "type": "file",
-      "ctime": 1736559949825,
-      "path": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md"
-    },
-    {
-      "type": "file",
       "ctime": 1736559976859,
       "path": "30_程式語言/Spring.md"
     },
@@ -42,6 +37,16 @@
       "type": "file",
       "ctime": 1736560044364,
       "path": "00_inbox/log_personal.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1736559949825,
+      "path": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1736601363933,
+      "path": "03_career/interview_2024/company/TSMC/tsmc prep onboard.md"
     }
   ]
 }

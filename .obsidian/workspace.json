@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "43_軟體工具tools/win_idx.md",
+                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "win_idx"
+              "title": "tsmc techinical prep"
             }
           },
           {
@@ -183,10 +183,13 @@
   },
   "active": "668985352c7707e9",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "43_軟體工具tools/win_idx.md",
+    "12_Backend/k8s/k8s_idx.md",
+    "11_db/mySQL idx.md",
     "43_軟體工具tools/autohotkey  - capslock.md",
     "100_attachements/IMG-autohotkey  bug-20250111172759489.png",
-    "43_軟體工具tools/win_idx.md",
     "30_程式語言/Spring.md",
     "11_db/pg/pg-新增資料請確保不要自己建立 id.md",
     "11_db/ph use int, uuid and bigserial.md",
@@ -217,11 +220,9 @@
     "100_attachements/Pasted image 20250109175243.png",
     "30_程式語言/Item 15 使类和成员的可访问性最小化 v0.md",
     "15_algo/leetcode/dp/DP 1D.md",
-    "30_程式語言/Effective Java 3rd.md",
     "100_attachements/CleanShot 2024-12-06 at 20.23.31.png",
     "100_attachements/CleanShot 2024-12-06 at 20.22.34.png",
     "100_attachements/CleanShot 2024-12-06 at 19.47.58.png",
-    "100_attachements/99e2da02b4c2ef17a628ea90c94df14a_MD5.jpeg.md",
     "100_attachements",
     "04_family/travel/日本機票.md.edtz",
     "04_family/travel/日本旅遊 2024 japan travel.md.edtz",

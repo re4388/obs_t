@@ -34,21 +34,22 @@
 ## 正在看
 
 
-
-
 - [ ] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
 
 
 
-
-
-- [ ] [[k8s_idx#尚硅谷 Kubernetes课程内容介绍 - YouTube]]
-
-
 - [ ] [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
 
 
+- [ ] 挑東西看
+- full stack - spring boot + vue [尚硅谷雷神最新版SSM教程，基于AI的全新ssm框架实战\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14WtLeDEit/?spm_id_from= 333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [【尚硅谷】SSM框架全套教程， 楊博超 MyBatis+Spring+SpringMVC+SSM整合一套通关\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ya411S7aT/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [尚硅谷新版SSM框架全套视频教程， 趙偉風 Spring6+SpringBoot3最新SSM企业级开发\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1AP411s7D7/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+- [ ] [[k8s_idx#尚硅谷 Kubernetes课程内容介绍 - YouTube]]
 - [ ] [[mySQL idx#宋红康】MySQL数据库（入门到高级，菜鸟到大牛]]
 	- [【宋红康】MySQL数据库（入门到高级，菜鸟到大牛）【2022】/MySQL數據庫（入門到高級，菜鳥到大牛） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFi4x7rZ5wpUKts3u7cDx21&si=rihU2pN3RzS8QVrj)
 
@@ -64,23 +65,17 @@
 - [ ] 有空看  [(完结) Java 快速掌握 Kotlin 教程 (Java 工程师必备知识)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV15N411A7P8/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
-- [ ] 挑東西看
-- full stack - spring boot + vue [尚硅谷雷神最新版SSM教程，基于AI的全新ssm框架实战\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14WtLeDEit/?spm_id_from= 333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [【尚硅谷】SSM框架全套教程，MyBatis+Spring+SpringMVC+SSM整合一套通关\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ya411S7aT/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [尚硅谷新版SSM框架全套视频教程，Spring6+SpringBoot3最新SSM企业级开发\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1AP411s7D7/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [  李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
+	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
 
 
+
+## 面試題
 - 大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
-
-
-
 - MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
 
 
 
-
-- [【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
-	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
 
 
 
