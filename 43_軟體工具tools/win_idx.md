@@ -45,6 +45,7 @@ IrfanView
 shareX and [Snipaste](https://www.snipaste.com/)
 
 
+hotstring 一樣使用 aText
 
 
 ## 優化
