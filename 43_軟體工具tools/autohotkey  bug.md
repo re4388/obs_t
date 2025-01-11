@@ -14,7 +14,7 @@ possible solution:
 目前會壞掉的情境
 - 設定 advance system setting 下的環境變數
 - use f3 and I want to copy the pic to paste
-- terminal 複製貼上也會壞掉
+- window terminal preview 的 複製貼上也會壞掉
 
 
 app to show keyboard shortcut on screen
