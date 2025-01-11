@@ -71,8 +71,8 @@
 
 
 ## 面試題
-- 大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
-- MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
+- [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
+- [MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
 
 
 
@@ -83,13 +83,13 @@
 
 
 ### 專題項目影片
-- 尚融宝 Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
-- 硅谷课堂：【尚硅谷&腾讯云】Java项目硅谷课堂丨微服务丨在线学习平台](https://www.bilibili.com/video/BV13T411372x/?spm_id_from=333.788.comment.all.click)
-- 谷粒商城项目（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
-- 尚品甄选：SpringBoot+SpringCloud萌新学会企业级java项目](https://www.bilibili.com/video/BV1NF411S7DS/?spm_id_from=333.788.comment.all.click)
-- 尚上优选：尚上优选》企业级Java项目](https://www.bilibili.com/video/BV19M4y1q7Lt/?spm_id_from=333.788.comment.all.click)
-- 尚庭公寓：从0开始Java项目实战](https://www.bilibili.com/video/BV1At421K7gP/?spm_id_from=333.788.comment.all.click)
-- 乐尚代驾 微信小程序+最新技术栈，java微服务项目](https://www.bilibili.com/video/BV1nW421R7qJ/?spm_id_from=333.788.comment.all.click)
+- [尚融宝 Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
+- [硅谷课堂：【尚硅谷&腾讯云】Java项目硅谷课堂丨微服务丨在线学习平台](https://www.bilibili.com/video/BV13T411372x/?spm_id_from=333.788.comment.all.click)
+- [谷粒商城项目（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
+- [尚品甄选：SpringBoot+SpringCloud萌新学会企业级java项目](https://www.bilibili.com/video/BV1NF411S7DS/?spm_id_from=333.788.comment.all.click)
+- [尚上优选：尚上优选》企业级Java项目](https://www.bilibili.com/video/BV19M4y1q7Lt/?spm_id_from=333.788.comment.all.click)
+- [尚庭公寓：从0开始Java项目实战](https://www.bilibili.com/video/BV1At421K7gP/?spm_id_from=333.788.comment.all.click)
+- [乐尚代驾 微信小程序+最新技术栈，java微服务项目](https://www.bilibili.com/video/BV1nW421R7qJ/?spm_id_from=333.788.comment.all.click)
 
 
 ### 前端
@@ -100,52 +100,52 @@
 
 ### db
 -  [MySQL数据库入门到大牛，mysql安装到优化，百科全书级，全网天花板\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1iq4y1u7vj/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- JDBC: 尚硅谷JDBC教程 | jdbc基础到高级一套通关！](https://www.bilibili.com/video/BV1Tx421S7HZ/?spm_id_from=333.788.comment.all.click)
+- [JDBC: 尚硅谷JDBC教程 | jdbc基础到高级一套通关！](https://www.bilibili.com/video/BV1Tx421S7HZ/?spm_id_from=333.788.comment.all.click)
 - [【尚硅谷】MyBatis零基础入门教程（细致全面，快速上手mybatis）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1VP4y1c7j7/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
 ### MyBatis
-- MyBatisPlus：【尚硅谷】MyBatisPlus教程（一套玩转mybatis-plus）](https://www.bilibili.com/video/BV12R4y157Be/?spm_id_from=333.788.comment.all.click)
-- MyBatis: 【尚硅谷】MyBatis零基础入门教程（细致全面，快速上手mybatis）](https://www.bilibili.com/video/BV1VP4y1c7j7/?spm_id_from=333.788.comment.all.click)
-- 【尚硅谷】SSM框架全套教程，MyBatis+Spring+SpringMVC+SSM整合一套通关 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJFbsU4Qz8CdRiVM4Qs3ci75&si=wkc2IhTTZD8BPmQA)
+- [MyBatisPlus：【尚硅谷】MyBatisPlus教程（一套玩转mybatis-plus）](https://www.bilibili.com/video/BV12R4y157Be/?spm_id_from=333.788.comment.all.click)
+- [MyBatis: 【尚硅谷】MyBatis零基础入门教程（细致全面，快速上手mybatis）](https://www.bilibili.com/video/BV1VP4y1c7j7/?spm_id_from=333.788.comment.all.click)
+- [【尚硅谷】SSM框架全套教程，MyBatis+Spring+SpringMVC+SSM整合一套通关 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJFbsU4Qz8CdRiVM4Qs3ci75&si=wkc2IhTTZD8BPmQA)
 
 
 
 ### spring
 - [x] SpringBoot3：尚硅谷SpringBoot零基础教程，面试&加薪必会springboot3](https://www.bilibili.com/video/BV1Es4y1q7Bf/?spm_id_from=333.788.comment.all.click)
-- SpringCloud：尚硅谷SpringCloud教程，springcloud从入门到大牛](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.788.comment.all.click)
-- JavaWeb: 尚硅谷全新JavaWeb教程，企业主流javaweb技术栈](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.788.comment.all.click)
-- SpringSecurity：尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.788.comment.all.click)
+- [SpringCloud：尚硅谷SpringCloud教程，springcloud从入门到大牛](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.788.comment.all.click)
+- [JavaWeb: 尚硅谷全新JavaWeb教程，企业主流javaweb技术栈](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.788.comment.all.click)
+- [SpringSecurity：尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.788.comment.all.click)
 
 
 
 
 
 ### java
-- Java基础: 尚硅谷Java零基础全套视频教程(宋红康主讲，java入门自学必备)](https://www.bilibili.com/video/BV1PY411e7J6/?spm_id_from=333.788.comment.all.click) 
+- [Java基础: 尚硅谷Java零基础全套视频教程(宋红康主讲，java入门自学必备)](https://www.bilibili.com/video/BV1PY411e7J6/?spm_id_from=333.788.comment.all.click) 
 	- [x] 課件看過
 - - [尚硅谷2024最新Java入门视频教程（上部）java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1YT4y1H7YM/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)  and [尚硅谷2024最新Java入门视频教程(下部) java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1JZ421a7PX/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- JVM：尚硅谷宋红康JVM全套教程（详解java虚拟机）](https://www.bilibili.com/video/BV1PJ411n7xZ/?spm_id_from=333.788.comment.all.click) 微服务生态--引领未来——》》
+- [JVM：尚硅谷宋红康JVM全套教程（详解java虚拟机）](https://www.bilibili.com/video/BV1PJ411n7xZ/?spm_id_from=333.788.comment.all.click) 微服务生态--引领未来——》》
 -  [【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
-- virtual thread [【尚硅谷】新版JDK21，深度详解java21虚拟线程新特性\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Xg4y197DB/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- 另一套 NIO 比較舊的 [尚硅谷大牛讲授Java NIO教程(一套快速掌握New IO/IO API)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14W411u7ro/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [virtual thread [【尚硅谷】新版JDK21，深度详解java21虚拟线程新特性\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Xg4y197DB/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [另一套 NIO 比較舊的 [尚硅谷大牛讲授Java NIO教程(一套快速掌握New IO/IO API)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14W411u7ro/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
 
 
 ### cloud 相關
-- K8S：尚硅谷Kubernetes教程(K8s入门到精通)](https://www.bilibili.com/video/BV1w4411y7Go/?spm_id_from=333.788.comment.all.click)
+- [K8S：尚硅谷Kubernetes教程(K8s入门到精通)](https://www.bilibili.com/video/BV1w4411y7Go/?spm_id_from=333.788.comment.all.click)
 - [【尚硅谷】Kafka分布式订阅消息系统\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Nb411A7Ln/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0) 
-- rabbitMQ [尚硅谷RabbitMQ教程丨快速掌握MQ消息中间件rabbitmq\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1cb4y1o7zz/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [rabbitMQ [尚硅谷RabbitMQ教程丨快速掌握MQ消息中间件rabbitmq\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1cb4y1o7zz/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [【韩顺平】尚硅谷Netty视频教程 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJH02M10mFnBW0yPRnLmRSMo&si=Kp7JNDDTSZQnDePV)
 - [(843) 001 尚硅谷 Netty核心技术及源码剖析 课程说明和要求 - YouTube](https://www.youtube.com/watch?v=HY4lLEboz8U&list=PLmOn9nNkQxJH02M10mFnBW0yPRnLmRSMo)
-- Docker：尚硅谷Docker实战教程（docker教程天花板）](https://www.bilibili.com/video/BV1gr4y1U7CY/?spm_id_from=333.788.comment.all.click)
-- Elasticsearch：【尚硅谷】ElasticSearch教程入门到精通（基于ELK技术栈elasticsearch 7.x+8.x新特性）](https://www.bilibili.com/video/BV1hh411D7sb/?spm_id_from=333.788.comment.all.click)
-- Zookeeper：【尚硅谷】大数据技术之Zookeeper 3.5.7版本教程](https://www.bilibili.com/video/BV1to4y1C7gw/?spm_id_from=333.788.comment.all.click)
-- Nginx：尚硅谷Nginx教程（亿级流量nginx架构设计）](https://www.bilibili.com/video/BV1yS4y1N76R/?spm_id_from=333.788.comment.all.click)
-- RocketMQ：【尚硅谷】RocketMQ教程丨深度掌握MQ消息中间件](https://www.bilibili.com/video/BV1cf4y157sz/?spm_id_from=333.788.comment.all.click)
-- Redis7：尚硅谷Redis零基础到进阶，最强redis7教程，阳哥亲自带练（附redis面试题）](https://www.bilibili.com/video/BV13R4y1v7sP/?spm_id_from=333.788.comment.all.click)
-- Gradle：【尚硅谷】Gradle教程入门到进阶（从gradle安装到项目实战）](https://www.bilibili.com/video/BV1yT41137Y7/?spm_id_from=333.788.comment.all.click)
+- [Docker：尚硅谷Docker实战教程（docker教程天花板）](https://www.bilibili.com/video/BV1gr4y1U7CY/?spm_id_from=333.788.comment.all.click)
+- [103 集, 海哥, Elasticsearch：【尚硅谷】ElasticSearch教程入门到精通（基于ELK技术栈elasticsearch 7.x+8.x新特性）](https://www.bilibili.com/video/BV1hh411D7sb/?spm_id_from=333.788.comment.all.click)
+- [Zookeeper：【尚硅谷】大数据技术之Zookeeper 3.5.7版本教程](https://www.bilibili.com/video/BV1to4y1C7gw/?spm_id_from=333.788.comment.all.click)
+- [Nginx：尚硅谷Nginx教程（亿级流量nginx架构设计）](https://www.bilibili.com/video/BV1yS4y1N76R/?spm_id_from=333.788.comment.all.click)
+- [RocketMQ：【尚硅谷】RocketMQ教程丨深度掌握MQ消息中间件](https://www.bilibili.com/video/BV1cf4y157sz/?spm_id_from=333.788.comment.all.click)
+- [Redis7：尚硅谷Redis零基础到进阶，最强redis7教程，阳哥亲自带练（附redis面试题）](https://www.bilibili.com/video/BV13R4y1v7sP/?spm_id_from=333.788.comment.all.click)
+- [Gradle：【尚硅谷】Gradle教程入门到进阶（从gradle安装到项目实战）](https://www.bilibili.com/video/BV1yT41137Y7/?spm_id_from=333.788.comment.all.click)
 
 
 
