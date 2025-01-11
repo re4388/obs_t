@@ -1,26 +1,20 @@
 
 
+![[IMG-log_personal-20250111094720840.png]]
 
-- [ ] discuss 換電腦的可能性和時機?
-	- [ ] 好處：
+- [[tsmc techinical prep]]
+
+- [x] discuss 換電腦的可能性和時機?
+	- [x] 好處：
 		- [x] 不過亂改桌布
 
 
-wife
-700-0000310051445213
 
 - [ ] 旅行的網路
 
 
 - [ ] 把相關要彙整入 TSMC的資料都準備好，帶回台南
-- [ ] 預約體檢
 - [ ] 可以跟小云聊華德甫
-- [ ] 確認金流轉錢是否對  (like why 沒有轉到郵局的?)
-	- [x]  移除沒必要的週期調整
-	- [x] 確認兆豐 -> 無定期轉帳
-	- [x] 確認玉山 -> 無定期轉帳
-	- [x] 確認富邦 -> 無取消
-- [x] 確認兆豐有入帳
 - [ ] 填寫這個 -> 歡迎加入 TSMC (到職日: 2/10/2025
 	- [[tsmc prep onboard]]
 - [x] 確認 ipad 台南是否可以換電池 -> 無法的話要變成台北找一家換
@@ -32,7 +26,6 @@ wife
 - [ ]  (全家) 茶葉蛋折價券fm,4bp4
 
 
-- [[tsmc techinical prep]]
 
 
 - [ ] [Lesson 157 - Incorporating ADRs Into Existing Systems (March 27, 2023)](https://www.developertoarchitect.com/lessons/lesson157.html "Lesson 157 - Incorporating ADRs Into Existing Systems (March 27, 2023)")
