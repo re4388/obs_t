@@ -35,8 +35,6 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 
 
 
-
-
 # app
 
 
@@ -44,16 +42,16 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 IrfanView
 
 
+shareX and [Snipaste](https://www.snipaste.com/)
+
+
+
+
 ## 優化
 - [Winaero Tweaker](https://winaero.com/winaero-tweaker/#download) -> to fix need to extra "show more option" when right click the stuff in explorer 
 - [window11性能提升 打造高性能\_windows11优化设置12项-CSDN博客](https://blog.csdn.net/Wantfly9951/article/details/124368363)
 
-
 make win11 faster [Windows 11 如何調整至最佳化? 2個軟體簡單搞定 - Kent - 攻城濕不說的秘密](https://blog3c.net/blog/post/windows11-optimize-software#more-4515)
-
-
-
-shareX and [Snipaste](https://www.snipaste.com/)
 
 
 
