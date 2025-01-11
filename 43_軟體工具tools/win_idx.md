@@ -41,6 +41,9 @@ IrfanView
 
 [Winaero Tweaker](https://winaero.com/winaero-tweaker/#download) -> to fix need to extra "show more option" when right click the stuff in explorer 
 
+make win11 faster [Windows 11 如何調整至最佳化? 2個軟體簡單搞定 - Kent - 攻城濕不說的秘密](https://blog3c.net/blog/post/windows11-optimize-software#more-4515)
+
+
 
 shareX and [Snipaste](https://www.snipaste.com/)
 
