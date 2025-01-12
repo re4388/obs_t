@@ -38,6 +38,11 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 # app
 
 
+
+EarTrumpet
+
+
+
 看圖軟體 
 IrfanView
 
