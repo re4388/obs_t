@@ -37,8 +37,6 @@
 
 
 
-
-
 - [ ] [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
 	- 08 看完
 	- 9~61 mybatis -> 先 skip
@@ -67,7 +65,7 @@
 
 
 
-## 優先看
+## 想要ㄕ先看
 
 
 - [ ] [尚硅谷全新JavaWeb教程，企业主流javaweb技术栈\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
@@ -78,19 +76,19 @@
 - [ ] 有空看  [(完结) Java 快速掌握 Kotlin 教程 (Java 工程师必备知识)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV15N411A7P8/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
-- [  李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
-	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
-
-
-
 ## 面試題
 - [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 - [MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
 
 
 
+- [谷粒商城项目（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
 
 
+
+
+- [  李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
+	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
 
 ## 其他
 
@@ -98,7 +96,7 @@
 ### 專題項目影片
 - [尚融宝 Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
 - [硅谷课堂：【尚硅谷&腾讯云】Java项目硅谷课堂丨微服务丨在线学习平台](https://www.bilibili.com/video/BV13T411372x/?spm_id_from=333.788.comment.all.click)
-- [谷粒商城项目（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
+
 - [尚品甄选：SpringBoot+SpringCloud萌新学会企业级java项目](https://www.bilibili.com/video/BV1NF411S7DS/?spm_id_from=333.788.comment.all.click)
 - [尚上优选：尚上优选》企业级Java项目](https://www.bilibili.com/video/BV19M4y1q7Lt/?spm_id_from=333.788.comment.all.click)
 - [尚庭公寓：从0开始Java项目实战](https://www.bilibili.com/video/BV1At421K7gP/?spm_id_from=333.788.comment.all.click)
