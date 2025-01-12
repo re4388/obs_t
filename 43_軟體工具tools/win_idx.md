@@ -41,6 +41,7 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 
 EarTrumpet
 
+Microsoft pc manager
 
 
 看圖軟體 
