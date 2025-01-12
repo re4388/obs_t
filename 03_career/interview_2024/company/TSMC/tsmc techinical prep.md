@@ -81,11 +81,11 @@
 
 - [谷粒商城项目 408集（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
 
-- [尚融宝 Java微服务分布式金融项目](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
+- [尚融宝 Java微服务分布式金融项目 428集](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
 
-
-- [  李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
+- [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
 	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
+
 
 ## 其他
 
@@ -128,11 +128,11 @@
 
 
 ### java
+-  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
 - [Java基础: 尚硅谷Java零基础全套视频教程(宋红康主讲，java入门自学必备)](https://www.bilibili.com/video/BV1PY411e7J6/?spm_id_from=333.788.comment.all.click) 
 	- [x] 課件看過
 - - [尚硅谷2024最新Java入门视频教程（上部）java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1YT4y1H7YM/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)  and [尚硅谷2024最新Java入门视频教程(下部) java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1JZ421a7PX/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [JVM：尚硅谷宋红康JVM全套教程（详解java虚拟机）](https://www.bilibili.com/video/BV1PJ411n7xZ/?spm_id_from=333.788.comment.all.click) 微服务生态--引领未来——》》
--  [【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
 - [virtual thread [【尚硅谷】新版JDK21，深度详解java21虚拟线程新特性\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Xg4y197DB/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [另一套 NIO 比較舊的 [尚硅谷大牛讲授Java NIO教程(一套快速掌握New IO/IO API)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14W411u7ro/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
