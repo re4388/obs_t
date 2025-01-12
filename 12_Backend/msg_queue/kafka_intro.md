@@ -1,6 +1,11 @@
 related
 - [Postgres Replication to kafka connect](https://hackmd.io/2Yq4sDK7QiuVadfdjcFSzw)
 
+
+- [x] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
+	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
+
+
 # code example
 - [GitHub - re4388/kafka-nodejs-tutorial: A sample application using Kafka, Node.js and Docker](https://github.com/re4388/kafka-nodejs-tutorial)
 

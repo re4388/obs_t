@@ -1,6 +1,5 @@
 
 
-[[kid yt eng]]
 
 - [[AI 時代怎麼教小孩 vol.2？黃仁勳與葉丙成的看法、身為台灣爸媽的難題]]
 - [[教育理念：don’t left anyone behind & looping]]
