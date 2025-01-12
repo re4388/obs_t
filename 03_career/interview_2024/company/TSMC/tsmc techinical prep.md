@@ -44,22 +44,16 @@
 
 
 
-- [ ] [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
-
-
-
-
-
 - [ ] 挑東西看
 - full stack - spring boot + vue [尚硅谷雷神最新版SSM教程，基于AI的全新ssm框架实战\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14WtLeDEit/?spm_id_from= 333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [尚硅谷新版SSM框架全套视频教程， 趙偉風 Spring6+SpringBoot3最新SSM企业级开发\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1AP411s7D7/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
-
-
 - [ ] [[k8s_idx#尚硅谷 Kubernetes课程内容介绍 - YouTube]]
+	- [ ] 56-64
 - [ ] [[mySQL idx#宋红康】MySQL数据库（入门到高级，菜鸟到大牛]]
 	- [【宋红康】MySQL数据库（入门到高级，菜鸟到大牛）【2022】/MySQL數據庫（入門到高級，菜鳥到大牛） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFi4x7rZ5wpUKts3u7cDx21&si=rihU2pN3RzS8QVrj)
+	- [ ] 158 繼續往下看
 
 
 
@@ -116,6 +110,7 @@
 
 
 ### spring
+- [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
 - [x] SpringBoot3：尚硅谷SpringBoot零基础教程，面试&加薪必会springboot3](https://www.bilibili.com/video/BV1Es4y1q7Bf/?spm_id_from=333.788.comment.all.click)
 - [SpringCloud：尚硅谷SpringCloud教程，springcloud从入门到大牛](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.788.comment.all.click)
 - [SpringSecurity：尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.788.comment.all.click)

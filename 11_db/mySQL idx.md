@@ -6,4 +6,3 @@
 	- 挑不熟的，pg沒有的
 	- [x] [【MySQL】尚硅谷 53 阿里MySQL命名规范及MySQL8DDL的原子化 - YouTube](https://www.youtube.com/watch?v=7a1H_iO72_s&list=PLmOn9nNkQxJFi4x7rZ5wpUKts3u7cDx21&index=53)
 	- [x] [【MySQL】157 数据库的设计原则和日常SQL编写规范 - YouTube](https://www.youtube.com/watch?v=7oCZF7zLYZM&list=PLmOn9nNkQxJFi4x7rZ5wpUKts3u7cDx21&index=158)
-	- [ ] 繼續往下看
