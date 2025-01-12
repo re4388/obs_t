@@ -28,14 +28,13 @@
 - [x] [[Spring#Spring6：尚硅谷Spring零基础入门到进阶]]
 - [x] [Maven: 尚硅谷新版Maven教程](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
+- [x] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
+	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
 
 
 
 ## 正在看
 
-
-- [ ] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
-	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
 
 
 
