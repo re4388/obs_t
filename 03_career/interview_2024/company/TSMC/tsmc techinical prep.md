@@ -12,7 +12,6 @@
 - k8s
 
 
-
 # course/material done
 
 ## done
@@ -30,7 +29,6 @@
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
 - [x] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
-
 
 
 ## 正在看
@@ -120,8 +118,8 @@
 ### spring
 - [x] SpringBoot3：尚硅谷SpringBoot零基础教程，面试&加薪必会springboot3](https://www.bilibili.com/video/BV1Es4y1q7Bf/?spm_id_from=333.788.comment.all.click)
 - [SpringCloud：尚硅谷SpringCloud教程，springcloud从入门到大牛](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.788.comment.all.click)
-- [JavaWeb: 尚硅谷全新JavaWeb教程，企业主流javaweb技术栈](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.788.comment.all.click)
 - [SpringSecurity：尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.788.comment.all.click)
+- [JavaWeb: 尚硅谷全新JavaWeb教程，企业主流javaweb技术栈](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.788.comment.all.click)
 
 
 
