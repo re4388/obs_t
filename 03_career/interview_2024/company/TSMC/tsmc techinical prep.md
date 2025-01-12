@@ -38,12 +38,18 @@
 
 
 
-- [ ] [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
-
-
 
 - [ ] [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
 	- 08 看完
+	- 9~61 mybatis -> 先 skip
+	- 62~116 -> spring -> 先skip
+	- 117 - 117 (spring MVC)
+
+
+
+
+- [ ] [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
+
 
 
 
