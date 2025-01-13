@@ -52,7 +52,8 @@
               "title": "tsmc techinical prep"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -196,8 +197,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ab25f9408a703fc6",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "901_fleeting_note/IntelliJ.md",
     "30_程式語言/Spring.md",
     "43_軟體工具tools/win_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
@@ -229,7 +231,6 @@
     "11_db/pg",
     "11_db/pg/pg 面試問題.md",
     "901_fleeting_note/health.md",
-    "03_career/career/0_career_idx.md",
     "03_career/interview_2024/2024 interview index.md.edtz",
     "100_attachements/IMG-log_personal-20250111094720840.png",
     "43_軟體工具tools/autohotkey  - capslock.md.edtz",
