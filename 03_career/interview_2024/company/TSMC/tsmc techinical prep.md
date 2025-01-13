@@ -67,6 +67,9 @@
 
 - [ ] 有空看  [(完结) Java 快速掌握 Kotlin 教程 (Java 工程师必备知识)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV15N411A7P8/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
+
+maybe needed
+25 集[1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 ## 面試題
 - [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 - [MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
