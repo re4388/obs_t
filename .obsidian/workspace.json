@@ -52,8 +52,7 @@
               "title": "tsmc techinical prep"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,15 +196,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7cab8b60dd3b075b",
+  "active": "ab25f9408a703fc6",
   "lastOpenFiles": [
+    "43_軟體工具tools/win_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "11_db/mySQL idx.md",
     "12_Backend/k8s/k8s_idx.md",
     "901_fleeting_note/除濕機  to buy.md",
     "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
     "30_程式語言/Spring.md",
-    "43_軟體工具tools/win_idx.md",
     "04_family/在麥肯錫工作會發現一些有趣的事.md",
     "04_family/kid/edu_idx.md",
     "04_family/kid/kid yt eng.md",
