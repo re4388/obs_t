@@ -38,14 +38,20 @@
 	- note D:\all_book\java book
 
 
+- [ ] 
+
+ - [ ] find SpringBoot 整合 JPA  [1、SpringData介绍 高清 1080P - YouTube](https://www.youtube.com/watch?v=c2oyQlMpxQ0&list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
+	- 可以看一下有沒有其他上系股的資料
+
+
 - [ ] [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
 	- 08 看完
-	- 9~61 mybatis -> 先 skip
+	- 9~61 mybatis
+		- mybatis to 13 finshed
+		- [ ] 14~61
 	- 62~116 -> spring -> 先skip
 	- [x] 117 - 175 (spring MVC)
 	- [ ] 176 - fin (mybatis-spring-springMVC 整合)
-
-
 
 
 - [ ] 挑東西看
