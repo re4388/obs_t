@@ -34,6 +34,9 @@
 ## 正在看
 
 
+- [ ] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
+	- note D:\all_book\java book
+
 
 - [ ] [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
 	- 08 看完
