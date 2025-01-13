@@ -53,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,10 +197,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5c5e1697fc2fe5f6",
+  "active": "7cab8b60dd3b075b",
   "lastOpenFiles": [
-    "11_db/mySQL idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "11_db/mySQL idx.md",
     "12_Backend/k8s/k8s_idx.md",
     "901_fleeting_note/除濕機  to buy.md",
     "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",

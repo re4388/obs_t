@@ -43,6 +43,7 @@ see this [Do This IMMEDIATELY After Installing Windows 11 - YouTube](https://www
 [God Mode gives you instant access to your favorite Windows setting, and here's how to use it](https://www.xda-developers.com/how-to-enable-god-mode-windows-11-what-is-it/)
 
 
+magicPods
 
 
 EarTrumpet
