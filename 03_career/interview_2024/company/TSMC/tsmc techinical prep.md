@@ -77,11 +77,18 @@
 ## 想要上工前看完
 
 
+- [ ] ouath
+- [01 分布式系统认证方案 什么是分布式系统 高清 1080P - YouTube](https://www.youtube.com/watch?v=Nidd_CC2vWk&list=PLjwE8m3kyOlfRhAN4Jf4JZrVrJuvSLeCh)
+
 - [ ] [尚硅谷全新JavaWeb教程，企业主流javaweb技术栈\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 - [ ] 看下面的專題項目
 
 - [ ] 有空看  [(完结) Java 快速掌握 Kotlin 教程 (Java 工程师必备知识)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV15N411A7P8/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+- [ ] 另一個 yt 的 java 影片來源 [Java 程序员 - YouTube](https://www.youtube.com/@Java-Programmer/playlists)
 
 
 maybe needed
