@@ -47,6 +47,8 @@
 - [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 
 
+看分布鎖
+
 最後想要再 review sprint boot3
 
 
@@ -80,6 +82,14 @@
 - [ ] ouath
 - [01 分布式系统认证方案 什么是分布式系统 高清 1080P - YouTube](https://www.youtube.com/watch?v=Nidd_CC2vWk&list=PLjwE8m3kyOlfRhAN4Jf4JZrVrJuvSLeCh)
 
+
+
+- [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
+	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
+
+
+
+
 - [ ] [尚硅谷全新JavaWeb教程，企业主流javaweb技术栈\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 - [ ] 看下面的專題項目
@@ -88,7 +98,7 @@
 
 
 
-- [ ] 另一個 yt 的 java 影片來源 [Java 程序员 - YouTube](https://www.youtube.com/@Java-Programmer/playlists)
+- [ ] 另一個 yt 的 java 影片來源 [Java 程序员 - YouTube](https://www.youtube.com/@Java-Programmer/playlists)  -> 可以看有哪些要看的
 
 
 maybe needed
@@ -100,9 +110,6 @@ maybe needed
 - [谷粒商城项目 408集（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
 
 - [尚融宝 Java微服务分布式金融项目 428集](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
-
-- [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
-	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
 
 
 ## 其他
