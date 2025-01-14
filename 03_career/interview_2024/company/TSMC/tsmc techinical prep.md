@@ -40,6 +40,17 @@
 	- 目前還找不到資料 -> 看官網好了
 
 
+==
+
+看java 面試
+
+- [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
+
+
+最後想要再 review sprint boot3
+
+
+
 - [ ] [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
 	- 08 看完
 	- 9~61 mybatis
@@ -76,7 +87,6 @@
 maybe needed
 25 集[1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 ## 面試題
-- [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 - [MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
 
 
@@ -124,9 +134,6 @@ maybe needed
 - [SpringCloud：尚硅谷SpringCloud教程，springcloud从入门到大牛](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.788.comment.all.click)
 - [SpringSecurity：尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.788.comment.all.click)
 - [JavaWeb: 尚硅谷全新JavaWeb教程，企业主流javaweb技术栈](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.788.comment.all.click)
-
-
-
 
 
 ### java
