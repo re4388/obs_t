@@ -37,7 +37,7 @@
 
 
  - [ ] find SpringBoot 整合 JPA  [1、SpringData介绍 高清 1080P - YouTube](https://www.youtube.com/watch?v=c2oyQlMpxQ0&list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
-	- 可以看一下有沒有其他上系股的資料
+	- 目前還找不到資料
 
 
 - [ ] [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
