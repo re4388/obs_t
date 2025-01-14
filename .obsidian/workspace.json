@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -212,8 +212,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5c5e1697fc2fe5f6",
+  "active": "7cab8b60dd3b075b",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/keyboard_idx.md",
     "100_attachements/Pasted image 20250114173954.png",
     "43_軟體工具tools/mac_idx.md",
@@ -226,7 +227,6 @@
     "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md",
     "100_attachements/Pasted image 20250114171859.png",
     "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md.edtz",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "30_程式語言/Spring.md",
     "11_db/mySQL idx.md",
     "12_Backend/k8s/k8s_idx.md",

@@ -39,6 +39,8 @@ Microsoft pc manager
 看圖軟體 
 IrfanView
 
+add cmder to right click [cmd - Using cmder . Windows 10 - Stack Overflow](https://stackoverflow.com/questions/68428867/using-cmder-windows-10)
+
 
 shareX and [Snipaste](https://www.snipaste.com/)
 
