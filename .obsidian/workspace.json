@@ -8,18 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dbeba5b8e97ddeb6",
+            "id": "aae0835273333e12",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "tsmc prep onboard"
+              "title": "New tab"
             }
           }
         ]
@@ -166,8 +161,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dbeba5b8e97ddeb6",
+  "active": "aae0835273333e12",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "00_inbox/log_personal.md",
     "30_程式語言/Java_idx.md",
@@ -177,7 +173,6 @@
     "11_db/mySQL idx.md",
     "12_Backend/k8s/k8s_idx.md",
     "901_fleeting_note/除濕機  to buy.md",
-    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
     "04_family/在麥肯錫工作會發現一些有趣的事.md",
     "04_family/kid/edu_idx.md",
     "04_family/kid/kid yt eng.md",
