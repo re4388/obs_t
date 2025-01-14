@@ -4,11 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "b467bd26e6f57fea",
+        "id": "103d42e119f13129",
         "type": "tabs",
         "children": [
           {
-            "id": "7f8551e07377557c",
+            "id": "ab25f9408a703fc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "901_fleeting_note/IntelliJ.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IntelliJ"
+            }
+          },
+          {
+            "id": "7cab8b60dd3b075b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "43_軟體工具tools/win_idx.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "win_idx"
+            }
+          },
+          {
+            "id": "5c5e1697fc2fe5f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,8 +51,24 @@
               "icon": "lucide-file",
               "title": "tsmc techinical prep"
             }
+          },
+          {
+            "id": "74f4c96e70f244c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "43_軟體工具tools/mac_idx.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "mac_idx"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -128,8 +174,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -166,43 +212,42 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "73a55b757b7857fe",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
-    "30_程式語言/Spring.md",
     "43_軟體工具tools/keyboard_idx.md",
+    "100_attachements/Pasted image 20250114173954.png",
+    "43_軟體工具tools/mac_idx.md",
     "43_軟體工具tools/win_idx.md",
-    "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md.edtz",
-    "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md",
-    "43_軟體工具tools/karabinar.md.edtz",
+    "901_fleeting_note/IntelliJ.md",
+    "43_軟體工具tools/2025_01_10_08_16 Mac 時代的筆記.md",
     "43_軟體工具tools/karabinar.md",
     "43_軟體工具tools/2025_01_10_08_16 Mac 時代的筆記.md.edtz",
-    "43_軟體工具tools/2025_01_10_08_16 Mac 時代的筆記.md",
-    "100_attachements/Pasted image 20250114173954.png",
+    "43_軟體工具tools/karabinar.md.edtz",
+    "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md",
     "100_attachements/Pasted image 20250114171859.png",
-    "30_程式語言/Java_idx.md",
+    "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md.edtz",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
-    "00_inbox/log_personal.md",
-    "901_fleeting_note/IntelliJ.md",
+    "30_程式語言/Spring.md",
     "11_db/mySQL idx.md",
     "12_Backend/k8s/k8s_idx.md",
     "901_fleeting_note/除濕機  to buy.md",
+    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
     "04_family/在麥肯錫工作會發現一些有趣的事.md",
     "04_family/kid/edu_idx.md",
     "04_family/kid/kid yt eng.md",
     "10_軟體設計/_software_design_idx.md",
     "10_軟體設計/clean architecture.md",
+    "00_inbox/log_personal.md",
     "12_Backend/msg_queue/kafka_intro.md",
     "100_attachements/Pasted image 20250112141602.png",
     "04_family/kid/kid yt eng.md.edtz",
     "100_attachements/IMG-kid yt eng-20250112141538646.png",
+    "30_程式語言/Java_idx.md",
     "43_軟體工具tools/autohotkey  - capslock.md",
     "100_attachements/IMG-autohotkey  bug-20250111172759489.png",
     "11_db/pg/pg-新增資料請確保不要自己建立 id.md",
     "11_db/ph use int, uuid and bigserial.md",
     "11_db/pg/pg logical replicate.md",
-    "11_db/pg/pg 選 IN or OR.md",
-    "11_db/pg/pg character type.md",
     "11_db/pg/pg idx.md.edtz",
     "11_db/pg",
     "03_career/interview_2024/2024 interview index.md.edtz",
