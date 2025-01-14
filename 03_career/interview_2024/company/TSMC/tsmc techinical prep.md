@@ -29,16 +29,12 @@
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
 - [x] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
+- [x] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
+	- note D:\all_book\java book
 
 
 ## 正在看
 
-
-- [ ] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
-	- note D:\all_book\java book
-
-
-- [ ] 
 
  - [ ] find SpringBoot 整合 JPA  [1、SpringData介绍 高清 1080P - YouTube](https://www.youtube.com/watch?v=c2oyQlMpxQ0&list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
 	- 可以看一下有沒有其他上系股的資料
