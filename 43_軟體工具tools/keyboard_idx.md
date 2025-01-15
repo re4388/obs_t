@@ -6,11 +6,11 @@ related:
 
 ---
 
-# intelliJ 常用
+## intelliJ 常用
 
 ctrl+o → show 可以 override 的方法
 ctrl+h → show hiracy → 可以用來看有哪一些 （可以用的）實現類
-alt+h -> show diagram popup
+alt+g (graph) -> show diagram popup
 alt+w -> show file structure
 alt+2 -> go to implement (就是顯示這個 interface 的 implement)
 
