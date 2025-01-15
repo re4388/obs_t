@@ -31,9 +31,18 @@
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
 - [x] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 	- note D:\all_book\java book
+ - [x] find SpringBoot 整合 JPA  [1、SpringData介绍 高清 1080P - YouTube](https://www.youtube.com/watch?v=c2oyQlMpxQ0&list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
+	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
+
 
 
 ## 正在看
+
+
+[【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
+- [尚硅谷50道Java面试题笔记 写的不全\_尚硅谷面试题-CSDN博客](https://blog.csdn.net/qq_45725890/article/details/136596207)
+
+
 
 
 文字類可以看
@@ -41,13 +50,10 @@
 
 
 
- - [ ] find SpringBoot 整合 JPA  [1、SpringData介绍 高清 1080P - YouTube](https://www.youtube.com/watch?v=c2oyQlMpxQ0&list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
-	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
-
-
 ==
 
 看java 面試
+
 
 - [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 
