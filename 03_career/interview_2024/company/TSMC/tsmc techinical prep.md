@@ -94,7 +94,6 @@
 
 
 
-
 - [ ] [尚硅谷全新JavaWeb教程，企业主流javaweb技术栈\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 - [ ] 看下面的專題項目
@@ -109,10 +108,7 @@ maybe needed
 25 集[1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 ## 面試題
 - [MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
-
-
 - [谷粒商城项目 408集（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
-
 - [尚融宝 Java微服务分布式金融项目 428集](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
 
 
@@ -161,7 +157,7 @@ maybe needed
 - - [尚硅谷2024最新Java入门视频教程（上部）java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1YT4y1H7YM/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)  and [尚硅谷2024最新Java入门视频教程(下部) java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1JZ421a7PX/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [JVM：尚硅谷宋红康JVM全套教程（详解java虚拟机）](https://www.bilibili.com/video/BV1PJ411n7xZ/?spm_id_from=333.788.comment.all.click) 微服务生态--引领未来——》》
 - [virtual thread [【尚硅谷】新版JDK21，深度详解java21虚拟线程新特性\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Xg4y197DB/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [另一套 NIO 比較舊的 [尚硅谷大牛讲授Java NIO教程(一套快速掌握New IO/IO API)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14W411u7ro/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- 另一套 NIO 比較舊的 [尚硅谷大牛讲授Java NIO教程(一套快速掌握New IO/IO API)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14W411u7ro/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
 
