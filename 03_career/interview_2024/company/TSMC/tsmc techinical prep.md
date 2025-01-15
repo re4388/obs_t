@@ -85,6 +85,14 @@
 ## 想要上工前看完
 
 
+圖靈
+- [Mysql性能优化最佳实践视频图灵课堂 - YouTube](https://youtu.be/kgKmOYmZSE0?si=JzG8qS59eanpL5In)
+- [金九银十跳槽加薪必备之80道Java经典面试题图灵学院官方 - YouTube](https://youtu.be/fT4amkcHEpY?si=SkK6XK5KQcND5x27)
+- [Spring Framework核心技术底层原理详解 - YouTube](https://youtu.be/4GEHzMFqvh4?si=oNsmIFAfTeEMHzLd)
+- [图灵学院官方双十一秒杀系统后端Redis高并发架构实战 - YouTube](https://youtu.be/VzB51cyvSDk?si=Hv7QpJgsh66mp5wH)
+- [超高并发下如何对Mysql事务进行优化图灵课堂诸葛老师 - YouTube](https://youtu.be/2xvkCfGeaI4?si=SWuySRgab1Sb7uMr)
+
+
 - [ ] ouath
 - [01 分布式系统认证方案 什么是分布式系统 高清 1080P - YouTube](https://www.youtube.com/watch?v=Nidd_CC2vWk&list=PLjwE8m3kyOlfRhAN4Jf4JZrVrJuvSLeCh)
 

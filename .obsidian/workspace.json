@@ -52,8 +52,7 @@
               "title": "mySQL idx"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,8 +196,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "74f4c96e70f244c9",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "43_軟體工具tools/keyboard_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "03_career/interview_2024/company/TSMC/note.md",
     "100_attachements/Pasted image 20250115190710.png",
@@ -215,7 +215,6 @@
     "100_attachements/Pasted image 20250115151158.png",
     "11_db/mySQL idx.md",
     "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md.edtz",
-    "43_軟體工具tools/keyboard_idx.md",
     "43_軟體工具tools/mac_idx.md",
     "conflict-files-obsidian-git.md",
     "conflict-files-obsidian-git.md.edtz",
