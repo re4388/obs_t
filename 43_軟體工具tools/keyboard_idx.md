@@ -1,11 +1,20 @@
 related:
-- [[config_idx]]
 - [[2025_01_10_08_16 Mac 時代的筆記]]
 - [[update 2025_01_12_17_00_02 to align to win]]
 - [[win_idx]]
 
 
 ---
+
+
+# intelliJ 常用
+
+ctrl+o → show 可以 override 的方法
+ctrl+h → show hiracy → 可以用來看有哪一些 （可以用的）實現類
+alt+h -> show diagram popup
+alt+w -> show file structure
+alt+2 -> go to implement (就是顯示這個 interface 的 implement)
+
 
 ## 還可以利用的
 
@@ -48,11 +57,6 @@ Ctrl + Shift + Esc：快速開啟工作管理員
     - vscode: curosr word right select and cursor word left select
 
 
-### idea, java useful
-ctrl+o → show 可以 override 的方法
-ctrl+h → show hiracy → 可以用來看有哪一些 （可以用的）實現類
-alt+h -> show diagram popup
-
 
 ## alt
 
@@ -68,12 +72,6 @@ alt+h -> show diagram popup
 - 1
     - show project side bar
 
-- 2
-    - ~~show bookmarks~~
-    - ~~find file~~
-    - ~~recent locations~~
-    - ~~win10/recent file~~
-    - no use
 - 3, show terminal, show script in dataGrip
 - 4,  jump to matching bracket
 - 5, 不好按 NO USE
