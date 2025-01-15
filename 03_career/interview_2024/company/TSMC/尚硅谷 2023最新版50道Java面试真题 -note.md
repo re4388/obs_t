@@ -1147,17 +1147,14 @@ public class Test03 {
 
 
 
-## 对于高可用
+## 对于高可用 HA
 
-1. 容器化管理 HA
-2. keep alived
-
-# 27 JVM 是什么?请简述一下JVM 加载 class 文件的原理机制。
-
-
+1. 容器化管理 
+2. keepalived
+![[Pasted image 20250115145137.png]]
+# 27 请简述一下JVM 加载 class 文件的原理机制。
 
 关键点：
-
 1. 类加载器
 2. 魔数
 3. 元空间
@@ -1165,56 +1162,44 @@ public class Test03 {
 负责加载class文件，class文件在文件开头有特定的文件标示，并且ClassLoader只负责class文件的加载，至于它是否可以运行，则由Execution Engine决定。
 
 
-
-**魔数**
-
+**魔数 Magic Number ** 
 - Class文件开头的四个字节的无符号整数称为魔数(Magic Number)。
 - 魔数是Class文件的标识。值是固定的，为**0xCAFEBABE**
-- 如果一个Class文件的头四个字节不是0xCAFEBABE，虚拟机在进行文件校验的时候会报错。使用魔数而不是扩展名来识别Class文件，主要是基于安全方面的考虑，因为文件扩展名可以随意更改。
+- 如果一个Class文件的头四个字节不是0xCAFEBABE，虚拟机在进行文件校验的时候会报错。
+- 使用魔数而不是扩展名来识别Class文件，主要是基于安全方面的考虑，因为文件扩展名可以随意更改。
 
-![1562486960334](1562486960334.png)
-
-
+![[Pasted image 20250115145237.png|471]]
 
 
 
 类加载器分为四种：前三种为虚拟机自带的加载器。
-
 - 启动类加载器（Bootstrap）C++
-
-  负责加载$JAVA_HOME中jre/lib/**rt.jar**里所有的class，由C++实现，不是ClassLoader子类
-
-  也叫系统类加载器，负责加载**classpath**中指定的jar包及目录中class
-
+	- 负责加载`$JAVA_HOME中jre/lib/**rt.jar**`里所有的class，由C++实现，不是ClassLoader子类
+	- 也叫系统类加载器，负责加载**classpath**中指定的jar包及目录中class
 - 扩展类加载器（Extension）Java
-
-  负责加载java平台中**扩展功能**的一些jar包，包括$JAVA_HOME中jre/lib/*.jar或-Djava.ext.dirs指定目录下的jar包
-
-  
-
+	- 负责加载java平台中**扩展功能**的一些jar包，包括`$JAVA_HOME中jre/lib/*.jar`或`-Djava.ext.dirs`指定目录下的`jar`包
 - 应用程序类加载器（AppClassLoader）Java
-
-  
-
 - 用户自定义加载器  Java.lang.ClassLoader的子类，用户可以定制类的加载方式
 
 
 
 工作过程：
-
 - 1、当AppClassLoader加载一个class时，它首先不会自己去尝试加载这个类，而是把类加载请求委派给父类加载器ExtClassLoader去完成。
 - 2、当ExtClassLoader加载一个class时，它首先也不会自己去尝试加载这个类，而是把类加载请求委派给BootStrapClassLoader去完成。
 - 3、如果BootStrapClassLoader加载失败（例如在$JAVA_HOME/jre/lib里未查找到该class），会使用ExtClassLoader来尝试加载；
 - 4、若ExtClassLoader也加载失败，则会使用AppClassLoader来加载
 - 5、如果AppClassLoader也加载失败，则会报出异常ClassNotFoundException
 
-其实这就是所谓的**双亲委派模型**。简单来说：如果一个类加载器收到了类加载的请求，它首先不会自己去尝试加载这个类，而是把**请求委托给父加载器去完成，依次向上**。
+其实这就是所谓的**双亲委派模型**。
+简单来说：如果一个类加载器收到了类加载的请求，它首先不会自己去尝试加载这个类，而是把**请求委托给父加载器去完成，依次向上**。
 
 
 
-![image-20211002101029880](image-20211002101029880.png)
+![[Pasted image 20250115145400.png]]
 
-好处：**防止内存中出现多份同样的字节码**(安全性角度)
+
+好处：
+**防止内存中出现多份同样的字节码**(安全性角度)
 比如加载位于 rt.jar 包中的类 java.lang.Object，不管是哪个加载器加载这个类，最终都是委托给顶层的启动类加载器进行加载，这样就保证了使用不同的类加载器最终得到的都是同样一个 Object对象。 
 
 # 28 数据连接池的工作机制是什么?
@@ -1225,7 +1210,6 @@ public class Test03 {
 4. 数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接，而再不是重新建立一个
 
 答：
-
 1. 预先创建好一些数据库连接，放到连接池中
 2. 连接池中设置最小连接数和最大连接数
 3. 最小连接不断开和数据库的连接
@@ -1264,24 +1248,22 @@ class Father {
 
 # 31 代码题 父子异常
 
-```
+```java
 public class Test {
 	public int div(int a, int b) {
 		try {
-
+		
 			return a / b;
 		} catch (Exception e) {
 			System.out.println("Exception");
 		} catch (NullPointerException e) {
 			System.out.println("ArithmeticException");
-		}
-
-		catch (ArithmeticException e) {
+		} catch (ArithmeticException e) {
 			System.out.println("ArithmeticException");
-
 		} finally {
 			System.out.println("finally");
 		}
+		
 		return 0;
 	}
 
@@ -1293,38 +1275,34 @@ public class Test {
 }
 ```
 
-
-
 答： 编译失败
 
 # 32 哪一个List实现了最快插入?
 
 arraylist ：数组实现的，查询，修改比较快
-
 linkedlist：链表实现，插入，删除比较快，直接在最后插入数据即可
-
 vector：jdk1.0就有 线程安全，效率特别低
-
-
 
 答：linkedlist
 
 
 
-## 33 存在使i+1<i的数吗 
+## 33 存在使`i+1<i`的数吗 
 
 关键点：
 
 1. 基础数据类型的最大值 + 1 会变负数
-
+![[Pasted image 20250115150754.png]]
 ## 下面哪个流类属于面向字符的输入流
+![[Pasted image 20250115150827.png]]
 
-InputStreamReader
+ans:
+D: InputStreamReader
 
 ## 不通过构造函数也能创建对象吗
 
 是 
-
+like singlton
 
 
 # 34 Java 接口的修饰符可以为
@@ -1338,26 +1316,31 @@ InputStreamReader
 因为有传参，没必要扩容，所以次数是0；
 
 ## 下面哪些是对称加密算法
-
+![[Pasted image 20250115151059.png]]
 ab
 
 ## 新建一个流对象，下面哪个选项的代码是错误的?
 
-## 代码题 这什么玩意（挠头）？？？
+![[Pasted image 20250115151158.png]]
+ans: B
+
+
+## 代码题 这什么玩意？
 
 关键点：
-
 1. null 是可以被强转成任何类型的
 2. 静态方法不需要实例对象
 
 ```
-public class NULL {
+public class NULL { // NULL 不是關鍵字，這邊就是類名，是試圖混淆
 	public static void haha() {
 		System.out.println("haha");
 	}
 	public static void main(String[] args) {
-		((NULL)null).haha();
+		((NULL)null).haha();  // 強轉可以，但是裡面還是空的(null), 可以呼叫是因為找到裡面的靜態方法 haha
 	}
+
+	// output: "haha"
 }
 ```
 
@@ -1404,16 +1387,14 @@ public class ThreadSafeCache {
 ```
 
 答：
+1. 共享变量在多线程读取的时候，会被拉倒线程本地，`white` 在执行时，一直使用的都是本地变量的值，所以后续更改，线程内一直访问不到最新变量，程序会卡死
+2. 给变量 `result` 增加  `volatile` 关键字，保证多线程之间 变量可见性
 
-1. 共享变量在多线程读取的时候，会被拉倒线程本地，white 在执行时，一直使用的都是本地变量的值，所以后续更改，线程内一直访问不到最新变量，程序会卡死
-2. 给变量增加  volatile关键字，保证多线程之间 变量可见性
-
-# 37 定义了一个类T,其中定义了一个synchronized 方法do（）; A=newT（）;B = new T（）。当一个线程进入A对象的 do 方法后，另一个线程是否可进入B对象的do 方法?
+# 37 定义了一个类T,其中定义了一个 `synchronized` 方法`do（）; A=newT（）;B = new T（）`。当一个线程进入 `A `对象的 `do` 方法后，另一个线程是否可进入 `B `对象的 `do` 方法?
 
 答：
 
 互不影响
-
 1. synchronize 普通方法，锁的是当前对象
 2. synchronize 静态方法，锁的是class
 3. 同步代码块，可以手动指定锁对象是啥
