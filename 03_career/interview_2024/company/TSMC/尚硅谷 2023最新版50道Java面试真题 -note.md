@@ -427,9 +427,7 @@ public class Test01 {
 
 3. 标准化的服务状态码
 
-   1. ```
       status_code 200;//请求成功
-      ```
 
 4. 统一化请求日志记录,及异常记录
 
@@ -437,13 +435,13 @@ public class Test01 {
    GlobalExceptionHandler...
    
    logger.error("服务异常"，exception);
-   ```
 
 6. 当请求延迟过高，可以快速失败
 
 7. 重试机制
 
-8. ```java
+8. 
+```
    // 服务列表
    serverList = {ser1,ser2,ser3}
    retrycount = 0;
@@ -468,8 +466,8 @@ public class Test01 {
    
        }
    }
-   ```
 
+```
 9. 事务问题，可回滚
 
 10. ```
@@ -483,11 +481,13 @@ public class Test01 {
     要么全成功 要么全失败
     修改数据时使用 tryModify() 临时保存数据或通过Seata类似的框架实现
     }
-    ```
 
 11. 数据一致性问题
 
 12. ```
+
+```
+
     有并发修改数据时，如果需要保证一致性，需要使用分布式锁
     修改方法
     modifyxx(){
@@ -505,9 +505,12 @@ public class Test01 {
     }
     
     }
-    ```
 
-# 6 在如下代码中，当调用insertA 方法的时候，是否能做当insertA 到当调用insertB的时候，如果imnsertB 插入b表的时候有异常，能否保证 insertA0中的a 表插入成功，如果不能，应该如何修改。
+```
+
+# 6 
+
+![[Pasted image 20250115112032.png]]
 
 关键点：
 
