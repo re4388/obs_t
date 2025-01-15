@@ -46,7 +46,14 @@
 
 
 文字類可以看
-[AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
+- [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
+- [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
+
+
+- [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
+- [ ] 
+
+- [ ] [01 尚硅谷 JavaSE面试题：自增变量 高清 1080P - YouTube](https://www.youtube.com/watch?v=v36fF91LUp8&list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
 
 
 ==
@@ -92,6 +99,7 @@
 - [Spring Framework核心技术底层原理详解 - YouTube](https://youtu.be/4GEHzMFqvh4?si=oNsmIFAfTeEMHzLd)
 - [图灵学院官方双十一秒杀系统后端Redis高并发架构实战 - YouTube](https://youtu.be/VzB51cyvSDk?si=Hv7QpJgsh66mp5wH)
 - [超高并发下如何对Mysql事务进行优化图灵课堂诸葛老师 - YouTube](https://youtu.be/2xvkCfGeaI4?si=SWuySRgab1Sb7uMr)
+- [图灵学院官方双十一亿级流量Java并发线程池调优实战 - YouTube](https://www.youtube.com/watch?v=_sSHDnUSyWo)
 
 
 - [ ] ouath

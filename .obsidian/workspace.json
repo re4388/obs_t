@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",
+                "file": "30_程式語言/Spring.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "spring面试题讲解 note"
+              "title": "Spring"
             }
           },
           {
@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "43_軟體工具tools/keyboard_idx.md",
+                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "keyboard_idx"
+              "title": "tsmc techinical prep"
             }
           },
           {
@@ -52,7 +52,8 @@
               "title": "mySQL idx"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,18 +193,20 @@
       "templater-obsidian:Templater": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
       "edit-history:Open edit history": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5c5e1697fc2fe5f6",
+  "active": "74f4c96e70f244c9",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/ed.md",
+    "03_career/interview_2024/company/TSMC/ed.md.edtz",
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "43_軟體工具tools/keyboard_idx.md",
+    "30_程式語言/Spring.md",
+    "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",
     "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md.edtz",
     "100_attachements/Pasted image 20250115211757.png",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",
     "03_career/interview_2024/company/TSMC/手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note.md",
-    "43_軟體工具tools/keyboard_idx.md",
     "100_attachements/IMG-手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note-20250115211738414.png",
     "100_attachements/IMG-手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note-20250115211737791.png",
     "100_attachements/Pasted image 20250115190634.png",
@@ -228,7 +231,6 @@
     "43_軟體工具tools/karabinar.md.edtz",
     "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md",
     "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md.edtz",
-    "30_程式語言/Spring.md",
     "12_Backend/k8s/k8s_idx.md",
     "901_fleeting_note/除濕機  to buy.md",
     "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
@@ -240,9 +242,6 @@
     "00_inbox/log_personal.md",
     "12_Backend/msg_queue/kafka_intro.md",
     "04_family/kid/kid yt eng.md.edtz",
-    "30_程式語言/Java_idx.md",
-    "11_db/pg/pg idx.md.edtz",
-    "11_db/pg",
-    "03_career/interview_2024/2024 interview index.md.edtz"
+    "11_db/pg/pg idx.md.edtz"
   ]
 }
