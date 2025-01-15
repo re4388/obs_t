@@ -11,7 +11,6 @@
 	- 用那台小白好了, 搞工具，讓我跟 mac 之間可以連動
 - k8s
 
-
 # course/material done
 
 ## done
@@ -40,10 +39,8 @@
 ## 正在看
 
 
-
 文字類可以看
 [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
-
 
 
 ==
@@ -55,7 +52,6 @@
 看分布鎖
 
 最後想要再 review sprint boot3
-
 
 
 - [ ] [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
