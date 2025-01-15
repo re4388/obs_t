@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+                "file": "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tsmc techinical prep"
+              "title": "spring面试题讲解 note"
             }
           },
           {
@@ -198,21 +198,23 @@
   },
   "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
-    "43_軟體工具tools/keyboard_idx.md",
+    "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md.edtz",
+    "100_attachements/Pasted image 20250115211757.png",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "03_career/interview_2024/company/TSMC/note.md",
-    "100_attachements/Pasted image 20250115190710.png",
-    "100_attachements/Pasted image 20250115190706.png",
+    "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",
+    "03_career/interview_2024/company/TSMC/手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note.md",
+    "43_軟體工具tools/keyboard_idx.md",
+    "100_attachements/IMG-手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note-20250115211738414.png",
+    "100_attachements/IMG-手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note-20250115211737791.png",
     "100_attachements/Pasted image 20250115190634.png",
-    "03_career/interview_2024/company/TSMC/note.md.edtz",
-    "100_attachements/Pasted image 20250115190620.png",
+    "03_career/interview_2024/company/TSMC/手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note.md.edtz",
+    "100_attachements/IMG-手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note-20250115211739217.png",
     "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
     "100_attachements/Pasted image 20250115155030.png",
     "100_attachements/Pasted image 20250115154818.png",
     "100_attachements/Pasted image 20250115154610.png",
     "100_attachements/Pasted image 20250115154504.png",
     "100_attachements/Pasted image 20250115154330.png",
-    "100_attachements/Pasted image 20250115151158.png",
     "11_db/mySQL idx.md",
     "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md.edtz",
     "43_軟體工具tools/mac_idx.md",
@@ -239,7 +241,6 @@
     "12_Backend/msg_queue/kafka_intro.md",
     "04_family/kid/kid yt eng.md.edtz",
     "30_程式語言/Java_idx.md",
-    "43_軟體工具tools/autohotkey  - capslock.md",
     "11_db/pg/pg idx.md.edtz",
     "11_db/pg",
     "03_career/interview_2024/2024 interview index.md.edtz"
