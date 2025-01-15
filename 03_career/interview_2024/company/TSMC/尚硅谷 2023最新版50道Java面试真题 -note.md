@@ -797,7 +797,7 @@ o   - 多表关联
 
 # 13  说一下你理解的JVM 原理
 
-![image-20230313032731060](img/image-20230313032731060.png)
+![[Pasted image 20250115142216.png]]
 
 
 
@@ -816,7 +816,6 @@ o   - 多表关联
 # 14 浅谈 ReentrantLock 的设计
 
 答：
-
 1. ReentrantLock 是在**多线程竞争资源**时使用的锁，他是一个独占锁、可重入锁，也是悲观锁
 2. ReentrantLock 支持公平锁，对公平和非公平锁有不同的实现逻辑
 3. ReentrantLock  使用 aqs（AbstractQueuedSynchronizer）来实现的获取锁的线程队列等待的过程
@@ -844,15 +843,9 @@ MVCC 的实现依赖于：隐藏字段、Read View、undo log
 不同的事务隔离级别中，当有事物在执行过程中修改了数据（更新版本号），在并发事务时需要判断一下版本链中的哪个版本是当前事务可见的。为此InnoDB有了ReadView的概念，使用ReadView来记录和隔离不同事务并发时此记录的哪些版本是对当前访问事物可见的。
 
 **undo log**
-
 除了用来回滚数据，还可以读取可见版本的数据。以此实现非锁定读
 
-
-
-
-
 答：
-
 1. mysql是由mvcc实现的事务控制
 2. MVCC 的实现依赖于：隐藏字段、Read View、undo log
 3. 在不同的事务隔离级别下通过设置readview内容，控制了哪些数据可见于不可见
@@ -867,7 +860,6 @@ MVCC 的实现依赖于：隐藏字段、Read View、undo log
 4. 内部类加载实现、cas实现等
 
 
-
 ```java
 public class Test03 {
 
@@ -879,10 +871,11 @@ public class Test03 {
     public  static  Test03 getInstance(){
 
         // 有可能在多线程访问的时候，重复new 了对象
-        if (instance == null){
-
-            // 可能会有多个线程 进入抢锁等待状态
+        if (instance == null) {
+        
+            // 可能会有多个线程 需要上鎖
             synchronized (Test03.class){
+		        // 為何這邊還要檢查一次？ 因為我們需要在排除多線程的情況下在檢查一次 
                 if(instance == null){
                     instance = new Test03();
                 }else{
@@ -923,7 +916,7 @@ public class Test03 {
 	}
 ```
 
-
+![[Pasted image 20250115141658.png]]
 
 答： ab b
 
@@ -964,7 +957,7 @@ public class Test03 {
 关键点：
 
 1. 在finally中return 后不再执行后续代码
-2. catch中return 不影响finally的执行
+2. catch中return 不影响finally的一定执行
 3. try catch 后的finally一定会执行
 
 ```
@@ -994,7 +987,7 @@ public class Test03 {
 ```
 
 
-
+答案  "323"
 # 20 Spring的AOP的使用情景有哪些?简述其实现原理
 
 关键点：
@@ -1048,24 +1041,21 @@ public class Test03 {
 
 # 23 JVM 运行时数据区域包含哪几部分?
 
-![image-20230314003243971](image-20230314003243971.png)
+
+
+![[Pasted image 20250115142954.png]]
 
 答：
-
 1. 堆
-
 2. 栈
-
 3. 本地方法栈
-
 4. 方法区
 
    
 
-# 24 多线程中 start（)方法和 run（）方法的区别是什么?
+# 24 多线程中 `start（)`方法和 `run（）`方法的区别是什么?
 
 答：
-
 1. start用来启动线程，改变的是线程的状态，由就绪进入执行
 2. run方法中包含要执行的代码，在执行状态时运行里面的代码，方法返回值是void
 
@@ -1080,10 +1070,8 @@ public class Test03 {
 
     static Object lockA = new Object();
     static Object lockB = new Object();
+
     public static void main(String[] args) {
-
-
-
 
         new Thread(new Runnable() {
             @Override
@@ -1162,7 +1150,7 @@ public class Test03 {
 ## 对于高可用
 
 1. 容器化管理 HA
-2. keepalived
+2. keep alived
 
 # 27 JVM 是什么?请简述一下JVM 加载 class 文件的原理机制。
 
