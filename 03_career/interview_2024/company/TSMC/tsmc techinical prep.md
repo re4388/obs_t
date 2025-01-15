@@ -34,7 +34,7 @@
 	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
 - [x] [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
 	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
-
+- [ ] [手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - YouTube](https://www.youtube.com/watch?v=F7SRQpfp5hY&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z)
 
 ## 正在看
 
