@@ -1445,8 +1445,8 @@ public class CallableDemo {
 2. cas及atomic系列实现
 
 阻塞
-1. wait()
-2. sleep
+1. Objec 的 wait()
+2. thread 的 sleep
 3. synchronized
 4. Lock 的实现
    1. ReentrantLock
@@ -1457,3 +1457,38 @@ public class CallableDemo {
 7. Semaphore
 8. BlockingQueue
 
+
+
+![[Pasted image 20250115154330.png]]
+答案  ABD
+C 沒有
+
+如果要中斷，一半就是 interupt, 然後拋異常後，取處理資源
+不建議用 stop (已經廢棄，會有其他問題)
+不建議用 destroy -> 沒實現
+
+
+
+
+
+![[Pasted image 20250115154504.png]]
+
+A, B, 但是上面的B拼錯了XD
+
+
+
+![[Pasted image 20250115154610.png]]
+可以去double check, 因為是 false
+因為下面用 new, 是引用類型，因此會不同
+
+
+
+![[Pasted image 20250115154818.png]]
+ans: C
+
+
+
+解釋
+![[Pasted image 20250115155030.png]]
+因為呼叫 run, 因此沒有開線程
+要開線程要呼叫 start

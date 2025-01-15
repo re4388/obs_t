@@ -8,33 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab25f9408a703fc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "901_fleeting_note/IntelliJ.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IntelliJ"
-            }
-          },
-          {
             "id": "5c5e1697fc2fe5f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
+                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "尚硅谷 2023最新版50道Java面试真题 -note"
+              "title": "tsmc techinical prep"
             }
           },
           {
@@ -67,8 +52,7 @@
               "title": "mySQL idx"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,19 +198,18 @@
   },
   "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
+    "100_attachements/Pasted image 20250115155030.png",
+    "100_attachements/Pasted image 20250115154818.png",
+    "100_attachements/Pasted image 20250115154610.png",
+    "100_attachements/Pasted image 20250115154504.png",
+    "100_attachements/Pasted image 20250115154330.png",
     "100_attachements/Pasted image 20250115151158.png",
     "100_attachements/Pasted image 20250115151059.png",
     "100_attachements/Pasted image 20250115150827.png",
     "100_attachements/Pasted image 20250115150754.png",
     "100_attachements/Pasted image 20250115145400.png",
-    "100_attachements/Pasted image 20250115145237.png",
-    "100_attachements/Pasted image 20250115145137.png",
-    "100_attachements/Pasted image 20250115142954.png",
-    "100_attachements/Pasted image 20250115142216.png",
-    "100_attachements/Pasted image 20250115141658.png",
-    "100_attachements/Pasted image 20250115125859.png",
     "11_db/mySQL idx.md",
-    "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md.edtz",
     "43_軟體工具tools/keyboard_idx.md",
