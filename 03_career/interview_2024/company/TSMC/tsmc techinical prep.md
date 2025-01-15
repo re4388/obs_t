@@ -109,7 +109,6 @@
 
 
 
-- [ ] 另一個 yt 的 java 影片來源 [Java 程序员 - YouTube](https://www.youtube.com/@Java-Programmer/playlists)  -> 可以看有哪些要看的
 
 
 maybe needed
