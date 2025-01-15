@@ -1440,17 +1440,11 @@ public class CallableDemo {
 
 # 39 同步有几种实现方法,都是什么?
 
-
-
 非阻塞
-
 1. volatile
 2. cas及atomic系列实现
 
-
-
 阻塞
-
 1. wait()
 2. sleep
 3. synchronized
@@ -1462,3 +1456,4 @@ public class CallableDemo {
 6. CyclicBarrier
 7. Semaphore
 8. BlockingQueue
+
