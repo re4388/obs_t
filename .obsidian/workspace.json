@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -212,8 +212,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "247d67f00da4fc4f",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "100_attachements/Pasted image 20250115125859.png",
+    "11_db/mySQL idx.md",
     "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
     "100_attachements/Pasted image 20250115112032.png",
     "100_attachements/Pasted image 20250115111843.png",
@@ -236,7 +238,6 @@
     "100_attachements/Pasted image 20250114171859.png",
     "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md.edtz",
     "30_程式語言/Spring.md",
-    "11_db/mySQL idx.md",
     "12_Backend/k8s/k8s_idx.md",
     "901_fleeting_note/除濕機  to buy.md",
     "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
