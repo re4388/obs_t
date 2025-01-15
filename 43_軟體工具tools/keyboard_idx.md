@@ -240,7 +240,7 @@ this need to disable
 ## chrome
 - q → increase speed
 - a → decrease speed
-
+- cltr+shift+t -> reopen closed tab
 
 
 

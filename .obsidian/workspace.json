@@ -53,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -196,13 +196,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5c5e1697fc2fe5f6",
+  "active": "74f4c96e70f244c9",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/keyboard_idx.md",
     "43_軟體工具tools/mac_idx.md",
     "conflict-files-obsidian-git.md",
     "conflict-files-obsidian-git.md.edtz",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/win_idx.md",
     "100_attachements/Pasted image 20250114173954.png",
     "901_fleeting_note/IntelliJ.md",
