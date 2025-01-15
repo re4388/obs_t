@@ -34,7 +34,12 @@
 	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
 - [x] [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
 	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
-- [ ] [手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - YouTube](https://www.youtube.com/watch?v=F7SRQpfp5hY&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z)
+- [x] [手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - YouTube](https://www.youtube.com/watch?v=F7SRQpfp5hY&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z)
+	- [[note]]
+- [ ] [spring面试题讲解 - YouTube](https://www.youtube.com/watch?v=r9KhjXBG5VI&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z&index=2)
+	- [ ] [Spring核心知识点吐血整理 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/5fb52132e0b34d0d2240f000)
+- [ ] 
+- [ ] [最详细的 Spring 源码面试教程](https://www.youtube.com/watch?v=1vPUoYnME1s&list=PLjwE8m3kyOldeAKbif_UazwIWUEMZ7Au4)
 
 ## 正在看
 
