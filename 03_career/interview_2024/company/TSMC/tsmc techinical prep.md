@@ -40,7 +40,7 @@
 
 
 [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
-- [尚硅谷50道Java面试题笔记 写的不全\_尚硅谷面试题-CSDN博客](https://blog.csdn.net/qq_45725890/article/details/136596207)
+	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
 
 
 

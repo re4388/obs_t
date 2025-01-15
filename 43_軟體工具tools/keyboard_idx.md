@@ -242,6 +242,10 @@ this need to disable
 - a → decrease speed
 - cltr+shift+t -> reopen closed tab
 
+- go to top and go to down
+use below chrome extension to help 
+![[IMG-keyboard_idx-20250115104803295.png]]
+
 
 
 
