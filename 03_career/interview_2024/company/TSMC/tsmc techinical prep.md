@@ -45,7 +45,8 @@
 	- [[note on source code on java hashmap]]
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- [[13 道 Java HashMap 精选面试题]]
-	- [[dd]]
+	- [[Compare and swap CAS]]
+	- [[Java 集合面试题]]
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
 
 

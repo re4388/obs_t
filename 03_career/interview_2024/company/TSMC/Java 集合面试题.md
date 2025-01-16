@@ -21,7 +21,7 @@
 
 ### [#](https://xiaolincoding.com/interview/collections.html#%E8%AF%B4%E8%AF%B4java%E4%B8%AD%E7%9A%84%E9%9B%86%E5%90%88)说说 Java 中的集合？
 
-![[100_attachements/34a4910f0daa30bad3c0347f82dc54ae_MD5.webp]]List 是有序的 Collection，使用此接口能够精确的控制每个元素的插入位置，用户能根据索引访问 List 中元素。常用的实现 List 的类有 LinkedList，ArrayList，Vector，Stack。
+![[IMG-Java 集合面试题-20250116151307008.webp]]List 是有序的 Collection，使用此接口能够精确的控制每个元素的插入位置，用户能根据索引访问 List 中元素。常用的实现 List 的类有 LinkedList，ArrayList，Vector，Stack。
 
 - ArrayList 是容量可变的非线程安全列表，其底层使用数组实现。当几何扩容时，会创建更大的数组，并把原数组复制到新数组。ArrayList 支持对元素的快速随机访问，但插入与删除速度很慢。
 - LinkedList 本质是一个双向链表，与 ArrayList 相比，，其插入和删除速度更快，但随机访问速度更慢。
@@ -167,7 +167,7 @@ list.stream().forEach(element -> System.out.println(element));
 
 ### [#](https://xiaolincoding.com/interview/collections.html#%E8%AE%B2%E4%B8%80%E4%B8%8Bjava%E9%87%8C%E9%9D%A2list%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9E%E7%8E%B0-%E5%87%A0%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C)讲一下 java 里面 list 的几种实现，几种实现有什么不同？
 
-在 Java 中，`List` 接口是最常用的集合类型之一，用于存储元素的有序集合。以下是 Java 中常见的 `List` 实现及其特点： ![[100_attachements/134392b7612c4e9784cd1e4c6202f744_MD5.png]]
+在 Java 中，`List` 接口是最常用的集合类型之一，用于存储元素的有序集合。以下是 Java 中常见的 `List` 实现及其特点： ![[IMG-Java 集合面试题-20250116151308231.png]]
 
 - Vector 是 Java 早期提供的线程安全的动态数组，如果不需要线程安全，并不建议选择，毕竟同步是有额外开销的。Vector 内部是使用对象数组来保存数据，可以根据需要自动的增加容量，当数组已满时，会创建新的数组，并拷贝原有数组数据。
 - ArrayList 是应用更加广泛的动态数组实现，它本身不是线程安全的，所以性能要好很多。与 Vector 近似，ArrayList 也是可以根据需要调整容量，不过两者的调整逻辑有所区别，Vector 在扩容时会提高 1 倍，而 ArrayList 则是增加 50%。
@@ -345,7 +345,7 @@ hashmap 不是线程安全的，hashmap 在多线程会存在下面的问题：
 
 ### [#](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put%E8%BF%87%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B)hashmap 的 put 过程介绍一下
 
-![[100_attachements/b2502ec729fe5f23f7dfc3af4ad25a2e_MD5.webp]]
+![[IMG-Java 集合面试题-20250116151308979.webp]]
 
 HashMap HashMap 的 put () 方法用于向 HashMap 中添加键值对，当调用 HashMap 的 put () 方法时，会按照以下详细流程执行（JDK8 1.8 版本）：
 
@@ -416,7 +416,7 @@ HashMap HashMap 的 put () 方法用于向 HashMap 中添加键值对，当调�
 
 - hashMap 中使用 hash () 方法来计算 key 的哈希值，当 key 为空时，直接另 key 的哈希值为 0，不走 key.hashCode () 方法；
 
-![[Pasted image 20250116150131.png]]
+![[IMG-Java 集合面试题-20250116151309851.png]]
 
 
 - hashMap 虽然支持 key 和 value 为 null，但是 null 作为 key 只能有一个，null 作为 value 可以有多个；
@@ -455,14 +455,14 @@ hashMap 默认的负载因子是 0.75，即如果 hashmap 中的元素个数超�
 
 如我们从 16 扩展为 32 时，具体的变化如下所示：
 
-![[Pasted image 20250116150143.png]]
+![[IMG-Java 集合面试题-20250116151310876.png]]
 
 
 因此元素在重新计算 hash 之后，因为 n 变为 2 倍，那么 n-1 的 mask 范围在高位多 1bit (红色)，因此新的 index 就会发生这样的变化：
-![[Pasted image 20250116150151.png]]
+![[IMG-Java 集合面试题-20250116151313364.png]]
 
 因此，我们在扩充 HashMap 的时候，不需要重新计算 hash，只需要看看原来的 hash 值新增的那个 bit 是 1 还是 0 就好了，是 0 的话索引没变，是 1 的话索引变成 “原索引 + oldCap”。可以看看下图为 16 扩充为 32 的 resize 示意图：
-![[Pasted image 20250116150206.png]]
+![[IMG-Java 集合面试题-20250116151314879.png]]
 
 这个设计确实非常的巧妙，既省去了重新计算 hash 值的时间，而且同时，由于新增的 1bit 是 0 还是 1 可以认为是随机的，因此 resize 的过程，均匀的把之前的冲突的节点分散到新的 bucket 了。
 
@@ -508,7 +508,7 @@ HashMap 负载因子 loadFactor 的默认值是 0.75，当 HashMap 中的元素�
 > JDK 1.7 ConcurrentHashMap
 
 在 JDK 1.7 中它使用的是数组加链表的形式实现的，而数组又分为：大数组 Segment 和小数组 HashEntry。 Segment 是一种可重入锁（ReentrantLock），在 ConcurrentHashMap 里扮演锁的角色；HashEntry 则用于存储键值对数据。一个 ConcurrentHashMap 里包含一个 Segment 数组，一个 Segment 里包含一个 HashEntry 数组，每个 HashEntry 是一个链表结构的元素。
-![[Pasted image 20250116150223.png]]
+![[IMG-Java 集合面试题-20250116151316891.png]]
 
 
 JDK 1.7 ConcurrentHashMap 分段锁技术将数据分成一段一段的存储，然后给每一段数据配一把锁，当一个线程占用锁访问其中一个段数据的时候，其他段的数据也能被其他线程访问，能够实现真正的并发访问。
@@ -516,7 +516,7 @@ JDK 1.7 ConcurrentHashMap 分段锁技术将数据分成一段一段的存储，
 > JDK 1.8 ConcurrentHashMap
 
 在 JDK 1.7 中，ConcurrentHashMap 虽然是线程安全的，但因为它的底层实现是数组 + 链表的形式，所以在数据比较多的情况下访问是很慢的，因为要遍历整个链表，而 JDK 1.8 则使用了数组 + 链表 / 红黑树的方式优化了 ConcurrentHashMap 的实现，具体实现结构如下：
-![[Pasted image 20250116150234.png]]
+![[IMG-Java 集合面试题-20250116151318612.png]]
 
 JDK 1.8 ConcurrentHashMap JDK 1.8 ConcurrentHashMap 主要通过 volatile + CAS 或者 synchronized 来实现的线程安全的。添加元素时首先会判断容器是否为空：
 
@@ -563,7 +563,7 @@ ConcurrentHashMap 使用这两种手段来保证线程安全主要是一种权�
     
 
 ### [#](https://xiaolincoding.com/interview/collections.html#hashtable-%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88)HashTable 底层实现原理是什么？
-![[Pasted image 20250116150247.png]]
+![[IMG-Java 集合面试题-20250116151320479.png]]
 
 - Hashtable 的底层数据结构主要是**数组加上链表**，数组是主体，链表是解决 hash 冲突存在的。
 - HashTable 是线程安全的，实现方式是 **Hashtable 的所有公共方法均采用 synchronized 关键字**，当一个线程访问同步方法，另一个线程也访问的时候，就会陷入阻塞或者轮询的状态。
