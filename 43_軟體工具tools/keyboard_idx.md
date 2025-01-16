@@ -7,18 +7,19 @@ related:
 ---
 
 ## intelliJ 常用
-
-ctrl+o → show 可以 override 的方法
-ctrl+h → show hiracy → 可以用來看有哪一些 （可以用的）實現類
+alt+i -> go to implement
+alt+m -> file structure
+alt+o → code/override method
+alt+h → type hierarchy → 可以用來看有哪一些 （可以用的）實現類
 alt+g (graph) -> show diagram popup
-alt+w -> show file structure
-alt+2 -> go to implement (就是顯示這個 interface 的 implement)
-
+ctrl+g -> generate 
+alt+t -> (trigger) code complete
+alt+e -> recent file
 
 ## 還可以利用的
 
+alt+2
 alt+w
-alt+e
 alt+y
 ...
 
@@ -142,18 +143,12 @@ Ctrl + Shift + Esc：快速開啟工作管理員
     - ~~run something, 看 IDE 配置, 目前讓他跑 run ts code, 需要跑一次才會生效~~
     - ~~目前改為 啟動 live template~~
     - no use now
-- h
-    - ~~NO USE ,   →  use action, hide all tool window~~
-    - recent file
-    - focus on chat gpt
 - n
     - no use
 - u
     - reformat code  (vscode: format document)
 - j (global)
     - win10 /autohotkey ()
-- m
-    - toggle book mark
 - i
     - win10/vsocde trigger suggest(vscode)
     - win10/idea/code complete basic (顯示 code complete的意思）
@@ -162,8 +157,6 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 - ,
     - show VCS, like git stash, unstack, commit…etc
     - no use for now, using tower
-- o
-    - not use for now
 - `l`  (global)
     - win10 /autohotkey  {}
 - `.`
@@ -229,6 +222,7 @@ f1 and f2 在 miniMax 鍵盤也可以作為切換電腦的熱鍵，不過要先�
 ## ctrl `^`
 
 
+d -> idea (add selection for next occurence)   vscode(add selection to next find match)
 
 ## vscode
 
