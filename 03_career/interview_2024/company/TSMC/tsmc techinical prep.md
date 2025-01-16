@@ -44,14 +44,20 @@
 	- source code study for arrayList, hashmap
 	- [[note on source code on java hashmap]]
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
+	- [[13 道 Java HashMap 精选面试题]]
+	- [[dd]]
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
-## 正在看
 
 
-文字類可以看
+## 文字類可以看
 - [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
 - [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
-- 
+- [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
+- [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南，内容涵盖Java基础、Java并发编程、Java虚拟机、Java企业级开发、Java面试等核心知识点。学Java，就认准二哥的Java进阶之路😄](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
+
+
+## 正在看
+
 
 
 - [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
