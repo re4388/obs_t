@@ -57,6 +57,7 @@
 - [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
 - [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
 - [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
+- [ ] [GitHub - stevenli91748/JAVA-Architecture: Java training project，包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
 - [ ] [[Java 并发编程面试题]]
 - [ ] [[Java 集合面试题]]
 - [ ] [[Java 基礎面試題]]
