@@ -15,13 +15,13 @@ alt+g (graph) -> show diagram popup
 ctrl+g -> generate 
 alt+t -> (trigger) code complete
 alt+e -> recent file
+f1: search everything
+alt+2: go to class
+alt+s: find in file
 
 ## 還可以利用的
-
-alt+2
 alt+w
 alt+y
-...
 
 
 ---
