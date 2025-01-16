@@ -42,6 +42,7 @@
 - [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
 - [ ] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
 	- source code study for arrayList, hashmap
+	- [[note on source code on java hashmap]]
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
 ## 正在看
