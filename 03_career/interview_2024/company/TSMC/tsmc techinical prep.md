@@ -64,6 +64,9 @@
 
 
 
+try this IDEA debug skill
+- [ ] [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
+
 ## 正在看
 
 
