@@ -53,6 +53,7 @@
 - [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
 - [ ] [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
 - [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
+- [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
 - [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南，内容涵盖Java基础、Java并发编程、Java虚拟机、Java企业级开发、Java面试等核心知识点。学Java，就认准二哥的Java进阶之路😄](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
 - [ ] [[Java 并发编程面试题]]
 - [ ] [[Java 集合面试题]]
