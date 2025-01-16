@@ -40,7 +40,7 @@
 	- [Spring核心知识点吐血整理 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/5fb52132e0b34d0d2240f000)
 	- [[spring面试题讲解 note]]
 - [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
-- [ ] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
+- [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
 	- source code study for arrayList, hashmap, cocurrentMap
 	- 這邊也講 volite, 同步鎖，重進入鎖
 	- [[note on source code on java hashmap]]
