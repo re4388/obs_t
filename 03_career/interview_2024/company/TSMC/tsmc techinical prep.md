@@ -46,7 +46,6 @@
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- [[13 道 Java HashMap 精选面试题]]
 	- [[Compare and swap CAS]]
-	- [[Java 集合面试题]]
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
 
 
@@ -55,6 +54,13 @@
 - [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
 - [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
 - [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南，内容涵盖Java基础、Java并发编程、Java虚拟机、Java企业级开发、Java面试等核心知识点。学Java，就认准二哥的Java进阶之路😄](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
+- [[Java 并发编程面试题]]
+- [[Java 集合面试题]]
+- [[Java 基礎面試題]]
+- [[Spring 面试题]]
+- [[MySQL 面試題]]
+- [[Java 虛拟機面試題]]
+
 
 
 ## 正在看
@@ -73,7 +79,17 @@
 - [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 
 
+
+sprint boot
+- [SpringBoot2-原理篇-黑马程序员全套视频教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleTz3Pgj-X9d_Mleg2pbN_u)
+- [SpringBoot2-开发实用篇-黑马程序员全套视频教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlekw0QGTYM_Ddbp4efQYXaA)
+- [SpringBoot2-运维实用篇-黑马程序员全套视频教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlf4_HLEEp5kgLySo4OUVL9X)
+- [SpringBoot2-基础篇-黑马程序员全套视频教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcO42LgskwIt6sLKUOo-7vD)
+
+
 看分布鎖
+
+
 
 最後想要再 review sprint boot3
 

@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md",
+                "file": "03_career/interview_2024/company/TSMC/MySQL 面試題.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "13 道 Java HashMap 精选面试题"
+              "title": "MySQL 面試題"
             }
           },
           {
@@ -67,8 +67,7 @@
               "title": "Compare and swap CAS"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,24 +211,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1690d1a5038b90bb",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "100_attachements/Pasted image 20250116161817.png",
+    "100_attachements/Pasted image 20250116161801.png",
+    "100_attachements/Pasted image 20250116161751.png",
+    "100_attachements/Pasted image 20250116161741.png",
+    "100_attachements/Pasted image 20250116161732.png",
+    "100_attachements/Pasted image 20250116161722.png",
+    "100_attachements/Pasted image 20250116161710.png",
+    "100_attachements/Pasted image 20250116161647.png",
+    "100_attachements/Pasted image 20250116161638.png",
+    "100_attachements/Pasted image 20250116161631.png",
+    "100_attachements/Pasted image 20250116161622.png",
+    "03_career/interview_2024/company/TSMC/MySQL 面試題.md.edtz",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/MySQL 面試題.md",
+    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md",
+    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md.edtz",
+    "03_career/interview_2024/company/TSMC/Spring 面试题.md",
+    "03_career/interview_2024/company/TSMC/Spring 面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/Java 基礎面試題.md",
+    "03_career/interview_2024/company/TSMC/Java 基礎面試題.md.edtz",
     "03_career/interview_2024/company/TSMC/Java 集合面试题.md",
+    "03_career/interview_2024/company/TSMC/Java 并发编程面试题.md",
+    "03_career/interview_2024/company/TSMC/Java 并发编程面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md",
     "03_career/interview_2024/company/TSMC/Compare and swap CAS.md",
     "03_career/interview_2024/company/TSMC/Compare and swap CAS.md.edtz",
-    "100_attachements/IMG-Java 集合面试题-20250116151320479.png",
-    "100_attachements/IMG-Java 集合面试题-20250116151318612.png",
-    "100_attachements/IMG-Java 集合面试题-20250116151316891.png",
-    "100_attachements/IMG-Java 集合面试题-20250116151314879.png",
-    "100_attachements/IMG-Java 集合面试题-20250116151313364.png",
-    "100_attachements/IMG-Java 集合面试题-20250116151310876.png",
-    "100_attachements/IMG-Java 集合面试题-20250116151309851.png",
-    "100_attachements/IMG-Java 集合面试题-20250116151308979.webp",
-    "100_attachements/IMG-Java 集合面试题-20250116151307008.webp",
-    "100_attachements/697a559d6196d4c23b13ca79d8ab4d1c_MD5.png",
     "03_career/interview_2024/company/TSMC/Java 集合面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md",
     "43_軟體工具tools/win_idx.md",
     "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md.edtz",
     "30_程式語言/Spring.md",
@@ -241,23 +251,13 @@
     "11_db/mySQL idx.md",
     "30_程式語言/尚硅谷-juc-高并发.md",
     "03_career/interview_2024/company/TSMC/ed.md",
-    "03_career/interview_2024/company/TSMC/ed.md.edtz",
     "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",
-    "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md.edtz",
     "03_career/interview_2024/company/TSMC/手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note.md",
-    "03_career/interview_2024/company/TSMC/手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note.md.edtz",
     "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
-    "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md.edtz",
     "43_軟體工具tools/mac_idx.md",
     "conflict-files-obsidian-git.md",
-    "conflict-files-obsidian-git.md.edtz",
     "901_fleeting_note/IntelliJ.md",
     "43_軟體工具tools/2025_01_10_08_16 Mac 時代的筆記.md",
-    "43_軟體工具tools/karabinar.md",
-    "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md",
-    "12_Backend/k8s/k8s_idx.md",
-    "901_fleeting_note/除濕機  to buy.md",
-    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
-    "04_family/在麥肯錫工作會發現一些有趣的事.md"
+    "43_軟體工具tools/karabinar.md"
   ]
 }
