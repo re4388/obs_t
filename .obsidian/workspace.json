@@ -67,8 +67,7 @@
               "title": "keyboard_idx"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,8 +211,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "322c2b365e7d2b53",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "43_軟體工具tools/keyboard_idx.md",
     "43_軟體工具tools/win_idx.md",
     "11_db/mySQL idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
@@ -221,7 +221,6 @@
     "30_程式語言/尚硅谷-juc-高并发.md",
     "03_career/interview_2024/company/TSMC/ed.md",
     "03_career/interview_2024/company/TSMC/ed.md.edtz",
-    "43_軟體工具tools/keyboard_idx.md",
     "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",
     "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md.edtz",
     "100_attachements/Pasted image 20250115211757.png",
