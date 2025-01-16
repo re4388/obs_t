@@ -76,6 +76,14 @@ try this IDEA debug skill
 - [ ] [Spring面试教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
 - [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
 - [ ] [01 尚硅谷 JavaSE面试题：自增变量 高清 1080P - YouTube](https://www.youtube.com/watch?v=v36fF91LUp8&list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
+- [ ] [千锋教育java视频教程京东Java技术专家教你轻松破解Java面试题，猛搞大厂offer ！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dY4y1Y7pC/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [千锋教育Java大厂面试宝典200题（含美团、字节、阿里等真题及面试答题技巧）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nM41147P2/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+
+千鋒
+[千锋教育java教程SpringBoot2全套，springboot快速入门到项目实战视频教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gN4y1V7zT/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
 ==
