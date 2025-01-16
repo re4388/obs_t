@@ -1,35 +1,30 @@
-尚硅谷高级技术之 JUC 高并发编程
-
+## note
 - [【尚硅谷】【2021最新版】跳槽大厂必备技术之JUC高并发编程 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGuxM62QOkUwD_zroNZj-a7)
-- [document\_classfication/微服务技术栈/并发编程/尚硅谷-juc-高并发 at master · re4388/document\_classfication · GitHub](https://github.com/re4388/document_classfication/tree/master/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%8A%80%E6%9C%AF%E6%A0%88/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E5%B0%9A%E7%A1%85%E8%B0%B7-juc-%E9%AB%98%E5%B9%B6%E5%8F%91)
-- 或是 google search 尚硅谷 JUC 高并发编程 -> [尚硅谷 JUC 高并发编程 - Google 搜尋](https://www.google.com/search?q=%E5%B0%9A%E7%A1%85%E8%B0%B7+JUC+%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B&rlz=1C5CHFA_enTW1035TW1035&oq=%E5%B0%9A%E7%A1%85%E8%B0%B7+JUC+%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg9MgYIAhBFGD0yBggDEEUYPdIBBzI1NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
-- note:
-	- [基础JUC高并发编程-尚硅谷 - 起跑线小言 - 博客园](https://www.cnblogs.com/qipaoxian/p/16860243.html)
+- [尚硅谷-juc-高并发 at master GitHub](https://github.com/re4388/document_classfication/tree/master/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%8A%80%E6%9C%AF%E6%A0%88/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E5%B0%9A%E7%A1%85%E8%B0%B7-juc-%E9%AB%98%E5%B9%B6%E5%8F%91)
+- [基础JUC高并发编程-尚硅谷 - 起跑线小言 - 博客园](https://www.cnblogs.com/qipaoxian/p/16860243.html)
 
 ## 1 进程与线程的概念
 
 ### 1.1 进程和线程
 
-进程（Process）是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。在早期面向进程设计的计算机结构中，进程是程序的基本执行实体；在当代面向线程设计的计算机结构中，进程是线程的容器。程序是指令、数据及其组织形式的描述，进程是程序的实体。
+进程（Process）
+- 计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。
+- 在早期面向进程设计的计算机结构中，进程是程序的基本执行实体
+- 在当代面向线程设计的计算机结构中，进程是线程的容器。
 
-线程（英语：thread）是操作系统能够进行运算调度的最小单位。它被包含在进程之中，是进程中的实际运作单位。一条线程指的是进程中一个单一顺序的控制流，一个进程中可以并发多个线程，每条线程并行执行不同的任务。
+线程（英语：thread）
+- 是操作系统能够进行运算调度的最小单位。
+- 被包含在进程之中，是进程中的实际运作单位。
+- 一条线程指的是进程中一个单一顺序的控制流，一个进程中可以并发多个线程，每条线程并行执行不同的任务。
 
-总结来说：
-
-进程：指在系统中正在运行的一个应用程序；程序一旦运行就是进程；进程是资源分配的最小单位
-
-线程：系统分配处理器时间资源的基本单元，或者说进程之内独立执行的一个单元执行流。线程时程序执行的最小单位
 
 ### 1.2 线程的状态
 
-进入 java.lang.Thread 类，找到内部类 State ，代码略
-
+进入 java.lang.Thread 类，找到内部类 State 
 可以看出 NEW（新建）、RUNNABLE（准备就绪）、BLOCKED（阻塞）、WAITING（等待 - 不见不散）、
-
 TIMED_WAITING（等待 - 过时不候）、TERMINATED（终结） 等六种状态
 
 ### 1.3 wait 和 sleep
-
 1. sleep 是 Thread 的静态方法；wait 是 Object 的方法，任何对象实例都能调用。
 2. **sleep 不会释放锁**，**它也不需要占用锁**；**wait 会释放锁**，**但调用它的前提是当前线程占有锁（即代码要在 synchronized 中）**
 3. 它们都可以被 interrupt 方法中断
@@ -42,19 +37,17 @@ TIMED_WAITING（等待 - 过时不候）、TERMINATED（终结） 等六种状�
 
 并行：同一时刻多个线程正在执行
 
-### 1.5 管程
+### 1.5 管程 
 
 保证了同一时刻只有一个进程在管程内活动，即管程内定义的操作在同一时刻只被一个进程调用 (由编译器实现)。
 
 ### 1.6 用户线程和守护线程
 
 用户线程：自定义线程
-
-主线程结束了，用户线程还在运行，jvm 还存活
+主线程结束了，只要有用户线程还在运行，jvm 繼續-> 程序繼續跑
 
 守护线程：比如说垃圾回收线程
-
-没有用户线程了，只有守护线程，jvm 结束
+如果没有用户线程，只剩下守护线程 -> 程序結束
 
 ```java
 public class MyThread {
@@ -92,14 +85,17 @@ public class MyThread {
 ### 2.1 复习 synchronized
 
 synchronized 的作用范围  
-synchronized 是 Java 的关键字，是一种同步锁，能够修饰 一个对象，变量，方法，来控制这个所修饰的，被顺序的访问。
+synchronized 是 Java 的关键字，是一种同步锁
+能够修饰 一个对象，变量，方法，来控制这个所修饰的scope
+
+
+
 
 使用 synchronized 实现卖票例子
 
 多线程的编程步骤：
-
-**第一：创建一个资源类，属性和操作方法**
-**第二：创建多线程，调用资源类里面的操作方法**
+**第一：创建一个资源类，裡面會有属性和業務方法**
+**第二：创建多线程调用资源类
 
 ```java
 
@@ -152,7 +148,7 @@ Lock 实现提供比使用 synchronized 方法和语句可以获得的更广泛�
 
 Lock 实现提供了使用 synchronized 方法和语句的附加功能，通过提供非阻塞尝试来获取锁 tryLock ()，尝试获取可被中断的锁 lockInterruptibly () ，以及尝试获取可以超时 tryLock (long, TimeUnit)。
 
-##### Lock 实现可重入锁
+##### Lock 实现可重入锁 ReentrantLock
 
 ```java
 // 创建可重入锁
@@ -175,7 +171,7 @@ try {
 1. 继承 Thread 类、
 2. 实现 Runnable 接口、
 
-> 实现代码在上面已经使用，这里不再赘述。**实现 Runnable 接口**是主要创建线程的方法之一
+> 实现代码在上面已经使用，这里不再赘述。**实现 Runnable 接口** 是主要创建线程的方法之一
 
 3. 使用 Callable 接口
 4. 使用线程池
@@ -197,17 +193,20 @@ class Ticket{
             lock.lock();
 
             if (rest > 0)
-                System.out.println(Thread.currentThread().getName() + "卖出一张票，还剩：" + --rest + "张；");
-        }finally {
+                System.out.println(Thread.currentThread().getName() + "sell 1, left:" + --rest);
+        } finally {
             //解锁
-            lock.unlock();
+            lock.unlock()
         }
     }
 }
 
 public class LSaleTicketTest {
+
     public static void main(String[] args) {
+        
         Ticket ticket = new Ticket();
+        
         Runnable r = new Runnable() {
             @Override
             public void run() {
@@ -216,6 +215,7 @@ public class LSaleTicketTest {
                 }
             }
         };
+    
         new Thread(r, "A").start();
         new Thread(r, "B").start();
         new Thread(r, "C").start();
@@ -247,7 +247,7 @@ public class LSaleTicketTest {
 线程间通信的模型有两种：共享内存和消息传递
 
 线程间的通信具体步骤：（涉及上中下部）
-1. 创建资源类，在资源类中船舰属性和操作方法
+1. 创建资源类，在资源类中建立属性和操作方法
 2. 在资源类操作方法：判断、操作、通知
 3. 创建多个线程，调用资源类的操作方法
 4. 防止虚拟唤醒问题
@@ -451,7 +451,7 @@ public class InterThreadCommunication {
 
 现在 C 被唤醒，由于 wait () 方法使线程**在哪里睡就在哪里醒**，所以接下来 C 在执行时不会再通过 if 判断而是直接 + 1，此时 number 就是 2 了。从而导致最后输出的结果和我们预想的不一致。
 
-按照 JDK1.8 文档的提示，将资源类的 incr () 方法和 decr () 方法中的 if 语句改为**循环语句**，修改代码如下：
+按照 JDK1.8 文档的提示，将资源类的 incr () 方法和 decr () 方法中的 if 语句改为 *while 循环语句*，修改代码如下：
 
 ```java
 // 创建一个资源类
@@ -604,7 +604,6 @@ class Share {
 案列：启动三个线程，按照如下要求：
 
 > AA 打印 5 此，BB 打印 10 次，CC 打印 15 次，一共进行 10 轮
-> 
 > 可以打印多轮
 
 **具体思路：**  
@@ -986,13 +985,14 @@ public V put(K key, V value) {
 
 某一个时刻内，**只能有唯一一个线程去访问这些 synchronized 方法**
 
-所有的 静态同步方法用的也是同一把锁 —— 类对象本身，这两把锁是两个不同的对象，所以静态同步方法与非静态同步方法之间是不会有竞态条件的，但是一旦一个静态同步方法获取锁后，其他的静态同步方法都必须等待该方法释放锁后才能获取锁，而不管是同一个实例对象的静态同步方法之间，还是不同的实例对象的静态同步方法之间，只要它们同一个类的实例对象
+- 所有的静态同步方法用的也是同一把锁，就是类对象本身
+- 这两把锁是两个不同的对象，所以静态同步方法与非静态同步方法之间是不会有竞态条件
+- 一旦一个静态同步方法获取锁后，其他的静态同步方法都必须等待该方法释放锁后才能获取锁
+	- 其他的静态同步方法的意思？不管是同一个实例对象的静态同步方法，还是不同的实例对象的静态同步方法，只要它们同一个类的实例对象，就要等
 
-synchronized 锁的是方法，则是对象锁，同个对象锁的机制要等待，不同对象锁的机制调用同一个不用等待
-
-加了 static 则为 class 锁而不是对象锁
-
-对于同步方法块，锁是 synchronized 括号里配置对象
+- synchronized 锁的是方法，则是对象锁，同个对象锁的机制要等待，不同对象锁的机制调用同一个不用等待
+- 加了 static 则为 class 锁而不是对象锁
+- 对于同步方法块，锁是 synchronized 括号里配置对象
 
 ### 6.1 synchronized 锁的八种情况
 
@@ -1147,11 +1147,11 @@ Java Thread 之 Sleep () 使用方法总结
 ### 6.2 对上述例子的总结
 
 > 同样的对象访问不同的同步锁，是按照顺序执行  
-> 同样的对象访问同步锁与不同步锁，是先不同步锁执行  
-> 不同对象访问不同同步锁，按照顺序执行
+> 不同对象访问不同的同步锁，按照顺序执行
+> 同样的对象访问同步锁和不同步锁，不同步锁先执行  
 
-> 同一对象访问不同静态同步锁，按照顺序执行  
-> 不同对象访问不同静态同步锁，按照顺序执行
+> 同一对象访问不同的静态同步锁，按照顺序执行  
+> 不同对象访问不同的静态同步锁，按照顺序执行
 
 > 同一对象访问一个静态同步锁，一个同步锁，先执行同步锁  
 > 不同对象访问一个静态同步锁，一个同步锁，先执行同步锁，即先出同步锁在出静态同步锁
@@ -1170,13 +1170,11 @@ synchronized 实现同步的基础：Java 中的每一个对象都可以作为�
 - **非公平锁**：效率高，但是线程容易饿死（所有的工作，有一个线程完成）
 
 **用法：** 在创建可 [重入锁] 时，想构造器中传入 true
-
 ```java
 private final ReentrantLock lock = new ReentrantLock(true);
 ```
 
 因为 ReentrantLock 的构造器源码如下：
-
 ```java
 // 在没有传入参数时，默认创建一个非公平锁
 public ReentrantLock() {
@@ -1760,7 +1758,7 @@ public class SemaphoreTest {
 > 5------ 离开了车位  
 > 6------ 离开了车位
 
-## 9 读写锁
+## 9 读写锁 ReentrantReadWriteLock
 
 ### 9.1 悲观锁和乐观锁
 
@@ -2024,7 +2022,7 @@ public class Demo1 {
 
 **如果是读之后再写，执行不了 因为读锁权限小于写锁 需要读完之后释放读锁，在进行写锁**
 
-## 10 阻塞队列
+## 10 阻塞队列 BlockingQueue
 
 ### 10.1 阻塞队列概述
 
@@ -2050,47 +2048,37 @@ BlockingQueue 是一个接口，它的父接口有： Collection ， Iterable �
 1. ArrayBlockingQueue（常用）
 
 > 基于数组的阻塞队列
-> 
 > 由数组结构组成的有界阻塞队列
-> 
 > -ArrayBlockingQueue 在生产者放入数据和消费者获取数据，都是共用同一个锁对象，无法并行 2.
 
 2. LinkedBlockingQueue（常用）
 
 > 基于链表的阻塞队列
-> 
 > 由链表结构组成的有界（但大小默认值为 Integer.MAX_VALUE）阻塞队列
-> 
 > 之所以能够高效的处理并发数据，还因为其对于生产者端和消费者端分别采用了独立的锁来控制数据同步，这也意味着在高并发的情况下生产者和消费者可以并行地操作队列中的数据，以此来提高整个队列的并发性能
 
 3. DelayQueue
 
 > 3. 使用优先级队列实现的延迟无界阻塞队列
-> 
 > DelayQueue 中的元素只有当其指定的延迟时间到了，才能够从队列中获取到该元素。
-> 
 > DelayQueue 是一个没有大小限制的队列，因此往队列中插入数据的操作（生产者）永远不会被阻塞，而只有获取数据的操作（消费者）才会被阻塞
 
 4. PriorityBlockingQueue
 
 > 基于优先级的阻塞队列
-> 
 > 支持优先级排序的无界阻塞队列
-> 
 > 不会阻塞数据生产者，而只会在没有可消费的数据时，阻塞数据的消费者
 
 5. SynchronousQueue
 
 > 一种无缓冲的等待队列
-> 
 > 相对于有缓冲的 BlockingQueue 来说，少了一个中间经销商的环节（缓冲区）
-> 
 > 不存储元素的阻塞队列，也即单个元素的队列
 
-声明一个 SynchronousQueue 有两种不同的方式，它们之间有着不太一样的行为。公平模式和非公平模式的区别:
 
+
+声明一个 SynchronousQueue 有两种不同的方式，它们之间有着不太一样的行为。公平模式和非公平模式的区别:
 - 公平模式：SynchronousQueue 会采用公平锁，并配合一个 FIFO 队列来阻塞，多余的生产者和消费者，从而体系整体的公平策略；
-    
 - 非公平模式（SynchronousQueue 默认）：SynchronousQueue 采用非公平锁，同时配合一个 LIFO 队列来管理多余的生产者和消费者
     
 
@@ -2207,7 +2195,7 @@ System.out.println(blockingQueue.take());
 System.out.println(blockingQueue.offer("w",3L, TimeUnit.SECONDS));
 ```
 
-## 11 线程池
+## 11 线程池 Executor
 
 ### 11.1 线程池概述
 

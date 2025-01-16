@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+                "file": "30_程式語言/尚硅谷-juc-高并发.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tsmc techinical prep"
+              "title": "尚硅谷-juc-高并发"
             }
           },
           {
@@ -193,14 +193,15 @@
       "templater-obsidian:Templater": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
       "edit-history:Open edit history": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "74f4c96e70f244c9",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "03_career/interview_2024/company/TSMC/ed.md",
     "03_career/interview_2024/company/TSMC/ed.md.edtz",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/keyboard_idx.md",
     "30_程式語言/Spring.md",
     "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",
