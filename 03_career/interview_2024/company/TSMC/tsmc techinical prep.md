@@ -50,26 +50,25 @@
 
 
 ## 文字類可以看
-- [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
-- [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
-- [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
-- [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南，内容涵盖Java基础、Java并发编程、Java虚拟机、Java企业级开发、Java面试等核心知识点。学Java，就认准二哥的Java进阶之路😄](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
-- [[Java 并发编程面试题]]
-- [[Java 集合面试题]]
-- [[Java 基礎面試題]]
-- [[Spring 面试题]]
-- [[MySQL 面試題]]
-- [[Java 虛拟機面試題]]
+- [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
+- [ ] [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
+- [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
+- [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南，内容涵盖Java基础、Java并发编程、Java虚拟机、Java企业级开发、Java面试等核心知识点。学Java，就认准二哥的Java进阶之路😄](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
+- [ ] [[Java 并发编程面试题]]
+- [ ] [[Java 集合面试题]]
+- [ ] [[Java 基礎面試題]]
+- [ ] [[Spring 面试题]]
+- [ ] [[MySQL 面試題]]
+- [ ] [[Java 虛拟機面試題]]
 
 
 
 ## 正在看
 
 
-
+- [ ] [Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
+- [ ] [Spring面试教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
 - [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
-- [ ] 
-
 - [ ] [01 尚硅谷 JavaSE面试题：自增变量 高清 1080P - YouTube](https://www.youtube.com/watch?v=v36fF91LUp8&list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
 
 
