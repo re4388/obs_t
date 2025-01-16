@@ -8,13 +8,15 @@ related:
 
 ## intelliJ 常用
 alt+i -> go to implement
-alt+m -> file structure
+alt+m (method) -> file structure
 alt+o → code/override method
 alt+h → type hierarchy → 可以用來看有哪一些 （可以用的）實現類
 alt+g (graph) -> show diagram popup
-ctrl+g -> generate 
 alt+t -> (trigger) code complete
 alt+e -> recent file
+
+ctrl+g -> generate 
+
 f1: search everything
 alt+2: go to class
 alt+s: find in file
@@ -114,7 +116,7 @@ Ctrl + Shift + Esc：快速開啟工作管理員
     - ~~recent location~~
     - win10/vscode/go to file… → 先不設定，可以用 f1 拿掉 `>` 取代
     - wiin10/idea/ 先不設定，因為f1就可以兼具go to files的功能了
-    - no use now
+    - recent file
 - d
     - go to declaration (idea)  go to definition (vscode)
 - c
@@ -127,15 +129,7 @@ Ctrl + Shift + Esc：快速開啟工作管理員
     - quick fix (show context Actions in IntelliJ)
 - v
     - pure paste
-    - win10/ use powertoy to remap
-- t
-    - go to type declaration
-    - 有點不好按, 很少用
-    - no use now
-- g
-    - intelli `Run`, 常用於ts-typescript project, quick prototype, bun run 等
-    - vscode → run last command
-    - win10/idea → generate
+    - win10/ use powertoy to remap remove-foramting paste
 - b
     - show bookmark (alt+m 是mark bookmark)
     - no use now → 很多時候，我覺得還是把 code 複製到筆記本來還比較方便
@@ -149,18 +143,16 @@ Ctrl + Shift + Esc：快速開啟工作管理員
     - reformat code  (vscode: format document)
 - j (global)
     - win10 /autohotkey ()
-- i
-    - win10/vsocde trigger suggest(vscode)
-    - win10/idea/code complete basic (顯示 code complete的意思）
 - k (global)
     - win10 /autohotkey []
 - ,
     - show VCS, like git stash, unstack, commit…etc
-    - no use for now, using tower
+    - no use for now
 - `l`  (global)
     - win10 /autohotkey  {}
 - `.`
     - show git graph
+    - no use for now
 
 - `\`
     - open terminal in current folder. , 看 IDE 配置,
@@ -168,18 +160,18 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 - p
     - go to project window
     - ray-cast → open jetbrain toolbar project recent window
+    -  no use for now
 - `;`  (global)
     - mac : global clipboard Maccy
     - win10: mapping to win+v, built in clipboard manager
 - `/`  (global)
     - iterm2 hotkey window
-    - win10 no use for now
+    -  no use for now
 - `[`   (global)
     - home
 - `‘` NO USE
 - `]`   (global)
     - end
-
 
 ## functional key (f1~f12)
 - f1
