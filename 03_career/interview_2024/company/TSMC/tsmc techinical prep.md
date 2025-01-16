@@ -36,11 +36,10 @@
 	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
 - [x] [手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - YouTube](https://www.youtube.com/watch?v=F7SRQpfp5hY&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z)
 	- [[手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note]]
-- [ ] [spring面试题讲解 - YouTube](https://www.youtube.com/watch?v=r9KhjXBG5VI&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z&index=2)
-	- [ ] [Spring核心知识点吐血整理 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/5fb52132e0b34d0d2240f000)
-	- [ ] [[spring面试题讲解 note]]
-- [ ] 
-- [ ] [最详细的 Spring 源码面试教程](https://www.youtube.com/watch?v=1vPUoYnME1s&list=PLjwE8m3kyOldeAKbif_UazwIWUEMZ7Au4)
+- [x] [spring面试题讲解 - YouTube](https://www.youtube.com/watch?v=r9KhjXBG5VI&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z&index=2)
+	- [Spring核心知识点吐血整理 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/5fb52132e0b34d0d2240f000)
+	- [[spring面试题讲解 note]]
+- [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
 
 ## 正在看
 
