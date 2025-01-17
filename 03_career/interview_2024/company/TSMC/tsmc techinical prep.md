@@ -59,6 +59,28 @@
 		- [尚硅谷第三季大厂面试题笔记-CSDN博客](https://blog.csdn.net/PpX1v/article/details/116053772?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6)
 		- [尚硅谷Java大厂面试题第3季学习笔记\_尚硅谷面试笔记-CSDN博客](https://blog.csdn.net/jiaxm123456/article/details/128143574?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=5)
 
+
+## to see
+
+
+- [ ] 可以看看講的好不好？ [7、BeanFactory的作用\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kmkqY9E35?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
+
+
+- [ ] [Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
+- [ ] [Spring面试教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
+- [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
+- [ ] [01 尚硅谷 JavaSE面试题：自增变量 高清 1080P - YouTube](https://www.youtube.com/watch?v=v36fF91LUp8&list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
+- [ ] [千锋教育java视频教程京东Java技术专家教你轻松破解Java面试题，猛搞大厂offer ！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dY4y1Y7pC/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [千锋教育Java大厂面试宝典200题（含美团、字节、阿里等真题及面试答题技巧）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nM41147P2/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] Java 面试题第一季：[BV1Eb411P7bP](https://www.bilibili.com/video/BV1Eb411P7bP/?spm_id_from=333.788.video.desc.click) 
+- [ ] Java 面试题第二季：[BV18b411M7xz](https://www.bilibili.com/video/BV18b411M7xz/?spm_id_from=333.788.video.desc.click)
+- [ ] [Fetching Title#lw1r](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [2024年翻遍整个B站，这绝对是最好的Java架构师面试知识点合集，15天吃透，少走99%的弯路！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1n1421r72b?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- [ ] 這個很有很source code 分析
+- [ ] [2024年吃透经典Java面试题200问，7天学完，让你面试少走99%弯路！！【存下吧，附80W字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kt4y1o7QV?spm_id_from=333.788.recommend_more_video.1&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
 ## 文字類可以看
 - [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
 - [ ] [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
@@ -73,36 +95,13 @@
 - [ ] [[Spring 面试题]]
 - [ ] [[MySQL 面試題]]
 - [ ] [[Java 虛拟機面試題]]
-
-
-
-try this IDEA debug skill
-- [ ] [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
-
-## 正在看
-
-
-- [ ] 可以看看講的好不好？ [7、BeanFactory的作用\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kmkqY9E35?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
-
-
-- [ ] [Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
-- [ ] [Spring面试教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
-- [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
-- [ ] [01 尚硅谷 JavaSE面试题：自增变量 高清 1080P - YouTube](https://www.youtube.com/watch?v=v36fF91LUp8&list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
-- [ ] [千锋教育java视频教程京东Java技术专家教你轻松破解Java面试题，猛搞大厂offer ！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dY4y1Y7pC/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [ ] [千锋教育Java大厂面试宝典200题（含美团、字节、阿里等真题及面试答题技巧）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nM41147P2/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 
 
 
 千鋒
 [千锋教育java教程SpringBoot2全套，springboot快速入门到项目实战视频教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gN4y1V7zT/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
-
-==
-
-看java 面試
-Java 面试题第一季：[BV1Eb411P7bP](https://www.bilibili.com/video/BV1Eb411P7bP/?spm_id_from=333.788.video.desc.click) 
-Java 面试题第二季：[BV18b411M7xz](https://www.bilibili.com/video/BV18b411M7xz/?spm_id_from=333.788.video.desc.click)
 
 
 sprint boot
@@ -113,7 +112,6 @@ sprint boot
 
 
 看分布鎖
-
 
 
 最後想要再 review sprint boot3
