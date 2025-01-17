@@ -16,6 +16,8 @@ alt+t -> (trigger) code complete
 alt+e -> recent file
 alt+\ -> run  
 alt+eneter -> show context action
+`alt + [`  -> move caret to text start
+`alt + ]`  -> move caret to text end
 
 ctrl+g -> generate 
 
