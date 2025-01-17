@@ -67,7 +67,8 @@
               "title": "Compare and swap CAS"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -211,10 +212,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5c5e1697fc2fe5f6",
+  "active": "322c2b365e7d2b53",
   "lastOpenFiles": [
-    "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
     "03_career/interview_2024/company/TSMC/MySQL 面試題.md",
     "100_attachements/Pasted image 20250116161817.png",
     "100_attachements/Pasted image 20250116161801.png",

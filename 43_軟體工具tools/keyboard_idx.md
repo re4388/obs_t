@@ -14,6 +14,7 @@ alt+h → type hierarchy → 可以用來看有哪一些 （可以用的）實�
 alt+g (graph) -> show diagram popup
 alt+t -> (trigger) code complete
 alt+e -> recent file
+alt+\ -> run  
 
 ctrl+g -> generate 
 
