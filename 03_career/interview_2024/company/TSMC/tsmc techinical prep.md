@@ -51,6 +51,7 @@
 - [ ] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
 - [ ] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
+	- [ ] 54~67 先 pass, algo and leetcode
 	- note and code: 
 		- [GitHub - re4388/atguigu\_interview\_three: 尚硅谷 周阳 Java大厂面试题第三季](https://github.com/re4388/atguigu_interview_three)
 		- [尚硅谷大厂面试题第三季周阳主讲整理笔记\_尚硅谷周阳第三季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128364180?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=10)
