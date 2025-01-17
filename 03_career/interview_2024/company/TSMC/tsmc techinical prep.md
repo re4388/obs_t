@@ -233,8 +233,13 @@ maybe needed
 
 
 ### cloud 相關
+
+
+- [尚硅谷2025最新SpringCloud教程，springcloud从入门到大牛\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UJc2ezEFU/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [尚硅谷SpringCloud教程，springcloud从入门到大牛\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
 - [K8S：尚硅谷Kubernetes教程(K8s入门到精通)](https://www.bilibili.com/video/BV1w4411y7Go/?spm_id_from=333.788.comment.all.click)
-- [【尚硅谷】Kafka分布式订阅消息系统\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Nb411A7Ln/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0) 
 - [rabbitMQ [尚硅谷RabbitMQ教程丨快速掌握MQ消息中间件rabbitmq\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1cb4y1o7zz/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [【韩顺平】尚硅谷Netty视频教程 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJH02M10mFnBW0yPRnLmRSMo&si=Kp7JNDDTSZQnDePV)
 - [(843) 001 尚硅谷 Netty核心技术及源码剖析 课程说明和要求 - YouTube](https://www.youtube.com/watch?v=HY4lLEboz8U&list=PLmOn9nNkQxJH02M10mFnBW0yPRnLmRSMo)
