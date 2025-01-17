@@ -15,6 +15,7 @@ alt+g (graph) -> show diagram popup
 alt+t -> (trigger) code complete
 alt+e -> recent file
 alt+\ -> run  
+alt+eneter -> show context action
 
 ctrl+g -> generate 
 
