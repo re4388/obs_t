@@ -18,6 +18,7 @@ alt+\ -> run
 alt+eneter -> show context action
 `alt + [`  -> move caret to text start
 `alt + ]`  -> move caret to text end
+alt+w  (wrap) - surround with
 
 ctrl+g -> generate 
 
