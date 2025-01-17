@@ -82,8 +82,7 @@
               "title": "mySQL idx"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,8 +226,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4050a3fa88b0fcf7",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "11_db/mySQL idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/keyboard_idx.md",
     "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
@@ -264,7 +264,6 @@
     "03_career/interview_2024/company/TSMC/math 取模.md",
     "03_career/interview_2024/company/TSMC/math 取模.md.edtz",
     "03_career/interview_2024/company/TSMC/note on source code on java hashmap.md.edtz",
-    "11_db/mySQL idx.md",
     "30_程式語言/尚硅谷-juc-高并发.md",
     "03_career/interview_2024/company/TSMC/ed.md",
     "03_career/interview_2024/company/TSMC/spring面试题讲解 note.md",

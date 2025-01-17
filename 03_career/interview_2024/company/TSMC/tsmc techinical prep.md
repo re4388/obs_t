@@ -101,7 +101,8 @@ try this IDEA debug skill
 ==
 
 看java 面試
-
+Java 面试题第一季：[BV1Eb411P7bP](https://www.bilibili.com/video/BV1Eb411P7bP/?spm_id_from=333.788.video.desc.click) 
+Java 面试题第二季：[BV18b411M7xz](https://www.bilibili.com/video/BV18b411M7xz/?spm_id_from=333.788.video.desc.click)
 
 
 sprint boot
