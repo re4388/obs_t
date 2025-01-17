@@ -51,7 +51,12 @@
 - [ ] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
 - [ ] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
-	- note: [GitHub - re4388/atguigu\_interview\_three: 尚硅谷 周阳 Java大厂面试题第三季](https://github.com/re4388/atguigu_interview_three)
+	- note and code: 
+		- [GitHub - re4388/atguigu\_interview\_three: 尚硅谷 周阳 Java大厂面试题第三季](https://github.com/re4388/atguigu_interview_three)
+		- [尚硅谷大厂面试题第三季周阳主讲整理笔记\_尚硅谷周阳第三季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128364180?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=10)
+		- [阳哥大厂面试题第三季\_OnebyWang的博客-CSDN博客](https://blog.csdn.net/oneby1314/category_10692968.html)
+		- [尚硅谷第三季大厂面试题笔记-CSDN博客](https://blog.csdn.net/PpX1v/article/details/116053772?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6)
+		- [尚硅谷Java大厂面试题第3季学习笔记\_尚硅谷面试笔记-CSDN博客](https://blog.csdn.net/jiaxm123456/article/details/128143574?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=5)
 
 ## 文字類可以看
 - [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
