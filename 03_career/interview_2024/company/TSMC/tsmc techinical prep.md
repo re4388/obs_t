@@ -82,6 +82,9 @@ try this IDEA debug skill
 ## 正在看
 
 
+- [ ] 可以看看講的好不好？ [7、BeanFactory的作用\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kmkqY9E35?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
+
+
 - [ ] [Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
 - [ ] [Spring面试教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
 - [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
