@@ -63,7 +63,7 @@
 
 - [ ] add this live template
 
-sleepinsec
+sleepinsecew32qa``
 
 3 is variable
 ![[IMG-tsmc techinical prep-20250118121806495.png]]
