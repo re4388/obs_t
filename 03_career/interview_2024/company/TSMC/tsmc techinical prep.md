@@ -13,7 +13,7 @@
 
 # course/material done
 
-## done
+## done and ing
 - [x] [[Effective Java 3rd]] 
 - [x] 很多 IT 邦的 and 新手工程師的程式教室的文章 看 [[Java_idx]]
 - [x] [[尚硅谷-juc-高并发]]
@@ -53,6 +53,7 @@
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
 - [ ] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
 	- [ ] 03~05 2sum算法題先跳過
+	- [ ] 64~69 手寫 LRU cache 跳過
 	- note and code: 
 		- [GitHub - re4388/atguigu\_interview\_three: 尚硅谷 周阳 Java大厂面试题第三季](https://github.com/re4388/atguigu_interview_three)
 		- [尚硅谷大厂面试题第三季周阳主讲整理笔记\_尚硅谷周阳第三季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128364180?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=10)
@@ -65,32 +66,35 @@
 	-  https://blog.csdn.net/weixin_65777087/article/details/128228369
 - [ ]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
 	- note
-	- [GitHub - re4388/JUC: 尚硅谷 大厂学院 大厂-JUC 周阳 大厂高阶班之 JUC并发编程与源码分析 尚硅谷讲师:周阳 2021.3V2.6](https://github.com/re4388/JUC)
+	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
 	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
 	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
 
-## to see
+# to see
 
 
-- [ ] 可以看看講的好不好？ [7、BeanFactory的作用\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kmkqY9E35?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
-
-
+## 面試
+- [ ] [2024版 Java架构师面试真题，让你面试少走99%弯路【对标阿里P6 P7附80万字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [ ] [Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
 - [ ] [Spring面试教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
-- [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
-- [ ] [01 尚硅谷 JavaSE面试题：自增变量 高清 1080P - YouTube](https://www.youtube.com/watch?v=v36fF91LUp8&list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
 - [ ] [千锋教育java视频教程京东Java技术专家教你轻松破解Java面试题，猛搞大厂offer ！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dY4y1Y7pC/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [ ] [千锋教育Java大厂面试宝典200题（含美团、字节、阿里等真题及面试答题技巧）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nM41147P2/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [ ] Java 面试题第一季：[BV1Eb411P7bP](https://www.bilibili.com/video/BV1Eb411P7bP/?spm_id_from=333.788.video.desc.click) 
-- [ ] Java 面试题第二季：[BV18b411M7xz](https://www.bilibili.com/video/BV18b411M7xz/?spm_id_from=333.788.video.desc.click)
-- [ ] [Fetching Title#lw1r](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [01 尚硅谷 JavaSE面试题：自增变量 高清 1080P - YouTube](https://www.youtube.com/watch?v=v36fF91LUp8&list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
 - [ ] [2024年翻遍整个B站，这绝对是最好的Java架构师面试知识点合集，15天吃透，少走99%的弯路！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1n1421r72b?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
 	- [ ] 這個很有很source code 分析
 - [ ] [2024年吃透经典Java面试题200问，7天学完，让你面试少走99%弯路！！【存下吧，附80W字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kt4y1o7QV?spm_id_from=333.788.recommend_more_video.1&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
+- [ ] [谷粒商城项目 408集（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
 
 
 
-## 文字類可以看
+
+- [ ] 可以看看講的好不好？ [7、BeanFactory的作用\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kmkqY9E35?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
+- [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
+
+
+
+## 文字類
 - [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
 - [ ] [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
 - [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
@@ -183,49 +187,45 @@ sprint boot
 
 maybe needed
 25 集[1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
-## 面試題
-- [MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
-- [谷粒商城项目 408集（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
-- [尚融宝 Java微服务分布式金融项目 428集](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
 
 
-## 其他
 
 
-### 專題項目影片
+## 專題項目影片
 - [硅谷课堂：【尚硅谷&腾讯云】Java项目硅谷课堂丨微服务丨在线学习平台](https://www.bilibili.com/video/BV13T411372x/?spm_id_from=333.788.comment.all.click)
 - [尚品甄选：SpringBoot+SpringCloud萌新学会企业级java项目](https://www.bilibili.com/video/BV1NF411S7DS/?spm_id_from=333.788.comment.all.click)
 - [尚上优选：尚上优选》企业级Java项目](https://www.bilibili.com/video/BV19M4y1q7Lt/?spm_id_from=333.788.comment.all.click)
 - [尚庭公寓：从0开始Java项目实战](https://www.bilibili.com/video/BV1At421K7gP/?spm_id_from=333.788.comment.all.click)
 - [乐尚代驾 微信小程序+最新技术栈，java微服务项目](https://www.bilibili.com/video/BV1nW421R7qJ/?spm_id_from=333.788.comment.all.click)
+- [尚融宝 Java微服务分布式金融项目 428集](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
 
 
-設計模式
+## 設計模式
 - [【韩顺平】图解Java设计模式 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt)
 	- [GitHub - re4388/NOTE\_DesignPatterns: 尚硅谷Java设计模式（图解+框架源码剖析）学习笔记](https://github.com/re4388/NOTE_DesignPatterns)
 	- [尚硅谷—韩顺平—图解 Java设计模式（1～27）\_设计模式笔记 韩顺平-CSDN博客](https://blog.csdn.net/qq_43056248/article/details/123179123)
 	- D:\all_book\java book 中的 尚硅谷_韩顺平_图解Java设计模式
 
-### 前端
+## 前端
 - [尚硅谷 react-哔哩哔哩\_bilibili](https://search.bilibili.com/all?keyword=%E5%B0%9A%E7%A1%85%E8%B0%B7+react&from_source=webtop_search&spm_id_from=333.1007&search_source=5)
 - [尚硅谷 vue-哔哩哔哩\_bilibili](https://search.bilibili.com/all?keyword=%E5%B0%9A%E7%A1%85%E8%B0%B7+vue&from_source=webtop_search&spm_id_from=333.1007&search_source=5)
 
 
 
-### db
+## db
 -  [MySQL数据库入门到大牛，mysql安装到优化，百科全书级，全网天花板\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1iq4y1u7vj/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [JDBC: 尚硅谷JDBC教程 | jdbc基础到高级一套通关！](https://www.bilibili.com/video/BV1Tx421S7HZ/?spm_id_from=333.788.comment.all.click)
 - [【尚硅谷】MyBatis零基础入门教程（细致全面，快速上手mybatis）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1VP4y1c7j7/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
-### MyBatis
+## MyBatis
 - [MyBatisPlus：【尚硅谷】MyBatisPlus教程（一套玩转mybatis-plus）](https://www.bilibili.com/video/BV12R4y157Be/?spm_id_from=333.788.comment.all.click)
 - [MyBatis: 【尚硅谷】MyBatis零基础入门教程（细致全面，快速上手mybatis）](https://www.bilibili.com/video/BV1VP4y1c7j7/?spm_id_from=333.788.comment.all.click)
 - [【尚硅谷】SSM框架全套教程，MyBatis+Spring+SpringMVC+SSM整合一套通关 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJFbsU4Qz8CdRiVM4Qs3ci75&si=wkc2IhTTZD8BPmQA)
 
 
 
-### spring
+## spring
 - [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
 - [x] SpringBoot3：尚硅谷SpringBoot零基础教程，面试&加薪必会springboot3](https://www.bilibili.com/video/BV1Es4y1q7Bf/?spm_id_from=333.788.comment.all.click)
 - [SpringCloud：尚硅谷SpringCloud教程，springcloud从入门到大牛](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.788.comment.all.click)
@@ -233,8 +233,7 @@ maybe needed
 - [JavaWeb: 尚硅谷全新JavaWeb教程，企业主流javaweb技术栈](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.788.comment.all.click)
 
 
-### java
-
+## java
 - [Java基础: 尚硅谷Java零基础全套视频教程(宋红康主讲，java入门自学必备)](https://www.bilibili.com/video/BV1PY411e7J6/?spm_id_from=333.788.comment.all.click) 
 	- [x] 課件看過
 - - [尚硅谷2024最新Java入门视频教程（上部）java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1YT4y1H7YM/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)  and [尚硅谷2024最新Java入门视频教程(下部) java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1JZ421a7PX/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
@@ -245,8 +244,7 @@ maybe needed
 
 
 
-### cloud 相關
-
+## cloud 相關
 
 - [尚硅谷2025最新SpringCloud教程，springcloud从入门到大牛\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UJc2ezEFU/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [尚硅谷SpringCloud教程，springcloud从入门到大牛\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
@@ -285,13 +283,5 @@ maybe needed
 # semi-conductor
 - [曲博科技教室 Dr. J Class - YouTube](https://www.youtube.com/@Ansforce/search?query=%E5%8F%B0%E7%A9%8D%E9%9B%BB)
 - [(806) A3-22晶圓的尺寸與良率M2U00109 - YouTube](https://www.youtube.com/watch?v=_DZqVqO1Xlw&list=PLLFCC3QJecRPRBPJunldWjKDZeBBkrdaf&index=21)
-
-
-# java
-- [ ] [[Java_idx]]
-
-# kotlin
-- [[kotlin_inx]]
-- [Learn Kotlin in Y Minutes](https://learnxinyminutes.com/kotlin)
 
 
