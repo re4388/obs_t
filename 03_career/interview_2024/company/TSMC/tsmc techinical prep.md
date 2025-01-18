@@ -61,6 +61,16 @@
 		- [尚硅谷Java大厂面试题第3季学习笔记\_尚硅谷面试笔记-CSDN博客](https://blog.csdn.net/jiaxm123456/article/details/128143574?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=5)
 
 
+- [ ] add this live template
+
+sleepinsec
+
+3 is variable
+![[IMG-tsmc techinical prep-20250118121806495.png]]
+
+threadnamelog
+![[IMG-tsmc techinical prep-20250118122410470.png]]
+
 ## to see
 
 
