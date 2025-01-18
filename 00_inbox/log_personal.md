@@ -1,11 +1,15 @@
 
 
 
+- **talk small and soft**
+- **be strategic at personal skill**
+
+
+
 - [[tsmc techinical prep]]
 
 
 
-- [ ] 旅行的網路
 
 
 - [ ] 把相關要彙整入 TSMC的資料都準備好，帶回台南
