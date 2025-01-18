@@ -191,6 +191,12 @@ maybe needed
 - [乐尚代驾 微信小程序+最新技术栈，java微服务项目](https://www.bilibili.com/video/BV1nW421R7qJ/?spm_id_from=333.788.comment.all.click)
 
 
+設計模式
+- [【韩顺平】图解Java设计模式 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt)
+	- [GitHub - re4388/NOTE\_DesignPatterns: 尚硅谷Java设计模式（图解+框架源码剖析）学习笔记](https://github.com/re4388/NOTE_DesignPatterns)
+	- [尚硅谷—韩顺平—图解 Java设计模式（1～27）\_设计模式笔记 韩顺平-CSDN博客](https://blog.csdn.net/qq_43056248/article/details/123179123)
+	- D:\all_book\java book 中的 尚硅谷_韩顺平_图解Java设计模式
+
 ### 前端
 - [尚硅谷 react-哔哩哔哩\_bilibili](https://search.bilibili.com/all?keyword=%E5%B0%9A%E7%A1%85%E8%B0%B7+react&from_source=webtop_search&spm_id_from=333.1007&search_source=5)
 - [尚硅谷 vue-哔哩哔哩\_bilibili](https://search.bilibili.com/all?keyword=%E5%B0%9A%E7%A1%85%E8%B0%B7+vue&from_source=webtop_search&spm_id_from=333.1007&search_source=5)
