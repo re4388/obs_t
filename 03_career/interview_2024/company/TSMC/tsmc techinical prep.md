@@ -24,6 +24,9 @@
 - [x] [[Spring#【尚硅谷】SpringBoot3 零基础教程]]
 - [x] [[Spring#SpringBoot3响应式编程]]
 - [x] [[Spring#Spring6：尚硅谷Spring零基础入门到进阶]]
+
+-- PS, 上面的筆記連到裡面去看---
+
 - [x] [Maven: 尚硅谷新版Maven教程](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
 - [x] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
@@ -35,14 +38,13 @@
 - [x] [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
 	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
 - [x] [手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - YouTube](https://www.youtube.com/watch?v=F7SRQpfp5hY&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z)
-	- [[手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - note]]
-- [x] [spring面试题讲解 - YouTube](https://www.youtube.com/watch?v=r9KhjXBG5VI&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z&index=2)
+	- [[spring init and spring boot ini 初探- note]]
+- [x] [圖靈：兩個半小時，spring面试题讲解 bean 生命週期初探 - YouTube](https://www.youtube.com/watch?v=r9KhjXBG5VI&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z&index=2)
 	- [Spring核心知识点吐血整理 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/5fb52132e0b34d0d2240f000)
-	- [[spring面试题讲解 note]]
+	- [[spring面试题讲解 bean 生命週期初探 note]]
 - [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
 - [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
-	- source code study for arrayList, hashmap, cocurrentMap
-	- 這邊也講 volite, 同步鎖，重進入鎖
+	- 重點：source code study for arrayList, hashmap, cocurrentMap,  volite, 同步鎖，重進入鎖
 	- [[note on source code on java hashmap]]
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- [[13 道 Java HashMap 精选面试题]]
@@ -68,7 +70,7 @@
 	- note
 		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
 		-  https://blog.csdn.net/weixin_65777087/article/details/128228369
-
+- 
 - [ ] [4x 無死角打擊所有Spring面试題 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
 
 

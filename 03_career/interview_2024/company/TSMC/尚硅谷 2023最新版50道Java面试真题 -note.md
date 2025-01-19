@@ -1,7 +1,7 @@
 
 ref: [Fetching Title#h5xo](https://www.gulixueyuan.com/my/course/580/material?type=material)
 
-# 1 mysql使用innodb引擎，请简述mysql索引的最左前缀如何优化orderby语句。
+# 1 简述mysql索引的最左前缀
 
 ## 关键点：
 
@@ -337,9 +337,9 @@ EXPLAIN SELECT age FROM emp WHERE age>45 ORDER BY age desc,deptid desc,NAME asc;
 
 
 
-# 2 JVM 内存模型中，为什么要区分新生代和年老代，对于新生代，为什么又要区分eden 区survial区?
+# 2 JVM, old, yourung gen, eden and survial?
 
-![image-20230312072639148](img/image-20230312072639148.png)
+![[IMG-尚硅谷 2023最新版50道Java面试真题 -note-20250119103252299.png]]
 
 ## 关键点：
 
@@ -379,24 +379,7 @@ B.Java 程序经编译后会产生 byte code
 C.Java 程序经编译后会产生 DLL
 D.以上都不正确
 
-# 4 请编写一个Java类Testjava，求出100以内既能被2 除又能被3 除的数，并输出到控制台上
-
-```java
-public class Test01 {
-    public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {
-
-            if (i % 2 == 0 && i % 3 ==0){
-
-                System.out.println(i);
-            }
-        }
-    }
-}
-```
-
-
-
+# 4 pass
 
 
 # 5 A 系统远程调用 B 系统的接口，A 系统在完成调用之后，需要更新A 系统本地表
@@ -419,7 +402,7 @@ public class Test01 {
 6. 异步响应式（WebFlux+Spring Data Reactive）
 7. 服务器推（不主动调用，常见系统通知类）
 
-# 问题 2: 对于有这些外部衔接的方法需要注意哪些问题?请写出注意问题及伪代码
+# 问题 2: 外部介接的方法需注意问题?
 
 1. 写好接口文档，方便后续维护和团队协作
 
@@ -508,7 +491,7 @@ public class Test01 {
 
 ```
 
-# 6 
+# 6  @Transactional問題
 
 ![[Pasted image 20250115112032.png]]
 
@@ -534,15 +517,12 @@ public class Test01 {
 关键点：
 
 1.maven
-
 2.springboot pom.xml 父子关系
-
 3.spring-boot-starter
 
 
 
 答：
-
 1. springboot底层使用maven管理依赖，通过控制pom.xml父子关系来完成细节配置，在父pom中定义具体框架和版本号以及额外的信息。
 2. 提供了很多场景的spring-boot-starter 的 pom.xml文件，来标准化的引入依赖避免冲突
 
@@ -1217,7 +1197,7 @@ public class Test03 {
 5. 所有向数据库发送请求的业务必须通过连接池获得数据库连接
 6. 当连接全部在使用中，可以使用队列等待
 
-# 29 写一个正则表达式，验证用户输入的数据是不是身份证号码
+# 29 pass
 
 
 
