@@ -26,6 +26,10 @@ f1: search everything
 alt+2: go to class
 alt+s: find in file
 
+
+alt + backspace: delete to word start 
+ctrl + backspace: delete to line start
+
 ## 還可以利用的
 alt+w
 alt+y
