@@ -86,6 +86,11 @@
 
 
 
+live template
+forthread10
+![[IMG-tsmc techinical prep-20250119112353663.png]]
+
+
 
 - [ ] [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
 	- [ ] 看一下 前 redison的部分   40-51
