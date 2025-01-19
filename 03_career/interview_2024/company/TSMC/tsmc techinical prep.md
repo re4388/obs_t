@@ -49,11 +49,13 @@
 	- [[Compare and swap CAS]]
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
 - [x] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
+	- 重點: interger 比較， bigDecimal, == and equal,  pass by val/ref,  IDEA debug,  threadlocal, graceful shutdown threadPool, mysql idx,  AOP (rate limit, cache layer), 策略模式
 	- [ ] 54~67 先 pass, algo and leetcode
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
-- [ ] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
+- [x] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
+	- 重點：常量池, 重入鎖, lockSupport, AQS, spring circular dep, bean 創建過程,  redis 基礎,  redis 分佈鎖 
 	- [ ] 03~05 2sum算法題先跳過
-	- [ ] 64~69 手寫 LRU cache 跳過
+	- [ ] 64~end 手寫 LRU cache 跳過
 	- note and code: 
 		- [GitHub - re4388/atguigu\_interview\_three: 尚硅谷 周阳 Java大厂面试题第三季](https://github.com/re4388/atguigu_interview_three)
 		- [尚硅谷大厂面试题第三季周阳主讲整理笔记\_尚硅谷周阳第三季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128364180?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=10)
@@ -61,39 +63,49 @@
 		- [尚硅谷第三季大厂面试题笔记-CSDN博客](https://blog.csdn.net/PpX1v/article/details/116053772?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6)
 		- [尚硅谷Java大厂面试题第3季学习笔记\_尚硅谷面试笔记-CSDN博客](https://blog.csdn.net/jiaxm123456/article/details/128143574?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=5)
 - [ ] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
+	- 重點：
+	- 先 skip: 105-112 linux 操作先跳過, 113-120 git 操作先跳過
 	- note
-	-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
-	-  https://blog.csdn.net/weixin_65777087/article/details/128228369
+		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
+		-  https://blog.csdn.net/weixin_65777087/article/details/128228369
+
+- [ ] [4x 無死角打擊所有Spring面试題 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
+
+
+
+
 - [ ]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
 	- note
 	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
 	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
 	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
+
+# to see
+
+
+
+
 - [ ] [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
 	- [ ] 看一下 前 redison的部分   40-51
 	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
 
 
-# to see
-
 
 ## 面試
-- [ ] [2024版 Java架构师面试真题，让你面试少走99%弯路【对标阿里P6 P7附80万字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [ ] [Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
-- [ ] [Spring面试教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
-- [ ] [千锋教育java视频教程京东Java技术专家教你轻松破解Java面试题，猛搞大厂offer ！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dY4y1Y7pC/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [89 2024版 Java架构师面试真题，让你面试少走99%弯路【对标阿里P6 P7附80万字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
+- [ ] [66 千锋教育java视频教程京东Java技术专家教你轻松破解Java面试题，猛搞大厂offer ！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dY4y1Y7pC/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [ ] [千锋教育Java大厂面试宝典200题（含美团、字节、阿里等真题及面试答题技巧）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nM41147P2/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [ ] [01 尚硅谷 JavaSE面试题：自增变量 高清 1080P - YouTube](https://www.youtube.com/watch?v=v36fF91LUp8&list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
-- [ ] [2024年翻遍整个B站，这绝对是最好的Java架构师面试知识点合集，15天吃透，少走99%的弯路！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1n1421r72b?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- [ ] 這個很有很source code 分析
-- [ ] [2024年吃透经典Java面试题200问，7天学完，让你面试少走99%弯路！！【存下吧，附80W字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kt4y1o7QV?spm_id_from=333.788.recommend_more_video.1&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [ ] [MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
-- [ ] [谷粒商城项目 408集（对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
+- [ ] [21 尚硅谷 经典 Java 面试题 第一季 (java面试精讲) - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
+- [ ] [18 集，但每個都2.5 hr ->  2024，最好的Java架构师面试知识点 bilibili](https://www.bilibili.com/video/BV1n1421r72b?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- [ ] 這個很有多source code 分析
+- [ ] [103, 2024年吃透经典Java面试题200问，7天学完，让你面试少走99%弯_bilibili](https://www.bilibili.com/video/BV1kt4y1o7QV?spm_id_from=333.788.recommend_more_video.1&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [101, MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
+- [ ] [谷粒商城项目 408集对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
 
 
 
 
-- [ ] 可以看看講的好不好？ [7、BeanFactory的作用\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kmkqY9E35?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
 - [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
 
 
@@ -162,7 +174,6 @@ sprint boot
 
 圖靈
 - [Mysql性能优化最佳实践视频图灵课堂 - YouTube](https://youtu.be/kgKmOYmZSE0?si=JzG8qS59eanpL5In)
-- [金九银十跳槽加薪必备之80道Java经典面试题图灵学院官方 - YouTube](https://youtu.be/fT4amkcHEpY?si=SkK6XK5KQcND5x27)
 - [Spring Framework核心技术底层原理详解 - YouTube](https://youtu.be/4GEHzMFqvh4?si=oNsmIFAfTeEMHzLd)
 - [图灵学院官方双十一秒杀系统后端Redis高并发架构实战 - YouTube](https://youtu.be/VzB51cyvSDk?si=Hv7QpJgsh66mp5wH)
 - [超高并发下如何对Mysql事务进行优化图灵课堂诸葛老师 - YouTube](https://youtu.be/2xvkCfGeaI4?si=SWuySRgab1Sb7uMr)
