@@ -33,7 +33,7 @@ alt+y
 
 ---
 
-## win key and some window useful keyboard
+## window key
 
 
 Wiindows + 方向鍵：調整視窗大小和最小化應用程式
