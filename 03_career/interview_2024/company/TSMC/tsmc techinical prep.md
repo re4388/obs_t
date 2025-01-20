@@ -69,7 +69,7 @@
 
 - [ ]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
 	- note
-	- [ ] CompletableFuture 1~28
+	- [x] CompletableFuture 1~28
 	- [ ] skip lock介紹 29 -40
 	- [ ] 中斷協商機制 41-49
 	- [ ] skip lock support 50-55
