@@ -55,7 +55,7 @@
 	- [ ] 54~67 先 pass, algo and leetcode
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
 - [x] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
-	- 重點：常量池, 重入鎖, lockSupport, AQS, spring circular dep, bean 創建過程,  redis 基礎,  redis 分佈鎖 
+	- 重點：常量池, 可重入鎖, lockSupport, AQS, spring circular depency, bean 創建過程,  redis 基礎,  redis 分佈鎖 
 	- [ ] 03~05 2sum算法題先跳過
 	- [ ] 64~end 手寫 LRU cache 跳過
 	- [ ] 80-99 atomic 類
@@ -78,11 +78,11 @@
 	- [ ] skp CAS 71-79
 	- [x] 原子類 80-99
 	- [ ] skip thread local 100-111
-	- [ ] 對象內存布局 112-120
+	- [x] 對象內存布局 112-120
 	- [ ] skip synchronized 鎖升級 121-139
 	- [ ] skip AQS 140-155
 	- [ ] 讀寫鎖 156-160
-	- [ ] stampedLock 161-165
+	- [ ] stampedLock, 重入鎖的降級 161-165
 	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
 	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
 	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
