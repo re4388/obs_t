@@ -21,6 +21,7 @@ alt+eneter -> show context action
 alt+w  (wrap) - surround with
 
 ctrl+g -> generate 
+ctrl+p -> parameter info
 
 
 
