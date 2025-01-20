@@ -76,7 +76,7 @@
 	- [ ] skip JMM 56-62
 	- [ ] skip volatile 63-70
 	- [ ] skp CAS 71-79
-	- [ ] 原子類 80-99
+	- [x] 原子類 80-99
 	- [ ] skip thread local 100-111
 	- [ ] 對象內存布局 112-120
 	- [ ] skip synchronized, and 鎖升級 121-139
