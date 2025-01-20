@@ -1,5 +1,13 @@
 
 
+- [ ] [【转】58到家MySQL数据库军规【整理版】 - 小周博客,小周个人博客,程序猿小王子,技术博客,个人博客模板,php博客系统,设计模式,wzyl - 黑夜遮不住光亮](https://www.css3er.com/p/188.html)
+
+
+- [ ] 1. [test-config](https://github.com/re4388/test-config/tree/master)
+	- 去抓這個檔案來看 VIP-Mysql 索引优化实战一.pdf
+
+
+
 
 
 馬克
