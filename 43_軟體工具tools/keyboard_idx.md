@@ -22,6 +22,8 @@ alt+w  (wrap) - surround with
 
 ctrl+g -> generate 
 
+
+
 f1: search everything
 alt+2: go to class
 alt+s: find in file
