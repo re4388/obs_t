@@ -44,22 +44,20 @@
 	- [[spring面试题讲解 bean 生命週期初探 note]]
 - [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
 - [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
-	- 重點：source code study for arrayList, hashmap, cocurrentMap,  volite, 同步鎖，重進入鎖
+	- 重點：arrayList source code 1-7, hashmap src code 8-19, cocurrentMap src code 20-30,  volite 31-43, synchronized 44-50，reentrantlock 51-58
 	- [[note on source code on java hashmap]]
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- [[13 道 Java HashMap 精选面试题]]
 	- [[Compare and swap CAS]]
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
 - [x] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
-	- 重點: interger 比較， bigDecimal, == and equal,  pass by val/ref,  IDEA debug,  threadlocal, graceful shutdown threadPool, mysql idx,  AOP (rate limit, cache layer), 策略模式
+	- 重點: 集合面試題4-5, 11-12, interger 比較 8-9， bigDecimal 10,  == and equal 13,  pass by val/ref  14,  IDEA debug 18-27,  threadlocal 35-42, graceful shutdown threadPool 48-49, JUC 批處理50-53, mysql 68-76,  AOP+rate limit+cache layer+設計模式 78-102
 	- [ ] 54~67 先 pass, algo and leetcode
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
 - [x] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
-	- 重點：常量池, 重入鎖, lockSupport, AQS, spring circular dep, bean 創建過程,  redis 基礎,  redis 分佈鎖 
-	- [ ] 03~05 2sum算法題先跳過
-	- [ ] 64~end 手寫 LRU cache 跳過
-	- [ ] 80-99 atomic 類
-	- [ ] 
+	- 重點：常量池(1-2), 可重入鎖7-9, lockSupport 10-14 , AQS(abstractQueuedSynchronizer) 15-26, spring circular depency & bean 創建過 28-39, redis 基礎 41-49,  redis 分佈鎖49-63
+	- [ ] skip 03~05 2sum算法題
+	- [ ] skip 64~end 手寫 LRU cache 
 	- note and code: 
 		- [GitHub - re4388/atguigu\_interview\_three: 尚硅谷 周阳 Java大厂面试题第三季](https://github.com/re4388/atguigu_interview_three)
 		- [尚硅谷大厂面试题第三季周阳主讲整理笔记\_尚硅谷周阳第三季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128364180?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=10)
@@ -76,13 +74,13 @@
 	- [ ] skip JMM 56-62
 	- [ ] skip volatile 63-70
 	- [ ] skp CAS 71-79
-	- [ ] 原子類 80-99
+	- [x] 原子類 80-99
 	- [ ] skip thread local 100-111
-	- [ ] 對象內存布局 112-120
-	- [ ] skip synchronized, and 鎖升級 121-139
+	- [x] 對象內存布局 112-120
+	- [ ] synchronized 鎖升級 121-139
 	- [ ] skip AQS 140-155
-	- [ ] 讀寫鎖 156-160
-	- [ ] stampedLock 161-165
+	- [x] reentrantreadwritelock 156-160
+	- [x] stampedLock, 重入鎖的降級 161-165
 	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
 	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
 	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
@@ -90,8 +88,9 @@
 
 - [ ] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
 	- 重點：
-	- [ ] 晚點補 jvm 部分  -> 56-104
-	- 先 skip: 105-112 linux 操作先跳過, 113-120 git 操作先跳過
+	- [ ]  jvm 部分  -> 56-104
+	- [ ] skip: 105-112 linux 操作先跳過
+	- [ ] skip 113-120 git 操作先跳過
 	- note
 		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
 		-  https://blog.csdn.net/weixin_65777087/article/details/128228369
