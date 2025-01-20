@@ -71,7 +71,7 @@
 	- note
 	- [x] CompletableFuture 1~28
 	- [ ] skip lock介紹 29 -40
-	- [ ] 中斷協商機制 41-49
+	- [ ] interupt 中斷協商機制 41-49
 	- [ ] skip lock support 50-55
 	- [ ] skip JMM 56-62
 	- [ ] skip volatile 63-70
