@@ -6,7 +6,6 @@ related:
 
 ---
 
-
 # intelliJ 常用
 
 ctrl+o → show 可以 override 的方法
@@ -241,7 +240,11 @@ this need to disable
 ## chrome
 - q → increase speed
 - a → decrease speed
+- cltr+shift+t -> reopen closed tab
 
+- go to top and go to down
+use below chrome extension to help 
+![[IMG-keyboard_idx-20250115104803295.png]]
 
 
 

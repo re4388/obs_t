@@ -1,3 +1,18 @@
+
+
+
+
+馬克
+- [30-10 之資料庫層架構與優化方向 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10220653)
+- [30-11 之資料庫層的核心 - 索引結構演化論 B+樹 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10221111)
+- [30-12 之資料庫層的核心 - MySQL 的索引實現 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10221572)
+- [30-13 之資料庫層的優化 - 索引設計與雷區 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10221971)
+- [30-14 之資料庫層的優化 - 表的設計 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10222452)
+- [30-15 之資料庫層的難題 - 單機『 故障 』一致性難題 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10222851)
+- [30-16 之資料庫層的難題 - 單機『 並行 』一致性難題 ( 1 ) - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10223427)
+- [30-17 之資料庫層的難題 - 單機『 並行 』一致性難題 ( 2 ) - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10223842)
+
+
 ## 宋红康】MySQL数据库（入门到高级，菜鸟到大牛
 - [【宋红康】MySQL数据库（入门到高级，菜鸟到大牛）【2022】/MySQL數據庫（入門到高級，菜鳥到大牛） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJFi4x7rZ5wpUKts3u7cDx21&si=rihU2pN3RzS8QVrj)
 	- 筆記
