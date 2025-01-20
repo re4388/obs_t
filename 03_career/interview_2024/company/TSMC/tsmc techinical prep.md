@@ -79,7 +79,7 @@
 	- [x] 原子類 80-99
 	- [ ] skip thread local 100-111
 	- [ ] 對象內存布局 112-120
-	- [ ] skip synchronized, and 鎖升級 121-139
+	- [ ] skip synchronized 鎖升級 121-139
 	- [ ] skip AQS 140-155
 	- [ ] 讀寫鎖 156-160
 	- [ ] stampedLock 161-165
