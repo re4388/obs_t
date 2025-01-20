@@ -58,24 +58,45 @@
 	- 重點：常量池, 重入鎖, lockSupport, AQS, spring circular dep, bean 創建過程,  redis 基礎,  redis 分佈鎖 
 	- [ ] 03~05 2sum算法題先跳過
 	- [ ] 64~end 手寫 LRU cache 跳過
+	- [ ] 80-99 atomic 類
+	- [ ] 
 	- note and code: 
 		- [GitHub - re4388/atguigu\_interview\_three: 尚硅谷 周阳 Java大厂面试题第三季](https://github.com/re4388/atguigu_interview_three)
 		- [尚硅谷大厂面试题第三季周阳主讲整理笔记\_尚硅谷周阳第三季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128364180?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-128364180-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=10)
 		- [阳哥大厂面试题第三季\_OnebyWang的博客-CSDN博客](https://blog.csdn.net/oneby1314/category_10692968.html)
 		- [尚硅谷第三季大厂面试题笔记-CSDN博客](https://blog.csdn.net/PpX1v/article/details/116053772?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6)
 		- [尚硅谷Java大厂面试题第3季学习笔记\_尚硅谷面试笔记-CSDN博客](https://blog.csdn.net/jiaxm123456/article/details/128143574?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=5)
+
+- [ ]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
+	- note
+	- [x] CompletableFuture 1~28
+	- [ ] skip lock介紹 29 -40
+	- [ ] 中斷協商機制 41-49
+	- [ ] skip lock support 50-55
+	- [ ] skip JMM 56-62
+	- [ ] skip volatile 63-70
+	- [ ] skp CAS 71-79
+	- [ ] 原子類 80-99
+	- [ ] skip thread local 100-111
+	- [ ] 對象內存布局 112-120
+	- [ ] skip synchronized, and 鎖升級 121-139
+	- [ ] skip AQS 140-155
+	- [ ] 讀寫鎖 156-160
+	- [ ] stampedLock 161-165
+	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
+	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
+	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
+
+
+
 - [ ] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
 	- 重點：
+	- [ ] 晚點補 jvm 部分  -> 56-104
 	- 先 skip: 105-112 linux 操作先跳過, 113-120 git 操作先跳過
 	- note
 		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
 		-  https://blog.csdn.net/weixin_65777087/article/details/128228369
-- [ ]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
-	- note
-	- 至少看到 1~28, 後面看情況看。
-	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
-	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
-	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
+
 
 - [ ] [4x 無死角打擊所有Spring面试題 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
 	- note -> 找找看

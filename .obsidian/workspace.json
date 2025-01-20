@@ -4,26 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "103d42e119f13129",
+        "id": "b467bd26e6f57fea",
         "type": "tabs",
         "children": [
           {
-            "id": "5c5e1697fc2fe5f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "tsmc techinical prep"
-            }
-          },
-          {
-            "id": "8c3e61302d805868",
+            "id": "7f8551e07377557c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -38,52 +23,22 @@
             }
           },
           {
-            "id": "322c2b365e7d2b53",
+            "id": "0e98be7573d30996",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "43_軟體工具tools/keyboard_idx.md",
+                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "keyboard_idx"
-            }
-          },
-          {
-            "id": "1690d1a5038b90bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03_career/interview_2024/company/TSMC/Compare and swap CAS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Compare and swap CAS"
-            }
-          },
-          {
-            "id": "4050a3fa88b0fcf7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "11_db/mySQL idx.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "mySQL idx"
+              "title": "tsmc techinical prep"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,8 +144,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -226,52 +181,52 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "322c2b365e7d2b53",
+  "active": "0e98be7573d30996",
   "lastOpenFiles": [
+    "43_軟體工具tools/win_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/keyboard_idx.md",
-    "100_attachements/IMG-tsmc techinical prep-20250119112353663.png",
-    "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
-    "100_attachements/IMG-尚硅谷 2023最新版50道Java面试真题 -note-20250119103252299.png",
+    "100_attachements/fdf30ac674eae66cf0b5a35c3f2ac325_MD5.png",
+    "100_attachements/fdf1649daf99692fac13d5f4f84a279c_MD5.png",
+    "100_attachements/fb2db80f12e4a2300b142089a1a04ed3_MD5.png",
+    "100_attachements/fae5eaa2674b4b4f8a56440cf312cac8_MD5.png",
+    "100_attachements/fa887107bae04ac7bae31d457fe3e8ba_MD5.png",
+    "100_attachements/fa5835fa023dab68739aca2dd1e39250_MD5.png",
+    "100_attachements/f9c44a8bd78eb3c3d065b6cd70869898_MD5.png",
+    "100_attachements/f9653ff41cd415869411aa3f978c9f13_MD5.png",
+    "100_attachements/f941676ead005dd2aa51ac7202e4b39a_MD5.png",
+    "100_attachements/f87e9cdb5e448c2b88f8ccdca8330c86_MD5.png",
+    "03_career/interview_2024/company/TSMC/spring面试题讲解 bean 生命週期初探 note.md.edtz",
     "03_career/interview_2024/company/TSMC/spring面试题讲解 bean 生命週期初探 note.md",
+    "03_career/interview_2024/company/TSMC/spring init and spring boot ini 初探- note.md.edtz",
     "03_career/interview_2024/company/TSMC/spring init and spring boot ini 初探- note.md",
-    "30_程式語言/kotlin_inx.md",
-    "00_inbox/log_personal.md",
-    "100_attachements/IMG-tsmc techinical prep-20250118122410470.png",
-    "100_attachements/IMG-tsmc techinical prep-20250118121806495.png",
-    "30_程式語言/Spring.md",
-    "11_db/mySQL idx.md",
-    "03_career/interview_2024/company/TSMC/MySQL 面試題.md",
-    "100_attachements/Pasted image 20250116161817.png",
-    "100_attachements/Pasted image 20250116161801.png",
-    "100_attachements/Pasted image 20250116161751.png",
-    "100_attachements/Pasted image 20250116161741.png",
-    "100_attachements/Pasted image 20250116161732.png",
-    "100_attachements/Pasted image 20250116161722.png",
-    "03_career/interview_2024/company/TSMC/MySQL 面試題.md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md",
-    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md.edtz",
-    "03_career/interview_2024/company/TSMC/Spring 面试题.md",
-    "03_career/interview_2024/company/TSMC/Spring 面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 基礎面試題.md",
-    "03_career/interview_2024/company/TSMC/Java 基礎面試題.md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 集合面试题.md",
-    "03_career/interview_2024/company/TSMC/Java 并发编程面试题.md",
-    "03_career/interview_2024/company/TSMC/Java 并发编程面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md",
-    "03_career/interview_2024/company/TSMC/Compare and swap CAS.md",
-    "03_career/interview_2024/company/TSMC/Compare and swap CAS.md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 集合面试题.md.edtz",
-    "43_軟體工具tools/win_idx.md",
-    "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/note on source code on java hashmap.md",
-    "03_career/interview_2024/company/TSMC/math 取模.md",
-    "03_career/interview_2024/company/TSMC/math 取模.md.edtz",
     "03_career/interview_2024/company/TSMC/note on source code on java hashmap.md.edtz",
-    "30_程式語言/尚硅谷-juc-高并发.md",
-    "03_career/interview_2024/company/TSMC/ed.md",
-    "43_軟體工具tools/mac_idx.md",
+    "03_career/interview_2024/company/TSMC/note on source code on java hashmap.md",
+    "03_career/interview_2024/company/TSMC/math 取模.md.edtz",
+    "03_career/interview_2024/company/TSMC/math 取模.md",
+    "03_career/interview_2024/company/TSMC/Spring 面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/Spring 面试题.md",
+    "03_career/interview_2024/company/TSMC/MySQL 面試題.md.edtz",
+    "03_career/interview_2024/company/TSMC/MySQL 面試題.md",
+    "03_career/interview_2024/company/TSMC/Java 集合面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/Java 集合面试题.md",
+    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md.edtz",
+    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md",
+    "03_career/interview_2024/company/TSMC/Java 并发编程面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/Java 并发编程面试题.md",
+    "03_career/interview_2024/company/TSMC/Java 基礎面試題.md.edtz",
+    "03_career/interview_2024/company/TSMC/Java 基礎面試題.md",
+    "03_career/interview_2024/company/TSMC/Compare and swap CAS.md",
+    "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md",
     "conflict-files-obsidian-git.md",
+    "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
+    "30_程式語言/Spring.md",
+    "43_軟體工具tools/update 2025_01_12_17_00_02 to align to win.md",
+    "43_軟體工具tools/karabinar.md",
+    "43_軟體工具tools/2025_01_10_08_16 Mac 時代的筆記.md",
+    "30_程式語言/Java_idx.md",
+    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
+    "00_inbox/log_personal.md",
     "901_fleeting_note/IntelliJ.md"
   ]
 }

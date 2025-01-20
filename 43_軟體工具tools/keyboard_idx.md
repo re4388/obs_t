@@ -21,6 +21,9 @@ alt+eneter -> show context action
 alt+w  (wrap) - surround with
 
 ctrl+g -> generate 
+ctrl+p -> parameter info
+
+
 
 f1: search everything
 alt+2: go to class
