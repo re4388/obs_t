@@ -23,6 +23,11 @@ alt+w  (wrap) - surround with
 ctrl+g -> generate 
 ctrl+p -> parameter info
 
+debug
+alt+f1  step over
+alt+f2 force step in 
+alt+f3 resune program
+
 
 
 f1: search everything
@@ -34,7 +39,6 @@ alt + backspace: delete to word start
 ctrl + backspace: delete to line start
 
 ## 還可以利用的
-alt+w
 alt+y
 
 
@@ -110,12 +114,11 @@ Ctrl + Shift + Esc：快速開啟工作管理員
     - win10: alt+a
 - z
     - toggle folding
-
 - w
     - google search via keyboard mastro (改用 raycast 的 google search, 因為有還有提示和歷史紀錄)
     - space + alt → Kit
     - shift+ctrl+space → raycast
-    - no use now
+    - IDEA/ wrap around
 - s
     - IDE search text in file
     - win10/idea → find in files
