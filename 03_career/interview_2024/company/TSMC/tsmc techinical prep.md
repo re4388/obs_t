@@ -22,7 +22,7 @@
 - [x] [[尚硅谷 Java 入门教程 2023|java basic]]
 - [x] [[Java_idx#【尚硅谷】Java NIO 详细教程]]
 - [x] [[Spring#【尚硅谷】SpringBoot3 零基础教程]]
-- [x] [[Spring#SpringBoot3响应式编程]]
+- [x] [[Spring#SpringBoot3响应式编程]]gi
 - [x] [[Spring#Spring6：尚硅谷Spring零基础入门到进阶]]
 
 -- PS, 上面的筆記連到裡面去看---
@@ -77,7 +77,7 @@
 	- [x] 原子類 80-99
 	- [ ] skip thread local 100-111
 	- [x] 對象內存布局 112-120
-	- [ ] synchronized 鎖升級 121-139
+	- [x] synchronized 鎖升級 121-139
 	- [ ] skip AQS 140-155
 	- [x] reentrantreadwritelock 156-160
 	- [x] stampedLock, 重入鎖的降級 161-165
