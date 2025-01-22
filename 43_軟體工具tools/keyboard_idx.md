@@ -266,12 +266,55 @@ use below chrome extension to help
 mac use shift to micmic ctrl+space to toggle input source(輸入法) -> [\[Mac\] macOS 中英文輸入切換 & 設定成跟 Windows 一樣用 Shift 切換教學 – OneJar 的隧道](https://www.onejar99.com/mac-keyboard-en-zh-switch-by-karabiner-elements/) -> 然後有小調整一下
 
 
+example
 ```bash
 
 
 cd ~/.config/karabiner/assets/complex_modifications
 vim remapRShift.json
+
+
+
+{
+  "title": "R_Shift to Ctrl+Space",
+  "rules": [
+    {
+      "description": "Change R_Shift to control + space to switch EN/ZH",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_shift",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
 ```
+
+[GitHub - JoshuaManuel/Karabiner-Elements-Key-List: A reference list of keys recognized by Karabiner Elements](https://github.com/JoshuaManuel/Karabiner-Elements-Key-List)
+
+
 
 
 ## cmd (mac only) cmd is mac 常用功能鍵，小心覆蓋到default功能， like save, copy..等等
