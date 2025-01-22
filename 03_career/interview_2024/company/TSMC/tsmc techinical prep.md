@@ -99,8 +99,8 @@
 	- [x] 1-18 bean life cycle
 	- [x] 19-26 spring tx
 	- [x] 27-29 spring mvc 執行流程
-	- [ ] 30-32 spring annotation
-	- [ ] 33-36 @configration
+	- [x] 30-32 spring annotation
+	- [x] 33-36 @configration
 	- [ ] 37-38 @import
 	- [ ] 39 springBootConfigration
 	- [ ] 40 EnableAutoConfigation
