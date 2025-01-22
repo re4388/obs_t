@@ -82,7 +82,8 @@
               "title": "mySQL idx"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -226,10 +227,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5c5e1697fc2fe5f6",
+  "active": "322c2b365e7d2b53",
   "lastOpenFiles": [
-    "43_軟體工具tools/keyboard_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "43_軟體工具tools/keyboard_idx.md",
     "conflict-files-obsidian-git.md",
     "conflict-files-obsidian-git.md.edtz",
     "43_軟體工具tools/win_idx.md",

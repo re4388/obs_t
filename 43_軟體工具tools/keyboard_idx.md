@@ -31,7 +31,7 @@ alt+f3 resune program
 
 
 f1: search everything
-alt+2: go to class
+
 alt+s: find in file
 
 
@@ -89,7 +89,8 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 - ``` show all window in the same app
 - 1
     - show project side bar
-
+- 2: 
+	- go to class
 - 3, show terminal, show script in dataGrip
 - 4,  jump to matching bracket
 - 5, 不好按 NO USE
@@ -137,6 +138,7 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 - c
     - console.log below (intelliJ use 套件 logit, vscode use `print it`)
     - win10, idea, 晚點設定，可以先勤勞一點
+    - no use for now
 
 - r
     - go to usage, go to reference
