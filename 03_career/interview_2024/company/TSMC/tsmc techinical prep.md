@@ -102,7 +102,11 @@
 	- [ ] 27-29 spring mvc 執行流程
 	- [ ] 30-32 spring annotation
 	- [ ] 33-36 @configration
-	- [ ] 37-
+	- [ ] 37-38 @import
+	- [ ] 39 springBootConfigration
+	- [ ] 40 EnableAutoConfigation
+	- [ ] 41-42 spring pattern
+	- [ ] 43-66 循環依賴
 - [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
 - [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
