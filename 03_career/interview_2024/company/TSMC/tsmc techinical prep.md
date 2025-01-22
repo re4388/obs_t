@@ -101,12 +101,13 @@
 	- [x] 27-29 spring mvc 執行流程
 	- [x] 30-32 spring annotation
 	- [x] 33-36 @configration
-	- [ ] 37-38 @import
-	- [ ] 39 springBootConfigration
-	- [ ] 40 EnableAutoConfigation
-	- [ ] 41-42 spring pattern
-	- [ ] skip 43-66 循環依賴
+	- [x] 37-38 @import
+	- [x] 39 springBootConfigration
+	- [x] 40 EnableAutoConfigation
+	- [x] 41-42 spring pattern
+	- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖 铺垫 ProxyFactory 1 高清 1080P - YouTube](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
 - [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
+	- [ ] threadlocal 33-38
 - [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
 	- [ ] 31-33 finalize 
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
