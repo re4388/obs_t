@@ -97,8 +97,8 @@
 
 - [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
 	- [x] 1-18 bean life cycle
-	- [ ] 19-26 spring tx
-	- [ ] 27-29 spring mvc 執行流程
+	- [x] 19-26 spring tx
+	- [x] 27-29 spring mvc 執行流程
 	- [ ] 30-32 spring annotation
 	- [ ] 33-36 @configration
 	- [ ] 37-38 @import
