@@ -127,8 +127,8 @@
 	- [GitHub - shuhongfan/itcast\_interview: 黑马程序员 2023 Java面试专题课 新版Java面试专题视频教程，java八股文面试全套真题+深度详解（含大厂高频面试真题）](https://github.com/shuhongfan/itcast_interview)
 	- [Java八股文面试（黑马）\_java面试题八股文面试黑马程序员-CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
 - [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
-	- [ ] 內存結構 1-4
-	- [ ] skip gc 算法 5-10
+	- [x] 內存結構 1-4
+	- [ ] gc 算法 5-10
 	- [ ] g1 11-12
 	- [ ] oom 常見情況  13-16
 	- [ ] 類加載 17-26
