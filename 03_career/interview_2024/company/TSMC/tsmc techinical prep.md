@@ -107,11 +107,27 @@
 	- [x] 41-42 spring pattern
 	- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖 铺垫 ProxyFactory 1 高清 1080P - YouTube](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
 - [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
+	- [ ] thread status 1-3
+	- [ ] thread pool param 4-5
+	- [ ] wait vs sleep 6-7
+	- [ ] lock vs synchronized 8 -11
+	- [ ] volatile 12-18
+	- [ ] 樂觀和悲觀鎖 19-21
+	- [ ] cocurrenthashmap 22-32
 	- [ ] threadlocal 33-38
 - [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
-	- [ ] 31-33 finalize 
+	- [ ] 內存結構 1-4
+	- [ ] skip gc 算法 5-10
+	- [ ] g1 11-12
+	- [ ] oom 常見情況  13-16
+	- [ ] 類加載 17-26
+	- [ ] skip 四種引用 27-30
+	- [ ] finalize 31-33  
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
-	- [ ] 33-35 iertator failfast and failsafe
+	- [ ] 算法 1-32
+	- [ ] arrayList 32-39
+	- [ ] hash map soure code study 39-55
+	- [ ] 單例模式 56-62
 	note
 	- [GitHub - re4388/Interview\_Heima\_Demo01: 黑马Java八股文面试题视频教程，Java面试八股文宝典（含阿里、腾迅大厂java面试真题，java数据结构，java并发，jvm等最新java面试真题）](https://github.com/re4388/Interview_Heima_Demo01)
 	- [GitHub - shuhongfan/itcast\_interview: 黑马程序员 2023 Java面试专题课 新版Java面试专题视频教程，java八股文面试全套真题+深度详解（含大厂高频面试真题）](https://github.com/shuhongfan/itcast_interview)
@@ -121,7 +137,8 @@
 - [ ] bilibili 黑马程序员Java+AI智能辅助编程全套视频教程
 	- [ ] 看193 [08-Java高级技术-代理概述-动态代理的代码实现\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb42177hm?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=193)
 - [ ] [黑马程序员Java零基础视频教程\_下部(Java入门，含斯坦福大学练习题+力扣算法题和大厂java面试题）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- [ ] 挑不熟的議題看
+	- [ ] 網路編程 [网络编程-01-初始网络编程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=168)
+	- [ ] 動態代理  [动态代理-01-动态代理的思想分析\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=198)
 
 
 # to see
