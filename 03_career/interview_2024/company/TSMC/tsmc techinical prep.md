@@ -88,7 +88,7 @@
 
 - [ ] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
 	- 重點：
-	- [ ]  jvm 部分  -> 56-104
+	- [x]  jvm 部分  -> 56-104
 	- [ ] skip: 105-112 linux 操作先跳過
 	- [ ] skip 113-120 git 操作先跳過
 	- note
@@ -103,8 +103,6 @@
 
 
 # to see
-
-
 
 
 - [ ] [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
@@ -124,7 +122,6 @@
 - [ ] [103, 2024年吃透经典Java面试题200问，7天学完，让你面试少走99%弯_bilibili](https://www.bilibili.com/video/BV1kt4y1o7QV?spm_id_from=333.788.recommend_more_video.1&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [ ] [101, MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
 - [ ] [谷粒商城项目 408集对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
-
 
 
 
@@ -162,7 +159,6 @@ sprint boot
 - [SpringBoot2-基础篇-黑马程序员全套视频教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcO42LgskwIt6sLKUOo-7vD)
 
 
-看分布鎖
 
 
 最後想要再 review sprint boot3
