@@ -93,16 +93,30 @@
 	- [ ] skip 113-120 git 操作先跳過
 	- note
 		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
-		-  https://blog.csdn.net/weixin_65777087/article/details/128228369
+		- [尚硅谷大厂面试题第二季周阳主讲整理笔记【涨薪必看】\_大厂面试第二季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128228369)
 
 
-- [ ] [4x 無死角打擊所有Spring面试題 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
-	- note -> 找找看
+- [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
+- [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
+- [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
+- [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
+	note
+	- [GitHub - re4388/Interview\_Heima\_Demo01: 黑马Java八股文面试题视频教程，Java面试八股文宝典（含阿里、腾迅大厂java面试真题，java数据结构，java并发，jvm等最新java面试真题）](https://github.com/re4388/Interview_Heima_Demo01)
+	- [GitHub - shuhongfan/itcast\_interview: 黑马程序员 2023 Java面试专题课 新版Java面试专题视频教程，java八股文面试全套真题+深度详解（含大厂高频面试真题）](https://github.com/shuhongfan/itcast_interview)
+	- [Java八股文面试（黑马）\_java面试题八股文面试黑马程序员-CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
+
+
+
+
+
 
 
 
 
 # to see
+
+
+
 
 
 - [ ] [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
@@ -111,13 +125,12 @@
 
 
 
+
 ## 面試
 - [ ] [89 2024版 Java架构师面试真题，让你面试少走99%弯路【对标阿里P6 P7附80万字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
-
-- [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
-
+dd what is the difference between what is the difference between 
 
 - [ ] [66 千锋教育java视频教程京东Java技术专家教你轻松破解Java面试题，猛搞大厂offer ！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dY4y1Y7pC/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [ ] [千锋教育Java大厂面试宝典200题（含美团、字节、阿里等真题及面试答题技巧）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nM41147P2/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
@@ -128,10 +141,14 @@
 - [ ] [101, MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
 - [ ] [谷粒商城项目 408集对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
 
-
+dd dd
 
 - [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
 
+
+
+圖靈
+- [4x 無死角打擊所有Spring面试題 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
 
 
 ## 文字類
