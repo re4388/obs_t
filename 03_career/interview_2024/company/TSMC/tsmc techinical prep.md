@@ -95,9 +95,8 @@
 		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
 		- [尚硅谷大厂面试题第二季周阳主讲整理笔记【涨薪必看】\_大厂面试第二季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128228369)
 
-
 - [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
-	- [ ] 1-18 bean life cycle
+	- [x] 1-18 bean life cycle
 	- [ ] 19-26 spring tx
 	- [ ] 27-29 spring mvc 執行流程
 	- [ ] 30-32 spring annotation
@@ -106,10 +105,12 @@
 	- [ ] 39 springBootConfigration
 	- [ ] 40 EnableAutoConfigation
 	- [ ] 41-42 spring pattern
-	- [ ] 43-66 循環依賴
+	- [ ] skip 43-66 循環依賴
 - [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
 - [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
+	- [ ] 31-33 finalize 
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
+	- [ ] 33-35 iertator failfast and failsafe
 	note
 	- [GitHub - re4388/Interview\_Heima\_Demo01: 黑马Java八股文面试题视频教程，Java面试八股文宝典（含阿里、腾迅大厂java面试真题，java数据结构，java并发，jvm等最新java面试真题）](https://github.com/re4388/Interview_Heima_Demo01)
 	- [GitHub - shuhongfan/itcast\_interview: 黑马程序员 2023 Java面试专题课 新版Java面试专题视频教程，java八股文面试全套真题+深度详解（含大厂高频面试真题）](https://github.com/shuhongfan/itcast_interview)
