@@ -86,7 +86,7 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 [[Java 的動態代理 Proxy.newProxyInstance()]]
 
 ## 課程
-- [[尚硅谷 Java 入门教程 2023]]
+- [[宋红康 2023 版，java 入门自学]]
 
 
 ==

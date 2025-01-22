@@ -17,19 +17,18 @@
 - [x] [[Effective Java 3rd]] 
 - [x] 很多 IT 邦的 and 新手工程師的程式教室的文章 看 [[Java_idx]]
 - [x] [[尚硅谷-juc-高并发]]
-- [x]  [(836) 【尚硅谷JVM】YouTube](https://www.youtube.com/watch?v=BqQW3_1_C48&list=PLmOn9nNkQxJHla2zPAkJGEg7865DFtZZ4&index=1)
 - [x] [[Spring#尚硅谷 雷神 SpringSecurity]]
-- [x] [[尚硅谷 Java 入门教程 2023|java basic]]
+- [x] [[宋红康 2023 版，java 入门自学]]
 - [x] [[Java_idx#【尚硅谷】Java NIO 详细教程]]
 - [x] [[Spring#【尚硅谷】SpringBoot3 零基础教程]]
-- [x] [[Spring#SpringBoot3响应式编程]]gi
+- [x] [[Spring#SpringBoot3响应式编程]]
 - [x] [[Spring#Spring6：尚硅谷Spring零基础入门到进阶]]
 
 -- PS, 上面的筆記連到裡面去看---
 
 - [x] [Maven: 尚硅谷新版Maven教程](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
-- [x] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
+- [x] Kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
 - [x] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 	- note D:\all_book\java book
@@ -37,25 +36,43 @@
 	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
 - [x] [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
 	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
-- [x] [手撕面试官之Spring MVC和Spring Boot底层原理解析图灵课堂官方 - YouTube](https://www.youtube.com/watch?v=F7SRQpfp5hY&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z)
-	- [[spring init and spring boot ini 初探- note]]
-- [x] [圖靈：兩個半小時，spring面试题讲解 bean 生命週期初探 - YouTube](https://www.youtube.com/watch?v=r9KhjXBG5VI&list=PLjwE8m3kyOleoRjI9gFrEZhlBeOMgaR4z&index=2)
-	- [Spring核心知识点吐血整理 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/5fb52132e0b34d0d2240f000)
-	- [[spring面试题讲解 bean 生命週期初探 note]]
 - [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
 - [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
-	- 重點：arrayList source code 1-7, hashmap src code 8-19, cocurrentMap src code 20-30,  volite 31-43, synchronized 44-50，reentrantlock 51-58
+	- 重點：
+		- arrayList source code 1-7, 
+		- hashmap src code 8-19, 
+		- cocurrentMap src code 20-30,  
+		- volite 31-43, 
+		- synchronized 44-50
+		- reentrantlock 51-58
 	- [[note on source code on java hashmap]]
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- [[13 道 Java HashMap 精选面试题]]
-	- [[Compare and swap CAS]]
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
 - [x] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
-	- 重點: 集合面試題4-5, 11-12, interger 比較 8-9， bigDecimal 10,  == and equal 13,  pass by val/ref  14,  IDEA debug 18-27,  threadlocal 35-42, graceful shutdown threadPool 48-49, JUC 批處理50-53, mysql 68-76,  AOP+rate limit+cache layer+設計模式 78-102
+	- 重點: 
+		- 集合面試題4-5
+		- 11-12, interger 比較 8-9， 
+		- bigDecimal 10, 
+		- == and equal 13,  
+		- pass by val/ref  14,  
+		- IDEA debug 18-27,  
+		- threadlocal 35-42, 
+		- graceful shutdown threadPool 48-49, 
+		- JUC 批處理50-53, 
+		- mysql 68-76,  
+		- AOP+rate limit+cache layer+設計模式 78-102
 	- [ ] 54~67 先 pass, algo and leetcode
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
 - [x] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
-	- 重點：常量池(1-2), 可重入鎖7-9, lockSupport 10-14 , AQS(abstractQueuedSynchronizer) 15-26, spring circular depency & bean 創建過 28-39, redis 基礎 41-49,  redis 分佈鎖49-63
+	- 重點：
+		- 常量池(1-2), 
+		- 可重入鎖7-9
+		- lockSupport 10-14 
+		- AQS(abstractQueuedSynchronizer) 15-26
+		- spring circular depency & bean 創建過 28-39
+		- redis 基礎 41-49
+		- redis 分佈鎖49-63
 	- [ ] skip 03~05 2sum算法題
 	- [ ] skip 64~end 手寫 LRU cache 
 	- note and code: 
@@ -105,16 +122,10 @@
 	- [x] 39 springBootConfigration
 	- [x] 40 EnableAutoConfigation
 	- [x] 41-42 spring pattern
-	- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖 铺垫 ProxyFactory 1 高清 1080P - YouTube](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
-- [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
-	- [ ] thread status 1-3
-	- [ ] thread pool param 4-5
-	- [ ] wait vs sleep 6-7
-	- [ ] lock vs synchronized 8 -11
-	- [ ] volatile 12-18
-	- [ ] 樂觀和悲觀鎖 19-21
-	- [ ] cocurrenthashmap 22-32
-	- [ ] threadlocal 33-38
+	- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖ProxyFactory](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
+	- [GitHub - re4388/Interview\_Heima\_Demo01: 黑马Java八股文面试题视频教程，Java面试八股文宝典（含阿里、腾迅大厂java面试真题，java数据结构，java并发，jvm等最新java面试真题）](https://github.com/re4388/Interview_Heima_Demo01)
+	- [GitHub - shuhongfan/itcast\_interview: 黑马程序员 2023 Java面试专题课 新版Java面试专题视频教程，java八股文面试全套真题+深度详解（含大厂高频面试真题）](https://github.com/shuhongfan/itcast_interview)
+	- [Java八股文面试（黑马）\_java面试题八股文面试黑马程序员-CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
 - [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
 	- [ ] 內存結構 1-4
 	- [ ] skip gc 算法 5-10
@@ -128,18 +139,30 @@
 	- [ ] arrayList 32-39
 	- [ ] hash map soure code study 39-55
 	- [ ] 單例模式 56-62
-	note
-	- [GitHub - re4388/Interview\_Heima\_Demo01: 黑马Java八股文面试题视频教程，Java面试八股文宝典（含阿里、腾迅大厂java面试真题，java数据结构，java并发，jvm等最新java面试真题）](https://github.com/re4388/Interview_Heima_Demo01)
-	- [GitHub - shuhongfan/itcast\_interview: 黑马程序员 2023 Java面试专题课 新版Java面试专题视频教程，java八股文面试全套真题+深度详解（含大厂高频面试真题）](https://github.com/shuhongfan/itcast_interview)
-	- [Java八股文面试（黑马）\_java面试题八股文面试黑马程序员-CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
+
+
+
+- [ ] [企业场景篇-08-技术场景-单点登录这块怎么实现的\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yT411H7YK?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=142)
+	- [ ] 企業場景 
 
 
 - [ ] bilibili 黑马程序员Java+AI智能辅助编程全套视频教程
-	- [ ] 看193 [08-Java高级技术-代理概述-动态代理的代码实现\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb42177hm?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=193)
-	- [ ] [Java加强-17-IO流-Commons-io框架\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb42177hm?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=160)
+	- [x] [Java加强-17-IO流-Commons-io框架\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb42177hm?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=160)
 - [ ] [黑马程序员Java零基础视频教程\_下部(Java入门，含斯坦福大学练习题+力扣算法题和大厂java面试题）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 	- [ ] 網路編程 [网络编程-01-初始网络编程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=168)
 	- [x] 動態代理  [动态代理-01-动态代理的思想分析\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=198)
+
+
+- [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
+	- [ ] thread status 1-3
+	- [ ] thread pool param 4-5
+	- [ ] wait vs sleep 6-7
+	- [ ] lock vs synchronized 8 -11
+	- [ ] volatile 12-18
+	- [ ] 樂觀和悲觀鎖 19-21
+	- [ ] cocurrenthashmap 22-32
+	- [ ] threadlocal 33-38
+
 
 
 # to see
@@ -149,11 +172,6 @@
 - [ ] [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
 	- [ ] 看一下 前 redison的部分   40-51
 	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
-
-
-
-
-
 
 
 ## 面試
