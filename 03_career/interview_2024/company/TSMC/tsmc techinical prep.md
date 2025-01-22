@@ -117,6 +117,9 @@
 	- [Java八股文面试（黑马）\_java面试题八股文面试黑马程序员-CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
 
 
+- [ ] bilibili 黑马程序员Java+AI智能辅助编程全套视频教程
+	- [ ] 看193 [08-Java高级技术-代理概述-动态代理的代码实现\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb42177hm?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=193)
+
 
 
 # to see
