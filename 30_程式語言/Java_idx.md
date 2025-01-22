@@ -16,15 +16,6 @@
 https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9MIR&index=45
 
 
-# todo
-
-
-2025_01_01_16_22_43
-- [ ] 尚硅谷
-	- [ ] 看完 Java 
-	- [ ] 看 sping boot
-
-
 ---
 
 
@@ -74,14 +65,8 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 - [ ] [xuchengsheng/spring-reading: 涵盖了 Spring 框架的核心概念和关键功能的說明](https://github.com/xuchengsheng/spring-reading?tab=readme-ov-file)
 
 
-
 # cocurrency
-
 - [[Java cocurrency]]
-
-
-
-
 
 
 # Spring
@@ -98,6 +83,7 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 - 筆記 /Users/re4388/project/personal/lang/java/NIO_Demo01
 - [GitHub - re4388/NIO\_Demo01: 【尚硅谷】Java NIO详细教程（一套带你掌握IO API/javanio）](https://github.com/re4388/NIO_Demo01)
 
+[[Java 的動態代理 Proxy.newProxyInstance()]]
 
 ## 課程
 - [[尚硅谷 Java 入门教程 2023]]

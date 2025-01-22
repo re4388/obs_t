@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,12 +180,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5c5e1697fc2fe5f6",
+  "active": "d8b22b195ec1de2d",
   "lastOpenFiles": [
     "43_軟體工具tools/keyboard_idx.md",
+    "30_程式語言/Java_idx.md",
+    "30_程式語言/Java 的動態代理 Proxy.newProxyInstance().md",
+    "30_程式語言/Java 的動態代理 Proxy.newProxyInstance().md.edtz",
+    "30_程式語言/尚硅谷 Java 入门教程 2023.md",
+    "30_程式語言/第 17 章_反射机制.md",
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "10_軟體設計/_software_design_idx.md",
     "04_family/kid/kid_vid.md",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/win_idx.md",
     "03_career/interview_2024/company/TSMC/Compare and swap CAS.md",
     "11_db/mySQL idx.md",
@@ -222,12 +226,6 @@
     "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md",
     "03_career/interview_2024/company/TSMC/Compare and swap CAS.md.edtz",
     "03_career/interview_2024/company/TSMC/Java 集合面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/note on source code on java hashmap.md",
-    "03_career/interview_2024/company/TSMC/math 取模.md",
-    "03_career/interview_2024/company/TSMC/math 取模.md.edtz",
-    "30_程式語言/尚硅谷-juc-高并发.md",
-    "03_career/interview_2024/company/TSMC/ed.md",
-    "43_軟體工具tools/mac_idx.md"
+    "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md.edtz"
   ]
 }
