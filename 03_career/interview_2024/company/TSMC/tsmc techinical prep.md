@@ -108,20 +108,16 @@
 
 
 
-
-
-
-
-
 # to see
-
-
 
 
 
 - [ ] [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
 	- [ ] 看一下 前 redison的部分   40-51
 	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
+
+
+
 
 
 
@@ -141,7 +137,6 @@ dd what is the difference between what is the difference between
 - [ ] [101, MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
 - [ ] [谷粒商城项目 408集对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
 
-dd dd
 
 - [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
 

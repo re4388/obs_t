@@ -37,8 +37,7 @@
               "title": "keyboard_idx"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,11 +181,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "322c2b365e7d2b53",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "43_軟體工具tools/keyboard_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/win_idx.md",
-    "43_軟體工具tools/keyboard_idx.md",
     "03_career/interview_2024/company/TSMC/Compare and swap CAS.md",
     "11_db/mySQL idx.md",
     "conflict-files-obsidian-git.md",
