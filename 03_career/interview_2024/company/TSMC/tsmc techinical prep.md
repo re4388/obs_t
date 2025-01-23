@@ -8,7 +8,7 @@
 
 # course/material done
 
-## done and ing
+# DONE and ING
 - [x] [[Effective Java 3rd]] 
 - [x] 很多 IT 邦的 and 新手工程師的程式教室的文章 看 [[Java_idx]]
 - [x] [[尚硅谷-juc-高并发]]
@@ -77,6 +77,9 @@
 		- [尚硅谷第三季大厂面试题笔记-CSDN博客](https://blog.csdn.net/PpX1v/article/details/116053772?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6)
 		- [尚硅谷Java大厂面试题第3季学习笔记\_尚硅谷面试笔记-CSDN博客](https://blog.csdn.net/jiaxm123456/article/details/128143574?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=5)
 
+
+
+## 周阳面試系列 
 - [x]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
 	- note
 	- [x] CompletableFuture 1~28
@@ -96,8 +99,6 @@
 	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
 	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
 	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
-
-
 - [x] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
 	- 重點：
 	- [x]  jvm 部分  -> 56-104
@@ -108,47 +109,46 @@
 		- [尚硅谷大厂面试题第二季周阳主讲整理笔记【涨薪必看】\_大厂面试第二季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128228369)
 
 
-
-- [ ] 黑馬面試系列 
-	- [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
-		- [ ] [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
-		- [x] 1-18 bean life cycle
-		- [x] 19-26 spring tx
-		- [x] 27-29 spring mvc 執行流程
-		- [x] 30-32 spring annotation
-		- [x] 33-36 @configration
-		- [x] 37-38 @import
-		- [x] 39 springBootConfigration
-		- [x] 40 EnableAutoConfigation
-		- [x] 41-42 spring pattern
-		- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖ProxyFactory](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
-		- [GitHub - re4388 黑马Java八股文面试](https://github.com/re4388/Interview_Heima_Demo01)
-		- [黑马 八股文面试CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
-	- [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
-		- note: [虚拟机篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day03-%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%AE%B2%E4%B9%89/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AF%87%E8%AE%B2%E4%B9%89.md)
-		- [x] 內存結構 1-4
-		- [x] gc 算法 5-10
-		- [x] g1 11-12
-		- [ ] oom 常見情況  13-16
-		- [ ] 類加載 17-26
-		- [ ] skip 四種引用 27-30
-		- [ ] finalize 31-33  
-	- [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
-		- [ ] 算法 1-32
-		- [ ] arrayList 32-39
-		- [ ] hash map soure code study 39-55
-		- [ ] 單例模式 56-62
-		- note: 
-	- [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
-		- [并发篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day02-%E5%B9%B6%E5%8F%91%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%B9%B6%E5%8F%91%E7%AF%87%E8%AE%B2%E4%B9%89.md)
-		- [ ] thread status 1-3
-		- [ ] thread pool param 4-5
-		- [ ] wait vs sleep 6-7
-		- [ ] lock vs synchronized 8 -11
-		- [ ] volatile 12-18
-		- [ ] 樂觀和悲觀鎖 19-21
-		- [ ] cocurrenthashmap 22-32
-		- [ ] threadlocal 33-38
+## 黑馬面試系列 
+- [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
+	- [ ] [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+	- [x] 1-18 bean life cycle
+	- [x] 19-26 spring tx
+	- [x] 27-29 spring mvc 執行流程
+	- [x] 30-32 spring annotation
+	- [x] 33-36 @configration
+	- [x] 37-38 @import
+	- [x] 39 springBootConfigration
+	- [x] 40 EnableAutoConfigation
+	- [x] 41-42 spring pattern
+	- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖ProxyFactory](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
+	- [GitHub - re4388 黑马Java八股文面试](https://github.com/re4388/Interview_Heima_Demo01)
+	- [黑马 八股文面试CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
+- [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
+	- note: [虚拟机篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day03-%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%AE%B2%E4%B9%89/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+	- [x] 內存結構 1-4
+	- [x] gc 算法 5-10
+	- [x] g1 11-12
+	- [x] oom 常見情況  13-16
+	- [ ] 類加載 17-26
+	- [ ] skip 四種引用 27-30
+	- [ ] finalize 31-33  
+- [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
+	- [ ] 算法 1-32
+	- [ ] arrayList 32-39
+	- [ ] hash map soure code study 39-55
+	- [ ] 單例模式 56-62
+	- note: 
+- [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
+	- [并发篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day02-%E5%B9%B6%E5%8F%91%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%B9%B6%E5%8F%91%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+	- [ ] thread status 1-3
+	- [ ] thread pool param 4-5
+	- [ ] wait vs sleep 6-7
+	- [ ] lock vs synchronized 8 -11
+	- [ ] volatile 12-18
+	- [ ] 樂觀和悲觀鎖 19-21
+	- [ ] cocurrenthashmap 22-32
+	- [ ] threadlocal 33-38
 
 
 
