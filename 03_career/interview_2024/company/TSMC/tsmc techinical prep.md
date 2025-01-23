@@ -192,10 +192,10 @@
 	- note: 
 - [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
 	- [并发篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day02-%E5%B9%B6%E5%8F%91%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%B9%B6%E5%8F%91%E7%AF%87%E8%AE%B2%E4%B9%89.md)
-	- [ ] thread status 1-3
-	- [ ] thread pool param 4-5
-	- [ ] wait vs sleep 6-7
-	- [ ] lock vs synchronized 8 -11
+	- [x] thread status 1-3
+	- [x] thread pool param 4-5
+	- [x] wait vs sleep 6-7
+	- [x] lock vs synchronized 8 -11
 	- [ ] volatile 12-18
 	- [ ] 樂觀和悲觀鎖 19-21
 	- [ ] cocurrenthashmap 22-32
