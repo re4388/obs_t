@@ -1,5 +1,11 @@
 [[arc - browser]]
 
+
+
+cleanShotX shotkey bk
+![[CleanShot 2025-01-23 at 10.41.09@2x.png]]
+
+
 ---
 - [ ] [jordanbaird/Ice: Powerful menu bar manager for macOS](https://github.com/jordanbaird/Ice?utm_source=hackernewsletter&utm_medium=email&utm_term=show_hn)
 - [ ] tmux alternative [shell-pool/shpool: Think tmux, then aim... lower](https://github.com/shell-pool/shpool?utm_source=hackernewsletter&utm_medium=email&utm_term=code)
