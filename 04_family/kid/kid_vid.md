@@ -3,6 +3,19 @@
 
 
 
+- [瑪莎與熊 Masha and The Bear CH - YouTube](https://www.youtube.com/@MashaBearTAIWAN/playlists)
+	- [瑪莎與熊 - 🤩 NEW 2024 🤩 🍝 義大利麵妙用 🎣 ⛵ (第92集) | Masha and The Bear CH - YouTube](https://www.youtube.com/watch?v=myMNl2YCUdY&list=PL-WDURy0fRf_PZi9l5E3DqA9FSZ3u-aRe)
+	- [❄️💙 瑪莎與熊 ❄️ １２個月分的傳說 💙 💥 特輯 💥 目前已在頻道上線！⛄ - YouTube](https://www.youtube.com/watch?v=1tjHN8aEZ_Y&list=PL-WDURy0fRf8NgRKd9jz6CS1v-pDgSgp8&index=2)
+	- [瑪莎與熊 - 新 一集! 💙 １２個月分的傳說 💙 特輯 ❄️ | Masha and The Bear CH - YouTube](https://www.youtube.com/watch?v=8ORTHXcHG00&list=PL-WDURy0fRf8NgRKd9jz6CS1v-pDgSgp8&index=6)
+
+[【熊星人和地球人】思考重要嗎？ - YouTube](https://www.youtube.com/watch?v=ZtdBCsblgE4&list=PLR9-cXLksRCvI7BPKMziabb0jCp520VyK)
+
+
+
+
+
+
+
 
 
 失控一直笑
