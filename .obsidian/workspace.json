@@ -38,37 +38,22 @@
             }
           },
           {
-            "id": "390d6b5b15616f83",
+            "id": "cd4fd4b3cde2c358",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "43_軟體工具tools/win_idx.md",
+                "file": "30_程式語言/Item 8 避免使用 Finalizer 和 Cleaner 机制.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "win_idx"
-            }
-          },
-          {
-            "id": "02833c68fea9078c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "43_軟體工具tools/mac_idx.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "mac_idx"
+              "title": "Item 8 避免使用 Finalizer 和 Cleaner 机制"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "composite",
+                "query": "延迟初始化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +105,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -211,11 +197,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "02833c68fea9078c",
+  "active": "cd4fd4b3cde2c358",
   "lastOpenFiles": [
-    "100_attachements/CleanShot 2025-01-23 at 10.41.09@2x.png",
-    "43_軟體工具tools/win_idx.md",
+    "30_程式語言/Effective Java 3rd.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "30_程式語言/Item 90 考虑以 \"序列化代理\" 代替 \"序列化实例\".md",
+    "30_程式語言/Item 90 考虑以 \"序列化代理\" 代替 \"序列化实例\".md.edtz",
+    "30_程式語言/Item 6 避免创建不必要的对象.md",
+    "30_程式語言/Item 83 明智地使用\"延迟初始化\".md",
+    "30_程式語言/Item 83 明智地使用\"延迟初始化\".md.edtz",
+    "30_程式語言/Item 8 避免使用 Finalizer 和 Cleaner 机制.md",
+    "43_軟體工具tools/keyboard_idx.md",
+    "43_軟體工具tools/win_idx.md",
+    "43_軟體工具tools/mac_idx.md",
+    "100_attachements/Pasted image 20250123105035.png",
+    "100_attachements/CleanShot 2025-01-23 at 10.41.09@2x.png",
     "03_career/interview_2024/company/TSMC/尚硅谷 2023最新版50道Java面试真题 -note.md",
     "03_career/interview_2024/company/TSMC/note on source code on java hashmap.md",
     "30_程式語言/尚硅谷-juc-高并发.md",
@@ -224,7 +220,6 @@
     "03_career/interview_2024/company/TSMC/spring面试题讲解 bean 生命週期初探 note.md",
     "03_career/interview_2024/company/TSMC/spring init and spring boot ini 初探- note.md",
     "03_career/interview_2024/company/TSMC/Compare and swap CAS.md",
-    "43_軟體工具tools/keyboard_idx.md",
     "30_程式語言/Java_idx.md",
     "30_程式語言/Java 的動態代理 Proxy.newProxyInstance().md",
     "30_程式語言/Java 的動態代理 Proxy.newProxyInstance().md.edtz",
@@ -237,27 +232,17 @@
     "100_attachements/IMG-tsmc techinical prep-20250119112353663.png",
     "100_attachements/IMG-尚硅谷 2023最新版50道Java面试真题 -note-20250119103252299.png",
     "30_程式語言/kotlin_inx.md",
-    "00_inbox/log_personal.md",
     "100_attachements/IMG-tsmc techinical prep-20250118122410470.png",
     "100_attachements/IMG-tsmc techinical prep-20250118121806495.png",
-    "03_career/interview_2024/company/TSMC/MySQL 面試題.md",
     "100_attachements/Pasted image 20250116161817.png",
     "100_attachements/Pasted image 20250116161801.png",
     "100_attachements/Pasted image 20250116161751.png",
     "100_attachements/Pasted image 20250116161741.png",
-    "100_attachements/Pasted image 20250116161732.png",
-    "100_attachements/Pasted image 20250116161722.png",
     "03_career/interview_2024/company/TSMC/MySQL 面試題.md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md",
     "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md.edtz",
-    "03_career/interview_2024/company/TSMC/Spring 面试题.md",
     "03_career/interview_2024/company/TSMC/Spring 面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 基礎面試題.md",
     "03_career/interview_2024/company/TSMC/Java 基礎面試題.md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 集合面试题.md",
     "03_career/interview_2024/company/TSMC/Java 并发编程面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/Compare and swap CAS.md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 集合面试题.md.edtz",
-    "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md.edtz"
+    "03_career/interview_2024/company/TSMC/Compare and swap CAS.md.edtz"
   ]
 }
