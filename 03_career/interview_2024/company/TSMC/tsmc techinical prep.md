@@ -227,6 +227,13 @@
 
 ## 黑馬 juc
 - [ ] [黑马程序员深入学习Java并发编程，JUC并发编程全套教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- [ ] why use thread 01-1 -02-07 
+	- [ ] thread create and 運行原理 02-8 ~ 03-13
+	- [ ] ...
+	- [ ] syncronized 優化原理 29-38
+	- [ ] forjoin 08-34~36
+	- [ ] 103 cocurrentlinkedDeque
+	- [ ] 104 copyOnWriteArrayList
 	- note
 		- [JUC并发编程黑马笔记 - xiaolifc - 博客园](https://www.cnblogs.com/xiaolibiji/p/17639772.html)
 		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
