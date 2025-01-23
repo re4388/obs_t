@@ -21,17 +21,44 @@
 
 -- PS, 上面的筆記連到裡面去看---
 
+
+## Maven
 - [x] [Maven: 尚硅谷新版Maven教程](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
+
+
+
+## kafka
 - [x] Kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
+
+
+## Hibernate
 - [x] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 	- note D:\all_book\java book
+
+ 
+ 
+ ## SpringData JPA
+ 
  - [x] find SpringBoot 整合 JPA   [全网 2022 最新 SpringData Jpa 最全](https://www.youtube.com/playlist?list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
 	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
+
+
+
+
+
 - [x] [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
 	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
+
+
+
 - [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
+
+
+
+
+## 小林面試
 - [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
 	- 重點：
 		- arrayList source code 1-7, 
@@ -44,6 +71,40 @@
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- [[13 道 Java HashMap 精选面试题]]
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
+
+
+## 周阳 JUC
+- [x]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
+	- note
+	- [x] CompletableFuture 1~28
+	- [ ] skip lock介紹 29 -40
+	- [x] interupt 中斷協商機制 41-49
+	- [ ] skip lock support 50-55
+	- [ ] skip JMM 56-62
+	- [ ] skip volatile 63-70
+	- [ ] skp CAS 71-79
+	- [x] 原子類 80-99
+	- [ ] skip thread local 100-111
+	- [x] 對象內存布局 112-120
+	- [x] synchronized 鎖升級 121-139
+	- [ ] skip AQS 140-155
+	- [x] reentrantreadwritelock 156-160
+	- [x] stampedLock, 重入鎖的降級 161-165
+	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
+	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
+	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
+
+
+
+## 周阳 面試
+- [x] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
+	- 重點：
+	- [x]  jvm 部分  -> 56-104
+	- [ ] skip: 105-112 linux 操作先跳過
+	- [ ] skip 113-120 git 操作先跳過
+	- note
+		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
+		- [尚硅谷大厂面试题第二季周阳主讲整理笔记【涨薪必看】\_大厂面试第二季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128228369)
 - [x] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 	- 重點: 
 		- 集合面試題4-5
@@ -79,39 +140,10 @@
 
 
 
-## 周阳面試系列 
-- [x]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
-	- note
-	- [x] CompletableFuture 1~28
-	- [ ] skip lock介紹 29 -40
-	- [x] interupt 中斷協商機制 41-49
-	- [ ] skip lock support 50-55
-	- [ ] skip JMM 56-62
-	- [ ] skip volatile 63-70
-	- [ ] skp CAS 71-79
-	- [x] 原子類 80-99
-	- [ ] skip thread local 100-111
-	- [x] 對象內存布局 112-120
-	- [x] synchronized 鎖升級 121-139
-	- [ ] skip AQS 140-155
-	- [x] reentrantreadwritelock 156-160
-	- [x] stampedLock, 重入鎖的降級 161-165
-	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
-	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
-	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
-- [x] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
-	- 重點：
-	- [x]  jvm 部分  -> 56-104
-	- [ ] skip: 105-112 linux 操作先跳過
-	- [ ] skip 113-120 git 操作先跳過
-	- note
-		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
-		- [尚硅谷大厂面试题第二季周阳主讲整理笔记【涨薪必看】\_大厂面试第二季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128228369)
-
 
 ## 黑馬面試系列 
 - [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
-	- [ ] [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+	- [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [x] 1-18 bean life cycle
 	- [x] 19-26 spring tx
 	- [x] 27-29 spring mvc 執行流程
@@ -124,15 +156,15 @@
 	- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖ProxyFactory](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
 	- [GitHub - re4388 黑马Java八股文面试](https://github.com/re4388/Interview_Heima_Demo01)
 	- [黑马 八股文面试CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
-- [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
+- [x] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
 	- note: [虚拟机篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day03-%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%AE%B2%E4%B9%89/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [x] 內存結構 1-4
 	- [x] gc 算法 5-10
 	- [x] g1 11-12
 	- [x] oom 常見情況  13-16
-	- [ ] 類加載 17-26
-	- [ ] skip 四種引用 27-30
-	- [ ] finalize 31-33  
+	- [x] 類加載 17-26
+	- [x] skip 四種引用 27-30
+	- [x] finalize 31-33  
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
 	- note: [基础篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day01-%E5%9F%BA%E7%A1%80%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%9F%BA%E7%A1%80%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [ ] 算法 1-32
@@ -155,7 +187,7 @@
 
 
 - [ ] [企业场景篇-08-技术场景-单点登录这块怎么实现的\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yT411H7YK?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=142)
-	- [ ] 企業場景 
+	- [ ] 企業場景 142-149
 
 
 
