@@ -1,15 +1,10 @@
 
 # 整體準備大方向
 - Java
-	- 語法
-	- Spring boot
-	- queue 系統
 - Kotlin
-	- 語法 like effetive Kotlin
-	- spring boot with Kotlin
+- k8s
 - window 系統上手
 	- 用那台小白好了, 搞工具，讓我跟 mac 之間可以連動
-- k8s
 
 # course/material done
 
@@ -32,7 +27,7 @@
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
 - [x] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 	- note D:\all_book\java book
- - [x] find SpringBoot 整合 JPA  [1、SpringData介绍 高清 1080P - YouTube](https://www.youtube.com/watch?v=c2oyQlMpxQ0&list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
+ - [x] find SpringBoot 整合 JPA   [全网 2022 最新 SpringData Jpa 最全](https://www.youtube.com/playlist?list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
 	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
 - [x] [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
 	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
@@ -112,38 +107,55 @@
 		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
 		- [尚硅谷大厂面试题第二季周阳主讲整理笔记【涨薪必看】\_大厂面试第二季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128228369)
 
-- [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
-	- [x] 1-18 bean life cycle
-	- [x] 19-26 spring tx
-	- [x] 27-29 spring mvc 執行流程
-	- [x] 30-32 spring annotation
-	- [x] 33-36 @configration
-	- [x] 37-38 @import
-	- [x] 39 springBootConfigration
-	- [x] 40 EnableAutoConfigation
-	- [x] 41-42 spring pattern
-	- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖ProxyFactory](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
-	- [GitHub - re4388/Interview\_Heima\_Demo01: 黑马Java八股文面试题视频教程，Java面试八股文宝典（含阿里、腾迅大厂java面试真题，java数据结构，java并发，jvm等最新java面试真题）](https://github.com/re4388/Interview_Heima_Demo01)
-	- [GitHub - shuhongfan/itcast\_interview: 黑马程序员 2023 Java面试专题课 新版Java面试专题视频教程，java八股文面试全套真题+深度详解（含大厂高频面试真题）](https://github.com/shuhongfan/itcast_interview)
-	- [Java八股文面试（黑马）\_java面试题八股文面试黑马程序员-CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
-- [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
-	- [x] 內存結構 1-4
-	- [ ] gc 算法 5-10
-	- [ ] g1 11-12
-	- [ ] oom 常見情況  13-16
-	- [ ] 類加載 17-26
-	- [ ] skip 四種引用 27-30
-	- [ ] finalize 31-33  
-- [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
-	- [ ] 算法 1-32
-	- [ ] arrayList 32-39
-	- [ ] hash map soure code study 39-55
-	- [ ] 單例模式 56-62
+
+
+- [ ] 黑馬面試系列 
+	- [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
+		- [ ] [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+		- [x] 1-18 bean life cycle
+		- [x] 19-26 spring tx
+		- [x] 27-29 spring mvc 執行流程
+		- [x] 30-32 spring annotation
+		- [x] 33-36 @configration
+		- [x] 37-38 @import
+		- [x] 39 springBootConfigration
+		- [x] 40 EnableAutoConfigation
+		- [x] 41-42 spring pattern
+		- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖ProxyFactory](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
+		- [GitHub - re4388 黑马Java八股文面试](https://github.com/re4388/Interview_Heima_Demo01)
+		- [黑马 八股文面试CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
+	- [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
+		- note: [虚拟机篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day03-%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%AE%B2%E4%B9%89/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+		- [x] 內存結構 1-4
+		- [ ] gc 算法 5-10
+		- [ ] g1 11-12
+		- [ ] oom 常見情況  13-16
+		- [ ] 類加載 17-26
+		- [ ] skip 四種引用 27-30
+		- [ ] finalize 31-33  
+	- [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
+		- [ ] 算法 1-32
+		- [ ] arrayList 32-39
+		- [ ] hash map soure code study 39-55
+		- [ ] 單例模式 56-62
+		- note: 
+	- [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
+		- [并发篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day02-%E5%B9%B6%E5%8F%91%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%B9%B6%E5%8F%91%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+		- [ ] thread status 1-3
+		- [ ] thread pool param 4-5
+		- [ ] wait vs sleep 6-7
+		- [ ] lock vs synchronized 8 -11
+		- [ ] volatile 12-18
+		- [ ] 樂觀和悲觀鎖 19-21
+		- [ ] cocurrenthashmap 22-32
+		- [ ] threadlocal 33-38
+
 
 
 
 - [ ] [企业场景篇-08-技术场景-单点登录这块怎么实现的\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yT411H7YK?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=142)
 	- [ ] 企業場景 
+
 
 
 - [ ] bilibili 黑马程序员Java+AI智能辅助编程全套视频教程
@@ -152,16 +164,6 @@
 	- [ ] 網路編程 [网络编程-01-初始网络编程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=168)
 	- [x] 動態代理  [动态代理-01-动态代理的思想分析\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=198)
 
-
-- [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
-	- [ ] thread status 1-3
-	- [ ] thread pool param 4-5
-	- [ ] wait vs sleep 6-7
-	- [ ] lock vs synchronized 8 -11
-	- [ ] volatile 12-18
-	- [ ] 樂觀和悲觀鎖 19-21
-	- [ ] cocurrenthashmap 22-32
-	- [ ] threadlocal 33-38
 
 
 
