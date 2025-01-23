@@ -67,7 +67,8 @@
               "title": "kid_vid"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -211,21 +212,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5c5e1697fc2fe5f6",
+  "active": "2cd23a9fa4bf1868",
   "lastOpenFiles": [
-    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md",
+    "30_程式語言/Item 8 避免使用 Finalizer 和 Cleaner 机制.md",
+    "43_軟體工具tools/keyboard_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md",
     "04_family/kid/kid_vid.md",
     "30_程式語言/Spring.md",
     "30_程式語言/尚硅谷-juc-高并发.md",
-    "30_程式語言/Item 8 避免使用 Finalizer 和 Cleaner 机制.md",
     "30_程式語言/Effective Java 3rd.md",
     "30_程式語言/Item 90 考虑以 \"序列化代理\" 代替 \"序列化实例\".md",
     "30_程式語言/Item 90 考虑以 \"序列化代理\" 代替 \"序列化实例\".md.edtz",
     "30_程式語言/Item 6 避免创建不必要的对象.md",
     "30_程式語言/Item 83 明智地使用\"延迟初始化\".md",
     "30_程式語言/Item 83 明智地使用\"延迟初始化\".md.edtz",
-    "43_軟體工具tools/keyboard_idx.md",
     "43_軟體工具tools/win_idx.md",
     "43_軟體工具tools/mac_idx.md",
     "100_attachements/Pasted image 20250123105035.png",
