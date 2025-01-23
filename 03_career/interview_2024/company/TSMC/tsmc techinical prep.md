@@ -138,6 +138,7 @@
 		- AOP+rate limit+cache layer+設計模式 78-102
 	- [ ] 54~67 先 pass, algo and leetcode
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
+		- mac: /Users/re4388/project/personal/lang/java/Java_interview_s4/note
 - [x] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
 	- 重點：
 		- 常量池(1-2), 
@@ -199,7 +200,7 @@
 	- [x] volatile 12-18
 	- [x] 樂觀和悲觀鎖 19-21
 	- [ ] cocurrenthashmap 22-32
-	- [ ] threadlocal 33-38
+	- [x] threadlocal  33-38
 
 
 
