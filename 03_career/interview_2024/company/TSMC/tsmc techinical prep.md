@@ -270,7 +270,10 @@
 
 
 
-## [Spring Security 教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleSMJ_9VO8-kDfTvrlWLcF_)
+
+
+- [ ] [GitHub - lansinuote/Spring-Oauth2-Toturials: 使用Spring Oauth2做分布式鉴权](https://github.com/lansinuote/Spring-Oauth2-Toturials?tab=readme-ov-file)
+
 
 
 - [ ] [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
