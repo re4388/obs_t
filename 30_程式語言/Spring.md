@@ -181,41 +181,7 @@ Spring Framework 中文文档PDF
 - [x] [[Android Studio & Spring boot 30 天挑戰] :: 2023 iThome 鐵人賽](https://ithelp.ithome.com.tw/users/20150369/ironman/5980?page=3)
 	- [x] 21-30
 
-
-
-- [x]  [新手工程師的程式教室 on Spring Boot](https://chikuwa-tech-study.blogspot.com/)
-	- [x] [【Redis】在 Spring Boot 使用 Redis Template 實現快取](https://chikuwa-tech-study.blogspot.com/2023/04/redis-template-in-spring-boot.html)
-	- [x] [【Spring Boot】第 17.1 課－初探 Spring Security 的認證與授權 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-authentication-and-authorization.html)
-	- [x] [【Spring Boot】第 17.2 課－在 Spring Security 整合資料庫進行認證 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2023/11/spring-boot-security-authentication-integrating-with-mongodb-database.html)
-	- [x] [【Spring Boot】第17.3課－在 Spring Security 使用 HTTP Basic 認證](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-security-http-basic-authentication.html)
-	- [x] [【Spring Boot】第17.4課－從 Security Context 取得 API 存取方的認證資訊 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2023/11/spring-boot-security-context-authentication-info.html)
-	- [x] [【Spring Boot】第 17.5 課－將 Spring Security 與 JWT 結合，實作登入 API #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-implement-login-api-with-jwt.html)
-	- [x] [【Spring Boot】第 17.6 課－實作 Spring Security 的認證 Filter（以 JWT 為例）#2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-implement-authentication-filter-with-jwt.html)
-	- [x] [【Spring Boot】第 20 課－切面導向程式設計（AOP）](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-aop-introduction.html)
-	- [x] [【Spring Boot】第 21 課－使用 Mockito 進行單元測試](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-mockito-unit-test.html)
-	- [x] [【Spring Boot】第 22.1 課－使用 RestTemplate 存取外部 API #2023 年更新](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-resttemplate.html)
-	- [x] [【Spring Boot】第22.2課－RestTemplate 串接第三方服務實例](https://chikuwa-tech-study.blogspot.com/2023/10/spring-boot-resttemplate-third-party-api-practice.html)
-	- [x] [【Spring Boot】第 23 課－利用 Swagger 產生 API 文件](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-swagger-openapi-documentation.html)
-	- [x] [【Spring Boot】第 24 課－使用 Controller Advice 處理例外與 query string](https://chikuwa-tech-study.blogspot.com/2023/02/spring-boot-controller-advice-handle-exception-and-query-string.html)
-	- [x] [【Spring Boot】第 25 課－定時任務排程](https://chikuwa-tech-study.blogspot.com/2023/03/spring-boot-scheduled-task-incl-dymanically.html)
-	- [x] [【Spring Boot】第 26 課－使用快取並整合 Redis 來優化效能](https://chikuwa-tech-study.blogspot.com/2023/08/spring-boot-using-cache-and-redis.html)
-	- [x] [【Spring Boot】第 6 課－元件的控制反轉、依賴注入與多型呼叫 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-bean-ioc-di-and-polymorphism.html)
-	- [x] [【Spring Boot】第 7.1 課－MongoDB 介紹與準備資料庫環境 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mongodb-introduction-and-setup.html)
-	- [x] [【Spring Boot】第7.2課－使用 Spring Data 存取 MongoDB 資料庫，進行基本 CRUD 操作](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-data-mongodb-repository-crud.html)
-	- [x] [【Spring Boot】第7.3課－在 MongoRepository 定義查詢條件與排序方式 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mongo-repository-customize-query.html)
-	- [x] [【Spring Boot】第 8.1 課－準備 MySQL 資料庫與認識 Spring Data JPA](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-setup-mysql-and-introduce-jpa.html)
-	- [x] [【Spring Boot】第8.2課－使用 JPA 設計實體類別與 MySQL 資料表欄位](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-mysql-column-definition-with-jpa.html)
-	- [x] [【Spring Boot】第 8.3 課－使用 JPA Repository 存取 MySQL 資料庫](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-mysql-using-jpa-repository.html)
-	- [x] [【Spring Boot】第 8.4 課－使用 JPA 配置資料表關聯（以一對一關聯為例）](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-jpa-one-to-one-relationship.html)
-	- [x] [【Spring Boot】第8.5課－使用 JPA 建立一對多關聯，並配置雙向關聯](https://chikuwa-tech-study.blogspot.com/2024/06/spring-boot-jpa-one-to-many-relationship-and-bidirectional-association.html)
-	- [x] [【Spring Boot】第8.6課－使用 JPA 建立多對多關聯，並配置中間表](https://chikuwa-tech-study.blogspot.com/2024/06/spring-boot-jpa-many-to-many-relationship-and-intermediary-table.html)
-	- [x] [【Spring Boot】第9課－MockMvc 整合測試（一）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mockmvc-integration-test-1.html)
-	- [x] [【Spring Boot】第 10 課－MockMvc 整合測試（二）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mockmvc-integration-test-2.html)
-	- [x] [【Spring Boot】第 11 課－驗證 request body 的請求資料](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-request-body-validation.html)
-	- [x] [【Spring Boot】第12課－使用 Jackson 控制回傳的 JSON 欄位](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-jackson-annotation-basic.html)
-	- [x] [【Spring Boot】第 14 課－自行控制元件的建立方式](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-construct-bean-programmatically.html)
-	- [x] [【Spring Boot】第15課－元件的作用範圍（scope）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-bean-scope.html)
-	- [x] [【Spring Boot】第 16 課－使用 Filter 擷取請求與回應](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-filter-request-and-response.html)
+[[新手工程師教育 on Spring Boot]]
 
 
 - [x] [誤打誤撞學了Spring Boot 還當了後端工程師 :: 2021 iThome 鐵人賽](https://ithelp.ithome.com.tw/users/20140728/ironman/4245)

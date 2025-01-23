@@ -9,14 +9,14 @@
 
 #  文字類
 - [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
-- [ ] [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
+- [ ] [AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
 - [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
 - [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
 - [ ] [GitHub - Java 學習地圖 via 影片](https://github.com/unidentifiable/java_learning_circuit?tab=readme-ov-file)
 - [ ] [GitHub - cosen1024/Java-Interview: 「Java面试小抄](https://github.com/cosen1024/Java-Interview/tree/main)
 - [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
 - [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
-- [ ] [GitHub - stevenli91748/JAVA-Architecture: Java training project，包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
+- [ ] [GitHub - stevenli91748/ Java training projec 包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
 - [ ] [[Java 并发编程面试题]]
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
 - [ ] [[Java 集合面试题]]
@@ -29,14 +29,40 @@
 
 
 # DONE and ING
+
+
+## Effective Java
 - [x] [[Effective Java 3rd]] 
-- [x] 很多 IT 邦的 and 新手工程師的程式教室的文章 看 [[Java_idx]]
+
+ ## 新手工程師教育 on Spring Boot
+ [[新手工程師教育 on Spring Boot]]
+ 
+
+## 尚硅谷-juc-高并发
 - [x] [[尚硅谷-juc-高并发]]
+
+## 尚硅谷 雷神 SpringSecurity
 - [x] [[Spring#尚硅谷 雷神 SpringSecurity]]
+
+## Java 入門
 - [x] [[宋红康 2023 版，java 入门自学]]
+
+## Java NIO
 - [x] [[Java_idx#【尚硅谷】Java NIO 详细教程]]
+
+
+## SpringBoot3
 - [x] [[Spring#【尚硅谷】SpringBoot3 零基础教程]]
+
+
+
+## springBoot3 -reactive
 - [x] [[Spring#SpringBoot3响应式编程]]
+
+
+
+
+## spring6
 - [x] [[Spring#Spring6：尚硅谷Spring零基础入门到进阶]]
 
 -- PS, 上面的筆記連到裡面去看---
@@ -203,7 +229,7 @@
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
 	- note: [基础篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day01-%E5%9F%BA%E7%A1%80%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%9F%BA%E7%A1%80%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [ ] 算法 1-32
-	- [ ] arrayList 32-39
+	- [ ] arrayList soure code study 32-39
 	- [ ] hash map soure code study 39-55
 	- [ ] 單例模式 56-62
 	- note: 
@@ -222,17 +248,12 @@
 	- [x] threadlocal  33-38
 
 
-
-
-
 ## 黑馬 新版  java 八股文面试
 - [ ] [java八股文面试全套真题_bilibili](https://www.bilibili.com/video/BV1yT411H7YK?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=142)
 	- [ ] design pattern 136-141
 	- [x] 企業場景 142-149
 	- related:
 		- [一文读懂Java远程debug（Remote JVM Debug）-CSDN博客](https://blog.csdn.net/qq_41262903/article/details/120922767)
-
-
 
 ## 黑馬 juc
 - [ ] [黑马程序员深入学习Java并发编程，JUC并发编程全套教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
@@ -250,7 +271,6 @@
 		- [JUC并发编程黑马笔记 - xiaolifc - 博客园](https://www.cnblogs.com/xiaolibiji/p/17639772.html)
 		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
 		- [JavaNote/Prog.md at main · Seazean/JavaNote · GitHub](https://github.com/Seazean/JavaNote/blob/main/Prog.md)
-
 
 
 ## 黑马程序员Java零基础视频教程

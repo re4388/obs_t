@@ -1,8 +1,5 @@
 
 
-
-
-
 ---
 
 
@@ -21,19 +18,7 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 
 - [ ] 參考阿里巴巴開發手冊
 - [ ] 看 5 個 real word Java project (後端 focus)
-- [ ] [新手工程師的程式教室 - rabbitMQ 系列](https://chikuwa-tech-study.blogspot.com/search/label/RabbitMQ)
-	- [ ] [【RabbitMQ】認識訊息佇列並導入到 Spring Boot](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-introduction-and-setup-in-spring-boot.html)
-	- [ ] [【RabbitMQ】在 Spring Boot 實作 Simple 與 Worker 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-simple-and-worker-pattern-in-spring-boot.html.html)
-	- [ ] [【RabbitMQ】在 Spring Boot 實作 Fanout 與 Direct 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-fanout-and-direct-pattern-in-spring-boot.html)
-	- [ ] [【RabbitMQ】在 Spring Boot 實作 Routing 與 Topic 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-routing-and-topic-pattern-in-spring-boot.html)
-- [ ] [新手工程師的程式教室 Elastic Search](https://chikuwa-tech-study.blogspot.com/search/label/ElasticSearch)
-	- [ ] [【Elasticsearch】用途介紹與在 Windows Docker Desktop 上安裝](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-introduction-and-install.html)
-	- [ ] [【Elasticsearch】透過 REST API 進行 CRUD 操作](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-crud-rest-api.html)
-	- [ ] [【Elasticsearch】使用 DSL 撰寫查詢條件](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-query-dsl-and-logical-condition.html)
-	- [ ] [【Elasticsearch】使用 function score 在查詢時評分](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-function-score.html)
-	- [ ] [【Elasticsearch】導入到 Spring Boot 並實作 CRUD](https://chikuwa-tech-study.blogspot.com/2022/10/elasticsearch-integrate-spring-boot-and-impl-crud.html)
-	- [ ] [【Elasticsearch】使用 Java API Client 實作查詢條件與搜尋](https://chikuwa-tech-study.blogspot.com/2022/10/elasticsearch-java-api-client-search-and-query-condition.html)
-	- [ ] [【Elasticsearch】使用 Java API Client 實作 function score](https://chikuwa-tech-study.blogspot.com/2022/09/elasticsearch-java-api-client-function-score.html)
+
 
 - [ ] 每天至少 3~5 個 effetive Java review [[Effective Java 3rd]]
 - 3 Java leetcode per day
