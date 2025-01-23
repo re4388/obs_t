@@ -196,8 +196,8 @@
 	- [x] thread pool param 4-5
 	- [x] wait vs sleep 6-7
 	- [x] lock vs synchronized 8 -11
-	- [ ] volatile 12-18
-	- [ ] 樂觀和悲觀鎖 19-21
+	- [x] volatile 12-18
+	- [x] 樂觀和悲觀鎖 19-21
 	- [ ] cocurrenthashmap 22-32
 	- [ ] threadlocal 33-38
 
