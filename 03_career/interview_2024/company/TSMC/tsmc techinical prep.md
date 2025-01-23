@@ -78,15 +78,17 @@
 
 
 
+
+
 ## 小林面試
 - [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
 	- 重點：
-		- arrayList source code 1-7, 
-		- hashmap src code 8-19, 
-		- cocurrentMap src code 20-30,  
-		- volite 31-43, 
-		- synchronized 44-50
-		- reentrantlock 51-58
+		- [x] arrayList source code 1-7, 
+		- [x] hashmap src code 8-19, 
+		- [x] cocurrentMap src code 20-30,  
+		- [x] volite 31-43, 
+		- [x] synchronized 44-50
+		- [x] reentrantlock 51-58
 	- [[note on source code on java hashmap]]
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- [[13 道 Java HashMap 精选面试题]]
@@ -119,6 +121,16 @@
 ## 周阳 面試
 - [x] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
 	- 重點：
+	- [x] volatile 02-11
+	- [x] CAS-ABS 12-19
+	- [x] 集合不安全類 20-23 
+	- [x] transfer value 24
+	- [x] lock 25-34
+	- [x] 阻塞队列 35-40
+	- [x] producer-consumer 41
+	- [x] callbale 45
+	- [x] threadPool 46-54
+	- [x] deal lock 55
 	- [x]  jvm 部分  -> 56-104
 	- [ ] skip: 105-112 linux 操作先跳過
 	- [ ] skip 113-120 git 操作先跳過
@@ -127,29 +139,29 @@
 		- [尚硅谷大厂面试题第二季周阳主讲整理笔记【涨薪必看】\_大厂面试第二季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128228369)
 - [x] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
 	- 重點: 
-		- 集合面試題4-5
-		- 11-12, interger 比較 8-9， 
-		- bigDecimal 10, 
-		- == and equal 13,  
-		- pass by val/ref  14,  
-		- IDEA debug 18-27,  
-		- threadlocal 35-42, 
-		- graceful shutdown threadPool 48-49, 
-		- JUC 批處理50-53, 
-		- mysql 68-76,  
-		- AOP+rate limit+cache layer+設計模式 78-102
+		- [x] 集合面試題4-5
+		- [x] 11-12, interger 比較 8-9， 
+		- [x] bigDecimal 10, 
+		- [x] == and equal 13,  
+		- [x] pass by val/ref  14,  
+		- [x] IDEA debug 18-27,  
+		- [x] threadlocal 35-42, 
+		- [x] graceful shutdown threadPool 48-49, 
+		- [x] JUC 批處理50-53, 
+		- [x] mysql 68-76,  
+		- [x] AOP+rate limit+cache layer+設計模式 78-102
 	- [ ] 54~67 先 pass, algo and leetcode
 	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
 		- mac: /Users/re4388/project/personal/lang/java/Java_interview_s4/note
 - [x] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
 	- 重點：
-		- 常量池(1-2), 
-		- 可重入鎖7-9
-		- lockSupport 10-14 
-		- AQS(abstractQueuedSynchronizer) 15-26
-		- spring circular depency & bean 創建過 28-39
-		- redis 基礎 41-49
-		- redis 分佈鎖49-63
+		- [x] 常量池(1-2), 
+		- [x] 可重入鎖7-9
+		- [x] lockSupport 10-14 
+		- [x] AQS(abstractQueuedSynchronizer) 15-26
+		- [x] spring circular depency & bean 創建過 28-39
+		- [x] redis 基礎 41-49
+		- [x] redis 分佈鎖49-63
 	- [ ] skip 03~05 2sum算法題
 	- [ ] skip 64~end 手寫 LRU cache 
 	- note and code: 
@@ -221,9 +233,26 @@
 
 
 
+## 黑馬 juc
+- [ ] [黑马程序员深入学习Java并发编程，JUC并发编程全套教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- [ ] why use thread 01-1 -02-07 
+	- [ ] thread create and 運行原理 02-8 ~ 03-13
+	- [ ] ...
+	- [ ]  不可變對象和自定義連接池 07 001~0011
+	- [ ] syncronized 優化原理 29-38
+	- [ ] AQS 08-037~39
+	- [ ] semaphore 08-063-08-067
+	- [ ] forjoin 08-34~36
+	- [ ] 103 cocurrentlinkedDeque
+	- [ ] 104 copyOnWriteArrayList
+	- note
+		- [JUC并发编程黑马笔记 - xiaolifc - 博客园](https://www.cnblogs.com/xiaolibiji/p/17639772.html)
+		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
+		- [JavaNote/Prog.md at main · Seazean/JavaNote · GitHub](https://github.com/Seazean/JavaNote/blob/main/Prog.md)
 
 
 
+## 黑马程序员Java零基础视频教程
 - [ ] [黑马程序员Java零基础视频教程\_下部(Java入门，含斯坦福大学练习题+力扣算法题和大厂java面试题）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 	- [ ] treeMap source code 17-18
 	- [ ] 網路編程 [网络编程-01-初始网络编程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=168)
@@ -236,23 +265,8 @@
 
 
 
+
 # to see
-
-
-## 黑馬 juc
-- [ ] [黑马程序员深入学习Java并发编程，JUC并发编程全套教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- [ ] why use thread 01-1 -02-07 
-	- [ ] thread create and 運行原理 02-8 ~ 03-13
-	- [ ] ...
-	- [ ] syncronized 優化原理 29-38
-	- [ ] forjoin 08-34~36
-	- [ ] 103 cocurrentlinkedDeque
-	- [ ] 104 copyOnWriteArrayList
-	- note
-		- [JUC并发编程黑马笔记 - xiaolifc - 博客园](https://www.cnblogs.com/xiaolibiji/p/17639772.html)
-		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
-		- [JavaNote/Prog.md at main · Seazean/JavaNote · GitHub](https://github.com/Seazean/JavaNote/blob/main/Prog.md)
-
 
 
 
