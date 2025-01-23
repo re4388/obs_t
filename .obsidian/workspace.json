@@ -67,8 +67,7 @@
               "title": "kid_vid"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,8 +211,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2cd23a9fa4bf1868",
+  "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "04_family/kid/kid_vid.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "30_程式語言/Spring.md",
     "30_程式語言/尚硅谷-juc-高并发.md",
@@ -240,7 +240,6 @@
     "30_程式語言/Java 的動態代理 Proxy.newProxyInstance().md.edtz",
     "30_程式語言/第 17 章_反射机制.md",
     "10_軟體設計/_software_design_idx.md",
-    "04_family/kid/kid_vid.md",
     "11_db/mySQL idx.md",
     "conflict-files-obsidian-git.md",
     "conflict-files-obsidian-git.md.edtz",

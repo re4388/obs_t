@@ -6,7 +6,25 @@
 - window 系統上手
 	- 用那台小白好了, 搞工具，讓我跟 mac 之間可以連動
 
-# course/material done
+
+#  文字類
+- [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
+- [ ] [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
+- [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
+- [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
+- [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
+- [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
+- [ ] [GitHub - stevenli91748/JAVA-Architecture: Java training project，包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
+- [ ] [[Java 并发编程面试题]]
+- [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
+- [ ] [[Java 集合面试题]]
+- [ ] [[Java 基礎面試題]]
+- [ ] [[Spring 面试题]]
+- [ ] [[MySQL 面試題]]
+- [ ] [[Java 虛拟機面試題]]
+- [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
+
+
 
 # DONE and ING
 - [x] [[Effective Java 3rd]] 
@@ -200,7 +218,19 @@
 
 
 
+
+
+
+
 # to see
+
+
+## 黑馬 juc
+- [ ] [黑马程序员深入学习Java并发编程，JUC并发编程全套教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- note
+		- [JUC并发编程黑马笔记 - xiaolifc - 博客园](https://www.cnblogs.com/xiaolibiji/p/17639772.html)
+		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
+		- [JavaNote/Prog.md at main · Seazean/JavaNote · GitHub](https://github.com/Seazean/JavaNote/blob/main/Prog.md)
 
 
 
@@ -233,21 +263,6 @@ dd what is the difference between what is the difference between
 - [4x 無死角打擊所有Spring面试題 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlc-49M41Iv18DHXBrOxgr8k)
 
 
-## 文字類
-- [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
-- [ ] [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
-- [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
-- [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
-- [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
-- [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
-- [ ] [GitHub - stevenli91748/JAVA-Architecture: Java training project，包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
-- [ ] [[Java 并发编程面试题]]
-- [ ] [[Java 集合面试题]]
-- [ ] [[Java 基礎面試題]]
-- [ ] [[Spring 面试题]]
-- [ ] [[MySQL 面試題]]
-- [ ] [[Java 虛拟機面試題]]
-- [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 
 
 
