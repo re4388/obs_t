@@ -225,7 +225,7 @@
 
 
 ## 黑馬 新版  java 八股文面试
-- [ ] [企业场景篇-08-技术场景-单点登录这块怎么实现的\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yT411H7YK?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=142)
+- [ ] [java八股文面试全套真题_bilibili](https://www.bilibili.com/video/BV1yT411H7YK?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=142)
 	- [ ] design pattern 136-141
 	- [x] 企業場景 142-149
 	- related:
@@ -268,6 +268,7 @@
 
 # to see
 
+[Spring Security OAuth2.0认证授权(快速入门)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14T4y1A7oz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
 
