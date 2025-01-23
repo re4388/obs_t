@@ -177,6 +177,8 @@
 	- [黑马 八股文面试CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
 - [x] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
 	- note: [虚拟机篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day03-%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%AE%B2%E4%B9%89/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+	- [JVM-基于服务性代理的调试工具JHSDB(windows)-CSDN博客](https://blog.csdn.net/qq_16498553/article/details/121326800)
+	- [JHSDB：基于服务性代理的调试工具-学海无涯，回头是岸](https://gschaos.club/1238.html)
 	- [x] 內存結構 1-4
 	- [x] gc 算法 5-10
 	- [x] g1 11-12
@@ -193,6 +195,9 @@
 	- note: 
 - [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
 	- [并发篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day02-%E5%B9%B6%E5%8F%91%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%B9%B6%E5%8F%91%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+	- related:
+		- [JVM\_15 javap使用通过反编译生成的字节码文件，我们可以深入的了解java代码的工作机制。但是，自己分析类文件结 - 掘金](https://juejin.cn/post/6913784500040400904)
+		- [java多线程编程--多线程debug\_java多线程debug-CSDN博客](https://blog.csdn.net/qq_43470725/article/details/121649816)
 	- [x] thread status 1-3
 	- [x] thread pool param 4-5
 	- [x] wait vs sleep 6-7
@@ -201,18 +206,24 @@
 	- [x] 樂觀和悲觀鎖 19-21
 	- [ ] cocurrenthashmap 22-32
 	- [x] threadlocal  33-38
+	
 
 
 
 ## 黑馬 新版  java 八股文面试
 - [ ] [企业场景篇-08-技术场景-单点登录这块怎么实现的\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yT411H7YK?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=142)
-	- [ ] 企業場景 142-149
+	- [ ] design pattern 136-141
+	- [x] 企業場景 142-149
+	- related:
+		- [一文读懂Java远程debug（Remote JVM Debug）-CSDN博客](https://blog.csdn.net/qq_41262903/article/details/120922767)
 
 
 
-- [ ] bilibili 黑马程序员Java+AI智能辅助编程全套视频教程
-	- [x] [Java加强-17-IO流-Commons-io框架\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb42177hm?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=160)
+
+
+
 - [ ] [黑马程序员Java零基础视频教程\_下部(Java入门，含斯坦福大学练习题+力扣算法题和大厂java面试题）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- [ ] treeMap source code 17-18
 	- [ ] 網路編程 [网络编程-01-初始网络编程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=168)
 	- [x] 動態代理  [动态代理-01-动态代理的思想分析\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=198)
 
