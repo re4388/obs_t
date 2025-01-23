@@ -127,8 +127,8 @@
 	- [ ] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
 		- note: [虚拟机篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day03-%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%AE%B2%E4%B9%89/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 		- [x] 內存結構 1-4
-		- [ ] gc 算法 5-10
-		- [ ] g1 11-12
+		- [x] gc 算法 5-10
+		- [x] g1 11-12
 		- [ ] oom 常見情況  13-16
 		- [ ] 類加載 17-26
 		- [ ] skip 四種引用 27-30
