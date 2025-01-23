@@ -134,6 +134,7 @@
 	- [ ] skip 四種引用 27-30
 	- [ ] finalize 31-33  
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
+	- note: [基础篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day01-%E5%9F%BA%E7%A1%80%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%9F%BA%E7%A1%80%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [ ] 算法 1-32
 	- [ ] arrayList 32-39
 	- [ ] hash map soure code study 39-55
