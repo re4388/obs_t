@@ -12,6 +12,7 @@
 - [ ] [AgeFades-Note/Java at master · AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
 - [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
 - [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
+- [ ] [GitHub - cosen1024/Java-Interview: 「Java面试小抄](https://github.com/cosen1024/Java-Interview/tree/main)
 - [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
 - [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
 - [ ] [GitHub - stevenli91748/JAVA-Architecture: Java training project，包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
@@ -204,7 +205,7 @@
 	- [x] lock vs synchronized 8 -11
 	- [x] volatile 12-18
 	- [x] 樂觀和悲觀鎖 19-21
-	- [ ] cocurrenthashmap 22-32
+	- [x] cocurrenthashmap 22-32
 	- [x] threadlocal  33-38
 	
 
