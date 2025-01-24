@@ -520,9 +520,15 @@ sprint boot
 
 
 
-## 圖靈羅蘭 B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程。7 小时带你从入门到精通 Spring Security 实战 - 完整版教程
+## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程。7 小时带你从入门到精通 Spring Security 实战 - 完整版教程
 [B站讲的最好的SpringSecurity+jwt+oauth2.0教程。7小时带你从入门到精通Spring Security实战-完整版教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+## # 圖靈羅蘭 B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程  16 集，有一些30-40min
 [B站讲的最好的Spring Security框架及OAuth2.0协议超详细教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [x] [9.OAuth2.0协议\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=9)
+- 說的還好，講解不夠細緻。
+- 講話會頓，加速理解會扣分。
 
 
 
