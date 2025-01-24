@@ -54,23 +54,245 @@
 ## Java 入門
 - [x] [[宋红康 2023 版，java 入门自学]]
 
-## Java NIO
-- [x] [[Java_idx#【尚硅谷】Java NIO 详细教程]]
+## 尚硅谷 Java NIO 详细教程
+- [【尚硅谷】Java NIO 详细教程（一套带你掌握 IO API/javanio）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1E64y1h7Z4/?vd_source=c1191139db7aee736d31e75ebc6029d0)
+- 筆記 /Users/re4388/project/personal/lang/java/NIO_Demo01
+- [GitHub - re4388/NIO\_Demo01: 【尚硅谷】Java NIO详细教程（一套带你掌握IO API/javanio）](https://github.com/re4388/NIO_Demo01)
+01 - 尚硅谷 - Java NIO - 课程简介
+02 - 尚硅谷 - Java NIO - 概述
+03 - 尚硅谷 - Java NIO-Channel - 概述
+04 - 尚硅谷 - Java NIO-Channel-FileChannel（介绍和示例）
+05 - 尚硅谷 - Java NIO-Channel-FileChannel 详解（一）
+06 - 尚硅谷 - Java NIO-Channel-FileChannel 详解（二）
+07 - 尚硅谷 - Java NIO-Channel-Socket 通道 - 概述
+08 - 尚硅谷 - Java NIO-Channel-ServerSocketChannel
+09 - 尚硅谷 - Java NIO-Channel-SocketChannel
+10 - 尚硅谷 - Java NIO-Channel-DatagramChannel
+11 - 尚硅谷 - Java NIO-Channel - 分散和聚集
+12 - 尚硅谷 - Java NIO-Buffer - 概述
+13 - 尚硅谷 - Java NIO-Buffer - 基本使用
+14 - 尚硅谷 - Java NIO-Buffer - 三个属性和类型
+15 - 尚硅谷 - Java NIO-Buffer - 分配和读写数据
+16 - 尚硅谷 - Java NIO-Buffer - 几个方法
+17 - 尚硅谷 - Java NIO-Buffer - 缓冲区分片
+18 - 尚硅谷 - Java NIO-Buffer - 只读缓冲区
+19 - 尚硅谷 - Java NIO-Buffer - 直接缓冲区
+20 - 尚硅谷 - Java NIO-Buffer - 内存映射文件 IO
+21 - 尚硅谷 - Java NIO-Selector - 概述
+22 - 尚硅谷 - Java NIO-Selector - 操作方法
+23 - 尚硅谷 - Java NIO-Selector - 示例代码（客户端）
+24 - 尚硅谷 - Java NIO-Selector - 示例代码（服务端）
+25 - 尚硅谷 - Java NIO-Selector - 示例代码（完善）
+26 - 尚硅谷 - Java NIO-NIO 编程步骤总结
+27 - 尚硅谷 - Java NIO-Pipe - 介绍和代码示例
+28 - 尚硅谷 - Java NIO-FileLock - 介绍和使用方法
+29 - 尚硅谷 - Java NIO-FileLock - 示例代码
+30 - 尚硅谷 - Java NIO-Path 路径操作
+31 - 尚硅谷 - Java NIO-Files 文件操作
+32 - 尚硅谷 - Java NIO - 异步 FileChannel-Future 读数据
+33 - 尚硅谷 - Java NIO - 异步 FileChannel-CompletionHandler 读数据
+34 - 尚硅谷 - Java NIO - 异步 FileChannel-Future 写数据
+35 - 尚硅谷 - Java NIO - 异步 FileChannel-CompletionHandler 写数据
+36 - 尚硅谷 - Java NIO-Charset 字符编码
+37 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（1）
+38 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（2）
+39 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（3）
+40 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（4）
+41 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（1）
+42 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（2）
+
+## 尚硅谷 SpringBoot3 零基础教程
+- [001、SpringBoot3 课程简介 - YouTube](https://www.youtube.com/watch?v=TAgd4Xbqudc&list=PLmOn9nNkQxJEeIH75s5pdTUnCo9-xOc7c)
+- [筆記 SpringBoot3全栈指南](https://www.yuque.com/leifengyang/springboot3)
+- code [GitHub  雷丰阳 尚硅谷SpringBoot3零基础教程](https://github.com/re4388/atguigu-spring-boot-3)
+- /Users/re4388/project/personal/lang/java/atguigu-spring-boot-3
+- [ ] 有能力看官網來實作東西
+
+- [ ] 下面可以 review 一下
+- **在 [Spring Boot 中文社区](https://springboot.io/) 发帖寻求帮助**。
+- 尝试查阅 [How-to 手册](https://springdoc.cn/spring-boot/howto.html#howto)。 那里有常见的问题解决方案。
+- 学习 Spring 的基本知识。Spring Boot 建立在许多其他 Spring 项目之上。请查看 Spring 官方网站 [spring.io](https://spring.io/) ，那里有大量的参考文档。如果你刚开始使用 Spring，可以试试其中的一个指南。
+- 遇到问题，可以在 [stackoverflow.com](https://stackoverflow.com/) 上提问，记得要标识 [`spring-boot`](https://stackoverflow.com/tags/spring-boot) 标签，我们会看到的。
+- 遇到 BUG，可以在 [`github.com/spring-projects/spring-boot/issues`](https://github.com/spring-projects/spring-boot/issues) 报告。
+Spring Boot 中文文档PDF
+链接: https://pan.baidu.com/s/1koHUv1acXGc_0ZJdVyQo3w?pwd=hsxe   提取码: hsxe
+Spring Framework 中文文档PDF
+链接: https://pan.baidu.com/s/18DbxdITEIaXQroOdJXXILg?pwd=p2fe    提取码: p2fe
+
+01SpringBoot3程简介
+02快速入门 - 特性介绍
+03快速入门 - 示例 Demo
+04快速入门 - Demo 小结
+05快速入门 - Spring Initializer
+06细节分析 - 依赖管理机制
+07细节分析 - 自动配置机制
+08常用注解 - 组件注册
+09常用注解 - 条件注解
+10常用注解 - 属性绑定
+11自动配置 - 深入理解自动配置原理
+12整合 Redis 为例 - 理解如何学好 SpringBoot
+13Yaml 配置文件 - 基本用法
+14复杂对象表示 - 使用 Properties 文件
+15复杂对象表示 - 使用 yaml 文件
+16复杂对象表示 - yaml 语法细节
+17日志 - 整合原理
+18日志 - 日志格式
+19日志 - 日志级别
+20日志 - 日志分组
+21日志 - 文件输出
+22日志 - 归档与切割
+23日志 - 自定义日志系统
+24Web 开发 - 自动配置原理
+25Web 开发 - 默认效果
+26Web 开发 - WebMvcAutoConfiguration 原理
+27Web 开发 - 静态资源规则【源码分析】
+28Web 开发 - 欢迎页规则【源码分析】
+29Web 开发 - Favicon 规则
+30Web 开发 - HTTP 缓存机制测试
+31Web 开发 -【配置式】自定义静态资源
+32Web 开发 -【代码式】-WebMvcConfigurer 使用
+33Web 开发 - 路径匹配新规则
+34Web 开发 - 内容协商演示
+35Web 开发 - HttpMessageConverter 原理
+36Web 开发 - 默认 HttpMessageConverter 配置
+37Web 开发 - 增加 Yaml 内容协商
+38Web 开发 - Thymeleaf 整合
+39Web 开发 - Thymeleaf 核心语法
+40Web 开发 - Thymeleaf 遍历
+41Web 开发 - Thymeleaf 判断
+42Web 开发 - Thymeleaf 属性优先级
+43Web 开发 - Thymeleaf 模板引用
+44Web 开发 - Thymeleaf 总结与 devtools
+45Web 开发 - 国际化
+46Web 开发 - 错误处理机制
+47Web 开发 - 错误处理最佳实战
+48Web 开发 - 嵌入式容器
+49Web 开发 - 全面接管 SpringMVC 总结
+50Web 开发 - 新特性 - ProblemDetails
+51Web 开发 - 新特性 - 函数式 Web
+52数据访问 - SSM 整合
+53数据访问 - 自动配置分析
+54基础特性 - SpringApplication
+55基础特性 - Profiles 环境隔离用法
+56基础特性 - Profile 配置文件
+57基础特性 - 外部化配置
+58基础特性 - 单元测试
+59核心原理 - 生命周期监听
+60核心原理 - 9事件与探针
+61核心原理 - 事件驱动开发
+62核心原理 - 自动配置与 SPI
+63核心原理 -@SpringBootApplication 源码分析
+64核心原理 - 生命周期启动加载机制
+65核心原理 - 自定义 Starter 逐级抽取过程
+66第一部分小结
+67场景整合 - 云服务器安装 Docker
+68场景整合 - 批量安装软件
+69NoSQL-Redis 整合测试
+70NoSQL-RedisTemplate 定制化
+71扩展 - 阿里云停机不收费
+72接口文档 - Swagger 定制化
+73远程调用 - 天气查询 API 测试
+74远程调用 - WebClient
+75远程调用 - HttpInterface 与抽取
+76消息服务 - Kafka 简介与使用
+77消息服务 - 使用 KafkaTemplate 发送消息
+78消息服务 - 使用 KafkaListener 监听消息
+79消息服务 - 小结
+80Web 安全 - SpringSecurity 简介
+81Web 安全 - SpringSecurity 测试
+82可观测性 - Actuator 导入
+83可观测性 - 定制 Health 端点
+84可观测性 - 定制 Metrics 端点
+85可观测性 - 整合 Prometheus
+86AOT - 编译原理基础
+87AOT-JVM 编译原理
+88AOT - 配置 GraalVM 环境
+89AOT - 使用 GraalVM 打包 Windows 平台本地镜像
+90AOT - 使用 GraalVM 打包 Linux 平台本地镜像
+91AOT-boot 应用打包环境配置
+92AOT-boot 应用本地镜像打包
+93AOT - 使用 - P 激活 Native
+94SpringBoot3特性快速预览
 
 
-## SpringBoot3
-- [x] [[Spring#【尚硅谷】SpringBoot3 零基础教程]]
 
-## springBoot3 -reactive
-- [x] [[Spring#SpringBoot3响应式编程]]
 
-## spring6
-- [x] [[Spring#Spring6：尚硅谷Spring零基础入门到进阶]]
+## SpringBoot3响应式编程
+- [(837) 【SpringBoot3响应式编程】01 响应式编程 课程介绍 - YouTube](https://www.youtube.com/watch?v=miCNCdcmTE8&list=PLmOn9nNkQxJGZOf_WLh7FYNKXg44qLPg7)
+	- [reactor-programming: 响应式编程直播代码案例](https://gitee.com/leifengyang/reactor-programming)
+	- [响应式编程全套](https://www.yuque.com/leifengyang/springboot3/rg4wqgdbg8mfv04q)
+	- /Users/re4388/project/personal/lang/java/reactor-programming-master
+1.教程简介
+2.Lambda 表达式与函数式接口
+3.Lambda 表达式使用
+4.Function 函数式的各种写法
+5.StreamAPI - 介绍
+6.StreamAPI - 基本用法
+7.StreamAPI - 更多用法
+8.为什么有 Reactive-Stream 规范
+9.消息传递是响应式核心
+10.Reactive-Stream 规范核心接口
+11.Reactive-Stream 发布数据
+12.Reactive-Stream 发布订阅写法
+13.Reactive-Stream 四大核心组件
+14.第二次课 - 小结
+15.前情提要
+16.响应式编程模型
+17.Mono 和 Flux 简单数据
+18.事件感知 API-doOnXxx
+19.响应式流日志
+20.核心 - subscribe ()
+21.核心 - 自定义消费者
+22.核心 - 自定义消费者 - 生命周期钩子
+23.核心 - 请求重塑 - buffer
+24.核心 - 请求重塑 - limitRate
+25.核心 - 创建序列 - generate、create
+26.核心 - 自定义元素处理 - handle
+27.核心 - 自定义线程调度规则
+28.核心 - 常用操作
+29.核心 - 错误处理
+30.核心 - Sinks、重试、Context、阻塞 API
+31.WebFlux - 响应式 Web 与阻塞式 Web 组件对应关系
+32.WebFlux - 引入 & 介绍
+33.WebFlux - 使用 HttpHandler、HttpServer 原生 Reactor-Netty API 编写一个服务器
+34.WebFlux - Controller 注解 & SSE 功能
+35.WebFlux - SSE 的完整 API
+36.WebFlux - DispatcherHandler 源码
+37.WebFlux - Filter 等其他 API
+38.R2DBC - 课程介绍
+39.R2DBC - 体验简单查询
+40.Spring Data R2DBC - 整合与自动配置
+41.Spring Data R2DBC - DatabaseClient & R2dbcEntityTemplate API
+42.Spring Data R2DBC - 默认提供的 CRUD 方法、方法起名、自定义 @Query 注解
+43.Spring Data R2DBC - 1-1 数据封装 & 自定义 Converter
+44.Spring Data R2DBC - 小结
+45.Spring Data R2DBC - 1-1 关联查询
+46.Spring Data R2DBC - bufferUntilChanged 操作
+47.Spring Data R2DBC - 1 对多操作
+48.Spring Security - 配置认证规则
+49.Spring Security - 认证逻辑自定义 UserDetails 数据
+50.Spring Security - 方法级别鉴权
 
--- PS, 上面的筆記連到裡面去看---
 
-## Spring#楊博超 MyBatis+Spring+SpringMVC+SSM
-- [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
+
+
+## Spring6：尚硅谷Spring零基础入门到进阶
+- bilibli: [尚硅谷Spring零基础入门到进阶，一套搞定spring6全套视频教程（源码级讲解）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kR4y1b7Qc/?spm_id_from=333.788.comment.all.click)
+- yt: [01 尚硅谷 Spring6框架 课程简介 - YouTube](https://www.youtube.com/watch?v=Yv-Y-buMlO4&list=PLmOn9nNkQxJFtUb-e4-Pm8aGnkLr16lBg)
+- code
+	- [GitHub - re4388/Spring6](https://github.com/re4388/Spring6)
+- 筆記
+	- [Spring6《学习笔记(22版尚硅谷)》-CSDN博客](https://blog.csdn.net/weixin_44981126/article/details/130967125)
+	- [Spring | 友人的编程指南](https://www.codermast.com/spring-series/spring/)
+		- [GitHub - re4388/CoderMast-Notes](https://github.com/re4388/CoderMast-Notes)
+
+
+
+## 楊博超 MyBatis+Spring+SpringMVC+SSM
+- yt  [【SSM】00 课程介绍 - YouTube](https://www.youtube.com/watch?v=dYOeluPbr-U&list=PLmOn9nNkQxJFbsU4Qz8CdRiVM4Qs3ci75)
+	- [【尚硅谷】SSM框架全套教程， 楊博超 MyBatis+Spring+SpringMVC+SSM整合一套通关\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ya411S7aT/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- note
+		- D:\projects\java\ssm_楊博超\SSM整合.pdf
 	- 08 看完
 	- 9~61 mybatis
 		- mybatis to 13 finshed
@@ -79,6 +301,197 @@
 	- [x] 117 - 175 (spring MVC)
 	- [ ] 176 - fin (mybatis-spring-springMVC 整合)
 
+001 - 课程介绍
+002-MyBatis 历史
+003-MyBatis 特性
+004-MyBatis 下载
+005-MyBatis 和其他持久层技术的比较
+006 - 搭建 MyBatis 框架之开发环境和准备工作
+007 - 搭建 MyBatis 框架之创建 MyBatis 的核心配置文件
+008 - 搭建 MyBatis 框架之创建 mapper 接口和映射文件
+009 - 搭建 MyBatis 框架之测试添加用户功能
+010 - 搭建 MyBatis 框架之优化功能
+011 - 搭建 MyBatis 框架之源码验证和日志级别
+012 - 搭建 MyBatis 框架之测试修改和删除用户的功能
+013 - 搭建 MyBatis 框架之测试查询功能
+014-MyBatis 核心配置文件之 environments
+015-MyBatis 核心配置文件之 properties
+016-MyBatis 核心配置文件之 typeAliases
+017-MyBatis 核心配置文件之 mappers
+018 - 在 idea 中能够创建 mybatis 核心配置文件和映射文件的模板
+019 - 使用模板搭建 MyBatis 框架
+020-MyBatis 获取参数值的两种方式
+021-MyBatis 获取参数值的情况（1）
+022-MyBatis 获取参数值的情况（2）
+023-MyBatis 获取参数值的情况（3）
+024-MyBatis 获取参数值的情况（4）
+025-MyBatis 获取参数值的情况（5）
+026-MyBatis 的各种查询功能（1）
+027-MyBatis 的各种查询功能（2）
+028-MyBatis 的各种查询功能（3）
+029-MyBatis 的各种查询功能（4）
+030-MyBatis 处理模糊查询（1）
+031-MyBatis 处理模糊查询（2）
+032-MyBatis 处理批量删除
+033-MyBatis 处理动态设置表名
+034-MyBatis 获取自增的主键
+035 - 搭建 MyBatis 框架
+036 - 使用全局配置处理字段名和属性名不一致的情况
+037 - 使用 resultMap 处理字段名和属性名不一致的情况
+038 - 处理多对一映射关系功能分析
+039 - 使用级联处理多对一的映射关系
+040 - 使用 association 处理多对一的映射关系
+041 - 使用分步查询处理多对一的映射关系
+042 - 延迟加载
+043 - 通过 collection 处理一对多的映射关系
+044 - 通过分步查询处理一对多的映射关系
+045-MyBatis 动态 SQL 简介
+046-MyBatis 动态 SQL 之 if 标签
+047-MyBatis 动态 SQL 之 where 标签
+048-MyBatis 动态 SQL 之 trim 标签
+049-MyBatis 动态 SQL 之 choose、when、otherwise 标签
+050-MyBatis 动态 SQL 之 foreach 标签（批量添加）
+051-MyBatis 动态 SQL 之 foreach 标签（批量删除）
+052-MyBatis 动态 SQL 之 sql 标签
+053-MyBatis 的一级缓存
+054 - 使一级缓存失效的四种情况
+055-MyBatis 的二级缓存
+056-MyBatis 二级缓存相关的配置和缓存查询的顺序
+057-MyBatis 整合第三方缓存
+058-MyBatis 逆向工程之清晰简洁版
+059-MyBatis 逆向工程之奢华尊享版
+060 - 分页功能分析
+061 - 分页插件的使用
+062 - 通过分页插件获取分页相关数据
+063-Spring 概述
+064-Spring Framework 简介及特性
+065-IOC 思想和 DI
+066-IOC 容器在 Spring 中的实现
+067-Spring 的入门案例
+068-IOC 容器创建对象的方式
+069 - 获取 bean 的三种方式和注意事项
+070 - 依赖注入之 setter 注入
+071 - 依赖注入之构造器注入
+072 - 依赖注入之特殊值处理
+073 - 依赖注入之为类类型的属性赋值（引用外部的 bean）
+074 - 依赖注入之为类类型的属性赋值（级联方式和内部 bean）
+075 - 依赖注入之为数组类型的属性赋值
+076 - 依赖注入之为 list 集合类型的属性赋值
+077 - 依赖注入之为 map 集合类型的属性赋值
+078 - 依赖注入之 p 命名空间
+079-Spring 管理数据源和引入外部属性文件
+080-bean 的作用域
+081-bean 的生命周期
+082-bean 的作用域对生命周期的影响和后置处理器
+083-FactoryBean
+084 - 基于 xml 的自动装配之场景模拟
+085 - 基于 xml 的自动装配之 byType
+086 - 基于 xml 的自动装配之 byName
+087 - 基于注解管理 bean 之功能分析
+088 - 基于注解管理 bean 之注解和扫描
+089 - 基于注解管理 bean 之扫描组件
+090 - 基于注解管理 bean 之 bean 的 id
+091 - 基于注解的自动装配之 @Autowired 注解能够标识的位置
+092 - 基于注解的自动装配之 @Autowired 的原理
+093 - 基于注解的自动装配之 @Autowired 注意事项
+094 - 代理模式之场景模拟
+095 - 代理模式之提出问题和代理模式的概念
+096 - 代理模式之静态代理实现
+097 - 代理模式之动态代理（1）
+098 - 代理模式之动态代理（2）
+099-AOP 的概念、相关术语、作用
+100 - 基于注解的 AOP 之准备工作
+101 - 基于注解的 AOP 之前置通知
+102 - 基于注解的 AOP 之切入点表达式的语法和重用以及获取连接点的信息
+103 - 基于注解的 AOP 之各种通知的使用
+104 - 基于注解的 AOP 之环绕通知
+105 - 切面的优先级
+106 - 基于 xml 的 AOP 实现
+107-JdbcTemplate 之准备工作
+108-Spring 整合 Junit4 和 JdbcTemplate 实现添加功能
+109-JdbcTemplate 实现查询功能
+110 - 声明式事务概念
+111 - 基于注解的声明式事务之准备工作
+112 - 基于注解的声明式事务之无事务功能实现
+113 - 基于注解的声明式事务之实现事务功能
+114 - 声明式事务的属性之只读、超时、回滚策略
+115 - 声明式事务的属性之隔离级别
+116 - 声明式事务的属性之传播行为
+117 - 基于 xml 的声明式事务
+118-SpringMVC 简介和特点
+119-SpringMVC 入门案例之准备工作
+120-SpringMVC 入门案例之配置 web.xml
+121-SpringMVC 入门案例之创建 SpringMVC 的配置文件并配置
+122-SpringMVC 入门案例之功能测试
+123-SpringMVC 入门案例之总结和扩展
+124-@RequestMapping 注解标识的位置
+125-@RequestMapping 注解的 value 属性
+126-@RequestMapping 注解的 method 属性
+127-@RequestMapping 注解的 params 属性
+128-@RequestMapping 注解的 headers 属性
+129-@RequestMapping 注解使用 ant 风格的路径
+130-@RequestMapping 注解使用路径中的占位符
+131 - 通过 ServletAPI 获取请求参数
+132 - 通过控制器方法的形参获取请求参数和 @RequestParam 的使用
+133-@RequestHeader 和 @CookieValue
+134 - 通过 pojo 获取请求参数
+135 - 解决获取请求参数的乱码问题
+136 - 使用 ModelAndView 向请求域共享数据
+137 - 使用 Model、ModelMap、Map 向请求域共享数据
+138 - 向会话域和应用域共享数据
+139 - 观察源码之验证控制器方法统一的返回值为 ModelAndView
+140-SpringMVC 的视图之 ThymeleafView
+141-SringMVC 的视图之 InternalResourceView
+142-SpringMVC 的视图之 RedirectView
+143-SpringMVC 的视图控制器
+144-RESTful 简介与实现
+145-RESTful 之测试查询功能
+146-RESTful 之使用 HiddenHttpMethodFilter 处理 put 和 delete 请求
+147-RESTful 之 HiddenHttpMethodFilter 源码解析
+148-RESTful 案例之准备工作
+149-RESTful 案例之列表功能
+150-RESTful 案例之处理静态资源
+151-RESTful 案例之添加功能
+152-RESTful 案例之修改功能
+153-RESTful 案例之删除功能
+154-SpringMVC 处理 ajax 之准备工作
+155 - 回顾 axios
+156 - 测试 SpringMVC 处理 ajax 请求
+157 - 使用 @RequestBody 注解处理 json 格式的请求参数
+158 - 使用 @ResponseBody 注解响应 json 格式的数据
+159-SpringMVC 实现下载功能（1）
+160-SpringMVC 实现下载功能（2）
+161-SpringMVC 实现上传功能（1）
+162-SpringMVC 实现上传功能（2）
+163 - 解决文件上传过程中文件重名的问题
+164-SpringMVC 拦截器的创建
+165-SpringMVC 拦截器的配置
+166-SpringMVC 多个拦截器的执行顺序
+167 - 观察多个拦截器执行顺序的源码
+168 - 拦截器的 preHandle () 返回 false 的情况
+169 - 使用 xml 配置异常处理
+170 - 使用注解配置异常处理
+171 - 注解配置 SpringMVC（1）
+172 - 注解配置 SpringMVC（2）
+173-SpringMVC 的常用组件
+174-DispatcherServlet 初始化的过程
+175-DispatcherServlet 处理请求的过程
+176-SpringMVC 的执行流程
+177-ContextLoaderListener
+178 - 测试 ContextLoaderListener
+179-SSM 整合之准备工作
+180-SSM 整合之配置 web.xml
+181-SSM 整合之配置 SpringMVC
+182-SSM 整合之配置 Spring
+183-SSM 整合之 Spring 整合 MyBatis（1）
+184-SSM 整合之 Spring 整合 MyBatis（2）
+185-SSM 整合之配置事务
+186-SSM 整合之员工列表功能
+187-SSM 整合之展示分页数据
+188-SSM 整合之设置分页相关超链接
+
+
+
 
 
 
@@ -86,15 +499,170 @@
 ## Maven
 - [x] [Maven: 尚硅谷新版Maven教程](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
+01程简介
+02Maven 简介之依赖管理工具
+03Maven 简介之构建工具
+04Maven 简介之什么是 Maven
+05Maven 简介之工作原理
+06Maven 的安装和环境配置
+07Maven 的功能配置
+08IDEA 配置本地 Maven 软件
+09念梳理之 Maven 工程的 GAVP
+10IDEA 创建 Maven 的 Java 工程
+11IDEA 创建 Maven 的 Web 工程（方式一）
+12IDEA 创建 Maven 的 Web 工程（方式二）
+13将 Maven 的 Web 工程部署到 Tomcat 中
+14Maven 工程的项目结构
+15构建的概念和构建的过程
+16构建命令之编译和清理
+17构建命令之测试
+18构建命令之报告
+19构建命令之打包
+20构建命令之安装
+21通过坐标查找 jar
+22通过 IDEA 实现可视化构建
+23构建插件、命令、生命周期之间的关系
+24依赖管理的概念
+25依赖管理配置
+26依赖版本统一提取和维护
+27依赖范围之 Compile
+28依赖范围之 Test
+29依赖范围之 Provided
+30依赖范围之 Runtime、System、Import
+31Maven 工程依赖下载失败的原因
+32Maven 工程依赖下载失败的解决方案
+33通过脚本批量删除缓存文件
+34Maven 工程的构建配置之自定义打包名称
+35Maven 工程的构建配置之指定打包文件
+36Maven 工程的构建配置之配置插件
+37Maven 工程依赖的传递特性
+38Maven 工程依赖的传递原则
+39Maven 依赖冲突之短路优先原则
+40Maven 依赖冲突之先声明优先原则
+41Maven 依赖冲突之手动排除依赖
+42Maven 工程继承的概念
+43Maven 工程的继承关系
+44Maven 父工程统一依赖管理
+45Maven 工程的聚合关系
+46Maven 私服简介
+47Maven 私服的优势
+48Nexus 的下载和安装
+49Nexus 初始设置
+50Nexus 的各种仓库
+51通过 Nexus 下载 jar
+52将 jar 部署到 Nexus 中
+53引用别人部署的 jar
+54Maven 综合案例之项目需求和结构分析
+55Maven 综合案例之创建父工程
+56Maven 综合案例之创建子工程
+
 
 ## kafka
 - [x] Kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
+01_尚硅谷_Kafka_课程简介
+02_尚硅谷_Kafka_概述_定义
+03_尚硅谷_Kafka_概述_消息队列应用场景
+04_尚硅谷_Kafka_概述_消息队列两种模式
+05_尚硅谷_Kafka_概述_基础架构
+06_尚硅谷_Kafka_入门_安装 Kafka
+07_尚硅谷_Kafka_入门_启动停止脚本
+08_尚硅谷_Kafka_入门_Topic 命令
+09_尚硅谷_Kafka_入门_命令行操作
+10_尚硅谷_Kafka_生产者_原理
+11_尚硅谷_Kafka_生产者_异步发送
+12_尚硅谷_Kafka_生产者_回调异步发送
+13_尚硅谷_Kafka_生产者_同步发送
+14_尚硅谷_Kafka_生产者_分区
+15_尚硅谷_Kafka_生产者_分区策略
+16_尚硅谷_Kafka_生产者_自定义分区
+17_尚硅谷_Kafka_生产者_提高生产者吞吐量
+18_尚硅谷_Kafka_生产者_数据可靠
+19_尚硅谷_Kafka_生产者_数据重复
+20_尚硅谷_Kafka_生产者_数据有序
+21_尚硅谷_Kafka_生产者_数据乱序
+22_尚硅谷_Kafka_Broker_ZK 存储
+23_尚硅谷_Kafka_Broker_工作原理
+24_尚硅谷_Kafka_Broker_上下线
+25_尚硅谷_Kafka_Broker_服役新节点（上）
+26_尚硅谷_Kafka_Broker_服役新节点（下）
+27_尚硅谷_Kafka_Broker_退役旧节点
+28_尚硅谷_Kafka_每日回顾（上）
+29_尚硅谷_Kafka_每日回顾（下）
+30_尚硅谷_Kafka_Broker_副本基本信息
+31_尚硅谷_Kafka_Broker_Leader 选举
+32_尚硅谷_Kafka_Broker_Follower 故障
+33_尚硅谷_Kafka_Broker_Leader 故障
+34_尚硅谷_Kafka_Broker_分区副本分配
+35_尚硅谷_Kafka_Broker_手动调整分区副本分配
+36_尚硅谷_Kafka_Broker_LeaderPartition 负载平衡
+37_尚硅谷_Kafka_Broker_增加副本因子
+38_尚硅谷_Kafka_Broker_文件存储机制
+39_尚硅谷_Kafka_Broker_文件清除策略
+40_尚硅谷_Kafka_Broker_高效读写
+41_尚硅谷_Kafka_消费者_消费方式
+42_尚硅谷_Kafka_消费者_消费者总体工作流程
+43_尚硅谷_Kafka_消费者_消费者组工作原理
+44_尚硅谷_Kafka_消费者_消费者组初始化
+45_尚硅谷_Kafka_消费者_消费者组详细消费流程
+46_尚硅谷_Kafka_消费者_消费一个主题
+47_尚硅谷_Kafka_消费者_消费一个分区
+48_尚硅谷_Kafka_消费者_消费者组案例
+49_尚硅谷_Kafka_消费者_Range 分配
+50_尚硅谷_Kafka_消费者_Roundrobin
+51_尚硅谷_Kafka_消费者_Sticky
+52_尚硅谷_Kafka_消费者_offset 保存位置
+53_尚硅谷_Kafka_消费者_自动 offset
+54_尚硅谷_Kafka_消费者_手动 offser
+55_尚硅谷_Kafka_消费者_指定 offset
+56_尚硅谷_Kafka_消费者_按照时间消费
+57_尚硅谷_Kafka_消费者_消费者事务
+58_尚硅谷_Kafka_消费者_数据积压
+59_尚硅谷_Kafka_每日回顾（上）
+60_尚硅谷_Kafka_每日回顾（下）
+61_尚硅谷_Kafka_监控_MySQL 环境准备
+62_尚硅谷_Kafka_监控_Kafka 环境准备
+63_尚硅谷_Kafka_监控_Kafka-Eagle 安装
+64_尚硅谷_Kafka_监控_Kafka-Eagle 监控页面
+65_尚硅谷_Kafka_Kraft 模式
+66_尚硅谷_Kafka_集成_Flume 环境准备
+67_尚硅谷_Kafka_集成_Flume 生产者
+68_尚硅谷_Kafka_集成_Flume 消费者
+69_尚硅谷_Kafka_集成_Flink 生产者
+70_尚硅谷_Kafka_集成_Flink 消费者
+71_尚硅谷_Kafka_集成_SpringBoot 生产者
+72_尚硅谷_Kafka_集成_SpringBoot 消费者
+73_尚硅谷_Kafka_集成_Spark 生产者
+74_尚硅谷_Kafka_集成_Spark 消费者
+75_尚硅谷_Kafka_调优_内容简介
+76_尚硅谷_Kafka_调优_硬件选择
+77_尚硅谷_Kafka_调优_生产者调优
+78_尚硅谷_Kafka_调优_Broker 调优
+79_尚硅谷_Kafka_调优_消费者调优
+80_尚硅谷_Kafka_调优_总体调优
+81_尚硅谷_Kafka_调优_生产者压力测试
+82_尚硅谷_Kafka_调优_消费者压力测试
+83_尚硅谷_Kafka_源码_环境准备
+84_尚硅谷_Kafka_源码_生产者原理回顾
+85_尚硅谷_Kafka_源码_生产者初始化
+86_尚硅谷_Kafka_源码_生产者发送数据到缓存
+87_尚硅谷_Kafka_源码_生产者 Sender 线程
+88_尚硅谷_Kafka_源码_消费者原理回顾
+89_尚硅谷_Kafka_源码_消费者初始化
+90_尚硅谷_Kafka_源码_消费者订阅主题
+91_尚硅谷_Kafka_源码_消费总体流程
+92_尚硅谷_Kafka_源码_消费者组初始化流程
+93_尚硅谷_Kafka_源码_消费者组拉取和处理数据
+94_尚硅谷_Kafka_源码_消费者 Offset 提交
+95_尚硅谷_Kafka_源码_服务器端源码
+96_尚硅谷_Kafka_课程结束
+
 
 ## Hibernate
 - [x] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 	- note D:\all_book\java book
- 
+
+
  ## SpringData JPA
  - [x] find SpringBoot 整合 JPA   [全网 2022 最新 SpringData Jpa 最全](https://www.youtube.com/playlist?list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
 	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
@@ -287,6 +855,8 @@
 	- [GitHub - re4388/NOTE\_DesignPatterns: 尚硅谷Java设计模式（图解+框架源码剖析）学习笔记](https://github.com/re4388/NOTE_DesignPatterns)
 	- [尚硅谷—韩顺平—图解 Java设计模式（1～27）\_设计模式笔记 韩顺平-CSDN博客](https://blog.csdn.net/qq_43056248/article/details/123179123)
 	- D:\all_book\java book 中的 尚硅谷_韩顺平_图解Java设计模式
+
+
 	- [ ] [037 尚硅谷 图解Java设计模式 单例模式JKD源码分析 - YouTube](https://www.youtube.com/watch?v=bP2t_LNxqWM&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=38)
 	- [ ] [047 尚硅谷 图解Java设计模式 工厂模式 JDK源码分析 - YouTube](https://www.youtube.com/watch?v=tDqAUuNC4is&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=48)
 	- [ ] [051 尚硅谷 图解Java设计模式 原型模式3 Spring源码分析 - YouTube](https://www.youtube.com/watch?v=rqON85wsA5U&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=52)
@@ -320,27 +890,8 @@
 
 - [ ] TIL for those recent architecnote
 
-# window 環境配置
-- [ ] ask brian say Sat, 是否用 window now? 
-	- [ ] windown system familir?
-- [ ] [[mac to window transition]]
-	- [ ] 要記錄改了哪些東西，因為這樣你才可以複製到公司電腦上
-	- [ ] mac 開發用的東西有alternative, like dbeaver, 截圖軟體等等
-- [ ] 幫我介紹一下 夢昌
-- [ ] onboarf ask 一下彈性, 930上班
-
-
-# semi-conductor
-- [曲博科技教室 Dr. J Class - YouTube](https://www.youtube.com/@Ansforce/search?query=%E5%8F%B0%E7%A9%8D%E9%9B%BB)
-- [(806) A3-22晶圓的尺寸與良率M2U00109 - YouTube](https://www.youtube.com/watch?v=_DZqVqO1Xlw&list=PLLFCC3QJecRPRBPJunldWjKDZeBBkrdaf&index=21)
-
-
 
 # spring security
-
-
-## 尚硅谷 雷神 SpringSecurity
-- [x] [[Spring#尚硅谷 雷神 SpringSecurity]]
 
 ## 尚硅谷 雷神 SpringSecurity
 - [(836) 01 尚硅谷 SpringSecurity 课程介绍 - YouTube](https://www.youtube.com/watch?v=_2v7C9wBH1M&list=PLmOn9nNkQxJEnBjOMEXPLRjoTRNvhHIl2&index=1)
@@ -384,10 +935,10 @@
 33 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合权限管理模块
 34 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合网关和前端
 35 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 案例测试
-36 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解上
-37 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解下
-38 - 尚硅谷 - SpringSecurity - 源码剖析 - 权限访问流程详解
-39 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证信息共享详解
+- [ ] 36 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解上
+- [ ] 37 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解下
+- [ ] 38 - 尚硅谷 - SpringSecurity - 源码剖析 - 权限访问流程详解
+- [ ] 39 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证信息共享详解
 40 - 尚硅谷 - SpringSecurity - 结束语
 
 
@@ -517,8 +1068,8 @@
 - [ ] 11 Spring Security - 认证功能
 - [ ] 12 Spring Security - 授权功能
 - [ ] 13 Spring -SpringBoot
-- [ ] 14 Spring Security - 结构总览
-- [ ] 15 Spring Security - 认证流程
+- [x] 14 Spring Security - 结构总览
+- [x] 15 Spring Security - 认证流程
 - [ ] 16 UserDetailService
 - [ ] 17 工作原理 - PasswordEncoder
 - [ ] 18 工作原理 - 授权流程
@@ -1298,6 +1849,21 @@ jvm 案例分析一
 # 前端
 - [尚硅谷 react-哔哩哔哩\_bilibili](https://search.bilibili.com/all?keyword=%E5%B0%9A%E7%A1%85%E8%B0%B7+react&from_source=webtop_search&spm_id_from=333.1007&search_source=5)
 - [尚硅谷 vue-哔哩哔哩\_bilibili](https://search.bilibili.com/all?keyword=%E5%B0%9A%E7%A1%85%E8%B0%B7+vue&from_source=webtop_search&spm_id_from=333.1007&search_source=5)
+
+# window 環境配置
+- [ ] ask brian say Sat, 是否用 window now? 
+	- [ ] windown system familir?
+- [ ] [[mac to window transition]]
+	- [ ] 要記錄改了哪些東西，因為這樣你才可以複製到公司電腦上
+	- [ ] mac 開發用的東西有alternative, like dbeaver, 截圖軟體等等
+- [ ] 幫我介紹一下 夢昌
+- [ ] onboarf ask 一下彈性, 930上班
+
+
+# semi-conductor
+- [曲博科技教室 Dr. J Class - YouTube](https://www.youtube.com/@Ansforce/search?query=%E5%8F%B0%E7%A9%8D%E9%9B%BB)
+- [(806) A3-22晶圓的尺寸與良率M2U00109 - YouTube](https://www.youtube.com/watch?v=_DZqVqO1Xlw&list=PLLFCC3QJecRPRBPJunldWjKDZeBBkrdaf&index=21)
+
 
 
 

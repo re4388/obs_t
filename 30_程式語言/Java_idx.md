@@ -46,10 +46,7 @@
 
 # Java Basic
 
-## 【尚硅谷】Java NIO 详细教程
-- [【尚硅谷】Java NIO 详细教程（一套带你掌握 IO API/javanio）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1E64y1h7Z4/?vd_source=c1191139db7aee736d31e75ebc6029d0)
-- 筆記 /Users/re4388/project/personal/lang/java/NIO_Demo01
-- [GitHub - re4388/NIO\_Demo01: 【尚硅谷】Java NIO详细教程（一套带你掌握IO API/javanio）](https://github.com/re4388/NIO_Demo01)
+
 
 [[Java 的動態代理 Proxy.newProxyInstance()]]
 

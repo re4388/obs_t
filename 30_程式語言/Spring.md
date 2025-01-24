@@ -1,13 +1,5 @@
 
-## Spring6：尚硅谷Spring零基础入门到进阶
-- bilibli: [尚硅谷Spring零基础入门到进阶，一套搞定spring6全套视频教程（源码级讲解）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kR4y1b7Qc/?spm_id_from=333.788.comment.all.click)
-- yt: [01 尚硅谷 Spring6框架 课程简介 - YouTube](https://www.youtube.com/watch?v=Yv-Y-buMlO4&list=PLmOn9nNkQxJFtUb-e4-Pm8aGnkLr16lBg)
-- code
-	- [GitHub - re4388/Spring6](https://github.com/re4388/Spring6)
-- 筆記
-	- [Spring6《学习笔记(22版尚硅谷)》-CSDN博客](https://blog.csdn.net/weixin_44981126/article/details/130967125)
-	- [Spring | 友人的编程指南](https://www.codermast.com/spring-series/spring/)
-		- [GitHub - re4388/CoderMast-Notes](https://github.com/re4388/CoderMast-Notes)
+
 
 
 ## SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc
@@ -19,41 +11,9 @@
 
 
 
-## 楊博超 MyBatis+Spring+SpringMVC+SSM
-- yt  [【SSM】00 课程介绍 - YouTube](https://www.youtube.com/watch?v=dYOeluPbr-U&list=PLmOn9nNkQxJFbsU4Qz8CdRiVM4Qs3ci75)
-	- [【尚硅谷】SSM框架全套教程， 楊博超 MyBatis+Spring+SpringMVC+SSM整合一套通关\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ya411S7aT/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- note
-		- D:\projects\java\ssm_楊博超\SSM整合.pdf
 
 
 
-# Spring boot
-### 【尚硅谷】SpringBoot3 零基础教程
-- [001、SpringBoot3 课程简介 - YouTube](https://www.youtube.com/watch?v=TAgd4Xbqudc&list=PLmOn9nNkQxJEeIH75s5pdTUnCo9-xOc7c)
-- [筆記 SpringBoot3全栈指南](https://www.yuque.com/leifengyang/springboot3)
-- code [GitHub  雷丰阳 尚硅谷SpringBoot3零基础教程](https://github.com/re4388/atguigu-spring-boot-3)
-- /Users/re4388/project/personal/lang/java/atguigu-spring-boot-3
-
-
-
-- [ ] 有能力看官網來實作東西
-
-- [ ] 下面可以 review 一下
-- **在 [Spring Boot 中文社区](https://springboot.io/) 发帖寻求帮助**。
-- 尝试查阅 [How-to 手册](https://springdoc.cn/spring-boot/howto.html#howto)。 那里有常见的问题解决方案。
-- 学习 Spring 的基本知识。Spring Boot 建立在许多其他 Spring 项目之上。请查看 Spring 官方网站 [spring.io](https://spring.io/) ，那里有大量的参考文档。如果你刚开始使用 Spring，可以试试其中的一个指南。
-- 遇到问题，可以在 [stackoverflow.com](https://stackoverflow.com/) 上提问，记得要标识 [`spring-boot`](https://stackoverflow.com/tags/spring-boot) 标签，我们会看到的。
-- 遇到 BUG，可以在 [`github.com/spring-projects/spring-boot/issues`](https://github.com/spring-projects/spring-boot/issues) 报告。
-
-
-- [ ] spring boot tx 要如何處理
-
-
-Spring Boot 中文文档PDF
-链接: https://pan.baidu.com/s/1koHUv1acXGc_0ZJdVyQo3w?pwd=hsxe   提取码: hsxe
-
-Spring Framework 中文文档PDF
-链接: https://pan.baidu.com/s/18DbxdITEIaXQroOdJXXILg?pwd=p2fe    提取码: p2fe
 
 
 
@@ -91,11 +51,7 @@ Spring Framework 中文文档PDF
 
 
 # Spring Reactive
-### SpringBoot3响应式编程
-- [(837) 【SpringBoot3响应式编程】01 响应式编程 课程介绍 - YouTube](https://www.youtube.com/watch?v=miCNCdcmTE8&list=PLmOn9nNkQxJGZOf_WLh7FYNKXg44qLPg7)
-	- [reactor-programming: 响应式编程直播代码案例](https://gitee.com/leifengyang/reactor-programming)
-	- [响应式编程全套](https://www.yuque.com/leifengyang/springboot3/rg4wqgdbg8mfv04q)
-	- /Users/re4388/project/personal/lang/java/reactor-programming-master
+
 
 - [ ] Spring WebFlux
 	- [ ] [一文弄懂 Spring WebFlux 的来龙去脉 - 知乎](https://zhuanlan.zhihu.com/p/559158740)
