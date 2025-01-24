@@ -783,6 +783,11 @@ Spring Framework 中文文档PDF
 	- [[spring solve circular dependency]]
 	- [GitHub - re4388 黑马Java八股文面试](https://github.com/re4388/Interview_Heima_Demo01)
 	- [黑马 八股文面试CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
+
+
+
+
+
 - [x] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
 	- note: [虚拟机篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day03-%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%AE%B2%E4%B9%89/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [JVM-基于服务性代理的调试工具JHSDB(windows)-CSDN博客](https://blog.csdn.net/qq_16498553/article/details/121326800)
@@ -794,13 +799,80 @@ Spring Framework 中文文档PDF
 	- [x] 類加載 17-26
 	- [x] skip 四種引用 27-30
 	- [x] finalize 31-33  
+
+
+
+
+
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
 	- note: [基础篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day01-%E5%9F%BA%E7%A1%80%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%9F%BA%E7%A1%80%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [ ] 算法 1-32
 	- [ ] arrayList soure code study 32-39
 	- [ ] hash map soure code study 39-55
 	- [ ] 單例模式 56-62
-	- note: 
+01 课程介绍 高清 
+02 二分查找 演示 高清 
+03 二分查找 实现 高清 
+04 二分查找 解决整数溢出 方法 1 高清 
+05 二分查找 解决整数溢出 方法 2 高清 
+06 二分查找 选择题目 1 高清 
+07 二分查找 选择题目 2 高清 
+08 二分查找 注意事项 高清 
+09 冒泡排序 演示 高清 
+10 冒泡排序 初步实现 高清 
+11 冒泡排序 优化 减少比较次数 高清 
+12 冒泡排序 优化 减少冒泡次数 高清 
+13 冒泡排序 优化 进一步优化比较次数 高清 
+15 冒泡排序 总结 高清 
+16 选择排序 演示 高清 
+17 选择排序 实现 高清 
+18 选择排序 vs 冒泡排序 高清 
+19 插入排序 演示 高清 
+20 插入排序 实现 高清 
+21 插入排序 总结 高清 
+22 希尔排序 演示 高清 
+23 插入和选择 推导某一轮排序结果 高清 
+24 快速排序 描述 高清 
+25 快速排序 单边循环 lomuto 演示 高清 
+26 快速排序 单边循环 lomuto 实现 分区 高清 
+27 快速排序 单边循环 lomuto 实现 递归 高清 
+28 快速排序 双边循环 演示 高清 
+29 快速排序 双边循环 实现 高清 
+30 快速排序 双边循环 细节 高清 
+31 快速排序 特点 高清 
+32 ArrayList 扩容规则 高清 
+33 Iterator FailFast FailSafe 演示 高清 
+34 Iterator FailFast 源码分析 高清 
+35 Iterator FailSafe 源码分析 高清 
+36 LinkedList vs ArrayList 随机访问性能比较 高清 
+37 LinkedList vs ArrayList 增删性能比较 高清 
+38 LinkedList vs ArrayList 局部性原理 空间占用 高清 
+39 HashMap 数据结构 高清 
+40 HashMap 数据结构 快速查找演示 高清 
+41 HashMap 数据结构 链表过长的解决 扩容 高清 
+42 HashMap 数据结构 链表过长的解决 树化 高清 
+43 HashMap 数据结构 红黑树的意义 树化阈值 高清 
+44 HashMap 数据结构 树退化链表 情况 1 高清 
+45 HashMap 数据结构 树退化链表 情况 2 高清 
+46 HashMap 索引如何计算 高清 
+47 HashMap 为何要二次哈希 高清 
+48 HashMap 容量为何是 2 的 n 次幂 高清 
+49 HashMap 容量不用 2 的 n 次幂行不行 高清 
+50 HashMap put 流程 高清 
+51 HashMap 负载因子为何是 0 75f 高清 
+52 HashMap 并发丢数据 高清 
+53 HashMap 并发扩容死链 1 7 高清 
+54 HashMap key 的要求 高清 
+55 HashMap hashCode 的设计 高清 
+56 单例模式 方式 1 饿汉式 高清 
+57 单例模式 方式 2 枚举饿汉式 高清 
+58 单例模式 方式 3 懒汉式 高清 
+59 单例模式 方式 4 DCL 懒汉式 高清 
+60 单例模式 方式 4 DCL 懒汉式 为何加 volatile 高清 
+61 单例模式 方式 5 内部类懒汉式 高清 
+62 单例模式 在 jdk 中的体现 高清 
+
+
 - [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
 	- [并发篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day02-%E5%B9%B6%E5%8F%91%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%B9%B6%E5%8F%91%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- related:
@@ -814,6 +886,44 @@ Spring Framework 中文文档PDF
 	- [x] 樂觀和悲觀鎖 19-21
 	- [x] cocurrenthashmap 22-32
 	- [x] threadlocal  33-38
+01 线程状态 java 中的线程状态 
+02 线程状态 java 中的线程状态 代码演示 
+03 线程状态 五种状态 vs 六种状态 
+04 线程池核心参数 简介 
+05 线程池核心参数 演示 
+06 wait vs sleep 区别 
+07 wait vs sleep 演示 
+08 lock vs synchronized 区别 
+09 lock 阻塞演示 
+10 lock 公平非公平演示 
+11 lock 条件变量演示 
+12 volatile 举例 
+13 volatile 原子性 演示 
+14 volatile 可见性 演示 
+15 volatile 可见性 原因与解决 
+16 volatile 有序性 分析 
+17 volatile 有序性 压测演示 
+18 volatile 有序性 volatile 位置不同影响分析 
+19 悲观锁 vs 乐观锁 理论 
+20 悲观锁 vs 乐观锁 Unsafe cas 
+21 悲观锁 vs 乐观锁 代码对比 
+22 Hashtable vs ConcurrentHashMap 区别 
+23 Hashtable 演示 
+24 ConcurrentHashMap v7 演示并发度 
+25 ConcurrentHashMap v7 演示索引计算 
+26 ConcurrentHashMap v7 演示扩容 
+27 ConcurrentHashMap v7 演示 Segment0 
+28 ConcurrentHashMap v8 与 7 简单比较 
+29 ConcurrentHashMap v8 构造参数含义 
+30 ConcurrentHashMap v8 演示并发 put 
+31 ConcurrentHashMap v8 演示扩容 
+32 ConcurrentHashMap v8 扩容细节 
+33 ThreadLocal 作用 
+34 ThreadLocal 原理 
+35 ThreadLocal key 内存释放时机 
+36 ThreadLocal value 内存释放时机 get 时 
+37 ThreadLocal value 内存释放时机 set 时 
+38 ThreadLocal value 内存释放时机 remove 时 
 
 
 ## 黑馬 新版  java 八股文面试
