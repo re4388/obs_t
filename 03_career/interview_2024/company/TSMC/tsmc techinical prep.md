@@ -506,8 +506,59 @@ sprint boot
 - note
 	- [Spring-Security-course/笔记/笔记.md at main · re4388/Spring-Security-course · GitHub](https://github.com/re4388/Spring-Security-course/blob/main/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)
 - [x] [07-入门-Spring Security底层原理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
-- 沒有定頓，快速看是好處
-- 透過官網說明，加分
+- [x] 01 - 教程简介
+- [x] 02 - 入门 - Spring Security 基本功能
+- [x] 03 - 入门 - 实现最简单的身份认证
+- [x] 04 - 入门 - 使用动态链接
+- [x] 05 - 入门 - 登录页面加载慢的问题
+- [x] 06 - 入门 - Spring Security 默认做了什么
+- [x] 07 - 入门 - Spring Security 底层原理
+- [x] 08 - 入门 - DefaultSecurityFilterChain
+- [x] 09 - 入门 - SecurityProperties
+- [x] 10 - 自定义配置 - 基于内存的用户认证
+- [x] 11 - 自定义配置 - 用户认证源码分析
+- [x] 12 - 自定义配置 - 基于数据库的数据源
+- [x] 13 - 自定义配置 - 基于数据库的用户认证流程分析
+- [x] 14 - 自定义配置 - 基于数据库的用户认证流程实现
+- [x] 15 - 自定义配置 - SpringSecurity 的默认配置
+- [ ] 16 - 自定义配置 - 添加用户功能的实现
+- [ ] 17 - 自定义配置 - 添加用户功能的测试
+- [ ] 18 - 自定义配置 - 密码加密算法
+- [ ] 19 - 自定义配置 - 密码加密测试
+- [ ] 20 - 自定义配置 - DelegatingPasswordEncoder
+- [ ] 21 - 自定义配置 - 自定义登录页
+- [ ] 22 - 自定义配置 - 登录页的细节
+- [ ] 23 - 前后端分离 - 用户认证流程
+- [ ] 24 - 前后端分离 - 用户认证成功的代码实现
+- [ ] 25 - 前后端分离 - 用户认证失败的代码实现
+- [ ] 26 - 前后端分离 - 用户注销处理
+- [ ] 27 - 前后端分离 - 请求未认证处理
+- [ ] 28 - 前后端分离 - 跨域处理
+- [ ] 29 - 前后端分离 - 用户认证信息
+- [ ] 30 - 前后端分离 - 会话并发处理
+- [ ] 31 - 授权 - 用户角色权限资源
+- [ ] 32 - 授权 - 基于 request 的授权 - 权限分配
+- [ ] 33 - 授权 - 基于 request 的授权 - 请求未授权处理
+- [ ] 34 - 授权 - 基于 request 的授权 - 角色分配
+- [ ] 35 - 授权 - RBAC
+- [ ] 36 - 授权 - 基于方法的授权
+- [ ] 37-OAuth2 - 什么是 OAuth2
+- [ ] 38-OAuth2 - 角色总结
+- [ ] 39-OAuth2 - 使用场景
+- [ ] 40-OAuth2 - 四种授权模式
+- [ ] 41-OAuth2 - 四种授权模式 - 授权码模式
+- [ ] 42-OAuth2 - 四种授权模式 - 隐藏模式
+- [ ] 43-OAuth2 - 四种授权模式 - 密码模式
+- [ ] 44-OAuth2 - 四种授权模式 - 凭证式模式
+- [ ] 45-OAuth2 - 授权类型的选择
+- [ ] 46-OAuth2-Spring 中的 OAuth2
+- [ ] 47-GitHub 授权登录案例 - 注册客户应用
+- [ ] 48-GitHub 授权登录案例 - 创建客户应用和登录测试
+- [ ] 49-GitHub 授权登录案例 - 退出和重新登录的测试
+- [ ] 50-GitHub 授权登录案例 - 授权登录流程分析
+- [ ] 51-GitHub 授权登录案例 - CommonOAuth2Provider
+
+
 
 
 ## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程。7 小时带你从入门到精通 Spring Security 实战 - 完整版教程
