@@ -688,7 +688,64 @@ Spring Framework 中文文档PDF
 	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
 	- [[13 道 Java HashMap 精选面试题]]
 	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
-
+01 大厂高频 Java 面试题合集 
+02 集合 ArrayList 基本介绍 
+03 集合 ArrayList 如何初始化及扩容 
+04 集合 ArrayList 初始化容量及集合实际大小 
+05 集合 ArrayList 为什么增删慢 
+06 集合 ArrayList 和数组哪个适合做队列 
+07 集合 ArrayList 和 LinkedList 的遍历性能 
+08 集合 HashMap 数据结构及存储原理 
+09 集合 HashMap put 过程 初始化判断 
+10 集合 HashMap put 过程 链表节点 
+11 集合 HashMap put 过程 红黑树节点 
+12 集合 HashMap 有参构造的初始化 
+13 集合 HashMap 无参构造的初始化 
+14 集合 HashMap hash 函数是如何设计的 
+15 集合 HashMap JDK1 7 版本的头插法 
+16 集合 HashMap JDK1 8 版本的尾插法 
+17 集合 HashMap 如何实现扩容 
+18 集合 HashMap 扩容时的重新 Hash 问题 
+19 集合 HashMap 为什么要重写 HashCode 和 Equals 
+20 集合 ConcurrentHashMap 如何解决 HashMap 的线程安全问题 
+21 集合 ConcurrentHashMap Hashtable 和 HashMap 的区别 
+22 集合 ConcurrentHashMap fail safe 和 fail fast 的区别 
+23 集合 ConcurrentHashMap JDK1 7 版本的特点 
+24 集合 ConcurrentHashMap JDK1 7 版本如何上锁 
+25 集合 ConcurrentHashMap Segment 如何实现扩容 
+26 集合 ConcurrentHashMap JDK1 8 如何实现上锁 
+27 集合 ConcurrenthashMap JDK1 8 为什么要使用 CAS 
+28 集合 ConcurrenthashMap CAS 上锁机制及存在的缺点 
+29 集合 ConcurrenthashMap CAS 中的 ABA 问题及如何解决 
+30 集合 ConcurrenthashMap 并发效率为什么高 
+01 并发编程 volatile 神奇的现象 
+02 并发编程 volatile 计算机的内存模型 
+03 并发编程 volatile Java 内存模型 JMM 介绍 
+04 并发编程 volatile JMM 在没有使用解决可见性问题时的数据同步过程 
+05 并发编程 volatile JMM 解决可见性问题的数据同步过程 
+06 并发编程 volatile 使用 Volatile 关键字解决可见性问题 
+07 并发编程 volatile 原子性问题的出现 
+08 并发编程 volatile volatile 不能保证原子性 
+09 并发编程 volatile 指令重排情况的出现 
+10 并发编程 volatile 指令重排的可能造成的问题 
+11 并发编程 volatile 如何防止指令重排 
+12 并发编程 volatile MESI 缓存一致性协议 
+13 并发编程 volatile 总结 
+14 并发编程 synchronized 内容介绍 
+15 并发编程 synchronized 多种用法 
+16 并发编程 synchronized 锁的膨胀升级 无锁及偏向锁 
+17 并发编程 synchronized 锁的膨胀升级 轻量级锁及重量级锁 
+18 并发编程 synchronized 如何通过指令来上锁 
+19 并发编程 synchronized Monitor 上锁过程 
+20 并发编程 synchronized 总结 
+21 并发编程 ReentrantLock 介绍 
+22 并发编程 ReentrantLock 实现公平锁和非公平锁 
+23 并发编程 ReentrantLock 加锁逻辑 
+24 并发编程 ReentrantLock 加锁失败的线程第一次进入到等待队列 
+25 并发编程 ReentrantLock 加锁失败的线程非首次进入到等待队列 
+26 并发编程 ReentrantLock 队列中的线程将被阻塞 
+27 并发编程 ReentrantLock 释放锁时唤醒队列中被阻塞的线程 
+28 并发编程 ReentrantLock 总结 
 
 ## 周阳 JUC
 - [x]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
@@ -710,7 +767,172 @@ Spring Framework 中文文档PDF
 	- [GitHub - re4388/JUC: 尚硅谷 JUC 周阳 大厂高阶班之 JUC并发编程与源码分析](https://github.com/re4388/JUC)
 	- [尚硅谷JUC并发编程与源码分析2022详细笔记\_juc源码是谁提供的-CSDN博客](https://blog.csdn.net/ctflq/article/details/125147169)
 	- [GitHub - re4388/juc\_bilibili](https://github.com/re4388/juc_bilibili)
-
+01_JUC 教程简介
+02_为什么学好用好多线程如此重要
+03_start 线程开启 C 源码分析
+04_基础概念复习
+05_用户守护线程理论
+06_用户守护线程代码演示和总结
+07_CompletableFuture 之 Future 为什么出现
+08_CompletableFuture 之引出 FutureTask - 上集
+09_CompletableFuture 之引出 FutureTask - 中集
+10_CompletableFuture 之引出 FutureTask - 下集
+11_CompletableFuture 之 FutureTask 结合线程池提升性能
+12_CompletableFuture 之 get 获取容易阻塞
+13_CompletableFuture 之轮询耗费 CPU
+14_CompletableFuture 之 Future 异步优化思路
+15_CompletableFuture 之 CompletionStage 源码分析
+16_CompletableFuture 之四大静态方法初讲
+17_CompletableFuture 之通用异步编程 - 上集
+18_CompletableFuture 之通用异步编程 - 下集
+19_CompletableFuture 之链式语法和 join 方法介绍
+20_CompletableFuture 之电商比价大厂案例需求分析
+21_CompletableFuture 之电商比价大厂案例编码实战 - 上集
+22_CompletableFuture 之电商比价大厂案例编码实战 - 下集
+23_CompletableFuture 之获得结果和触发计算
+24_CompletableFuture 之对计算结果进行处理
+25_CompletableFuture 之对计算结果进行消费
+26_CompletableFuture 之线程池运行选择
+27_CompletableFuture 之对计算速度选用
+28_CompletableFuture 之对计算结果合并
+29_多线程锁之线程锁知识概述
+30_多线程锁之悲观锁和乐观锁介绍
+31_多线程锁之 8 锁案例编码演示
+32_多线程锁之 8 锁案例原理解释
+33_多线程锁之 synchronized 字节码分析
+34_多线程锁之 synchronized 底层原语分析
+35_多线程锁之公平锁和非公平锁
+36_多线程锁之可重入锁理论知识
+37_多线程锁之可重入锁 synchronized 代码验证
+38_多线程锁之可重入锁原理分析和 lock 代码验证
+39_多线程锁之死锁案例和排查命令
+40_多线程锁之 objectMonitor 和 synchronized 锁小总结
+41_中断机制之中断协商机制简介
+42_中断机制之 3 大中断方法说明
+43_中断机制之通过 volatile 实现线程中断停止
+44_中断机制之通过 AtomicBoolean 实现线程中断停止
+45_中断机制之通过 interrupt 实现线程中断停止
+46_中断机制之 interrupt 和 isInterrupted 源码分析
+47_中断机制之中断协商案例深度解析 - 上集
+48_中断机制之中断协商案例深度解析 - 下集
+49_中断机制之静态方法 interrupted
+50_LockSupport 之是什么及等待唤醒机制对比
+51_LockSupport 之 wait 和 notify 实现等待和唤醒
+52_LockSupport 之 await 和 signal 实现等待和唤醒
+53_LockSupport 之 park 和 unpark 入门简介
+54_LockSupport 之 park 和 unpark 编码实战
+55_LockSupport 之原理小总结
+56_JMM 之入门简介
+57_JMM 之学术定义和作用
+58_JMM 之三大特性
+59_JMM 之多线程对变量的读写过程
+60_JMM 之 happens-before - 上集
+61_JMM 之 happens-before - 下集
+62_JMM 之 happens-before 小总结和案例分析
+63_volatile 之两大特性
+64_volatile 之四大屏障
+65_volatile 之读写屏障插入策略
+66_volatile 之可见性案例详解
+67_volatile 之无原子性案例详解
+68_volatile 之禁重排案例详解
+69_volatile 之日常使用场景
+70_volatile 之小总结
+71_CAS 之原理简介
+72_CAS 之源码分析引出 Unsafe 类
+73_CAS 之 Unsafe 类详解
+74_CAS 之 Unsafe 类底层汇编源码分析
+75_CAS 之原子引用 AtomicReference
+76_CAS 之手写自旋锁
+77_CAS 的两大缺点
+78_CAS 之 AtomicStampedReference 入门
+79_CAS 之 ABA 问题编码实战
+80_原子类入门介绍和分类说明
+81_原子类之基本类型原子类
+82_原子类之数组类型原子类
+83_原子类之引用类型原子类
+84_原子类之对象的属性修改原子类理论
+85_原子类之对象的属性修改原子类案例 01
+86_原子类之对象的属性修改原子类案例 02
+87_原子类之原子操作增强类理论入门
+88_原子类之 LongAdder 和 LongAccumulator 简介
+89_原子类之高性能热点商品点赞计数案例
+90_原子类之 LongAdder 源码分析前置知识
+91_原子类之 LongAdder 高性能原理说明
+92_原子类之 LongAdder 源码分析 01
+93_原子类之 LongAdder 源码分析 02
+94_原子类之 LongAdder 源码分析 03
+95_原子类之 LongAdder 源码分析 04
+96_原子类之 LongAdder 源码分析 05
+97_原子类之 LongAdder 源码分析 06
+98_原子类之 LongAdder 源码分析 07
+99_原子类之原子操作增强类小总结
+100_ThreadLocal 之是什么能干嘛
+101_ThreadLocal 之案例编码实战
+102_ThreadLocal 之阿里规范对 ThreadLocal 要求
+103_ThreadLocal 之底层源码分析
+104_ThreadLocal 之由弱引用引出问题
+105_ThreadLocal 之强引用
+106_ThreadLocal 之软引用
+107_ThreadLocal 之弱引用
+108_ThreadLocal 之虚引用
+109_ThreadLocal 之为什么源码用弱引用
+110_ThreadLocal 之清除脏 Entry
+111_ThreadLocal 之小总结
+112_对象内存布局之布局简介 - 上
+113_对象内存布局之布局简介 - 下
+114_对象内存布局之对象标记 MarkWord
+115_对象内存布局之类型指针
+116_对象内存布局之实例数据和对齐填充
+117_对象内存布局之 64 位 MarkWork 源码讲解
+118_对象内存布局之 JOL 证明
+119_对象内存布局之对象分代年龄
+120_对象内存布局之压缩指针参数说明
+121_synchronized 锁升级之入门知识简介
+122_synchronized 锁升级之性能变化背景知识
+123_synchronized 锁升级之升级流程
+124_synchronized 锁升级之无锁
+125_synchronized 锁升级之偏向锁理论 - 上
+126_synchronized 锁升级之偏向锁理论 - 下
+127_synchronized 锁升级之参数启动偏向锁
+128_synchronized 锁升级之暂停启动偏向锁
+129_synchronized 锁升级之偏向锁撤销
+130_synchronized 锁升级之偏向锁生流程小总结
+131_synchronized 锁升级之 java15 后偏向锁废除
+132_synchronized 锁升级之轻量级锁说明
+133_synchronized 锁升级之轻量级锁代码证明和流程总结
+134_synchronized 锁升级之重量级锁代码证明和流程总结
+135_synchronized 锁升级之锁升级后和 hashcode 关系
+136_synchronized 锁升级之锁升级后和 hashcode 代码证明
+137_synchronized 锁升级之小总结
+138_synchronized 锁升级之锁消除
+139_synchronized 锁升级之锁粗化
+140_AQS 之开篇简介
+141_AQS 之是什么
+142_AQS 之为什么是 JUC 框架基础
+143_AQS 之能干嘛
+144_AQS 之 state 和 CLH 队列
+145_AQS 之自身属性和 Node 节点介绍
+146_AQS 之源码分析 01
+147_AQS 之源码分析 02
+148_AQS 之源码分析 03
+149_AQS 之源码分析 04
+150_AQS 之源码分析 05
+151_AQS 之源码分析 06
+152_AQS 之源码分析 07
+153_AQS 之源码小总结 - 上
+154_AQS 之源码小总结 - 中
+155_AQS 之源码小总结 - 下
+156_读写锁之读写锁简介
+157_读写锁之锁演化历程
+158_读写锁之锁演化历程编码证明
+159_读写锁之锁降级
+160_读写锁之锁降级设计思想
+161_StampedLock 锁之简介
+162_StampedLock 锁之特点
+163_StampedLock 锁之传统读写功能
+164_StampedLock 锁之乐观读功能
+165_StampedLock 锁之缺点
+166_终章の总结
 
 
 ## 周阳 面試
@@ -732,22 +954,127 @@ Spring Framework 中文文档PDF
 	- note
 		-  [GitHub - re4388/atguigu\_interview\_two: 尚硅谷 周阳 互联网大厂高频重点面试题（第2季）](https://github.com/re4388/atguigu_interview_two)
 		- [尚硅谷大厂面试题第二季周阳主讲整理笔记【涨薪必看】\_大厂面试第二季笔记-CSDN博客](https://blog.csdn.net/weixin_65777087/article/details/128228369)
-- [x] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
-	- 重點: 
-		- [x] 集合面試題4-5
-		- [x] 11-12, interger 比較 8-9， 
-		- [x] bigDecimal 10, 
-		- [x] == and equal 13,  
-		- [x] pass by val/ref  14,  
-		- [x] IDEA debug 18-27,  
-		- [x] threadlocal 35-42, 
-		- [x] graceful shutdown threadPool 48-49, 
-		- [x] JUC 批處理50-53, 
-		- [x] mysql 68-76,  
-		- [x] AOP+rate limit+cache layer+設計模式 78-102
-	- [ ] 54~67 先 pass, algo and leetcode
-	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
-		- mac: /Users/re4388/project/personal/lang/java/Java_interview_s4/note
+01_本课程前提要求和说明
+02_volatile 是什么
+03_JMM 内存模型之可见性
+04_可见性的代码验证说明
+05_volatile 不保证原子性
+06_volatile 不保证原子性理论解释
+07_volatile 不保证原子性问题解决
+08_volatile 指令重排案例 1
+09_volatile 指令重排案例 2
+10_单例模式在多线程环境下可能存在安全问题
+11_单例模式 volatile 分析
+12_CAS 是什么
+13_CAS 底层原理 - 上
+14_CAS 底层原理 - 下
+15_CAS 缺点
+16_ABA 问题
+17_AtomicReference 原子引用
+18_AtomicStampedReference 版本号原子引用
+19_ABA 问题的解决
+20_集合类不安全之并发修改异常
+21_集合类不安全之写时复制
+22_集合类不安全之 Set
+23_集合类不安全之 Map
+24_TransferValue 醒脑小练习
+25_java 锁之公平和非公平锁
+26_java 锁之可重入锁和递归锁理论知识
+27_java 锁之可重入锁和递归锁代码验证
+28_java 锁之自旋锁理论知识
+29_java 锁之自旋锁代码验证
+30_java 锁之读写锁理论知识
+31_java 锁之读写锁代码验证
+32_CountDownLatch
+33_CyclicBarrierDemo
+34_SemaphoreDemo
+35_阻塞队列理论
+36_阻塞队列接口结构和实现类
+37_阻塞队列 api 之抛出异常组
+38_阻塞队列 api 之返回布尔值组
+39_阻塞队列 api 之阻塞和超时控制
+40_阻塞队列之同步 SynchronousQueue 队列
+41_线程通信之生产者消费者传统版
+42_Synchronized 和 Lock 有什么区别
+43_锁绑定多个条件 Condition
+44_线程通信之生产者消费者阻塞队列版
+45_Callable 接口
+46_线程池使用及优势
+47_线程池 3 个常用方式
+48_线程池 7 大参数入门简介
+49_线程池 7 大参数深入介绍
+50_线程池底层工作原理
+51_线程池的 4 种拒绝策略理论简介
+52_线程池实际中使用哪一个
+53_线程池的手写改造和拒绝策略
+54_线程池配置合理线程数
+55_死锁编码及定位分析
+56_JVMGC 下半场技术加强说明和前提知识要求
+57_JVMGC 快速回顾复习串讲
+58_谈谈你对 GCRoots 的理解
+59_JVM 的标配参数和 X 参数
+60_JVM 的 XX 参数之布尔类型
+61_JVM 的 XX 参数之设值类型
+62_JVM 的 XX 参数之 XmsXmx 坑题
+63_JVM 盘点家底查看初始默认值
+64_JVM 盘点家底查看修改变更值
+65_堆内存初始大小快速复习
+66_常用基础参数栈内存 Xss 讲解
+67_常用基础参数元空间 MetaspaceSize 讲解
+68_常用基础参数 PrintGCDetails 回收前后对比讲解
+69_常用基础参数 SurvivorRatio 讲解
+70_常用基础参数 NewRatio 讲解
+71_常用基础参数 MaxTenuringThreshold 讲解
+72_强引用 Reference
+73_软引用 SoftReference
+74_弱引用 WeakReference
+75_软引用和弱引用的适用场景
+76_WeakHashMap 案例演示和解析
+77_虚引用简介
+78_ReferenceQueue 引用队列介
+79_虚引用 PhantomReference
+80_GCRoots 和四大引用小总结
+81_SOFE 之 StackOverflowError
+82_OOM 之 Java heap space
+83_OOM 之 GC overhead limit exceeded
+84_OOM 之 Direct buffer memory
+85_OOM 之 unable to create new native thread 故障演示
+86_OOM 之 unable to create new native thread 上限调整
+87_OOM 之 Metaspace
+88_垃圾收集器回收种类
+89_串行并行并发 G1 四大垃圾回收方式
+90_如何查看默认的垃圾收集器
+91_JVM 默认的垃圾收集器有哪些
+92_GC 之 7 大垃圾收集器概述
+93_GC 之约定参数说明
+94_GC 之 Serial 收集器
+95_GC 之 ParNew 收集器
+96_GC 之 Parallel 收集器
+97_GC 之 ParallelOld 收集器
+98_GC 之 CMS 收集器
+99_GC 之 SerialOld 收集器
+100_GC 之如何选择垃圾收集器
+101_GC 之 G1 收集器
+102_GC 之 G1 底层原理
+103_GC 之 G1 参数配置及和 CMS 的比较
+104_JVMGC 结合 SpringBoot 微服务优化简介
+105_Linux 命令之 top
+106_Linux 之 cpu 查看 vmstat
+107_Linux 之 cpu 查看 pidstat
+108_Linux 之内存查看 free 和 pidstat
+109_Linux 之硬盘查看 df
+110_Linux 之磁盘 IO 查看 iostat 和 pidstat
+111_Linux 之网络 IO 查看 ifstat
+112_CPU 占用过高的定位分析思路
+113_GitHub 骚操作之开启
+114_GitHub 骚操作之常用词
+115_GitHub 骚操作之 in 限制搜索
+116_GitHub 骚操作之 star 和 fork 范围搜索
+117_GitHub 骚操作之 awesome 搜索
+118_GitHub 骚操作之 #L 数字
+119_GitHub 骚操作之 T 搜索
+120_GitHub 骚操作之搜索区域活跃用户
+
 - [x] [【尚硅谷】【周阳】互联网大厂高频重点面试题（第三季） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGt-uUnqDF0pJ2EPV1xT8E6)
 	- 重點：
 		- [x] 常量池(1-2), 
@@ -767,6 +1094,192 @@ Spring Framework 中文文档PDF
 		- [尚硅谷Java大厂面试题第3季学习笔记\_尚硅谷面试笔记-CSDN博客](https://blog.csdn.net/jiaxm123456/article/details/128143574?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=5)
 
 
+00_前言闲聊和课程说明
+01_字符串常量 Java 内部加载 - 上
+02_字符串常量 Java 内部加载 - 下
+03_闲聊力扣算法第一题
+04_TwoSum 暴力解法
+05_TwoSum 优化解法
+06_闲聊 AQS 面试
+07_可重入锁理论
+08_可重入锁的代码验证 - 上
+09_可重入锁的代码验证 - 下
+10_LockSupport 是什么
+11_waitNotify 限制
+12_awaitSignal 限制
+13_LockSupport 方法介绍
+14_LockSupport 案例解析
+15_AQS 理论初步
+16_AQS 能干嘛
+17_AQS 源码体系 - 上
+18_AQS 源码体系 - 下
+19_AQS 源码深度解读 01
+20_AQS 源码深度解读 02
+21_AQS 源码深度解读 03
+22_AQS 源码深度解读 04
+23_AQS 源码深度解读 05
+24_AQS 源码深度解读 06
+25_AQS 源码深度解读 07
+26_AQS 小总结
+27_Aop 的题目说明要求
+28_spring4 下的 aop 测试案例
+29_spring4 下的 aop 测试结果
+30_spring5 下的 aop 测试
+31_spring 循环依赖题目说明
+32_spring 循环依赖纯 java 代码验证案例
+33_spring 循环依赖 bug 演示
+34_spring 循环依赖 debug 前置知识
+35_spring 循环依赖 debug 源码 01
+36_spring 循环依赖 debug 源码 02
+37_spring 循环依赖 debug 源码 03
+38_spring 循环依赖 debug 源码 04
+39_spring 循环依赖小总结
+40_redis 版本升级说明
+41_redis 两个小细节说明
+42_string 类型使用场景
+43_hash 类型使用场景
+44_list 类型使用场景
+45_set 类型使用场景
+46_zset 类型使用场景
+47_redis 分布式锁前情说明
+48_boot 整合 redis 搭建超卖程序 - 上
+49_boot 整合 redis 搭建超卖程序 - 下
+50_redis 分布式锁 01
+51_redis 分布式锁 02
+52_redis 分布式锁 03
+53_redis 分布式锁 04
+54_redis 分布式锁 05
+55_redis 分布式锁 06
+56_redis 分布式锁 07
+57_redis 分布式锁 08
+58_redis 分布式锁 09
+59_redis 分布式锁 10
+60_redis 分布式锁总结回顾
+61_redis 内存调整默认查看
+62_redis 打满内存 OOM
+63_redis 内存淘汰策略
+64_lru 算法简介
+65_lru 的思想
+66_巧用 LinkedHashMap 完成 lru 算法
+67_手写 LRU - 上
+68_手写 LRU - 下
+69_总结闲聊
+
+
+
+
+- [x] [大厂面试第4季：尚硅谷Java面试题第4季，最新大厂java面试真题](https://www.bilibili.com/video/BV13T421k794/?spm_id_from=333.788.comment.all.click)
+	- [ ] 54~67 先 pass, algo and leetcode
+	- note: [GitHub - re4388/course\_java\_interview\_season4](https://github.com/re4388/course_java_interview_season4)
+		- mac: /Users/re4388/project/personal/lang/java/Java_interview_s4/note
+
+01_课程简介
+02_基础篇之 I++ 热身
+03_基础篇之高可用指标 4 个 9
+04_基础篇之 Arrays.asList () 数组转集合 Bug
+05_基础篇之遍历集合时 remove 操作 Bug
+06_基础篇之 HashCode 冲突上集
+07_基础篇之 HashCode 冲突下集
+08_基础篇之 Integer 比较规则有坑上集
+09_基础篇之 Integer 比较规则有坑下集
+10_基础篇之 BigDecimal 大坑
+11_基础篇之 List 去重复元素上集
+12_基础篇之 List 去重复元素下集
+13_基础篇之 == 和 equals
+14_基础篇之传值还是传引用
+15_基础篇之深浅拷贝理论知识
+16_基础篇之深浅拷贝代码验证
+17_IDEA 之调用 Restful 接口
+18_IDEA 之 Debug 技能增强 01
+19_IDEA 之 Debug 技能增强 02
+20_IDEA 之 Debug 技能增强 03
+21_IDEA 之 Debug 技能增强 04
+22_IDEA 之 Debug 技能增强 05
+23_IDEA 之 Debug 技能增强 06
+24_IDEA 之 Debug 技能增强 07
+25_IDEA 之 Debug 技能增强 08
+26_IDEA 之 Debug 技能增强 09
+27_IDEA 之 Debug 技能增强 10
+28_Junit 之开篇 HelloCase
+29_Junit 之 AIR 原则和断言 assert 初探
+30_Junit 之测试案例多样性很重要
+31_Junit 之单元测试 Coverage
+32_Junit 之静态加载和方法加载
+33_Junit 之浅谈自动测试框架设计
+34_Junit 之借假修真 Mock 和 Spy
+35_JUC 之 ThreadLocal 为什么出现
+36_JUC 之 ThreadLocal 总体销售
+37_JUC 之 ThreadLocal 各自独立
+38_JUC 之 ThreadLocal 结合线程池上集
+39_JUC 之 ThreadLocal 结合线程池下集
+40_JUC 之 ThreadLocal 父子线程无法共享传递
+41_JUC 之 InheritableThreadLocal 父子线程传递
+42_JUC 之 TransmittableThreadLocal 线程池数据传递
+43_JUC 之线程池优雅关停 01
+44_JUC 之线程池优雅关停 02
+45_JUC 之线程池优雅关停 03
+46_JUC 之线程池优雅关停 04
+47_JUC 之线程池优雅关停 05
+48_JUC 之线程池如何处理异常上集
+49_JUC 之线程池如何处理异常下集
+50_JUC 之百万下发批处理任务工具类需求分析
+51_JUC 之百万下发批处理任务工具类编码 V1
+52_JUC 之百万下发批处理任务工具类编码 V2
+53_JUC 之异步编排和并行优化 CompletableFuture
+54_数据结构和算法之开篇闲聊
+55_数据结构和算法之如何评价一个算法好坏
+56_数据结构和算法之大欧表示法
+57_数据结构和算法之常见时间复杂度
+58_数据结构和算法之力扣第一题暴力解法
+59_数据结构和算法之力扣第一题优雅解法
+60_数据结构和算法之力扣第一题总结
+61_数据结构和算法之母题概述和双指针题型初探
+62_数据结构和算法之双指针母题小口诀
+63_数据结构和算法之力扣原地修改解释
+64_数据结构和算法之力扣 344 编码
+65_数据结构和算法之力扣 167 编码
+66_数据结构和算法之力扣 26 编码
+67_数据结构和算法之力扣 283 编码
+68_MySQL 之建立高效复合索引上集
+69_MySQL 之建立高效复合索引下集
+70_MySQL 之 Innodb 锁了什么上集
+71_MySQL 之 Innodb 锁了什么中集
+72_MySQL 之 Innodb 锁了什么下集
+73_MySQL 之回表解析
+74_MySQL 之大数据表如何新建索引
+75_MySQL 之删除重复元素
+76_MySQL 之千万级数据分页的优化
+77_项目实战之闲聊面试准备
+78_项目实战之 AOP 全部通知正常流程
+79_项目实战之 AOP 全部通知异常流程
+80_项目实战之通用接口详情统计需求分析
+81_项目实战之通用接口详情统计设计思想
+82_项目实战之通用接口详情统计落地代码
+83_项目实战之自研限流组件需求分析
+84_项目实战之自研限流组件设计思想
+85_项目实战之自研限流组件落地代码上集
+86_项目实战之自研限流组件落地代码下集
+87_项目实战之自研 Redis 缓存组件需求分析
+88_项目实战之自研 Redis 缓存组件设计思想
+89_项目实战之自研 Redis 缓存组件 SpringEL Express
+90_项目实战之自研 Redis 缓存组件开启 @EnableAspectJAutoProxy 和新建注解
+91_项目实战之自研 Redis 缓存组件新建 MyRedisCacheAspect
+92_项目实战之自研 Redis 缓存组件最终完结
+93_项目实战之直播弹幕业务场景分析
+94_项目实战之直播弹幕设计思想
+95_项目实战之直播弹幕落地代码上集
+96_项目实战之直播弹幕落地代码下集
+97_项目实战之设计模式面试浅谈
+98_项目实战之设计模式支付模块痛点分析
+99_项目实战之设计模式策略工厂模板和钩子前置知识
+100_项目实战之设计模式支付重构策略模式
+101_项目实战之设计模式支付重构策略 - 工厂模式
+102_项目实战之设计模式支付重构策略 - 工厂 - 模板三种模式
+
+
+
+
+
 ## 黑馬面試系列 
 - [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
 	- [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
@@ -784,7 +1297,72 @@ Spring Framework 中文文档PDF
 	- [GitHub - re4388 黑马Java八股文面试](https://github.com/re4388/Interview_Heima_Demo01)
 	- [黑马 八股文面试CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
 
-
+框架篇 01 spring refresh 概述 
+框架篇 02 spring refresh 01 Environment 
+框架篇 03 spring refresh 02 获取 BeanFactory 
+框架篇 04 spring refresh 03 准备 BeanFactory 
+框架篇 05 spring refresh 04 05 扩展 BeanFactory 
+框架篇 06 spring refresh 06 注册 bean 后处理器 
+框架篇 07 spring refresh 07 10 applicationContext 各项功能 
+框架篇 08 spring refresh 11 12 初始化单例 完成 refresh 
+框架篇 09 spring refresh 小结 
+框架篇 10 spring bean 01 处理名称 检查缓存 
+框架篇 11 spring bean 02 03 查找父容器 处理 DependsOn 
+框架篇 12 spring bean 04 按 scope 创建 
+框架篇 13 spring bean 05 创建 bean 创建实例阶段 
+框架篇 14 spring bean 05 创建 bean 依赖注入阶段 
+框架篇 15 spring bean 05 创建 bean 依赖注入阶段 相同成员依赖注入优先级 
+框架篇 16 spring bean 05 创建 bean 初始化阶段 
+框架篇 17 spring bean 05 创建 bean 注册可销毁 bean 
+框架篇 18 spring bean 07 销毁 bean 
+框架篇 19 spring tx 事务失效场景 1 检查异常 
+框架篇 20 spring tx 事务失效场景 2 错误 try catch 
+框架篇 21 spring tx 事务失效场景 3 切面顺序 
+框架篇 22 spring tx 事务失效场景 4 非 public 方法 
+框架篇 23 spring tx 事务失效场景 5 父子容器 
+框架篇 24 spring tx 事务失效场景 6 本类方法调用 
+框架篇 25 spring tx 事务失效场景 7 原子性失效 
+框架篇 26 spring tx 事务失效场景 8 锁失效 
+框架篇 27 spring webmvc 执行流程 初始化 
+框架篇 28 spring webmvc 执行流程 匹配 
+框架篇 29 spring webmvc 执行流程 执行 
+框架篇 30 spring annotation spring 注解 
+框架篇 31 spring annotation webmvc 注解 
+框架篇 32 spring annotation boot 注解 
+框架篇 33 spring annotation @Configuration 配置类即为工厂 
+框架篇 34 spring annotation @Configuration 工厂方法不能重载 
+框架篇 35 spring annotation @Configuration 配置类默认为代理 
+框架篇 36 spring annotation @Configuration 配置类依赖注入失效 
+框架篇 37 spring annotation @Import 基本使用 
+框架篇 38 spring annotation @Import DeferredImportSelector 
+框架篇 39 spring boot 自动配置 @SpringBootApplication 
+框架篇 40 spring boot 自动配置 @EnableAutoConfiguration 
+框架篇 41 spring pattern 1 
+框架篇 42 spring pattern 2 
+框架篇 43 循环依赖 铺垫 ProxyFactory 1 
+框架篇 44 循环依赖 铺垫 ProxyFactory 2 
+框架篇 45 循环依赖 铺垫 代理对象与 advisor 关系 
+框架篇 46 循环依赖 铺垫 @Aspect 与 advisor 关系 
+框架篇 47 循环依赖 铺垫 AnnotationAwareAspectJAutoProxyCreator wrapIfNecessary 
+框架篇 48 循环依赖 铺垫 AnnotationAwareAspectJAutoProxyCreator wrapIfNecessary debug 
+框架篇 49 循环依赖 铺垫 AnnotationAwareAspectJAutoProxyCreator 代理创建时机 
+框架篇 50 循环依赖 铺垫 小结 
+框架篇 51 循环依赖 一级缓存作用 
+框架篇 52 循环依赖 一级缓存不能解决循环依赖 
+框架篇 53 循环依赖 二级缓存作用 
+框架篇 54 循环依赖 二级缓存不能解决循环依赖中有代理的情况 
+框架篇 55 循环依赖 三级缓存作用 
+框架篇 56 循环依赖 set 循环依赖演示 
+框架篇 57 循环依赖 set 循环依赖 debug getSingleton 
+框架篇 58 循环依赖 set 循环依赖 二级缓存作用 1 
+框架篇 59 循环依赖 set 循环依赖 二级缓存作用 2 
+框架篇 60 循环依赖 set 循环依赖 如何避免代理重复创建 
+框架篇 61 循环依赖 构造循环依赖 
+框架篇 62 循环依赖 构造循环依赖 @Lazy 方式解决 
+框架篇 63 循环依赖 构造循环依赖 ObjectFactory 方式解决 
+框架篇 64 循环依赖 构造循环依赖 Provider 方式解决 
+框架篇 65 循环依赖 构造循环依赖 @Scope 方式解决 
+框架篇 66 循环依赖 小结
 
 
 
@@ -800,7 +1378,39 @@ Spring Framework 中文文档PDF
 	- [x] skip 四種引用 27-30
 	- [x] finalize 31-33  
 
-
+01 jvm 内存结构 代码执行流程 
+02 jvm 内存结构 哪些区域会有内存溢出 
+03 jvm 内存结构 方法区 元空间 
+04 jvm 内存参数 
+05 jvm 垃圾回收算法 
+06 jvm 垃圾回收 概述 
+07 jvm 垃圾回收 分代回收 
+08 jvm 垃圾回收 三色标记 
+09 jvm 垃圾回收 并发漏标 
+10 jvm 垃圾回收 垃圾回收器 
+11 jvm 垃圾回收 垃圾回收器 G1 
+12 jvm 垃圾回收 垃圾回收器 G1 
+13 内存溢出 情况 1 误用固定大小线程池 
+14 内存溢出 情况 2 误用带缓冲线程池 
+15 内存溢出 情况 3 一次查询太多数据 
+16 内存溢出 情况 4 类太多 
+17 类加载 三个阶段 
+18 类加载 验证类加载是懒惰的 
+19 类加载 验证类对象位于堆 
+20 类加载 验证类静态变量在初始化时赋值 
+21 类加载 如何找到类对象地址 
+22 类加载 类初始化方法原理 
+23 类加载 final 修饰基本类型变量的原理 
+24 类加载 将符号引用变为直接引用 
+25 类加载 双亲委派 
+26 类加载 能假冒一个 System 类吗 
+27 四种引用 概述 
+28 四种引用 虚引用 
+29 四种引用 弱引用 
+30 四种引用 Cleaner 
+31 finalize 概述 
+32 finalize unfinalized 链表 
+33 finalize 调用原理 
 
 
 
