@@ -11,9 +11,12 @@
 
 ## spring
 - [ ] [GitHub - wuyouzhuguli/SpringAll](https://github.com/wuyouzhuguli/SpringAll?tab=readme-ov-file)
+- [ ] [GitHub - yudaocode/SpringBoot-Labs](https://github.com/yudaocode/SpringBoot-Labs?tab=readme-ov-file)  題取碼:coke
 - [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
 - [ ] [[Spring 面试题]]
 - [ ] [ityouknow/spring-boot-examples](https://github.com/ityouknow/spring-boot-examples?tab=readme-ov-file)
+- [ ] [GitHub - ZHENFENG13/spring-boot-projects: :fire:](https://github.com/ZHENFENG13/spring-boot-projects)
+- [ ] [GitHub - tengj/SpringBootDemo: Spring Boot学习系列](https://github.com/tengj/SpringBootDemo)
 
 
 ## 綜合
@@ -276,6 +279,26 @@
 
 
 
+## 韩顺平】图解Java设计模式
+- [【韩顺平】图解Java设计模式 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt)
+	- [GitHub - re4388/NOTE\_DesignPatterns: 尚硅谷Java设计模式（图解+框架源码剖析）学习笔记](https://github.com/re4388/NOTE_DesignPatterns)
+	- [尚硅谷—韩顺平—图解 Java设计模式（1～27）\_设计模式笔记 韩顺平-CSDN博客](https://blog.csdn.net/qq_43056248/article/details/123179123)
+	- D:\all_book\java book 中的 尚硅谷_韩顺平_图解Java设计模式
+	- [ ] [037 尚硅谷 图解Java设计模式 单例模式JKD源码分析 - YouTube](https://www.youtube.com/watch?v=bP2t_LNxqWM&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=38)
+	- [ ] [047 尚硅谷 图解Java设计模式 工厂模式 JDK源码分析 - YouTube](https://www.youtube.com/watch?v=tDqAUuNC4is&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=48)
+	- [ ] [051 尚硅谷 图解Java设计模式 原型模式3 Spring源码分析 - YouTube](https://www.youtube.com/watch?v=rqON85wsA5U&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=52)
+	- [ ] [069 尚硅谷 图解Java设计模式 桥接模式4 JDBC源码 - YouTube](https://www.youtube.com/watch?v=jSd1KwfSLo4&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=70)
+	- [ ] [075 尚硅谷 图解Java设计模式 装饰者模式5 IO源码 - YouTube](https://www.youtube.com/watch?v=nBtzeXrQlOU&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=76)
+	- [ ] [089 尚硅谷 图解Java设计模式 享元模式4 Integer源码 - YouTube](https://www.youtube.com/watch?v=xOezzkS2FGk&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=90)
+	- [ ] [094 尚硅谷 图解Java设计模式 代理模式4 Cglib代理 - YouTube](https://www.youtube.com/watch?v=_bi-DIGUuzM&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=95)
+	- [ ] [099 尚硅谷 图解Java设计模式 模板模式4 IOC源码 - YouTube](https://www.youtube.com/watch?v=D8OCnfMaD24&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=100)
+	- [ ] [104 尚硅谷 图解Java设计模式 命令模式4 JdbcTml源码 - YouTube](https://www.youtube.com/watch?v=i6kap-mq28E&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=105)
+	- [ ] [115 尚硅谷 图解Java设计模式 迭代器模式5 JDK源码 - YouTube](https://www.youtube.com/watch?v=HX-FWOeuHKc&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=116)
+	- [ ] [121 尚硅谷 图解Java设计模式 观察者模式5 Observable源码 - YouTube](https://www.youtube.com/watch?v=VrvymdWpg68&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=122)
+	- [ ] [134 尚硅谷 图解Java设计模式 解释器模式4 SpelExp源码 - YouTube](https://www.youtube.com/watch?v=OlLwGBjb4PI&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=135)
+	- [ ] [143 尚硅谷 图解Java设计模式 策略模式4 Arrays源码 - YouTube](https://www.youtube.com/watch?v=xOppee_iSvo&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=144)
+	- [ ] [148 尚硅谷 图解Java设计模式 职责链模式4 SpringMVC源码 - YouTube](https://www.youtube.com/watch?v=x3vBJe0tjdw&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=149)
+
 
 
 # to see
@@ -333,8 +356,8 @@ sprint boot
 
 最後想要再 review sprint boot3
 
-
-- [ ] [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
+## Spring#楊博超 MyBatis+Spring+SpringMVC+SSM
+- [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
 	- 08 看完
 	- 9~61 mybatis
 		- mybatis to 13 finshed
@@ -360,7 +383,7 @@ sprint boot
 ## 想要上工前看完
 
 
-圖靈
+## 圖靈
 - [Mysql性能优化最佳实践视频图灵课堂 - YouTube](https://youtu.be/kgKmOYmZSE0?si=JzG8qS59eanpL5In)
 - [Spring Framework核心技术底层原理详解 - YouTube](https://youtu.be/4GEHzMFqvh4?si=oNsmIFAfTeEMHzLd)
 - [图灵学院官方双十一秒杀系统后端Redis高并发架构实战 - YouTube](https://youtu.be/VzB51cyvSDk?si=Hv7QpJgsh66mp5wH)
@@ -368,8 +391,6 @@ sprint boot
 - [图灵学院官方双十一亿级流量Java并发线程池调优实战 - YouTube](https://www.youtube.com/watch?v=_sSHDnUSyWo)
 
 
-- [ ] ouath
-- [01 分布式系统认证方案 什么是分布式系统 高清 1080P - YouTube](https://www.youtube.com/watch?v=Nidd_CC2vWk&list=PLjwE8m3kyOlfRhAN4Jf4JZrVrJuvSLeCh)
 
 
 
@@ -385,8 +406,6 @@ sprint boot
 
 
 
-maybe needed
-25 集[1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 
 
 
@@ -400,11 +419,6 @@ maybe needed
 - [尚融宝 Java微服务分布式金融项目 428集](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
 
 
-## 設計模式
-- [【韩顺平】图解Java设计模式 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt)
-	- [GitHub - re4388/NOTE\_DesignPatterns: 尚硅谷Java设计模式（图解+框架源码剖析）学习笔记](https://github.com/re4388/NOTE_DesignPatterns)
-	- [尚硅谷—韩顺平—图解 Java设计模式（1～27）\_设计模式笔记 韩顺平-CSDN博客](https://blog.csdn.net/qq_43056248/article/details/123179123)
-	- D:\all_book\java book 中的 尚硅谷_韩顺平_图解Java设计模式
 
 ## 前端
 - [尚硅谷 react-哔哩哔哩\_bilibili](https://search.bilibili.com/all?keyword=%E5%B0%9A%E7%A1%85%E8%B0%B7+react&from_source=webtop_search&spm_id_from=333.1007&search_source=5)
@@ -428,18 +442,16 @@ maybe needed
 ## spring
 - [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
 - [x] SpringBoot3：尚硅谷SpringBoot零基础教程，面试&加薪必会springboot3](https://www.bilibili.com/video/BV1Es4y1q7Bf/?spm_id_from=333.788.comment.all.click)
+
+
 - [SpringCloud：尚硅谷SpringCloud教程，springcloud从入门到大牛](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.788.comment.all.click)
 - [SpringSecurity：尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.788.comment.all.click)
 - [JavaWeb: 尚硅谷全新JavaWeb教程，企业主流javaweb技术栈](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.788.comment.all.click)
 
 
-## java
-- [Java基础: 尚硅谷Java零基础全套视频教程(宋红康主讲，java入门自学必备)](https://www.bilibili.com/video/BV1PY411e7J6/?spm_id_from=333.788.comment.all.click) 
-	- [x] 課件看過
-- - [尚硅谷2024最新Java入门视频教程（上部）java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1YT4y1H7YM/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)  and [尚硅谷2024最新Java入门视频教程(下部) java零基础入门教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1JZ421a7PX/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [JVM：尚硅谷宋红康JVM全套教程（详解java虚拟机）](https://www.bilibili.com/video/BV1PJ411n7xZ/?spm_id_from=333.788.comment.all.click) 微服务生态--引领未来——》》
+
+
 - [virtual thread [【尚硅谷】新版JDK21，深度详解java21虚拟线程新特性\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Xg4y197DB/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- 另一套 NIO 比較舊的 [尚硅谷大牛讲授Java NIO教程(一套快速掌握New IO/IO API)\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14W411u7ro/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
 
@@ -450,7 +462,6 @@ maybe needed
 - [尚硅谷SpringCloud教程，springcloud从入门到大牛\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
-- [K8S：尚硅谷Kubernetes教程(K8s入门到精通)](https://www.bilibili.com/video/BV1w4411y7Go/?spm_id_from=333.788.comment.all.click)
 - [rabbitMQ [尚硅谷RabbitMQ教程丨快速掌握MQ消息中间件rabbitmq\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1cb4y1o7zz/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [【韩顺平】尚硅谷Netty视频教程 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJH02M10mFnBW0yPRnLmRSMo&si=Kp7JNDDTSZQnDePV)
 - [(843) 001 尚硅谷 Netty核心技术及源码剖析 课程说明和要求 - YouTube](https://www.youtube.com/watch?v=HY4lLEboz8U&list=PLmOn9nNkQxJH02M10mFnBW0yPRnLmRSMo)
@@ -465,7 +476,8 @@ maybe needed
 
 
 
-
+k8s
+- [K8S：尚硅谷Kubernetes教程(K8s入门到精通)](https://www.bilibili.com/video/BV1w4411y7Go/?spm_id_from=333.788.comment.all.click)
 
 
 - [ ] TIL for those recent architecnote
