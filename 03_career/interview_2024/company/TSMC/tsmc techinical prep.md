@@ -506,9 +506,9 @@ sprint boot
 [尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - note
 	- [Spring-Security-course/笔记/笔记.md at main · re4388/Spring-Security-course · GitHub](https://github.com/re4388/Spring-Security-course/blob/main/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)
-
-## B 站讲的最好的保姆级 OAuth2.0 实战及 SpringSecurity 的整合应用
-[8. security\_5\_分布式认证方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wqshejEWP?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=8)
+- [x] [07-入门-Spring Security底层原理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
+- 沒有定頓，快速看是好處
+- 透過官網說明，加分
 
 
 ##  300 分钟吃透 SpringSecurity 框架与 OAuth2.0 协议实战教程【图灵课堂】
@@ -522,6 +522,18 @@ sprint boot
 
 ## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程。7 小时带你从入门到精通 Spring Security 实战 - 完整版教程
 [B站讲的最好的SpringSecurity+jwt+oauth2.0教程。7小时带你从入门到精通Spring Security实战-完整版教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [031\_Oauth2协议简介\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=31)
+- 說的比羅蘭好
+
+
+
+
+
+
+
+
+
+
 
 
 ## # 圖靈羅蘭 B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程  16 集，有一些30-40min
@@ -531,17 +543,18 @@ sprint boot
 - 講話會頓，加速理解會扣分。
 
 
+## 圖靈羅蘭 B 站讲的最好的保姆级 OAuth2.0 实战及 SpringSecurity 的整合应用
+[8. security\_5\_分布式认证方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wqshejEWP?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=8)
 
 
-## B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程
-
-
-## Java 进阶 Spring Security OAuth2.0 协议安全框架源码剖析教程
-[Java进阶Spring Security OAuth2.0协议安全框架源码剖析教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nq4y1W7Ph?vd_source=c1191139db7aee736d31e75ebc6029d0&spm_id_from=333.788.videopod.episodes)
-
-
-## 这可能是 B 站讲的最透彻的 OAuth2.0 实战讲解及 SpringSecurity 的整合应用（附完整版 PDF）
+## 圖靈羅蘭 这可能是 B 站讲的最透彻的 OAuth2.0 实战讲解及 SpringSecurity 的整合应用（附完整版 PDF）
 [这可能是B站讲的最透彻的OAuth2.0实战讲解及SpringSecurity的整合应用（附完整版PDF）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yq4y197sP/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+
+## 圖靈羅蘭 Java 进阶 Spring Security OAuth2.0 协议安全框架源码剖析教程
+[Java进阶Spring Security OAuth2.0协议安全框架源码剖析教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nq4y1W7Ph?vd_source=c1191139db7aee736d31e75ebc6029d0&spm_id_from=333.788.videopod.episodes)
 
 
 
