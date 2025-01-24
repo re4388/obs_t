@@ -7,9 +7,19 @@
 	- 用那台小白好了, 搞工具，讓我跟 mac 之間可以連動
 
 
+
+
+
 #  文字類
+
+## spring
+- [ ] [GitHub - wuyouzhuguli/SpringAll](https://github.com/wuyouzhuguli/SpringAll?tab=readme-ov-file)
 - [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
-- [ ] [AgeFades/AgeFades-Note · GitHub](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
+- [ ] [[Spring 面试题]]
+
+
+## 綜合
+- [ ] [AgeFades/AgeFades-Note · Java](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
 - [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
 - [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
 - [ ] [GitHub - Java 學習地圖 via 影片](https://github.com/unidentifiable/java_learning_circuit?tab=readme-ov-file)
@@ -17,15 +27,17 @@
 - [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
 - [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
 - [ ] [GitHub - stevenli91748/ Java training projec 包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
+
+
+
+## 併發
 - [ ] [[Java 并发编程面试题]]
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
 - [ ] [[Java 集合面试题]]
 - [ ] [[Java 基礎面試題]]
-- [ ] [[Spring 面试题]]
 - [ ] [[MySQL 面試題]]
 - [ ] [[Java 虛拟機面試題]]
 - [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
-
 
 
 # DONE and ING
