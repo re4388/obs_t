@@ -286,6 +286,8 @@
 ## 尚硅谷 SpringSecurity+OAuth2
 
 [尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- note
+	- [Spring-Security-course/笔记/笔记.md at main · re4388/Spring-Security-course · GitHub](https://github.com/re4388/Spring-Security-course/blob/main/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)
 
 
 
