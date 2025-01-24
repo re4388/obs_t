@@ -13,6 +13,7 @@
 - [ ] [GitHub - wuyouzhuguli/SpringAll](https://github.com/wuyouzhuguli/SpringAll?tab=readme-ov-file)
 - [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
 - [ ] [[Spring 面试题]]
+- [ ] [ityouknow/spring-boot-examples](https://github.com/ityouknow/spring-boot-examples?tab=readme-ov-file)
 
 
 ## 綜合

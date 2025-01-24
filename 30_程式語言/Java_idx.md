@@ -9,8 +9,6 @@
 # current vid
 
 
-事務
-https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9MIR&index=45
 
 
 ---
@@ -19,16 +17,6 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 - [ ] 看 5 個 real word Java project (後端 focus)
 
 
-- [ ] 每天至少 3~5 個 effetive Java review [[Effective Java 3rd]]
-- 3 Java leetcode per day
-	- [ ] 2024_12_26
-- cocurrent 初步理解
-	- [ ] 看 OCP study guide 
-		- [ ] 看 thread
-	- [ ] [(834) 【尚硅谷】【2021最新版】跳槽大厂必备技术之JUC高并发编程 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGuxM62QOkUwD_zroNZj-a7)
-	- [ ] 看完 cocurrent 那三章
-	- [ ] 開始慢慢看 結成號的那個
-	- [ ] skim 一下 cocurrent 的大綱，盤算下一步
 - [ ] [[Day1] Reactive Programming 簡介與前言 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10264411)
 	- [x] [[Day1] Reactive Programming 簡介與前言 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10264411)
 	- [ ] [[Day 0] Reactive Programming 資料來源 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10264448)
@@ -81,7 +69,6 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 - [[使用静态成员类来定义一个描述计算器支持的操作的枚举类型]]
 - [[Varargs Methods in Java]]
 - [[如何在 Java 中創建類型安全的異構容器]]
-- [[what is non-reifiable type and reifiable type in Java?]]
 - [[what is asSubclass in Java]]
 - [[Java - removeRange 受保護方法]]
 - [[default methods for interfaces in Java]]
@@ -221,10 +208,6 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 
 
 [(836) 【Java面试】01 教程简介 - YouTube](https://www.youtube.com/watch?v=gYgxjVBr3lw&list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
-
-
-
-
 
 
 
