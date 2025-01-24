@@ -501,7 +501,6 @@ sprint boot
 - [x] [[Spring#尚硅谷 雷神 SpringSecurity]]
 
 
-
 ## 尚硅谷 SpringSecurity+OAuth2
 [尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - note
@@ -509,15 +508,6 @@ sprint boot
 - [x] [07-入门-Spring Security底层原理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
 - 沒有定頓，快速看是好處
 - 透過官網說明，加分
-
-
-##  300 分钟吃透 SpringSecurity 框架与 OAuth2.0 协议实战教程【图灵课堂】
-[300分钟吃透SpringSecurity框架与OAuth2.0协议实战教程【图灵课堂】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1a24y1L7Zk/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-
-
-## # SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版教程。让你轻松驾驭安全框架【从入门到精通】java 权限管理
-[SpringSecurity安全框架精讲课程+JWT+SpringSecurityOauth2-完整版教程.让你轻松驾驭安全框架【从入门到精通】java权限管理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1NX4y1A7ub/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-
 
 
 ## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程。7 小时带你从入门到精通 Spring Security 实战 - 完整版教程
@@ -529,14 +519,12 @@ sprint boot
 
 
 
+## SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版教程。让你轻松驾驭安全框架【从入门到精通】java 权限管理
+[SpringSecurity安全框架精讲课程+JWT+SpringSecurityOauth2-完整版教程.让你轻松驾驭安全框架【从入门到精通】java权限管理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1NX4y1A7ub/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- 先 pass
 
 
-
-
-
-
-
-## # 圖靈羅蘭 B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程  16 集，有一些30-40min
+##  圖靈羅蘭 B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程  16 集，有一些30-40min
 [B站讲的最好的Spring Security框架及OAuth2.0协议超详细教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [x] [9.OAuth2.0协议\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=9)
 - 說的還好，講解不夠細緻。
