@@ -521,13 +521,13 @@ sprint boot
 - [x] 13 - 自定义配置 - 基于数据库的用户认证流程分析
 - [x] 14 - 自定义配置 - 基于数据库的用户认证流程实现
 - [x] 15 - 自定义配置 - SpringSecurity 的默认配置
-- [ ] 16 - 自定义配置 - 添加用户功能的实现
-- [ ] 17 - 自定义配置 - 添加用户功能的测试
-- [ ] 18 - 自定义配置 - 密码加密算法
-- [ ] 19 - 自定义配置 - 密码加密测试
-- [ ] 20 - 自定义配置 - DelegatingPasswordEncoder
-- [ ] 21 - 自定义配置 - 自定义登录页
-- [ ] 22 - 自定义配置 - 登录页的细节
+- [x] 16 - 自定义配置 - 添加用户功能的实现
+- [x] 17 - 自定义配置 - 添加用户功能的测试
+- [x] 18 - 自定义配置 - 密码加密算法
+- [x] 19 - 自定义配置 - 密码加密测试
+- [x] 20 - 自定义配置 - DelegatingPasswordEncoder
+- [x] 21 - 自定义配置 - 自定义登录页
+- [x] 22 - 自定义配置 - 登录页的细节
 - [ ] 23 - 前后端分离 - 用户认证流程
 - [ ] 24 - 前后端分离 - 用户认证成功的代码实现
 - [ ] 25 - 前后端分离 - 用户认证失败的代码实现
@@ -559,61 +559,743 @@ sprint boot
 - [ ] 51-GitHub 授权登录案例 - CommonOAuth2Provider
 
 
-
-
-## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程。7 小时带你从入门到精通 Spring Security 实战 - 完整版教程
+## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程
 [B站讲的最好的SpringSecurity+jwt+oauth2.0教程。7小时带你从入门到精通Spring Security实战-完整版教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [ ] [031\_Oauth2协议简介\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=31)
 - 說的比羅蘭好
+- [ ] 001_SpringSecurity 学习目
+- [ ] 002_SpringSecurity 简
+- [ ] 003_SpringSecurity 快速 Demo004_UserDetailsService 详
+- [ ] 005_PasswordEncoder 详
+- [ ] 006_自定义登录逻
+- [ ] 007_自定义登录页
+- [ ] 008_失败跳
+- [ ] 009_设置请求账户和密码的参数
+- [ ] 010_自定义登录成功处理
+- [ ] 011_自定义登录失败处理
+- [ ] 012_anyRequest 详
+- [ ] 013_antMatchers 详
+- [ ] 014_regexMathcers 详
+- [ ] 015_mvcMatchers 详
+- [ ] 016_内置访问控制方法介
+- [ ] 017_权限判
+- [ ] 018_角色判
+- [ ] 019_IP 地址判
+- [ ] 020_自定义 403 处理方
+- [ ] 021_access 方法使
+- [ ] 022_access 结合自定义方法实现权限控
+- [ ] 023_serured 注
+- [ ] 024_preAuthorize 注解 + postAuthorize 注
+- [ ] 025_RememberMe 功
+- [ ] 026_在 thymeleaf 中获取属性
+- [ ] 027_在 thymeleaf 中进行权限判
+- [ ] 028_退出登
+- [ ] 029_退出登录源码解
+- [ ] 030_SpringSecurity 中的 csrf031_Oauth2 协议简
+- [ ] 032_授权模
+- [ ] 033_SpringSecurityOauth2 架
+- [ ] 034_SpringSecurityOauth2 授权码模
+- [ ] 035_授权码模式演
+- [ ] 036_密码模式演
+- [ ] 037_Redis 存储 Token038_常见认证机
+- [ ] 039_什么是 JWT040_JJWT 快速 Demo041_解析 Token042_token 过期校
+- [ ] 043_自定义申
+- [ ] 044_SpringSecurityOauth2 整合 JWT045_扩展 JWT 中存储的内
+- [ ] 046_解析 JWT 中内
+- [ ] 047_RefreshToken048_SpringSecurityOauth2 整合 SSO
 
 
 
-## SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版教程。让你轻松驾驭安全框架【从入门到精通】java 权限管理
+
+
+> 下面 spring security 先 pass
+
+SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版教程。让你轻松驾驭安全框架【从入门到精通】java 权限管理
 [SpringSecurity安全框架精讲课程+JWT+SpringSecurityOauth2-完整版教程.让你轻松驾驭安全框架【从入门到精通】java权限管理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1NX4y1A7ub/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - 先 pass
 
 
-##  圖靈羅蘭 B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程  16 集，有一些30-40min
+圖靈羅蘭 B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程  16 集，有一些30-40min
 [B站讲的最好的Spring Security框架及OAuth2.0协议超详细教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [x] [9.OAuth2.0协议\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=9)
 - 說的還好，講解不夠細緻。
 - 講話會頓，加速理解會扣分。
 
-## 圖靈羅蘭 B 站讲的最好的保姆级 OAuth2.0 实战及 SpringSecurity 的整合应用
+圖靈羅蘭 B 站讲的最好的保姆级 OAuth2.0 实战及 SpringSecurity 的整合应用
 [8. security\_5\_分布式认证方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wqshejEWP?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=8)
 
-## 圖靈羅蘭 这可能是 B 站讲的最透彻的 OAuth2.0 实战讲解及 SpringSecurity 的整合应用（附完整版 PDF）
+圖靈羅蘭 这可能是 B 站讲的最透彻的 OAuth2.0 实战讲解及 SpringSecurity 的整合应用（附完整版 PDF）
 [这可能是B站讲的最透彻的OAuth2.0实战讲解及SpringSecurity的整合应用（附完整版PDF）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yq4y197sP/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
-## 圖靈羅蘭 Java 进阶 Spring Security OAuth2.0 协议安全框架源码剖析教程
+圖靈羅蘭 Java 进阶 Spring Security OAuth2.0 协议安全框架源码剖析教程
 [Java进阶Spring Security OAuth2.0协议安全框架源码剖析教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nq4y1W7Ph?vd_source=c1191139db7aee736d31e75ebc6029d0&spm_id_from=333.788.videopod.episodes)
 
 
 # 架構相關
 2025 吃透 Java 架构师全套视频教程，15 天就能学完，让你面试少走 99% 的弯路【通俗易懂，附 80 万字面试宝典 | 保姆级别教程】
-[3.第二章 架构设计分层实现-2\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1fX63YqEgG?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=3)
-
-
-
-从零开始学架构
-[从零开始学架构\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kp4y1x7Ad/?spm_id_from=333.788.recommend_more_video.8&vd_source=c1191139db7aee736d31e75ebc6029d0)
+[3.第二章 架构设计分层实现-2\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1fX63YqEgG?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=3), [从零开始学架构\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kp4y1x7Ad/?spm_id_from=333.788.recommend_more_video.8&vd_source=c1191139db7aee736d31e75ebc6029d0)
+commet: 篇理論，講大架構 
+. 第二章 架构设计分层实现 -  
+. 第三章 访问层架构设计 - lvs 接入系统 -  
+. 第三章 访问层架构设计 - lvs 接入系统 -  
+. 第三章 访问层架构设计 - nginx 原理 -  
+. 第三章 访问层架构设计 - nginx 应用 -  
+. 第三章 访问层架构设计 - nginx 应用 -  
+. 第三章 访问层架构设计 - nginx 应用 -  
+. 第四章 API 网关层架构设计 - 分布式会话管理 
+. 第四章 API 网关层架构设计 - 接入层控制 
+. 第四章 API 网关层架构设计 - 服务调用及聚合 
+. 第五章 核心服务层架构设计之服务通信 - 微服务 
+. 第五章 核心服务层架构设计之服务通信 - dubbo 服务治理  
+. 第五章 核心服务层架构设计之服务通信 - dubbo 服务治理  
+. 第五章 核心服务层架构设计之服务通信 - 异步消息服务  
+. 第五章 核心服务层架构设计之服务通信 - 异步消息服务  
+. 第五章 核心服务层架构设计之服务通信 - 异步消息服务  
+. 第六章 核心服务层架构设计之调度池化 - 任务调度  
+. 第六章 核心服务层架构设计之调度池化 - 任务调度  
+. 第六章 核心服务层架构设计之调度池化 - 池化  
+. 第六章 核心服务层架构设计之调度池化 - 池化技术  
+. 第七章 核心服务层架构设计之缓存、隔离、队列 - 缓存技术  
+. 第七章 核心服务层架构设计之缓存、隔离、队列 - 缓存技术  
+. 第七章 核心服务层架构设计之缓存、隔离、队列 - 隔离术  
+. 第七章 核心服务层架构设计之缓存、隔离、队列 - 隔离术  
+. 第七章 核心服务层架构设计之缓存、隔离、队列 - 队列术  
+. 第七章 核心服务层架构设计之缓存、隔离、队列 - 队列术  
+. 第八章 数据存储及接入层架构设计 - 数据存储  
+. 第八章 数据存储及接入层架构设计 - 数据存储  
+. 第八章 数据存储及接入层架构设计 - 关系型与非关系型  
+. 第八章 数据存储及接入层架构设计 - 关系型与非关系型  
+. 第八章 数据存储及接入层架构设计 - 代理访问  
+. 第八章 数据存储及接入层架构设计 - 代理访问  
+. 第九章 监控，限流，降级 - 监控 
+. 第九章 监控，限流，降级 - 限流  
+. 第九章 监控，限流，降级 - 限流  
+. 第九章 监控，限流，降级 - 降级 
 
 
 
 【2024 版】P8 大佬花一周时间讲完的架构师知识体系，目前 B 站最好的（没有之一）JAVA 架构师教程，全程干货无废话，这还学不会真的就没办法了！
 [【2024版】P8大佬花一周时间讲完的架构师知识体系，目前B站最好的（没有之一）JAVA架构师教程，全程干货无废话，这还学不会真的就没办法了！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1icmNYeE2W/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+、如何使用 Mysql 快速定位慢 sql 问
+、索引的数据结构详
+、MylSAM 存储引擎详
+、lnnoDB 存储引擎索引实
+、为什么 MySQL 推荐使用整形自增的主键而不使用 UUID、联合索引底层原
+、为什么阿里内部禁止超过三张表 join、完整版 Java 技术栈学习路线解
+、高并发场景秒杀抢购超卖 Bug 实战重
+、秒杀抢购场景下实战 JVM 级别锁与分布式
+、大厂分布式锁 Redisson 框架实
+、从 Redisson 源码剖析 lua 解决锁的原子性问
+、从 Redisson 源码剖析经典的锁续命机
+、阿里一面：Redis 主从架构锁失效如何解
+、京东二面：Redlock 分布式锁高并发下有什么问
+、双十一大促如何将分布式锁性能提升  
+、防止订单重复提交或支付分布式锁方案设
+、JDK 体系结构与 JVM 整体架
+、JVM 内存模型详解 (运行时数据区
+、堆内存详
+、JVM 调优工具 Arthas 详
+、STW 机制详
+、亿级流量电商网站 JVM 参数调优实战案
+、单机几十万并发的系统 JVM 如何优
+、Java 进阶技术提升
+、CPU 缓存架构详
+、Java 内存模型 JMM 详
+、内存模型底层八大原子操
+、CPU 缓存 — 致性协议 MESI 详
+、volatile 可见性底层实现原
+、CPU 指令重排序详
+、as-if-serial 与 happens-before 原则详
+、双重检测锁 DCL 对象半初始化问
+、Hotspot 内存屏障如何禁止指令重
+、Java 并发核心知识点与应
+、Spring 之 Bean 的生命周期步骤详
+、Spring 之依赖注入底层原理详
+、Spring 之初始化前、初始化、初始化后
+、Spring 之推断构造方法底层原理详
+、Spring 之 AOP 底层实现原理详
+、Spring . 核心新特性介
+、SpringBoot 请求处理流
+、SpringBoot 启动流
+、SpringBoot 条件注解分
+、SpringBoot 自动配置分
+、SpringBoot 自动配置底层源码分
+、SpringBoot 核心知识点梳
+、亿级流量电商平台微服务架构详
+、Nacos 注册中心实现电商微服务拆分实
+、【阿里一面】微服务上下线动态感知如何实现
+、Sentinel 如何抗住阿里近十年双十一流量洪
+、Sentinel 底层如何计算双十一线上系统实时 QPS、【滴滴二面】Sentinel 滑动时间窗限流算法如何实现
+、阿里微服务分布式事务控制 Seata 实
+、【PDD 二面】Seata 分布式事务实现原理剖
+、统一路由 & 大促限流 & 安全认证网关 Gateway 实
+、双十一线上服务调用链路追踪 SkyWalking 实
+、阿里京东双十一后端微服务中台架构剖
+、面试常问的 Redis 核心数据存储结构精
+、Redis 底层 string 编码 int&embstr&raw 详
+、Redis 底层压缩列表 & 跳表 & 哈希表详
+、Redis 底层 ZSet 实现压缩列表和跳表如何选
+、基于 Redis 实现微博 & 抢红包 &  核心业
+、Redis 实现微博与微信消息时间线 Timeline、美团单车查找附近的车基于 Redis 实
+、电商推荐系统如何用 Redis 实
+、事务 ACID 特
+、事务四大隔离级别底层实现原
+、事务底层锁机制与 mvcc 并发优化机制详
+、阿里一面查询操作方法需要使用事务
+、Mysql 执行过程与 BufferPool 缓存机
+、MySQL 数据库核心知识点归
+、MySQL 数据库核心知识点归
+、BIO 模型详解与实
+、NIO 模型详解与实
+、NIO 多路复用器详
+、Epoll 事件轮询模型详
+、Redis 线程模型详
+、Netty 线程模型详
+、基于 Netty 设计微信钉钉后端高并发 IM 
+、了解 Dubbo 的用
+、服务注册底层原理详
+、服务发现底层原理详
+、服务调用底层原理详
+、服务负载均衡底层原理详
+、Dubbo 核心知识点总
+、哪些场景需要用到消息中间
+、RocketMQ 在秒杀系统中的核心作
+、MQ 产品要如何选
+、RocketlMQ 的集群架
+、RocketMQ 如何保证全链路消息零丢
+、 RocketMQ 的事务消息机制有什么
+、如何保证消息写入 Broker 不丢
+、消费者端怎么保证消息不丢
+、如果整个 MQ 服务挂了，怎么保证消息不丢
+、如何突破技术瓶颈 (经验分享)
+
+
+
 
 【全 140 集】强推！这绝对是 2024 最细最强的 Java 架构师全套视频教程，涵盖所有主流核心知识点 | 全套视频时长 60 + 小时！！
 [【全140集】强推！这绝对是2024最细最强的Java架构师全套视频教程，涵盖所有主流核心知识点 | 全套视频时长60+小时！！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1no23Y4EFF/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
-
+【JVM 性能调优】JDK 体系结构与 JVM 整体架
+【JVM 性能调优】JVM 内存模型详解 (运行时数据区
+【JVM 性能调优】堆内存详
+【JVM 性能调优】JVM 调优工具 Arthas 详
+【JVM 性能调优】STW 机制详
+【JVM 性能调优】亿级流量电商网站 JVM 参数调优实战案
+【JVM 性能调优】单机几十万并发的系统 JVM 如何优
+【JVM 性能调优】Java 进阶技术提升
+【分布式锁】实战模拟高并发场景下秒杀抢购超卖问
+【分布式锁】秒杀抢购场景下实战分布式
+【分布式锁】解决分布式锁过期时间问
+【分布式锁】分布式锁 Redisson 框架实
+【分布式锁】从 Redisson 源码剖析 Lua 脚本保证 Redis 命令的原子
+【分布式锁】解决主从架构的 redis 分布式锁主节点宕机锁丢失的问
+【分布式锁】Redlock 分布式锁实现原
+【分布式锁】高并发情况下如何提升分布式锁性
+【分布式锁】防止订单重复提交或支付分布式锁方案设
+【分布式锁】互联网公司 Redis 技术的应
+【阿里微服务架构】亿级流量电商平台微服务架构详
+【阿里微服务架构】Nacos 注册中心实现电商微服务拆分实
+【阿里微服务架构】面试常问的微服务上下线动态感知如何实现
+【阿里微服务架构】Sentinel 如何抗住阿里近十年双十一流量洪
+【阿里微服务架构】Sentinel 底层如何计算双十一线上系统实时 QPS【阿里微服务架构】Sentinel 限流滑动时间窗 & 漏桶 & 令牌桶算法详
+【阿里微服务架构】阿里微服务分布式事务控制 Seata 实
+【阿里微服务架构】面试常问的 Seata 分布式事务实现原理剖
+【阿里微服务架构】统一路由 & 大促限流 & 安全认证网关 Gateway 实
+【阿里微服务架构】双十一线上服务调用链路追踪 SkyWalking 实
+【阿里微服务架构】阿里京东双十一后端微服务中台架构剖
+【MySQL 性能调优】千万级数据表如何用索引快速查
+【MySQL 性能调优】如何基于索引 B + 树精准建立高性能索
+【MySQL 性能调优】聚集索引与覆盖索引与索引下推到底是什
+【MySQL 性能调优】如何使用 Mysql 查询计划定位线上慢 sql 问
+【MySQL 性能调优】Mysql 最左前缀优化原则实现原理详
+【MySQL 性能调优】为什么推荐使用自增整型的主键而不是 UUID【MySQL 性能调优】联合索引底层数据存储结构又是怎样
+【MySQL 性能调优】阿里内部为什么禁止超过三张表关联查
+【MySQL 性能调优】阿里巴巴内部 Mysql 索引优化军
+【Java 内存模型】CPU 缓存架构详
+【Java 内存模型】Java 内存模型 JMM 详
+【Java 内存模型】内存模型底层八大原子操
+【Java 内存模型】CPU 缓存一致性协议 MESI 详
+【Java 内存模型】volatile 可见性底层实现原
+【Java 内存模型】CPU 指令重排序详
+【Java 内存模型】as-if-serial 与 happens-before 原则详
+【Java 内存模型】双重检测锁 DCL 对象半初始化问
+【Java 内存模型】Hotspot 内存屏障如何禁止指令重
+【Java 内存模型】Java 并发编程核心知识点与应
+【JVM 类加载机制】十分钟快速梳理 Java 类加载机
+【JVM 类加载机制】分清楚类加载与对象实例
+【JVM 类加载机制】自定义类加载器：解放服务器，关键代码远程加
+【JVM 类加载机制】class 代码混淆：只有自己能用的 class 文
+【JVM 类加载机制】极致高可用：class 文件热加载机制实
+【JVM 类加载机制】打破常规：同一个类也可以有多个版
+【JVM 类加载机制】工程化应用：SPI 机制的深度使用方
+【JVM 类加载机制】思考沉淀：程序员如何突破技术瓶
+【Spring】详解 Bean 的生命周期步
+【Spring】Bean 初始化与实例化详
+【Spring】详解 Bean 对
+【Spring】推断构造方法底层原理详
+【Spring】详解 AOP 底层实现原
+【Spring】详解 Spring 事务及传播机制底层原
+【Spring】Spring 核心知识点梳
+【SpringBoot】手写模拟 SpringBoot 底层源
+【SpringBoot】SpringBoot 自动配置底层源码分
+【SpringBoot】SpringBoot 整合 Tomcat 底层源码分
+【SpringBoot】SpringBoot 启动过程源码分
+【SpringBoot】SpringBoot 条件注解底层源码分
+【SpringBoot】SpringBoot . 新特性底层源码分
+【RocketMQ】MQ 有哪些典型的使用场
+【RocketMQ】RocketMQ 在图灵电商秒杀系统中的核心作
+【RocketMQ】RocketMQ 怎么保证集群高可用
+【RocketMQ】RocketMQ 的消息是如何传递
+【RocketMQ】广播消息机制如何记录消费进
+【RocketMQ】RocketMQ 如何实现指定时间点的延迟消
+【RocketMQ】RocketMQ 如何保证消息有
+【RocketMQ】事务消息机制如何保证分布式事务一致
+【RocketMQ】消息过滤机制是否会影响服务端性
+【RocketMQ】RocketMQ 如何保证消息高效写
+【RocketMQ】RocketMQ 长轮询机制是如何工作
+【RocketMQ】程序员如何突破技术瓶
+【MySQL 分库分表】海量数据冲击下的 MySQL 优化方
+【MySQL 分库分表】互联网大厂如何选择垂直分片和水平分片策
+【MySQL 分库分表】互联网常见分库分表框架综合比
+【MySQL 分库分表】ShardingJDBC 与 ShardingProxy 如何选择
+【MySQL 分库分表】ShardingSphere 分库分表策略实
+【MySQL 分库分表】如何设计零迁移数据扩容分片方案
+【MySQL 分库分表】程序员如何突破技术瓶
+【微信红包架构】微信红包四大功能包发抢拆详
+【微信红包架构】微信红包二倍均值拆包算法详
+【微信红包架构】十分钟开发微信抢红包功能实
+【微信红包架构】基于 Redis 集群支撑每秒百万红包并
+【微信红包架构】微信日均百亿级红包架构揭
+【微信红包架构】微信红包多级缓存架构剖
+【微信红包架构】微信红包异地多活架构部
+【微信红包架构】微信红包海量数据存储架构详
+【DDD 架构】DDD 架构的思想与微服务项目痛
+【DDD 架构】MVC 挺好的，为什么要冒出 DDD【DDD 架构】支付功能 DDD 架构设计实
+【DDD 架构】动手改造四步
+【DDD 架构】什么是领域？领域应该如何设计落地
+【DDD 架构】理解实体与值对
+【DDD 架构】什么是聚合？聚合根有什么用？是什么领域
+【DDD 架构】DDD 中维护领域的方式，怎么划界上下文
+【DDD 架构】领域的编程模型 - 菱形编程模
+【DDD 架构】DDD 宏观发展与战术、战略工
+【DDD 架构】DDD 战术工具与战略工
+【秒杀系统三高架构】高并发场景秒杀抢购超卖 Bug 实战重
+【秒杀系统三高架构】基于 Redis 与 MQ 实现秒杀下单架
+【秒杀系统三高架构】 万订单每秒热点数据架构优化实
+【秒杀系统三高架构】秒杀下单 MQ 如何保证不丢消
+【秒杀系统三高架构】解决 MQ 下单消息重复消费幂等机制详
+【秒杀系统三高架构】线上 MQ 百万秒杀订单发生积压如何处
+【秒杀系统三高架构】Redis 集群崩溃时如何保证秒杀系统高可
+【秒杀系统三高架构】Redis 主从切换导致库存同步异常以及超卖问
+【秒杀系统三高架构】一线大厂 Java 核心技术栈解
+【MySQL 底层机制】MySQL 内部组件结
+【MySQL 底层机制】MySQL 查询缓存使用实
+【MySQL 底层机制】一条 SQL 底层是如何执行
+【MySQL 底层机制】Redo log 重做日志原理剖
+【MySQL 底层机制】Redo log 重做日志关键参数配置实
+【MySQL 底层机制】binlog 二进制归档日志原理剖
+【MySQL 底层机制】MySQL 核心技术体系总
 
 【整整 300 集】强推！目前 B 站最完整的 Java 架构师高级课程全套视频，涵盖 java 编程所有主流技术，逼自己一个月学完，从普通程序员到架构师只要这一套就够了！
 [【整整300集】强推！目前B站最完整的Java架构师高级课程全套视频，涵盖java编程所有主流技术，逼自己一个月学完，从普通程序员到架构师只要这一套就够了！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1y6DrYsE5i/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
-
+、深入字节码剖析 Java 虚拟机内存模
+、面试必问的 JVM 垃圾收集机制详
+、从蚂蚁金服面试题窥探 STW 机
+、阿里巴巴内部 JVM 调优工具 Arthas 详
+、双十一亿级电商网站 JVM 参数调优实
+、单机几十万并发的系统 JVM 如何优
+、垃圾收集器 CMS&G&ZGC 设计原理详
+、深入 Hotspot 源码理解 CMS&G&ZGC 的区
+、动手实战优化自己公司线上系统 JVM、Java 架构师进阶学习路:
+、千万级数据表如何用索引快速查
+、如何基于索引 B + 树精准建立高性能索
+、聚集索引与覆盖索引与索引下推到底是什
+、联合索引底层数据存储结构又是怎样
+、如何使用 Mysql 查询计划定位线上慢 sql 问
+、Mysql 最左前缀优化原则实现原理详
+、为什么推荐使用自增整型的主键而不是 UUID、Mysql 并发支撑底层 Buffer Pool 机制详
+、阿里内部为什么禁止超过三张表关联查
+、阿里巴巴内部 Mysql 索引优化军:
+、亿级流量电商平台微服务架构详
+、Nacos 注册中心实现电商微服务拆分实
+、【阿里一面】微服务上下线动态感知如何实现
+、Sentinel 如何抗住阿里近十年双十一流量洪
+、Sentinel 底层如何计算双十一线上系统实时 QPS、【滴滴二面】Sentinel 滑动时间窗限流算法如何实现
+、阿里微服务分布式事务控制 Seata 实
+、【PDD 二面】Seata 分布式事务实现原理剖
+、统一路由 & 大促限流 & 安全认证网关 Gateway 实
+、双十一线上服务调用链路追踪 SkyWalking 实
+、阿里京东双十一后端微服务中台架构剖:
+. 图说 Spring Ioc 容器加载原
+. 图说 Spring 的 Bean 的生命周
+. 手写 Spring 模拟循环底层源
+. Spring 如何利用多级缓存解决循环依
+. Spring 二级缓存到底能否解决循环依
+. Spring 的单例 Bean 如何保证线程安
+. 如何解决 SpringBoot 循环依赖异
+.Spring IOC 之 Bean 创建过程底层原理详
+.Spring IOC 之 Bean 生命周期过程底层原理详
+.ApplicationContext 和 BeanFactory 的区别精
+.Spring IOC 之实例化是如何推断构造函
+.Spring IOC 之依赖注入中 Bean 循环依底层原
+.Spring IOC 之初始化前、初始化、初始化后详
+.Spring IOC 之加载流程源码深度剖
+.Spring AOP 底层原理及常见面试题详
+.Spring 事务底层原理及常见面试题详
+、手写模拟 SpringBoot 启动过
+、手写模拟 @ConditionalOnClass 条件注解功
+、手写模拟 SpringBoot 自动配置功
+、SpringBoot 的开箱即用可插拔实现过程演
+、SpringBoot 整合 Tomcat 底层源码分
+、spring.factories 文件解析源码 API 机制分
+、SpringBoot. 新特性中启动性能优化详
+、Java 多线程内存模型 JMM 底层原理详
+、内存模型底层八大原子操作是什
+、CPU 缓存一致性协议剖
+、深入汇编底层理解 volatile 关键
+、CPU 指令重排是怎么回
+、对象半初始化问题是怎么回
+、高并发下双重检测锁 DCL 指令重排问题剖
+、as-if-serial 与 happens-before 原则详
+、深入 Hotspot 源码理解内存屏障如何禁止指令重
+、从 Spring Cloud 微服务框架源码看下并发编程的应:
+、线程池提交任务的具体流程是怎样的
+、线程池的五种状态是如何流转的
+、线程池为什么一定得是阻塞队列
+、Tomcat 是如何自定义线程池的
+、线程池中的线程是如何关闭的
+、线程发生异常，会被移出线程池吗
+、线程池的核心线程数该如何设置
+、线程池的最大线程数该如何设置:
+、高并发场景秒杀抢购超卖 Bug 实战重
+、秒杀抢购场景下实战 JVM 级别锁与分布式
+、从 Redisson 源码剖析 lua 解决锁的原子性问
+、从 Redisson 源码剖析经典的锁续命机
+、阿里一面：Redis 主从架构锁失效如何解
+、京东二面：Redlock 分布式锁高并发下有什么问
+、防止订单重复提交或支付分布式锁方案设
+、防止取消订单误支付 Bug 分布式锁方案设
+、双十一大促如何将分布式锁性能提升  :
+、Redis 性能高的原因是什
+、string 类型底层数据结构与应用场
+、hash 类型底层数据结构与应用场景（电商购物车
+、list 类型底层数据结构与应用场景（消息信息流
+、set 类型底层数据结构与应用场景 (微博微信点赞收藏与关注模型
+、zset 类型底层数据结构与应用场
+、Redis 底层压缩列表 & 跳表 & 哈希表详
+、Redis 核心知识点总:
+. 微服务项目设计落地的难点分
+. 服务开放平台系统案例分
+.DDD 设计思想与传统设计模式区别分
+. 走出舒适圈，给你熟悉的 MVC 松松
+. 通过事件风暴构建初步领域模
+. 单体架构下快速验证领域模
+. 一行代码，从单体架构升级为微服务架
+.DDD 视角下统一单体架构与微服务架
+. 详细分析领域的演进过
+.DDD 通用落地架构探
+.DDD 的后续演进之路
 
 架构师高级课程（完结）
 [架构师高级课程（完结）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wg4y1z7Vj/?spm_id_from=333.788.recommend_more_video.3&vd_source=c1191139db7aee736d31e75ebc6029d0)
-
+ 为什么要从设计模式开始及工厂模式详解_bilibili 
+ 工厂模式详
+ 单例模式详
+ 代理模
+ 委派模式和策略模
+ 模板模式和适配器模
+ 装饰者模式和观察者模
+ 各设计模式总结与对
+ Spring 框架的前世今生已经源码构
+ 用  行代码手写提炼 Spring 的核心原
+ 用  行代码手写提炼 Spring 的核心原理补
+ 一步一步手绘 Spring 运行时序图 (
+ 一步一步手绘 spring DI 运行时序
+ 一步一步手绘 spring AOP 时序
+ 一步一步手绘 springMVC 运行时序
+ 用  个类高仿真提炼纯手写 Spring 框架 V. (
+ 用  个类高仿真提炼纯手写 Spring 框架 V. (
+ 用  个类高仿真提炼纯手写 Spring 框架 V. 之 MVC 用  个类高仿真提炼纯手写 Spring 框架 V. 之 AOP Spring 事务传播原理及数据库事务操作原
+ 基于 SpringJDBC 手写定制自己的 ORM 框
+ Spring 新特性简述及经典的高频面试题分
+ Mybatis 应用分析与最佳实
+ Mybatis 体系结构与工作原
+ Mybatis 应用分析与最佳实
+ 手写自己的 Mybatis 框
+ 初步认识多线程的发展及使
+ 多线程的原理分析（
+ 多线程的原理（
+ AQS 的底层原理分
+ 并发工具的使用以及原
+ ConcurrentHashMap 的原理分
+ 阻塞队列，原子操作的原理分
+ 分布式架构的发展及演
+ 远程通信协议原
+ http 以及 https 原理 http 以及 https 原理 http 以及 https 原理 http 以及 https 原理 序列化和反序列化原理分
+ RPC 通信的原理以及手写实
+ JavaIO 演进之
+ Netty 与 NIO 之前世今
+ 基于 Netty 重构 RPC 框架
+ Netty 高性能之
+ Netty 核心之 EventLoop 与 Pipeline Netty 实战之手写消息推送系
+ Netty 中的设计模式与性能调
+ 深入浅出微服务体
+ 深入浅出 SpringBoot 的核心原
+ 深入浅出 SpringBoot 核心原理
+ 微服务架构下的服务注册中心设计及实
+ 分布式协调服务 Zookeeper 应用实
+ 深入分析 Zookeeper 核心原
+ 深入分析 Zookeeper 的 leader 选举原
+ 事务请求以及 Watcher 源码分
+ 微服务治理之 Dubbo 的基本认
+ Dubbo 的核心原理以及新功
+ Dubbo 进阶系列之内核剖
+ Dubbo 进阶之服务发布源码分
+ Dubbo 进阶之服务注册源码分
+ Dubbo 进阶之容错以及集群源码分
+ Nacos 原理分析及实
+ Sentinel 限流熔断的应用场景以及原
+ Sentinel 限流熔断的应用及原
+ 咕泡电商项目实
+ kafka 的基本应用及场景分
+ kafka 的实现原理分析（上
+ kafka 的应用实
+ kafka 实现原理分析（下
+ RabbitMQ 工作模型与 Java 编
+ RabbitMQ 可靠性投递与实践经验
+ RocketMQ 基本分
+ RocketMQ 原理分
+ 课程阶段性总
+ 微服务现状与未
+ SpringCloud 分布式配置架
 
 【黑马博学谷 2024】又狂又野狂野架构师
 [【黑马博学谷2024】又狂又野狂野架构师\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV12M4m127nR/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+ - 互联网架构发展历
+ - 容器化技术概
+ - Zookeeper 简介与原
+ - Apollo 应用实
+ - Skywalking 应用实
+ - 红黑树的原理与应
+ - ELK 平台应用实
+ - Dubbo 基本使
+ - 网络编程
+ - 网络编程
+ - 开班仪
+ - RPC 通信原理实
+ - Netty 通信技术进阶 （上
+ - Netty 通信技术进阶（中
+ - Netty 通信技术进阶（下
+ - 纯手写 RPC（上
+ - 纯手写 RPC（下
+ - Dubbo 核心源码剖析（上
+ - Dubbo 核心源码剖析 （下
+ - 阶段答疑 & 复
+ - Alibaba 主流微服务前沿技术栈 （一
+ - Alibaba 主流微服务前沿技术栈 （二
+ - Alibaba 主流微服务前沿技术栈 （三
+  - SpringCloud 高阶应用与原理 (上)  - SpringCloud 高阶 (上)
+ - SpringCloud 高阶应用与原理 (下
+ - 阶段答疑 & 复
+ - 分布式 + 微服务考
+ - MyBatis 源码剖析（上
+ - MyBatis 源码剖析（下
+ - Spring 源码深度剖析 -
+ - Spring 源码深度剖析 -
+ - Spring 源码深度剖析 -
+ - Spring 源码深度剖析 -
+ - SpringBoot 源码剖析 -
+ - SpringBoot 源码剖析 -
+ - Tomcat 源码剖
+ - JDK 源码剖析（上
+ - JDK 源码剖析（中
+ - JDK 源码剖析（下
+ - 阶段答疑 & 复 - 软负载王者 Nginx、OpenResty（上
+ - 软负载王者 Nginx、OpenResty（下）[cainzy.com
+ - RabbitMQ 深度剖析（上
+ - RabbitMQ 深度剖析（下
+ - Kafka 深度剖析 （上
+ - Kafka 深度剖析（中
+ - Kafka 深度剖析（下
+ - RocketMQ 深度剖析（上
+ - RocketMQ 深度剖析（中
+ - RocketMQ 深度剖析（下
+ - 源码 + 中间件考
+ - 全链路压测实战（上
+ - 全链路压测实战（下
+  - 容器化技术 Docker（上）
+  - 容器化技术 Docker（上）  - 容器化技术 Docker（上） - 容器化技术 Docker（下
+ - 容器编排 Kubernetes（KS）（上
+ - 容器编排 Kubernetes（KS）（中
+ - 容器编排 Kubernetes（KS）（下
+ - 服务网格 ServiceMesh 实战（上
+ - 服务网格 ServiceMesh 实战（下
+ - 必备的 linux 基本
+ - LVS+Keepalived 高可用部署实
+ - 阶段答疑 & 复
+ - 高性能缓存代理方案 Redis（上
+ - 高性能缓存代理方案 Redis（中
+ - 高性能缓存代理方案 Redis（下
+ - MySQL 生产环境扩容方案（上
+  - MySQL 生产环境扩容方案（下）  - MySQL 生产环境扩容方案（下）
+  - MySQL 生产环境扩容方案（下）
+ - MongoDB 无限数据动态扩容机制（上
+ - 业务类算法 - 下（双元
+ - 分布式检索引擎 ElasticSearch（上
+ - 分布式检索引擎 ElasticSearch（中
+ - 分布式检索引擎 ElasticSearch（下
+ - 无限容量分布式文件存储解决方案（上
+ - 无限容量分布式文件存储解决方案（下
+ - TiDB - 海量数据下 MySQL 的替代
+  - 阶段答疑 & 复习 -  - 阶段答疑 & 复习 -
+ - 考评 - 云服务 + 数 - MySQL 数据库调优（上
+ - MySQL 数据库调优（中
+ - MySQL 数据库调优（下
+  - JVM 内核调优（上） - JVM 内核调优（下
+ - 高性能队列 Disruptor - 就业指
+ - 就业指
+ - 并发编程多线程调优（上
+ - 并发编程多线程调优（中
+ - 并发编程多线程调优（下
+ - 设计模式 （上
+ - 设计模式 （下
+  - 阿里系常用代码规范及工具 -  - 阿里系常用代码规范及工具 -
+ - 深入理解常见应用级算法思想 （上）（双元
+  - 深入理解常见应用级算法思想（下）（双元）  - 深入理解常见应用级算法思想（下）（双元）  - 深入理解常见应用级算法思想（下）（双元）
+ - 软件架构设计攻略（上
+  - 软件架构设计攻略（下）  - 软件架构设计攻略（下）  - 软件架构设计攻略（下）
+ - 敏捷 - 开发管理之
+  - 阶段答疑 & 复习 -  - 阶段答疑 & 复习 -
+  - 阶段答疑 & 复习 - - 持续集成 Jenkins - 彻底搞懂 Git 代码管
+ - 常用第三方类
+  - Zabbix 服务器监控工具 -  - Zabbix 服务器监控工具 -
+ - Prometheus 实
+ - 阿里 Arthas - Java 神
+ - 从 Ant 到 Maven 看项目构建工具演
+ - Groovy 语言及应
+ - 定时任务工
+ - 容易忽略的测试工具
+
+
+
+[冒死上传！价值28800的高级架构师课程（分布式-全家桶/spring源码解析/微服务架构/大数据/Python机器学习/面试问题）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV18Y4y1B7ty/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+新生学习计划 
+vip 学员学习计划制定 工程化专题之 maven
+工程化专题之 maven-
+ - 工程专题之 git
+工程化专题回顾 
+深入分析 spring 源码 (
+深入分析 spring 源码 (
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 ()
+深入分析 spring 源码 (-深入分析 spring 源码 (-
+深入分析 spring 源码之事务详解 ()
+mybatis 源码分析 源码分析之 mybatis 一实用篇
+源码分析之 mybatis 一实用篇
+源码分析之 mybatis 一源码分析实战 
+源码分析之 mybatis 一源码分析实战 -源码分析之 mybatis 一源码分析实战 -
+源码分析之 mybatis 一源码分析实战 -源码分析之 mybatis 一源码分析实战 -开发者职业发展漫
+ 分布式专题  分布式架构概述 (二 分布式架构概述 (一
+分布式通信协议分析 
+ 分布式通信协议分析  分布式通信 - 序列化（二）
+ 分布式通信 - 序列化（一
+ 分布式通信协议 - http (上)
+ 分布式通信协议 - http (下)
+ 分布式通信框架 - rmi（上
+ 分布式通信框架 - rmi（下）
+ 分布式通信框架 - webservice (上) 分布式通信框架 - webservice (下)
+ 分布式协调服务 - zookeeper (上)
+ 分布式协调服务 - zookeeper (下)
+ 分布式协调服务 - zookeeper (上)
+ 分布式协调服务 - zookeeper（下） 分布式协调服务 (下)
+ 分布式协调服务 - zookeeper (上) 分布式协调服务（上） 分布式协调服务（下）
+ 分布式协调服务（上）
+ 分布式协调服务（下）
+ 分布式协调服务 - zookeeper+dubbo 前篇（上） 分布式协调服务 - zookeeper+dubbo 前篇（下）
+ 分布式服务治理 - dubbo (上) 分布式服务治理 - dubbo (下)-【itjccom
+ 分布式服务治理 - dubbo (上)
+ 分布式服务治理 - dubbo (下)
+ 分布式服务治理（上）
+ 分布式服务治理（下）
+ 分布式事务解决方案 (上)
+ 分布式事务解决方案（下）
+ 分布式事务（上）
+ 分布式事务（下）
+nio 原理详解 (上)nio 原理详解 (下) 深入分析 nio 操作 api (上) 深入分析 nio 操作 api (下)
+netty 设计原理 (上)netty 设计原理 (下)
+netty 实现 im 实时聊天 (上)
+netty 实现 im 实时聊天 (下) 基于 netty 实现 im 聊天系统 (上)
+ 基于 netty 实现 im 聊天系统 (下) 深入分析 netty 源码 (上)
+ 深入分析 netty 源码 (下) 深入分析 netty 源码 (下)
+ 深入分析 netty 源码 (上) 基于 netty 手写实现 rpc (上)
+ 基于 netty 手写实现 rpc (下)
+ 分布式消息通信 - activemq（上） 分布式消息通信 - activemq（下）
+ 分布式消息通信 - activemq (上)
+ 分布式消息通信 - activemq (下) 分布式消息通信（前半小时补录） 分布式消息通信（上 分布式消息通信（下） 分布式消息通信 - kafka（上） 分布式消息通信 - kafka（下）
+ 分布式消息通信 - kafka（上） 分布式消息通信 - kafka（下）
+ 分布式消息中间件 (下) 分布式消息中间件 - redis (上)
+ 分布式缓存 - redis (上) 分布式缓存 - redis (下)
+ 分布式缓存 - redis (上) 分布式缓存 - redis (下)
+session 跨域及单点登录解决方案 (上)
+session 跨域及单点登录解决方案 (下)
+ 反向代理服务器 - nginx (上) 反向代理服务器 - nginx（下）
+ 反向代理服务器 - nginx（上） 反向代理服务器 - nginx（下） 反向代理服务器 (下)
+ 反向代理服务器 - nginx (上)
+ 分库分表（上） 分库分表（下）
+ 分库分表第二课（上） 分库分表第二课（下）
+tomvipmongodb 数据基本应用及原理详解（上）tomvipmongodb 数据基本应用及原理详解（下）tomvip手写基于 mongodb 的 orm 框架（上）tomvip手写基于 mongodb 的 orm 框架 (上)tomviplinux 环境下安装 mongodb 及常用配置tomvip手写基于 mongodb 的 orm 框架 (下)tomvipmongodb 高可用方案实战演练 (上)
+tomvipmongodb 高可用方案实战演练 (下)tomvipmongoddb 高可用实战演练 (补充)《初识 docker 二》
+《初识 docker》
+docker 使用二 
+docker 使用一 
+ 微服务架构 spring rest（上
+spring rest（下
+spring web mvc（上）
+spring web mvc（下）
+spring boot jdbc（上）
+spring boot jdbc（下）
+spring boot 初体验（上）spring boot 初体验（下）
+spring boot 验证（上）spring boot 验证 (下）spring boot 验证（中）spring cloud config client（上）spring cloud config client（下） 
+spring cloud config server（上）spring cloud config server（下）
+spring cloud netflix eureka（上）spring cloud netflix eureka（下）
+spring cloud netflix ribbon（上）
+spring cloud netflix ribbon（下）
+spring cloud netflix hystrix（上）
+spring cloud netflix hystrix（下） 小马哥 vip 中期回顾（上） 小马哥 vip 中期回顾（下）
+spring cloud feign（上）
+spring cloud feign（下）
+spring cloud zuul（上）
+spring cloud zuul（下）
+spring cloud stream（上）-
+spring cloud stream（上）-
+spring cloud stream (下)-
+spring cloud stream (下)-
+spring cloud sleuth 上 
+spring cloud sleuth 下 
+spring boot + spring cloud 整体回顾（上）
+spring boot + spring cloud 整体回顾（下）spring boot + spring cloud 整体回顾（中）
+ 性能优化  性能优化专题 - 什么是性能优化二 
+ 性能优化专题 - 什么是性能优化一  性能测试与优化（二）
+ 性能测试与优化（一）
+jvm 介绍 二 
+jvm 介绍 一 
+jvm 垃圾回收二 
+jvm 垃圾回收一 
+jvm 案例分析二 
+jvm 案例分析一 
+ - tomcat 架构（上）
+ - tomcat 架构（下）
+ - 嵌入式 tomcat（下）
+- 嵌入式 tomcat（上）
+ - tomcat 性能优化（中）- tomcat 性能优化（上）
+ 性能优化之 mysql 介绍二  性能优化之 mysql 介绍一 
+ 性能优化之 mysql 优化二 
+ 性能优化之 mysql 优化一 :
