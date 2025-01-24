@@ -858,7 +858,7 @@ Spring Framework 中文文档PDF
 
 
 	- [x] [037 尚硅谷 图解Java设计模式 单例模式JKD源码分析 - YouTube](https://www.youtube.com/watch?v=bP2t_LNxqWM&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=38)
-	- [ ] [047 尚硅谷 图解Java设计模式 工厂模式 JDK源码分析 - YouTube](https://www.youtube.com/watch?v=tDqAUuNC4is&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=48)
+	- [x] [047 尚硅谷 图解Java设计模式 工厂模式 JDK源码分析 - YouTube](https://www.youtube.com/watch?v=tDqAUuNC4is&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=48)
 	- [ ] [051 尚硅谷 图解Java设计模式 原型模式3 Spring源码分析 - YouTube](https://www.youtube.com/watch?v=rqON85wsA5U&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=52)
 	- [ ] [069 尚硅谷 图解Java设计模式 桥接模式4 JDBC源码 - YouTube](https://www.youtube.com/watch?v=jSd1KwfSLo4&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=70)
 	- [ ] [075 尚硅谷 图解Java设计模式 装饰者模式5 IO源码 - YouTube](https://www.youtube.com/watch?v=nBtzeXrQlOU&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=76)
