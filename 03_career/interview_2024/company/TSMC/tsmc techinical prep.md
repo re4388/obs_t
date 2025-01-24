@@ -568,8 +568,6 @@ sprint boot
 
 
 
-
-
 ## SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版教程。让你轻松驾驭安全框架【从入门到精通】java 权限管理
 [SpringSecurity安全框架精讲课程+JWT+SpringSecurityOauth2-完整版教程.让你轻松驾驭安全框架【从入门到精通】java权限管理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1NX4y1A7ub/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - 先 pass
@@ -581,21 +579,14 @@ sprint boot
 - 說的還好，講解不夠細緻。
 - 講話會頓，加速理解會扣分。
 
-
 ## 圖靈羅蘭 B 站讲的最好的保姆级 OAuth2.0 实战及 SpringSecurity 的整合应用
 [8. security\_5\_分布式认证方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wqshejEWP?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=8)
-
 
 ## 圖靈羅蘭 这可能是 B 站讲的最透彻的 OAuth2.0 实战讲解及 SpringSecurity 的整合应用（附完整版 PDF）
 [这可能是B站讲的最透彻的OAuth2.0实战讲解及SpringSecurity的整合应用（附完整版PDF）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yq4y197sP/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
-
-
-
 ## 圖靈羅蘭 Java 进阶 Spring Security OAuth2.0 协议安全框架源码剖析教程
 [Java进阶Spring Security OAuth2.0协议安全框架源码剖析教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nq4y1W7Ph?vd_source=c1191139db7aee736d31e75ebc6029d0&spm_id_from=333.788.videopod.episodes)
-
-
 
 
 # 架構相關
