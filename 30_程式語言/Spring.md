@@ -86,17 +86,8 @@ Spring Framework 中文文档PDF
 
 # Spring Secutiry
 
-## 尚硅谷 雷神 SpringSecurity
-- [(836) 01 尚硅谷 SpringSecurity 课程介绍 - YouTube](https://www.youtube.com/watch?v=_2v7C9wBH1M&list=PLmOn9nNkQxJEnBjOMEXPLRjoTRNvhHIl2&index=1)
-	- code
-		- [shuhongfan/SpringSecurity_Demo03](https://github.com/shuhongfan/SpringSecurity_Demo03)
-	- check source code and note /Users/re4388/project/personal/lang/java/SpringSecurity_Demo03
-	- check pdf -> see book
 
 
-
-- [ ] 有能力 go thru docurment
-	- [ ] [Spring Security :: Spring Security](https://docs.spring.io/spring-security/reference/index.html)
 
 
 # Spring Reactive

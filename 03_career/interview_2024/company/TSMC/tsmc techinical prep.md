@@ -342,6 +342,55 @@
 ## 尚硅谷 雷神 SpringSecurity
 - [x] [[Spring#尚硅谷 雷神 SpringSecurity]]
 
+## 尚硅谷 雷神 SpringSecurity
+- [(836) 01 尚硅谷 SpringSecurity 课程介绍 - YouTube](https://www.youtube.com/watch?v=_2v7C9wBH1M&list=PLmOn9nNkQxJEnBjOMEXPLRjoTRNvhHIl2&index=1)
+	- code
+		- [shuhongfan/SpringSecurity_Demo03](https://github.com/shuhongfan/SpringSecurity_Demo03)
+	- check source code and note /Users/re4388/project/personal/lang/java/SpringSecurity_Demo03
+	- check pdf -> see book
+
+01 - 尚硅谷 - SpringSecurity - 课程介绍
+02 - 尚硅谷 - SpringSecurity - 框架概述
+03 - 尚硅谷 - SpringSecurity - 入门案例
+04 - 尚硅谷 - SpringSecurity - 基本原理（过滤器链）
+05 - 尚硅谷 - SpringSecurity - 基本原理（过滤器加载过程）
+06 - 尚硅谷 - SpringSecurity - 基本原理（两个重要的接口）
+07 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码上）
+08 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码下）
+09 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证上）
+10 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证下）
+11 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（自定义用户登录页面）
+12 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于权限访问控制）
+13 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于角色访问控制）
+14 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（自定义 403 页面）
+15 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（注解使用）
+16 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户注销
+17 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（原理分析）
+18 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（功能实现）
+19 - 尚硅谷 - SpringSecurity-web 权限方案 - CSRF 功能
+20 - 尚硅谷 - SpringSecurity - 微服务权限方案（认证授权过程分析）
+21 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 需求说明
+22 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 数据模型介绍
+23 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 使用技术说明
+24 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 搭建项目工程
+25 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 引入项目依赖
+26 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 启动 Redis 和 Nacos
+27 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 common 工具类
+28 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 工具类
+29 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 认证过滤器
+30 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 授权过滤器
+31 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写核心配置类
+32 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 UserDetailsService
+33 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合权限管理模块
+34 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合网关和前端
+35 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 案例测试
+36 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解上
+37 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解下
+38 - 尚硅谷 - SpringSecurity - 源码剖析 - 权限访问流程详解
+39 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证信息共享详解
+40 - 尚硅谷 - SpringSecurity - 结束语
+
+
 
 ## 尚硅谷 SpringSecurity+OAuth2
 [尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
