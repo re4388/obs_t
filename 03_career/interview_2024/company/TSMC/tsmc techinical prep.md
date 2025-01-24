@@ -72,6 +72,20 @@
 
 -- PS, 上面的筆記連到裡面去看---
 
+## Spring#楊博超 MyBatis+Spring+SpringMVC+SSM
+- [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
+	- 08 看完
+	- 9~61 mybatis
+		- mybatis to 13 finshed
+		- [ ] 14~61
+	- 62~116 -> spring -> 先skip
+	- [x] 117 - 175 (spring MVC)
+	- [ ] 176 - fin (mybatis-spring-springMVC 整合)
+
+
+
+
+
 ## Maven
 - [x] [Maven: 尚硅谷新版Maven教程](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
@@ -355,16 +369,6 @@ sprint boot
 
 
 最後想要再 review sprint boot3
-
-## Spring#楊博超 MyBatis+Spring+SpringMVC+SSM
-- [[Spring#楊博超 MyBatis+Spring+SpringMVC+SSM]]
-	- 08 看完
-	- 9~61 mybatis
-		- mybatis to 13 finshed
-		- [ ] 14~61
-	- 62~116 -> spring -> 先skip
-	- [x] 117 - 175 (spring MVC)
-	- [ ] 176 - fin (mybatis-spring-springMVC 整合)
 
 
 - [ ] 挑東西看
