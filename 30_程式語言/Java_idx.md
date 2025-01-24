@@ -15,7 +15,6 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 
 ---
 
-
 - [ ] 參考阿里巴巴開發手冊
 - [ ] 看 5 個 real word Java project (後端 focus)
 
@@ -57,11 +56,7 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 # Spring
 - [[Spring]]
 
-
-
 # Java Basic
-
-
 
 ## 【尚硅谷】Java NIO 详细教程
 - [【尚硅谷】Java NIO 详细教程（一套带你掌握 IO API/javanio）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1E64y1h7Z4/?vd_source=c1191139db7aee736d31e75ebc6029d0)

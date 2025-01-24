@@ -7,9 +7,6 @@
 	- 用那台小白好了, 搞工具，讓我跟 mac 之間可以連動
 
 
-
-
-
 #  文字類
 
 ## spring
@@ -28,8 +25,6 @@
 - [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
 - [ ] [GitHub - stevenli91748/ Java training projec 包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
 
-
-
 ## 併發
 - [ ] [[Java 并发编程面试题]]
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
@@ -41,7 +36,6 @@
 
 
 # DONE and ING
-
 
 ## Effective Java
 - [x] [[Effective Java 3rd]] 
@@ -66,43 +60,29 @@
 ## SpringBoot3
 - [x] [[Spring#【尚硅谷】SpringBoot3 零基础教程]]
 
-
-
 ## springBoot3 -reactive
 - [x] [[Spring#SpringBoot3响应式编程]]
-
-
-
 
 ## spring6
 - [x] [[Spring#Spring6：尚硅谷Spring零基础入门到进阶]]
 
 -- PS, 上面的筆記連到裡面去看---
 
-
 ## Maven
 - [x] [Maven: 尚硅谷新版Maven教程](https://www.bilibili.com/video/BV1JN411G7gX/?spm_id_from=333.788.comment.all.click)
 	- 筆記: [GitHub - re4388/atguigu-maven5h: 尚硅谷新版Maven（5小时快速上手）相关](https://github.com/re4388/atguigu-maven5h)
-
-
 
 ## kafka
 - [x] Kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
 
-
 ## Hibernate
 - [x] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
 	- note D:\all_book\java book
-
- 
  
  ## SpringData JPA
- 
  - [x] find SpringBoot 整合 JPA   [全网 2022 最新 SpringData Jpa 最全](https://www.youtube.com/playlist?list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
 	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
-
-
 
 
 
@@ -110,13 +90,7 @@
 	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
 
 
-
 - [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
-
-
-
-
-
 
 ## 小林面試
 - [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
@@ -208,8 +182,6 @@
 		- [阳哥大厂面试题第三季\_OnebyWang的博客-CSDN博客](https://blog.csdn.net/oneby1314/category_10692968.html)
 		- [尚硅谷第三季大厂面试题笔记-CSDN博客](https://blog.csdn.net/PpX1v/article/details/116053772?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-116053772-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=6)
 		- [尚硅谷Java大厂面试题第3季学习笔记\_尚硅谷面试笔记-CSDN博客](https://blog.csdn.net/jiaxm123456/article/details/128143574?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-128143574-blog-117535903.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=5)
-
-
 
 
 ## 黑馬面試系列 
