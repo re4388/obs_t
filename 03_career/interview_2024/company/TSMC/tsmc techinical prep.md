@@ -212,8 +212,8 @@
 	- [x] 39 springBootConfigration
 	- [x] 40 EnableAutoConfigation
 	- [x] 41-42 spring pattern
-	- [ ] skip 43-66 循環依賴  [框架篇 43 循环依赖ProxyFactory](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
-	- [ ] [[spring solve circular dependency]]
+	- [x] skip 43-66 循環依賴  [框架篇 43 循环依赖ProxyFactory](https://www.youtube.com/watch?v=J44ONvwstb8&list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j&index=43)
+	- [[spring solve circular dependency]]
 	- [GitHub - re4388 黑马Java八股文面试](https://github.com/re4388/Interview_Heima_Demo01)
 	- [黑马 八股文面试CSDN博客](https://blog.csdn.net/qq_57216731/article/details/131283750)
 - [x] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
