@@ -51,9 +51,6 @@
 ## 尚硅谷-juc-高并发
 - [x] [[尚硅谷-juc-高并发]]
 
-## 尚硅谷 雷神 SpringSecurity
-- [x] [[Spring#尚硅谷 雷神 SpringSecurity]]
-
 ## Java 入門
 - [x] [[宋红康 2023 版，java 入门自学]]
 
@@ -285,14 +282,6 @@
 
 
 
-## 尚硅谷 SpringSecurity+OAuth2
-
-[尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- note
-	- [Spring-Security-course/笔记/笔记.md at main · re4388/Spring-Security-course · GitHub](https://github.com/re4388/Spring-Security-course/blob/main/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)
-
-
-
 ## 韩顺平】图解Java设计模式
 - [【韩顺平】图解Java设计模式 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt)
 	- [GitHub - re4388/NOTE\_DesignPatterns: 尚硅谷Java设计模式（图解+框架源码剖析）学习笔记](https://github.com/re4388/NOTE_DesignPatterns)
@@ -480,7 +469,10 @@ sprint boot
 
 
 
-k8s
+
+
+
+## k8s
 - [K8S：尚硅谷Kubernetes教程(K8s入门到精通)](https://www.bilibili.com/video/BV1w4411y7Go/?spm_id_from=333.788.comment.all.click)
 
 
@@ -501,3 +493,73 @@ k8s
 - [(806) A3-22晶圓的尺寸與良率M2U00109 - YouTube](https://www.youtube.com/watch?v=_DZqVqO1Xlw&list=PLLFCC3QJecRPRBPJunldWjKDZeBBkrdaf&index=21)
 
 
+
+# spring security
+
+
+## 尚硅谷 雷神 SpringSecurity
+- [x] [[Spring#尚硅谷 雷神 SpringSecurity]]
+
+
+
+## 尚硅谷 SpringSecurity+OAuth2
+[尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- note
+	- [Spring-Security-course/笔记/笔记.md at main · re4388/Spring-Security-course · GitHub](https://github.com/re4388/Spring-Security-course/blob/main/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)
+
+## B 站讲的最好的保姆级 OAuth2.0 实战及 SpringSecurity 的整合应用
+[8. security\_5\_分布式认证方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wqshejEWP?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=8)
+
+
+##  300 分钟吃透 SpringSecurity 框架与 OAuth2.0 协议实战教程【图灵课堂】
+[300分钟吃透SpringSecurity框架与OAuth2.0协议实战教程【图灵课堂】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1a24y1L7Zk/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+## # SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版教程。让你轻松驾驭安全框架【从入门到精通】java 权限管理
+[SpringSecurity安全框架精讲课程+JWT+SpringSecurityOauth2-完整版教程.让你轻松驾驭安全框架【从入门到精通】java权限管理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1NX4y1A7ub/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程。7 小时带你从入门到精通 Spring Security 实战 - 完整版教程
+[B站讲的最好的SpringSecurity+jwt+oauth2.0教程。7小时带你从入门到精通Spring Security实战-完整版教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+## Java 进阶 Spring Security OAuth2.0 协议安全框架源码剖析教程
+[Java进阶Spring Security OAuth2.0协议安全框架源码剖析教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nq4y1W7Ph?vd_source=c1191139db7aee736d31e75ebc6029d0&spm_id_from=333.788.videopod.episodes)
+
+
+## 这可能是 B 站讲的最透彻的 OAuth2.0 实战讲解及 SpringSecurity 的整合应用（附完整版 PDF）
+[这可能是B站讲的最透彻的OAuth2.0实战讲解及SpringSecurity的整合应用（附完整版PDF）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yq4y197sP/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+
+# 架構相關
+2025 吃透 Java 架构师全套视频教程，15 天就能学完，让你面试少走 99% 的弯路【通俗易懂，附 80 万字面试宝典 | 保姆级别教程】
+[3.第二章 架构设计分层实现-2\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1fX63YqEgG?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=3)
+
+
+
+从零开始学架构
+[从零开始学架构\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kp4y1x7Ad/?spm_id_from=333.788.recommend_more_video.8&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+【2024 版】P8 大佬花一周时间讲完的架构师知识体系，目前 B 站最好的（没有之一）JAVA 架构师教程，全程干货无废话，这还学不会真的就没办法了！
+[【2024版】P8大佬花一周时间讲完的架构师知识体系，目前B站最好的（没有之一）JAVA架构师教程，全程干货无废话，这还学不会真的就没办法了！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1icmNYeE2W/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+【全 140 集】强推！这绝对是 2024 最细最强的 Java 架构师全套视频教程，涵盖所有主流核心知识点 | 全套视频时长 60 + 小时！！
+[【全140集】强推！这绝对是2024最细最强的Java架构师全套视频教程，涵盖所有主流核心知识点 | 全套视频时长60+小时！！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1no23Y4EFF/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+【整整 300 集】强推！目前 B 站最完整的 Java 架构师高级课程全套视频，涵盖 java 编程所有主流技术，逼自己一个月学完，从普通程序员到架构师只要这一套就够了！
+[【整整300集】强推！目前B站最完整的Java架构师高级课程全套视频，涵盖java编程所有主流技术，逼自己一个月学完，从普通程序员到架构师只要这一套就够了！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1y6DrYsE5i/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+架构师高级课程（完结）
+[架构师高级课程（完结）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wg4y1z7Vj/?spm_id_from=333.788.recommend_more_video.3&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+【黑马博学谷 2024】又狂又野狂野架构师
+[【黑马博学谷2024】又狂又野狂野架构师\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV12M4m127nR/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
