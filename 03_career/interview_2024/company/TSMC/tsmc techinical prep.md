@@ -496,48 +496,49 @@
 - [ ] 041_解析 Token
 - [ ] 042_token 过期校验
 - [ ] 043_自定义申明
-- [ ] 044_SpringSecurityOauth2 整合 JWT
-- [ ] 045_扩展 JWT 中存储的内容
-- [ ] 046_解析 JWT 中内容
-- [ ] 047_RefreshToken
-- [ ] 048_SpringSecurityOauth2 整合 SSO -------------------------------------
+- [x] 044_SpringSecurityOauth2 整合 JWT
+- [x] 045_扩展 JWT 中存储的内容
+- [x] 046_解析 JWT 中内容
+- [x] 047_RefreshToken
+- [x] 048_SpringSecurityOauth2 整合 SSO -------------------------------------
 
 
 [黑马程序员Java进阶教程快速入门Spring Security OAuth2.0认证授权\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1VE411h7aL/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
-01. [ ] 认证授权课程介绍
-02. [ ] 基础概念 - 认证授权会话
-03. [ ] 基础概念 - 授权的数据模型
-04. [ ] 基础概念 - RBAC
-05. [ ] 基于 Session 的认证方式 - 认证流程
-06. [ ] 基于 Session 的认证方式 - 创建工程
-07. [ ] 基于 Session 的认证方式 - 实现认证功能
-08. [ ] 基于 Session 的认证方式 - 实现会话功能
-09. [ ] 基于 Session 的认证方式 - 实现授权功能
-- [ ] 10.Spring Security - 创建工程
-- [ ] 11.Spring Security - 认证功能
-- [ ] 12.Spring Security - 授权功能
-- [ ] 13.Spring -SpringBoot
-- [ ] 14.Spring Security - 结构总览
-- [ ] 15.Spring Security - 认证流程
-- [ ] 16.UserDetailService
-17. [ ] 工作原理 - PasswordEncoder
-18. [ ] 工作原理 - 授权流程
-19. [ ] 自定义登录页面
-- [ ] 20.- 连接数据库认证
-21. [ ] 应用详解 - 会话管理
-22. [ ] 应用详解 - 自定义退出
-23. [ ] 连接数据库查权限
-24. [ ] 授权 - web 授权
-25. [ ] 授权 - 方法授权
-01. [ ] 分布式系统认证方案 - 什么是分布式系统 -------------------------------------
-02. [ ] 分布式系统认证方案 - 分布式认证需求 -------------------------------------
-03. [ ] 分布式系统认证方案 - 分布式认证方案 -------------------------------------
-- [ ] 04.OAuth2.0 - 介绍
-- [ ] 05.OAuth2.0-Spring Cloud Security OAuth2 - 环境介绍
-- [ ] 06.OAuth2.0-Spring Cloud Security OAuth2 - 环境搭建
-- [ ] 07.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置
-- [ ] 08.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 三项内容
-- [ ] 09.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 客户端详情配置
+- [ ] 1 认证授权课程介绍
+- [ ] 2 基础概念 - 认证授权会话
+- [ ] 3 基础概念 - 授权的数据模型
+- [ ] 4 基础概念 - RBAC
+- [ ] 5 基于 Session 的认证方式 - 认证流程
+- [ ] 6 基于 Session 的认证方式 - 创建工程
+- [ ] 7 基于 Session 的认证方式 - 实现认证功能
+- [ ] 8 基于 Session 的认证方式 - 实现会话功能
+- [ ] 9 基于 Session 的认证方式 - 实现授权功能
+- [ ] 10 Spring Security - 创建工程
+- [ ] 11 Spring Security - 认证功能
+- [ ] 12 Spring Security - 授权功能
+- [ ] 13 Spring -SpringBoot
+- [ ] 14 Spring Security - 结构总览
+- [ ] 15 Spring Security - 认证流程
+- [ ] 16 UserDetailService
+- [ ] 17 工作原理 - PasswordEncoder
+- [ ] 18 工作原理 - 授权流程
+- [ ] 19 自定义登录页面
+- [ ] 20- 连接数据库认证
+- [ ] 21 应用详解 - 会话管理
+- [ ] 22 应用详解 - 自定义退出
+- [ ] 23 连接数据库查权限
+- [ ] 24 授权 - web 授权
+- [ ] 25 授权 - 方法授权
+
+- [ ] 1.分布式系统认证方案 - 什么是分布式系统
+- [ ] 2.分布式系统认证方案 - 分布式认证需求
+- [ ] 3.分布式系统认证方案 - 分布式认证方案
+- [ ] 4.OAuth2.0 - 介绍
+- [ ] 5.OAuth2.0-Spring Cloud Security OAuth2 - 环境介绍
+- [ ] 6.OAuth2.0-Spring Cloud Security OAuth2 - 环境搭建
+- [ ] 7.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置
+- [ ] 8.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 三项内容
+- [ ] 9.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 客户端详情配置
 - [ ] 10.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 令牌服务和令牌端点配置
 - [ ] 11.OAuth2.0-Spring Cloud Security OAuth2 - 授权码模式
 - [ ] 12.OAuth2.0-Spring Cloud Security OAuth2 - 密码模式及其它模式
@@ -545,15 +546,14 @@
 - [ ] 14.OAuth2.0-JWT 令牌 - 介绍
 - [ ] 15.OAuth2.0-JWT 令牌 - 生成令牌和校验令牌
 - [ ] 16.OAuth2.0 - 完善环境配置
-- [ ] 17.Spring Security 实现分布式认证授权 - 搭建注册中心 --------------------------
-- [ ] 18.Spring Security 实现分布式认证授权 - 搭建网关工程--------------------------
-- [ ] 19.Spring Security 实现分布式认证授权 - 网关资源服务配置--------------------------
-- [ ] 20.Spring Security 实现分布式认证授权 - 转发明文 token 给微服务----------------------
-- [ ] 21.Spring Security 实现分布式认证授权 - 微服务解析令牌并鉴权--------------------------
-- [ ] 22.Spring Security 实现分布式认证授权 - 集成测试--------------------------
-- [ ] 23.Spring Security 实现分布式认证授权 - 扩展用户信息--------------------------
-24. [ ] 课程总结
-
+- [ ] 17.Spring Security 实现分布式认证授权 - 搭建注册中心
+- [ ] 18.Spring Security 实现分布式认证授权 - 搭建网关工程
+- [ ] 19.Spring Security 实现分布式认证授权 - 网关资源服务配置
+- [ ] 20.Spring Security 实现分布式认证授权 - 转发明文 token 给微服务
+- [ ] 21.Spring Security 实现分布式认证授权 - 微服务解析令牌并鉴权
+- [ ] 22.Spring Security 实现分布式认证授权 - 集成测试
+- [ ] 23.Spring Security 实现分布式认证授权 - 扩展用户信息
+- [ ] 24.课程总结
 
 
 > 下面 spring security 先 pass
