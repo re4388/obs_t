@@ -9,6 +9,9 @@
 
 #  文字類
 
+## Java
+[[Java 基础常见面试题总结 (上)]]
+
 ## spring
 - [ ] [GitHub - wuyouzhuguli/SpringAll](https://github.com/wuyouzhuguli/SpringAll?tab=readme-ov-file)
 - [ ] [GitHub - yudaocode/SpringBoot-Labs](https://github.com/yudaocode/SpringBoot-Labs?tab=readme-ov-file)  題取碼:coke
