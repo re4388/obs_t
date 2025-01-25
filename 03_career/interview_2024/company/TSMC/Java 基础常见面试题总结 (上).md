@@ -169,8 +169,8 @@ JDK 9 引入了一种新的编译模式 **AOT(Ahead of Time Compilation)** 。
 > 3. OpenJDK 更新频率更快。Oracle JDK 一般是每 6 个月发布一个新版本，而 OpenJDK 一般是每 3 个月发布一个新版本。（现在你知道为啥 Oracle JDK 更稳定了吧，先在 OpenJDK 试试水，把大部分问题都解决掉了才在 Oracle JDK 上发布）
 > 
 > 基于以上这些原因，OpenJDK 还是有存在的必要的！
+![[Pasted image 20250125204946.png]]
 
-![[100_attachements/98e94ec14cdd5a3e658f1a48d7416bdb_MD5.jpg]]
 
 **Oracle JDK 和 OpenJDK 如何选择？**
 
@@ -472,17 +472,22 @@ Java 中有 8 种基本数据类型，分别为：
 - **占用空间**：相比于包装类型（对象类型）， 基本数据类型占用的空间往往非常小。
 - **默认值**：成员变量包装类型不赋值就是 `null` ，而基本类型有默认值且不是 `null`。
 - **比较方式**：对于基本数据类型来说，== 比较的是值。对于包装数据类型来说，== 比较的是对象的内存地址。所有整型包装类对象之间值的比较，全部使用 `equals()` 方法。
+
 **为什么说是几乎所有对象实例都存在于堆中呢？** 这是因为 HotSpot 虚拟机引入了 JIT 优化之后，会对对象进行逃逸分析，如果发现某一个对象并没有逃逸到方法外部，那么就可能通过标量替换来实现栈上分配，而避免堆上分配内存
 
 ⚠️ 注意：**基本数据类型存放在栈中是一个常见的误区！** 基本数据类型的存储位置取决于它们的作用域和声明方式。如果它们是局部变量，那么它们会存放在栈中；如果它们是成员变量，那么它们会存放在堆 / 方法区 / 元空间中。
 
-```
+```java
 public class Test {
-    // 成员变量，存放在堆中
+
+	// 成员变量，存放在堆中
     int a = 10;
+
+
     // 被 static 修饰的成员变量，JDK 1.7 及之前位于方法区，1.8 后存放于元空间，均不存放于堆中。
     // 变量属于类，不属于对象。
     static int b = 20;
+
 
     public void method() {
         // 局部变量，存放在栈中
@@ -492,6 +497,17 @@ public class Test {
 }
 ```
 
+
+PS:
+JDK 1.7 的实现：
+方法区使用 “永久代” 来存储类信息、常量、静态变量等。
+运行时常量池和字符串常量池在方法区中。
+
+JDK 1.8 的实现：
+永久代被完全移除，取而代之的是 “元空间”。
+元空间使用本地内存，不再受限于 JVM 的固定大小。
+字符串常量池仍然存放在堆中，而运行时常量池则保留在元空间中。
+
 ### [包装类型的缓存机制了解么？](https://javaguide.cn/java/basis/java-basic-questions-01.html#%E5%8C%85%E8%A3%85%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6%E4%BA%86%E8%A7%A3%E4%B9%88)
 
 Java 基本数据类型的包装类型的大部分都用到了缓存机制来提升性能。
@@ -500,7 +516,7 @@ Java 基本数据类型的包装类型的大部分都用到了缓存机制来提
 
 **Integer 缓存源码：**
 
-```
+```java
 public static Integer valueOf(int i) {
     if (i >= IntegerCache.low && i <= IntegerCache.high)
         return IntegerCache.cache[i + (-IntegerCache.low)];
@@ -518,7 +534,7 @@ private static class IntegerCache {
 
 **`Character` 缓存源码:**
 
-```
+```java
 public static Character valueOf(char c) {
     if (c <= 127) { // must cache
       return CharacterCache.cache[(int)c];
@@ -571,7 +587,8 @@ Integer i2 = new Integer(40);
 System.out.println(i1==i2);
 ```
 
-`Integer i1=40` 这一行代码会发生装箱，也就是说这行代码等价于 `Integer i1=Integer.valueOf(40)` 。因此，`i1` 直接使用的是缓存中的对象。而 `Integer i2 = new Integer(40)` 会直接创建新的对象。
+`Integer i1=40` 这一行代码会发生装箱，也就是说这行代码等价于 `Integer i1=Integer.valueOf(40)` 。因此，`i1` 直接使用的是缓存中的对象。
+而 `Integer i2 = new Integer(40)` 会直接创建新的对象。
 
 因此，答案是 `false` 。你答对了吗？
 
@@ -588,9 +605,9 @@ System.out.println(i1==i2);
 
 举例：
 
-```
+```java
 Integer i = 10;  //装箱
-int n = i;   //拆箱
+int n = i;       //拆箱
 ```
 
 上面这两行代码对应的字节码为：
@@ -634,9 +651,10 @@ int n = i;   //拆箱
 
 注意：**如果频繁拆装箱的话，也会严重影响系统的性能。我们应该尽量避免不必要的拆装箱操作。**
 
-```
+```java
 private static long sum() {
     // 应该使用 long 而不是 Long
+    // 不然每一次 += 就是會 裝箱 to Long
     Long sum = 0L;
     for (long i = 0; i <= Integer.MAX_VALUE; i++)
         sum += i;

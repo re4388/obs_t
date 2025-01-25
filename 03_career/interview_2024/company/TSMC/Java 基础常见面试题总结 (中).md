@@ -213,7 +213,7 @@ public class Student {
 
 Java 8 引入的 `default` 方法用于提供接口方法的默认实现，可以在实现类中被覆盖。这样就可以在不修改实现类的情况下向现有接口添加新功能，从而增强接口的扩展性和向后兼容性。
 
-```
+```java
 public interface MyInterface {
     default void defaultMethod() {
         System.out.println("This is a default method.");
@@ -223,7 +223,7 @@ public interface MyInterface {
 
 Java 8 引入的 `static` 方法无法在实现类中被覆盖，只能通过接口名直接调用（ `MyInterface.staticMethod()`），类似于类中的静态方法。`static` 方法通常用于定义一些通用的、与接口相关的工具方法，一般很少用。
 
-```
+```java
 public interface MyInterface {
     static void staticMethod() {
         System.out.println("This is a static method in the interface.");
@@ -233,7 +233,7 @@ public interface MyInterface {
 
 Java 9 允许在接口中使用 `private` 方法。`private` 方法可以用于在接口内部共享代码，不对外暴露。
 
-```
+```java
 public interface MyInterface {
     // default 方法
     default void defaultMethod() {
@@ -272,7 +272,7 @@ public interface MyInterface {
 
 `clone()` 方法的实现很简单，直接调用的是父类 `Object` 的 `clone()` 方法。
 
-```
+```java
 public class Address implements Cloneable{
     private String name;
     // 省略构造函数、Getter&Setter方法
@@ -303,7 +303,7 @@ public class Person implements Cloneable {
 
 测试：
 
-```
+```java
 Person person1 = new Person(new Address("武汉"));
 Person person1Copy = person1.clone();
 // true
@@ -316,7 +316,7 @@ System.out.println(person1.getAddress() == person1Copy.getAddress());
 
 这里我们简单对 `Person` 类的 `clone()` 方法进行修改，连带着要把 `Person` 对象内部的 `Address` 对象一起复制。
 
-```
+```java
 @Override
 public Person clone() {
     try {
@@ -331,7 +331,7 @@ public Person clone() {
 
 测试：
 
-```
+```java
 Person person1 = new Person(new Address("武汉"));
 Person person1Copy = person1.clone();
 // false
@@ -352,7 +352,7 @@ System.out.println(person1.getAddress() == person1Copy.getAddress());
 
 Object 类是一个特殊的类，是所有类的父类，主要提供了以下 11 个方法：
 
-```
+```java
 /**
  * native 方法，用于返回当前运行时对象的 Class 对象，使用了 final 关键字修饰，故不允许子类重写。
  */
@@ -412,10 +412,12 @@ protected void finalize() throws Throwable { }
 
 `Object` 类 `equals()` 方法：
 
-```
+```java
+
 public boolean equals(Object obj) {
      return (this == obj);
 }
+
 ```
 
 `equals()` 方法存在两种使用情况：
@@ -425,32 +427,39 @@ public boolean equals(Object obj) {
 
 举个例子（这里只是为了举例。实际上，你按照下面这种写法的话，像 IDEA 这种比较智能的 IDE 都会提示你将 == 换成 `equals()` ）：
 
-```
+```java
 String a = new String("ab"); // a 为一个引用
 String b = new String("ab"); // b为另一个引用,对象的内容一样
 String aa = "ab"; // 放在常量池中
 String bb = "ab"; // 从常量池中查找
 System.out.println(aa == bb);// true
-System.out.println(a == b);// false
+System.out.println(a == b);// false, 因為指向不同的引用 at heap
 System.out.println(a.equals(b));// true
 System.out.println(42 == 42.0);// true
 ```
 
-`String` 中的 `equals` 方法是被重写过的，因为 `Object` 的 `equals` 方法是比较的对象的内存地址，而 `String` 的 `equals` 方法比较的是对象的值。
+`String` 中的 `equals` 方法是被重写过的，因为 `Object` 的 `equals` 方法是比较对象的内存地址，而 `String` 的 `equals` 方法比较的是对象的值。
 
 当创建 `String` 类型的对象时，虚拟机会在常量池中查找有没有已经存在的值和要创建的值相同的对象，如果有就把它赋给当前引用。如果没有就在常量池中重新创建一个 `String` 对象。
 
 `String` 类 `equals()` 方法：
 
-```
+```java
+
+
 public boolean equals(Object anObject) {
+	//如果是自己就不用比了
     if (this == anObject) {
         return true;
     }
+    // 如果同類，先轉型
     if (anObject instanceof String) {
         String anotherString = (String)anObject;
+
+		// get two string len
         int n = value.length;
-        if (n == anotherString.value.length) {
+        if (n == anotherString.value.length) { //conti if len is equal
+	        // compare char by char
             char v1[] = value;
             char v2[] = anotherString.value;
             int i = 0;
