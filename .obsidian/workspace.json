@@ -23,37 +23,7 @@
             }
           },
           {
-            "id": "0587a7beefca17fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "30_程式語言/新手工程師教育 on Spring Boot.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "新手工程師教育 on Spring Boot"
-            }
-          },
-          {
             "id": "322c2b365e7d2b53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "43_軟體工具tools/keyboard_idx.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "keyboard_idx"
-            }
-          },
-          {
-            "id": "4bff36099bf4455f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -66,24 +36,9 @@
               "icon": "lucide-file",
               "title": "tsmc techinical prep"
             }
-          },
-          {
-            "id": "7c9e672d8710af12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "30_程式語言/Java_idx.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Java_idx"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -135,7 +90,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -226,12 +182,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4bff36099bf4455f",
+  "active": "322c2b365e7d2b53",
   "lastOpenFiles": [
-    "12_Backend/k8s/k8s_idx.md",
+    "30_程式語言/Spring.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "30_程式語言/新手工程師教育 on Spring Boot.md",
+    "04_family/kid/kid_vid.md",
+    "43_軟體工具tools/keyboard_idx.md",
     "30_程式語言/Java_idx.md",
+    "30_程式語言/第 16 章_网络编程.md",
+    "30_程式語言/宋红康 2023 版，java 入门自学.md",
+    "30_程式語言/第 01 章_Java 语言概述.md",
+    "30_程式語言/新手工程師教育 on Spring Boot.md",
+    "12_Backend/k8s/k8s_idx.md",
     "04_family/安睿宏觀.md",
     "04_family/溝通_idx.md",
     "04_family/溝通 with wife, family.md",
@@ -242,25 +204,19 @@
     "04_family/2024 wife 生日餐廳安排.md",
     "04_family/2024 mother 1130.md",
     "30_程式語言/尚硅谷-juc-高并发 note.md",
-    "30_程式語言/宋红康 2023 版，java 入门自学.md",
-    "30_程式語言/Spring.md",
     "30_程式語言/Effective Java 3rd.md",
-    "43_軟體工具tools/keyboard_idx.md",
     "03_career/interview_2024/company/TSMC/Spring 面试题.md",
     "30_程式語言/Java cocurrency.md",
     "30_程式語言/Item 8 避免使用 Finalizer 和 Cleaner 机制.md",
     "03_career/interview_2024/company/TSMC/Java 虛拟機面試題.md",
     "03_career/interview_2024/company/TSMC/dede.md",
     "03_career/interview_2024/company/TSMC/dede.md.edtz",
-    "03_career/interview_2024/company/TSMC/spring solve circular dependency.md",
     "100_attachements/Pasted image 20250124080114.png",
     "100_attachements/Pasted image 20250124080005.png",
     "100_attachements/Pasted image 20250124075936.png",
     "03_career/interview_2024/company/TSMC/spring solve circular dependency.md.edtz",
     "100_attachements/Pasted image 20250124075128.png",
-    "30_程式語言/Java Spring AOP.md",
     "30_程式語言/新手工程師教育 on Spring Boot.md.edtz",
-    "04_family/kid/kid_vid.md",
     "30_程式語言/Item 90 考虑以 \"序列化代理\" 代替 \"序列化实例\".md.edtz",
     "30_程式語言/Item 83 明智地使用\"延迟初始化\".md.edtz",
     "100_attachements/Pasted image 20250123105035.png",

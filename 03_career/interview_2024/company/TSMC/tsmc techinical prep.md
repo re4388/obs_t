@@ -38,78 +38,8 @@
 - [ ] [[Java 虛拟機面試題]]
 - [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 
+# Spring
 
-# DONE and ING
-
-
-
-
-
-## Effective Java
-- [x] [[Effective Java 3rd]] 
-
- ## 新手工程師教育 on Spring Boot
- [[新手工程師教育 on Spring Boot]]
- 
-
-## 尚硅谷-juc-高并发
-- [x] [[尚硅谷-juc-高并发 note]]
-
-## Java 入門
-- [x] [[宋红康 2023 版，java 入门自学]]
-
-## 尚硅谷 Java NIO 详细教程
-- [【尚硅谷】Java NIO 详细教程（一套带你掌握 IO API/javanio）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1E64y1h7Z4/?vd_source=c1191139db7aee736d31e75ebc6029d0)
-- 筆記 /Users/re4388/project/personal/lang/java/NIO_Demo01
-- [GitHub - re4388/NIO\_Demo01: 【尚硅谷】Java NIO详细教程（一套带你掌握IO API/javanio）](https://github.com/re4388/NIO_Demo01)
-01 - 尚硅谷 - Java NIO - 课程简介
-02 - 尚硅谷 - Java NIO - 概述
-03 - 尚硅谷 - Java NIO-Channel - 概述
-04 - 尚硅谷 - Java NIO-Channel-FileChannel（介绍和示例）
-05 - 尚硅谷 - Java NIO-Channel-FileChannel 详解（一）
-06 - 尚硅谷 - Java NIO-Channel-FileChannel 详解（二）
-07 - 尚硅谷 - Java NIO-Channel-Socket 通道 - 概述
-08 - 尚硅谷 - Java NIO-Channel-ServerSocketChannel
-09 - 尚硅谷 - Java NIO-Channel-SocketChannel
-10 - 尚硅谷 - Java NIO-Channel-DatagramChannel
-11 - 尚硅谷 - Java NIO-Channel - 分散和聚集
-12 - 尚硅谷 - Java NIO-Buffer - 概述
-13 - 尚硅谷 - Java NIO-Buffer - 基本使用
-14 - 尚硅谷 - Java NIO-Buffer - 三个属性和类型
-15 - 尚硅谷 - Java NIO-Buffer - 分配和读写数据
-16 - 尚硅谷 - Java NIO-Buffer - 几个方法
-17 - 尚硅谷 - Java NIO-Buffer - 缓冲区分片
-18 - 尚硅谷 - Java NIO-Buffer - 只读缓冲区
-19 - 尚硅谷 - Java NIO-Buffer - 直接缓冲区
-20 - 尚硅谷 - Java NIO-Buffer - 内存映射文件 IO
-21 - 尚硅谷 - Java NIO-Selector - 概述
-22 - 尚硅谷 - Java NIO-Selector - 操作方法
-23 - 尚硅谷 - Java NIO-Selector - 示例代码（客户端）
-24 - 尚硅谷 - Java NIO-Selector - 示例代码（服务端）
-25 - 尚硅谷 - Java NIO-Selector - 示例代码（完善）
-26 - 尚硅谷 - Java NIO-NIO 编程步骤总结
-27 - 尚硅谷 - Java NIO-Pipe - 介绍和代码示例
-28 - 尚硅谷 - Java NIO-FileLock - 介绍和使用方法
-29 - 尚硅谷 - Java NIO-FileLock - 示例代码
-30 - 尚硅谷 - Java NIO-Path 路径操作
-31 - 尚硅谷 - Java NIO-Files 文件操作
-32 - 尚硅谷 - Java NIO - 异步 FileChannel-Future 读数据
-33 - 尚硅谷 - Java NIO - 异步 FileChannel-CompletionHandler 读数据
-34 - 尚硅谷 - Java NIO - 异步 FileChannel-Future 写数据
-35 - 尚硅谷 - Java NIO - 异步 FileChannel-CompletionHandler 写数据
-36 - 尚硅谷 - Java NIO-Charset 字符编码
-37 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（1）
-38 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（2）
-39 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（3）
-40 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（4）
-41 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（1）
-42 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（2）
-
-- Java NIO
-	- [ ] [Java NIO 核心知识总结 | JavaGuide](https://javaguide.cn/java/io/nio-basis.html)
-	- [ ] [Java NIO 流 - HackMD](https://hackmd.io/@AlienHackMd/HyM5BOR1a)
-	- [ ] [Java NIO 浅析 - 美团技术团队](https://tech.meituan.com/2016/11/04/nio.html)
-	- [ ] [Java NIO - 基础详解 | Java 全栈知识体系](https://pdai.tech/md/java/io/java-io-nio.html)
 
 
 ## 尚硅谷 SpringBoot3 零基础教程
@@ -297,6 +227,94 @@ Spring Framework 中文文档PDF
 	- [Spring | 友人的编程指南](https://www.codermast.com/spring-series/spring/)
 		- [GitHub - re4388/CoderMast-Notes](https://github.com/re4388/CoderMast-Notes)
 
+01.课程简介
+02.概述-Spring是什么
+03.概述-Spring狭义和广义划分
+04.概述-SpringFramework特点
+05.概述-Spring模块组成和版本要求
+06.入门-入门案例实现步骤
+07.入门-入门案例程序开发
+08.入门-入门案例程序分析
+09.入门-整合Log4j2日志框架（上）
+10.入门-整合Log4j2日志框架（下）
+11.容器：IoC-概述（上）
+12.容器：IoC-概述（中）
+13.容器：IoC-概述（下）
+14.容器：IoC-基于XML管理Bean-环境搭建
+15.容器：IoC-基于XML管理Bean-获取Bean（上）
+16.容器：IoC-基于XML管理Bean-获取Bean（中）
+17.容器：IoC-基于XML管理Bean-获取Bean（下）
+18.容器：IoC-基于XML管理Bean-依赖注入-setter注入（上）
+19.容器：IoC-基于XML管理Bean-依赖注入-setter注入（下）
+20.容器：IoC-基于XML管理Bean-依赖注入-构造器注入
+21.容器：IoC-基于XML管理Bean-依赖注入-特殊值处理
+22.容器：IoC-基于XML管理Bean-依赖注入-特殊类型属性-准备
+23.容器：IoC-基于XML管理Bean-依赖注入-对象类型属性（上）
+24.容器：IoC-基于XML管理Bean-依赖注入-对象类型属性（中）
+25.容器：IoC-基于XML管理Bean-依赖注入-对象类型属性（下）
+26.容器：IoC-基于XML管理Bean-依赖注入-数组类型属性
+27.容器：IoC-基于XML管理Bean-依赖注入-List类型属性
+28.容器：IoC-基于XML管理Bean-依赖注入-Map类型属性
+29.容器：IoC-基于XML管理Bean-依赖注入-引入集合bean
+30.容器：IoC-基于XML管理Bean-依赖注入-p命名空间
+31.容器：IoC-基于XML管理Bean-引入外部属性文件
+32.容器：IoC-基于XML管理Bean-Bean作用域
+33.容器：IoC-基于XML管理Bean-bean生命周期（上）
+34.容器：IoC-基于XML管理Bean-bean生命周期（下）
+35.容器：IoC-基于XML管理Bean-FactoryBean
+36.容器：IoC-基于XML管理Bean-自动装配（准备）
+37.容器：IoC-基于XML管理Bean-自动装配（实现）
+38.容器：IoC-基于注解管理Bean-创建Bean对象
+39.容器：IoC-基于注解管理Bean-@Autowired注入（上）
+40.容器：IoC-基于注解管理Bean-@Autowired注入（中）
+41.容器：IoC-基于注解管理Bean-@Autowired注入（下）
+42.容器：IoC-基于注解管理Bean-@Resource注入
+43.容器：IoC-基于注解管理Bean-全注解开发
+44.原理：手写IoC-回顾Java反射（上）
+45.原理：手写IoC-回顾Java反射（中）
+46.原理：手写IoC-回顾Java反射（下）
+47.原理：手写IoC-实现步骤分析
+48.原理：手写IoC-实现Bean创建（上）
+49.原理：手写IoC-实现Bean创建（中）
+50.原理：手写IoC-实现Bean创建（下）
+51.原理：手写IoC-实现属性注入
+52.面向切面：AOP-场景模拟
+53.面向切面：AOP-代理模式（静态代理）
+54.面向切面：AOP-代理模式（动态代理）
+55.面向切面：AOP-AOP概念和术语
+56.面向切面：AOP-基于注解的AOP-步骤分析
+57.面向切面：AOP-基于注解的AOP-前置通知
+58.面向切面：AOP-基于注解的AOP-各种通知
+59.面向切面：AOP-基于注解的AOP-重用切入点和切面优先级
+60.面向切面：AOP-基于XML的AOP-五种通知类型
+61.单元测试：JUnit-Spring整合JUnit5和JUnit4
+62.事务-JdbcTemplate-概述和准备
+63.事务-JdbcTemplate-实现CRUD操作（上）
+64.事务-JdbcTemplate-实现CRUD操作（下）
+65.事务-基于注解的声明式事务-搭建案例环境
+66.事务-基于注解的声明式事务-案例功能实现
+67.事务-基于注解的声明式事务-案例添加事务
+68.事务-基于注解的声明式事务-事务相关属性（上）
+69.事务-基于注解的声明式事务-事务相关属性（下）
+70.事务-基于注解的声明式事务-全注解配置事务
+71.事务-基于XML的声明式事务-具体实现
+72.资源操作：Resources-Resource接口和实现类（上）
+73.资源操作：Resources-Resource接口和实现类（下）
+74.资源操作：Resources-ResourceLoader接口
+75.资源操作：Resources-ResourceLoaderAware接口
+76.资源操作：Resources-使用Resource作为属性
+77.资源操作：Resources-指定访问策略
+78.国际化：i18n-Java国际化
+79.国际化：i18n-Spring国际化
+80.数据校验：Validation-通过Validator接口实现
+81.数据校验：Validation-beanValidation注解实现
+82.数据校验：Validation-基于方法实现校验
+83.数据校验：Validation-自定义校验
+84.提前编译：AOT-AOT概述
+85.提前编译：AOT-NativeImage构建（安装GraalVM编辑器）
+86.提前编译：AOT-NativeImage构建（安装C++编译环境）
+87.提前编译：AOT-NativeImage构建（实现构建）
+88.课程总结
 
 
 
@@ -504,6 +522,527 @@ Spring Framework 中文文档PDF
 
 
 
+## SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc
+- yt: [(843) 01 尚硅谷 SpringMVC 课程介绍 - YouTube](https://www.youtube.com/watch?v=pS5HrZuvXLc&list=PLmOn9nNkQxJE3V_Eev79ao-g3a6BplSQG)
+	- bilibili: [【尚硅谷】SpringMVC教程丨一套快速上手spring mvc\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ry4y1574R/?spm_id_from=333.788.comment.all.click)
+- 筆記：[LearningNotes/K8S at master · moxi624/LearningNotes · GitHub](https://github.com/moxi624/LearningNotes/tree/master/K8S)
+
+1.1_SpringMVC_课程介绍
+1.2_SpringMVC_导学
+02_SpringMVC_回顾 MVC
+03_SpringMVC_SpringMVC 简介
+04_SpringMVC_SpringMVC 的特点
+05_SpringMVC_HelloWorld：开发环境
+06_SpringMVC_HelloWorld：创建 maven 工程
+07_SpringMVC_HelloWorld：默认方式配置 web.xml
+08_SpringMVC_HelloWorld：扩展方式配置 web.xml
+09_SpringMVC_HelloWorld：创建控制器
+10_SpringMVC_HelloWorld：配置 springMVC 配置文件
+11_SpringMVC_HelloWorld：访问首页
+12_SpringMVC_HelloWorld：访问指定页面
+13_SpringMVC_HelloWorld：总结
+14_SpringMVC_搭建框架
+15_SpringMVC_控制器中有多个方法对应同一个请求的情况
+16_SpringMVC_@RequestMapping 注解标识的位置
+17_SpringMVC_@RequestMapping 注解的 value 属性
+18_SpringMVC_@RequestMapping 注解的 method 属性
+19_SpringMVC_@RequestMapping 注解结合请求方式的派生注解
+20_SpringMVC_测试 form 表单是否能够发送 put 和 delete 请求方式的请求
+21_SpringMVC_@RequestMapping 注解的 params 属性
+22_SpringMVC_@RequestMapping 注解的 headers 属性
+23_SpringMVC_SpringMVC 支持 ant 风格的路径
+24_SpringMVC_SpringMVC 支持路径中的占位符
+25_SpringMVC_回顾原生 Servlet 获取请求参数
+26_SpringMVC_通过 ServletAPI 获取请求参数
+27_SpringMVC_通过控制器方法的形参获取请求参数
+28_SpringMVC_@RequestParam 注解处理请求参数和控制器方法的形参的映射关系
+29_SpringMVC_@RequestHeader 注解处理请求头信息和控制器方法的形参的映射关系
+30_SpringMVC_@CookieValue 注解处理 cookie 数据和控制器方法的形参的映射关系
+31_SpringMVC_通过实体类型的形参获取请求参数
+32_SpringMVC_通过 CharacterEncodingFilter 处理获取请求参数的乱码问题
+33_SpringMVC_回顾域对象
+34_SpringMVC_搭建 springMVC 框架
+35_SpringMVC_通过 servletAPI 向 request 域对象共享数据
+36_SpringMVC_通过 ModelAndView 向 request 域对象共享数据
+37_SpringMVC_通过 Model 向 request 域对象共享数据
+38_SpringMVC_通过 map 向 request 域对象共享数据
+39_SpringMVC_通过 ModelMap 向 request 域对象共享数据
+40_SpringMVC_Model、ModelMap 和 Map 之间的关系
+41_SpringMVC_SpringMVC 观察源码：控制器方法执行之后都会返回统一的 ModelAndView 对象
+42_SpringMVC_通过 servletAPI 向 session 域对象共享数据
+43_SpringMVC_通过 servletAPI 向 application 域对象共享数据
+44_SpringMVC_SpringMVC 视图：ThymeleafView
+45_SpringMVC_SpringMVC 视图：InternalResourceView
+46_SpringMVC_SpringMVC 视图：RedirectView
+47_SpringMVC_SpringMVC 的视图控制器
+48_SpringMVC_SpringMVC 的视图解析器：InternalResourceViewResolver
+49_SpringMVC_RESTFul 简介
+50_SpringMVC_RESTFul 的实现
+51_SpringMVC_使用 RESTFul 模拟操作用户资源
+52_SpringMVC_模拟 get 和 post 请求
+53_SpringMVC_HiddenHttpMethodFilter 处理 PUT 和 DELETE 请求方式
+54_SpringMVC_模拟 PUT 和 DELETE 请求
+55_SpringMVC_CharacterEncodingFilter 和 HiddenHttpMethodFilter 的配置顺序
+56_SpringMVC_RESTFul 案例：准备工作
+57_SpringMVC_RESTFul 案例：访问首页
+58_SpringMVC_RESTFul 案例：实现列表功能
+59_SpringMVC_RESTFul 案例：删除功能之处理超链接路径
+60_SpringMVC_RESTFul 案例：实现删除功能
+61_SpringMVC_RESTFul 案例：实现添加功能
+62_SpringMVC_RESTFul 案例：实现回显功能
+63_SpringMVC_RESTFul 案例：实现修改功能
+64_SpringMVC_处理静态资源的过程
+65_SpringMVC_HttpMessageConverter 简介
+66_SpringMVC_@RequestBody 注解获取请求体信息
+67_SpringMVC_RequestEntity 类型表示完整的请求报文信息
+68_SpringMVC_通过 HttpServletResponse 响应浏览器数据
+69_SpringMVC_通过 @ResponseBody 响应浏览器数据
+70_SpringMVC_SpringMVC 处理 json
+71_SpringMVC_回顾 json
+72_SpringMVC_SpringMVC 处理 ajax
+73_SpringMVC_@RestController 注解
+74_SpringMVC_ResponseEntity 实现下载功能
+75_SpringMVC_配置 SpringMVC 的文件上传解析器
+76_SpringMVC_实现文件上传功能
+77_SpringMVC_解决文件的重名问题
+78_SpringMVC_拦截器简介
+79_SpringMVC_创建拦截器
+80_SpringMVC_配置拦截器
+81_SpringMVC_观察源码：preHandle () 返回 true 时，拦截器各个方法的执行顺序
+82_SpringMVC_观察源码：preHandle () 返回 false 时，拦截器各个方法的执行顺序
+83_SpringMVC_SpringMVC 的异常处理
+84_SpringMVC_基于配置的异常处理
+85_SpringMVC_基于注解的异常处理
+86_SpringMVC_AbstractAnnotationConfigDispatcherServletInitializer 介绍
+87_SpringMVC_创建初始化类 WebInit
+88_SpringMVC_WebConfig：配置视图解析器
+89_SpringMVC_测试功能：访问首页
+90_SpringMVC_WebConfig：配置默认 servlet、拦截器、view-controller
+91_SpringMVC_WebConfig：配置文件上传解析器、异常处理器
+92_SpringMVC_SpringMVC 的常用组件
+93_SpringMVC_DispatcherServlet 初始化过程
+94_SpringMVC_DispatcherServlet 服务过程
+95_SpringMVC_DispatcherServlet 调用组件处理请求的过程
+96_SpringMVC_SpringMVC 的执行流程
+
+
+## 尚硅谷 SpringSecurity+OAuth2
+[尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- note
+	- [Spring-Security-course/笔记/笔记.md at main · re4388/Spring-Security-course · GitHub](https://github.com/re4388/Spring-Security-course/blob/main/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)
+- [x] [07-入门-Spring Security底层原理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
+- [x] 01 - 教程简介
+- [x] 02 - 入门 - Spring Security 基本功能
+- [x] 03 - 入门 - 实现最简单的身份认证
+- [x] 04 - 入门 - 使用动态链接
+- [x] 05 - 入门 - 登录页面加载慢的问题
+- [x] 06 - 入门 - Spring Security 默认做了什么
+- [x] 07 - 入门 - Spring Security 底层原理
+- [x] 08 - 入门 - DefaultSecurityFilterChain
+- [x] 09 - 入门 - SecurityProperties
+- [x] 10 - 自定义配置 - 基于内存的用户认证
+- [x] 11 - 自定义配置 - 用户认证源码分析
+- [x] 12 - 自定义配置 - 基于数据库的数据源
+- [x] 13 - 自定义配置 - 基于数据库的用户认证流程分析
+- [x] 14 - 自定义配置 - 基于数据库的用户认证流程实现
+- [x] 15 - 自定义配置 - SpringSecurity 的默认配置
+- [x] 16 - 自定义配置 - 添加用户功能的实现
+- [x] 17 - 自定义配置 - 添加用户功能的测试
+- [x] 18 - 自定义配置 - 密码加密算法
+- [x] 19 - 自定义配置 - 密码加密测试
+- [x] 20 - 自定义配置 - DelegatingPasswordEncoder
+- [x] 21 - 自定义配置 - 自定义登录页
+- [x] 22 - 自定义配置 - 登录页的细节
+- [x] 23 - 前后端分离 - 用户认证流程
+- [x] 24 - 前后端分离 - 用户认证成功的代码实现
+- [x] 25 - 前后端分离 - 用户认证失败的代码实现
+- [x] 26 - 前后端分离 - 用户注销处理
+- [x] 27 - 前后端分离 - 请求未认证处理
+- [x] 28 - 前后端分离 - 跨域处理
+- [x] 29 - 前后端分离 - 用户认证信息
+- [x] 30 - 前后端分离 - 会话并发处理
+- [x] 31 - 授权 - 用户角色权限资源
+- [x] 32 - 授权 - 基于 request 的授权 - 权限分配
+- [x] 33 - 授权 - 基于 request 的授权 - 请求未授权处理
+- [x] 34 - 授权 - 基于 request 的授权 - 角色分配
+- [x] 35 - 授权 - RBAC
+- [x] 36 - 授权 - 基于方法的授权
+- [x] 37-OAuth2 - 什么是 OAuth2
+- [x] 38-OAuth2 - 角色总结
+- [x] 39-OAuth2 - 使用场景
+- [x] 40-OAuth2 - 四种授权模式
+- [x] 41-OAuth2 - 四种授权模式 - 授权码模式
+- [x] 42-OAuth2 - 四种授权模式 - 隐藏模式
+- [x] 43-OAuth2 - 四种授权模式 - 密码模式
+- [x] 44-OAuth2 - 四种授权模式 - 凭证式模式
+- [x] 45-OAuth2 - 授权类型的选择
+- [x] 46-OAuth2-Spring 中的 OAuth2
+- [x] 47-GitHub 授权登录案例 - 注册客户应用
+- [x] 48-GitHub 授权登录案例 - 创建客户应用和登录测试
+- [x] 49-GitHub 授权登录案例 - 退出和重新登录的测试
+- [x] 50-GitHub 授权登录案例 - 授权登录流程分析
+- [x] 51-GitHub 授权登录案例 - CommonOAuth2Provider
+
+
+
+## 尚硅谷 雷神 SpringSecurity
+- [(836) 01 尚硅谷 SpringSecurity 课程介绍 - YouTube](https://www.youtube.com/watch?v=_2v7C9wBH1M&list=PLmOn9nNkQxJEnBjOMEXPLRjoTRNvhHIl2&index=1)
+	- code
+		- [shuhongfan/SpringSecurity_Demo03](https://github.com/shuhongfan/SpringSecurity_Demo03)
+	- check source code and note /Users/re4388/project/personal/lang/java/SpringSecurity_Demo03
+	- check pdf -> see book
+
+- 01 - 尚硅谷 - SpringSecurity - 课程介绍
+- 02 - 尚硅谷 - SpringSecurity - 框架概述
+- 03 - 尚硅谷 - SpringSecurity - 入门案例
+- 04 - 尚硅谷 - SpringSecurity - 基本原理（过滤器链）
+- 05 - 尚硅谷 - SpringSecurity - 基本原理（过滤器加载过程）
+- 06 - 尚硅谷 - SpringSecurity - 基本原理（两个重要的接口）
+- 07 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码上）
+- 08 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码下）
+- 09 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证上）
+- 10 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证下）
+- 11 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（自定义用户登录页面）
+- 12 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于权限访问控制）
+- 13 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于角色访问控制）
+- 14 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（自定义 403 页面）
+- 15 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（注解使用）
+- 16 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户注销
+- 17 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（原理分析）
+- 18 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（功能实现）
+- 19 - 尚硅谷 - SpringSecurity-web 权限方案 - CSRF 功能
+- 20 - 尚硅谷 - SpringSecurity - 微服务权限方案（认证授权过程分析）
+- 21 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 需求说明
+- 22 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 数据模型介绍
+- 23 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 使用技术说明
+- 24 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 搭建项目工程
+- 25 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 引入项目依赖
+- 26 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 启动 Redis 和 Nacos
+- 27 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 common 工具类
+- 28 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 工具类
+- 29 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 认证过滤器
+- 30 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 授权过滤器
+- 31 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写核心配置类
+- 32 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 UserDetailsService
+- 33 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合权限管理模块
+- 34 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合网关和前端
+- 35 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 案例测试
+- 36 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解上
+- 37 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解下
+- 38 - 尚硅谷 - SpringSecurity - 源码剖析 - 权限访问流程详解
+- 39 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证信息共享详解
+- 40 - 尚硅谷 - SpringSecurity - 结束语
+
+
+
+
+## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程
+[B站讲的最好的SpringSecurity+jwt+oauth2.0教程。7小时带你从入门到精通Spring Security实战-完整版教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] [031\_Oauth2协议简介\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=31)
+- [ ] 001_SpringSecurity 学习目标
+- [ ] 002_SpringSecurity 简介
+- [ ] 003_SpringSecurity 快速 Demo
+- [ ] 004_UserDetailsService 详解  -------------------------------------
+- [ ] 005_PasswordEncoder 详解
+- [ ] 006_自定义登录逻辑
+- [ ] 007_自定义登录页面
+- [ ] 008_失败跳转
+- [ ] 009_设置请求账户和密码的参数名
+- [ ] 010_自定义登录成功处理器
+- [ ] 011_自定义登录失败处理器
+- [ ] 012_anyRequest 详解
+- [ ] 013_antMatchers 详解
+- [ ] 014_regexMathcers 详解
+- [ ] 015_mvcMatchers 详解
+- [ ] 016_内置访问控制方法介绍
+- [ ] 017_权限判断
+- [ ] 018_角色判断
+- [x] 019_IP 地址判断    -------------------------------------
+- [ ] 020_自定义 403 处理方案
+- [x] 021_access 方法使用
+- [x] 022_access 结合自定义方法实现权限控制
+- [ ] 023_secured 注解
+- [ ] 024_preAuthorize 注解 + postAuthorize 注解
+- [ ] 025_RememberMe 功能
+- [ ] 026_在 thymeleaf 中获取属性值
+- [ ] 027_在 thymeleaf 中进行权限判断
+- [ ] 028_退出登录
+- [ ] 029_退出登录源码解读
+- [ ] 030_SpringSecurity 中的 csrf
+- [ ] 031_Oauth2 协议简介
+- [ ] 032_授权模式
+- [ ] 033_SpringSecurityOauth2 架构
+- [ ] 034_SpringSecurityOauth2 授权码模式
+- [ ] 035_授权码模式演示
+- [ ] 036_密码模式演示
+- [ ] 037_Redis 存储 Token
+- [ ] 038_常见认证机制
+- [ ] 039_什么是 JWT
+- [ ] 040_JJWT 快速 Demo
+- [ ] 041_解析 Token
+- [ ] 042_token 过期校验
+- [ ] 043_自定义申明
+- [x] 044_SpringSecurityOauth2 整合 JWT
+- [x] 045_扩展 JWT 中存储的内容
+- [x] 046_解析 JWT 中内容
+- [x] 047_RefreshToken
+- [x] 048_SpringSecurityOauth2 整合 SSO -------------------------------------
+
+
+## 黑马程序员Java Spring Security OAuth2.0认证授权
+[黑马程序员Java进阶教程快速入门Spring Security OAuth2.0认证授权\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1VE411h7aL/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [ ] 1 认证授权课程介绍
+- [ ] 2 基础概念 - 认证授权会话
+- [ ] 3 基础概念 - 授权的数据模型
+- [ ] 4 基础概念 - RBAC
+- [ ] 5 基于 Session 的认证方式 - 认证流程
+- [ ] 6 基于 Session 的认证方式 - 创建工程
+- [ ] 7 基于 Session 的认证方式 - 实现认证功能
+- [ ] 8 基于 Session 的认证方式 - 实现会话功能
+- [ ] 9 基于 Session 的认证方式 - 实现授权功能
+- [ ] 10 Spring Security - 创建工程
+- [ ] 11 Spring Security - 认证功能
+- [ ] 12 Spring Security - 授权功能
+- [ ] 13 Spring -SpringBoot
+- [x] 14 Spring Security - 结构总览
+- [x] 15 Spring Security - 认证流程
+- [ ] 16 UserDetailService
+- [ ] 17 工作原理 - PasswordEncoder
+- [ ] 18 工作原理 - 授权流程
+- [ ] 19 自定义登录页面
+- [ ] 20- 连接数据库认证
+- [ ] 21 应用详解 - 会话管理
+- [ ] 22 应用详解 - 自定义退出
+- [ ] 23 连接数据库查权限
+- [ ] 24 授权 - web 授权
+- [ ] 25 授权 - 方法授权
+
+- [ ] 1.分布式系统认证方案 - 什么是分布式系统
+- [ ] 2.分布式系统认证方案 - 分布式认证需求
+- [ ] 3.分布式系统认证方案 - 分布式认证方案
+- [ ] 4.OAuth2.0 - 介绍
+- [ ] 5.OAuth2.0-Spring Cloud Security OAuth2 - 环境介绍
+- [ ] 6.OAuth2.0-Spring Cloud Security OAuth2 - 环境搭建
+- [ ] 7.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置
+- [ ] 8.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 三项内容
+- [ ] 9.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 客户端详情配置
+- [ ] 10.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 令牌服务和令牌端点配置
+- [ ] 11.OAuth2.0-Spring Cloud Security OAuth2 - 授权码模式
+- [ ] 12.OAuth2.0-Spring Cloud Security OAuth2 - 密码模式及其它模式
+- [ ] 13.OAuth2.0-Spring Cloud Security OAuth2 - 资源服务测试
+- [ ] 14.OAuth2.0-JWT 令牌 - 介绍
+- [ ] 15.OAuth2.0-JWT 令牌 - 生成令牌和校验令牌
+- [ ] 16.OAuth2.0 - 完善环境配置
+- [ ] 17.Spring Security 实现分布式认证授权 - 搭建注册中心
+- [ ] 18.Spring Security 实现分布式认证授权 - 搭建网关工程
+- [ ] 19.Spring Security 实现分布式认证授权 - 网关资源服务配置
+- [ ] 20.Spring Security 实现分布式认证授权 - 转发明文 token 给微服务
+- [ ] 21.Spring Security 实现分布式认证授权 - 微服务解析令牌并鉴权
+- [ ] 22.Spring Security 实现分布式认证授权 - 集成测试
+- [ ] 23.Spring Security 实现分布式认证授权 - 扩展用户信息
+- [ ] 24.课程总结
+
+
+##  新手工程師教育 on Spring Boot
+
+- [x]  [新手工程師的程式教室 on Spring Boot](https://chikuwa-tech-study.blogspot.com/)
+	- [x] [【Redis】在 Spring Boot 使用 Redis Template 實現快取](https://chikuwa-tech-study.blogspot.com/2023/04/redis-template-in-spring-boot.html)
+	- [x] [【Spring Boot】第 17.1 課－初探 Spring Security 的認證與授權 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-authentication-and-authorization.html)
+	- [x] [【Spring Boot】第 17.2 課－在 Spring Security 整合資料庫進行認證 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2023/11/spring-boot-security-authentication-integrating-with-mongodb-database.html)
+	- [x] [【Spring Boot】第17.3課－在 Spring Security 使用 HTTP Basic 認證](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-security-http-basic-authentication.html)
+	- [x] [【Spring Boot】第17.4課－從 Security Context 取得 API 存取方的認證資訊](https://chikuwa-tech-study.blogspot.com/2023/11/spring-boot-security-context-authentication-info.html)
+	- [x] [【Spring Boot】第 17.5 課－將 Spring Security 與 JWT 結合，實作登入API ](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-implement-login-api-with-jwt.html)
+	- [x] [【Spring Boot】第 17.6 課－實作 Spring Security 的認證 Filter-JWT 為例](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-implement-authentication-filter-with-jwt.html)
+	- [x] [【Spring Boot】第 20 課－切面導向程式設計（AOP）](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-aop-introduction.html)
+	- [x] [【Spring Boot】第 21 課－使用 Mockito 進行單元測試](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-mockito-unit-test.html)
+	- [x] [【Spring Boot】第 22.1 課－使用 RestTemplate 存取外部 API #2023 年更新](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-resttemplate.html)
+	- [x] [【Spring Boot】第22.2課－RestTemplate 串接第三方服務實例](https://chikuwa-tech-study.blogspot.com/2023/10/spring-boot-resttemplate-third-party-api-practice.html)
+	- [x] [【Spring Boot】第 23 課－利用 Swagger 產生 API 文件](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-swagger-openapi-documentation.html)
+	- [x] [【Spring Boot】第 24 課－使用 Controller Advice 處理例外與 query string](https://chikuwa-tech-study.blogspot.com/2023/02/spring-boot-controller-advice-handle-exception-and-query-string.html)
+	- [x] [【Spring Boot】第 25 課－定時任務排程](https://chikuwa-tech-study.blogspot.com/2023/03/spring-boot-scheduled-task-incl-dymanically.html)
+	- [x] [【Spring Boot】第 26 課－使用快取並整合 Redis 來優化效能](https://chikuwa-tech-study.blogspot.com/2023/08/spring-boot-using-cache-and-redis.html)
+	- [x] [【Spring Boot】第 6 課－元件的控制反轉、依賴注入與多型呼叫 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-bean-ioc-di-and-polymorphism.html)
+	- [x] [【Spring Boot】第 7.1 課－MongoDB 介紹與準備資料庫環境 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mongodb-introduction-and-setup.html)
+	- [x] [【Spring Boot】第7.2課－使用 Spring Data 存取 MongoDB，進行基本 CRUD 操作](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-data-mongodb-repository-crud.html)
+	- [x] [【Spring Boot】第7.3課－在 MongoRepository 定義查詢條件與排序方式](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mongo-repository-customize-query.html)
+	- [x] [【Spring Boot】第 8.1 課－準備 MySQL 資料庫與認識 Spring Data JPA](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-setup-mysql-and-introduce-jpa.html)
+	- [x] [【Spring Boot】第8.2課－使用 JPA 設計實體類別與 MySQL 資料表欄位](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-mysql-column-definition-with-jpa.html)
+	- [x] [【Spring Boot】第 8.3 課－使用 JPA Repository 存取 MySQL 資料庫](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-mysql-using-jpa-repository.html)
+	- [x] [【Spring Boot】第 8.4 課－使用 JPA 配置資料表關聯（以一對一關聯為例）](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-jpa-one-to-one-relationship.html)
+	- [x] [【Spring Boot】第8.5課－使用 JPA 建立一對多關聯，並配置雙向關聯](https://chikuwa-tech-study.blogspot.com/2024/06/spring-boot-jpa-one-to-many-relationship-and-bidirectional-association.html)
+	- [x] [【Spring Boot】第8.6課－使用 JPA 建立多對多關聯，並配置中間表](https://chikuwa-tech-study.blogspot.com/2024/06/spring-boot-jpa-many-to-many-relationship-and-intermediary-table.html)
+	- [x] [【Spring Boot】第9課－MockMvc 整合測試（一）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mockmvc-integration-test-1.html)
+	- [x] [【Spring Boot】第 10 課－MockMvc 整合測試（二）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mockmvc-integration-test-2.html)
+	- [x] [【Spring Boot】第 11 課－驗證 request body 的請求資料](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-request-body-validation.html)
+	- [x] [【Spring Boot】第12課－使用 Jackson 控制回傳的 JSON 欄位](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-jackson-annotation-basic.html)
+	- [x] [【Spring Boot】第 14 課－自行控制元件的建立方式](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-construct-bean-programmatically.html)
+	- [x] [【Spring Boot】第15課－元件的作用範圍（scope）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-bean-scope.html)
+	- [x] [【Spring Boot】第 16 課－使用 Filter 擷取請求與回應](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-filter-request-and-response.html)
+
+- [ ] [新手工程師的程式教室 - rabbitMQ 系列](https://chikuwa-tech-study.blogspot.com/search/label/RabbitMQ)
+	- [ ] [【RabbitMQ】認識訊息佇列並導入到 Spring Boot](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-introduction-and-setup-in-spring-boot.html)
+	- [ ] [【RabbitMQ】在 Spring Boot 實作 Simple 與 Worker 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-simple-and-worker-pattern-in-spring-boot.html.html)
+	- [ ] [【RabbitMQ】在 Spring Boot 實作 Fanout 與 Direct 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-fanout-and-direct-pattern-in-spring-boot.html)
+	- [ ] [【RabbitMQ】在 Spring Boot 實作 Routing 與 Topic 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-routing-and-topic-pattern-in-spring-boot.html)
+- [ ] [新手工程師的程式教室 Elastic Search](https://chikuwa-tech-study.blogspot.com/search/label/ElasticSearch)
+	- [ ] [【Elasticsearch】用途介紹與在 Windows Docker Desktop 上安裝](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-introduction-and-install.html)
+	- [ ] [【Elasticsearch】透過 REST API 進行 CRUD 操作](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-crud-rest-api.html)
+	- [ ] [【Elasticsearch】使用 DSL 撰寫查詢條件](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-query-dsl-and-logical-condition.html)
+	- [ ] [【Elasticsearch】使用 function score 在查詢時評分](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-function-score.html)
+	- [ ] [【Elasticsearch】導入到 Spring Boot 並實作 CRUD](https://chikuwa-tech-study.blogspot.com/2022/10/elasticsearch-integrate-spring-boot-and-impl-crud.html)
+	- [ ] [【Elasticsearch】使用 Java API Client 實作查詢條件與搜尋](https://chikuwa-tech-study.blogspot.com/2022/10/elasticsearch-java-api-client-search-and-query-condition.html)
+	- [ ] [【Elasticsearch】使用 Java API Client 實作 function score](https://chikuwa-tech-study.blogspot.com/2022/09/elasticsearch-java-api-client-function-score.html)
+
+
+- [x] [誤打誤撞學了Spring Boot 還當了後端工程師 :: 2021 iThome 鐵人賽](https://ithelp.ithome.com.tw/users/20140728/ironman/4245)
+	- [x] [Day 24 - Spring Security (一) 基本概念與流程 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10279271)
+	- [x] [Day 25 - Spring Security (二) UserDetailsService - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280133)
+	- [x] [Day 26 - Spring Security (三) DaoAuthenticationProvider - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280353)
+	- [x] [Day 27 - Spring Security (四) JWT - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280355)
+	- [x] [Day 28 - Spring Security (五) JwtAuthenticationProvider - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280356)
+
+
+## Hibernate
+- [x] Hibernate [尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
+	- note D:\all_book\java book
+1.尚硅谷_佟刚_Hibernate_概述&安装Hibernatetools插件
+2.尚硅谷_佟刚_Hibernate_HelloWorld代码实现部分
+3.尚硅谷_佟刚_Hibernate_HelloWorld详解
+4.尚硅谷_佟刚_Hibernate_Session概述
+5.尚硅谷_佟刚_Hibernate_Session缓存(Hibernate一级缓存)
+6.尚硅谷_佟刚_Hibernate_Session核心方法(1)
+7.尚硅谷_佟刚_Hibernate_Session核心方法(2)
+8.尚硅谷_佟刚_Hibernate_再讲hibernate.cfg.xml
+9.尚硅谷_佟刚_Hibernate_详解Hibernate映射文件(1)
+10.尚硅谷_佟刚_Hibernate_详解Hibernate映射文件(2)
+11.尚硅谷_佟刚_Hibernate_单向多对一映射
+12.尚硅谷_佟刚_Hibernate_双向一对多映射
+13.尚硅谷_佟刚_Hibernate_set的3个属性
+14.尚硅谷_佟刚_Hibernate_基于外键映射的1-1关联关系
+15.尚硅谷_佟刚_Hibernate_基于主键映射的1-1关联关系
+16.尚硅谷_佟刚_Hibernate_映射多对多关联关系
+17.尚硅谷_佟刚_Hibernate_映射继承关系
+18.尚硅谷_佟刚_Hibernate_检索策略(lazy、fetch、batch-size等)
+19.尚硅谷_佟刚_Hibernate_HQL查询(1)
+20.尚硅谷_佟刚_Hibernate_HQL查询(2)
+21.尚硅谷_佟刚_Hibernate_HQL查询(3)
+22.尚硅谷_佟刚_Hibernate_QBC&本地SQL查询
+23.尚硅谷_佟刚_Hibernate_二级缓存(1)
+24.尚硅谷_佟刚_Hibernate_二级缓存(2)
+25.尚硅谷_佟刚_Hibernate_管理Session&批量操作
+
+
+
+ ## SpringData JPA
+ - [x] find SpringBoot 整合 JPA   [全网 2022 最新 SpringData Jpa 最全](https://www.youtube.com/playlist?list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
+	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
+1、SpringData 开篇介绍
+2、为什么要用 SpringData
+3、Spring Data 特性和模块介绍
+4、 JPA 的介绍及 JDBC 的关系
+5、JPA、Hibernate、MyBatis 关系
+6、Hibernate&JPA 快速搭建
+7、基于 Hibernate 数据库持久化操作
+8、基于 JPA 数据库持久化操作
+9、JPA 对象的 4 种状态和缓存
+10、SpringDataJpa 介绍
+11、SpringDataJpa 搭建 Xml 的配置方式
+12、SpringDataJpa 的 CRUD 测试
+13、SpringDataJpa 的 JavaConfig 的配置方式
+14、使用 Spring Data Repositories
+15、自定义操作 —JPQL 和 SQL
+16、自定义操作 — 规定方法名
+17、自定义操作 —Query By Example
+18、自定义操作 —QueryDSL
+19、自定义操作 —Specifications
+19-2、自定义操作 —QueryDSL 动态条件 & 原生查询
+20、多表关联：一对一 代码搭建
+21、多表关联：单向一对一
+22、多表关联：双向一对一
+23、多表关联：一对多
+24、多表关联：多对一
+25、多对多：查询、删除
+26、多表关联：多对多 - 关联插入
+27、多对多：插入已保存关联数据
+28、乐观锁
+29、审计
+30、底层原理 —Repository 原理
+31、底层原理 —Repository 源码
+32、Spring 整合 Jpa 原理 — 问题
+33、Spring 整合 Jpa 原理 — 如何注册接口 Bean
+34、Spring 整合 Jpa 原理 — 玩转扩展接口
+35、Spring 整合 Jpa 原理 —FactoryBean
+36、Spring 整合 Jpa 原理 — 源码
+37、SpringBoot 整合 Data JPA
+38、SpringBoot DataJPA 自动配置原理
+
+
+
+# Java
+
+## Java 入門
+- [x] [[宋红康 2023 版，java 入门自学]]
+## Effective Java
+- [x] [[Effective Java 3rd]] 
+
+
+
+## 尚硅谷 Java NIO 详细教程
+- [【尚硅谷】Java NIO 详细教程（一套带你掌握 IO API/javanio）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1E64y1h7Z4/?vd_source=c1191139db7aee736d31e75ebc6029d0)
+- 筆記 /Users/re4388/project/personal/lang/java/NIO_Demo01
+- [GitHub - re4388/NIO\_Demo01: 【尚硅谷】Java NIO详细教程（一套带你掌握IO API/javanio）](https://github.com/re4388/NIO_Demo01)
+01 - 尚硅谷 - Java NIO - 课程简介
+02 - 尚硅谷 - Java NIO - 概述
+03 - 尚硅谷 - Java NIO-Channel - 概述
+04 - 尚硅谷 - Java NIO-Channel-FileChannel（介绍和示例）
+05 - 尚硅谷 - Java NIO-Channel-FileChannel 详解（一）
+06 - 尚硅谷 - Java NIO-Channel-FileChannel 详解（二）
+07 - 尚硅谷 - Java NIO-Channel-Socket 通道 - 概述
+08 - 尚硅谷 - Java NIO-Channel-ServerSocketChannel
+09 - 尚硅谷 - Java NIO-Channel-SocketChannel
+10 - 尚硅谷 - Java NIO-Channel-DatagramChannel
+11 - 尚硅谷 - Java NIO-Channel - 分散和聚集
+12 - 尚硅谷 - Java NIO-Buffer - 概述
+13 - 尚硅谷 - Java NIO-Buffer - 基本使用
+14 - 尚硅谷 - Java NIO-Buffer - 三个属性和类型
+15 - 尚硅谷 - Java NIO-Buffer - 分配和读写数据
+16 - 尚硅谷 - Java NIO-Buffer - 几个方法
+17 - 尚硅谷 - Java NIO-Buffer - 缓冲区分片
+18 - 尚硅谷 - Java NIO-Buffer - 只读缓冲区
+19 - 尚硅谷 - Java NIO-Buffer - 直接缓冲区
+20 - 尚硅谷 - Java NIO-Buffer - 内存映射文件 IO
+21 - 尚硅谷 - Java NIO-Selector - 概述
+22 - 尚硅谷 - Java NIO-Selector - 操作方法
+23 - 尚硅谷 - Java NIO-Selector - 示例代码（客户端）
+24 - 尚硅谷 - Java NIO-Selector - 示例代码（服务端）
+25 - 尚硅谷 - Java NIO-Selector - 示例代码（完善）
+26 - 尚硅谷 - Java NIO-NIO 编程步骤总结
+27 - 尚硅谷 - Java NIO-Pipe - 介绍和代码示例
+28 - 尚硅谷 - Java NIO-FileLock - 介绍和使用方法
+29 - 尚硅谷 - Java NIO-FileLock - 示例代码
+30 - 尚硅谷 - Java NIO-Path 路径操作
+31 - 尚硅谷 - Java NIO-Files 文件操作
+32 - 尚硅谷 - Java NIO - 异步 FileChannel-Future 读数据
+33 - 尚硅谷 - Java NIO - 异步 FileChannel-CompletionHandler 读数据
+34 - 尚硅谷 - Java NIO - 异步 FileChannel-Future 写数据
+35 - 尚硅谷 - Java NIO - 异步 FileChannel-CompletionHandler 写数据
+36 - 尚硅谷 - Java NIO-Charset 字符编码
+37 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（1）
+38 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（2）
+39 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（3）
+40 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（4）
+41 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（1）
+42 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（2）
+
+- Java NIO
+	- [ ] [Java NIO 核心知识总结 | JavaGuide](https://javaguide.cn/java/io/nio-basis.html)
+	- [ ] [Java NIO 流 - HackMD](https://hackmd.io/@AlienHackMd/HyM5BOR1a)
+	- [ ] [Java NIO 浅析 - 美团技术团队](https://tech.meituan.com/2016/11/04/nio.html)
+	- [ ] [Java NIO - 基础详解 | Java 全栈知识体系](https://pdai.tech/md/java/io/java-io-nio.html)
+
+
+
+
 
 
 
@@ -569,195 +1108,58 @@ Spring Framework 中文文档PDF
 56Maven 综合案例之创建子工程
 
 
-## kafka
-- [x] Kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
-	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
-01_尚硅谷_Kafka_课程简介
-02_尚硅谷_Kafka_概述_定义
-03_尚硅谷_Kafka_概述_消息队列应用场景
-04_尚硅谷_Kafka_概述_消息队列两种模式
-05_尚硅谷_Kafka_概述_基础架构
-06_尚硅谷_Kafka_入门_安装 Kafka
-07_尚硅谷_Kafka_入门_启动停止脚本
-08_尚硅谷_Kafka_入门_Topic 命令
-09_尚硅谷_Kafka_入门_命令行操作
-10_尚硅谷_Kafka_生产者_原理
-11_尚硅谷_Kafka_生产者_异步发送
-12_尚硅谷_Kafka_生产者_回调异步发送
-13_尚硅谷_Kafka_生产者_同步发送
-14_尚硅谷_Kafka_生产者_分区
-15_尚硅谷_Kafka_生产者_分区策略
-16_尚硅谷_Kafka_生产者_自定义分区
-17_尚硅谷_Kafka_生产者_提高生产者吞吐量
-18_尚硅谷_Kafka_生产者_数据可靠
-19_尚硅谷_Kafka_生产者_数据重复
-20_尚硅谷_Kafka_生产者_数据有序
-21_尚硅谷_Kafka_生产者_数据乱序
-22_尚硅谷_Kafka_Broker_ZK 存储
-23_尚硅谷_Kafka_Broker_工作原理
-24_尚硅谷_Kafka_Broker_上下线
-25_尚硅谷_Kafka_Broker_服役新节点（上）
-26_尚硅谷_Kafka_Broker_服役新节点（下）
-27_尚硅谷_Kafka_Broker_退役旧节点
-28_尚硅谷_Kafka_每日回顾（上）
-29_尚硅谷_Kafka_每日回顾（下）
-30_尚硅谷_Kafka_Broker_副本基本信息
-31_尚硅谷_Kafka_Broker_Leader 选举
-32_尚硅谷_Kafka_Broker_Follower 故障
-33_尚硅谷_Kafka_Broker_Leader 故障
-34_尚硅谷_Kafka_Broker_分区副本分配
-35_尚硅谷_Kafka_Broker_手动调整分区副本分配
-36_尚硅谷_Kafka_Broker_LeaderPartition 负载平衡
-37_尚硅谷_Kafka_Broker_增加副本因子
-38_尚硅谷_Kafka_Broker_文件存储机制
-39_尚硅谷_Kafka_Broker_文件清除策略
-40_尚硅谷_Kafka_Broker_高效读写
-41_尚硅谷_Kafka_消费者_消费方式
-42_尚硅谷_Kafka_消费者_消费者总体工作流程
-43_尚硅谷_Kafka_消费者_消费者组工作原理
-44_尚硅谷_Kafka_消费者_消费者组初始化
-45_尚硅谷_Kafka_消费者_消费者组详细消费流程
-46_尚硅谷_Kafka_消费者_消费一个主题
-47_尚硅谷_Kafka_消费者_消费一个分区
-48_尚硅谷_Kafka_消费者_消费者组案例
-49_尚硅谷_Kafka_消费者_Range 分配
-50_尚硅谷_Kafka_消费者_Roundrobin
-51_尚硅谷_Kafka_消费者_Sticky
-52_尚硅谷_Kafka_消费者_offset 保存位置
-53_尚硅谷_Kafka_消费者_自动 offset
-54_尚硅谷_Kafka_消费者_手动 offser
-55_尚硅谷_Kafka_消费者_指定 offset
-56_尚硅谷_Kafka_消费者_按照时间消费
-57_尚硅谷_Kafka_消费者_消费者事务
-58_尚硅谷_Kafka_消费者_数据积压
-59_尚硅谷_Kafka_每日回顾（上）
-60_尚硅谷_Kafka_每日回顾（下）
-61_尚硅谷_Kafka_监控_MySQL 环境准备
-62_尚硅谷_Kafka_监控_Kafka 环境准备
-63_尚硅谷_Kafka_监控_Kafka-Eagle 安装
-64_尚硅谷_Kafka_监控_Kafka-Eagle 监控页面
-65_尚硅谷_Kafka_Kraft 模式
-66_尚硅谷_Kafka_集成_Flume 环境准备
-67_尚硅谷_Kafka_集成_Flume 生产者
-68_尚硅谷_Kafka_集成_Flume 消费者
-69_尚硅谷_Kafka_集成_Flink 生产者
-70_尚硅谷_Kafka_集成_Flink 消费者
-71_尚硅谷_Kafka_集成_SpringBoot 生产者
-72_尚硅谷_Kafka_集成_SpringBoot 消费者
-73_尚硅谷_Kafka_集成_Spark 生产者
-74_尚硅谷_Kafka_集成_Spark 消费者
-75_尚硅谷_Kafka_调优_内容简介
-76_尚硅谷_Kafka_调优_硬件选择
-77_尚硅谷_Kafka_调优_生产者调优
-78_尚硅谷_Kafka_调优_Broker 调优
-79_尚硅谷_Kafka_调优_消费者调优
-80_尚硅谷_Kafka_调优_总体调优
-81_尚硅谷_Kafka_调优_生产者压力测试
-82_尚硅谷_Kafka_调优_消费者压力测试
-83_尚硅谷_Kafka_源码_环境准备
-84_尚硅谷_Kafka_源码_生产者原理回顾
-85_尚硅谷_Kafka_源码_生产者初始化
-86_尚硅谷_Kafka_源码_生产者发送数据到缓存
-87_尚硅谷_Kafka_源码_生产者 Sender 线程
-88_尚硅谷_Kafka_源码_消费者原理回顾
-89_尚硅谷_Kafka_源码_消费者初始化
-90_尚硅谷_Kafka_源码_消费者订阅主题
-91_尚硅谷_Kafka_源码_消费总体流程
-92_尚硅谷_Kafka_源码_消费者组初始化流程
-93_尚硅谷_Kafka_源码_消费者组拉取和处理数据
-94_尚硅谷_Kafka_源码_消费者 Offset 提交
-95_尚硅谷_Kafka_源码_服务器端源码
-96_尚硅谷_Kafka_课程结束
-
-
-## Hibernate
-- [x] Hibernate [1 尚硅谷 佟刚 Hibernate 概述&安装 Hibernatetools 插件 - YouTube](https://www.youtube.com/watch?v=BHo5rK3ULY0&list=PLmOn9nNkQxJF4Ekh8jLDRK6R6fGvLw5SC)
-	- note D:\all_book\java book
-
-
- ## SpringData JPA
- - [x] find SpringBoot 整合 JPA   [全网 2022 最新 SpringData Jpa 最全](https://www.youtube.com/playlist?list=PLjwE8m3kyOlffPhvmlLnDj3m5shJ9ridv)
-	- 筆記 [Spring Data Jpa学习笔记\_springdatajpa 徐庶 笔记-CSDN博客](https://blog.csdn.net/abst122/article/details/126423932)
 
 
 
-- [x] [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
-	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
+
 
 
 - [x] [阿里巴巴内部 Mysql 性能优化最佳实践](https://www.youtube.com/watch?v=dByRCzV5EIM&list=PLVNv4jlPFzXuzbk_sB_A12K76FIVoFiIO)
 
-## 小林面試
-- [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
-	- 重點：
-		- [x] arrayList source code 1-7, 
-		- [x] hashmap src code 8-19, 
-		- [x] cocurrentMap src code 20-30,  
-		- [x] volite 31-43, 
-		- [x] synchronized 44-50
-		- [x] reentrantlock 51-58
-	- [[note on source code on java hashmap]]
-	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
-	- [[13 道 Java HashMap 精选面试题]]
-	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
-01 大厂高频 Java 面试题合集 
-02 集合 ArrayList 基本介绍 
-03 集合 ArrayList 如何初始化及扩容 
-04 集合 ArrayList 初始化容量及集合实际大小 
-05 集合 ArrayList 为什么增删慢 
-06 集合 ArrayList 和数组哪个适合做队列 
-07 集合 ArrayList 和 LinkedList 的遍历性能 
-08 集合 HashMap 数据结构及存储原理 
-09 集合 HashMap put 过程 初始化判断 
-10 集合 HashMap put 过程 链表节点 
-11 集合 HashMap put 过程 红黑树节点 
-12 集合 HashMap 有参构造的初始化 
-13 集合 HashMap 无参构造的初始化 
-14 集合 HashMap hash 函数是如何设计的 
-15 集合 HashMap JDK1 7 版本的头插法 
-16 集合 HashMap JDK1 8 版本的尾插法 
-17 集合 HashMap 如何实现扩容 
-18 集合 HashMap 扩容时的重新 Hash 问题 
-19 集合 HashMap 为什么要重写 HashCode 和 Equals 
-20 集合 ConcurrentHashMap 如何解决 HashMap 的线程安全问题 
-21 集合 ConcurrentHashMap Hashtable 和 HashMap 的区别 
-22 集合 ConcurrentHashMap fail safe 和 fail fast 的区别 
-23 集合 ConcurrentHashMap JDK1 7 版本的特点 
-24 集合 ConcurrentHashMap JDK1 7 版本如何上锁 
-25 集合 ConcurrentHashMap Segment 如何实现扩容 
-26 集合 ConcurrentHashMap JDK1 8 如何实现上锁 
-27 集合 ConcurrenthashMap JDK1 8 为什么要使用 CAS 
-28 集合 ConcurrenthashMap CAS 上锁机制及存在的缺点 
-29 集合 ConcurrenthashMap CAS 中的 ABA 问题及如何解决 
-30 集合 ConcurrenthashMap 并发效率为什么高 
-01 并发编程 volatile 神奇的现象 
-02 并发编程 volatile 计算机的内存模型 
-03 并发编程 volatile Java 内存模型 JMM 介绍 
-04 并发编程 volatile JMM 在没有使用解决可见性问题时的数据同步过程 
-05 并发编程 volatile JMM 解决可见性问题的数据同步过程 
-06 并发编程 volatile 使用 Volatile 关键字解决可见性问题 
-07 并发编程 volatile 原子性问题的出现 
-08 并发编程 volatile volatile 不能保证原子性 
-09 并发编程 volatile 指令重排情况的出现 
-10 并发编程 volatile 指令重排的可能造成的问题 
-11 并发编程 volatile 如何防止指令重排 
-12 并发编程 volatile MESI 缓存一致性协议 
-13 并发编程 volatile 总结 
-14 并发编程 synchronized 内容介绍 
-15 并发编程 synchronized 多种用法 
-16 并发编程 synchronized 锁的膨胀升级 无锁及偏向锁 
-17 并发编程 synchronized 锁的膨胀升级 轻量级锁及重量级锁 
-18 并发编程 synchronized 如何通过指令来上锁 
-19 并发编程 synchronized Monitor 上锁过程 
-20 并发编程 synchronized 总结 
-21 并发编程 ReentrantLock 介绍 
-22 并发编程 ReentrantLock 实现公平锁和非公平锁 
-23 并发编程 ReentrantLock 加锁逻辑 
-24 并发编程 ReentrantLock 加锁失败的线程第一次进入到等待队列 
-25 并发编程 ReentrantLock 加锁失败的线程非首次进入到等待队列 
-26 并发编程 ReentrantLock 队列中的线程将被阻塞 
-27 并发编程 ReentrantLock 释放锁时唤醒队列中被阻塞的线程 
-28 并发编程 ReentrantLock 总结 
+
+
+
+
+## 黑马程序员Java零基础视频教程
+- [ ] [黑马程序员Java零基础视频教程\_下部(Java入门，含斯坦福大学练习题+力扣算法题和大厂java面试题）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- [ ] treeMap source code 17-18
+	- [ ] 網路編程 [网络编程-01-初始网络编程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=168)
+	- [x] 動態代理  [动态代理-01-动态代理的思想分析\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=198)
+
+
+
+
+## 韩顺平】图解Java设计模式
+- [【韩顺平】图解Java设计模式 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt)
+	- [GitHub - re4388/NOTE\_DesignPatterns: 尚硅谷Java设计模式（图解+框架源码剖析）学习笔记](https://github.com/re4388/NOTE_DesignPatterns)
+	- [尚硅谷—韩顺平—图解 Java设计模式（1～27）\_设计模式笔记 韩顺平-CSDN博客](https://blog.csdn.net/qq_43056248/article/details/123179123)
+	- D:\all_book\java book 中的 尚硅谷_韩顺平_图解Java设计模式
+
+
+	- [x] [037 尚硅谷 图解Java设计模式 单例模式JKD源码分析 - YouTube](https://www.youtube.com/watch?v=bP2t_LNxqWM&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=38)
+	- [x] [047 尚硅谷 图解Java设计模式 工厂模式 JDK源码分析 - YouTube](https://www.youtube.com/watch?v=tDqAUuNC4is&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=48)
+	- [ ] [051 尚硅谷 图解Java设计模式 原型模式3 Spring源码分析 - YouTube](https://www.youtube.com/watch?v=rqON85wsA5U&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=52)
+	- [ ] [069 尚硅谷 图解Java设计模式 桥接模式4 JDBC源码 - YouTube](https://www.youtube.com/watch?v=jSd1KwfSLo4&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=70)
+	- [ ] [075 尚硅谷 图解Java设计模式 装饰者模式5 IO源码 - YouTube](https://www.youtube.com/watch?v=nBtzeXrQlOU&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=76)
+	- [ ] [089 尚硅谷 图解Java设计模式 享元模式4 Integer源码 - YouTube](https://www.youtube.com/watch?v=xOezzkS2FGk&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=90)
+	- [ ] [094 尚硅谷 图解Java设计模式 代理模式4 Cglib代理 - YouTube](https://www.youtube.com/watch?v=_bi-DIGUuzM&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=95)
+	- [ ] [099 尚硅谷 图解Java设计模式 模板模式4 IOC源码 - YouTube](https://www.youtube.com/watch?v=D8OCnfMaD24&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=100)
+	- [ ] [104 尚硅谷 图解Java设计模式 命令模式4 JdbcTml源码 - YouTube](https://www.youtube.com/watch?v=i6kap-mq28E&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=105)
+	- [ ] [115 尚硅谷 图解Java设计模式 迭代器模式5 JDK源码 - YouTube](https://www.youtube.com/watch?v=HX-FWOeuHKc&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=116)
+	- [ ] [121 尚硅谷 图解Java设计模式 观察者模式5 Observable源码 - YouTube](https://www.youtube.com/watch?v=VrvymdWpg68&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=122)
+	- [ ] [134 尚硅谷 图解Java设计模式 解释器模式4 SpelExp源码 - YouTube](https://www.youtube.com/watch?v=OlLwGBjb4PI&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=135)
+	- [ ] [143 尚硅谷 图解Java设计模式 策略模式4 Arrays源码 - YouTube](https://www.youtube.com/watch?v=xOppee_iSvo&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=144)
+	- [ ] [148 尚硅谷 图解Java设计模式 职责链模式4 SpringMVC源码 - YouTube](https://www.youtube.com/watch?v=x3vBJe0tjdw&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=149)
+
+
+
+# Java JUC
+
+
+
+
+## 尚硅谷-juc-高并发
+- [x] [[尚硅谷-juc-高并发 note]]
 
 ## 周阳 JUC
 - [x]  [ 99 【尚硅谷】2022版JUC并发编程与源码分析（对标阿里P6-P7） - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJHezsejdFelbZQ-QLgsIfdn&si=wHyTdZXOwUWSV4lb)
@@ -947,7 +1349,323 @@ Spring Framework 中文文档PDF
 166_终章の总结
 
 
-## 周阳 面試
+## 黑馬 juc
+- [ ] [黑马程序员深入学习Java并发编程，JUC并发编程全套教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+	- note
+		- [JUC并发编程黑马笔记 - xiaolifc - 博客园](https://www.cnblogs.com/xiaolibiji/p/17639772.html)
+		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
+		- [JavaNote/Prog.md at main · Seazean/JavaNote · GitHub](https://github.com/Seazean/JavaNote/blob/main/Prog.md)
+
+01.001 - 为什么学习并发
+01.002 - 课程组织和特色
+01.003 - 预备知识
+02.001 - 本章内容
+02.002 - 进程线程概念
+02.003 - 并行并发概念
+02.004 - 线程应用 - 异步调用
+02.005 - 线程应用 - 提升效率
+02.006 - 线程应用 - 提升效率 - 验证
+02.007 - 线程应用 - 提升效率 - 小结
+03.001 - 创建线程 - 方法 1
+03.002 - 创建线程 - 方法 2
+03.003 - 创建线程 - lambda 简化
+03.004 - 创建线程 - 方法 1,2 - 原理
+03.005 - 创建线程 - 方法 3
+03.006 - 线程运行 - 现象
+03.007 - 线程运行 - 查看和杀死 - windows
+03.008 - 线程运行 - 查看和杀死 - linux
+03.009 - 线程运行 - jconsole
+03.010 - 线程运行原理 - 栈帧 debug
+03.011 - 线程运行原理 - 栈帧图解
+03.012 - 线程运行原理 - 多线程
+03.013 - 线程运行原理 - 上下文切换
+03.014 - 常见方法 - 概述
+03.015 - 常见方法 - start_vs_run
+03.016 - 常见方法 - sleep_状态
+03.017 - 常见方法 - sleep_打断
+03.018 - 常见方法 - sleep_可读性
+03.019 - 常见方法 - yield_vs_sleep
+03.020 - 常见方法 - 线程优先级
+03.021 - 常见方法 - sleep 应用
+03.022 - 常见方法 - join
+03.023 - 常见方法 - join - 同步应用
+03.024 - 常见方法 - join - 限时同步
+03.025 - 常见方法 - interrupt - 打断阻塞
+03.026 - 常见方法 - interrupt - 打断正常
+03.027 - 设计模式 - 两阶段终止 - interrupt
+03.028 - 设计模式 - 两阶段终止 - interrupt 分析
+03.029 - 设计模式 - 两阶段终止 - interrupt 实现
+03.030 - 设计模式 - 两阶段终止 - interrupt 细节
+03.031 - 常见方法 - interrupt - 打断 park
+03.032 - 常见方法 - 过时方法
+03.033 - 常见方法 - 守护线程
+03.034 - 线程状态 - 五种
+03.035 - 线程状态 - 六种
+03.036 - 线程状态 - 六种 - 演示
+03.037 - 习题 - 应用之统筹 - 分析
+03.038 - 习题 - 应用之统筹 - 实现
+03.039 - 第三章小结
+04.001 - 本章内容
+04.002 - 小故事 - 线程安全问题
+04.003 - 上下文切换 - 分析
+04.004 - 临界区与竞态条件
+04.005 - 上下文切换 - synchronized - 解决
+04.006 - 上下文切换 - synchronized - 理解
+04.007 - 上下文切换 - synchronized - 理解
+04.008 - 上下文切换 - synchronized - 思考
+04.009 - 锁对象面向对象改进
+04.010-synchronized - 加在方法上
+04.011-synchronized - 加在方法上 - 习题 1~2
+04.012-synchronized - 加在方法上 - 习题 3~4
+04.013-synchronized - 加在方法上 - 习题 5~8
+04.014 - 线程安全分析
+04.015 - 线程安全分析 - 局部变量
+04.016 - 线程安全分析 - 局部变量引用
+04.017 - 线程安全分析 - 局部变量 - 暴露引用
+04.018 - 线程安全分析 - 常见类 - 组合调用
+04.019 - 线程安全分析 - 常见类 - 不可变
+04.020 - 线程安全分析 - 实例分析 1~3
+04.021 - 线程安全分析 - 实例分析 4~7
+04.022 - 习题 - 卖票 - 读题
+04.023 - 习题 - 卖票 - 测试方法
+04.024 - 习题 - 卖票 - 解题
+04.025 - 习题 - 转账
+04.026-Monitor - 对象头
+04.027-Monitor - 工作原理
+04.028-Monitor - 工作原理 - 字节码角度
+04.029-synchronized 优化原理 - 小故事
+04.030-synchronized 优化原理 - 轻量级锁
+04.031-synchronized 优化原理 - 锁膨胀
+04.032-synchronized 优化原理 - 自旋优化
+04.033-synchronized 优化原理 - 偏向锁
+04.034-synchronized 优化原理 - 偏向锁 - 状态
+04.035-synchronized 优化原理 - 偏向锁 - 撤销
+04.036-synchronized 优化原理 - 偏向锁 - 批量重偏向
+04.037-synchronized 优化原理 - 偏向锁 - 批量撤销
+04.038-synchronized 优化原理 - 锁消除
+04.039 - 小故事 - wait¬ify
+04.040-wait¬ify - 工作原理
+04.041-wait¬ify-api-1
+04.042-wait¬ify-api-2
+04.043-wait vs sleep
+04.044-wait¬ify - 正确姿势 - step1
+04.045-wait¬ify - 正确姿势 - step2
+04.046-wait¬ify - 正确姿势 - step3~4
+04.047-wait¬ify - 正确姿势 - step5
+04.048 - 设计模式 - 保护性暂停 - 定义
+04.049 - 设计模式 - 保护性暂停 - 实现
+04.050 - 设计模式 - 保护性暂停 - 扩展 - 增加超时
+04.051 - 设计模式 - 保护性暂停 - 扩展 - 增加超时 - 测试
+04.052 - 设计模式 - join 原理
+04.053 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 分析
+04.054 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 实现
+04.055 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 测试
+04.056 - 设计模式 - 生产者消费者 - 定义
+04.057 - 设计模式 - 生产者消费者 - 实现
+04.058 - 设计模式 - 生产者消费者 - 测试
+04.059-park&unpark - 基本使用
+04.060-park&unpark - 原理
+04.061 - 线程状态转换 - 1
+04.062 - 线程状态转换 - 2
+04.063 - 线程状态转换 - 3~4
+04.064 - 线程状态转换
+04.065 - 多把锁
+04.066 - 活跃性 - 死锁现象
+04.067 - 活跃性 - 定位死锁
+04.068 - 活跃性 - 死锁 - 哲学家就餐
+04.069 - 活跃性 - 活锁
+04.070 - 活跃性 - 饥饿
+04.071-ReentrantLock - 简介
+04.072-ReentrantLock - 可重入
+04.073-ReentrantLock - 可打断
+04.074-ReentrantLock - 锁超时
+04.075-ReentrantLock - 锁超时 - 解决哲学家就餐
+04.076-ReentrantLock - 公平锁
+04.077-ReentrantLock - 条件变量 - 简介
+04.078-ReentrantLock - 条件变量 - 使用例子
+04.079 - 设计模式 - 固定运行顺序 - wait¬ify
+04.080 - 设计模式 - 固定运行顺序 - park&unpark
+04.081 - 设计模式 - 交替输出 - wait¬ify
+04.082 - 设计模式 - 交替输出 - await&signal
+04.083 - 设计模式 - 交替输出 - park&unpark
+04.084 - 第四章小结
+05.001 - 本章内容
+05.002 - 可见性 - 问题
+05.003 - 可见性 - 解决
+05.004 - 可见性 vs 原子性
+05.005 - 设计模式 - 两阶段终止 - volatile
+05.006 - 设计模式 - 犹豫模式
+05.007 - 设计模式 - 犹豫模式 - 应用
+05.008 - 有序性 - 指令重排
+05.009 - 有序性 - 指令重排原理 - 指令并行优化
+05.010 - 有序性 - 指令重排 - 问题
+05.011 - 有序性 - 指令重排 - 验证
+05.012 - 有序性 - 指令重排 - 禁用
+05.013-volatile - 原理 - 保证可见性
+05.014-volatile - 原理 - 保证有序性
+05.015-volatile - 原理 - dcl - 简介
+05.016-volatile - 原理 - dcl - 问题分析
+05.017-volatile - 原理 - dcl - 问题纠正
+05.018-volatile - 原理 - dcl - 问题解决
+05.019-happens-before 规则
+05.020 - 习题 - balking 模式
+05.021 - 习题 - 线程安全单例 1
+05.022 - 习题 - 线程安全单例 2~4
+05.023 - 习题 - 线程安全单例 5
+05.024 - 第五章小结
+06.001 - 本章内容
+06.002 - 保护共享资源 - 加锁实现
+06.003 - 保护共享资源 - 无锁实现
+06.004-cas - 工作方式
+06.005-cas - 慢动作分析
+06.006-cas-volatile
+06.007-cas - 效率分析
+06.008-cas - 特点
+06.009 - 原子整数 - AtomicInteger
+06.010 - 原子整数 - AtomicInteger-updateAndGet
+06.011 - 原子整数 - AtomicInteger-updateAndGet 原理
+06.012 - 原子引用 - AtomicReference
+06.013 - 原子引用 - ABA 问题
+06.014 - 原子引用 - AtomicStampedReference
+06.015 - 原子引用 - AtomicMarkableReference
+06.016 - 原子数组
+06.017 - 原子数组
+06.018 - 原子更新器
+06.019 - 原子累加器
+06.020-LongAdder 原理 - cas 锁
+06.021-LongAdder 原理 - 缓存行伪共享
+06.022-LongAdder 源码 - add
+06.023-LongAdder 源码 - longAccumulate-cells 未创建
+06.024-LongAdder 源码 - longAccumulate-cell 未创建
+06.025-LongAdder 源码 - longAccumulate-cell 已创建
+06.026-LongAdder 源码 - sum
+06.027-unsafe 对象 - 获取
+06.028-unsafe 对象 - cas 相关方法
+06.029-unsafe 对象 - 模拟实现原子整数
+06.030 - 第六章小结
+07.001 - 本章内容
+07.002 - 不可变对象 - 使用
+07.003 - 不可变对象 - 设计
+07.004 - 享元模式 - 定义和体现
+07.005 - 享元模式 - 不可变线程安全辨析
+07.006 - 享元模式 - 自定义连接池 - 分析
+07.007 - 享元模式 - 自定义连接池 - 实现
+07.008 - 享元模式 - 自定义连接池 - 测试
+07.009 - 享元模式 - 自定义连接池 - 总结
+07.010-final - 原理
+07.011 - 第七章小结
+08.001 - 本章内容
+08.002 - 自定义线程池 - 阻塞队列
+08.003 - 自定义线程池 - 阻塞队列 - poll 增强
+08.004 - 自定义线程池 - 线程池 - 实现
+08.005 - 自定义线程池 - 线程池 - 任务提交 & Worker 实现
+08.006 - 自定义线程池 - 线程池 - take 死等 & poll 超时
+08.007 - 自定义线程池 - 线程池 - 当任务队列已满
+08.008 - 自定义线程池 - 阻塞队列 - offer 增强
+08.009 - 自定义线程池 - 线程池 - 拒绝策略
+08.010 - 自定义线程池 - 线程池 - 拒绝策略 - 演示
+08.011-ThreadPoolExecutor - 池状态
+08.012-ThreadPoolExecutor - 构造方法
+08.013-ThreadPoolExecutor - 构造方法
+08.014-Executors - 固定大小线程池
+08.015-Executors - 带缓冲线程池
+08.016-Executors - 单线程线程池
+08.017-ThreadPoolExecutor-submit
+08.018-ThreadPoolExecutor-invokeAll
+08.019-ThreadPoolExecutor-invokeAny
+08.020-ThreadPoolExecutor - 停止
+08.021-ThreadPoolExecutor - 停止 - 演示
+08.022 - 设计模式 - 工作线程 - 定义
+08.023 - 设计模式 - 工作线程 - 饥饿 - 现象
+08.024 - 设计模式 - 工作线程 - 饥饿 - 解决
+08.025 - 设计模式 - 工作线程 - 池大小
+08.026-Timer 的缺点
+08.027-ScheduledThreadPoolExecutor - 延时执行
+08.028-ScheduledThreadPoolExecutor - 定时执行
+08.029 - 正确处理线程池异常
+08.030 - 线程池应用 - 定时任务
+08.031 - 线程池应用 - 定时任务 - 测试
+08.032-tomcat - 线程池
+08.033-tomcat - 线程池 - 配置
+08.034-forkjoin - 概念
+08.035-forkjoin - 使用
+08.036-forkjoin - 任务拆分优化
+08.037-aqs - 概述
+08.038-aqs - 自定义锁
+08.039-aqs - 自定义锁 - 测试
+08.040-reentrantlock - 加锁成功流程
+08.041-reentrantlock - 加锁失败流程
+08.042-reentrantlock - 解锁竞争成功流程
+08.043-reentrantlock - 解锁竞争失败流程
+08.044-reentrantlock - 锁重入原理
+08.045-reentrantlock - 可打断原理
+08.046-reentrantlock - 公平锁原理
+08.047-reentrantlock - 条件变量 - await
+08.048-reentrantlock - 条件变量 - signal
+08.049-reentrantreadwritelock - 使用
+08.050-reentrantreadwritelock - 注意事项
+08.051-reentrantreadwritelock - 应用之缓存
+08.052-reentrantreadwritelock - 应用之缓存 - 问题分析
+08.053-reentrantreadwritelock - 应用之缓存 - 实现
+08.054-reentrantreadwritelock - 应用之缓存 - 补充
+08.055-reentrantreadwritelock - 原理 - t1-w.lock
+08.056-reentrantreadwritelock - 原理 - t2-r.lock
+08.057-reentrantreadwritelock - 原理 - t3-r.lock&t4-w.lock
+08.058-reentrantreadwritelock - 原理 - t1-w.unlock
+08.059-reentrantreadwritelock - 原理 - t1-w.unlock
+08.060-reentrantreadwritelock - 原理 - t2-r.unlock t3-r.unlock
+08.061-stampedlock - 作用
+08.062-stampedlock - 演示
+08.063-semaphore - 作用
+08.064-semaphore - 演示
+08.065-semaphore - 应用 - 改进数据库连接池
+08.066-semaphore - 原理 - acquire
+08.067-semaphore - 原理 - release
+08.068-countdownlatch - 简介
+08.069-countdownlatch - 改进
+08.070-countdownlatch - 应用 - 等待多线程准备完毕
+08.071-countdownlatch - 应用 - 等待多个远程调用结束
+08.072-future - 应用 - 等待多个远程调用结束
+08.073-cyclicbarrier - 问题
+08.074-cyclicbarrier - 使用
+08.075-cyclicbarrier - 注意
+08.076 - 线程安全集合类 - 概述
+08.077-concurrenthashmap - 错误用法
+08.078-concurrenthashmap-computeifabsent
+08.079-concurrenthashmap - 原理 - hashmap - 回顾
+08.080-concurrenthashmap - 原理 - hashmap - 死链
+08.081-concurrenthashmap - 原理 - hashmap - 死链
+08.082-concurrenthashmap - 原理 - hashmap - 死链
+08.083-concurrenthashmap-8 - 原理 - 属性 & 内部类 & 方法
+08.084-concurrenthashmap-8 - 原理 - 构造
+08.085-concurrenthashmap-8 - 原理 - get
+08.086-concurrenthashmap-8 - 原理 - put
+08.087-concurrenthashmap-8 - 原理 - put
+08.088-concurrenthashmap-8 - 原理 - initable
+08.089-concurrenthashmap-8 - 原理 - addcount
+08.090-concurrenthashmap-8 - 原理 - size
+08.091-concurrenthashmap-8 - 原理 - transfer
+08.092-concurrenthashmap-7 - 原理 - 结构
+08.093-concurrenthashmap-7 - 原理 - 定位 segment
+08.094-concurrenthashmap-7 - 原理 - put
+08.095-concurrenthashmap-7 - 原理 - rehash
+08.096-concurrenthashmap-7 - 原理 - rehash 补充
+08.097-concurrenthashmap-7 - 原理 - get
+08.098-concurrenthashmap-7 - 原理 - size
+08.099-linkedblockingqueue - 原理 - 入队出队
+08.100-linkedblockingqueue - 原理 - 安全分析
+08.101-linkedblockingqueue - 原理 - put
+08.102-linkedblockingqueue - 原理 - vs array
+08.103-concurrentlinkedqueue
+08.104-copyonwritearraylist
+
+
+
+# 面試
+
+
+
+## 周阳 面試 2~4季
 - [x] [【大厂高频重点面试题（第二季）】01 本课程前提要求和说明 - YouTube](https://www.youtube.com/watch?v=r--PZ6HhBxE&list=PLmOn9nNkQxJGEztWTgs2r-ihSAQtcgaCi)
 	- 重點：
 	- [x] volatile 02-11
@@ -1290,9 +2008,7 @@ Spring Framework 中文文档PDF
 
 
 
-
-
-## 黑馬面試系列 
+## 黑馬面試框架篇
 - [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
 	- [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [x] 1-18 bean life cycle
@@ -1378,6 +2094,7 @@ Spring Framework 中文文档PDF
 
 
 
+## 黑馬面試 虛擬機
 - [x] [Java八股文面试题-虚拟机 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldcmN68KHJSTvEqDPXL1eBh)
 	- note: [虚拟机篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day03-%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%AE%B2%E4%B9%89/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [JVM-基于服务性代理的调试工具JHSDB(windows)-CSDN博客](https://blog.csdn.net/qq_16498553/article/details/121326800)
@@ -1424,7 +2141,7 @@ Spring Framework 中文文档PDF
 32 finalize unfinalized 链表 
 33 finalize 调用原理 
 
-
+## 黑馬面試 基礎篇
 
 - [ ] [Java八股文面试题-基础篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleMQjSWOfezn1C1Vb1zHDYq)
 	- note: [基础篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day01-%E5%9F%BA%E7%A1%80%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%9F%BA%E7%A1%80%E7%AF%87%E8%AE%B2%E4%B9%89.md)
@@ -1495,6 +2212,8 @@ Spring Framework 中文文档PDF
 62 单例模式 在 jdk 中的体现 高清 
 
 
+## 黑馬面試 併發篇
+
 - [ ] [Java八股文面试题-并发篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOldPN6-UqeeNvrMn87PjXBvS)
 	- [并发篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day02-%E5%B9%B6%E5%8F%91%E7%AF%87/%E8%AE%B2%E4%B9%89/%E5%B9%B6%E5%8F%91%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- related:
@@ -1548,6 +2267,135 @@ Spring Framework 中文文档PDF
 38 ThreadLocal value 内存释放时机 remove 时 
 
 
+- [x] [【尚硅谷】2023最新版50道Java面试真题 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
+	- [[尚硅谷 2023最新版50道Java面试真题 -note]]
+01.教程简介
+02.mysql使用innodb引擎，请简述mysql索引的最左前缀如何优化orderby语句_导出
+03.JVM内存模型中，为什么要区分新生代和年老代，对于新生代，为什么又要区分eden区survial区ddd
+04.典型的JDBC程序按()顺序编写(排序)
+05.请编写一个Java类Testjava，求出100以内既能被2除又能被3除的数，并输出到控制台上
+06.常见的远程调用有几种
+07.对于有这些外部衔接的方法需要注意哪些问题请写出注意问题及伪代码
+08.@Transactional注解范围问题
+09.springboot是如何管理版本依赖的
+010.什么是自动配置、起步依赖
+11.数据库索引的原理
+12.创建索引的缺点是什么？
+13.什么情况索引失效
+14.优化数据库的方法有哪些
+15.Integer和int的区别
+16.jsp的八个隐含对象有哪些
+17.数据库三范式是什么
+18.什么是Spring的依赖注入有哪些方法进行依赖注入
+19.说一下你理解的JVM原理
+20.浅谈ReentrantLock的设计
+21.说一下mysql中事务的实现原理
+22.编写一个基于线程安全的懒加载单例模式
+23.值传递和引用传递问题
+24.异常中的return问题
+25.Spring的AOP的使用情景有哪些简述其实现原理
+26.列举linux的常用命令
+27.列举知道并用过的其他前沿技术
+28.JVM运行时数据区域包含哪几部分
+29.多线程中start（)方法和run（）方法的区别是什么
+30.简单写一个会导致死锁的程序
+31.对于高并发问题处理方式
+32.高可用问题的常用处理方式
+33.请简述一下JVM加载class文件的原理机制。
+34.数据连接池的工作机制是什么
+35.代码题继承
+36.代码题父子异常
+37.哪一个List实现了最快插入
+38.有趣的选择题
+39.接口的修饰符
+40.List扩容问题
+41.两个选择题
+42.一脸懵b的null问题
+43.共享变量多线程可见性问题
+44.synchronize锁对象竞争问题
+45.高级的回答方式多线程有几种实现方法，都是什么
+46.高级版同步有几种实现方法，都是什么
+47.选择题Thread类的常用方法
+48.Exception父类问题
+49.String值比对问题
+50.构造方法问题
+51.Thread的run方法
+52.cg守护线程和volatile问题
+
+
+## 小林面試
+- [x] [大厂高频java面试题合集,Java面试60问,通关秘籍 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOleC_UlQLy4r6tDyeeI5r2_O)
+	- 重點：
+		- [x] arrayList source code 1-7, 
+		- [x] hashmap src code 8-19, 
+		- [x] cocurrentMap src code 20-30,  
+		- [x] volite 31-43, 
+		- [x] synchronized 44-50
+		- [x] reentrantlock 51-58
+	- [[note on source code on java hashmap]]
+	- note: [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#%E6%A6%82%E5%BF%B5)
+	- [[13 道 Java HashMap 精选面试题]]
+	- note: [哦耶！冲进小米了！-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2404465)
+01 大厂高频 Java 面试题合集 
+02 集合 ArrayList 基本介绍 
+03 集合 ArrayList 如何初始化及扩容 
+04 集合 ArrayList 初始化容量及集合实际大小 
+05 集合 ArrayList 为什么增删慢 
+06 集合 ArrayList 和数组哪个适合做队列 
+07 集合 ArrayList 和 LinkedList 的遍历性能 
+08 集合 HashMap 数据结构及存储原理 
+09 集合 HashMap put 过程 初始化判断 
+10 集合 HashMap put 过程 链表节点 
+11 集合 HashMap put 过程 红黑树节点 
+12 集合 HashMap 有参构造的初始化 
+13 集合 HashMap 无参构造的初始化 
+14 集合 HashMap hash 函数是如何设计的 
+15 集合 HashMap JDK1 7 版本的头插法 
+16 集合 HashMap JDK1 8 版本的尾插法 
+17 集合 HashMap 如何实现扩容 
+18 集合 HashMap 扩容时的重新 Hash 问题 
+19 集合 HashMap 为什么要重写 HashCode 和 Equals 
+20 集合 ConcurrentHashMap 如何解决 HashMap 的线程安全问题 
+21 集合 ConcurrentHashMap Hashtable 和 HashMap 的区别 
+22 集合 ConcurrentHashMap fail safe 和 fail fast 的区别 
+23 集合 ConcurrentHashMap JDK1 7 版本的特点 
+24 集合 ConcurrentHashMap JDK1 7 版本如何上锁 
+25 集合 ConcurrentHashMap Segment 如何实现扩容 
+26 集合 ConcurrentHashMap JDK1 8 如何实现上锁 
+27 集合 ConcurrenthashMap JDK1 8 为什么要使用 CAS 
+28 集合 ConcurrenthashMap CAS 上锁机制及存在的缺点 
+29 集合 ConcurrenthashMap CAS 中的 ABA 问题及如何解决 
+30 集合 ConcurrenthashMap 并发效率为什么高 
+01 并发编程 volatile 神奇的现象 
+02 并发编程 volatile 计算机的内存模型 
+03 并发编程 volatile Java 内存模型 JMM 介绍 
+04 并发编程 volatile JMM 在没有使用解决可见性问题时的数据同步过程 
+05 并发编程 volatile JMM 解决可见性问题的数据同步过程 
+06 并发编程 volatile 使用 Volatile 关键字解决可见性问题 
+07 并发编程 volatile 原子性问题的出现 
+08 并发编程 volatile volatile 不能保证原子性 
+09 并发编程 volatile 指令重排情况的出现 
+10 并发编程 volatile 指令重排的可能造成的问题 
+11 并发编程 volatile 如何防止指令重排 
+12 并发编程 volatile MESI 缓存一致性协议 
+13 并发编程 volatile 总结 
+14 并发编程 synchronized 内容介绍 
+15 并发编程 synchronized 多种用法 
+16 并发编程 synchronized 锁的膨胀升级 无锁及偏向锁 
+17 并发编程 synchronized 锁的膨胀升级 轻量级锁及重量级锁 
+18 并发编程 synchronized 如何通过指令来上锁 
+19 并发编程 synchronized Monitor 上锁过程 
+20 并发编程 synchronized 总结 
+21 并发编程 ReentrantLock 介绍 
+22 并发编程 ReentrantLock 实现公平锁和非公平锁 
+23 并发编程 ReentrantLock 加锁逻辑 
+24 并发编程 ReentrantLock 加锁失败的线程第一次进入到等待队列 
+25 并发编程 ReentrantLock 加锁失败的线程非首次进入到等待队列 
+26 并发编程 ReentrantLock 队列中的线程将被阻塞 
+27 并发编程 ReentrantLock 释放锁时唤醒队列中被阻塞的线程 
+28 并发编程 ReentrantLock 总结 
+
+
 ## 黑馬 新版  java 八股文面试
 - [ ] [java八股文面试全套真题_bilibili](https://www.bilibili.com/video/BV1yT411H7YK?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=142)
 	- [ ] design pattern 136-141
@@ -1555,357 +2403,115 @@ Spring Framework 中文文档PDF
 	- related:
 		- [一文读懂Java远程debug（Remote JVM Debug）-CSDN博客](https://blog.csdn.net/qq_41262903/article/details/120922767)
 
-## 黑馬 juc
-- [ ] [黑马程序员深入学习Java并发编程，JUC并发编程全套教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- note
-		- [JUC并发编程黑马笔记 - xiaolifc - 博客园](https://www.cnblogs.com/xiaolibiji/p/17639772.html)
-		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
-		- [JavaNote/Prog.md at main · Seazean/JavaNote · GitHub](https://github.com/Seazean/JavaNote/blob/main/Prog.md)
-
-01.001 - 为什么学习并发
-01.002 - 课程组织和特色
-01.003 - 预备知识
-02.001 - 本章内容
-02.002 - 进程线程概念
-02.003 - 并行并发概念
-02.004 - 线程应用 - 异步调用
-02.005 - 线程应用 - 提升效率
-02.006 - 线程应用 - 提升效率 - 验证
-02.007 - 线程应用 - 提升效率 - 小结
-03.001 - 创建线程 - 方法 1
-03.002 - 创建线程 - 方法 2
-03.003 - 创建线程 - lambda 简化
-03.004 - 创建线程 - 方法 1,2 - 原理
-03.005 - 创建线程 - 方法 3
-03.006 - 线程运行 - 现象
-03.007 - 线程运行 - 查看和杀死 - windows
-03.008 - 线程运行 - 查看和杀死 - linux
-03.009 - 线程运行 - jconsole
-03.010 - 线程运行原理 - 栈帧 debug
-03.011 - 线程运行原理 - 栈帧图解
-03.012 - 线程运行原理 - 多线程
-03.013 - 线程运行原理 - 上下文切换
-03.014 - 常见方法 - 概述
-03.015 - 常见方法 - start_vs_run
-03.016 - 常见方法 - sleep_状态
-03.017 - 常见方法 - sleep_打断
-03.018 - 常见方法 - sleep_可读性
-03.019 - 常见方法 - yield_vs_sleep
-03.020 - 常见方法 - 线程优先级
-03.021 - 常见方法 - sleep 应用
-03.022 - 常见方法 - join
-03.023 - 常见方法 - join - 同步应用
-03.024 - 常见方法 - join - 限时同步
-03.025 - 常见方法 - interrupt - 打断阻塞
-03.026 - 常见方法 - interrupt - 打断正常
-03.027 - 设计模式 - 两阶段终止 - interrupt
-03.028 - 设计模式 - 两阶段终止 - interrupt 分析
-03.029 - 设计模式 - 两阶段终止 - interrupt 实现
-03.030 - 设计模式 - 两阶段终止 - interrupt 细节
-03.031 - 常见方法 - interrupt - 打断 park
-03.032 - 常见方法 - 过时方法
-03.033 - 常见方法 - 守护线程
-03.034 - 线程状态 - 五种
-03.035 - 线程状态 - 六种
-03.036 - 线程状态 - 六种 - 演示
-03.037 - 习题 - 应用之统筹 - 分析
-03.038 - 习题 - 应用之统筹 - 实现
-03.039 - 第三章小结
-04.001 - 本章内容
-04.002 - 小故事 - 线程安全问题
-04.003 - 上下文切换 - 分析
-04.004 - 临界区与竞态条件
-04.005 - 上下文切换 - synchronized - 解决
-04.006 - 上下文切换 - synchronized - 理解
-04.007 - 上下文切换 - synchronized - 理解
-04.008 - 上下文切换 - synchronized - 思考
-04.009 - 锁对象面向对象改进
-04.010-synchronized - 加在方法上
-04.011-synchronized - 加在方法上 - 习题 1~2
-04.012-synchronized - 加在方法上 - 习题 3~4
-04.013-synchronized - 加在方法上 - 习题 5~8
-04.014 - 线程安全分析
-04.015 - 线程安全分析 - 局部变量
-04.016 - 线程安全分析 - 局部变量引用
-04.017 - 线程安全分析 - 局部变量 - 暴露引用
-04.018 - 线程安全分析 - 常见类 - 组合调用
-04.019 - 线程安全分析 - 常见类 - 不可变
-04.020 - 线程安全分析 - 实例分析 1~3
-04.021 - 线程安全分析 - 实例分析 4~7
-04.022 - 习题 - 卖票 - 读题
-04.023 - 习题 - 卖票 - 测试方法
-04.024 - 习题 - 卖票 - 解题
-04.025 - 习题 - 转账
-04.026-Monitor - 对象头
-04.027-Monitor - 工作原理
-04.028-Monitor - 工作原理 - 字节码角度
-04.029-synchronized 优化原理 - 小故事
-04.030-synchronized 优化原理 - 轻量级锁
-04.031-synchronized 优化原理 - 锁膨胀
-04.032-synchronized 优化原理 - 自旋优化
-04.033-synchronized 优化原理 - 偏向锁
-04.034-synchronized 优化原理 - 偏向锁 - 状态
-04.035-synchronized 优化原理 - 偏向锁 - 撤销
-04.036-synchronized 优化原理 - 偏向锁 - 批量重偏向
-04.037-synchronized 优化原理 - 偏向锁 - 批量撤销
-04.038-synchronized 优化原理 - 锁消除
-04.039 - 小故事 - wait¬ify
-04.040-wait¬ify - 工作原理
-04.041-wait¬ify-api-1
-04.042-wait¬ify-api-2
-04.043-wait vs sleep
-04.044-wait¬ify - 正确姿势 - step1
-04.045-wait¬ify - 正确姿势 - step2
-04.046-wait¬ify - 正确姿势 - step3~4
-04.047-wait¬ify - 正确姿势 - step5
-04.048 - 设计模式 - 保护性暂停 - 定义
-04.049 - 设计模式 - 保护性暂停 - 实现
-04.050 - 设计模式 - 保护性暂停 - 扩展 - 增加超时
-04.051 - 设计模式 - 保护性暂停 - 扩展 - 增加超时 - 测试
-04.052 - 设计模式 - join 原理
-04.053 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 分析
-04.054 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 实现
-04.055 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 测试
-04.056 - 设计模式 - 生产者消费者 - 定义
-04.057 - 设计模式 - 生产者消费者 - 实现
-04.058 - 设计模式 - 生产者消费者 - 测试
-04.059-park&unpark - 基本使用
-04.060-park&unpark - 原理
-04.061 - 线程状态转换 - 1
-04.062 - 线程状态转换 - 2
-04.063 - 线程状态转换 - 3~4
-04.064 - 线程状态转换
-04.065 - 多把锁
-04.066 - 活跃性 - 死锁现象
-04.067 - 活跃性 - 定位死锁
-04.068 - 活跃性 - 死锁 - 哲学家就餐
-04.069 - 活跃性 - 活锁
-04.070 - 活跃性 - 饥饿
-04.071-ReentrantLock - 简介
-04.072-ReentrantLock - 可重入
-04.073-ReentrantLock - 可打断
-04.074-ReentrantLock - 锁超时
-04.075-ReentrantLock - 锁超时 - 解决哲学家就餐
-04.076-ReentrantLock - 公平锁
-04.077-ReentrantLock - 条件变量 - 简介
-04.078-ReentrantLock - 条件变量 - 使用例子
-04.079 - 设计模式 - 固定运行顺序 - wait¬ify
-04.080 - 设计模式 - 固定运行顺序 - park&unpark
-04.081 - 设计模式 - 交替输出 - wait¬ify
-04.082 - 设计模式 - 交替输出 - await&signal
-04.083 - 设计模式 - 交替输出 - park&unpark
-04.084 - 第四章小结
-05.001 - 本章内容
-05.002 - 可见性 - 问题
-05.003 - 可见性 - 解决
-05.004 - 可见性 vs 原子性
-05.005 - 设计模式 - 两阶段终止 - volatile
-05.006 - 设计模式 - 犹豫模式
-05.007 - 设计模式 - 犹豫模式 - 应用
-05.008 - 有序性 - 指令重排
-05.009 - 有序性 - 指令重排原理 - 指令并行优化
-05.010 - 有序性 - 指令重排 - 问题
-05.011 - 有序性 - 指令重排 - 验证
-05.012 - 有序性 - 指令重排 - 禁用
-05.013-volatile - 原理 - 保证可见性
-05.014-volatile - 原理 - 保证有序性
-05.015-volatile - 原理 - dcl - 简介
-05.016-volatile - 原理 - dcl - 问题分析
-05.017-volatile - 原理 - dcl - 问题纠正
-05.018-volatile - 原理 - dcl - 问题解决
-05.019-happens-before 规则
-05.020 - 习题 - balking 模式
-05.021 - 习题 - 线程安全单例 1
-05.022 - 习题 - 线程安全单例 2~4
-05.023 - 习题 - 线程安全单例 5
-05.024 - 第五章小结
-06.001 - 本章内容
-06.002 - 保护共享资源 - 加锁实现
-06.003 - 保护共享资源 - 无锁实现
-06.004-cas - 工作方式
-06.005-cas - 慢动作分析
-06.006-cas-volatile
-06.007-cas - 效率分析
-06.008-cas - 特点
-06.009 - 原子整数 - AtomicInteger
-06.010 - 原子整数 - AtomicInteger-updateAndGet
-06.011 - 原子整数 - AtomicInteger-updateAndGet 原理
-06.012 - 原子引用 - AtomicReference
-06.013 - 原子引用 - ABA 问题
-06.014 - 原子引用 - AtomicStampedReference
-06.015 - 原子引用 - AtomicMarkableReference
-06.016 - 原子数组
-06.017 - 原子数组
-06.018 - 原子更新器
-06.019 - 原子累加器
-06.020-LongAdder 原理 - cas 锁
-06.021-LongAdder 原理 - 缓存行伪共享
-06.022-LongAdder 源码 - add
-06.023-LongAdder 源码 - longAccumulate-cells 未创建
-06.024-LongAdder 源码 - longAccumulate-cell 未创建
-06.025-LongAdder 源码 - longAccumulate-cell 已创建
-06.026-LongAdder 源码 - sum
-06.027-unsafe 对象 - 获取
-06.028-unsafe 对象 - cas 相关方法
-06.029-unsafe 对象 - 模拟实现原子整数
-06.030 - 第六章小结
-07.001 - 本章内容
-07.002 - 不可变对象 - 使用
-07.003 - 不可变对象 - 设计
-07.004 - 享元模式 - 定义和体现
-07.005 - 享元模式 - 不可变线程安全辨析
-07.006 - 享元模式 - 自定义连接池 - 分析
-07.007 - 享元模式 - 自定义连接池 - 实现
-07.008 - 享元模式 - 自定义连接池 - 测试
-07.009 - 享元模式 - 自定义连接池 - 总结
-07.010-final - 原理
-07.011 - 第七章小结
-08.001 - 本章内容
-08.002 - 自定义线程池 - 阻塞队列
-08.003 - 自定义线程池 - 阻塞队列 - poll 增强
-08.004 - 自定义线程池 - 线程池 - 实现
-08.005 - 自定义线程池 - 线程池 - 任务提交 & Worker 实现
-08.006 - 自定义线程池 - 线程池 - take 死等 & poll 超时
-08.007 - 自定义线程池 - 线程池 - 当任务队列已满
-08.008 - 自定义线程池 - 阻塞队列 - offer 增强
-08.009 - 自定义线程池 - 线程池 - 拒绝策略
-08.010 - 自定义线程池 - 线程池 - 拒绝策略 - 演示
-08.011-ThreadPoolExecutor - 池状态
-08.012-ThreadPoolExecutor - 构造方法
-08.013-ThreadPoolExecutor - 构造方法
-08.014-Executors - 固定大小线程池
-08.015-Executors - 带缓冲线程池
-08.016-Executors - 单线程线程池
-08.017-ThreadPoolExecutor-submit
-08.018-ThreadPoolExecutor-invokeAll
-08.019-ThreadPoolExecutor-invokeAny
-08.020-ThreadPoolExecutor - 停止
-08.021-ThreadPoolExecutor - 停止 - 演示
-08.022 - 设计模式 - 工作线程 - 定义
-08.023 - 设计模式 - 工作线程 - 饥饿 - 现象
-08.024 - 设计模式 - 工作线程 - 饥饿 - 解决
-08.025 - 设计模式 - 工作线程 - 池大小
-08.026-Timer 的缺点
-08.027-ScheduledThreadPoolExecutor - 延时执行
-08.028-ScheduledThreadPoolExecutor - 定时执行
-08.029 - 正确处理线程池异常
-08.030 - 线程池应用 - 定时任务
-08.031 - 线程池应用 - 定时任务 - 测试
-08.032-tomcat - 线程池
-08.033-tomcat - 线程池 - 配置
-08.034-forkjoin - 概念
-08.035-forkjoin - 使用
-08.036-forkjoin - 任务拆分优化
-08.037-aqs - 概述
-08.038-aqs - 自定义锁
-08.039-aqs - 自定义锁 - 测试
-08.040-reentrantlock - 加锁成功流程
-08.041-reentrantlock - 加锁失败流程
-08.042-reentrantlock - 解锁竞争成功流程
-08.043-reentrantlock - 解锁竞争失败流程
-08.044-reentrantlock - 锁重入原理
-08.045-reentrantlock - 可打断原理
-08.046-reentrantlock - 公平锁原理
-08.047-reentrantlock - 条件变量 - await
-08.048-reentrantlock - 条件变量 - signal
-08.049-reentrantreadwritelock - 使用
-08.050-reentrantreadwritelock - 注意事项
-08.051-reentrantreadwritelock - 应用之缓存
-08.052-reentrantreadwritelock - 应用之缓存 - 问题分析
-08.053-reentrantreadwritelock - 应用之缓存 - 实现
-08.054-reentrantreadwritelock - 应用之缓存 - 补充
-08.055-reentrantreadwritelock - 原理 - t1-w.lock
-08.056-reentrantreadwritelock - 原理 - t2-r.lock
-08.057-reentrantreadwritelock - 原理 - t3-r.lock&t4-w.lock
-08.058-reentrantreadwritelock - 原理 - t1-w.unlock
-08.059-reentrantreadwritelock - 原理 - t1-w.unlock
-08.060-reentrantreadwritelock - 原理 - t2-r.unlock t3-r.unlock
-08.061-stampedlock - 作用
-08.062-stampedlock - 演示
-08.063-semaphore - 作用
-08.064-semaphore - 演示
-08.065-semaphore - 应用 - 改进数据库连接池
-08.066-semaphore - 原理 - acquire
-08.067-semaphore - 原理 - release
-08.068-countdownlatch - 简介
-08.069-countdownlatch - 改进
-08.070-countdownlatch - 应用 - 等待多线程准备完毕
-08.071-countdownlatch - 应用 - 等待多个远程调用结束
-08.072-future - 应用 - 等待多个远程调用结束
-08.073-cyclicbarrier - 问题
-08.074-cyclicbarrier - 使用
-08.075-cyclicbarrier - 注意
-08.076 - 线程安全集合类 - 概述
-08.077-concurrenthashmap - 错误用法
-08.078-concurrenthashmap-computeifabsent
-08.079-concurrenthashmap - 原理 - hashmap - 回顾
-08.080-concurrenthashmap - 原理 - hashmap - 死链
-08.081-concurrenthashmap - 原理 - hashmap - 死链
-08.082-concurrenthashmap - 原理 - hashmap - 死链
-08.083-concurrenthashmap-8 - 原理 - 属性 & 内部类 & 方法
-08.084-concurrenthashmap-8 - 原理 - 构造
-08.085-concurrenthashmap-8 - 原理 - get
-08.086-concurrenthashmap-8 - 原理 - put
-08.087-concurrenthashmap-8 - 原理 - put
-08.088-concurrenthashmap-8 - 原理 - initable
-08.089-concurrenthashmap-8 - 原理 - addcount
-08.090-concurrenthashmap-8 - 原理 - size
-08.091-concurrenthashmap-8 - 原理 - transfer
-08.092-concurrenthashmap-7 - 原理 - 结构
-08.093-concurrenthashmap-7 - 原理 - 定位 segment
-08.094-concurrenthashmap-7 - 原理 - put
-08.095-concurrenthashmap-7 - 原理 - rehash
-08.096-concurrenthashmap-7 - 原理 - rehash 补充
-08.097-concurrenthashmap-7 - 原理 - get
-08.098-concurrenthashmap-7 - 原理 - size
-08.099-linkedblockingqueue - 原理 - 入队出队
-08.100-linkedblockingqueue - 原理 - 安全分析
-08.101-linkedblockingqueue - 原理 - put
-08.102-linkedblockingqueue - 原理 - vs array
-08.103-concurrentlinkedqueue
-08.104-copyonwritearraylist
-
-
-
-
-
-
-## 黑马程序员Java零基础视频教程
-- [ ] [黑马程序员Java零基础视频教程\_下部(Java入门，含斯坦福大学练习题+力扣算法题和大厂java面试题）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- [ ] treeMap source code 17-18
-	- [ ] 網路編程 [网络编程-01-初始网络编程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=168)
-	- [x] 動態代理  [动态代理-01-动态代理的思想分析\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=198)
-
-
-
-
-## 韩顺平】图解Java设计模式
-- [【韩顺平】图解Java设计模式 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt)
-	- [GitHub - re4388/NOTE\_DesignPatterns: 尚硅谷Java设计模式（图解+框架源码剖析）学习笔记](https://github.com/re4388/NOTE_DesignPatterns)
-	- [尚硅谷—韩顺平—图解 Java设计模式（1～27）\_设计模式笔记 韩顺平-CSDN博客](https://blog.csdn.net/qq_43056248/article/details/123179123)
-	- D:\all_book\java book 中的 尚硅谷_韩顺平_图解Java设计模式
-
-
-	- [x] [037 尚硅谷 图解Java设计模式 单例模式JKD源码分析 - YouTube](https://www.youtube.com/watch?v=bP2t_LNxqWM&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=38)
-	- [x] [047 尚硅谷 图解Java设计模式 工厂模式 JDK源码分析 - YouTube](https://www.youtube.com/watch?v=tDqAUuNC4is&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=48)
-	- [ ] [051 尚硅谷 图解Java设计模式 原型模式3 Spring源码分析 - YouTube](https://www.youtube.com/watch?v=rqON85wsA5U&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=52)
-	- [ ] [069 尚硅谷 图解Java设计模式 桥接模式4 JDBC源码 - YouTube](https://www.youtube.com/watch?v=jSd1KwfSLo4&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=70)
-	- [ ] [075 尚硅谷 图解Java设计模式 装饰者模式5 IO源码 - YouTube](https://www.youtube.com/watch?v=nBtzeXrQlOU&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=76)
-	- [ ] [089 尚硅谷 图解Java设计模式 享元模式4 Integer源码 - YouTube](https://www.youtube.com/watch?v=xOezzkS2FGk&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=90)
-	- [ ] [094 尚硅谷 图解Java设计模式 代理模式4 Cglib代理 - YouTube](https://www.youtube.com/watch?v=_bi-DIGUuzM&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=95)
-	- [ ] [099 尚硅谷 图解Java设计模式 模板模式4 IOC源码 - YouTube](https://www.youtube.com/watch?v=D8OCnfMaD24&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=100)
-	- [ ] [104 尚硅谷 图解Java设计模式 命令模式4 JdbcTml源码 - YouTube](https://www.youtube.com/watch?v=i6kap-mq28E&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=105)
-	- [ ] [115 尚硅谷 图解Java设计模式 迭代器模式5 JDK源码 - YouTube](https://www.youtube.com/watch?v=HX-FWOeuHKc&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=116)
-	- [ ] [121 尚硅谷 图解Java设计模式 观察者模式5 Observable源码 - YouTube](https://www.youtube.com/watch?v=VrvymdWpg68&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=122)
-	- [ ] [134 尚硅谷 图解Java设计模式 解释器模式4 SpelExp源码 - YouTube](https://www.youtube.com/watch?v=OlLwGBjb4PI&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=135)
-	- [ ] [143 尚硅谷 图解Java设计模式 策略模式4 Arrays源码 - YouTube](https://www.youtube.com/watch?v=xOppee_iSvo&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=144)
-	- [ ] [148 尚硅谷 图解Java设计模式 职责链模式4 SpringMVC源码 - YouTube](https://www.youtube.com/watch?v=x3vBJe0tjdw&list=PLmOn9nNkQxJH-C-qEI2rpewHTI9ITpMkt&index=149)
-
-
 
 
 
 ---
+
+# Cloud Native
+
+## kafka
+- [x] Kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
+	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
+01_尚硅谷_Kafka_课程简介
+02_尚硅谷_Kafka_概述_定义
+03_尚硅谷_Kafka_概述_消息队列应用场景
+04_尚硅谷_Kafka_概述_消息队列两种模式
+05_尚硅谷_Kafka_概述_基础架构
+06_尚硅谷_Kafka_入门_安装 Kafka
+07_尚硅谷_Kafka_入门_启动停止脚本
+08_尚硅谷_Kafka_入门_Topic 命令
+09_尚硅谷_Kafka_入门_命令行操作
+10_尚硅谷_Kafka_生产者_原理
+11_尚硅谷_Kafka_生产者_异步发送
+12_尚硅谷_Kafka_生产者_回调异步发送
+13_尚硅谷_Kafka_生产者_同步发送
+14_尚硅谷_Kafka_生产者_分区
+15_尚硅谷_Kafka_生产者_分区策略
+16_尚硅谷_Kafka_生产者_自定义分区
+17_尚硅谷_Kafka_生产者_提高生产者吞吐量
+18_尚硅谷_Kafka_生产者_数据可靠
+19_尚硅谷_Kafka_生产者_数据重复
+20_尚硅谷_Kafka_生产者_数据有序
+21_尚硅谷_Kafka_生产者_数据乱序
+22_尚硅谷_Kafka_Broker_ZK 存储
+23_尚硅谷_Kafka_Broker_工作原理
+24_尚硅谷_Kafka_Broker_上下线
+25_尚硅谷_Kafka_Broker_服役新节点（上）
+26_尚硅谷_Kafka_Broker_服役新节点（下）
+27_尚硅谷_Kafka_Broker_退役旧节点
+28_尚硅谷_Kafka_每日回顾（上）
+29_尚硅谷_Kafka_每日回顾（下）
+30_尚硅谷_Kafka_Broker_副本基本信息
+31_尚硅谷_Kafka_Broker_Leader 选举
+32_尚硅谷_Kafka_Broker_Follower 故障
+33_尚硅谷_Kafka_Broker_Leader 故障
+34_尚硅谷_Kafka_Broker_分区副本分配
+35_尚硅谷_Kafka_Broker_手动调整分区副本分配
+36_尚硅谷_Kafka_Broker_LeaderPartition 负载平衡
+37_尚硅谷_Kafka_Broker_增加副本因子
+38_尚硅谷_Kafka_Broker_文件存储机制
+39_尚硅谷_Kafka_Broker_文件清除策略
+40_尚硅谷_Kafka_Broker_高效读写
+41_尚硅谷_Kafka_消费者_消费方式
+42_尚硅谷_Kafka_消费者_消费者总体工作流程
+43_尚硅谷_Kafka_消费者_消费者组工作原理
+44_尚硅谷_Kafka_消费者_消费者组初始化
+45_尚硅谷_Kafka_消费者_消费者组详细消费流程
+46_尚硅谷_Kafka_消费者_消费一个主题
+47_尚硅谷_Kafka_消费者_消费一个分区
+48_尚硅谷_Kafka_消费者_消费者组案例
+49_尚硅谷_Kafka_消费者_Range 分配
+50_尚硅谷_Kafka_消费者_Roundrobin
+51_尚硅谷_Kafka_消费者_Sticky
+52_尚硅谷_Kafka_消费者_offset 保存位置
+53_尚硅谷_Kafka_消费者_自动 offset
+54_尚硅谷_Kafka_消费者_手动 offser
+55_尚硅谷_Kafka_消费者_指定 offset
+56_尚硅谷_Kafka_消费者_按照时间消费
+57_尚硅谷_Kafka_消费者_消费者事务
+58_尚硅谷_Kafka_消费者_数据积压
+59_尚硅谷_Kafka_每日回顾（上）
+60_尚硅谷_Kafka_每日回顾（下）
+61_尚硅谷_Kafka_监控_MySQL 环境准备
+62_尚硅谷_Kafka_监控_Kafka 环境准备
+63_尚硅谷_Kafka_监控_Kafka-Eagle 安装
+64_尚硅谷_Kafka_监控_Kafka-Eagle 监控页面
+65_尚硅谷_Kafka_Kraft 模式
+66_尚硅谷_Kafka_集成_Flume 环境准备
+67_尚硅谷_Kafka_集成_Flume 生产者
+68_尚硅谷_Kafka_集成_Flume 消费者
+69_尚硅谷_Kafka_集成_Flink 生产者
+70_尚硅谷_Kafka_集成_Flink 消费者
+71_尚硅谷_Kafka_集成_SpringBoot 生产者
+72_尚硅谷_Kafka_集成_SpringBoot 消费者
+73_尚硅谷_Kafka_集成_Spark 生产者
+74_尚硅谷_Kafka_集成_Spark 消费者
+75_尚硅谷_Kafka_调优_内容简介
+76_尚硅谷_Kafka_调优_硬件选择
+77_尚硅谷_Kafka_调优_生产者调优
+78_尚硅谷_Kafka_调优_Broker 调优
+79_尚硅谷_Kafka_调优_消费者调优
+80_尚硅谷_Kafka_调优_总体调优
+81_尚硅谷_Kafka_调优_生产者压力测试
+82_尚硅谷_Kafka_调优_消费者压力测试
+83_尚硅谷_Kafka_源码_环境准备
+84_尚硅谷_Kafka_源码_生产者原理回顾
+85_尚硅谷_Kafka_源码_生产者初始化
+86_尚硅谷_Kafka_源码_生产者发送数据到缓存
+87_尚硅谷_Kafka_源码_生产者 Sender 线程
+88_尚硅谷_Kafka_源码_消费者原理回顾
+89_尚硅谷_Kafka_源码_消费者初始化
+90_尚硅谷_Kafka_源码_消费者订阅主题
+91_尚硅谷_Kafka_源码_消费总体流程
+92_尚硅谷_Kafka_源码_消费者组初始化流程
+93_尚硅谷_Kafka_源码_消费者组拉取和处理数据
+94_尚硅谷_Kafka_源码_消费者 Offset 提交
+95_尚硅谷_Kafka_源码_服务器端源码
+96_尚硅谷_Kafka_课程结束
+
+
+
 ## 尚硅谷 K8s
 - yt [01 尚硅谷 Kubernetes课程内容介绍 - YouTube](https://www.youtube.com/watch?v=W3V-VgTjDjo&list=PLmOn9nNkQxJHYUm2zkuf9_7XJJT8kzAph)
 - 筆記
@@ -1978,243 +2584,11 @@ Spring Framework 中文文档PDF
 
 
 
-# spring security
-
-## 尚硅谷 雷神 SpringSecurity
-- [(836) 01 尚硅谷 SpringSecurity 课程介绍 - YouTube](https://www.youtube.com/watch?v=_2v7C9wBH1M&list=PLmOn9nNkQxJEnBjOMEXPLRjoTRNvhHIl2&index=1)
-	- code
-		- [shuhongfan/SpringSecurity_Demo03](https://github.com/shuhongfan/SpringSecurity_Demo03)
-	- check source code and note /Users/re4388/project/personal/lang/java/SpringSecurity_Demo03
-	- check pdf -> see book
-
-- 01 - 尚硅谷 - SpringSecurity - 课程介绍
-- 02 - 尚硅谷 - SpringSecurity - 框架概述
-- 03 - 尚硅谷 - SpringSecurity - 入门案例
-- 04 - 尚硅谷 - SpringSecurity - 基本原理（过滤器链）
-- 05 - 尚硅谷 - SpringSecurity - 基本原理（过滤器加载过程）
-- 06 - 尚硅谷 - SpringSecurity - 基本原理（两个重要的接口）
-- 07 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码上）
-- 08 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码下）
-- 09 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证上）
-- 10 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证下）
-- 11 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（自定义用户登录页面）
-- 12 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于权限访问控制）
-- 13 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于角色访问控制）
-- 14 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（自定义 403 页面）
-- 15 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（注解使用）
-- 16 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户注销
-- 17 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（原理分析）
-- 18 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（功能实现）
-- 19 - 尚硅谷 - SpringSecurity-web 权限方案 - CSRF 功能
-- 20 - 尚硅谷 - SpringSecurity - 微服务权限方案（认证授权过程分析）
-- 21 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 需求说明
-- 22 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 数据模型介绍
-- 23 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 使用技术说明
-- 24 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 搭建项目工程
-- 25 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 引入项目依赖
-- 26 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 启动 Redis 和 Nacos
-- 27 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 common 工具类
-- 28 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 工具类
-- 29 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 认证过滤器
-- 30 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 授权过滤器
-- 31 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写核心配置类
-- 32 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 UserDetailsService
-- 33 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合权限管理模块
-- 34 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合网关和前端
-- 35 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 案例测试
-- 36 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解上
-- 37 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解下
-- 38 - 尚硅谷 - SpringSecurity - 源码剖析 - 权限访问流程详解
-- 39 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证信息共享详解
-- 40 - 尚硅谷 - SpringSecurity - 结束语
 
 
 
-## 尚硅谷 SpringSecurity+OAuth2
-[尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- note
-	- [Spring-Security-course/笔记/笔记.md at main · re4388/Spring-Security-course · GitHub](https://github.com/re4388/Spring-Security-course/blob/main/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)
-- [x] [07-入门-Spring Security底层原理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14b4y1A7Wz?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=7)
-- [x] 01 - 教程简介
-- [x] 02 - 入门 - Spring Security 基本功能
-- [x] 03 - 入门 - 实现最简单的身份认证
-- [x] 04 - 入门 - 使用动态链接
-- [x] 05 - 入门 - 登录页面加载慢的问题
-- [x] 06 - 入门 - Spring Security 默认做了什么
-- [x] 07 - 入门 - Spring Security 底层原理
-- [x] 08 - 入门 - DefaultSecurityFilterChain
-- [x] 09 - 入门 - SecurityProperties
-- [x] 10 - 自定义配置 - 基于内存的用户认证
-- [x] 11 - 自定义配置 - 用户认证源码分析
-- [x] 12 - 自定义配置 - 基于数据库的数据源
-- [x] 13 - 自定义配置 - 基于数据库的用户认证流程分析
-- [x] 14 - 自定义配置 - 基于数据库的用户认证流程实现
-- [x] 15 - 自定义配置 - SpringSecurity 的默认配置
-- [x] 16 - 自定义配置 - 添加用户功能的实现
-- [x] 17 - 自定义配置 - 添加用户功能的测试
-- [x] 18 - 自定义配置 - 密码加密算法
-- [x] 19 - 自定义配置 - 密码加密测试
-- [x] 20 - 自定义配置 - DelegatingPasswordEncoder
-- [x] 21 - 自定义配置 - 自定义登录页
-- [x] 22 - 自定义配置 - 登录页的细节
-- [x] 23 - 前后端分离 - 用户认证流程
-- [x] 24 - 前后端分离 - 用户认证成功的代码实现
-- [x] 25 - 前后端分离 - 用户认证失败的代码实现
-- [x] 26 - 前后端分离 - 用户注销处理
-- [x] 27 - 前后端分离 - 请求未认证处理
-- [x] 28 - 前后端分离 - 跨域处理
-- [x] 29 - 前后端分离 - 用户认证信息
-- [x] 30 - 前后端分离 - 会话并发处理
-- [x] 31 - 授权 - 用户角色权限资源
-- [x] 32 - 授权 - 基于 request 的授权 - 权限分配
-- [x] 33 - 授权 - 基于 request 的授权 - 请求未授权处理
-- [x] 34 - 授权 - 基于 request 的授权 - 角色分配
-- [x] 35 - 授权 - RBAC
-- [x] 36 - 授权 - 基于方法的授权
-- [x] 37-OAuth2 - 什么是 OAuth2
-- [x] 38-OAuth2 - 角色总结
-- [x] 39-OAuth2 - 使用场景
-- [x] 40-OAuth2 - 四种授权模式
-- [x] 41-OAuth2 - 四种授权模式 - 授权码模式
-- [x] 42-OAuth2 - 四种授权模式 - 隐藏模式
-- [x] 43-OAuth2 - 四种授权模式 - 密码模式
-- [x] 44-OAuth2 - 四种授权模式 - 凭证式模式
-- [x] 45-OAuth2 - 授权类型的选择
-- [x] 46-OAuth2-Spring 中的 OAuth2
-- [x] 47-GitHub 授权登录案例 - 注册客户应用
-- [x] 48-GitHub 授权登录案例 - 创建客户应用和登录测试
-- [x] 49-GitHub 授权登录案例 - 退出和重新登录的测试
-- [x] 50-GitHub 授权登录案例 - 授权登录流程分析
-- [x] 51-GitHub 授权登录案例 - CommonOAuth2Provider
 
 
-## B 站讲的最好的 SpringSecurity+jwt+oauth2.0 教程
-[B站讲的最好的SpringSecurity+jwt+oauth2.0教程。7小时带你从入门到精通Spring Security实战-完整版教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [ ] [031\_Oauth2协议简介\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gb4y1b7XE?spm_id_from=333.788.player.switch&vd_source=c1191139db7aee736d31e75ebc6029d0&p=31)
-- [ ] 001_SpringSecurity 学习目标
-- [ ] 002_SpringSecurity 简介
-- [ ] 003_SpringSecurity 快速 Demo
-- [ ] 004_UserDetailsService 详解  -------------------------------------
-- [ ] 005_PasswordEncoder 详解
-- [ ] 006_自定义登录逻辑
-- [ ] 007_自定义登录页面
-- [ ] 008_失败跳转
-- [ ] 009_设置请求账户和密码的参数名
-- [ ] 010_自定义登录成功处理器
-- [ ] 011_自定义登录失败处理器
-- [ ] 012_anyRequest 详解
-- [ ] 013_antMatchers 详解
-- [ ] 014_regexMathcers 详解
-- [ ] 015_mvcMatchers 详解
-- [ ] 016_内置访问控制方法介绍
-- [ ] 017_权限判断
-- [ ] 018_角色判断
-- [x] 019_IP 地址判断    -------------------------------------
-- [ ] 020_自定义 403 处理方案
-- [x] 021_access 方法使用
-- [x] 022_access 结合自定义方法实现权限控制
-- [ ] 023_secured 注解
-- [ ] 024_preAuthorize 注解 + postAuthorize 注解
-- [ ] 025_RememberMe 功能
-- [ ] 026_在 thymeleaf 中获取属性值
-- [ ] 027_在 thymeleaf 中进行权限判断
-- [ ] 028_退出登录
-- [ ] 029_退出登录源码解读
-- [ ] 030_SpringSecurity 中的 csrf
-- [ ] 031_Oauth2 协议简介
-- [ ] 032_授权模式
-- [ ] 033_SpringSecurityOauth2 架构
-- [ ] 034_SpringSecurityOauth2 授权码模式
-- [ ] 035_授权码模式演示
-- [ ] 036_密码模式演示
-- [ ] 037_Redis 存储 Token
-- [ ] 038_常见认证机制
-- [ ] 039_什么是 JWT
-- [ ] 040_JJWT 快速 Demo
-- [ ] 041_解析 Token
-- [ ] 042_token 过期校验
-- [ ] 043_自定义申明
-- [x] 044_SpringSecurityOauth2 整合 JWT
-- [x] 045_扩展 JWT 中存储的内容
-- [x] 046_解析 JWT 中内容
-- [x] 047_RefreshToken
-- [x] 048_SpringSecurityOauth2 整合 SSO -------------------------------------
-
-
-[黑马程序员Java进阶教程快速入门Spring Security OAuth2.0认证授权\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1VE411h7aL/?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [ ] 1 认证授权课程介绍
-- [ ] 2 基础概念 - 认证授权会话
-- [ ] 3 基础概念 - 授权的数据模型
-- [ ] 4 基础概念 - RBAC
-- [ ] 5 基于 Session 的认证方式 - 认证流程
-- [ ] 6 基于 Session 的认证方式 - 创建工程
-- [ ] 7 基于 Session 的认证方式 - 实现认证功能
-- [ ] 8 基于 Session 的认证方式 - 实现会话功能
-- [ ] 9 基于 Session 的认证方式 - 实现授权功能
-- [ ] 10 Spring Security - 创建工程
-- [ ] 11 Spring Security - 认证功能
-- [ ] 12 Spring Security - 授权功能
-- [ ] 13 Spring -SpringBoot
-- [x] 14 Spring Security - 结构总览
-- [x] 15 Spring Security - 认证流程
-- [ ] 16 UserDetailService
-- [ ] 17 工作原理 - PasswordEncoder
-- [ ] 18 工作原理 - 授权流程
-- [ ] 19 自定义登录页面
-- [ ] 20- 连接数据库认证
-- [ ] 21 应用详解 - 会话管理
-- [ ] 22 应用详解 - 自定义退出
-- [ ] 23 连接数据库查权限
-- [ ] 24 授权 - web 授权
-- [ ] 25 授权 - 方法授权
-
-- [ ] 1.分布式系统认证方案 - 什么是分布式系统
-- [ ] 2.分布式系统认证方案 - 分布式认证需求
-- [ ] 3.分布式系统认证方案 - 分布式认证方案
-- [ ] 4.OAuth2.0 - 介绍
-- [ ] 5.OAuth2.0-Spring Cloud Security OAuth2 - 环境介绍
-- [ ] 6.OAuth2.0-Spring Cloud Security OAuth2 - 环境搭建
-- [ ] 7.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置
-- [ ] 8.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 三项内容
-- [ ] 9.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 客户端详情配置
-- [ ] 10.OAuth2.0-Spring Cloud Security OAuth2 - 授权服务配置 - 令牌服务和令牌端点配置
-- [ ] 11.OAuth2.0-Spring Cloud Security OAuth2 - 授权码模式
-- [ ] 12.OAuth2.0-Spring Cloud Security OAuth2 - 密码模式及其它模式
-- [ ] 13.OAuth2.0-Spring Cloud Security OAuth2 - 资源服务测试
-- [ ] 14.OAuth2.0-JWT 令牌 - 介绍
-- [ ] 15.OAuth2.0-JWT 令牌 - 生成令牌和校验令牌
-- [ ] 16.OAuth2.0 - 完善环境配置
-- [ ] 17.Spring Security 实现分布式认证授权 - 搭建注册中心
-- [ ] 18.Spring Security 实现分布式认证授权 - 搭建网关工程
-- [ ] 19.Spring Security 实现分布式认证授权 - 网关资源服务配置
-- [ ] 20.Spring Security 实现分布式认证授权 - 转发明文 token 给微服务
-- [ ] 21.Spring Security 实现分布式认证授权 - 微服务解析令牌并鉴权
-- [ ] 22.Spring Security 实现分布式认证授权 - 集成测试
-- [ ] 23.Spring Security 实现分布式认证授权 - 扩展用户信息
-- [ ] 24.课程总结
-
-
-> 下面 spring security 先 pass
-
-SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版教程。让你轻松驾驭安全框架【从入门到精通】java 权限管理
-[SpringSecurity安全框架精讲课程+JWT+SpringSecurityOauth2-完整版教程.让你轻松驾驭安全框架【从入门到精通】java权限管理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1NX4y1A7ub/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- 先 pass
-
-
-圖靈羅蘭 B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程  16 集，有一些30-40min
-[B站讲的最好的Spring Security框架及OAuth2.0协议超详细教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [x] [9.OAuth2.0协议\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=9)
-- 說的還好，講解不夠細緻。
-- 講話會頓，加速理解會扣分。
-
-圖靈羅蘭 B 站讲的最好的保姆级 OAuth2.0 实战及 SpringSecurity 的整合应用
-[8. security\_5\_分布式认证方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wqshejEWP?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=8)
-
-圖靈羅蘭 这可能是 B 站讲的最透彻的 OAuth2.0 实战讲解及 SpringSecurity 的整合应用（附完整版 PDF）
-[这可能是B站讲的最透彻的OAuth2.0实战讲解及SpringSecurity的整合应用（附完整版PDF）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yq4y197sP/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-
-圖靈羅蘭 Java 进阶 Spring Security OAuth2.0 协议安全框架源码剖析教程
-[Java进阶Spring Security OAuth2.0协议安全框架源码剖析教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nq4y1W7Ph?vd_source=c1191139db7aee736d31e75ebc6029d0&spm_id_from=333.788.videopod.episodes)
 
 
 # 架構相關
@@ -2982,7 +3356,7 @@ jvm 案例分析一
  - tomcat 性能优化（中）- tomcat 性能优化（上）
  性能优化之 mysql 介绍二  性能优化之 mysql 介绍一 
  性能优化之 mysql 优化二 
- 性能优化之 mysql 优化一 :
+ 性能优化之 mysql 优化一 
 
 
 
@@ -2998,8 +3372,6 @@ jvm 案例分析一
 
 - [尚硅谷2025最新SpringCloud教程，springcloud从入门到大牛\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UJc2ezEFU/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [尚硅谷SpringCloud教程，springcloud从入门到大牛\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-
-
 - [rabbitMQ [尚硅谷RabbitMQ教程丨快速掌握MQ消息中间件rabbitmq\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1cb4y1o7zz/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [【韩顺平】尚硅谷Netty视频教程 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJH02M10mFnBW0yPRnLmRSMo&si=Kp7JNDDTSZQnDePV)
 - [(843) 001 尚硅谷 Netty核心技术及源码剖析 课程说明和要求 - YouTube](https://www.youtube.com/watch?v=HY4lLEboz8U&list=PLmOn9nNkQxJH02M10mFnBW0yPRnLmRSMo)
@@ -3022,7 +3394,6 @@ jvm 案例分析一
 - [乐尚代驾 微信小程序+最新技术栈，java微服务项目](https://www.bilibili.com/video/BV1nW421R7qJ/?spm_id_from=333.788.comment.all.click)
 - [尚融宝 Java微服务分布式金融项目 428集](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
 - [谷粒商城项目 408集对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
-
 
 
 #  MyBatis
@@ -3288,3 +3659,27 @@ sprint boot
 
 
 
+
+
+
+# 覺得還好可以先  pass
+
+SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版教程。让你轻松驾驭安全框架【从入门到精通】java 权限管理
+[SpringSecurity安全框架精讲课程+JWT+SpringSecurityOauth2-完整版教程.让你轻松驾驭安全框架【从入门到精通】java权限管理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1NX4y1A7ub/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- 先 pass
+
+
+圖靈羅蘭 B 站讲的最好的 Spring Security 框架及 OAuth2.0 协议超详细教程  16 集，有一些30-40min
+[B站讲的最好的Spring Security框架及OAuth2.0协议超详细教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [x] [9.OAuth2.0协议\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1P8411B7ty?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=9)
+- 說的還好，講解不夠細緻。
+- 講話會頓，加速理解會扣分。
+
+圖靈羅蘭 B 站讲的最好的保姆级 OAuth2.0 实战及 SpringSecurity 的整合应用
+[8. security\_5\_分布式认证方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wqshejEWP?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=8)
+
+圖靈羅蘭 这可能是 B 站讲的最透彻的 OAuth2.0 实战讲解及 SpringSecurity 的整合应用（附完整版 PDF）
+[这可能是B站讲的最透彻的OAuth2.0实战讲解及SpringSecurity的整合应用（附完整版PDF）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yq4y197sP/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+圖靈羅蘭 Java 进阶 Spring Security OAuth2.0 协议安全框架源码剖析教程
+[Java进阶Spring Security OAuth2.0协议安全框架源码剖析教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nq4y1W7Ph?vd_source=c1191139db7aee736d31e75ebc6029d0&spm_id_from=333.788.videopod.episodes)

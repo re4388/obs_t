@@ -2,19 +2,6 @@
 
 
 
-## SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc
-- yt: [(843) 01 尚硅谷 SpringMVC 课程介绍 - YouTube](https://www.youtube.com/watch?v=pS5HrZuvXLc&list=PLmOn9nNkQxJE3V_Eev79ao-g3a6BplSQG)
-	- bilibili: [【尚硅谷】SpringMVC教程丨一套快速上手spring mvc\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ry4y1574R/?spm_id_from=333.788.comment.all.click)
-- 筆記：[LearningNotes/K8S at master · moxi624/LearningNotes · GitHub](https://github.com/moxi624/LearningNotes/tree/master/K8S)
-
-
-
-
-
-
-
-
-
 
 
 
@@ -128,11 +115,6 @@
 [[新手工程師教育 on Spring Boot]]
 
 
-- [x] [誤打誤撞學了Spring Boot 還當了後端工程師 :: 2021 iThome 鐵人賽](https://ithelp.ithome.com.tw/users/20140728/ironman/4245)
-	- [x] [Day 24 - Spring Security (一) 基本概念與流程 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10279271)
-	- [x] [Day 25 - Spring Security (二) UserDetailsService - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280133)
-	- [x] [Day 26 - Spring Security (三) DaoAuthenticationProvider - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280353)
-	- [x] [Day 27 - Spring Security (四) JWT - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280355)
-	- [x] [Day 28 - Spring Security (五) JwtAuthenticationProvider - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280356)
+
 
 
