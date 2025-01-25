@@ -187,12 +187,18 @@ try (Scanner scanner = new Scanner(new File("test.txt"))) {
 通过使用分号分隔，可以在 `try-with-resources` 块中声明多个资源。
 
 ```java
-try (BufferedInputStream bin = new BufferedInputStream(new FileInputStream(new File("test.txt")));
-     BufferedOutputStream bout = new BufferedOutputStream(new FileOutputStream(new File("out.txt")))) {
+try (
+	BufferedInputStream bin = new BufferedInputStream(
+		new FileInputStream(new File("test.txt")));
+    BufferedOutputStream bout = new BufferedOutputStream(
+	    new FileOutputStream(new File("out.txt")))
+    ) {
+     
     int b;
     while ((b = bin.read()) != -1) {
         bout.write(b);
     }
+    
 }
 catch (IOException e) {
     e.printStackTrace();
