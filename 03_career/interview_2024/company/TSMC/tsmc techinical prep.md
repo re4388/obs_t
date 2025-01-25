@@ -10,27 +10,113 @@
 #  文字類
 
 ## Java
-- [[Java 基础常见面试题总结 (上)]]
-- [[Java 基础常见面试题总结 (中)]]
-- [[Java 基础常见面试题总结 (下)]]
-- [[Java 值传递详解]]
-- [[Java 序列化详解]]
-- [[eded]]
+
+- [x] [[Effective Java 3rd]] 
+- [x] [[宋红康 2023 版，java 入门自学]]
+
+基礎
+- [ ] [[Java 基础常见面试题总结 (上)]]
+- [ ] [[Java 基础常见面试题总结 (中)]]
+- [ ] [[Java 基础常见面试题总结 (下)]]
+- [ ] [[Java 值传递详解]]
+- [ ] [[Java 序列化详解]]
+- [ ] [[Java 反射机制详解]]
+- [ ] [[Java 代理模式详解]]
+- [ ] [[BigDecimal 详解]]
+- [ ] [[Java 魔法类 Unsafe 详解]]
+- [ ] [[Java SPI 机制详解]]
+- [ ] [[Java 语法糖详解]]
+- [ ] [[Java 集合常见面试题总结 (上)]]
+- [ ] [[Java 集合常见面试题总结 (下)]]
+- [ ] [[Java 集合使用注意事项总结]]
+
+源碼解讀
+[[ArrayList 源码分析]]
+[[LinkedList 源码分析]]
+[[HashMap 源码分析]]
+[[ConcurrentHashMap 源码分析]]
+[[LinkedHashMap 源码分析]]
+[[CopyOnWriteArrayList 源码分析]]
+[[ArrayBlockingQueue 源码分析]]
+[[DelayQueue 源码分析]]
+
+併發 
+- [ ] [[Java 并发常见面试题总结（上）]]
+- [ ] [[Java 并发常见面试题总结（中）]]
+- [ ] [[Java 并发常见面试题总结（下）]]
+- [ ] [[乐观锁和悲观锁详解]]
+- [ ] [[CAS 详解]]
+- [ ] [[JMM（Java 内存模型）详解]]
+- [ ] [[Java 线程池详解]]
+- [ ] [[Java 线程池最佳实践]]
+- [ ] [[Java 常见并发容器总结]]
+- [ ] [[AQS 详解]]
+- [ ] [[Atomic 原子类总结]]
+- [ ] [[ThreadLocal 详解]]
+- [ ] [[CompletableFuture 详解]]
+- [ ] [[虚拟线程常见问题总结]]
+- [ ] [[Java IO 基础知识总结]]
+- [ ] [[Java IO 设计模式总结]]
+- [ ] [[Java IO 模型详解]]
+- [ ] [[Java NIO 核心知识总结]]
+
+JVM
+- [ ] [[Java 内存区域详解（重点）]]
+- [ ] [[JVM 垃圾回收详解（重点）]]
+- [ ] [[类文件结构详解]]
+- [ ] [[类加载过程详解]]
+- [ ] [[类加载器详解（重点）]]
+- [ ] [[最重要的JVM 参数总结]]
+- [ ] [[JDK 监控和故障处理工具总结]]
+- [ ] [[JVM线上问题排查和性能调优案例]]
+
+
+Java 版本特性 
+ [[Java8 新特性实战]]
+ [[《Java8 指南》中文翻译]]
+[[Java 9 新特性概览]]
+[[Java 10 新特性概览]]
+[[Java 11 新特性概览]]
+[[Java 12 & 13 新特性概览]]
+[[Java 14 & 15 新特性概览]]
+[[Java 16 新特性概览]]
+[[Java 17 新特性概览（重要）]]
+[[Java 18 新特性概览]]
+[[Java 19 新特性概览]]
+[[Java 20 新特性概览]]
+[[Java 21 新特性概览 (重要)]]
+[[Java 22 & 23 新特性概览]]
+
+- [ ] [[Maven 核心概念总结]]
+- [ ] [[Maven 最佳实践]]
 
 
 
-- [[宋红康 2023 版，java 入门自学]]
-- [[Effective Java 3rd]] 
+- [ ] [awesome-idea: IntelliJ IDEA 使用指南 | 必备插件推荐 | 插件开发入门 | 重构小技巧 | 源码阅读技巧。](https://gitee.com/SnailClimb/awesome-idea#/SnailClimb/awesome-idea/blob/main/./docs/tips/source-code-reading-skills.md)
+---
 
 
 ## spring
-- [ ] [GitHub - wuyouzhuguli/SpringAll](https://github.com/wuyouzhuguli/SpringAll?tab=readme-ov-file)
-- [ ] [GitHub - yudaocode/SpringBoot-Labs](https://github.com/yudaocode/SpringBoot-Labs?tab=readme-ov-file)  題取碼:coke
-- [ ] [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
-- [ ] [[Spring 面试题]]
-- [ ] [ityouknow/spring-boot-examples](https://github.com/ityouknow/spring-boot-examples?tab=readme-ov-file)
-- [ ] [GitHub - ZHENFENG13/spring-boot-projects: :fire:](https://github.com/ZHENFENG13/spring-boot-projects)
-- [ ] [GitHub - tengj/SpringBootDemo: Spring Boot学习系列](https://github.com/tengj/SpringBootDemo)
+- [ ] [[Spring 常见面试题总结]]
+- [ ] [[Spring&SpringBoot 常用注解总结]]
+- [ ] [[IoC & AOP 详解（快速搞懂）]]
+- [ ] [[Spring 事务详解]]
+- [ ] [[Spring 中的设计模式详解]]
+- [ ] [[SpringBoot 自动装配原理详解]]
+
+- [ ] [[分布式锁介绍]]
+- [ ] [[分布式锁常见实现方案总结]]
+
+
+
+
+- [GitHub - wuyouzhuguli/SpringAll](https://github.com/wuyouzhuguli/SpringAll?tab=readme-ov-file)
+- [GitHub - yudaocode/SpringBoot-Labs](https://github.com/yudaocode/SpringBoot-Labs?tab=readme-ov-file)  題取碼:coke
+- [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
+- [[Spring 面试题]]
+- [ityouknow/spring-boot-examples](https://github.com/ityouknow/spring-boot-examples?tab=readme-ov-file)
+- [GitHub - ZHENFENG13/spring-boot-projects: :fire:](https://github.com/ZHENFENG13/spring-boot-projects)
+- [GitHub - tengj/SpringBootDemo: Spring Boot学习系列](https://github.com/tengj/SpringBootDemo)
 
 
 ## 綜合
