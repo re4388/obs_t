@@ -95,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5
+    "width": 262.5
   },
   "right": {
     "id": "a138ca7a8d2ed5fa",
@@ -184,20 +184,25 @@
   },
   "active": "322c2b365e7d2b53",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/eded.md",
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/Java 序列化详解.md",
+    "100_attachements/46877453337813487.png",
+    "100_attachements/36873152044007185.png",
+    "100_attachements/3e1015c5f438a639764b9793381caf41_MD5.png",
+    "100_attachements/4bd8f6fda5260b553530f1ce6303fd30_MD5.png",
+    "03_career/interview_2024/company/TSMC/Java 序列化详解.md.edtz",
+    "03_career/interview_2024/company/TSMC/Java 值传递详解.md",
+    "100_attachements/9affacd70c27310d0a6b7730877967fc_MD5.png",
+    "100_attachements/d2877bc3b9b0797ea771c1750f5726fe_MD5.png",
+    "100_attachements/add57a09513d8fa6dbf07581076ad324_MD5.png",
+    "03_career/interview_2024/company/TSMC/Java 值传递详解.md.edtz",
+    "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (中).md",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (下).md",
     "100_attachements/88776535384867636.png",
     "100_attachements/18720070457037664.png",
     "100_attachements/6452258885526141.png",
-    "100_attachements/072465047231035617.png",
-    "100_attachements/12010320667737851.png",
-    "100_attachements/73732736205063738.png",
-    "100_attachements/378984f387cc7b09f726009ee176ed41_MD5.jpg",
-    "100_attachements/94155c060783fd04e42583bf761a3b36_MD5.png",
-    "100_attachements/418cdff33c81d851846eaa0977bb1c35_MD5.png",
-    "100_attachements/5078ddeef15002119a81266437336ca0_MD5.png",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (下).md.edtz",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (中).md",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (中).md.edtz",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (上).md",
     "30_程式語言/Spring.md",
@@ -220,14 +225,10 @@
     "04_family/2024 wife 生日餐廳安排.md",
     "04_family/2024 mother 1130.md",
     "30_程式語言/尚硅谷-juc-高并发 note.md",
-    "30_程式語言/Effective Java 3rd.md",
-    "03_career/interview_2024/company/TSMC/Spring 面试题.md",
     "03_career/interview_2024/company/TSMC/spring solve circular dependency.md.edtz",
     "30_程式語言/新手工程師教育 on Spring Boot.md.edtz",
     "30_程式語言/Item 90 考虑以 \"序列化代理\" 代替 \"序列化实例\".md.edtz",
     "30_程式語言/Item 83 明智地使用\"延迟初始化\".md.edtz",
-    "30_程式語言/Java 的動態代理 Proxy.newProxyInstance().md.edtz",
-    "conflict-files-obsidian-git.md.edtz",
-    "03_career/interview_2024/company/TSMC/MySQL 面試題.md.edtz"
+    "30_程式語言/Java 的動態代理 Proxy.newProxyInstance().md.edtz"
   ]
 }
