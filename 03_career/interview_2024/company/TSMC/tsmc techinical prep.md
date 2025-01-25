@@ -41,6 +41,10 @@
 
 # DONE and ING
 
+
+
+
+
 ## Effective Java
 - [x] [[Effective Java 3rd]] 
 
@@ -292,8 +296,6 @@ Spring Framework 中文文档PDF
 	- [Spring6《学习笔记(22版尚硅谷)》-CSDN博客](https://blog.csdn.net/weixin_44981126/article/details/130967125)
 	- [Spring | 友人的编程指南](https://www.codermast.com/spring-series/spring/)
 		- [GitHub - re4388/CoderMast-Notes](https://github.com/re4388/CoderMast-Notes)
-
-
 
 
 
@@ -2917,6 +2919,13 @@ jvm 案例分析一
 
 ## 面試
 - [ ] [89 2024版 Java架构师面试真题，让你面试少走99%弯路【对标阿里P6 P7附80万字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
+
+
+
+
 
 
 dd what is the difference between what is the difference between 
