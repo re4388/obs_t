@@ -788,7 +788,7 @@ public class ConstantVariableExample {
 }
 ```
 
-### [字符型常量和字符串常量的区别？](https://javaguide.cn/java/basis/java-basic-questions-01.html#%E5%AD%97%E7%AC%A6%E5%9E%8B%E5%B8%B8%E9%87%8F%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB)
+### [字符型常量和字符串常量的区别？](https://javaguide.cn/java/basis/java-basic-questions-01.html#%E5%AD%97%E7%AC%A6%E5%9E%8B%E5%B8%B8%E9%87%8F%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB) char vs string
 
 - **形式** : 字符常量是单引号引起的一个字符，字符串常量是双引号引起的 0 个或若干个字符。
 - **含义** : 字符常量相当于一个整型值 (ASCII 值), 可以参加表达式运算；字符串常量代表一个地址值 (该字符串在内存中存放位置)。
