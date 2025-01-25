@@ -49,7 +49,7 @@
  
 
 ## 尚硅谷-juc-高并发
-- [x] [[尚硅谷-juc-高并发]]
+- [x] [[尚硅谷-juc-高并发 note]]
 
 ## Java 入門
 - [x] [[宋红康 2023 版，java 入门自学]]
@@ -100,6 +100,13 @@
 40 - 尚硅谷 - Java NIO - 聊天室综合案例 - 服务端编写（4）
 41 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（1）
 42 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（2）
+
+- Java NIO
+	- [ ] [Java NIO 核心知识总结 | JavaGuide](https://javaguide.cn/java/io/nio-basis.html)
+	- [ ] [Java NIO 流 - HackMD](https://hackmd.io/@AlienHackMd/HyM5BOR1a)
+	- [ ] [Java NIO 浅析 - 美团技术团队](https://tech.meituan.com/2016/11/04/nio.html)
+	- [ ] [Java NIO - 基础详解 | Java 全栈知识体系](https://pdai.tech/md/java/io/java-io-nio.html)
+
 
 ## 尚硅谷 SpringBoot3 零基础教程
 - [001、SpringBoot3 课程简介 - YouTube](https://www.youtube.com/watch?v=TAgd4Xbqudc&list=PLmOn9nNkQxJEeIH75s5pdTUnCo9-xOc7c)
@@ -285,6 +292,9 @@ Spring Framework 中文文档PDF
 	- [Spring6《学习笔记(22版尚硅谷)》-CSDN博客](https://blog.csdn.net/weixin_44981126/article/details/130967125)
 	- [Spring | 友人的编程指南](https://www.codermast.com/spring-series/spring/)
 		- [GitHub - re4388/CoderMast-Notes](https://github.com/re4388/CoderMast-Notes)
+
+
+
 
 
 
@@ -1560,6 +1570,313 @@ Spring Framework 中文文档PDF
 		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
 		- [JavaNote/Prog.md at main · Seazean/JavaNote · GitHub](https://github.com/Seazean/JavaNote/blob/main/Prog.md)
 
+01.001 - 为什么学习并发
+01.002 - 课程组织和特色
+01.003 - 预备知识
+02.001 - 本章内容
+02.002 - 进程线程概念
+02.003 - 并行并发概念
+02.004 - 线程应用 - 异步调用
+02.005 - 线程应用 - 提升效率
+02.006 - 线程应用 - 提升效率 - 验证
+02.007 - 线程应用 - 提升效率 - 小结
+03.001 - 创建线程 - 方法 1
+03.002 - 创建线程 - 方法 2
+03.003 - 创建线程 - lambda 简化
+03.004 - 创建线程 - 方法 1,2 - 原理
+03.005 - 创建线程 - 方法 3
+03.006 - 线程运行 - 现象
+03.007 - 线程运行 - 查看和杀死 - windows
+03.008 - 线程运行 - 查看和杀死 - linux
+03.009 - 线程运行 - jconsole
+03.010 - 线程运行原理 - 栈帧 debug
+03.011 - 线程运行原理 - 栈帧图解
+03.012 - 线程运行原理 - 多线程
+03.013 - 线程运行原理 - 上下文切换
+03.014 - 常见方法 - 概述
+03.015 - 常见方法 - start_vs_run
+03.016 - 常见方法 - sleep_状态
+03.017 - 常见方法 - sleep_打断
+03.018 - 常见方法 - sleep_可读性
+03.019 - 常见方法 - yield_vs_sleep
+03.020 - 常见方法 - 线程优先级
+03.021 - 常见方法 - sleep 应用
+03.022 - 常见方法 - join
+03.023 - 常见方法 - join - 同步应用
+03.024 - 常见方法 - join - 限时同步
+03.025 - 常见方法 - interrupt - 打断阻塞
+03.026 - 常见方法 - interrupt - 打断正常
+03.027 - 设计模式 - 两阶段终止 - interrupt
+03.028 - 设计模式 - 两阶段终止 - interrupt 分析
+03.029 - 设计模式 - 两阶段终止 - interrupt 实现
+03.030 - 设计模式 - 两阶段终止 - interrupt 细节
+03.031 - 常见方法 - interrupt - 打断 park
+03.032 - 常见方法 - 过时方法
+03.033 - 常见方法 - 守护线程
+03.034 - 线程状态 - 五种
+03.035 - 线程状态 - 六种
+03.036 - 线程状态 - 六种 - 演示
+03.037 - 习题 - 应用之统筹 - 分析
+03.038 - 习题 - 应用之统筹 - 实现
+03.039 - 第三章小结
+04.001 - 本章内容
+04.002 - 小故事 - 线程安全问题
+04.003 - 上下文切换 - 分析
+04.004 - 临界区与竞态条件
+04.005 - 上下文切换 - synchronized - 解决
+04.006 - 上下文切换 - synchronized - 理解
+04.007 - 上下文切换 - synchronized - 理解
+04.008 - 上下文切换 - synchronized - 思考
+04.009 - 锁对象面向对象改进
+04.010-synchronized - 加在方法上
+04.011-synchronized - 加在方法上 - 习题 1~2
+04.012-synchronized - 加在方法上 - 习题 3~4
+04.013-synchronized - 加在方法上 - 习题 5~8
+04.014 - 线程安全分析
+04.015 - 线程安全分析 - 局部变量
+04.016 - 线程安全分析 - 局部变量引用
+04.017 - 线程安全分析 - 局部变量 - 暴露引用
+04.018 - 线程安全分析 - 常见类 - 组合调用
+04.019 - 线程安全分析 - 常见类 - 不可变
+04.020 - 线程安全分析 - 实例分析 1~3
+04.021 - 线程安全分析 - 实例分析 4~7
+04.022 - 习题 - 卖票 - 读题
+04.023 - 习题 - 卖票 - 测试方法
+04.024 - 习题 - 卖票 - 解题
+04.025 - 习题 - 转账
+04.026-Monitor - 对象头
+04.027-Monitor - 工作原理
+04.028-Monitor - 工作原理 - 字节码角度
+04.029-synchronized 优化原理 - 小故事
+04.030-synchronized 优化原理 - 轻量级锁
+04.031-synchronized 优化原理 - 锁膨胀
+04.032-synchronized 优化原理 - 自旋优化
+04.033-synchronized 优化原理 - 偏向锁
+04.034-synchronized 优化原理 - 偏向锁 - 状态
+04.035-synchronized 优化原理 - 偏向锁 - 撤销
+04.036-synchronized 优化原理 - 偏向锁 - 批量重偏向
+04.037-synchronized 优化原理 - 偏向锁 - 批量撤销
+04.038-synchronized 优化原理 - 锁消除
+04.039 - 小故事 - wait¬ify
+04.040-wait¬ify - 工作原理
+04.041-wait¬ify-api-1
+04.042-wait¬ify-api-2
+04.043-wait vs sleep
+04.044-wait¬ify - 正确姿势 - step1
+04.045-wait¬ify - 正确姿势 - step2
+04.046-wait¬ify - 正确姿势 - step3~4
+04.047-wait¬ify - 正确姿势 - step5
+04.048 - 设计模式 - 保护性暂停 - 定义
+04.049 - 设计模式 - 保护性暂停 - 实现
+04.050 - 设计模式 - 保护性暂停 - 扩展 - 增加超时
+04.051 - 设计模式 - 保护性暂停 - 扩展 - 增加超时 - 测试
+04.052 - 设计模式 - join 原理
+04.053 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 分析
+04.054 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 实现
+04.055 - 设计模式 - 保护性暂停 - 扩展 - 解耦等待和生产 - 测试
+04.056 - 设计模式 - 生产者消费者 - 定义
+04.057 - 设计模式 - 生产者消费者 - 实现
+04.058 - 设计模式 - 生产者消费者 - 测试
+04.059-park&unpark - 基本使用
+04.060-park&unpark - 原理
+04.061 - 线程状态转换 - 1
+04.062 - 线程状态转换 - 2
+04.063 - 线程状态转换 - 3~4
+04.064 - 线程状态转换
+04.065 - 多把锁
+04.066 - 活跃性 - 死锁现象
+04.067 - 活跃性 - 定位死锁
+04.068 - 活跃性 - 死锁 - 哲学家就餐
+04.069 - 活跃性 - 活锁
+04.070 - 活跃性 - 饥饿
+04.071-ReentrantLock - 简介
+04.072-ReentrantLock - 可重入
+04.073-ReentrantLock - 可打断
+04.074-ReentrantLock - 锁超时
+04.075-ReentrantLock - 锁超时 - 解决哲学家就餐
+04.076-ReentrantLock - 公平锁
+04.077-ReentrantLock - 条件变量 - 简介
+04.078-ReentrantLock - 条件变量 - 使用例子
+04.079 - 设计模式 - 固定运行顺序 - wait¬ify
+04.080 - 设计模式 - 固定运行顺序 - park&unpark
+04.081 - 设计模式 - 交替输出 - wait¬ify
+04.082 - 设计模式 - 交替输出 - await&signal
+04.083 - 设计模式 - 交替输出 - park&unpark
+04.084 - 第四章小结
+05.001 - 本章内容
+05.002 - 可见性 - 问题
+05.003 - 可见性 - 解决
+05.004 - 可见性 vs 原子性
+05.005 - 设计模式 - 两阶段终止 - volatile
+05.006 - 设计模式 - 犹豫模式
+05.007 - 设计模式 - 犹豫模式 - 应用
+05.008 - 有序性 - 指令重排
+05.009 - 有序性 - 指令重排原理 - 指令并行优化
+05.010 - 有序性 - 指令重排 - 问题
+05.011 - 有序性 - 指令重排 - 验证
+05.012 - 有序性 - 指令重排 - 禁用
+05.013-volatile - 原理 - 保证可见性
+05.014-volatile - 原理 - 保证有序性
+05.015-volatile - 原理 - dcl - 简介
+05.016-volatile - 原理 - dcl - 问题分析
+05.017-volatile - 原理 - dcl - 问题纠正
+05.018-volatile - 原理 - dcl - 问题解决
+05.019-happens-before 规则
+05.020 - 习题 - balking 模式
+05.021 - 习题 - 线程安全单例 1
+05.022 - 习题 - 线程安全单例 2~4
+05.023 - 习题 - 线程安全单例 5
+05.024 - 第五章小结
+06.001 - 本章内容
+06.002 - 保护共享资源 - 加锁实现
+06.003 - 保护共享资源 - 无锁实现
+06.004-cas - 工作方式
+06.005-cas - 慢动作分析
+06.006-cas-volatile
+06.007-cas - 效率分析
+06.008-cas - 特点
+06.009 - 原子整数 - AtomicInteger
+06.010 - 原子整数 - AtomicInteger-updateAndGet
+06.011 - 原子整数 - AtomicInteger-updateAndGet 原理
+06.012 - 原子引用 - AtomicReference
+06.013 - 原子引用 - ABA 问题
+06.014 - 原子引用 - AtomicStampedReference
+06.015 - 原子引用 - AtomicMarkableReference
+06.016 - 原子数组
+06.017 - 原子数组
+06.018 - 原子更新器
+06.019 - 原子累加器
+06.020-LongAdder 原理 - cas 锁
+06.021-LongAdder 原理 - 缓存行伪共享
+06.022-LongAdder 源码 - add
+06.023-LongAdder 源码 - longAccumulate-cells 未创建
+06.024-LongAdder 源码 - longAccumulate-cell 未创建
+06.025-LongAdder 源码 - longAccumulate-cell 已创建
+06.026-LongAdder 源码 - sum
+06.027-unsafe 对象 - 获取
+06.028-unsafe 对象 - cas 相关方法
+06.029-unsafe 对象 - 模拟实现原子整数
+06.030 - 第六章小结
+07.001 - 本章内容
+07.002 - 不可变对象 - 使用
+07.003 - 不可变对象 - 设计
+07.004 - 享元模式 - 定义和体现
+07.005 - 享元模式 - 不可变线程安全辨析
+07.006 - 享元模式 - 自定义连接池 - 分析
+07.007 - 享元模式 - 自定义连接池 - 实现
+07.008 - 享元模式 - 自定义连接池 - 测试
+07.009 - 享元模式 - 自定义连接池 - 总结
+07.010-final - 原理
+07.011 - 第七章小结
+08.001 - 本章内容
+08.002 - 自定义线程池 - 阻塞队列
+08.003 - 自定义线程池 - 阻塞队列 - poll 增强
+08.004 - 自定义线程池 - 线程池 - 实现
+08.005 - 自定义线程池 - 线程池 - 任务提交 & Worker 实现
+08.006 - 自定义线程池 - 线程池 - take 死等 & poll 超时
+08.007 - 自定义线程池 - 线程池 - 当任务队列已满
+08.008 - 自定义线程池 - 阻塞队列 - offer 增强
+08.009 - 自定义线程池 - 线程池 - 拒绝策略
+08.010 - 自定义线程池 - 线程池 - 拒绝策略 - 演示
+08.011-ThreadPoolExecutor - 池状态
+08.012-ThreadPoolExecutor - 构造方法
+08.013-ThreadPoolExecutor - 构造方法
+08.014-Executors - 固定大小线程池
+08.015-Executors - 带缓冲线程池
+08.016-Executors - 单线程线程池
+08.017-ThreadPoolExecutor-submit
+08.018-ThreadPoolExecutor-invokeAll
+08.019-ThreadPoolExecutor-invokeAny
+08.020-ThreadPoolExecutor - 停止
+08.021-ThreadPoolExecutor - 停止 - 演示
+08.022 - 设计模式 - 工作线程 - 定义
+08.023 - 设计模式 - 工作线程 - 饥饿 - 现象
+08.024 - 设计模式 - 工作线程 - 饥饿 - 解决
+08.025 - 设计模式 - 工作线程 - 池大小
+08.026-Timer 的缺点
+08.027-ScheduledThreadPoolExecutor - 延时执行
+08.028-ScheduledThreadPoolExecutor - 定时执行
+08.029 - 正确处理线程池异常
+08.030 - 线程池应用 - 定时任务
+08.031 - 线程池应用 - 定时任务 - 测试
+08.032-tomcat - 线程池
+08.033-tomcat - 线程池 - 配置
+08.034-forkjoin - 概念
+08.035-forkjoin - 使用
+08.036-forkjoin - 任务拆分优化
+08.037-aqs - 概述
+08.038-aqs - 自定义锁
+08.039-aqs - 自定义锁 - 测试
+08.040-reentrantlock - 加锁成功流程
+08.041-reentrantlock - 加锁失败流程
+08.042-reentrantlock - 解锁竞争成功流程
+08.043-reentrantlock - 解锁竞争失败流程
+08.044-reentrantlock - 锁重入原理
+08.045-reentrantlock - 可打断原理
+08.046-reentrantlock - 公平锁原理
+08.047-reentrantlock - 条件变量 - await
+08.048-reentrantlock - 条件变量 - signal
+08.049-reentrantreadwritelock - 使用
+08.050-reentrantreadwritelock - 注意事项
+08.051-reentrantreadwritelock - 应用之缓存
+08.052-reentrantreadwritelock - 应用之缓存 - 问题分析
+08.053-reentrantreadwritelock - 应用之缓存 - 实现
+08.054-reentrantreadwritelock - 应用之缓存 - 补充
+08.055-reentrantreadwritelock - 原理 - t1-w.lock
+08.056-reentrantreadwritelock - 原理 - t2-r.lock
+08.057-reentrantreadwritelock - 原理 - t3-r.lock&t4-w.lock
+08.058-reentrantreadwritelock - 原理 - t1-w.unlock
+08.059-reentrantreadwritelock - 原理 - t1-w.unlock
+08.060-reentrantreadwritelock - 原理 - t2-r.unlock t3-r.unlock
+08.061-stampedlock - 作用
+08.062-stampedlock - 演示
+08.063-semaphore - 作用
+08.064-semaphore - 演示
+08.065-semaphore - 应用 - 改进数据库连接池
+08.066-semaphore - 原理 - acquire
+08.067-semaphore - 原理 - release
+08.068-countdownlatch - 简介
+08.069-countdownlatch - 改进
+08.070-countdownlatch - 应用 - 等待多线程准备完毕
+08.071-countdownlatch - 应用 - 等待多个远程调用结束
+08.072-future - 应用 - 等待多个远程调用结束
+08.073-cyclicbarrier - 问题
+08.074-cyclicbarrier - 使用
+08.075-cyclicbarrier - 注意
+08.076 - 线程安全集合类 - 概述
+08.077-concurrenthashmap - 错误用法
+08.078-concurrenthashmap-computeifabsent
+08.079-concurrenthashmap - 原理 - hashmap - 回顾
+08.080-concurrenthashmap - 原理 - hashmap - 死链
+08.081-concurrenthashmap - 原理 - hashmap - 死链
+08.082-concurrenthashmap - 原理 - hashmap - 死链
+08.083-concurrenthashmap-8 - 原理 - 属性 & 内部类 & 方法
+08.084-concurrenthashmap-8 - 原理 - 构造
+08.085-concurrenthashmap-8 - 原理 - get
+08.086-concurrenthashmap-8 - 原理 - put
+08.087-concurrenthashmap-8 - 原理 - put
+08.088-concurrenthashmap-8 - 原理 - initable
+08.089-concurrenthashmap-8 - 原理 - addcount
+08.090-concurrenthashmap-8 - 原理 - size
+08.091-concurrenthashmap-8 - 原理 - transfer
+08.092-concurrenthashmap-7 - 原理 - 结构
+08.093-concurrenthashmap-7 - 原理 - 定位 segment
+08.094-concurrenthashmap-7 - 原理 - put
+08.095-concurrenthashmap-7 - 原理 - rehash
+08.096-concurrenthashmap-7 - 原理 - rehash 补充
+08.097-concurrenthashmap-7 - 原理 - get
+08.098-concurrenthashmap-7 - 原理 - size
+08.099-linkedblockingqueue - 原理 - 入队出队
+08.100-linkedblockingqueue - 原理 - 安全分析
+08.101-linkedblockingqueue - 原理 - put
+08.102-linkedblockingqueue - 原理 - vs array
+08.103-concurrentlinkedqueue
+08.104-copyonwritearraylist
+
+
+
+
+
 
 ## 黑马程序员Java零基础视频教程
 - [ ] [黑马程序员Java零基础视频教程\_下部(Java入门，含斯坦福大学练习题+力扣算法题和大厂java面试题）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yW4y1Y7Ms/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
@@ -1620,46 +1937,46 @@ Spring Framework 中文文档PDF
 	- check source code and note /Users/re4388/project/personal/lang/java/SpringSecurity_Demo03
 	- check pdf -> see book
 
-01 - 尚硅谷 - SpringSecurity - 课程介绍
-02 - 尚硅谷 - SpringSecurity - 框架概述
-03 - 尚硅谷 - SpringSecurity - 入门案例
-04 - 尚硅谷 - SpringSecurity - 基本原理（过滤器链）
-05 - 尚硅谷 - SpringSecurity - 基本原理（过滤器加载过程）
-06 - 尚硅谷 - SpringSecurity - 基本原理（两个重要的接口）
-07 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码上）
-08 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码下）
-09 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证上）
-10 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证下）
-11 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（自定义用户登录页面）
-12 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于权限访问控制）
-13 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于角色访问控制）
-14 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（自定义 403 页面）
-15 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（注解使用）
-16 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户注销
-17 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（原理分析）
-18 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（功能实现）
-19 - 尚硅谷 - SpringSecurity-web 权限方案 - CSRF 功能
-20 - 尚硅谷 - SpringSecurity - 微服务权限方案（认证授权过程分析）
-21 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 需求说明
-22 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 数据模型介绍
-23 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 使用技术说明
-24 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 搭建项目工程
-25 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 引入项目依赖
-26 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 启动 Redis 和 Nacos
-27 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 common 工具类
-28 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 工具类
-29 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 认证过滤器
-30 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 授权过滤器
-31 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写核心配置类
-32 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 UserDetailsService
-33 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合权限管理模块
-34 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合网关和前端
-35 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 案例测试
-- [ ] 36 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解上
-- [ ] 37 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解下
-- [ ] 38 - 尚硅谷 - SpringSecurity - 源码剖析 - 权限访问流程详解
-- [ ] 39 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证信息共享详解
-40 - 尚硅谷 - SpringSecurity - 结束语
+- 01 - 尚硅谷 - SpringSecurity - 课程介绍
+- 02 - 尚硅谷 - SpringSecurity - 框架概述
+- 03 - 尚硅谷 - SpringSecurity - 入门案例
+- 04 - 尚硅谷 - SpringSecurity - 基本原理（过滤器链）
+- 05 - 尚硅谷 - SpringSecurity - 基本原理（过滤器加载过程）
+- 06 - 尚硅谷 - SpringSecurity - 基本原理（两个重要的接口）
+- 07 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码上）
+- 08 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（设置用户名密码下）
+- 09 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证上）
+- 10 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（查询数据库完成认证下）
+- 11 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户认证（自定义用户登录页面）
+- 12 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于权限访问控制）
+- 13 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（基于角色访问控制）
+- 14 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（自定义 403 页面）
+- 15 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户授权（注解使用）
+- 16 - 尚硅谷 - SpringSecurity-web 权限方案 - 用户注销
+- 17 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（原理分析）
+- 18 - 尚硅谷 - SpringSecurity-web 权限方案 - 自动登录（功能实现）
+- 19 - 尚硅谷 - SpringSecurity-web 权限方案 - CSRF 功能
+- 20 - 尚硅谷 - SpringSecurity - 微服务权限方案（认证授权过程分析）
+- 21 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 需求说明
+- 22 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 数据模型介绍
+- 23 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 使用技术说明
+- 24 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 搭建项目工程
+- 25 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 引入项目依赖
+- 26 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 启动 Redis 和 Nacos
+- 27 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 common 工具类
+- 28 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 工具类
+- 29 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 认证过滤器
+- 30 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 security 授权过滤器
+- 31 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写核心配置类
+- 32 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 编写 UserDetailsService
+- 33 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合权限管理模块
+- 34 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 整合网关和前端
+- 35 - 尚硅谷 - SpringSecurity - 微服务权限案例 - 案例测试
+- 36 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解上
+- 37 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证流程详解下
+- 38 - 尚硅谷 - SpringSecurity - 源码剖析 - 权限访问流程详解
+- 39 - 尚硅谷 - SpringSecurity - 源码剖析 - 认证信息共享详解
+- 40 - 尚硅谷 - SpringSecurity - 结束语
 
 
 
