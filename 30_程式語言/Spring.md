@@ -112,7 +112,6 @@
 - [x] [[Android Studio & Spring boot 30 天挑戰] :: 2023 iThome 鐵人賽](https://ithelp.ithome.com.tw/users/20150369/ironman/5980?page=3)
 	- [x] 21-30
 
-[[新手工程師教育 on Spring Boot]]
 
 
 

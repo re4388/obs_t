@@ -10,7 +10,16 @@
 #  文字類
 
 ## Java
-[[Java 基础常见面试题总结 (上)]]
+- [[Java 基础常见面试题总结 (上)]]
+- [[Java 基础常见面试题总结 (中)]]
+- [[Java 基础常见面试题总结 (下)]]
+- [[dede]]
+
+
+
+- [[宋红康 2023 版，java 入门自学]]
+- [[Effective Java 3rd]] 
+
 
 ## spring
 - [ ] [GitHub - wuyouzhuguli/SpringAll](https://github.com/wuyouzhuguli/SpringAll?tab=readme-ov-file)
@@ -983,10 +992,6 @@ Spring Framework 中文文档PDF
 
 # Java
 
-## Java 入門
-- [x] [[宋红康 2023 版，java 入门自学]]
-## Effective Java
-- [x] [[Effective Java 3rd]] 
 
 
 
