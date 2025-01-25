@@ -551,7 +551,8 @@ public native int hashCode();
 
 `StringBuilder` 与 `StringBuffer` 都继承自 `AbstractStringBuilder` 类，在 `AbstractStringBuilder` 中也是使用字符数组保存字符串，不过没有使用 `final` 和 `private` 关键字修饰，最关键的是这个 `AbstractStringBuilder` 类还提供了很多修改字符串的方法比如 `append` 方法。
 
-```
+```java
+
 abstract class AbstractStringBuilder implements Appendable, CharSequence {
     char[] value;
     public AbstractStringBuilder append(String str) {
@@ -565,11 +566,19 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
     }
     //...
 }
+
+
 ```
 
 **线程安全性**
 
-`String` 中的对象是不可变的，也就可以理解为常量，线程安全。`AbstractStringBuilder` 是 `StringBuilder` 与 `StringBuffer` 的公共父类，定义了一些字符串的基本操作，如 `expandCapacity`、`append`、`insert`、`indexOf` 等公共方法。`StringBuffer` 对方法加了同步锁或者对调用的方法加了同步锁，所以是线程安全的。`StringBuilder` 并没有对方法进行加同步锁，所以是非线程安全的。
+`String` 中的对象是不可变的，也就可以理解为常量，线程安全。
+
+`AbstractStringBuilder` 是 `StringBuilder` 与 `StringBuffer` 的公共父类，定义了一些字符串的基本操作，如 `expandCapacity`、`append`、`insert`、`indexOf` 等公共方法。
+
+`StringBuffer` 对方法加了同步锁或者对调用的方法加了同步锁，所以是线程安全的。
+
+`StringBuilder` 并没有对方法进行加同步锁，所以是非线程安全的。
 
 **性能**
 
@@ -585,7 +594,7 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
 
 `String` 类中使用 `final` 关键字修饰字符数组来保存字符串，~~所以 `String` 对象是不可变的。~~
 
-```
+```java
 public final class String implements java.io.Serializable, Comparable<String>, CharSequence {
     private final char value[];
   //...
@@ -603,7 +612,9 @@ public final class String implements java.io.Serializable, Comparable<String>, C
 > 
 > 补充（来自 [issue 675](https://github.com/Snailclimb/JavaGuide/issues/675)）：在 Java 9 之后，`String`、`StringBuilder` 与 `StringBuffer` 的实现改用 `byte` 数组存储字符串。
 > 
-```
+```java
+
+
  public final class String implements java.io.Serializable,Comparable<String> CharSequence {
      // @Stable 注解表示变量最多被修改一次，称为“稳定的”。
      @Stable
@@ -634,7 +645,7 @@ public final class String implements java.io.Serializable, Comparable<String>, C
 
 Java 语言本身并不支持运算符重载，“+” 和 “+=” 是专门为 String 类重载过的运算符，也是 Java 中仅有的两个重载过的运算符。
 
-```
+```java
 String str1 = "he";
 String str2 = "llo";
 String str3 = "world";
@@ -649,12 +660,16 @@ String str4 = str1 + str2 + str3;
 
 不过，在循环内使用 “+” 进行字符串的拼接的话，存在比较明显的缺陷：**编译器不会创建单个 `StringBuilder` 以复用，会导致创建过多的 `StringBuilder` 对象**。
 
-```
+```java
+
 String[] arr = {"he", "llo", "world"};
+
 String s = "";
+
 for (int i = 0; i < arr.length; i++) {
     s += arr[i];
 }
+
 System.out.println(s);
 ```
 
@@ -664,7 +679,7 @@ System.out.println(s);
 
 如果直接使用 `StringBuilder` 对象进行字符串拼接的话，就不会存在这个问题了。
 
-```
+```java
 String[] arr = {"he", "llo", "world"};
 StringBuilder s = new StringBuilder();
 for (String value : arr) {
@@ -687,12 +702,16 @@ System.out.println(s);
 
 **字符串常量池** 是 JVM 为了提升性能和减少内存消耗针对字符串（String 类）专门开辟的一块区域，主要目的是为了避免字符串的重复创建。
 
-```
+```java
 // 在字符串常量池中创建字符串对象 ”ab“
 // 将字符串对象 ”ab“ 的引用赋值给 aa
 String aa = "ab";
+
+
 // 直接返回字符串常量池中字符串对象 ”ab“，赋值给引用 bb
 String bb = "ab";
+
+
 System.out.println(aa==bb); // true
 ```
 
@@ -711,30 +730,40 @@ System.out.println(aa==bb); // true
 
 示例代码（JDK 1.8）：
 
-```
+```java
 String s1 = new String("abc");
 ```
 
 对应的字节码：
 
-```
+```java
 // 在堆内存中分配一个尚未初始化的 String 对象。
 // #2 是常量池中的一个符号引用，指向 java/lang/String 类。
 // 在类加载的解析阶段，这个符号引用会被解析成直接引用，即指向实际的 java/lang/String 类。
 0 new #2 <java/lang/String>
+
+
 // 复制栈顶的 String 对象引用，为后续的构造函数调用做准备。
 // 此时操作数栈中有两个相同的对象引用：一个用于传递给构造函数，另一个用于保持对新对象的引用，后续将其存储到局部变量表。
 3 dup
+
+
 // JVM 先检查字符串常量池中是否存在 "abc"。
 // 如果常量池中已存在 "abc"，则直接返回该字符串的引用；
 // 如果常量池中不存在 "abc"，则 JVM 会在常量池中创建该字符串字面量并返回它的引用。
 // 这个引用被压入操作数栈，用作构造函数的参数。
 4 ldc #3 <abc>
+
+
 // 调用构造方法，使用从常量池中加载的 "abc" 初始化堆中的 String 对象
 // 新的 String 对象将包含与常量池中的 "abc" 相同的内容，但它是一个独立的对象，存储于堆中。
 6 invokespecial #4 <java/lang/String.<init> : (Ljava/lang/String;)V>
+
+
 // 将堆中的 String 对象引用存储到局部变量表
 9 astore_1
+
+
 // 返回，结束方法
 10 return
 ```
@@ -749,7 +778,7 @@ String s1 = new String("abc");
 
 示例代码（JDK 1.8）：
 
-```
+```java
 // 字符串常量池中已存在字符串对象“abc”
 String s1 = "abc";
 // 下面这段代码只会在堆中创建 1 个字符串对象“abc”
@@ -773,8 +802,9 @@ String s2 = new String("abc");
 
 ### [String#intern 方法有什么作用？](https://javaguide.cn/java/basis/java-basic-questions-02.html#string-intern-%E6%96%B9%E6%B3%95%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8)
 
-`String.intern()` 是一个 `native` (本地) 方法，用来处理字符串常量池中的字符串对象引用。它的工作流程可以概括为以下两种情况：
+`String.intern()` 是一个 `native` (本地) 方法，用来处理字符串常量池中的字符串对象引用。
 
+它的工作流程可以概括为以下两种情况：
 1. **常量池中已有相同内容的字符串对象**：如果字符串常量池中已经有一个与调用 `intern()` 方法的字符串内容相同的 `String` 对象，`intern()` 方法会直接返回常量池中该对象的引用。
 2. **常量池中没有相同内容的字符串对象**：如果字符串常量池中还没有一个与调用 `intern()` 方法的字符串内容相同的对象，`intern()` 方法会将当前字符串对象的引用添加到字符串常量池中，并返回该引用。
 
@@ -785,19 +815,26 @@ String s2 = new String("abc");
 
 示例代码（JDK 1.8） :
 
-```
+```java
+
 // s1 指向字符串常量池中的 "Java" 对象
 String s1 = "Java";
+
 // s2 也指向字符串常量池中的 "Java" 对象，和 s1 是同一个对象
 String s2 = s1.intern();
+
 // 在堆中创建一个新的 "Java" 对象，s3 指向它
 String s3 = new String("Java");
+
 // s4 指向字符串常量池中的 "Java" 对象，和 s1 是同一个对象
 String s4 = s3.intern();
+
 // s1 和 s2 指向的是同一个常量池中的对象
 System.out.println(s1 == s2); // true
+
 // s3 指向堆中的对象，s4 指向常量池中的对象，所以不同
 System.out.println(s3 == s4); // false
+
 // s1 和 s4 都指向常量池中的同一个对象
 System.out.println(s1 == s4); // true
 ```
@@ -806,14 +843,18 @@ System.out.println(s1 == s4); // true
 
 先来看字符串不加 `final` 关键字拼接的情况（JDK1.8）：
 
-```
+```java
+
 String str1 = "str";
 String str2 = "ing";
 String str3 = "str" + "ing";
 String str4 = str1 + str2;
 String str5 = "string";
+
 System.out.println(str3 == str4);//false
+
 System.out.println(str3 == str5);//true
+
 System.out.println(str4 == str5);//false
 ```
 
@@ -851,7 +892,8 @@ String str4 = new StringBuilder().append(str1).append(str2).toString();
 
 示例代码：
 
-```
+```java
+
 final String str1 = "str";
 final String str2 = "ing";
 // 下面两个表达式其实是等价的
@@ -866,15 +908,20 @@ System.out.println(c == d);// true
 
 示例代码（`str2` 在运行时才能确定其值）：
 
-```
+```java
+
 final String str1 = "str";
 final String str2 = getStr();
 String c = "str" + "ing";// 常量池中的对象
 String d = str1 + str2; // 在堆上创建的新的对象
 System.out.println(c == d);// false
+
+
 public static String getStr() {
       return "ing";
 }
+
+
 ```
 
 ## [参考](https://javaguide.cn/java/basis/java-basic-questions-02.html#%E5%8F%82%E8%80%83)

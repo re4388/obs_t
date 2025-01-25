@@ -16,7 +16,7 @@
 
 基礎
 - [x] [[Java 基础常见面试题总结 (上)]]
-- [ ] [[Java 基础常见面试题总结 (中)]]
+- [x] [[Java 基础常见面试题总结 (中)]]
 - [ ] [[Java 基础常见面试题总结 (下)]]
 - [ ] [[Java 值传递详解]]
 - [ ] [[Java 序列化详解]]
@@ -106,6 +106,8 @@ Java 版本特性 
 
 - [ ] [[分布式锁介绍]]
 - [ ] [[分布式锁常见实现方案总结]]
+
+可以找更多看  via [SpringBoot 常见面试题总结 - Google 搜尋](https://www.google.com/search?q=SpringBoot+%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93&rlz=1C5CHFA_enTW1035TW1035&oq=SpringBoot+%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMgYIAhBFGDzSAQcyNDhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
 
 
 

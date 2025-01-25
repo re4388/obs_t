@@ -6,7 +6,9 @@
 
 ### [Exception 和 Error 有什么区别？](https://javaguide.cn/java/basis/java-basic-questions-03.html#exception-%E5%92%8C-error-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
 
-在 Java 中，所有的异常都有一个共同的祖先 `java.lang` 包中的 `Throwable` 类。`Throwable` 类有两个重要的子类:
+在 Java 中，所有的异常都有一个共同的祖先 `java.lang` 包中的 `Throwable` 类。
+
+`Throwable` 类有两个重要的子类:
 
 - **`Exception`** : 程序本身可以处理的异常，可以通过 `catch` 来进行捕获。`Exception` 又可以分为 Checked Exception (受检查异常，必须处理) 和 Unchecked Exception (不受检查异常，可以不处理)。
 - **`Error`**：`Error` 属于程序无法处理的错误 ，~~我们没办法通过 `catch` 来进行捕获~~不建议通过 `catch` 捕获 。例如 Java 虚拟机运行错误（`Virtual MachineError`）、虚拟机内存不够错误 (`OutOfMemoryError`)、类定义错误（`NoClassDefFoundError`）等 。这些异常发生时，Java 虚拟机（JVM）一般会选择线程终止。
@@ -52,7 +54,7 @@
 
 代码示例：
 
-```
+```java
 try {
     System.out.println("Try to do something");
     throw new RuntimeException("RuntimeException");
@@ -83,7 +85,7 @@ Finally
 
 代码示例：
 
-```
+```java
 public static void main(String[] args) {
     System.out.println(f(2));
 }
@@ -111,7 +113,7 @@ public static int f(int value) {
 
 就比如说 finally 之前虚拟机被终止运行的话，finally 中的代码就不会被执行。
 
-```
+```java
 try {
     System.out.println("Try to do something");
     throw new RuntimeException("RuntimeException");
@@ -151,7 +153,7 @@ Catch Exception -> RuntimeException
 
 Java 中类似于 `InputStream`、`OutputStream`、`Scanner`、`PrintWriter` 等的资源都需要我们调用 `close()` 方法来手动关闭，一般情况下我们都是通过 `try-catch-finally` 语句来实现这个需求，如下：
 
-```
+```java
 //读取文本文件的内容
 Scanner scanner = null;
 try {
@@ -170,7 +172,7 @@ try {
 
 使用 Java 7 之后的 `try-with-resources` 语句改造上面的代码:
 
-```
+```java
 try (Scanner scanner = new Scanner(new File("test.txt"))) {
     while (scanner.hasNext()) {
         System.out.println(scanner.nextLine());
@@ -184,7 +186,7 @@ try (Scanner scanner = new Scanner(new File("test.txt"))) {
 
 通过使用分号分隔，可以在 `try-with-resources` 块中声明多个资源。
 
-```
+```java
 try (BufferedInputStream bin = new BufferedInputStream(new FileInputStream(new File("test.txt")));
      BufferedOutputStream bout = new BufferedOutputStream(new FileOutputStream(new File("out.txt")))) {
     int b;
@@ -213,7 +215,7 @@ catch (IOException e) {
 
 编译器可以对泛型参数进行检测，并且通过泛型参数可以指定传入的对象类型。比如 `ArrayList<Person> persons = new ArrayList<Person>()` 这行代码就指明了该 `ArrayList` 对象只能传入 `Person` 对象，如果传入其他类型的对象就会报错。
 
-```
+```java
 ArrayList<E> extends AbstractList<E>
 ```
 
@@ -225,7 +227,7 @@ ArrayList<E> extends AbstractList<E>
 
 **1. 泛型类**：
 
-```
+```java
 //此处T可以随便写为任意标识，常见的如T、E、K、V等形式的参数常用于表示泛型
 //在实例化泛型类时，必须指定T的具体类型
 public class Generic<T>{
