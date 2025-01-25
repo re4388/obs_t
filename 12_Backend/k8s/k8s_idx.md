@@ -31,12 +31,4 @@ related:
 
 
 # 學習資源
-## 尚硅谷 Kubernetes课程内容介绍 - YouTube
-- yt [01 尚硅谷 Kubernetes课程内容介绍 - YouTube](https://www.youtube.com/watch?v=W3V-VgTjDjo&list=PLmOn9nNkQxJHYUm2zkuf9_7XJJT8kzAph)
-- 筆記
-	- [(转) Kubernetes | 【尚硅谷】Kubernetes（k8s）入门到实战教程丨全新升级完整版 | Zkeq の Coding 日志](https://icodeq.com/2023/dc7861e5c7bd/index.html)
-- code
-	- [LearningNotes/K8S at master · moxi624/LearningNotes · GitHub](https://github.com/moxi624/LearningNotes/tree/master/K8S)
 
-- [x] 43, 44 ingress
-- [x] 1-4 intro 

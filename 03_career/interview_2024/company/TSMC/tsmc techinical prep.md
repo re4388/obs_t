@@ -1557,16 +1557,6 @@ Spring Framework 中文文档PDF
 
 ## 黑馬 juc
 - [ ] [黑马程序员深入学习Java并发编程，JUC并发编程全套教程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV16J411h7Rd/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- [ ] why use thread 01-1 -02-07 
-	- [ ] thread create and 運行原理 02-8 ~ 03-13
-	- [ ] ...
-	- [ ]  不可變對象和自定義連接池 07 001~0011
-	- [ ] syncronized 優化原理 29-38
-	- [ ] AQS 08-037~39
-	- [ ] semaphore 08-063-08-067
-	- [ ] forjoin 08-34~36
-	- [ ] 103 cocurrentlinkedDeque
-	- [ ] 104 copyOnWriteArrayList
 	- note
 		- [JUC并发编程黑马笔记 - xiaolifc - 博客园](https://www.cnblogs.com/xiaolibiji/p/17639772.html)
 		- [JUCNotes/JUC并发编程 at main · codinglin/JUCNotes · GitHub](https://github.com/codinglin/JUCNotes/tree/main/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B)
@@ -1916,18 +1906,76 @@ Spring Framework 中文文档PDF
 
 
 ---
+## 尚硅谷 K8s
+- yt [01 尚硅谷 Kubernetes课程内容介绍 - YouTube](https://www.youtube.com/watch?v=W3V-VgTjDjo&list=PLmOn9nNkQxJHYUm2zkuf9_7XJJT8kzAph)
+- 筆記
+	- [(转) Kubernetes | 【尚硅谷】Kubernetes（k8s）入门到实战教程丨全新升级完整版 | Zkeq の Coding 日志](https://icodeq.com/2023/dc7861e5c7bd/index.html)
+- code
+	- [LearningNotes/K8S at master · moxi624/LearningNotes · GitHub](https://github.com/moxi624/LearningNotes/tree/master/K8S)
+
+- [x] 01-尚硅谷-K8s课程内容介
+- [x] 02.尚硅谷_K8s介绍和特
+- [x] 03.尚硅谷_K8s集群架构组
+- [x] 04.尚硅谷_K8s核心概
+05.尚硅谷_搭建K8s集群（平台规划和部署方式介绍
+06.尚硅谷_搭建K8s集群（kubeadm方式）-操作系统初始
+07.尚硅谷_搭建K8s集群（kubeadm方式）-部署master节
+08.尚硅谷_搭建K8s集群（kubeadm方式）-部署node节点和集群测
+09.尚硅谷_搭建K8s集群（二进制方式）-搭建步骤介
+10.尚硅谷_搭建K8s集群（二进制方式）-操作系统初始
+11.尚硅谷_搭建K8s集群（二进制方式）-生成SSL证书文
+12.尚硅谷_搭建K8s集群（二进制方式）-部署etcd集
+13.尚硅谷_搭建K8s集群（二进制方式）-为APIServer自签证
+14.尚硅谷_搭建K8s集群（二进制方式）-部署Master组
+15.尚硅谷_搭建K8s集群（二进制方式）-部署Node组件（安装Docker
+16.尚硅谷_搭建K8s集群（二进制方式）-部署Node组件（kubelet和kube-proxy
+17.尚硅谷_搭建K8s集群（二进制方式）-部署CNI网络和集群测
+18.尚硅谷_搭建K8s集群（两种搭建方式总结
+19.尚硅谷_K8s核心技术-命令行工具kubectl20.尚硅谷_K8s核心技术-资源编排（yaml）介
+21.尚硅谷_K8s核心技术-资源编排（yaml）编写方
+22.尚硅谷_K8s核心技术-Pod（概述和存在意义
+23.尚硅谷_K8s核心技术-Pod（两种实现机制
+24.尚硅谷_K8s核心技术-Pod（镜像拉取重启策略和资源限制
+25.尚硅谷_K8s核心技术-Pod（健康检查
+26.尚硅谷_K8s核心技术-Pod（调度策略）-创建Pod流
+27.尚硅谷_K8s核心技术-Pod（调度策略）-影响Pod调度（资源限制和节点选择器
+28.尚硅谷_K8s核心技术-Pod（调度策略）-影响Pod调度（节点亲和性
+29.尚硅谷_K8s核心技术-Pod（调度策略）-影响Pod调度（污点和污点容忍
+30.尚硅谷_K8s核心技术-Controller（Deployment）-概述和应用场
+31.尚硅谷_K8s核心技术-Controller（Deployment）-发布应
+32.尚硅谷_K8s核心技术-Controller（Deployment）-升级回滚和弹性伸
+33.尚硅谷_K8s核心技术-Service-概
+34.尚硅谷_K8s核心技术-Service-三种类
+35.尚硅谷_K8s核心技术-Controller（StatefulSet）-部署有状态应
+36.尚硅谷_K8s核心技术-Controller（DaemonSet）-部署守护进
+37.尚硅谷_K8s核心技术-Controller（Job和Cronjob）-一次任务和定时任
+38.尚硅谷_K8s核心技术-配置管理-Secret39.尚硅谷_K8s核心技术-配置管理-ConfigMap40.尚硅谷_K8s核心技术-集群安全机制（概述
+41.尚硅谷_K8s核心技术-集群安全机制（RBAC介绍
+42.尚硅谷_K8s核心技术-集群安全机制（RBAC实现鉴权
+- [x] 43.尚硅谷_K8s核心技术-Ingress（概述
+- [x] 44.尚硅谷_K8s核心技术-Ingress（对外暴露应用
+45.尚硅谷_K8s核心技术-Helm（引入
+46.尚硅谷_K8s核心技术-Helm（概述
+47.尚硅谷_K8s核心技术-Helm（安装和配置仓库
+48.尚硅谷_K8s核心技术-Helm（快速部署应用
+49.尚硅谷_K8s核心技术-Helm（自定义chart部署
+50.尚硅谷_K8s核心技术-Helm（chart模板使用）
+51.尚硅谷_K8s核心技术-Helm（chart模板使用）
+52.尚硅谷_K8s核心技术-持久化存储（nfs网络存储
+53.尚硅谷_K8s核心技术-持久化存储（pv和pvc
+54.尚硅谷_K8s集群资源监控-监控指标和方
+55.尚硅谷_K8s集群资源监控-搭建监控平
+56.尚硅谷_K8s集群搭建-搭建高可用集群（实现过程介绍
+57.尚硅谷_K8s集群搭建-搭建高可用集群（初始化和部署keepalived
+58.尚硅谷_K8s集群搭建-搭建高可用集群（部署haproxy和安装docker及其他组件
+59.尚硅谷_K8s集群搭建-搭建高可用集群（部署master1节点初始化
+60.尚硅谷_K8s集群搭建-搭建高可用集群（部署master2和node节点
+61.尚硅谷_K8s集群部署项目-容器交付流程介
+62.尚硅谷_K8s集群部署项目-部署Java项目（制作镜像
+63.尚硅谷_K8s集群部署项目-部署Java项目（推送镜像
+64.尚硅谷_K8s集群部署项目-部署Java项目（部署镜像暴露应用
 
 
-
-
-
-
-
-# k8s
-- [K8S：尚硅谷Kubernetes教程(K8s入门到精通)](https://www.bilibili.com/video/BV1w4411y7Go/?spm_id_from=333.788.comment.all.click)
-
-
-- [ ] TIL for those recent architecnote
 
 
 # spring security
@@ -2170,6 +2218,104 @@ SpringSecurity 安全框架精讲课程 + JWT+SpringSecurityOauth2 - 完整版�
 
 
 # 架構相關
+
+
+
+[2024版 Java架构师面试真题，让你面试少走99%弯路【对标阿里P6 P7附80万字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+实战解决大规模缓存击穿导致线上数据库压力暴增
+面试常问的缓存穿透是怎么回事
+基于 DCL 机制解决突发性热点缓存并发重建问题实战
+Redis 分布式锁解决缓存与数据库双写不一致问题实战
+大促压力暴增导致分布式锁串行争用问题优化实战
+利用多级缓存架构解决 Redis 线上集群缓存雪崩问题
+01 - 说下 JVM 中类加载器分类与核心功能
+02 - 类加载双亲委派机制是怎么回事
+03-Tomcat 底层类加载是用的双亲委派机制吗
+04 - 说下对象完整创建流程
+05 - 对象分配内存时的并发问题解决 CAS 与 TLAB 机制知道吗
+06 - 对象分配内存时的指针碰撞与空闲列表机制知道吗
+07 - 说下对象头是怎么回事
+08 - 如何计算对象占用内存大小
+09 - 对象指针压缩是怎么回事
+11 - 解释下对象栈上分配、逃逸分析与标量替换
+12 - 判断对象是否是垃圾的引用计数法有什么问题
+13-GC 底层可达性分析算法是怎么回事
+16 - 什么样的类能被回收
+17 - 解释下 JVM 内部各种垃圾收集算法
+18 - 解释下 CMS 收集器垃圾收集过程
+20-CMS 比较严重的问题并发收集阶段再次触发 Full gc 怎么处理
+21 - 解释下垃圾收集底层三色标记算法
+22 - 解释下对象漏标的处理方案增量更新与原始快照 (SATB)
+24 - 解释下 G1 收集器垃圾收集过程
+25-G1 垃圾收集器最大停顿时间是如何实现的
+26 - 内存泄露到底是怎么回事，怎么快速排查与解决
+27-GC 是什么时候都能做吗？知道 GC 安全点与安全区域是怎么回事吗？
+28 - 解释下字符串常量池
+29 - 八种基本类型包装类的常量池是如何实现的
+29_[多线程专题] 并发编程的三大特性
+30_[多线程专题] Java 线程实现的方法
+31_[多线程专题] Java 线程状态有哪些
+32_[多线程专题] sleep 方法和 wait 方法的区别
+33_[多线程专题] Java 中停止线程的方法有哪些
+34_[多线程专题] 什么是 CAS？有什么优缺点
+35_[多线程专题] 什么是伪共享？@Contended 的作用
+36_[多线程专题] Java 中引用类型有哪些
+37_[多线程专题] Java 中锁的分类有哪些？
+38_[多线程专题] ThreadLocal 内存泄露问题
+39_[多线程专题] synchronized 的实现原理
+40_[多线程专题] JDK1.6 对 synchronized 的优化
+41_[多线程专题] AQS 的实现原理
+42_[多线程专题] AQS 在唤醒节点时，为什么从后遍历
+43_[多线程专题] Lock 或 ReentrantLock 和 Synchronized 的区别
+44_[多线程专题] ReentrantReadWriteLock 的实现原理
+45_[多线程专题] java 提供了哪些线程池服务
+46_[多线程专题] 线程池的核心参数有哪些
+47_[多线程专题] 线程池的状态
+48_[多线程专题] 线程池的执行流程
+49_[多线程专题] 线程池添加工作线程的流程
+50_[多线程专题] 线程池为何要构建空任务的非核心线程
+51_[多线程专题] 线程池使用完毕为何必须 shutdown
+52_[多线程专题] 线程池的核心参数到底如何设置
+53_[多线程专题] JDK1.7 与 1.8 中 ConcurrentHashMap 的区别
+54_[多线程专题] ConcurrentHashMap 的散列算法
+55_[多线程专题] ConcurentHashMap 初始化流程
+56_[多线程专题] ConcurrentHashMap 扩容流程
+57_[多线程专题] ConcurrentHashMap 中计数器的实现
+58_[多线程专题] ConcurrentHashMap 读取数据的流程
+[分布式专题] Ribbon 初始化流程及健康管理
+[分布式专题] Ribbon 核心组件及拦截流程
+[分布式专题] RocketMQ 在分布式事务中的应用
+[分布式专题] SpringCloud 和 Dubbo 如何选择
+[分布式专题] 常见的负载均衡算法
+[分布式专题] 分布式幂等性如何设计
+[分布式专题] 分布式唯一 ID 如何设计
+[分布式专题] 分布式系统如何处理高并发
+[分布式专题] 分布式系统为什么要引入熔断
+[分布式专题] 可靠消息最终一致性方案有哪些
+[分布式专题] 认证和授权有什么区别
+[分布式专题] 熔断和降级的区别
+[分布式专题] 如何检查微服务服务划分的合理性
+[分布式专题] 如何通过 MQ 实现分布式事务
+[分布式专题] 什么是 BASE 理论
+[分布式专题] 什么是 CAP？三者为何不能同时拥有
+[分布式专题] 什么是 Seeta Saga 分布式事务模式
+[分布式专题] 什么是 TCC 补偿性事务
+[分布式专题] 什么是二阶段提交协议
+[分布式专题] 什么是固定时间窗口限流算法
+[分布式专题] 什么是滑动时间窗口算法
+[分布式专题] 什么是令牌桶限流算法
+[分布式专题] 什么是漏桶限流算法
+[分布式专题] 什么是最大努力通知方案
+[分布式专题] 说一说你对分布式事务的理解
+[分布式专题] 谈谈你对 RESTFul 风格的理解
+[分布式专题] 微服务如何进行服务划分
+[分布式专题] 微服务设计的原则有哪些
+[分布式专题] 注册中心是什么数据存储结
+
+
+
+
 2025 吃透 Java 架构师全套视频教程，15 天就能学完，让你面试少走 99% 的弯路【通俗易懂，附 80 万字面试宝典 | 保姆级别教程】
 [3.第二章 架构设计分层实现-2\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1fX63YqEgG?spm_id_from=333.788.videopod.episodes&vd_source=c1191139db7aee736d31e75ebc6029d0&p=3), [从零开始学架构\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kp4y1x7Ad/?spm_id_from=333.788.recommend_more_video.8&vd_source=c1191139db7aee736d31e75ebc6029d0)
 commet: 篇理論，講大架構 
@@ -2875,7 +3021,7 @@ jvm 案例分析一
 - [尚庭公寓：从0开始Java项目实战](https://www.bilibili.com/video/BV1At421K7gP/?spm_id_from=333.788.comment.all.click)
 - [乐尚代驾 微信小程序+最新技术栈，java微服务项目](https://www.bilibili.com/video/BV1nW421R7qJ/?spm_id_from=333.788.comment.all.click)
 - [尚融宝 Java微服务分布式金融项目 428集](https://www.bilibili.com/video/BV1VV411n7nR/?spm_id_from=333.788.comment.all.click)
-
+- [谷粒商城项目 408集对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
 
 
 
@@ -2909,7 +3055,7 @@ jvm 案例分析一
 
 
 
-# 等待整理
+# 還沒看
 
 
 - [ ] [ 84 集 李先鋒【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁 - YouTube](https://youtube.com/playlist?list=PLmOn9nNkQxJGfduuVvvZizYOA6bWvucae&si=7F576X0osUxA5iwX)
@@ -2917,30 +3063,168 @@ jvm 案例分析一
 	- 筆記 [GitHub - re4388/Lock\_Demo01: 【尚硅谷】分布式锁全家桶丨一套搞定Redis/Zookeeper/MySQL实现分布式锁](https://github.com/re4388/Lock_Demo01)
 
 
-## 面試
-- [ ] [89 2024版 Java架构师面试真题，让你面试少走99%弯路【对标阿里P6 P7附80万字面试宝典】\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV13z421R7aP/?spm_id_from=333.788.recommend_more_video.6&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
-
-
-
-
-
-
-
-dd what is the difference between what is the difference between 
 
 - [ ] [66 千锋教育java视频教程京东Java技术专家教你轻松破解Java面试题，猛搞大厂offer ！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1dY4y1Y7pC/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
 - [ ] [千锋教育Java大厂面试宝典200题（含美团、字节、阿里等真题及面试答题技巧）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1nM41147P2/?spm_id_from=333.788.comment.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+
+
+
 - [ ] [21 尚硅谷 经典 Java 面试题 第一季 (java面试精讲) - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOld5cNlUSxuVbpYLiA8acL3r)
+
+
+
 - [ ] [18 集，但每個都2.5 hr ->  2024，最好的Java架构师面试知识点 bilibili](https://www.bilibili.com/video/BV1n1421r72b?spm_id_from=333.788.recommend_more_video.0&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- [ ] 這個很有多source code 分析
+
 - [ ] [103, 2024年吃透经典Java面试题200问，7天学完，让你面试少走99%弯_bilibili](https://www.bilibili.com/video/BV1kt4y1o7QV?spm_id_from=333.788.recommend_more_video.1&vd_source=c1191139db7aee736d31e75ebc6029d0)
-- [ ] [101, MySQL面试题](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
-- [ ] [谷粒商城项目 408集对标阿里P6/P7](https://www.bilibili.com/video/BV1np4y1C7Yf/?spm_id_from=333.788.comment.all.click)
+
+
+
+
+
+- [ ] [101, 尚硅谷 MySQL 数据库面试题宝典](https://www.bilibili.com/video/BV1N24y1y7a1/?spm_id_from=333.788.comment.all.click)
+001.MySQL如何实现的索引机制
+002.InnoDB索引与MyISAM索引实现的区别是什么？
+003.一个表中如果没有创建索引，那么还会创建B+树吗？
+004.说一下B+树索引实现原理（数据结构）
+005.聚簇索引与非聚簇索引b+树实现有什么区别？
+006.说一下B+树中聚簇索引的查找（匹配）逻辑
+007.说一下B+树中非聚簇索引的查找（匹配）逻辑
+008.平衡二叉树，红黑树，B树和B+树的区别是什么？都有哪些应用场景？
+009.一个b+树中大概能存放多少条索引记录？
+010.使用B+树存储的索引crud执行效率如何？
+011.什么是自适应哈希索引？
+012.什么是2-3树2-3-4树？
+013.说一下自增主键和字符串类型主键的区别和影响
+014.使用int自增主键后最大id是10，删除id10和9，再添加一条记录，最后添加的id是几？
+015.索引的优缺点是什么？
+016.使用索引一定能提升效率吗？
+017.如果是大段文本内容，如何创建（优化）索引？
+018.什么是聚簇索引？
+019.一个表中可以有多个（非）聚簇索引吗？
+020.聚簇索引与非聚集索引的特点是什么？
+021.CRUD时聚簇索引与非聚簇索引的区别是什么？
+022.非聚簇索引为什么不存数据地址值而存储主键？
+023.什么是回表操作？
+024.什么是覆盖索引？
+025.非聚集索引一定回表查询吗
+026.为什么要回表查询？直接存储数据不可以吗？
+027.如果把一个InnoDB表的主键删掉，是不是就没有主键，就没办法进行回表查询了？
+028.什么是联合索引，组合索引，复合索引？
+029.复合索引创建时字段顺序不一样使用效果一样吗？
+030.什么是唯一索引？
+031.唯一索引是否影响性能？
+032.什么时候使用唯一索引？
+033.什么时候适合创建索引，什么时候不适合创建索引？
+034.什么是索引下推？
+035.有哪些情况会导致索引失效？
+036.为什么LIKE以%开头索引会失效？
+037.一个表有多个索引的时候，能否手动选择使用哪个索引？
+038.如何查看一个表的索引？
+039.能否查看到索引选择的逻辑？是否使用过optimizer_trace？
+040.多个索引优先级是如何匹配的？
+041.使用OrderBy时能否通过索引排序？
+042.通过索引排序内部流程是什么？
+043.什么是双路排序和单路排序
+044.groupby分组和orderby在索引使用上有什么区别？
+045.如果表中有字段为null，又被经常查询该不该给这个字段创建索引？
+046.有字段为null索引是否会失效？
+047.MySQL内部支持缓存查询吗？
+048.MySQL8为何废弃掉查询缓存？
+049.替代方案是什么？
+050.MySQL内部有哪些核心模块组成，作用是什么？
+051.说一下MySQL执行一条查询语句的内部执行过程？
+052.MySQL提示“不存在此列”是执行到哪个节点报出的？
+053.如果一张表创建了多个索引，在哪个阶段或模块进行的索引选择？
+054.MySQL支持哪些存储引擎？默认使用哪个？
+055.MySQL8.0自带哪些存储引擎？分别是做什么的？
+056.MySQL存储引擎架构了解吗？
+057.能否单独为一张表设置存储引擎？
+058.阿里、京东等大厂都有自研的存储引擎，如何开发一套自己的？
+059.MyISAM和InnoDB的区别是什么？
+060.具体说一下如何做技术选型
+061.什么是数据库事务？事务的特性是什么？
+062.什么是ACID？
+063.并发事务会有哪些问题？
+064-068题。并发事务会有哪些问题？脏读丢失修改不可重复读幻读
+069-73题.MySQL是如何避免事物并发问题的？
+074.MySQL事务隔离是如何实现的？
+075.什么是一致性非锁定读和锁定读？
+076.说一下MVCC内部细节
+077-078题.MySQL事务一致性，原子性，持久性是如何实现的？
+079-085题。表级锁和行级锁相关面试题？
+086-089题。什么是XA协议MySQLxa事务与普通事务区别是什么？2pc3pc的区别
+090.是否使用过selectforupdate？会产生哪些操作？
+091.说一下MySQL死锁的原因和处理方法
+092.MySQL会产生几种日志？
+093-095题.undologredologbinlog的作用是什么？
+096-097题.MySQL日志是否实时写入磁盘？binlog刷盘机制是如何实现的
+098-099题.redolog，undolog刷盘机制是如何实现的？数据脏页
+100.MySQL的binlog有有几种录入格式？分别有什么区别？.mp4
+101.MySQL集群同步时为什么使用binlog？优缺点是什么？
+102-105题。文件存储emoji相关面试题
+106.如何存储ip地址？
+107-110题。长文本如何存储如何设计表结构如何建立索引？等
+111-114题。日期，时间如何存取TIMESTAMP，DATETIME的区别为什么不使用字符串存储日期时间戳timestamp和int该如何选择？
+115.char与varchar的区别？如何选择？
+116.财务计算有没有出现过错乱？
+117-118题.decimal与float,double的区别是什么？如何选型？
+119-120题。预编译sql是什么好处是什么？
+121-125题.join多表关联与优化相关面试题
+126-127题。是否有过MySQL调优经验？用过哪些调优工具
+128-129题。如何监控线上环境中执行比较慢的sql？如何分析一条慢sql？
+130-132题。如何查看当前sql使用了哪个索引？EXPLAIN关键字中的重要指标有哪些？
+133.MySQL数据库cpu飙升的话你会如何分析
+134-136题。什么是分库分表？什么时候进行分库分表？有没有配合es使用经验？
+137-140题。说一下实现分库分表工具的实现思路及读写分离方案
+141-144题。视图，外键，存储过程，processlist相关面试题
+145.某个表有数千万数据，查询比较慢，如何优化？说一下思路
+146.count(列名)和count(星号)有什么区别.mp4
+147.如果有超大分页改怎么处理？
+148.MySQL服务器毫无规律的异常重启如何排查问题？
+149.MySQL线上修改表结构有哪些风险
+150.什么是MySQL多实例部署？
+
+
 
 
 - [ ] [Spring全家桶源码实战与应用全集 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcIhuJL437PdtqFr-gi0OSU)
+1:30:01
+SpringIOC 源码分析 高清 1080P
+
+1:39:28
+SpringAOP 源码分析 高清 1080P
+
+1:38:34
+SpringMVC 源码分析 高清 1080P
+
+1:32:52
+手写 spring 框架 高清 1080P
+
+1:20:18
+Spring 的 @Configuration 高清 1080P
+
+1:27:45
+Spring 源码分析之手写实现 mybatis spring 中间件 高清 1080P
+
+2:31:27
+Spring 内核源码分析与手写实现 高清 1080P
+
+1:49:34
+現正播放
+spring cloud 源码 & eureka 源码 高清 1080P
+
+2:51:08
+Mybatis 源码分析 高清 1080P
+
+1:49:04
+基于 spring cloud alibaba 分布式微服务电商系统开发实战 高清 1080P
+
+
 
 
 
@@ -2959,18 +3243,14 @@ sprint boot
 - [SpringBoot2-基础篇-黑马程序员全套视频教程 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOlcO42LgskwIt6sLKUOo-7vD)
 
 
-
-
-最後想要再 review sprint boot3
-
-
 - [ ] 挑東西看
 - full stack - spring boot + vue [尚硅谷雷神最新版SSM教程，基于AI的全新ssm框架实战\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14WtLeDEit/?spm_id_from= 333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 - [尚硅谷新版SSM框架全套视频教程， 趙偉風 Spring6+SpringBoot3最新SSM企业级开发\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1AP411s7D7/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
-- [ ] [[k8s_idx#尚硅谷 Kubernetes课程内容介绍 - YouTube]]
-	- [ ] 56-64
+
+
+
 - [ ] [[mySQL idx#宋红康】MySQL数据库（入门到高级，菜鸟到大牛]]
 	- [【宋红康】MySQL数据库（入门到高级，菜鸟到大牛）【2022】/MySQL數據庫（入門到高級，菜鳥到大牛） - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJFi4x7rZ5wpUKts3u7cDx21&si=rihU2pN3RzS8QVrj)
 	- [ ] 158 繼續往下看
@@ -2978,18 +3258,8 @@ sprint boot
 
 
 
-# 圖靈
-- [Mysql性能优化最佳实践视频图灵课堂 - YouTube](https://youtu.be/kgKmOYmZSE0?si=JzG8qS59eanpL5In)
-- [Spring Framework核心技术底层原理详解 - YouTube](https://youtu.be/4GEHzMFqvh4?si=oNsmIFAfTeEMHzLd)
-- [图灵学院官方双十一秒杀系统后端Redis高并发架构实战 - YouTube](https://youtu.be/VzB51cyvSDk?si=Hv7QpJgsh66mp5wH)
-- [超高并发下如何对Mysql事务进行优化图灵课堂诸葛老师 - YouTube](https://youtu.be/2xvkCfGeaI4?si=SWuySRgab1Sb7uMr)
-- [图灵学院官方双十一亿级流量Java并发线程池调优实战 - YouTube](https://www.youtube.com/watch?v=_sSHDnUSyWo)
-
-
-
 - [ ] [尚硅谷全新JavaWeb教程，企业主流javaweb技术栈\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
-- [ ] 看下面的專題項目
 
 - [ ] 有空看  [(完结) Java 快速掌握 Kotlin 教程 (Java 工程师必备知识)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV15N411A7P8/?spm_id_from=333.337.search-card.all.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
@@ -2999,22 +3269,22 @@ sprint boot
 
 
 
-
-
-
-
 - [[Spring#SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc]]
-- [x] SpringBoot3：尚硅谷SpringBoot零基础教程，面试&加薪必会springboot3](https://www.bilibili.com/video/BV1Es4y1q7Bf/?spm_id_from=333.788.comment.all.click)
+
+
 
 
 - [SpringCloud：尚硅谷SpringCloud教程，springcloud从入门到大牛](https://www.bilibili.com/video/BV1gW421P7RD/?spm_id_from=333.788.comment.all.click)
-- [SpringSecurity：尚硅谷Java项目SpringSecurity+OAuth2权限管理实战教程](https://www.bilibili.com/video/BV14b4y1A7Wz/?spm_id_from=333.788.comment.all.click)
+
+
+
+
 - [JavaWeb: 尚硅谷全新JavaWeb教程，企业主流javaweb技术栈](https://www.bilibili.com/video/BV1UN411x7xe/?spm_id_from=333.788.comment.all.click)
 
 
 
 
-- [virtual thread [【尚硅谷】新版JDK21，深度详解java21虚拟线程新特性\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Xg4y197DB/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
+- [尚硅谷 新版JDK21 java21虚拟线程 bilibili](https://www.bilibili.com/video/BV1Xg4y197DB/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
 
 
 
