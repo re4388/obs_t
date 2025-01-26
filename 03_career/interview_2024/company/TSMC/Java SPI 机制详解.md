@@ -37,7 +37,9 @@ SPI 将 服务接口 和具体的服务实现分离开来，将服务调用方�
 
 ## [实战演示](https://javaguide.cn/java/basis/spi.html#%E5%AE%9E%E6%88%98%E6%BC%94%E7%A4%BA)
 
-SLF4J （Simple Logging Facade for Java）是 Java 的一个日志门面（接口），其具体实现有几种，比如：Logback、Log4j、Log4j2 等等，而且还可以切换，在切换日志具体实现的时候我们是不需要更改项目代码的，只需要在 Maven 依赖里面修改一些 pom 依赖就好了。
+SLF4J （Simple Logging Facade for Java）是 Java 的一个日志门面（接口），其具体实现有几种，比如：Logback、Log4j、Log4j2 等等，而且还可以切换
+
+在切换日志具体实现的时候我们是不需要更改项目代码的，只需要在 Maven 依赖里面修改一些 pom 依赖就好了。
 
 ![[100_attachements/507cd88fda1ffff8623c898d08aee96f_MD5.png]]
 
@@ -77,7 +79,8 @@ public interface Logger {
 }
 ```
 
-接下来就是 `LoggerService` 类，这个主要是为服务使用者（调用方）提供特定功能的。这个类也是实现 Java SPI 机制的关键所在，如果存在疑惑的话可以先往后面继续看。
+接下来就是 `LoggerService` 类，这个主要是为服务使用者（调用方）提供特定功能的。
+这个类也是实现 Java SPI 机制的关键所在，如果存在疑惑的话可以先往后面继续看。
 
 ```java
 package edu.jiangxuan.up.spi;
@@ -94,13 +97,18 @@ public class LoggerService {
     private final List<Logger> loggerList;
 
     private LoggerService() {
+        
         ServiceLoader<Logger> loader = ServiceLoader.load(Logger.class);
+        
         List<Logger> list = new ArrayList<>();
+        
         for (Logger log : loader) {
             list.add(log);
         }
+        
         // LoggerList 是所有 ServiceProvider
         loggerList = list;
+        
         if (!list.isEmpty()) {
             // Logger 只取一个
             logger = list.get(0);
