@@ -29,13 +29,17 @@ Java 中最常用的语法糖主要有泛型、变长参数、条件编译、自
 
 前面提到过，从 Java 7 开始，Java 语言中的语法糖在逐渐丰富，其中一个比较重要的就是 Java 7 中 `switch` 开始支持 `String`。
 
-在开始之前先科普下，Java 中的 `switch` 自身原本就支持基本类型。比如 `int`、`char` 等。对于 `int` 类型，直接进行数值的比较。对于 `char` 类型则是比较其 ascii 码。所以，对于编译器来说，`switch` 中其实只能使用整型，任何类型的比较都要转换成整型。比如 `byte`。`short`，`char`(ascii 码是整型) 以及 `int`。
+在开始之前先科普下，Java 中的 `switch` 自身原本就支持基本类型。比如 `int`、`char` 等。
+对于 `int` 类型，直接进行数值的比较。
+对于 `char` 类型则是比较其 ascii 码。所以，对于编译器来说，`switch` 中其实只能使用整型，任何类型的比较都要转换成整型。
+比如 `byte`。`short`，`char`(ascii 码是整型) 以及 `int`。
 
 那么接下来看下 `switch` 对 `String` 的支持，有以下代码：
 
 ```java
 public class switchDemoString {
     public static void main(String[] args) {
+    
         String str = "world";
         switch (str) {
         case "hello":
@@ -86,13 +90,18 @@ public class switchDemoString
 
 ### [泛型](https://javaguide.cn/java/basis/syntactic-sugar.html#%E6%B3%9B%E5%9E%8B)
 
-我们都知道，很多语言都是支持泛型的，但是很多人不知道的是，不同的编译器对于泛型的处理方式是不同的，通常情况下，一个编译器处理泛型有两种方式：`Code specialization` 和 `Code sharing`。C++ 和 C# 是使用 `Code specialization` 的处理机制，而 Java 使用的是 `Code sharing` 的机制。
+我们都知道，很多语言都是支持泛型的，但是很多人不知道的是，不同的编译器对于泛型的处理方式是不同的
+通常情况下，一个编译器处理泛型有两种方式：`Code specialization` 和 `Code sharing`。
+C++ 和 C# 是使用 `Code specialization` ，而 Java 使用的是 `Code sharing` 。
 
-> Code sharing 方式为每个泛型类型创建唯一的字节码表示，并且将该泛型类型的实例都映射到这个唯一的字节码表示上。将多种泛型类形实例映射到唯一的字节码表示是通过类型擦除（`type erasue`）实现的。
+> Code sharing 为每个泛型类型创建唯一的字节码表示，并且将该泛型类型的实例都映射到这个唯一的字节码表示上。
+> 将多种泛型类形实例映射到唯一的字节码表示是通过类型擦除（`type erasue`）实现的。
 
 也就是说，**对于 Java 虚拟机来说，他根本不认识 `Map<String, String> map` 这样的语法。需要在编译阶段通过类型擦除的方式进行解语法糖。**
 
-类型擦除的主要过程如下：1. 将所有的泛型参数用其最左边界（最顶级的父类型）类型替换。 2. 移除所有的类型参数。
+类型擦除的主要过程如下：
+1. 将所有的泛型用其最左边界（最顶级的父类型）类型替换。 
+2. 移除所有的类型参数。
 
 以下代码：
 
@@ -143,11 +152,15 @@ public static <A extends Comparable<A>> A max(Collection<A> xs) {
 }
 ```
 
-**虚拟机中没有泛型，只有普通类和普通方法，所有泛型类的类型参数在编译时都会被擦除，泛型类并没有自己独有的 `Class` 类对象。比如并不存在 `List<String>.class` 或是 `List<Integer>.class`，而只有 `List.class`。**
+**虚拟机中没有泛型，只有普通类和普通方法，所有泛型编译时都会被擦除，泛型没有自己独有的 `Class` 类对象。比如并不存在 `List<String>.class` 或是 `List<Integer>.class`，而只有 `List.class`。**
 
 ### [自动装箱与拆箱](https://javaguide.cn/java/basis/syntactic-sugar.html#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1%E4%B8%8E%E6%8B%86%E7%AE%B1)
 
-自动装箱就是 Java 自动将原始类型值转换成对应的对象，比如将 int 的变量转换成 Integer 对象，这个过程叫做装箱，反之将 Integer 对象转换成 int 类型值，这个过程叫做拆箱。因为这里的装箱和拆箱是自动进行的非人为转换，所以就称作为自动装箱和拆箱。原始类型 byte, short, char, int, long, float, double 和 boolean 对应的封装类为 Byte, Short, Character, Integer, Long, Float, Double, Boolean。
+自动装箱就是 Java 自动将原始类型值转换成对应的对象，比如将 int 的变量转换成 Integer 对象，这个过程叫做装箱，反之将 Integer 对象转换成 int 类型值，这个过程叫做拆箱。
+
+因为这里的装箱和拆箱是自动进行的非人为转换，所以就称作为自动装箱和拆箱。
+
+原始类型 byte, short, char, int, long, float, double 和 boolean 对应的封装类为 Byte, Short, Character, Integer, Long, Float, Double, Boolean。
 
 先来看个自动装箱的代码：
 
@@ -171,8 +184,8 @@ public static void main(String args[])
 再来看个自动拆箱的代码：
 
 ```java
-public static void main(String[] args) {
-
+public static void main(String[] args) 
+{
     Integer i = 10;
     int n = i;
 }
@@ -199,10 +212,10 @@ public static void main(String args[])
 看下以下可变参数代码，其中 `print` 方法接收可变参数：
 
 ```java
-public static void main(String[] args)
-    {
+public static void main(String[] args){
+
         print("Holis", "公众号:Hollis", "博客：www.hollischuang.com", "QQ：907607222");
-    }
+}
 
 public static void print(String... strs)
 {
@@ -248,12 +261,13 @@ public enum t {
 然后我们使用反编译，看看这段代码到底是怎么实现的，反编译后代码内容如下：
 
 ```java
-public final class T extends Enum
-{
+public final class T extends Enum {
+
     private T(String s, int i)
     {
         super(s, i);
     }
+    
     public static T[] values()
     {
         T at[];
@@ -271,6 +285,7 @@ public final class T extends Enum
     public static final T SPRING;
     public static final T SUMMER;
     private static final T ENUM$VALUES[];
+    
     static
     {
         SPRING = new T("SPRING", 0);
