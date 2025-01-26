@@ -117,12 +117,16 @@ java -Xbootclasspath/a: ${path}   // 其中path为调用Unsafe相关方法的类
 ```java
 //分配新的本地空间
 public native long allocateMemory(long bytes);
+
 //重新调整内存空间的大小
 public native long reallocateMemory(long address, long bytes);
+
 //将内存设置为指定值
 public native void setMemory(Object o, long offset, long bytes, byte value);
+
 //内存拷贝
 public native void copyMemory(Object srcBase, long srcOffset,Object destBase, long destOffset,long bytes);
+
 //清除内存
 public native void freeMemory(long address);
 ```
@@ -136,17 +140,22 @@ private void memoryTest() {
     long addr3 = unsafe.reallocateMemory(addr, size * 2);
     System.out.println("addr: "+addr);
     System.out.println("addr3: "+addr3);
+    
     try {
+    
         unsafe.setMemory(null,addr ,size,(byte)1);
+        
         for (int i = 0; i < 2; i++) {
             unsafe.copyMemory(null,addr,null,addr3+size*i,4);
         }
+        
         System.out.println(unsafe.getInt(addr));
         System.out.println(unsafe.getLong(addr3));
-    }finally {
+    } finally {
         unsafe.freeMemory(addr);
         unsafe.freeMemory(addr3);
     }
+
 }
 ```
 
@@ -175,8 +184,10 @@ addr3: 2433733894944
 
 **为什么要使用堆外内存？**
 
-- 对垃圾回收停顿的改善。由于堆外内存是直接受操作系统管理而不是 JVM，所以当我们使用堆外内存时，即可保持较小的堆内内存规模。从而在 GC 时减少回收停顿对于应用的影响。
-- 提升程序 I/O 操作的性能。通常在 I/O 通信过程中，会存在堆内内存到堆外内存的数据拷贝操作，对于需要频繁进行内存间数据拷贝且生命周期较短的暂存数据，都建议存储到堆外内存。
+- 对垃圾回收停顿的改善
+	- 由于堆外内存是直接受操作系统管理而不是 JVM，所以当我们使用堆外内存时，即可保持较小的堆内内存规模。从而在 GC 时减少回收停顿对于应用的影响。
+- 提升 I/O 性能
+	- 通常在 I/O 通信过程中，会存在堆内内存到堆外内存的数据拷贝操作，对于需要频繁进行内存间数据拷贝且生命周期较短的暂存数据，都建议存储到堆外内存。
 
 #### [典型应用](https://javaguide.cn/java/basis/unsafe.html#%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8)
 
@@ -185,7 +196,9 @@ addr3: 2433733894944
 下图为 `DirectByteBuffer` 构造函数，创建 `DirectByteBuffer` 的时候，通过 `Unsafe.allocateMemory` 分配内存、`Unsafe.setMemory` 进行内存初始化，而后构建 `Cleaner` 对象用于跟踪 `DirectByteBuffer` 对象的垃圾回收，以实现当 `DirectByteBuffer` 被垃圾回收时，分配的堆外内存一起被释放。
 
 ```java
-DirectByteBuffer(int cap) {                   // package-private
+
+
+DirectByteBuffer(int cap) {  // package-private
 
     super(-1, 0, cap, cap);
     boolean pa = VM.isDirectMemoryPageAligned();
@@ -201,6 +214,8 @@ DirectByteBuffer(int cap) {                   // package-private
         Bits.unreserveMemory(size, cap);
         throw x;
     }
+
+
     // 内存初始化
     unsafe.setMemory(base, size, (byte) 0);
     if (pa && (base % ps != 0)) {
@@ -209,6 +224,7 @@ DirectByteBuffer(int cap) {                   // package-private
     } else {
         address = base;
     }
+
     // 跟踪 DirectByteBuffer 对象的垃圾回收，以实现堆外内存释放
     cleaner = Cleaner.create(this, new Deallocator(base, size, cap));
     att = null;
@@ -289,7 +305,9 @@ main thread end
 
 #### [典型应用](https://javaguide.cn/java/basis/unsafe.html#%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8-1)
 
-在 Java 8 中引入了一种锁的新机制 ——`StampedLock`，它可以看成是读写锁的一个改进版本。`StampedLock` 提供了一种乐观读锁的实现，这种乐观读锁类似于无锁的操作，完全不会阻塞写线程获取写锁，从而缓解读多写少时写线程 “饥饿” 现象。由于 `StampedLock` 提供的乐观读锁不阻塞写线程获取读锁，当线程共享变量从主内存 load 到线程工作内存时，会存在数据不一致问题。
+在 Java 8 中引入了一种锁的新机制 ——`StampedLock`，它可以看成是读写锁的一个改进版本。`StampedLock` 提供了一种乐观读锁的实现，这种乐观读锁类似于无锁的操作，完全不会阻塞写线程获取写锁，从而缓解读多写少时写线程 “饥饿” 现象。
+
+由于 `StampedLock` 提供的乐观读锁不阻塞写线程获取读锁，当线程共享变量从主内存 load 到线程工作内存时，会存在数据不一致问题。
 
 为了解决这个问题，`StampedLock` 的 `validate` 方法会通过 `Unsafe` 的 `loadFence` 方法加入一个 `load` 内存屏障。
 
@@ -317,10 +335,14 @@ public class Main {
     public static void main(String[] args) throws Exception{
         Unsafe unsafe = reflectGetUnsafe();
         assert unsafe != null;
+        
         long offset = unsafe.objectFieldOffset(Main.class.getDeclaredField("value"));
+        
         Main main = new Main();
         System.out.println("value before putInt: " + main.value);
+        
         unsafe.putInt(main, offset, 42);
+        
         System.out.println("value after putInt: " + main.value);
   System.out.println("value after putInt: " + unsafe.getInt(main, offset));
     }
@@ -349,11 +371,14 @@ value after putInt: 42
 
 **对象属性**
 
-对象成员属性的内存偏移量获取，以及字段属性值的修改，在上面的例子中我们已经测试过了。除了前面的 `putInt`、`getInt` 方法外，Unsafe 提供了全部 8 种基础数据类型以及 `Object` 的 `put` 和 `get` 方法，并且所有的 `put` 方法都可以越过访问权限，直接修改内存中的数据。阅读 openJDK 源码中的注释发现，基础数据类型和 `Object` 的读写稍有不同，基础数据类型是直接操作的属性值（`value`），而 `Object` 的操作则是基于引用值（`reference value`）。下面是 `Object` 的读写方法：
+对象成员属性的内存偏移量获取，以及字段属性值的修改，在上面的例子中我们已经测试过了。除了前面的 `putInt`、`getInt` 方法外，Unsafe 提供了全部 8 种基础数据类型以及 `Object` 的 `put` 和 `get` 方法，并且所有的 `put` 方法都可以越过访问权限，直接修改内存中的数据。
+
+阅读 openJDK 源码中的注释发现，基础数据类型和 `Object` 的读写稍有不同，基础数据类型是直接操作的属性值（`value`），而 `Object` 的操作则是基于引用值（`reference value`）。下面是 `Object` 的读写方法：
 
 ```java
 //在对象的指定偏移地址获取一个对象引用
 public native Object getObject(Object o, long offset);
+
 //在对象指定偏移地址写入一个对象引用
 public native void putObject(Object o, long offset, Object x);
 ```
@@ -363,6 +388,7 @@ public native void putObject(Object o, long offset, Object x);
 ```java
 //在对象的指定偏移地址处读取一个int值，支持volatile load语义
 public native int getIntVolatile(Object o, long offset);
+
 //在对象指定偏移地址处写入一个int，支持volatile store语义
 public native void putIntVolatile(Object o, long offset, int x);
 ```
@@ -431,17 +457,26 @@ public void objTest() throws Exception{
 `arrayBaseOffset` 与 `arrayIndexScale` 这两个方法配合起来使用，即可定位数组中每个元素在内存中的位置。
 
 ```java
-//返回数组中第一个元素的偏移地址
+// 返回数组中第一个元素的偏移地址
 public native int arrayBaseOffset(Class<?> arrayClass);
-//返回数组中一个元素占用的大小
+
+// 返回数组中一个元素占用的大小
 public native int arrayIndexScale(Class<?> arrayClass);
 ```
 
 #### [典型应用](https://javaguide.cn/java/basis/unsafe.html#%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8-3)
 
-这两个与数据操作相关的方法，在 `java.util.concurrent.atomic` 包下的 `AtomicIntegerArray`（可以实现对 `Integer` 数组中每个元素的原子性操作）中有典型的应用，如下图 `AtomicIntegerArray` 源码所示，通过 `Unsafe` 的 `arrayBaseOffset`、`arrayIndexScale` 分别获取数组首元素的偏移地址 `base` 及单个元素大小因子 `scale` 。后续相关原子性操作，均依赖于这两个值进行数组中元素的定位，如下图二所示的 `getAndAdd` 方法即通过 `checkedByteOffset` 方法获取某数组元素的偏移地址，而后通过 CAS 实现原子性操作。
+这两个与数据操作相关的方法，在 `java.util.concurrent.atomic` 包下的 `AtomicIntegerArray`（可以实现对 `Integer` 数组中每个元素的原子性操作）中有典型的应用
 
-![[100_attachements/93c5e741e66a42e33a1a5ef9fada029d_MD5.png]]
+如下图 `AtomicIntegerArray` 源码所示，通过 `Unsafe` 的 `arrayBaseOffset`、`arrayIndexScale` 分别获取数组首元素的偏移地址 `base` 及单个元素大小因子 `scale` 。后续相关原子性操作，均依赖于这两个值进行数组中元素的定位
+
+如下图二所示的 `getAndAdd` 方法即通过 `checkedByteOffset` 方法获取某数组元素的偏移地址，而后通过 CAS 实现原子性操作。
+![[Pasted image 20250126195312.png|660]]
+
+
+![[Pasted image 20250126195259.png|837]]
+
+
 
 ### [CAS 操作](https://javaguide.cn/java/basis/unsafe.html#cas-%E6%93%8D%E4%BD%9C)
 
@@ -465,7 +500,13 @@ public final native boolean compareAndSwapInt(Object o, long offset, int expecte
 public final native boolean compareAndSwapLong(Object o, long offset, long expected, long update);
 ```
 
-**什么是 CAS?** CAS 即比较并替换（Compare And Swap)，是实现并发算法时常用到的一种技术。CAS 操作包含三个操作数 —— 内存位置、预期原值及新值。执行 CAS 操作的时候，将内存位置的值与预期原值比较，如果相匹配，那么处理器会自动将该位置值更新为新值，否则，处理器不做任何操作。我们都知道，CAS 是一条 CPU 的原子指令（cmpxchg 指令），不会造成所谓的数据不一致问题，`Unsafe` 提供的 CAS 方法（如 `compareAndSwapXXX`）底层实现即为 CPU 指令 `cmpxchg` 。
+**什么是 CAS?** CAS 即比较并替换（Compare And Swap)，是实现并发算法时常用到的一种技术。
+
+CAS 操作包含三个操作数 —— 内存位置、预期原值及新值。
+
+执行 CAS 操作的时候，将内存位置的值与预期原值比较，如果相匹配，那么处理器会自动将该位置值更新为新值，否则，处理器不做任何操作。
+
+我们都知道，CAS 是一条 CPU 的原子指令（cmpxchg 指令），不会造成所谓的数据不一致问题，`Unsafe` 提供的 CAS 方法（如 `compareAndSwapXXX`）底层实现即为 CPU 指令 `cmpxchg` 。
 
 #### [典型应用](https://javaguide.cn/java/basis/unsafe.html#%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8-4)
 
@@ -478,15 +519,22 @@ public final native boolean compareAndSwapInt(Object o, long offset,int expected
 参数中 `o` 为需要更新的对象，`offset` 是对象 `o` 中整形字段的偏移量，如果这个字段的值与 `expected` 相同，则将字段的值设为 `x` 这个新值，并且此更新是不可被中断的，也就是一个原子操作。下面是一个使用 `compareAndSwapInt` 的例子：
 
 ```java
+
+// CasTest class
+
 private volatile int a;
+
 public static void main(String[] args){
-    CasTest casTest=new CasTest();
+    
+    CasTest casTest= new CasTest();
+    
     new Thread(()->{
         for (int i = 1; i < 5; i++) {
             casTest.increment(i);
             System.out.print(casTest.a+" ");
         }
     }).start();
+    
     new Thread(()->{
         for (int i = 5 ; i <10 ; i++) {
             casTest.increment(i);
@@ -518,7 +566,9 @@ private void increment(int x){
 
 ![[100_attachements/dccbe29ce01a8a1b871b06d0f3e8d7dc_MD5.png]]
 
-需要注意的是，在调用 `compareAndSwapInt` 方法后，会直接返回 `true` 或 `false` 的修改结果，因此需要我们在代码中手动添加自旋的逻辑。在 `AtomicInteger` 类的设计中，也是采用了将 `compareAndSwapInt` 的结果作为循环条件，直至修改成功才退出死循环的方式来实现的原子性的自增操作。
+需要注意的是，在调用 `compareAndSwapInt` 方法后，会直接返回 `true` 或 `false` 的修改结果，因此需要我们在代码中手动添加自旋的逻辑。
+
+在 `AtomicInteger` 类的设计中，也是采用了将 `compareAndSwapInt` 的结果作为循环条件，直至修改成功才退出死循环的方式来实现的原子性的自增操作。
 
 ### [线程调度](https://javaguide.cn/java/basis/unsafe.html#%E7%BA%BF%E7%A8%8B%E8%B0%83%E5%BA%A6)
 
@@ -529,14 +579,18 @@ private void increment(int x){
 ```java
 //取消阻塞线程
 public native void unpark(Object thread);
+
 //阻塞线程
 public native void park(boolean isAbsolute, long time);
+
 //获得对象锁（可重入锁）
 @Deprecated
 public native void monitorEnter(Object o);
+
 //释放对象锁
 @Deprecated
 public native void monitorExit(Object o);
+
 //尝试获取对象锁
 @Deprecated
 public native boolean tryMonitorEnter(Object o);
@@ -581,7 +635,9 @@ public static void unpark(Thread thread) {
 
 ```java
 public static void main(String[] args) {
-    Thread mainThread = Thread.currentThread();
+
+	Thread mainThread = Thread.currentThread();
+    
     new Thread(()->{
         try {
             TimeUnit.SECONDS.sleep(5);
@@ -592,9 +648,12 @@ public static void main(String[] args) {
         }
     }).start();
 
+
     System.out.println("park main mainThread");
     unsafe.park(false,0L);
     System.out.println("unpark mainThread success");
+
+
 }
 ```
 
@@ -621,8 +680,10 @@ unpark mainThread success
 ```java
 //获取静态属性的偏移量
 public native long staticFieldOffset(Field f);
+
 //获取静态属性的对象指针
 public native Object staticFieldBase(Field f);
+
 //判断类是否需要初始化（用于获取类的静态属性前进行检测）
 public native boolean shouldBeInitialized(Class<?> c);
 ```
@@ -630,12 +691,15 @@ public native boolean shouldBeInitialized(Class<?> c);
 创建一个包含静态属性的类，进行测试：
 
 ```java
+
 @Data
 public class User {
     public static String name="Hydra";
     int age;
 }
+
 private void staticTest() throws Exception {
+
     User user=new User();
     // 也可以用下面的语句触发类初始化
     // 1.
@@ -643,9 +707,12 @@ private void staticTest() throws Exception {
     // 2.
     // System.out.println(User.name);
     System.out.println(unsafe.shouldBeInitialized(User.class));
+    
     Field sexField = User.class.getDeclaredField("name");
+    
     long fieldOffset = unsafe.staticFieldOffset(sexField);
     Object fieldBase = unsafe.staticFieldBase(sexField);
+    
     Object object = unsafe.getObject(fieldBase, fieldOffset);
     System.out.println(object);
 }
@@ -673,18 +740,25 @@ null
 public native Class<?> defineClass(String name, byte[] b, int off, int len, ClassLoader loader,ProtectionDomain protectionDomain);
 ```
 
-在实际使用过程中，可以只传入字节数组、起始字节的下标以及读取的字节长度，默认情况下，类加载器（`ClassLoader`）和保护域（`ProtectionDomain`）来源于调用此方法的实例。下面的例子中实现了反编译生成后的 class 文件的功能：
+在实际使用过程中，可以只传入字节数组、起始字节的下标以及读取的字节长度，默认情况下，类加载器（`ClassLoader`）和保护域（`ProtectionDomain`）来源于调用此方法的实例。
 
+下面的例子中实现了反编译生成后的 class 文件的功能：
 ```java
 private static void defineTest() {
     String fileName="F:\\workspace\\unsafe-test\\target\\classes\\com\\cn\\model\\User.class";
     File file = new File(fileName);
+    
     try(FileInputStream fis = new FileInputStream(file)) {
+    
         byte[] content=new byte[(int)file.length()];
+        
         fis.read(content);
+        
         Class clazz = unsafe.defineClass(null, content, 0, content.length, null, null);
+        
         Object o = clazz.newInstance();
         Object age = clazz.getMethod("getAge").invoke(o, null);
+        
         System.out.println(age);
     } catch (Exception e) {
         e.printStackTrace();
@@ -702,11 +776,14 @@ private static void defineTest() {
 public native Class<?> defineAnonymousClass(Class<?> hostClass, byte[] data, Object[] cpPatches);
 ```
 
-使用该方法可以用来动态的创建一个匿名类，在 `Lambda` 表达式中就是使用 ASM 动态生成字节码，然后利用该方法定义实现相应的函数式接口的匿名类。在 JDK 15 发布的新特性中，在隐藏类（`Hidden classes`）一条中，指出将在未来的版本中弃用 `Unsafe` 的 `defineAnonymousClass` 方法。
+使用该方法可以用来动态的创建一个匿名类
+`Lambda` 表达式中就是使用 ASM 动态生成字节码，然后利用该方法定义实现相应的函数式接口的匿名类。
+
+在 JDK 15 发布的新特性中，在隐藏类（`Hidden classes`）一条中，指出将在未来的版本中弃用 `Unsafe` 的 `defineAnonymousClass` 方法。
 
 #### [典型应用](https://javaguide.cn/java/basis/unsafe.html#%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8-6)
 
-Lambda 表达式实现需要依赖 `Unsafe` 的 `defineAnonymousClass` 方法定义实现相应的函数式接口的匿名类。
+Lambda 表达式实现需要依赖 `Unsafe` 的 `defineAnonymousClass` 实现函数式接口的匿名类。
 
 ### [系统信息](https://javaguide.cn/java/basis/unsafe.html#%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF)
 
@@ -717,6 +794,8 @@ Lambda 表达式实现需要依赖 `Unsafe` 的 `defineAnonymousClass` 方�
 ```java
 //返回系统指针的大小。返回值为4（32位系统）或 8（64位系统）。
 public native int addressSize();
+
+
 //内存页的大小，此值为2的幂次方。
 public native int pageSize();
 ```
@@ -727,4 +806,8 @@ public native int pageSize();
 
 ## [总结](https://javaguide.cn/java/basis/unsafe.html#%E6%80%BB%E7%BB%93)
 
-在本文中，我们首先介绍了 `Unsafe` 的基本概念、工作原理，并在此基础上，对它的 API 进行了说明与实践。相信大家通过这一过程，能够发现 `Unsafe` 在某些场景下，确实能够为我们提供编程中的便利。但是回到开头的话题，在使用这些便利时，确实存在着一些安全上的隐患，在我看来，一项技术具有不安全因素并不可怕，可怕的是它在使用过程中被滥用。尽管之前有传言说会在 Java9 中移除 `Unsafe` 类，不过它还是照样已经存活到了 Java16。按照存在即合理的逻辑，只要使用得当，它还是能给我们带来不少的帮助，因此最后还是建议大家，在使用 `Unsafe` 的过程中一定要做到使用谨慎使用、避免滥用。
+在本文中，我们首先介绍了 `Unsafe` 的基本概念、工作原理，并在此基础上，对它的 API 进行了说明与实践。
+
+相信大家通过这一过程，能够发现 `Unsafe` 在某些场景下，确实能够为我们提供编程中的便利。但是回到开头的话题，在使用这些便利时，确实存在着一些安全上的隐患，在我看来，一项技术具有不安全因素并不可怕，可怕的是它在使用过程中被滥用。
+
+尽管之前有传言说会在 Java9 中移除 `Unsafe` 类，不过它还是照样已经存活到了 Java16。按照存在即合理的逻辑，只要使用得当，它还是能给我们带来不少的帮助，因此最后还是建议大家，在使用 `Unsafe` 的过程中一定要做到使用谨慎使用、避免滥用。

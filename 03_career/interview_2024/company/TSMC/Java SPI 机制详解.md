@@ -46,7 +46,7 @@ SLF4J （Simple Logging Facade for Java）是 Java 的一个日志门面（接�
 
 新建一个 Java 项目 `service-provider-interface` 目录结构如下：（注意直接新建 Java 项目就好了，不用新建 Maven 项目，Maven 项目会涉及到一些编译配置，如果有私服的话，直接 deploy 会比较方便，但是没有的话，在过程中可能会遇到一些奇怪的问题。）
 
-```
+```bash
 │  service-provider-interface.iml
 │
 ├─.idea
@@ -67,7 +67,7 @@ SLF4J （Simple Logging Facade for Java）是 Java 的一个日志门面（接�
 
 新建 `Logger` 接口，这个就是 SPI ， 服务提供者接口，后面的服务提供者就要针对这个接口进行实现。
 
-```
+```java
 package edu.jiangxuan.up.spi;
 
 public interface Logger {
@@ -78,7 +78,7 @@ public interface Logger {
 
 接下来就是 `LoggerService` 类，这个主要是为服务使用者（调用方）提供特定功能的。这个类也是实现 Java SPI 机制的关键所在，如果存在疑惑的话可以先往后面继续看。
 
-```
+```java
 package edu.jiangxuan.up.spi;
 
 import java.util.ArrayList;
@@ -131,7 +131,7 @@ public class LoggerService {
 
 新建 `Main` 类（服务使用者，调用方），启动程序查看结果。
 
-```
+```java
 package org.spi.service;
 
 public class Main {
@@ -186,7 +186,7 @@ public class Main {
 
 新建 `Logback` 类
 
-```
+```java
 package edu.jiangxuan.up.spi.service;
 
 import edu.jiangxuan.up.spi.Logger;
@@ -294,7 +294,7 @@ public final class ServiceLoader<S> implements Iterable<S>{ xxx...}
 
 下面是 `load` 方法：可以发现 `load` 方法支持两种重载后的入参；
 
-```
+```java
 public static <S> ServiceLoader<S> load(Class<S> service) {
     ClassLoader cl = Thread.currentThread().getContextClassLoader();
     return ServiceLoader.load(service, cl);
@@ -326,7 +326,7 @@ public void reload() {
 
 `ServiceLoader` 实现了 `Iterable` 接口的方法后，具有了迭代的能力，在这个 `iterator` 方法被调用时，首先会在 `ServiceLoader` 的 `Provider` 缓存中进行查找，如果缓存中没有命中那么则在 `LazyIterator` 中进行查找。
 
-```
+```java
 
 public Iterator<S> iterator() {
     return new Iterator<S>() {
@@ -356,7 +356,7 @@ public Iterator<S> iterator() {
 
 在调用 `LazyIterator` 时，具体实现如下：
 
-```
+```java
 
 public boolean hasNext() {
     if (acc == null) {
@@ -446,7 +446,7 @@ private S nextService() {
 
 我先把代码贴出来：
 
-```
+```java
 package edu.jiangxuan.up.service;
 
 import java.io.BufferedReader;

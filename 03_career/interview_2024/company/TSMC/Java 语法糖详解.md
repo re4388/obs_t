@@ -33,7 +33,7 @@ Java 中最常用的语法糖主要有泛型、变长参数、条件编译、自
 
 那么接下来看下 `switch` 对 `String` 的支持，有以下代码：
 
-```
+```java
 public class switchDemoString {
     public static void main(String[] args) {
         String str = "world";
@@ -53,7 +53,7 @@ public class switchDemoString {
 
 反编译后内容如下：
 
-```
+```java
 public class switchDemoString
 {
     public switchDemoString()
@@ -96,7 +96,7 @@ public class switchDemoString
 
 以下代码：
 
-```
+```java
 Map<String, String> map = new HashMap<String, String>();
 map.put("name", "hollis");
 map.put("wechat", "Hollis");
@@ -105,7 +105,7 @@ map.put("blog", "www.hollischuang.com");
 
 解语法糖之后会变成：
 
-```
+```java
 Map map = new HashMap();
 map.put("name", "hollis");
 map.put("wechat", "Hollis");
@@ -114,7 +114,7 @@ map.put("blog", "www.hollischuang.com");
 
 以下代码：
 
-```
+```java
 public static <A extends Comparable<A>> A max(Collection<A> xs) {
     Iterator<A> xi = xs.iterator();
     A w = xi.next();
@@ -129,7 +129,7 @@ public static <A extends Comparable<A>> A max(Collection<A> xs) {
 
 类型擦除后会变成：
 
-```
+```java
  public static Comparable max(Collection xs){
     Iterator xi = xs.iterator();
     Comparable w = (Comparable)xi.next();
@@ -151,7 +151,7 @@ public static <A extends Comparable<A>> A max(Collection<A> xs) {
 
 先来看个自动装箱的代码：
 
-```
+```java
  public static void main(String[] args) {
     int i = 10;
     Integer n = i;
@@ -160,7 +160,7 @@ public static <A extends Comparable<A>> A max(Collection<A> xs) {
 
 反编译后代码如下:
 
-```
+```java
 public static void main(String args[])
 {
     int i = 10;
@@ -170,7 +170,7 @@ public static void main(String args[])
 
 再来看个自动拆箱的代码：
 
-```
+```java
 public static void main(String[] args) {
 
     Integer i = 10;
@@ -180,7 +180,7 @@ public static void main(String[] args) {
 
 反编译后代码如下：
 
-```
+```java
 public static void main(String args[])
 {
     Integer i = Integer.valueOf(10);
@@ -198,7 +198,7 @@ public static void main(String args[])
 
 看下以下可变参数代码，其中 `print` 方法接收可变参数：
 
-```
+```java
 public static void main(String[] args)
     {
         print("Holis", "公众号:Hollis", "博客：www.hollischuang.com", "QQ：907607222");
@@ -215,7 +215,7 @@ public static void print(String... strs)
 
 反编译后代码：
 
-```
+```java
  public static void main(String args[])
 {
     print(new String[] {
@@ -239,7 +239,7 @@ Java SE5 提供了一种新的类型 - Java 的枚举类型，关键字 `enum`�
 
 要想看源码，首先得有一个类吧，那么枚举类型到底是什么类呢？是 `enum` 吗？答案很明显不是，`enum` 就和 `class` 一样，只是一个关键字，他并不是一个类，那么枚举是由什么类维护的呢，我们简单的写一个枚举：
 
-```
+```java
 public enum t {
     SPRING,SUMMER;
 }
@@ -247,7 +247,7 @@ public enum t {
 
 然后我们使用反编译，看看这段代码到底是怎么实现的，反编译后代码内容如下：
 
-```
+```java
 public final class T extends Enum
 {
     private T(String s, int i)
@@ -292,7 +292,7 @@ public final class T extends Enum
 
 **内部类之所以也是语法糖，是因为它仅仅是一个编译时的概念，`outer.java` 里面定义了一个内部类 `inner`，一旦编译成功，就会生成两个完全不同的`.class` 文件了，分别是 `outer.class` 和 `outer$inner.class`。所以内部类的名字完全可以和它的外部类名字相同。**
 
-```
+```java
 public class OutterClass {
     private String userName;
 
@@ -324,7 +324,7 @@ public class OutterClass {
 
 以上代码编译后会生成两个 class 文件：`OutterClass$InnerClass.class`、`OutterClass.class` 。当我们尝试对 `OutterClass.class` 文件进行反编译的时候，命令行会打印以下内容：`Parsing OutterClass.class...Parsing inner class OutterClass$InnerClass.class... Generating OutterClass.jad` 。他会把两个文件全部进行反编译，然后一起生成一个 `OutterClass.jad` 文件。文件内容如下：
 
-```
+```java
 public class OutterClass
 {
     class InnerClass
@@ -368,7 +368,7 @@ public class OutterClass
 
 我们在 InnerClass 中增加一个方法，打印外部类的 userName 属性
 
-```
+```java
 //省略其他属性
 public class OutterClass {
     private String userName;
@@ -397,7 +397,7 @@ class OutterClass$InnerClass {
 
 实际上，在编译完成之后，inner 实例内部会有指向 outer 实例的引用 `this$0`，但是简单的 `outer.name` 是无法访问 private 属性的。从反编译的结果可以看到，outer 中会有一个桥方法 `static String access$000(OutterClass)`，恰好返回 String 类型，即 userName 属性。正是通过这个方法实现内部类访问外部类私有属性。所以反编译后的 `printOut()` 方法大致如下：
 
-```
+```java
 public void printOut() {
     System.out.println("Username from OutterClass:" + OutterClass.access$000(this.this$0));
 }
@@ -409,7 +409,7 @@ public void printOut() {
 2. 静态内部类没有 `this$0` 的引用
 3. 匿名内部类、局部内部类通过复制使用局部变量，该变量初始化之后就不能被修改。以下是一个案例：
 
-```
+```java
 public class OutterClass {
     private String userName;
 
@@ -428,7 +428,7 @@ public class OutterClass {
 
 反编译后：
 
-```
+```java
 //javap命令反编译Inner的结果
 //i被复制进内部类，且为final
 class OutterClass$1Inner {
@@ -445,7 +445,7 @@ class OutterClass$1Inner {
 
 如在 C 或 CPP 中，可以通过预处理语句来实现条件编译。其实在 Java 中也可实现条件编译。我们先来看一段代码：
 
-```
+```java
 public class ConditionalCompilation {
     public static void main(String[] args) {
         final boolean DEBUG = true;
@@ -464,7 +464,7 @@ public class ConditionalCompilation {
 
 反编译后代码如下：
 
-```
+```java
 public class ConditionalCompilation
 {
 
@@ -491,7 +491,7 @@ public class ConditionalCompilation
 
 看一段包含断言的代码：
 
-```
+```java
 public class AssertTest {
     public static void main(String args[]) {
         int a = 1;
@@ -506,7 +506,7 @@ public class AssertTest {
 
 反编译后代码如下：
 
-```
+```java
 public class AssertTest {
    public AssertTest()
     {
@@ -541,7 +541,7 @@ static final boolean $assertionsDisabled = !com/hollis/suguar/AssertTest.desired
 
 比如：
 
-```
+```java
 public class Test {
     public static void main(String... args) {
         int i = 10_000;
@@ -552,7 +552,7 @@ public class Test {
 
 反编译后：
 
-```
+```java
 public class Test
 {
   public static void main(String[] args)
@@ -569,7 +569,7 @@ public class Test
 
 增强 for 循环（`for-each`）相信大家都不陌生，日常开发经常会用到的，他会比 for 循环要少写很多代码，那么这个语法糖背后是如何实现的呢？
 
-```
+```java
 public static void main(String... args) {
     String[] strs = {"Hollis", "公众号：Hollis", "博客：www.hollischuang.com"};
     for (String s : strs) {
@@ -584,7 +584,7 @@ public static void main(String... args) {
 
 反编译后代码如下：
 
-```
+```java
 public static transient void main(String args[])
 {
     String strs[] = {
@@ -614,7 +614,7 @@ Java 里，对于文件操作 IO 流、数据库连接等开销非常昂贵的�
 
 关闭资源的常用方式就是在 `finally` 块里是释放，即调用 `close` 方法。比如，我们经常会写这样的代码：
 
-```
+```java
 public static void main(String[] args) {
     BufferedReader br = null;
     try {
@@ -639,7 +639,7 @@ public static void main(String[] args) {
 
 从 Java 7 开始，jdk 提供了一种更好的方式关闭资源，使用 `try-with-resources` 语句，改写一下上面的代码，效果如下：
 
-```
+```java
 public static void main(String... args) {
     try (BufferedReader br = new BufferedReader(new FileReader("d:\\ hollischuang.xml"))) {
         String line;
@@ -654,7 +654,7 @@ public static void main(String... args) {
 
 看，这简直是一大福音啊，虽然我之前一般使用 `IOUtils` 去关闭流，并不会使用在 `finally` 中写很多代码的方式，但是这种新的语法糖看上去好像优雅很多呢。看下他的背后：
 
-```
+```java
 public static transient void main(String args[])
     {
         BufferedReader br;
@@ -714,7 +714,7 @@ public static transient void main(String args[])
 
 先来看一个简单的 lambda 表达式。遍历一个 list：
 
-```
+```java
 public static void main(String... args) {
     List<String> strList = ImmutableList.of("Hollis", "公众号：Hollis", "博客：www.hollischuang.com");
 
@@ -726,7 +726,7 @@ public static void main(String... args) {
 
 反编译后代码如下:
 
-```
+```java
 public static /* varargs */ void main(String ... args) {
     ImmutableList strList = ImmutableList.of((Object)"Hollis", (Object)"\u516c\u4f17\u53f7\uff1aHollis", (Object)"\u535a\u5ba2\uff1awww.hollischuang.com");
     strList.forEach((Consumer<String>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)V, lambda$main$0(java.lang.String ), (Ljava/lang/String;)V)());
@@ -741,7 +741,7 @@ private static /* synthetic */ void lambda$main$0(String s) {
 
 再来看一个稍微复杂一点的，先对 List 进行过滤，然后再输出：
 
-```
+```java
 public static void main(String... args) {
     List<String> strList = ImmutableList.of("Hollis", "公众号：Hollis", "博客：www.hollischuang.com");
 
@@ -753,7 +753,7 @@ public static void main(String... args) {
 
 反编译后代码如下：
 
-```
+```java
 public static /* varargs */ void main(String ... args) {
     ImmutableList strList = ImmutableList.of((Object)"Hollis", (Object)"\u516c\u4f17\u53f7\uff1aHollis", (Object)"\u535a\u5ba2\uff1awww.hollischuang.com");
     List<Object> HollisList = strList.stream().filter((Predicate<String>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)Z, lambda$main$0(java.lang.String ), (Ljava/lang/String;)Z)()).collect(Collectors.toList());
@@ -779,7 +779,7 @@ private static /* synthetic */ boolean lambda$main$0(String string) {
 
 **一、当泛型遇到重载**
 
-```
+```java
 public class GenericTypes {
 
     public static void method(List<String> list) {
@@ -800,7 +800,7 @@ public class GenericTypes {
 
 **三、当泛型内包含静态变量**
 
-```
+```java
 public class StaticTest{
     public static void main(String[] args){
         GT<Integer> gti = new GT<Integer>();
@@ -825,7 +825,7 @@ class GT<T>{
 
 **对象相等比较**
 
-```
+```java
 public static void main(String[] args) {
     Integer a = 1000;
     Integer b = 1000;
@@ -838,7 +838,7 @@ public static void main(String[] args) {
 
 输出结果：
 
-```
+```java
 a == b is false
 c == d is true
 ```
@@ -851,7 +851,7 @@ c == d is true
 
 ### [增强 for 循环](https://javaguide.cn/java/basis/syntactic-sugar.html#%E5%A2%9E%E5%BC%BA-for-%E5%BE%AA%E7%8E%AF)
 
-```
+```java
 for (Student stu : students) {
     if (stu.getId() == 2)
         students.remove(stu);
