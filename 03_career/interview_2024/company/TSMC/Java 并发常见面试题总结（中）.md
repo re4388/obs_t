@@ -212,7 +212,8 @@ sum.increment();
 
 #### [版本号机制](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#%E7%89%88%E6%9C%AC%E5%8F%B7%E6%9C%BA%E5%88%B6)
 
-一般是在数据表中加上一个数据版本号 `version` 字段，表示数据被修改的次数。当数据被修改时，`version` 值会加一。当线程 A 要更新数据值时，在读取数据的同时也会读取 `version` 值，在提交更新时，若刚才读取到的 version 值为当前数据库中的 `version` 值相等时才更新，否则重试更新操作，直到更新成功。
+一般是在数据表中加上一个数据版本号 `version` 字段，表示数据被修改的次数。
+当数据被修改时，`version` 值会加一。当线程 A 要更新数据值时，在读取数据的同时也会读取 `version` 值，在提交更新时，若刚才读取到的 version 值为当前数据库中的 `version` 值相等时才更新，否则重试更新操作，直到更新成功。
 
 **举一个简单的例子**：假设数据库中帐户信息表中有一个 version 字段，当前值为 1 ；而当前帐户余额字段（ `balance` ）为 $100 。
 
