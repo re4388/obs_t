@@ -79,7 +79,7 @@ Java 集合框架如下图所示：
 
 `Array`：
 
-```
+```java
  // 初始化一个 String 类型的数组
  String[] stringArr = new String[]{"hello", "world", "!"};
  // 修改数组元素的值
@@ -95,7 +95,7 @@ Java 集合框架如下图所示：
 
 `ArrayList` ：
 
-```
+```java
 // 初始化一个 String 类型的 ArrayList
  ArrayList<String> stringList = new ArrayList<>(Arrays.asList("hello", "world", "!"));
 // 添加元素到 ArrayList 中
@@ -127,7 +127,7 @@ Java 集合框架如下图所示：
 
 示例代码：
 
-```
+```java
 ArrayList<String> listOfStrings = new ArrayList<>();
 listOfStrings.add(null);
 listOfStrings.add("java");
@@ -156,7 +156,7 @@ System.out.println(listOfStrings);
 
 这里简单列举一个例子：
 
-```
+```java
 // ArrayList的底层数组大小为10，此时存储了7个元素
 +---+---+---+---+---+---+---+---+---+---+
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |   |   |   |
