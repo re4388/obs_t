@@ -305,7 +305,8 @@ public final class T extends Enum {
 
 内部类又称为嵌套类，可以把内部类理解为外部类的一个普通成员。
 
-**内部类之所以也是语法糖，是因为它仅仅是一个编译时的概念，`outer.java` 里面定义了一个内部类 `inner`，一旦编译成功，就会生成两个完全不同的`.class` 文件了，分别是 `outer.class` 和 `outer$inner.class`。所以内部类的名字完全可以和它的外部类名字相同。**
+**内部类之所以也是语法糖，是因为它仅仅是一个编译时的概念，`outer.java` 里面定义了一个内部类 `inner`，一旦编译成功，就会生成两个完全不同的`.class` 文件了，分别是 `outer.class` 和 `outer$inner.class`。
+所以内部类的名字完全可以和它的外部类名字相同。**
 
 ```java
 public class OutterClass {
@@ -337,7 +338,8 @@ public class OutterClass {
 }
 ```
 
-以上代码编译后会生成两个 class 文件：`OutterClass$InnerClass.class`、`OutterClass.class` 。当我们尝试对 `OutterClass.class` 文件进行反编译的时候，命令行会打印以下内容：`Parsing OutterClass.class...Parsing inner class OutterClass$InnerClass.class... Generating OutterClass.jad` 。他会把两个文件全部进行反编译，然后一起生成一个 `OutterClass.jad` 文件。文件内容如下：
+以上代码编译后会生成两个 class 文件：`OutterClass$InnerClass.class`、`OutterClass.class` 。
+当我们尝试对 `OutterClass.class` 文件进行反编译的时候，命令行会打印以下内容：`Parsing OutterClass.class...Parsing inner class OutterClass$InnerClass.class... Generating OutterClass.jad` 。他会把两个文件全部进行反编译，然后一起生成一个 `OutterClass.jad` 文件。文件内容如下：
 
 ```java
 public class OutterClass
@@ -463,13 +465,13 @@ class OutterClass$1Inner {
 ```java
 public class ConditionalCompilation {
     public static void main(String[] args) {
+    
         final boolean DEBUG = true;
-        if(DEBUG) {
+		if(DEBUG) {
             System.out.println("Hello, DEBUG!");
         }
 
         final boolean ONLINE = false;
-
         if(ONLINE){
             System.out.println("Hello, ONLINE!");
         }
@@ -511,6 +513,7 @@ public class AssertTest {
     public static void main(String args[]) {
         int a = 1;
         int b = 1;
+        
         assert a == b;
         System.out.println("公众号：Hollis");
         assert a != b : "Hollis";
@@ -586,11 +589,14 @@ public class Test
 
 ```java
 public static void main(String... args) {
+    
     String[] strs = {"Hollis", "公众号：Hollis", "博客：www.hollischuang.com"};
     for (String s : strs) {
         System.out.println(s);
     }
+    
     List<String> strList = ImmutableList.of("Hollis", "公众号：Hollis", "博客：www.hollischuang.com");
+    
     for (String s : strList) {
         System.out.println(s);
     }
@@ -635,18 +641,22 @@ public static void main(String[] args) {
     try {
         String line;
         br = new BufferedReader(new FileReader("d:\\hollischuang.xml"));
+        
         while ((line = br.readLine()) != null) {
             System.out.println(line);
         }
+        
     } catch (IOException e) {
-        // handle exception
+    
+	  // handle exception
+    
     } finally {
         try {
             if (br != null) {
                 br.close();
             }
         } catch (IOException ex) {
-            // handle exception
+            // handle close exception
         }
     }
 }
@@ -744,6 +754,7 @@ public static void main(String... args) {
 ```java
 public static /* varargs */ void main(String ... args) {
     ImmutableList strList = ImmutableList.of((Object)"Hollis", (Object)"\u516c\u4f17\u53f7\uff1aHollis", (Object)"\u535a\u5ba2\uff1awww.hollischuang.com");
+    
     strList.forEach((Consumer<String>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)V, lambda$main$0(java.lang.String ), (Ljava/lang/String;)V)());
 }
 
