@@ -32,7 +32,7 @@
 - [ ] [[Java 魔法类 Unsafe 详解]]
 - [ ] [[Java SPI 机制详解]]
 - [ ] [[Java 语法糖详解]]
-
+- [ ] [[黑馬 基礎篇]]
 
 IO
 - [x] [[Java IO 基础知识总结]]
@@ -72,10 +72,11 @@ JVM
 - [ ] [[JVM 垃圾回收详解（重点）]]
 - [ ] [[类文件结构详解]]
 - [x] [[类加载过程详解]]
-- [ ] [[类加载器详解（重点）]]
+- [x] [[类加载器详解（重点）]]
 - [ ] [[最重要的JVM 参数总结]]
 - [ ] [[JDK 监控和故障处理工具总结]]
 - [ ] [[JVM线上问题排查和性能调优案例]]
+- [ ] [[黑馬 虛擬機]]
 
 
 Java 版本特性 
@@ -113,6 +114,7 @@ Java 版本特性 
 - [ ] [[Spring 中的设计模式详解]]
 - [ ] [[SpringBoot 自动装配原理详解]]
 - [ ] [[Spring 面试题]]
+- [ ] [[黑馬框架篇]]
 
 - [ ] [[分布式锁介绍]]
 - [ ] [[分布式锁常见实现方案总结]]
@@ -148,6 +150,7 @@ Java 版本特性 
 - [ ] [[MySQL 面試題]]
 - [ ] [[Java 虛拟機面試題]]
 - [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
+- [ ] [[黑馬 併發]]
 
 # Spring
 
@@ -1142,7 +1145,6 @@ Spring Framework 中文文档PDF
 42 - 尚硅谷 - Java NIO - 聊天室综合案例 - 客户端编写（2）
 
 - Java NIO
-	- [ ] [Java NIO 核心知识总结 | JavaGuide](https://javaguide.cn/java/io/nio-basis.html)
 	- [ ] [Java NIO 流 - HackMD](https://hackmd.io/@AlienHackMd/HyM5BOR1a)
 	- [ ] [Java NIO 浅析 - 美团技术团队](https://tech.meituan.com/2016/11/04/nio.html)
 	- [ ] [Java NIO - 基础详解 | Java 全栈知识体系](https://pdai.tech/md/java/io/java-io-nio.html)
@@ -2117,7 +2119,7 @@ Spring Framework 中文文档PDF
 
 ## 黑馬面試框架篇
 - [ ] [66 Java八股文面试题-框架篇 - YouTube](https://www.youtube.com/playlist?list=PLjwE8m3kyOle4S3vbpH6b0YXYqBIZ4k3j)
-	- [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
+	- ref: [框架篇讲义.md](https://github.com/re4388/Interview_Heima_Demo01/blob/main/day04-%E6%A1%86%E6%9E%B6%E7%AF%87/%E8%AE%B2%E4%B9%89/%E6%A1%86%E6%9E%B6%E7%AF%87%E8%AE%B2%E4%B9%89.md)
 	- [x] 1-18 bean life cycle
 	- [x] 19-26 spring tx
 	- [x] 27-29 spring mvc 執行流程
@@ -2509,8 +2511,6 @@ Spring Framework 中文文档PDF
 	- [x] 企業場景 142-149
 	- related:
 		- [一文读懂Java远程debug（Remote JVM Debug）-CSDN博客](https://blog.csdn.net/qq_41262903/article/details/120922767)
-
-
 
 
 ---

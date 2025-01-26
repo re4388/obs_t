@@ -27,29 +27,36 @@
 
 `sun.misc.Unsafe` 部分源码如下：
 
-```
+```java
 public final class Unsafe {
+
   // 单例对象
   private static final Unsafe theUnsafe;
+  
   ......
-  private Unsafe() {
-  }
+  
+  private Unsafe() {}
+
+
   @CallerSensitive
   public static Unsafe getUnsafe() {
+  
     Class var0 = Reflection.getCallerClass();
+    
     // 仅在引导类加载器`BootstrapClassLoader`加载时才合法
     if(!VM.isSystemDomainLoader(var0.getClassLoader())) {
       throw new SecurityException("Unsafe");
     } else {
       return theUnsafe;
     }
+    
   }
 }
 ```
 
 `Unsafe` 类为一单例实现，提供静态方法 `getUnsafe` 获取 `Unsafe` 实例。这个看上去貌似可以用来获取 `Unsafe` 实例。但是，当我们直接调用这个静态方法的时候，会抛出 `SecurityException` 异常：
 
-```
+```java
 Exception in thread "main" java.lang.SecurityException: Unsafe
  at sun.misc.Unsafe.getUnsafe(Unsafe.java:90)
  at com.cn.test.GetUnsafeTest.main(GetUnsafeTest.java:12)
@@ -57,7 +64,7 @@ Exception in thread "main" java.lang.SecurityException: Unsafe
 
 **为什么 `public static` 方法无法被直接调用呢？**
 
-这是因为在 `getUnsafe` 方法中，会对调用者的 `classLoader` 进行检查，判断当前类是否由 `Bootstrap classLoader` 加载，如果不是的话那么就会抛出一个 `SecurityException` 异常。也就是说，只有启动类加载器加载的类才能够调用 Unsafe 类中的方法，来防止这些方法在不可信的代码中被调用。
+这是因为在 `getUnsafe` 方法中，会对调用者的 `classLoader` 进行检查，判断当前类是否由 `Bootstrap classLoader` 加载，如果不是的话那么就会抛出一个 `SecurityException` 异常。也就是说，**只有启动类加载器加载的类才能够调用 Unsafe 类中的方法，来防止这些方法在不可信的代码中被调用**。
 
 **为什么要对 Unsafe 类进行这么谨慎的使用限制呢？**
 
@@ -69,7 +76,7 @@ Exception in thread "main" java.lang.SecurityException: Unsafe
 
 1、利用反射获得 Unsafe 类中已经实例化完成的单例对象 `theUnsafe` 。
 
-```
+```java
 private static Unsafe reflectGetUnsafe() {
     try {
       Field field = Unsafe.class.getDeclaredField("theUnsafe");
@@ -84,7 +91,7 @@ private static Unsafe reflectGetUnsafe() {
 
 2、从 `getUnsafe` 方法的使用限制条件出发，通过 Java 命令行命令 `-Xbootclasspath/a` 把调用 Unsafe 相关方法的类 A 所在 jar 包路径追加到默认的 bootstrap 路径中，使得 A 被引导类加载器加载，从而通过 `Unsafe.getUnsafe` 方法安全的获取 Unsafe 实例。
 
-```
+```java
 java -Xbootclasspath/a: ${path}   // 其中path为调用Unsafe相关方法的类所在jar包路径
 ```
 
@@ -107,7 +114,7 @@ java -Xbootclasspath/a: ${path}   // 其中path为调用Unsafe相关方法的类
 
 如果你是一个写过 C 或者 C++ 的程序员，一定对内存操作不会陌生，而在 Java 中是不允许直接对内存进行操作的，对象内存的分配和回收都是由 JVM 自己实现的。但是在 `Unsafe` 中，提供的下列接口可以直接进行内存操作：
 
-```
+```java
 //分配新的本地空间
 public native long allocateMemory(long bytes);
 //重新调整内存空间的大小
@@ -122,7 +129,7 @@ public native void freeMemory(long address);
 
 使用下面的代码进行测试：
 
-```
+```java
 private void memoryTest() {
     int size = 4;
     long addr = unsafe.allocateMemory(size);
@@ -145,7 +152,7 @@ private void memoryTest() {
 
 先看结果输出：
 
-```
+```java
 addr: 2433733895744
 addr3: 2433733894944
 16843009
@@ -177,7 +184,7 @@ addr3: 2433733894944
 
 下图为 `DirectByteBuffer` 构造函数，创建 `DirectByteBuffer` 的时候，通过 `Unsafe.allocateMemory` 分配内存、`Unsafe.setMemory` 进行内存初始化，而后构建 `Cleaner` 对象用于跟踪 `DirectByteBuffer` 对象的垃圾回收，以实现当 `DirectByteBuffer` 被垃圾回收时，分配的堆外内存一起被释放。
 
-```
+```java
 DirectByteBuffer(int cap) {                   // package-private
 
     super(-1, 0, cap, cap);
@@ -218,7 +225,7 @@ DirectByteBuffer(int cap) {                   // package-private
 
 `Unsafe` 中提供了下面三个内存屏障相关方法：
 
-```
+```java
 //内存屏障，禁止load操作重排序。屏障前的load操作不能被重排序到屏障后，屏障后的load操作不能被重排序到屏障前
 public native void loadFence();
 //内存屏障，禁止store操作重排序。屏障前的store操作不能被重排序到屏障后，屏障后的store操作不能被重排序到屏障前
@@ -231,7 +238,7 @@ public native void fullFence();
 
 看到这估计很多小伙伴们会想到 `volatile` 关键字了，如果在字段上添加了 `volatile` 关键字，就能够实现字段在多线程下的可见性。基于读内存屏障，我们也能实现相同的功能。下面定义一个线程方法，在线程中去修改 `flag` 标志位，注意这里的 `flag` 是没有被 `volatile` 修饰的：
 
-```
+```java
 @Getter
 class ChangeThread implements Runnable{
     /**volatile**/ boolean flag=false;
@@ -250,7 +257,7 @@ class ChangeThread implements Runnable{
 
 在主线程的 `while` 循环中，加入内存屏障，测试是否能够感知到 `flag` 的修改变化：
 
-```
+```java
 public static void main(String[] args){
     ChangeThread changeThread = new ChangeThread();
     new Thread(changeThread).start();
@@ -286,7 +293,7 @@ main thread end
 
 为了解决这个问题，`StampedLock` 的 `validate` 方法会通过 `Unsafe` 的 `loadFence` 方法加入一个 `load` 内存屏障。
 
-```
+```java
 public boolean validate(long stamp) {
    U.loadFence();
    return (stamp & SBITS) == (state & SBITS);
@@ -299,7 +306,7 @@ public boolean validate(long stamp) {
 
 **例子**
 
-```
+```java
 import sun.misc.Unsafe;
 import java.lang.reflect.Field;
 
@@ -334,7 +341,7 @@ public class Main {
 
 输出结果：
 
-```
+```java
 value before putInt: 0
 value after putInt: 42
 value after putInt: 42
@@ -344,7 +351,7 @@ value after putInt: 42
 
 对象成员属性的内存偏移量获取，以及字段属性值的修改，在上面的例子中我们已经测试过了。除了前面的 `putInt`、`getInt` 方法外，Unsafe 提供了全部 8 种基础数据类型以及 `Object` 的 `put` 和 `get` 方法，并且所有的 `put` 方法都可以越过访问权限，直接修改内存中的数据。阅读 openJDK 源码中的注释发现，基础数据类型和 `Object` 的读写稍有不同，基础数据类型是直接操作的属性值（`value`），而 `Object` 的操作则是基于引用值（`reference value`）。下面是 `Object` 的读写方法：
 
-```
+```java
 //在对象的指定偏移地址获取一个对象引用
 public native Object getObject(Object o, long offset);
 //在对象指定偏移地址写入一个对象引用
@@ -353,7 +360,7 @@ public native void putObject(Object o, long offset, Object x);
 
 除了对象属性的普通读写外，`Unsafe` 还提供了 **volatile 读写**和**有序写入**方法。`volatile` 读写方法的覆盖范围与普通读写相同，包含了全部基础数据类型和 `Object` 类型，以 `int` 类型为例：
 
-```
+```java
 //在对象的指定偏移地址处读取一个int值，支持volatile load语义
 public native int getIntVolatile(Object o, long offset);
 //在对象指定偏移地址处写入一个int，支持volatile store语义
@@ -364,7 +371,7 @@ public native void putIntVolatile(Object o, long offset, int x);
 
 有序写入的方法有以下三个：
 
-```
+```java
 public native void putOrderedObject(Object o, long offset, Object x);
 public native void putOrderedInt(Object o, long offset, int x);
 public native void putOrderedLong(Object o, long offset, long x);
@@ -387,7 +394,7 @@ public native void putOrderedLong(Object o, long offset, long x);
 
 使用 `Unsafe` 的 `allocateInstance` 方法，允许我们使用非常规的方式进行对象的实例化，首先定义一个实体类，并且在构造函数中对其成员变量进行赋值操作：
 
-```
+```java
 @Data
 public class A {
     private int b;
@@ -399,7 +406,7 @@ public class A {
 
 分别基于构造函数、反射以及 `Unsafe` 方法的不同方式创建对象进行比较：
 
-```
+```java
 public void objTest() throws Exception{
     A a1=new A();
     System.out.println(a1.getB());
@@ -423,7 +430,7 @@ public void objTest() throws Exception{
 
 `arrayBaseOffset` 与 `arrayIndexScale` 这两个方法配合起来使用，即可定位数组中每个元素在内存中的位置。
 
-```
+```java
 //返回数组中第一个元素的偏移地址
 public native int arrayBaseOffset(Class<?> arrayClass);
 //返回数组中一个元素占用的大小
@@ -442,7 +449,7 @@ public native int arrayIndexScale(Class<?> arrayClass);
 
 这部分主要为 CAS 相关操作的方法。
 
-```
+```java
 /**
   *  CAS
   * @param o         包含要修改field的对象
@@ -464,13 +471,13 @@ public final native boolean compareAndSwapLong(Object o, long offset, long expec
 
 在 JUC 包的并发工具类中大量地使用了 CAS 操作，像在前面介绍 `synchronized` 和 `AQS` 的文章中也多次提到了 CAS，其作为乐观锁在并发工具类中广泛发挥了作用。在 `Unsafe` 类中，提供了 `compareAndSwapObject`、`compareAndSwapInt`、`compareAndSwapLong` 方法来实现的对 `Object`、`int`、`long` 类型的 CAS 操作。以 `compareAndSwapInt` 方法为例：
 
-```
+```java
 public final native boolean compareAndSwapInt(Object o, long offset,int expected,int x);
 ```
 
 参数中 `o` 为需要更新的对象，`offset` 是对象 `o` 中整形字段的偏移量，如果这个字段的值与 `expected` 相同，则将字段的值设为 `x` 这个新值，并且此更新是不可被中断的，也就是一个原子操作。下面是一个使用 `compareAndSwapInt` 的例子：
 
-```
+```java
 private volatile int a;
 public static void main(String[] args){
     CasTest casTest=new CasTest();
@@ -519,7 +526,7 @@ private void increment(int x){
 
 `Unsafe` 类中提供了 `park`、`unpark`、`monitorEnter`、`monitorExit`、`tryMonitorEnter` 方法进行线程调度。
 
-```
+```java
 //取消阻塞线程
 public native void unpark(Object thread);
 //阻塞线程
@@ -539,7 +546,7 @@ public native boolean tryMonitorEnter(Object o);
 
 此外，`Unsafe` 源码中 `monitor` 相关的三个方法已经被标记为 `deprecated`，不建议被使用：
 
-```
+```java
 //获得对象锁
 @Deprecated
 public native void monitorEnter(Object var1);
@@ -557,7 +564,7 @@ public native boolean tryMonitorEnter(Object var1);
 
 Java 锁和同步器框架的核心类 `AbstractQueuedSynchronizer` (AQS)，就是通过调用 `LockSupport.park()` 和 `LockSupport.unpark()` 实现线程的阻塞和唤醒的，而 `LockSupport` 的 `park`、`unpark` 方法实际是调用 `Unsafe` 的 `park`、`unpark` 方式实现的。
 
-```
+```java
 public static void park(Object blocker) {
     Thread t = Thread.currentThread();
     setBlocker(t, blocker);
@@ -572,7 +579,7 @@ public static void unpark(Thread thread) {
 
 `LockSupport` 的 `park` 方法调用了 `Unsafe` 的 `park` 方法来阻塞当前线程，此方法将线程阻塞后就不会继续往后执行，直到有其他线程调用 `unpark` 方法唤醒当前线程。下面的例子对 `Unsafe` 的这两个方法进行测试：
 
-```
+```java
 public static void main(String[] args) {
     Thread mainThread = Thread.currentThread();
     new Thread(()->{
@@ -611,7 +618,7 @@ unpark mainThread success
 
 **静态属性读取相关的方法**
 
-```
+```java
 //获取静态属性的偏移量
 public native long staticFieldOffset(Field f);
 //获取静态属性的对象指针
@@ -622,7 +629,7 @@ public native boolean shouldBeInitialized(Class<?> c);
 
 创建一个包含静态属性的类，进行测试：
 
-```
+```java
 @Data
 public class User {
     public static String name="Hydra";
@@ -662,13 +669,13 @@ null
 
 **使用 `defineClass` 方法允许程序在运行时动态地创建一个类**
 
-```
+```java
 public native Class<?> defineClass(String name, byte[] b, int off, int len, ClassLoader loader,ProtectionDomain protectionDomain);
 ```
 
 在实际使用过程中，可以只传入字节数组、起始字节的下标以及读取的字节长度，默认情况下，类加载器（`ClassLoader`）和保护域（`ProtectionDomain`）来源于调用此方法的实例。下面的例子中实现了反编译生成后的 class 文件的功能：
 
-```
+```java
 private static void defineTest() {
     String fileName="F:\\workspace\\unsafe-test\\target\\classes\\com\\cn\\model\\User.class";
     File file = new File(fileName);
@@ -691,7 +698,7 @@ private static void defineTest() {
 
 除了 `defineClass` 方法外，Unsafe 还提供了一个 `defineAnonymousClass` 方法：
 
-```
+```java
 public native Class<?> defineAnonymousClass(Class<?> hostClass, byte[] data, Object[] cpPatches);
 ```
 
@@ -707,7 +714,7 @@ Lambda 表达式实现需要依赖 `Unsafe` 的 `defineAnonymousClass` 方�
 
 这部分包含两个获取系统相关信息的方法。
 
-```
+```java
 //返回系统指针的大小。返回值为4（32位系统）或 8（64位系统）。
 public native int addressSize();
 //内存页的大小，此值为2的幂次方。
