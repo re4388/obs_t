@@ -148,7 +148,7 @@ public static <T> T requireNonNull(T obj) {
 > 相关阅读：[什么是 fail-fast](https://www.cnblogs.com/54chensongxia/p/12470446.html) 。
 
 Java8 开始，可以使用 `Collection#removeIf()` 方法删除满足特定条件的元素，如
-
+(底層也是使用 Iterator)
 ```java
 List<Integer> list = new ArrayList<>();
 for (int i = 1; i <= 10; ++i) {
@@ -173,7 +173,7 @@ System.out.println(list); /* [1, 3, 5, 7, 9] */
 这里我们以 `HashSet` 和 `ArrayList` 为例说明。
 
 ```java
-// Set 去重代码示例
+// Set 去重代码示例 ->  O (1)
 public static <T> Set<T> removeDuplicateBySet(List<T> data) {
 
     if (CollectionUtils.isEmpty(data)) {
@@ -182,7 +182,7 @@ public static <T> Set<T> removeDuplicateBySet(List<T> data) {
     return new HashSet<>(data);
 }
 
-// List 去重代码示例
+// List 去重代码示例  ->  O (n)
 public static <T> List<T> removeDuplicateByList(List<T> data) {
 
     if (CollectionUtils.isEmpty(data)) {
@@ -241,16 +241,22 @@ public int indexOf(Object o) {
 `toArray(T[] array)` 方法的参数是一个泛型数组，如果 `toArray` 方法中没有传递任何参数的话返回的是 `Object` 类 型数组。
 
 ```java
+
 String [] s= new String[]{
     "dog", "lazy", "a", "over", "jumps", "fox", "brown", "quick", "A"
 };
+
 List<String> list = Arrays.asList(s);
+
 Collections.reverse(list);
+
 //没有指定类型的话会报错
 s=list.toArray(new String[0]);
 ```
 
-由于 JVM 优化，`new String[0]` 作为 `Collection.toArray()` 方法的参数现在使用更好，`new String[0]` 就是起一个模板的作用，指定了返回数组的类型，0 是为了节省空间，因为它只是为了说明返回的类型。详见：[https://shipilev.net/blog/2016/arrays-wisdom-ancients/](https://shipilev.net/blog/2016/arrays-wisdom-ancients/)
+由于 JVM 优化，`new String[0]` 作为 `Collection.toArray()` 方法的参数现在使用更好，`new String[0]` 就是起一个模板的作用，指定了返回数组的类型，0 是为了节省空间，因为它只是为了说明返回的类型。
+
+详见：[https://shipilev.net/blog/2016/arrays-wisdom-ancients/](https://shipilev.net/blog/2016/arrays-wisdom-ancients/)
 
 ## [数组转集合](https://javaguide.cn/java/collection/java-collection-precautions-for-use.html#%E6%95%B0%E7%BB%84%E8%BD%AC%E9%9B%86%E5%90%88)
 
@@ -288,9 +294,11 @@ public static <T> List<T> asList(T... a) {
 ```java
 int[] myArray = {1, 2, 3};
 List myList = Arrays.asList(myArray);
+
 System.out.println(myList.size());//1
 System.out.println(myList.get(0));//数组地址值
 System.out.println(myList.get(1));//报错：ArrayIndexOutOfBoundsException
+
 int[] array = (int[]) myList.get(0);
 System.out.println(array[0]);//1
 ```
