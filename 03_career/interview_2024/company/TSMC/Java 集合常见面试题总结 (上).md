@@ -289,7 +289,9 @@ countDownLatch.await();
 
 对此我们也给出 `for` 循环底层迭代器获取下一个元素时的 `next` 方法，可以看到其内部的 `checkForComodification` 具有针对修改次数比对的逻辑：
 
-```
+```java
+
+
  public E next() {
  			//检查是否存在并发修改
             checkForComodification();
@@ -315,7 +317,8 @@ final void checkForComodification() {
 
 对应我们也给出 `CopyOnWriteArrayList` 实现 `fail-safe` 的核心代码，可以看到它的实现就是通过 `getArray` 获取数组引用然后通过 `Arrays.copyOf` 得到一个数组的快照，基于这个快照完成添加操作后，修改底层 `array` 变量指向的引用地址由此完成写时复制：
 
-```
+```java
+
 public boolean add(E e) {
         final ReentrantLock lock = this.lock;
         lock.lock();
