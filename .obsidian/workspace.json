@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/Java NIO 核心知识总结.md",
+                "file": "03_career/interview_2024/company/TSMC/Java 内存区域详解（重点）.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java NIO 核心知识总结"
+              "title": "Java 内存区域详解（重点）"
             }
           }
         ]
@@ -168,6 +168,9 @@
   },
   "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "100_attachements/Pasted image 20250126164124.png",
+    "100_attachements/Pasted image 20250126163948.png",
+    "100_attachements/Pasted image 20250126163859.png",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "03_career/interview_2024/company/TSMC/Java NIO 核心知识总结.md",
     "03_career/interview_2024/company/TSMC/Java IO 模型详解.md",
@@ -196,7 +199,6 @@
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (中).md",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (上).md",
     "100_attachements/Pasted image 20250125204946.png",
-    "03_career/interview_2024/company/TSMC/Java 21 新特性概览 (重要).md",
     "03_career/interview_2024/company/TSMC/Java 21 新特性概览 (重要).md.edtz",
     "100_attachements/b651b3b209ce589ae4a0764c826983ec_MD5.png",
     "03_career/interview_2024/company/TSMC/Java 17 新特性概览（重要）.md.edtz",
@@ -208,9 +210,7 @@
     "100_attachements/80c0b8ea23910bb5b5e1e5f07b10b76a_MD5.png",
     "100_attachements/7fdc02320a444da0bea0d3f6bade93a1_MD5.png",
     "100_attachements/a542179f39722863b803e745d6c0363e_MD5.png",
-    "100_attachements/e43bb2cce46b4d9d2d8120aed1c18992_MD5.png",
     "03_career/interview_2024/company/TSMC/JDK 监控和故障处理工具总结.md.edtz",
-    "100_attachements/c933167e124bc2040267ad63a2824014_MD5.png",
     "03_career/interview_2024/company/TSMC/最重要的JVM 参数总结.md.edtz",
     "03_career/interview_2024/company/TSMC/类加载器详解（重点）.md.edtz",
     "03_career/interview_2024/company/TSMC/类加载过程详解.md.edtz"

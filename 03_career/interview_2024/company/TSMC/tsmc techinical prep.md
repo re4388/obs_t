@@ -38,7 +38,7 @@ IO
 - [x] [[Java IO 基础知识总结]]
 - [x] [[Java IO 设计模式总结]]
 - [x] [[Java IO 模型详解]]
-- [ ] [[Java NIO 核心知识总结]]
+- [x] [[Java NIO 核心知识总结]]
 
 源碼解讀
 - [ ] [[ArrayList 源码分析]]
