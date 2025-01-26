@@ -11,7 +11,9 @@
 
 **`HashMap` 中带有初始容量的构造函数：**
 
-```
+```java
+
+
     public HashMap(int initialCapacity, float loadFactor) {
         if (initialCapacity < 0)
             throw new IllegalArgumentException("Illegal initial capacity: " +
@@ -27,11 +29,15 @@
      public HashMap(int initialCapacity) {
         this(initialCapacity, DEFAULT_LOAD_FACTOR);
     }
+
+
 ```
 
 下面这个方法保证了 `HashMap` 总是使用 2 的幂作为哈希表的大小。
 
-```
+```java
+
+
 /**
  * Returns a power of two size for the given target capacity.
  */
@@ -44,6 +50,8 @@ static final int tableSizeFor(int cap) {
     n |= n >>> 16;
     return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
 }
+
+
 ```
 
 ### [HashMap 和 HashSet 区别](https://javaguide.cn/java/collection/java-collection-questions-02.html#hashmap-%E5%92%8C-hashset-%E5%8C%BA%E5%88%AB)
@@ -94,6 +102,7 @@ public class Person {
 
 
     public static void main(String[] args) {
+    
         TreeMap<Person, String> treeMap = new TreeMap<>(new Comparator<Person>() {
             @Override
             public int compare(Person person1, Person person2) {
@@ -101,13 +110,16 @@ public class Person {
                 return Integer.compare(num, 0);
             }
         });
+    
         treeMap.put(new Person(3), "person1");
         treeMap.put(new Person(18), "person2");
         treeMap.put(new Person(35), "person3");
         treeMap.put(new Person(16), "person4");
+        
         treeMap.entrySet().stream().forEach(personStringEntry -> {
             System.out.println(personStringEntry.getValue());
         });
+    
     }
 }
 ```
@@ -390,7 +402,8 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 
 **🐛 修正（参见：[issue#1411](https://github.com/Snailclimb/JavaGuide/issues/1411)）**：
 
-这篇文章对于 parallelStream 遍历方式的性能分析有误，先说结论：**存在阻塞时 parallelStream 性能最高，非阻塞时 parallelStream 性能最低** 。
+这篇文章对于 parallelStream 遍历方式的性能分析有误，先说结论：
+**存在阻塞时 parallelStream 性能最高，非阻塞时 parallelStream 性能最低** 。
 
 当遍历不存在阻塞时，parallelStream 的性能是最低的：
 
@@ -499,14 +512,14 @@ Java 8 中，锁粒度更细，`synchronized` 只锁定当前链表或红黑二
 
 ### [ConcurrentHashMap 为什么 key 和 value 不能为 null？](https://javaguide.cn/java/collection/java-collection-questions-02.html#concurrenthashmap-%E4%B8%BA%E4%BB%80%E4%B9%88-key-%E5%92%8C-value-%E4%B8%8D%E8%83%BD%E4%B8%BA-null)
 
-`ConcurrentHashMap` 的 key 和 value 不能为 null 主要是为了避免二义性。null 是一个特殊的值，表示没有对象或没有引用。如果你用 null 作为键，那么你就无法区分这个键是否存在于 `ConcurrentHashMap` 中，还是根本没有这个键。同样，如果你用 null 作为值，那么你就无法区分这个值是否是真正存储在 `ConcurrentHashMap` 中的，还是因为找不到对应的键而返回的。
+`ConcurrentHashMap` 的 key 和 value 不能为 null 主要是为了避免歧义。null 是一个特殊的值，表示没有对象或没有引用。如果你用 null 作为键，那么你就无法区分这个键是否存在于 `ConcurrentHashMap` 中，还是根本没有这个键。同样，如果你用 null 作为值，那么你就无法区分这个值是否是真正存储在 `ConcurrentHashMap` 中的，还是因为找不到对应的键而返回的。
 
 拿 get 方法取值来说，返回的结果为 null 存在两种情况：
 
 - 值没有在集合中 ；
 - 值本身就是 null。
 
-这也就是二义性的由来。
+也就是歧义。
 
 具体可以参考 [ConcurrentHashMap 源码分析](https://javaguide.cn/java/collection/concurrent-hash-map-source-code.html) 。
 
@@ -541,6 +554,7 @@ public static final Object NULL = new Object();
 if (!map.containsKey(key)) {
 map.put(key, value);
 }
+
 // 线程 B
 if (!map.containsKey(key)) {
 map.put(key, anotherValue);
@@ -577,8 +591,67 @@ map.computeIfAbsent(key, k -> value);
 // 线程 B
 map.computeIfAbsent(key, k -> anotherValue);
 ```
-
 很多同学可能会说了，这种情况也能加锁同步呀！确实可以，但不建议使用加锁的同步机制，违背了使用 `ConcurrentHashMap` 的初衷。在使用 `ConcurrentHashMap` 的时候，尽量使用这些原子性的复合操作方法来保证原子性。
+
+
+
+### `ConcurrentHashMap` 的实现使用了什麼機制来确保原子性？
+
+another ex:
+```java
+
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ConcurrentHashMapExample {
+    public static void main(String[] args) {
+        // 创建一个 ConcurrentHashMap
+        ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
+
+        // 初始化计数器
+        map.put("counter", 0);
+
+        // 创建多个线程来并发更新计数器
+        Runnable task = () -> {
+            for (int i = 0; i < 1000; i++) {
+                // 使用 compute 方法原子性地更新计数器
+                map.compute("counter", (key, value) -> value + 1);
+            }
+        };
+
+        // 启动多个线程
+        Thread thread1 = new Thread(task);
+        Thread thread2 = new Thread(task);
+        Thread thread3 = new Thread(task);
+
+        thread1.start();
+        thread2.start();
+        thread3.start();
+
+        // 等待线程完成
+        try {
+            thread1.join();
+            thread2.join();
+            thread3.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // 输出最终计数器的值
+        System.out.println("Final counter value: " + map.get("counter"));
+    }
+}
+
+```
+
+PS:
+在 JDK 1.8 及之后，`ConcurrentHashMap` 的实现使用了 CAS 操作来确保原子性。具体来说，`compute` 方法的实现步骤如下：
+
+- **获取当前值**：首先，`compute` 方法会获取当前键的值。
+- **计算新值**：然后，它会根据传入的 `BiFunction` 计算出新的值。
+- **使用 CAS 更新**：最后，使用 CAS 操作将当前值更新为新值。CAS 操作会检查当前值是否与预期值相同，如果相同则更新，否则不更新。这种方式确保了在更新过程中，如果有其他线程也在尝试更新同一个键，只有一个线程会成功，其他线程会重试。
+
+
+
 
 ## [Collections 工具类（不重要）](https://javaguide.cn/java/collection/java-collection-questions-02.html#collections-%E5%B7%A5%E5%85%B7%E7%B1%BB-%E4%B8%8D%E9%87%8D%E8%A6%81)
 
