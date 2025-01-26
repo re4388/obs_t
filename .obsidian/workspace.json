@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/类加载过程详解.md",
+                "file": "03_career/interview_2024/company/TSMC/类加载器详解（重点）.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "类加载过程详解"
+              "title": "类加载器详解（重点）"
             }
           }
         ]
@@ -168,11 +168,11 @@
   },
   "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/类加载过程详解.md",
     "100_attachements/Pasted image 20250126170736.png",
     "100_attachements/Pasted image 20250126170722.png",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "03_career/interview_2024/company/TSMC/Java 内存区域详解（重点）.md",
-    "03_career/interview_2024/company/TSMC/类加载过程详解.md",
     "03_career/interview_2024/company/TSMC/类文件结构详解.md",
     "03_career/interview_2024/company/TSMC/JVM 垃圾回收详解（重点）.md",
     "100_attachements/Pasted image 20250126164643.png",
@@ -206,7 +206,6 @@
     "100_attachements/b651b3b209ce589ae4a0764c826983ec_MD5.png",
     "03_career/interview_2024/company/TSMC/Java 17 新特性概览（重要）.md.edtz",
     "100_attachements/51bfbc01f737debcbfb17e7397427a35_MD5.png",
-    "100_attachements/21ba0878e49ba34917963bd0e4178a68_MD5.png",
     "03_career/interview_2024/company/TSMC/《Java8 指南》中文翻译.md.edtz",
     "03_career/interview_2024/company/TSMC/Java8 新特性实战.md.edtz",
     "03_career/interview_2024/company/TSMC/JVM线上问题排查和性能调优案例.md.edtz",
