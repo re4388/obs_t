@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/Java 集合常见面试题总结 (下).md",
+                "file": "03_career/interview_2024/company/TSMC/Java 集合使用注意事项总结.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java 集合常见面试题总结 (下)"
+              "title": "Java 集合使用注意事项总结"
             }
           }
         ]
@@ -74,12 +74,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 313.5,
     "collapsed": true
   },
   "right": {
@@ -170,6 +169,20 @@
   "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/Spring 面试题.md",
+    "03_career/interview_2024/company/TSMC/discuss with 昆宏.md",
+    "03_career/interview_2024/company/TSMC/tsmc first round.md",
+    "03_career/interview_2024/company/TSMC/HR 面試準備 tsmc.md",
+    "03_career/interview_2024/company/TSMC/hr 通知.md",
+    "03_career/interview_2024/company/TSMC/hackerrank tsmc.md",
+    "03_career/interview_2024/company/TSMC/Java 序列化详解.md",
+    "03_career/interview_2024/可以主動投的.md",
+    "03_career/interview_2024/你有什麼問題要問我們嗎.md",
+    "03_career/interview_2024/company/TSMC/tsmc interview 經驗",
+    "03_career/interview_2024/company/TSMC/第二次面試 lance 陳慧猛.md",
+    "03_career/interview_2024/company/TSMC/tsmc_goal.md",
+    "03_career/interview_2024/company/TSMC/Java 集合使用注意事项总结.md",
+    "03_career/interview_2024/company/TSMC/Java 集合常见面试题总结 (下).md",
     "03_career/interview_2024/company/TSMC/Java 集合常见面试题总结 (上).md",
     "03_career/interview_2024/company/TSMC/Java 代理模式详解.md",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (下).md",
@@ -198,22 +211,8 @@
     "03_career/interview_2024/company/TSMC/最重要的JVM 参数总结.md",
     "100_attachements/c933167e124bc2040267ad63a2824014_MD5.png",
     "03_career/interview_2024/company/TSMC/最重要的JVM 参数总结.md.edtz",
-    "03_career/interview_2024/company/TSMC/类加载器详解（重点）.md",
     "100_attachements/247055571534026405.png",
     "03_career/interview_2024/company/TSMC/类加载器详解（重点）.md.edtz",
-    "03_career/interview_2024/company/TSMC/类加载过程详解.md",
-    "03_career/interview_2024/company/TSMC/类加载过程详解.md.edtz",
-    "03_career/interview_2024/company/TSMC/类文件结构详解.md",
-    "03_career/interview_2024/company/TSMC/类文件结构详解.md.edtz",
-    "03_career/interview_2024/company/TSMC/JVM 垃圾回收详解（重点）.md",
-    "03_career/interview_2024/company/TSMC/Java 内存区域详解（重点）.md",
-    "03_career/interview_2024/company/TSMC/DelayQueue 源码分析.md",
-    "03_career/interview_2024/company/TSMC/ArrayBlockingQueue 源码分析.md",
-    "03_career/interview_2024/company/TSMC/CopyOnWriteArrayList 源码分析.md",
-    "03_career/interview_2024/company/TSMC/LinkedHashMap 源码分析.md",
-    "03_career/interview_2024/company/TSMC/ConcurrentHashMap 源码分析.md",
-    "03_career/interview_2024/company/TSMC/HashMap 源码分析.md",
-    "03_career/interview_2024/company/TSMC/LinkedList 源码分析.md",
-    "03_career/interview_2024/company/TSMC/ArrayList 源码分析.md"
+    "03_career/interview_2024/company/TSMC/类加载过程详解.md.edtz"
   ]
 }

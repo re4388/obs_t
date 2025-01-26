@@ -399,6 +399,42 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 ### [HashMap 常见的遍历方式？](https://javaguide.cn/java/collection/java-collection-questions-02.html#hashmap-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%81%8D%E5%8E%86%E6%96%B9%E5%BC%8F)
 
 [HashMap 的 7 种遍历方式与性能分析！](https://mp.weixin.qq.com/s/zQBN3UvJDhRTKP6SzcZFKw)
+此篇的結論
+**我们应该尽量使用迭代器（Iterator）来遍历 `EntrySet` 的遍历方式来操作 Map 集合**，这样就会既安全又高效
+
+```java
+
+public class HashMapTest {
+    public static void main(String[] args) {
+        // 创建并赋值 HashMap
+        Map<Integer, String> map = new HashMap();
+        map.put(1, "Java");
+        map.put(2, "JDK");
+        map.put(3, "Spring Framework");
+        map.put(4, "MyBatis framework");
+        map.put(5, "Java中文社群");
+    
+        // EntrySet 遍历
+        Iterator<Map.Entry<Integer, String>> iterator = map.entrySet().iterator();
+    
+        while (iterator.hasNext()) {
+            Map.Entry<Integer, String> entry = iterator.next();
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+    }
+}
+
+```
+
+`EntrySet` 之所以比 `KeySet` 的性能高是因为，`KeySet` 在循环时使用了 `map.get(key)`，而 `map.get(key)` 相当于又遍历了一遍 Map 集合去查询 `key` 所对应的值。为什么要用 “又” 这个词？那是因为**在使用迭代器或者 for 循环时，其实已经遍历了一遍 Map 集合了，因此再使用 `map.get(key)` 查询时，相当于遍历了两遍**。
+
+而 `EntrySet` 只遍历了一遍 Map 集合，之后通过代码 “Entry<Integer, String> entry = iterator.next ()” 把对象的 `key` 和 `value` 值都放入到了 `Entry` 对象中，因此再获取 `key` 和 `value` 值时就无需再遍历 Map 集合，只需要从 `Entry` 对象中取值就可以了。
+
+所以，**`EntrySet` 的性能比 `KeySet` 的性能高出了一倍，因为 `KeySet` 相当于循环了两遍 Map 集合，而 `EntrySet` 只循环了一遍**。
+
+安全性分析，請看[文章](https://mp.weixin.qq.com/s?__biz=MzkxOTcxNzIxOA==&mid=2247505580&idx=1&sn=1825ca5be126c2b650e201fb3fa8a3e6&source=41#wechat_redirect)。
+
 
 **🐛 修正（参见：[issue#1411](https://github.com/Snailclimb/JavaGuide/issues/1411)）**：
 

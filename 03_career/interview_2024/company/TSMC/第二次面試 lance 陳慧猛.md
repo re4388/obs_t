@@ -1,8 +1,5 @@
 
 
-
-
-
 # 組織
 
 icsd (第二大 sre)
@@ -22,21 +19,18 @@ tsid
 
 
 
-
-
-code base橫跨很多legacu code
-c, c++ java, srpint boot 和另一個
+code base
+- 橫跨很多legacu code
+- c, c++ java, sprint boot 和另一個
 
 
 devOp + sre -> platfrom team
 
 
-
-
-
 830~530
 要彈性的話要申請, per 月
 類似930~630
+
 
 
 積電廠區將實施「彈性上下班」分流，上班有3個時段可以選擇，分別是7:30、8:30及9:30，扣除中午吃飯休息時間1個小時，滿8小時即可下班，也就是說早上7:30上班的員工，最快下午4:30即可下班

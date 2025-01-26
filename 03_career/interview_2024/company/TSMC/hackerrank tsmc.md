@@ -5,9 +5,9 @@
 # Q1 變形背包問題
 
 
-![[IMG-hackerrank tsmc-20241120085610352.png|739]]
+![[IMG-hackerrank tsmc-20250126105841366.png|739]]
 
-![[IMG-hackerrank tsmc-20241120085610953.png]]
+![[IMG-hackerrank tsmc-20250126105841552.png]]
 
 
 ```js fold
@@ -161,13 +161,13 @@ Bottom-up 的方法使用一個二維陣列或兩個一維陣列來儲存子問�
 
 
 # Q2 解密圓圈
-![[IMG-hackerrank tsmc-20241120085611092.png]]
+![[IMG-hackerrank tsmc-20250126105841690.png]]
 
 
 
-![[IMG-hackerrank tsmc-20241120085611169.png]]
+![[IMG-hackerrank tsmc-20250126105841803.png]]
 
-![[IMG-hackerrank tsmc-20241120085611365.png]]
+![[IMG-hackerrank tsmc-20250126105841909.png]]
 
 
 ```js title:explainVersion fold
@@ -299,11 +299,11 @@ TIL
 給定一個 string
 求這個 string 裡面有多少 pali substring
 
-![[IMG-hackerrank tsmc-20241120085611451.png|738]]
+![[IMG-hackerrank tsmc-20250126105842153.png|738]]
 
-![[IMG-hackerrank tsmc-20241120085611558.png]]
+![[IMG-hackerrank tsmc-20250126105842250.png]]
 
-![[IMG-hackerrank tsmc-20241120085611648.png]]
+![[IMG-hackerrank tsmc-20250126105842416.png]]
 
 
 

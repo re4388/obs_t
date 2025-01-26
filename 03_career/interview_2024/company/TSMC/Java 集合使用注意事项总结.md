@@ -12,7 +12,7 @@
 
 绝大部分我们使用的集合的 `size()` 方法的时间复杂度也是 `O(1)`，不过，也有很多复杂度不是 `O(1)` 的，比如 `java.util.concurrent` 包下的 `ConcurrentLinkedQueue`。`ConcurrentLinkedQueue` 的 `isEmpty()` 方法通过 `first()` 方法进行判断，其中 `first()` 方法返回的是队列中第一个值不为 `null` 的节点（节点值为 `null` 的原因是在迭代器中使用的逻辑删除）
 
-```
+```java
 public boolean isEmpty() { return first() == null; }
 
 Node<E> first() {
@@ -33,7 +33,7 @@ Node<E> first() {
 
 由于在插入与删除元素时，都会执行 `updateHead(h, p)` 方法，所以该方法的执行的时间复杂度可以近似为 `O(1)`。而 `size()` 方法需要遍历整个链表，时间复杂度为 `O(n)`
 
-```
+```java
 public int size() {
     int count = 0;
     for (Node<E> p = first(); p != null; p = succ(p))
@@ -44,9 +44,12 @@ public int size() {
 }
 ```
 
-此外，在 `ConcurrentHashMap` 1.7 中 `size()` 方法和 `isEmpty()` 方法的时间复杂度也不太一样。`ConcurrentHashMap` 1.7 将元素数量存储在每个 `Segment` 中，`size()` 方法需要统计每个 `Segment` 的数量，而 `isEmpty()` 只需要找到第一个不为空的 `Segment` 即可。但是在 `ConcurrentHashMap` 1.8 中的 `size()` 方法和 `isEmpty()` 都需要调用 `sumCount()` 方法，其时间复杂度与 `Node` 数组的大小有关。下面是 `sumCount()` 方法的源码：
+此外，在 `ConcurrentHashMap` 1.7 中 `size()` 方法和 `isEmpty()` 方法的时间复杂度也不太一样。`ConcurrentHashMap` 1.7 将元素数量存储在每个 `Segment` 中，`size()` 方法需要统计每个 `Segment` 的数量，而 `isEmpty()` 只需要找到第一个不为空的 `Segment` 即可。
 
-```
+但是在 `ConcurrentHashMap` 1.8 中的 `size()` 方法和 `isEmpty()` 都需要调用 `sumCount()` 方法，其时间复杂度与 `Node` 数组的大小有关。
+
+下面是 `sumCount()` 方法的源码：
+```java
 final long sumCount() {
     CounterCell[] as = counterCells; CounterCell a;
     long sum = baseCount;
@@ -66,7 +69,7 @@ final long sumCount() {
 
 > **在使用 `java.util.stream.Collectors` 类的 `toMap()` 方法转为 `Map` 集合时，一定要注意当 value 为 null 时会抛 NPE 异常。**
 
-```
+```java
 class Person {
     private String name;
     private String phoneNumber;
@@ -75,7 +78,9 @@ class Person {
 
 List<Person> bookList = new ArrayList<>();
 bookList.add(new Person("jack","18163138123"));
-bookList.add(new Person("martin",null));
+bookList.add(new Person("martin",null)); // value 为 null 
+
+
 // 空指针异常
 bookList.stream().collect(Collectors.toMap(Person::getName, Person::getPhoneNumber));
 ```
@@ -84,7 +89,7 @@ bookList.stream().collect(Collectors.toMap(Person::getName, Person::getPhoneNumb
 
 首先，我们来看 `java.util.stream.Collectors` 类的 `toMap()` 方法 ，可以看到其内部调用了 `Map` 接口的 `merge()` 方法。
 
-```
+```java
 public static <T, K, U, M extends Map<K, U>>
 Collector<T, ?, M> toMap(Function<? super T, ? extends K> keyMapper,
                             Function<? super T, ? extends U> valueMapper,
@@ -101,7 +106,7 @@ Collector<T, ?, M> toMap(Function<? super T, ? extends K> keyMapper,
 
 > 如果你还不了解 Java 8 新特性的话，请看这篇文章：[《Java8 新特性总结》](https://mp.weixin.qq.com/s/ojyl7B6PiHaTWADqmUq2rw) 。
 
-```
+```java
 default V merge(K key, V value,
         BiFunction<? super V, ? super V, ? extends V> remappingFunction) {
     Objects.requireNonNull(remappingFunction);
@@ -120,7 +125,7 @@ default V merge(K key, V value,
 
 `merge()` 方法会先调用 `Objects.requireNonNull()` 方法判断 value 是否为空。
 
-```
+```java
 public static <T> T requireNonNull(T obj) {
     if (obj == null)
         throw new NullPointerException();
@@ -144,7 +149,7 @@ public static <T> T requireNonNull(T obj) {
 
 Java8 开始，可以使用 `Collection#removeIf()` 方法删除满足特定条件的元素，如
 
-```
+```java
 List<Integer> list = new ArrayList<>();
 for (int i = 1; i <= 10; ++i) {
     list.add(i);
@@ -167,7 +172,7 @@ System.out.println(list); /* [1, 3, 5, 7, 9] */
 
 这里我们以 `HashSet` 和 `ArrayList` 为例说明。
 
-```
+```java
 // Set 去重代码示例
 public static <T> Set<T> removeDuplicateBySet(List<T> data) {
 
@@ -198,7 +203,7 @@ public static <T> List<T> removeDuplicateByList(List<T> data) {
 
 `HashSet` 的 `contains()` 方法底部依赖的 `HashMap` 的 `containsKey()` 方法，时间复杂度接近于 O（1）（没有出现哈希冲突的时候为 O（1））。
 
-```
+```java
 private transient HashMap<E,Object> map;
 public boolean contains(Object o) {
     return map.containsKey(o);
@@ -209,7 +214,7 @@ public boolean contains(Object o) {
 
 `ArrayList` 的 `contains()` 方法是通过遍历所有元素的方法来做的，时间复杂度接近是 O (n)。
 
-```
+```java
 public boolean contains(Object o) {
     return indexOf(o) >= 0;
 }
@@ -235,7 +240,7 @@ public int indexOf(Object o) {
 
 `toArray(T[] array)` 方法的参数是一个泛型数组，如果 `toArray` 方法中没有传递任何参数的话返回的是 `Object` 类 型数组。
 
-```
+```java
 String [] s= new String[]{
     "dog", "lazy", "a", "over", "jumps", "fox", "brown", "quick", "A"
 };
@@ -257,7 +262,7 @@ s=list.toArray(new String[0]);
 
 `Arrays.asList()` 在平时开发中还是比较常见的，我们可以使用它将一个数组转换为一个 `List` 集合。
 
-```
+```java
 String[] myArray = {"Apple", "Banana", "Orange"};
 List<String> myList = Arrays.asList(myArray);
 //上面两个语句等价于下面一条语句
@@ -266,7 +271,7 @@ List<String> myList = Arrays.asList("Apple","Banana", "Orange");
 
 JDK 源码对于这个方法的说明：
 
-```
+```java
 /**
   *返回由指定数组支持的固定大小的列表。此方法作为基于数组和基于集合的API之间的桥梁，
   * 与 Collection.toArray()结合使用。返回的List是可序列化并实现RandomAccess接口。
@@ -280,7 +285,7 @@ public static <T> List<T> asList(T... a) {
 
 **1、`Arrays.asList()` 是泛型方法，传递的数组必须是对象数组，而不是基本类型。**
 
-```
+```java
 int[] myArray = {1, 2, 3};
 List myList = Arrays.asList(myArray);
 System.out.println(myList.size());//1
@@ -294,13 +299,13 @@ System.out.println(array[0]);//1
 
 我们使用包装类型数组就可以解决这个问题。
 
-```
+```java
 Integer[] myArray = {1, 2, 3};
 ```
 
 **2、使用集合的修改方法: `add()`、`remove()`、`clear()` 会抛出异常。**
 
-```
+```java
 List myList = Arrays.asList(1, 2, 3);
 myList.add(4);//运行时报错：UnsupportedOperationException
 myList.remove(1);//运行时报错：UnsupportedOperationException
@@ -309,14 +314,14 @@ myList.clear();//运行时报错：UnsupportedOperationException
 
 `Arrays.asList()` 方法返回的并不是 `java.util.ArrayList` ，而是 `java.util.Arrays` 的一个内部类，这个内部类并没有实现集合的修改方法或者说并没有重写这些方法。
 
-```
+```java
 List myList = Arrays.asList(1, 2, 3);
 System.out.println(myList.getClass());//class java.util.Arrays$ArrayList
 ```
 
 下图是 `java.util.Arrays$ArrayList` 的简易源码，我们可以看到这个类重写的方法有哪些。
 
-```
+```java
   private static class ArrayList<E> extends AbstractList<E>
         implements RandomAccess, java.io.Serializable
     {
@@ -361,7 +366,7 @@ System.out.println(myList.getClass());//class java.util.Arrays$ArrayList
 
 我们再看一下 `java.util.AbstractList` 的 `add/remove/clear` 方法就知道为什么会抛出 `UnsupportedOperationException` 了。
 
-```
+```java
 public E remove(int index) {
     throw new UnsupportedOperationException();
 }
@@ -389,7 +394,7 @@ protected void removeRange(int fromIndex, int toIndex) {
 
 1、手动实现工具类
 
-```
+```java
 //JDK1.5+
 static <T> List<T> arrayToList(final T[] array) {
   final List<T> l = new ArrayList<T>(array.length);
@@ -407,13 +412,13 @@ System.out.println(arrayToList(myArray).getClass());//class java.util.ArrayList
 
 2、最简便的方法
 
-```
+```java
 List list = new ArrayList<>(Arrays.asList("a", "b", "c"))
 ```
 
 3、使用 Java8 的 `Stream`(推荐)
 
-```
+```java
 Integer [] myArray = { 1, 2, 3 };
 List myList = Arrays.stream(myArray).collect(Collectors.toList());
 //基本类型也可以实现转换（依赖boxed的装箱操作）
@@ -425,14 +430,14 @@ List myList = Arrays.stream(myArray2).boxed().collect(Collectors.toList());
 
 对于不可变集合，你可以使用 [`ImmutableList`](https://github.com/google/guava/blob/master/guava/src/com/google/common/collect/ImmutableList.java)类及其 [`of()`](https://github.com/google/guava/blob/master/guava/src/com/google/common/collect/ImmutableList.java#L101)与 [`copyOf()`](https://github.com/google/guava/blob/master/guava/src/com/google/common/collect/ImmutableList.java#L225)工厂方法：（参数不能为空）
 
-```
+```java
 List<String> il = ImmutableList.of("string", "elements");  // from varargs
 List<String> il = ImmutableList.copyOf(aStringArray);      // from array
 ```
 
 对于可变集合，你可以使用 [`Lists`](https://github.com/google/guava/blob/master/guava/src/com/google/common/collect/Lists.java)类及其 [`newArrayList()`](https://github.com/google/guava/blob/master/guava/src/com/google/common/collect/Lists.java#L87)工厂方法：
 
-```
+```java
 List<String> l1 = Lists.newArrayList(anotherListOrCollection);    // from collection
 List<String> l2 = Lists.newArrayList(aStringArray);               // from array
 List<String> l3 = Lists.newArrayList("or", "string", "elements"); // from varargs
@@ -440,14 +445,14 @@ List<String> l3 = Lists.newArrayList("or", "string", "elements"); // from vararg
 
 5、使用 Apache Commons Collections
 
-```
+```java
 List<String> list = new ArrayList<String>();
 CollectionUtils.addAll(list, str);
 ```
 
 6、 使用 Java9 的 `List.of()` 方法
 
-```
+```java
 Integer[] array = {1, 2, 3};
 List<Integer> list = List.of(array);
 ```
