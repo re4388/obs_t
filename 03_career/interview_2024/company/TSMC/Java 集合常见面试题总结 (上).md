@@ -253,7 +253,7 @@ public interface RandomAccess {
 
 对应的我们给出下面这样一段在示例，我们首先插入 `100` 个操作元素，一个线程迭代元素，一个线程删除元素，最终输出结果如愿抛出 `ConcurrentModificationException`：
 
-```
+```java
 // 使用线程安全的 CopyOnWriteArrayList 避免 ConcurrentModificationException
 List<Integer> list = new CopyOnWriteArrayList<>();
 CountDownLatch countDownLatch = new CountDownLatch(2);
