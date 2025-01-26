@@ -279,8 +279,11 @@ JDK 源码对于这个方法的说明：
 
 ```java
 /**
-  *返回由指定数组支持的固定大小的列表。此方法作为基于数组和基于集合的API之间的桥梁，
-  * 与 Collection.toArray()结合使用。返回的List是可序列化并实现RandomAccess接口。
+  * 返回由指定数组支持的固定大小的列表。
+  * 此方法作为基于数组和基于集合的API之间的桥梁，
+  * 与 Collection.toArray()结合使用。
+  * 
+  * 返回的List是可序列化并实现RandomAccess接口。
   */
 public static <T> List<T> asList(T... a) {
     return new ArrayList<>(a);
@@ -292,8 +295,8 @@ public static <T> List<T> asList(T... a) {
 **1、`Arrays.asList()` 是泛型方法，传递的数组必须是对象数组，而不是基本类型。**
 
 ```java
-int[] myArray = {1, 2, 3};
-List myList = Arrays.asList(myArray);
+int[] myArray = {1, 2, 3};  // int arr
+List myList = Arrays.asList(myArray); 
 
 System.out.println(myList.size());//1
 System.out.println(myList.get(0));//数组地址值
@@ -303,9 +306,8 @@ int[] array = (int[]) myList.get(0);
 System.out.println(array[0]);//1
 ```
 
-当传入一个原生数据类型数组时，`Arrays.asList()` 的真正得到的参数就不是数组中的元素，而是数组对象本身！此时 `List` 的唯一元素就是这个数组，这也就解释了上面的代码。
-
-我们使用包装类型数组就可以解决这个问题。
+当传入一个原生数据类型数组时，`Arrays.asList()` 的真正得到的参数就不是数组中的元素，而是数组对象本身！
+此时 `List` 的唯一元素就是这个数组，这也就解释了上面的代码。我们使用包装类型数组就可以解决这个问题。
 
 ```java
 Integer[] myArray = {1, 2, 3};
