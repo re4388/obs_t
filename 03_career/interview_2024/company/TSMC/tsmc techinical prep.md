@@ -22,23 +22,28 @@
 - [x] [[Java 序列化详解]]
 - [x] [[Java 反射机制详解]]
 - [x] [[BigDecimal 详解]]
-- [ ] [[Java 代理模式详解]]
-- [ ] [[Java 魔法类 Unsafe 详解]]
-- [ ] [[Java SPI 机制详解]]
-- [ ] [[Java 语法糖详解]]
+- [x] [[Java 代理模式详解]]
+
+
 - [ ] [[Java 集合常见面试题总结 (上)]]
 - [ ] [[Java 集合常见面试题总结 (下)]]
 - [ ] [[Java 集合使用注意事项总结]]
 
+- [ ] [[Java 魔法类 Unsafe 详解]]
+- [ ] [[Java SPI 机制详解]]
+- [ ] [[Java 语法糖详解]]
+
+
+
 源碼解讀
-[[ArrayList 源码分析]]
-[[LinkedList 源码分析]]
-[[HashMap 源码分析]]
-[[ConcurrentHashMap 源码分析]]
-[[LinkedHashMap 源码分析]]
-[[CopyOnWriteArrayList 源码分析]]
-[[ArrayBlockingQueue 源码分析]]
-[[DelayQueue 源码分析]]
+- [ ] [[ArrayList 源码分析]]
+- [ ] [[LinkedList 源码分析]]
+- [ ] [[HashMap 源码分析]]
+- [ ] [[ConcurrentHashMap 源码分析]]
+- [ ] [[LinkedHashMap 源码分析]]
+- [ ] [[CopyOnWriteArrayList 源码分析]]
+- [ ] [[ArrayBlockingQueue 源码分析]]
+- [ ] [[DelayQueue 源码分析]]
 
 併發 
 - [ ] [[Java 并发常见面试题总结（上）]]
@@ -72,19 +77,19 @@ JVM
 
 
 Java 版本特性 
- [[Java8 新特性实战]]
- [[《Java8 指南》中文翻译]]
+ - [ ] [[Java8 新特性实战]]
+ - [ ] [[《Java8 指南》中文翻译]]
 [[Java 9 新特性概览]]
 [[Java 10 新特性概览]]
 [[Java 11 新特性概览]]
 [[Java 12 & 13 新特性概览]]
 [[Java 14 & 15 新特性概览]]
 [[Java 16 新特性概览]]
-[[Java 17 新特性概览（重要）]]
+- [ ] [[Java 17 新特性概览（重要）]]
 [[Java 18 新特性概览]]
 [[Java 19 新特性概览]]
 [[Java 20 新特性概览]]
-[[Java 21 新特性概览 (重要)]]
+- [ ] [[Java 21 新特性概览 (重要)]]
 [[Java 22 & 23 新特性概览]]
 
 - [ ] [[Maven 核心概念总结]]

@@ -3,7 +3,10 @@
 
 ### [Java 集合概览](https://javaguide.cn/java/collection/java-collection-questions-01.html#java-%E9%9B%86%E5%90%88%E6%A6%82%E8%A7%88)
 
-Java 集合，也叫作容器，主要是由两大接口派生而来：一个是 `Collection` 接口，主要用于存放单一元素；另一个是 `Map` 接口，主要用于存放键值对。对于 `Collection` 接口，下面又有三个主要的子接口：`List`、`Set` 、 `Queue`。
+Java 集合，也叫作容器，主要是由两大接口派生而来：一个是 `Collection` 接口，主要用于存放单一元素
+对于 `Collection` 接口，下面又有三个主要的子接口：`List`、`Set` 、 `Queue`。
+
+另一个是 `Map` 接口，主要用于存放键值对。
 
 Java 集合框架如下图所示：
 
