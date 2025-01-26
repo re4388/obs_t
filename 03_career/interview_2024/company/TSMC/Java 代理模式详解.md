@@ -10,11 +10,13 @@
 
 https://medium.com/@mithunsasidharan/understanding-the-proxy-design-pattern-5e63fe38052a
 
-代理模式有静态代理和动态代理两种实现方式，我们 先来看一下静态代理模式的实现。
+代理模式有静态代理和动态代理两种实现方式，我们先来看一下静态代理模式的实现。
 
 ## [静态代理](https://javaguide.cn/java/basis/proxy.html#_2-%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86)
 
-**静态代理中，我们对目标对象的每个方法的增强都是手动完成的（_后面会具体演示代码_），非常不灵活（_比如接口一旦新增加方法，目标对象和代理对象都要进行修改_）且麻烦 (_需要对每个目标类都单独写一个代理类_）。** 实际应用场景非常非常少，日常开发几乎看不到使用静态代理的场景。
+**静态代理中，我们对目标对象的每个方法的增强都是手动完成的（_后面会具体演示代码_），非常不灵活（_比如接口一旦新增加方法，目标对象和代理对象都要进行修改_）且麻烦 (_需要对每个目标类都单独写一个代理类_）。** 
+
+实际应用场景非常非常少，日常开发几乎看不到使用静态代理的场景。
 
 上面我们是从实现和应用角度来说的静态代理，从 JVM 层面来说， **静态代理在编译时就将接口、实现类、代理类这些都变成了一个个实际的 class 文件。**
 
@@ -28,7 +30,7 @@ https://medium.com/@mithunsasidharan/understanding-the-proxy-design-pattern-5e63
 
 **1. 定义发送短信的接口**
 
-```
+```java
 public interface SmsService {
     String send(String message);
 }
@@ -36,7 +38,7 @@ public interface SmsService {
 
 **2. 实现发送短信的接口**
 
-```
+```java
 public class SmsServiceImpl implements SmsService {
     public String send(String message) {
         System.out.println("send message:" + message);
@@ -47,7 +49,7 @@ public class SmsServiceImpl implements SmsService {
 
 **3. 创建代理类并同样实现发送短信的接口**
 
-```
+```java
 public class SmsProxy implements SmsService {
 
     private final SmsService smsService;
@@ -70,7 +72,7 @@ public class SmsProxy implements SmsService {
 
 **4. 实际使用**
 
-```
+```java
 public class Main {
     public static void main(String[] args) {
         SmsService smsService = new SmsServiceImpl();
@@ -114,7 +116,9 @@ after method send()
 
 `Proxy` 类中使用频率最高的方法是：`newProxyInstance()` ，这个方法主要用来生成一个代理对象。
 
-```
+```java
+
+
     public static Object newProxyInstance(ClassLoader loader,
                                           Class<?>[] interfaces,
                                           InvocationHandler h)
@@ -122,6 +126,9 @@ after method send()
     {
         ......
     }
+
+
+
 ```
 
 这个方法一共有 3 个参数：
@@ -130,9 +137,10 @@ after method send()
 2. **interfaces** : 被代理类实现的一些接口；
 3. **h** : 实现了 `InvocationHandler` 接口的对象；
 
-要实现动态代理的话，还必须需要实现 `InvocationHandler` 来自定义处理逻辑。 当我们的动态代理对象调用一个方法时，这个方法的调用就会被转发到实现 `InvocationHandler` 接口类的 `invoke` 方法来调用。
+要实现动态代理的话，还必须需要实现 `InvocationHandler` 来自定义处理逻辑。 
+当我们的动态代理对象调用一个方法时，这个方法的调用就会被转发到实现 `InvocationHandler` 接口类的 `invoke` 方法来调用。
 
-```
+```java
 public interface InvocationHandler {
 
     /**
@@ -151,7 +159,7 @@ public interface InvocationHandler {
 
 也就是说：**你通过 `Proxy` 类的 `newProxyInstance()` 创建的代理对象在调用方法的时候，实际会调用到实现 `InvocationHandler` 接口的类的 `invoke()` 方法。** 你可以在 `invoke()` 方法中自定义处理逻辑，比如在方法执行前后做什么事情。
 
-#### [3.1.2. JDK 动态代理类使用步骤](https://javaguide.cn/java/basis/proxy.html#_3-1-2-jdk-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%B1%BB%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4)
+	#### [3.1.2. JDK 动态代理类使用步骤](https://javaguide.cn/java/basis/proxy.html#_3-1-2-jdk-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%B1%BB%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4)
 
 1. 定义一个接口及其实现类；
 2. 自定义 `InvocationHandler` 并重写 `invoke` 方法，在 `invoke` 方法中我们会调用原生方法（被代理类的方法）并自定义一些处理逻辑；
@@ -163,7 +171,7 @@ public interface InvocationHandler {
 
 **1. 定义发送短信的接口**
 
-```
+```java
 public interface SmsService {
     String send(String message);
 }
@@ -171,7 +179,7 @@ public interface SmsService {
 
 **2. 实现发送短信的接口**
 
-```
+```java
 public class SmsServiceImpl implements SmsService {
     public String send(String message) {
         System.out.println("send message:" + message);
@@ -182,7 +190,7 @@ public class SmsServiceImpl implements SmsService {
 
 **3. 定义一个 JDK 动态代理类**
 
-```
+```java
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -192,6 +200,7 @@ import java.lang.reflect.Method;
  * @createTime 2020年05月11日 11:23:00
  */
 public class DebugInvocationHandler implements InvocationHandler {
+
     /**
      * 代理类中的真实对象
      */
@@ -205,9 +214,12 @@ public class DebugInvocationHandler implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws InvocationTargetException, IllegalAccessException {
         //调用方法之前，我们可以添加自己的操作
         System.out.println("before method " + method.getName());
+        
         Object result = method.invoke(target, args);
+        
         //调用方法之后，我们同样可以添加自己的操作
         System.out.println("after method " + method.getName());
+        
         return result;
     }
 }
@@ -217,7 +229,9 @@ public class DebugInvocationHandler implements InvocationHandler {
 
 **4. 获取代理对象的工厂类**
 
-```
+```java
+
+
 public class JdkProxyFactory {
     public static Object getProxy(Object target) {
         return Proxy.newProxyInstance(
@@ -227,13 +241,15 @@ public class JdkProxyFactory {
         );
     }
 }
+
+
 ```
 
 `getProxy()`：主要通过 `Proxy.newProxyInstance（）`方法获取某个类的代理对象
 
 **5. 实际使用**
 
-```
+```java
 SmsService smsService = (SmsService) JdkProxyFactory.getProxy(new SmsServiceImpl());
 smsService.send("java");
 ```
@@ -260,12 +276,17 @@ after method send
 
 你需要自定义 `MethodInterceptor` 并重写 `intercept` 方法，`intercept` 用于拦截增强被代理类的方法。
 
-```
-public interface MethodInterceptor
-extends Callback{
+```java
+
+
+public interface MethodInterceptor extends Callback {
+
     // 拦截被代理类中的方法
     public Object intercept(Object obj, java.lang.reflect.Method method, Object[] args,MethodProxy proxy) throws Throwable;
+
 }
+
+
 ```
 
 1. **obj** : 被代理的对象（需要增强的对象）
@@ -285,7 +306,7 @@ extends Callback{
 
 不同于 JDK 动态代理不需要额外的依赖。[CGLIB](https://github.com/cglib/cglib)(_Code Generation Library_) 实际是属于一个开源项目，如果你要使用它的话，需要手动添加相关依赖。
 
-```
+```java
 <dependency>
   <groupId>cglib</groupId>
   <artifactId>cglib</artifactId>
@@ -293,9 +314,10 @@ extends Callback{
 </dependency>
 ```
 
-**1. 实现一个使用阿里云发送短信的类**
+**1. 一个使用阿里云发送短信的类**
 
-```
+```java
+
 package github.javaguide.dynamicProxy.cglibDynamicProxy;
 
 public class AliSmsService {
@@ -304,11 +326,13 @@ public class AliSmsService {
         return message;
     }
 }
+
 ```
 
 **2. 自定义 `MethodInterceptor`（方法拦截器）**
 
-```
+```java
+
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
@@ -328,11 +352,15 @@ public class DebugMethodInterceptor implements MethodInterceptor {
      */
     @Override
     public Object intercept(Object o, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
+        
         //调用方法之前，我们可以添加自己的操作
         System.out.println("before method " + method.getName());
+        
         Object object = methodProxy.invokeSuper(o, args);
+        
         //调用方法之后，我们同样可以添加自己的操作
         System.out.println("after method " + method.getName());
+        
         return object;
     }
 
@@ -341,7 +369,8 @@ public class DebugMethodInterceptor implements MethodInterceptor {
 
 **3. 获取代理类**
 
-```
+```java
+
 import net.sf.cglib.proxy.Enhancer;
 
 public class CglibProxyFactory {
@@ -349,12 +378,16 @@ public class CglibProxyFactory {
     public static Object getProxy(Class<?> clazz) {
         // 创建动态代理增强类
         Enhancer enhancer = new Enhancer();
+        
         // 设置类加载器
         enhancer.setClassLoader(clazz.getClassLoader());
+        
         // 设置被代理类
         enhancer.setSuperclass(clazz);
+        
         // 设置方法拦截器
         enhancer.setCallback(new DebugMethodInterceptor());
+        
         // 创建代理类
         return enhancer.create();
     }
@@ -363,14 +396,15 @@ public class CglibProxyFactory {
 
 **4. 实际使用**
 
-```
+```java
 AliSmsService aliSmsService = (AliSmsService) CglibProxyFactory.getProxy(AliSmsService.class);
 aliSmsService.send("java");
 ```
 
 运行上述代码之后，控制台打印出：
 
-```
+```jjj
+
 before method send
 send message:java
 after method send
@@ -383,8 +417,12 @@ after method send
 
 ## [静态代理和动态代理的对比](https://javaguide.cn/java/basis/proxy.html#_4-%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%E5%92%8C%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%9A%84%E5%AF%B9%E6%AF%94)
 
-1. **灵活性**：动态代理更加灵活，不需要必须实现接口，可以直接代理实现类，并且可以不需要针对每个目标类都创建一个代理类。另外，静态代理中，接口一旦新增加方法，目标对象和代理对象都要进行修改，这是非常麻烦的！
-2. **JVM 层面**：静态代理在编译时就将接口、实现类、代理类这些都变成了一个个实际的 class 文件。而动态代理是在运行时动态生成类字节码，并加载到 JVM 中的。
+1. **灵活性**：
+	1. 动态代理更加灵活，不需要必须实现接口，可以直接代理实现类，并且可以不需要针对每个目标类都创建一个代理类。
+	2. 静态代理中，接口一旦新增加方法，目标对象和代理对象都要进行修改，这是非常麻烦的！
+2. **JVM 层面**：
+	1. 静态代理在编译时就将接口、实现类、代理类这些都变成了一个个实际的 class 文件。
+	2. 动态代理是在运行时动态生成类字节码，并加载到 JVM 中的。
 
 ## [总结](https://javaguide.cn/java/basis/proxy.html#_5-%E6%80%BB%E7%BB%93)
 

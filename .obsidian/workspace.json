@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (下).md",
+                "file": "03_career/interview_2024/company/TSMC/Java 代理模式详解.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java 基础常见面试题总结 (下)"
+              "title": "Java 代理模式详解"
             }
           }
         ]
@@ -170,6 +170,7 @@
   "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (下).md",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (中).md",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (上).md",
     "100_attachements/Pasted image 20250125204946.png",
@@ -213,7 +214,6 @@
     "03_career/interview_2024/company/TSMC/LinkedList 源码分析.md",
     "03_career/interview_2024/company/TSMC/ArrayList 源码分析.md",
     "03_career/interview_2024/company/TSMC/分布式锁常见实现方案总结.md",
-    "03_career/interview_2024/company/TSMC/分布式锁介绍.md",
-    "03_career/interview_2024/company/TSMC/SpringBoot 自动装配原理详解.md"
+    "03_career/interview_2024/company/TSMC/分布式锁介绍.md"
   ]
 }
