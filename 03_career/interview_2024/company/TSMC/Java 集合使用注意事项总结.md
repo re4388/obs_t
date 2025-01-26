@@ -420,7 +420,7 @@ Integer [] myArray = { 1, 2, 3 };
 System.out.println(arrayToList(myArray).getClass());//class java.util.ArrayList
 ```
 
-2、最简便的方法
+2、最简便的方法, wrap by ArryList
 
 ```java
 List list = new ArrayList<>(Arrays.asList("a", "b", "c"))
@@ -431,8 +431,10 @@ List list = new ArrayList<>(Arrays.asList("a", "b", "c"))
 ```java
 Integer [] myArray = { 1, 2, 3 };
 List myList = Arrays.stream(myArray).collect(Collectors.toList());
+
 //基本类型也可以实现转换（依赖boxed的装箱操作）
 int [] myArray2 = { 1, 2, 3 };
+
 List myList = Arrays.stream(myArray2).boxed().collect(Collectors.toList());
 ```
 

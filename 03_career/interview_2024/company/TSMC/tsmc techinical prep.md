@@ -27,16 +27,15 @@
 
 - [x] [[Java 集合常见面试题总结 (上)]]
 - [x] [[Java 集合常见面试题总结 (下)]]
-- [ ] [[Java 集合使用注意事项总结]]
+- [x] [[Java 集合使用注意事项总结]]
 
 - [ ] [[Java 魔法类 Unsafe 详解]]
 - [ ] [[Java SPI 机制详解]]
 - [ ] [[Java 语法糖详解]]
 
 
-
 IO
-- [ ] [[Java IO 基础知识总结]]
+- [x] [[Java IO 基础知识总结]]
 - [ ] [[Java IO 设计模式总结]]
 - [ ] [[Java IO 模型详解]]
 - [ ] [[Java NIO 核心知识总结]]
@@ -99,6 +98,8 @@ Java 版本特性 
 - [ ] [[Maven 最佳实践]]
 
 
+
+- [ ] [java_面试指北 PDF 版本（最新）](https://github.com/re4388/java_interview_guide_PDF)
 
 - [ ] [awesome-idea: IntelliJ IDEA 使用指南 | 必备插件推荐 | 插件开发入门 | 重构小技巧 | 源码阅读技巧。](https://gitee.com/SnailClimb/awesome-idea#/SnailClimb/awesome-idea/blob/main/./docs/tips/source-code-reading-skills.md)
 ---

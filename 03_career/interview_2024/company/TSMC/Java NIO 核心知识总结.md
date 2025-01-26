@@ -40,7 +40,7 @@ NIO 主要包括以下三个核心组件：
 
 为了更清晰地认识缓冲区，我们来简单看看 `Buffer` 类中定义的四个成员变量：
 
-```
+```java
 public abstract class Buffer {
     // Invariants: mark <= position <= limit <= capacity
     private int mark = -1;
@@ -69,7 +69,7 @@ public abstract class Buffer {
 
 这里以 `ByteBuffer` 为例进行介绍：
 
-```
+```java
 // 分配堆内存
 public static ByteBuffer allocate(int capacity);
 // 分配直接内存
@@ -89,7 +89,7 @@ Buffer 最核心的两个方法：
 
 Buffer 中数据变化的过程：
 
-```
+```java
 import java.nio.*;
 
 public class CharBufferDemo {
@@ -134,7 +134,7 @@ public class CharBufferDemo {
 
 输出:
 
-```
+```java
 初始状态：
 capacity: 8, limit: 8, position: 0
 
@@ -187,7 +187,7 @@ Channel 最核心的两个方法：
 
 这里我们以 `FileChannel` 为例演示一下是读取文件数据的。
 
-```
+```java
 RandomAccessFile reader = new RandomAccessFile("/Users/guide/Documents/test_read.in", "r"))
 FileChannel channel = reader.getChannel();
 ByteBuffer buffer = ByteBuffer.allocate(1024);
@@ -219,7 +219,7 @@ Selector 可以监听以下四种事件类型：
 
 简单演示一下如何遍历被选择的 `SelectionKey` 集合并进行处理：
 
-```
+```java
 Set<SelectionKey> selectedKeys = selector.selectedKeys();
 Iterator<SelectionKey> keyIterator = selectedKeys.iterator();
 while (keyIterator.hasNext()) {
@@ -249,7 +249,7 @@ Selector 还提供了一系列和 `select()` 相关的方法：
 
 使用 Selector 实现网络读写的简单示例：
 
-```
+```java
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -354,7 +354,7 @@ Java 对零拷贝的支持：
 
 代码示例：
 
-```
+```java
 private void loadFileIntoMemory(File xmlFile) throws IOException {
   FileInputStream fis = new FileInputStream(xmlFile);
   // 创建 FileChannel 对象
@@ -376,7 +376,5 @@ private void loadFileIntoMemory(File xmlFile) throws IOException {
 ## [参考](https://javaguide.cn/java/io/nio-basis.html#%E5%8F%82%E8%80%83)
 
 - Java NIO 浅析：[https://tech.meituan.com/2016/11/04/nio.html](https://tech.meituan.com/2016/11/04/nio.html)
-    
 - 面试官：Java NIO 了解？[https://mp.weixin.qq.com/s/mZobf-U8OSYQfHfYBEB6KA](https://mp.weixin.qq.com/s/mZobf-U8OSYQfHfYBEB6KA)
-    
 - Java NIO：Buffer、Channel 和 Selector：[https://www.javadoop.com/post/java-nio](https://www.javadoop.com/post/java-nio)
