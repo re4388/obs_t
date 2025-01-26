@@ -176,6 +176,9 @@ BIO 中的流是单向的，分为各种 `InputStream`（输入流）和 `Outp
 
 Channel 与前面介绍的 Buffer 打交道，读操作的时候将 Channel 中的数据填充到 Buffer 中，而写操作时将 Buffer 中的数据写入到 Channel 中。
 
+Channel 最核心的两个方法：
+1. `read` ：读取数据并写入到 Buffer 中。
+2. `write` ：将 Buffer 中的数据写入到 Channel 中。
 ![[100_attachements/a7da22ca03fd22086726b26ed4d3fdc5_MD5.png]]
 
 另外，因为 Channel 是全双工的，所以它可以比流更好地映射底层操作系统的 API。
@@ -201,14 +204,25 @@ Channel 最核心的两个方法：
 
 ```java
 RandomAccessFile reader = new RandomAccessFile("/Users/guide/Documents/test_read.in", "r"))
+
+// get FileChannel
 FileChannel channel = reader.getChannel();
+
+
+// allocate 1024 bytes
 ByteBuffer buffer = ByteBuffer.allocate(1024);
+
+// 读取数据并写入到 Buffer 中
 channel.read(buffer);
 ```
 
 ### [Selector（选择器）](https://javaguide.cn/java/io/nio-basis.html#selector-%E9%80%89%E6%8B%A9%E5%99%A8)
 
-Selector（选择器） 是 NIO 中的一个关键组件，它允许一个线程处理多个 Channel。Selector 是基于事件驱动的 I/O 多路复用模型，主要运作原理是：通过 Selector 注册通道的事件，Selector 会不断地轮询注册在其上的 Channel。当事件发生时，比如：某个 Channel 上面有新的 TCP 连接接入、读和写事件，这个 Channel 就处于就绪状态，会被 Selector 轮询出来。Selector 会将相关的 Channel 加入到就绪集合中。通过 SelectionKey 可以获取就绪 Channel 的集合，然后对这些就绪的 Channel 进行相应的 I/O 操作。
+Selector（选择器） 是 NIO 中的一个关键组件，它允许一个线程处理多个 Channel。
+
+Selector 是基于事件驱动的 I/O 多路复用模型，主要运作原理是：通过 Selector 注册通道的事件，Selector 会不断地轮询注册在其上的 Channel。
+
+当事件发生时，比如：某个 Channel 上面有新的 TCP 连接接入、读和写事件，这个 Channel 就处于就绪状态，会被 Selector 轮询出来。Selector 会将相关的 Channel 加入到就绪集合中。通过 SelectionKey 可以获取就绪 Channel 的集合，然后对这些就绪的 Channel 进行相应的 I/O 操作。
 
 ![[100_attachements/758583776db48d5a8fa2d09a2cab9011_MD5.png]]
 
@@ -221,7 +235,9 @@ Selector 可以监听以下四种事件类型：
 3. `SelectionKey.OP_READ`：表示通道准备好进行读取的事件，即有数据可读。
 4. `SelectionKey.OP_WRITE`：表示通道准备好进行写入的事件，即可以写入数据。
 
-`Selector` 是抽象类，可以通过调用此类的 `open()` 静态方法来创建 Selector 实例。Selector 可以同时监控多个 `SelectableChannel` 的 `IO` 状况，是非阻塞 `IO` 的核心。
+`Selector` 是抽象类，可以通过调用此类的 `open()` 静态方法来创建 Selector 实例。
+
+Selector 可以同时监控多个 `SelectableChannel` 的 `IO` 状况，是非阻塞 `IO` 的核心。
 
 一个 Selector 实例有三个 `SelectionKey` 集合：
 
