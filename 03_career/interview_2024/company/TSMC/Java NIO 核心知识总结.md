@@ -16,9 +16,9 @@
 
 NIO 主要包括以下三个核心组件：
 
-- **Buffer（缓冲区）**：NIO 读写数据都是通过缓冲区进行操作的。读操作的时候将 Channel 中的数据填充到 Buffer 中，而写操作时将 Buffer 中的数据写入到 Channel 中。
-- **Channel（通道）**：Channel 是一个双向的、可读可写的数据传输通道，NIO 通过 Channel 来实现数据的输入输出。通道是一个抽象的概念，它可以代表文件、套接字或者其他数据源之间的连接。
-- **Selector（选择器）**：允许一个线程处理多个 Channel，基于事件驱动的 I/O 多路复用模型。所有的 Channel 都可以注册到 Selector 上，由 Selector 来分配线程来处理事件。
+- **Buffer（缓冲区）**：**NIO 读写数据都是通过缓冲区进行操作的**。读操作的时候将 Channel 中的数据填充到 Buffer 中，而写操作时将 Buffer 中的数据写入到 Channel 中。
+- **Channel（通道）**：Channel 是一个**双向的、可读可写的数据传输通道**，NIO 通过 Channel 来实现数据的输入输出。通道是一个抽象的概念，它可以代表文件、套接字或者其他数据源之间的连接。
+- **Selector（选择器/多路复用器）**：允许一个线程处理多个 Channel，基于事件驱动的 I/O 多路复用模型。所有的 Channel 都可以注册到 Selector 上，由 Selector 来分配线程来处理事件。
 
 三者的关系如下图所示（暂时不理解没关系，后文会详细介绍）：
 
@@ -54,13 +54,19 @@ public abstract class Buffer {
 
 1. 容量（`capacity`）：`Buffer` 可以存储的最大数据量，`Buffer` 创建时设置且不可改变；
 2. 界限（`limit`）：`Buffer` 中可以读 / 写数据的边界。写模式下，`limit` 代表最多能写入的数据，一般等于 `capacity`（可以通过 `limit(int newLimit)` 方法设置）；读模式下，`limit` 等于 Buffer 中实际写入的数据大小。
-3. 位置（`position`）：下一个可以被读写的数据的位置（索引）。从写操作模式到读操作模式切换的时候（flip），`position` 都会归零，这样就可以从头开始读写了。
+3. 位置（`position`）：下一个可以被读写的数据的位置（索引）。**从写操作模式到读操作模式切换的时候（flip），`position` 都会归零，这样就可以从头开始读写了**。
 4. 标记（`mark`）：`Buffer` 允许将位置直接定位到该标记处，这是一个可选属性；
 
 并且，上述变量满足如下的关系：**0 <= mark <= position <= limit <= capacity** 。
 
-另外，Buffer 有读模式和写模式这两种模式，分别用于从 Buffer 中读取数据或者向 Buffer 中写入数据。Buffer 被创建之后默认是写模式，调用 `flip()` 可以切换到读模式。如果要再次切换回写模式，可以调用 `clear()` 或者 `compact()` 方法。
+另外，Buffer 有读模式和写模式这两种模式，分别用于从 Buffer 中读取数据或者向 Buffer 中写入数据。
 
+**Buffer 被创建之后默认是写模式，调用 `flip()` 可以切换到读模式。**
+
+如果要再次切换回写模式，可以调用 `clear()` 或者 `compact()` 方法。`clear()` 清空缓冲区，将 position 的值置为 0，将 limit 的值置为 capacity 的值
+
+
+`flip` ：将缓冲区从写模式切换到读模式，它会将 `limit` 的值设置为当前 `position` 的值，将 `position` 的值设置为 0
 ![[100_attachements/9f8c5ac9df80445b477dc4ea38e800f1_MD5.png]]
 
 ![[100_attachements/b3ee64f0aa2e7a2394dfc521da16a914_MD5.png]]
@@ -70,8 +76,10 @@ public abstract class Buffer {
 这里以 `ByteBuffer` 为例进行介绍：
 
 ```java
+
 // 分配堆内存
 public static ByteBuffer allocate(int capacity);
+
 // 分配直接内存
 public static ByteBuffer allocateDirect(int capacity);
 ```
@@ -93,7 +101,9 @@ Buffer 中数据变化的过程：
 import java.nio.*;
 
 public class CharBufferDemo {
+
     public static void main(String[] args) {
+    
         // 分配一个容量为8的CharBuffer
         CharBuffer buffer = CharBuffer.allocate(8);
         System.out.println("初始状态：");
@@ -158,7 +168,9 @@ capacity: 8, limit: 8, position: 0
 
 ### [Channel（通道）](https://javaguide.cn/java/io/nio-basis.html#channel-%E9%80%9A%E9%81%93)
 
-Channel 是一个通道，它建立了与数据源（如文件、网络套接字等）之间的连接。我们可以利用它来读取和写入数据，就像打开了一条自来水管，让数据在 Channel 中自由流动。
+Channel 是一个通道，它建立了与数据源（如文件、网络套接字等）之间的连接。
+
+我们可以利用  Channel 来读取和写入数据，就像打开了一条自来水管，让数据在 Channel 中自由流动。
 
 BIO 中的流是单向的，分为各种 `InputStream`（输入流）和 `OutputStream`（输出流），数据只是在一个方向上传输。通道与流的不同之处在于通道是双向的，它可以用于读、写或者同时用于读写。
 
@@ -166,10 +178,10 @@ Channel 与前面介绍的 Buffer 打交道，读操作的时候将 Channel 中�
 
 ![[100_attachements/a7da22ca03fd22086726b26ed4d3fdc5_MD5.png]]
 
-另外，因为 Channel 是全双工的，所以它可以比流更好地映射底层操作系统的 API。特别是在 UNIX 网络编程模型中，底层操作系统的通道都是全双工的，同时支持读写操作。
+另外，因为 Channel 是全双工的，所以它可以比流更好地映射底层操作系统的 API。
+特别是在 UNIX 网络编程模型中，底层操作系统的通道都是全双工的，同时支持读写操作。
 
 `Channel` 的子类如下图所示。
-
 ![[100_attachements/44eb10796acca847eb10aff6608f1999_MD5.png]]
 
 其中，最常用的是以下几种类型的通道：

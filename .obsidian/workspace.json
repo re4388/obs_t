@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/Java IO 模型详解.md",
+                "file": "03_career/interview_2024/company/TSMC/Java NIO 核心知识总结.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java IO 模型详解"
+              "title": "Java NIO 核心知识总结"
             }
           }
         ]
@@ -169,12 +169,12 @@
   "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/Java NIO 核心知识总结.md",
+    "03_career/interview_2024/company/TSMC/Java IO 模型详解.md",
     "03_career/interview_2024/company/TSMC/Java 内存区域详解（重点）.md",
     "03_career/interview_2024/company/TSMC/JVM线上问题排查和性能调优案例.md",
     "03_career/interview_2024/company/TSMC/Java IO 设计模式总结.md",
     "03_career/interview_2024/company/TSMC/Java IO 基础知识总结.md",
-    "03_career/interview_2024/company/TSMC/Java IO 模型详解.md",
-    "03_career/interview_2024/company/TSMC/Java NIO 核心知识总结.md",
     "100_attachements/Pasted image 20250126121552.png",
     "03_career/interview_2024/company/TSMC/Java 集合使用注意事项总结.md",
     "03_career/interview_2024/company/TSMC/Spring 面试题.md",
