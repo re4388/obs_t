@@ -22,7 +22,7 @@ JMM（Java 内存模型）相关的问题比较多，也比较重要，于是我
 
 在 Java 中，`Unsafe` 类提供了三个开箱即用的内存屏障相关的方法，屏蔽了操作系统底层的差异：
 
-```
+```java
 public native void loadFence();
 public native void storeFence();
 public native void fullFence();
@@ -36,7 +36,7 @@ public native void fullFence();
 
 **双重校验锁实现对象单例（线程安全）**：
 
-```
+```java
 public class Singleton {
 
     private volatile static Singleton uniqueInstance;
@@ -73,7 +73,7 @@ public class Singleton {
 
 我们通过下面的代码即可证明：
 
-```
+```java
 /**
  * 微信搜 JavaGuide 回复"面试突击"即可免费领取个人原创的 Java 面试手册
  *
@@ -128,7 +128,7 @@ public class VolatileAtomicityDemo {
 
 使用 `synchronized` 改进：
 
-```
+```java
 public synchronized void increase() {
     inc++;
 }
@@ -136,7 +136,7 @@ public synchronized void increase() {
 
 使用 `AtomicInteger` 改进：
 
-```
+```java
 public AtomicInteger inc = new AtomicInteger();
 
 public void increase() {
@@ -146,7 +146,7 @@ public void increase() {
 
 使用 `ReentrantLock` 改进：
 
-```
+```java
 Lock lock = new ReentrantLock();
 public void increase() {
     lock.lock();
@@ -166,7 +166,7 @@ public void increase() {
 
 像 Java 中 `synchronized` 和 `ReentrantLock` 等独占锁就是悲观锁思想的实现。
 
-```
+```java
 public void performSynchronisedTask() {
     synchronized (this) {
         // 需要同步的操作
@@ -191,7 +191,7 @@ try {
 在 Java 中 `java.util.concurrent.atomic` 包下面的原子变量类（比如 `AtomicInteger`、`LongAdder`）就是使用了乐观锁的一种实现方式 **CAS** 实现的。  
 ![[100_attachements/f113315968552f766f4e9907c6d57740_MD5.png]]
 
-```
+```java
 // LongAdder 在高并发场景下会比 AtomicInteger 和 AtomicLong 的性能更好
 // 代价就是会消耗更多的内存空间（空间换时间）
 LongAdder sum = new LongAdder();
@@ -203,7 +203,6 @@ sum.increment();
 不过，大量失败重试的问题也是可以解决的，像我们前面提到的 `LongAdder` 以空间换时间的方式就解决了这个问题。
 
 理论上来说：
-
 - 悲观锁通常多用于写比较多的情况（多写场景，竞争激烈），这样可以避免频繁失败和重试影响性能，悲观锁的开销是固定的。不过，如果乐观锁解决了频繁失败和重试这个问题的话（比如 `LongAdder`），也是可以考虑使用乐观锁的，要视实际情况而定。
 - 乐观锁通常多用于写比较少的情况（多读场景，竞争较少），这样可以避免频繁加锁影响性能。不过，乐观锁主要针对的对象是单个共享变量（参考 `java.util.concurrent.atomic` 包下面的原子变量类）。
 
@@ -251,7 +250,7 @@ Java 语言并没有直接实现 CAS，CAS 相关的实现是通过 C++ 内联�
 
 `sun.misc` 包下的 `Unsafe` 类提供了 `compareAndSwapObject`、`compareAndSwapInt`、`compareAndSwapLong` 方法来实现的对 `Object`、`int`、`long` 类型的 CAS 操作
 
-```
+```java
 /**
   *  CAS
   * @param o         包含要修改field的对象
@@ -277,7 +276,7 @@ public final native boolean compareAndSwapLong(Object o, long offset, long expec
 
 `sun.misc` 包下的 `Unsafe` 类提供了 `compareAndSwapObject`、`compareAndSwapInt`、`compareAndSwapLong` 方法来实现的对 `Object`、`int`、`long` 类型的 CAS 操作：
 
-```
+```java
 /**
  * 以原子方式更新对象字段的值。
  *
@@ -314,7 +313,7 @@ boolean compareAndSwapLong(Object o, long offset, long expected, long x);
 
 `AtomicInteger` 核心源码如下：
 
-```
+```java
 // 获取 Unsafe 实例
 private static final Unsafe unsafe = Unsafe.getUnsafe();
 private static final long valueOffset;
@@ -354,7 +353,7 @@ public final int getAndDecrement() {
 
 `Unsafe#getAndAddInt` 源码：
 
-```
+```java
 // 原子地获取并增加整数值
 public final int getAndAddInt(Object o, long offset, int delta) {
     int v;
@@ -381,7 +380,7 @@ ABA 问题是 CAS 算法最常见的问题。
 
 ABA 问题的解决思路是在变量前面追加上**版本号或者时间戳**。JDK 1.5 以后的 `AtomicStampedReference` 类就是用来解决 ABA 问题的，其中的 `compareAndSet()` 方法就是首先检查当前引用是否等于预期引用，并且当前标志是否等于预期标志，如果全部相等，则以原子方式将该引用和该标志的值设置为给定的更新值。
 
-```
+```java
 public boolean compareAndSet(V   expectedReference,
                              V   newReference,
                              int expectedStamp,
@@ -435,7 +434,7 @@ CAS 操作仅能对单个共享变量有效。当需要操作多个共享变量�
 
 给当前对象实例加锁，进入同步代码前要获得 **当前对象实例的锁** 。
 
-```
+```java
 synchronized void method() {
     //业务代码
 }
@@ -447,7 +446,7 @@ synchronized void method() {
 
 这是因为静态成员不属于任何一个实例对象，归整个类所有，不依赖于类的特定实例，被类的所有实例共享。
 
-```
+```java
 synchronized static void method() {
     //业务代码
 }
@@ -462,7 +461,7 @@ synchronized static void method() {
 - `synchronized(object)` 表示进入同步代码库前要获得 **给定对象的锁**。
 - `synchronized(类.class)` 表示进入同步代码前要获得 **给定 Class 的锁**
 
-```
+```java
 synchronized(this) {
     //业务代码
 }
@@ -486,7 +485,7 @@ synchronized 关键字底层原理属于 JVM 层面的东西。
 
 #### [synchronized 同步语句块的情况](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#synchronized-%E5%90%8C%E6%AD%A5%E8%AF%AD%E5%8F%A5%E5%9D%97%E7%9A%84%E6%83%85%E5%86%B5)
 
-```
+```java
 public class SynchronizedDemo {
     public void method() {
         synchronized (this) {
@@ -522,7 +521,7 @@ public class SynchronizedDemo {
 
 #### [synchronized 修饰方法的的情况](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#synchronized-%E4%BF%AE%E9%A5%B0%E6%96%B9%E6%B3%95%E7%9A%84%E7%9A%84%E6%83%85%E5%86%B5)
 
-```
+```java
 public class SynchronizedDemo2 {
     public synchronized void method() {
         System.out.println("synchronized 方法");
@@ -594,7 +593,7 @@ Open JDK 官方声明：[JEP 374: Deprecate and Disable Biased Locking](https://
 
 `ReentrantLock` 实现了 `Lock` 接口，是一个可重入且独占式的锁，和 `synchronized` 关键字类似。不过，`ReentrantLock` 更灵活、更强大，增加了轮询、超时、中断、公平锁和非公平锁等高级功能。
 
-```
+```java
 public class ReentrantLock implements Lock, java.io.Serializable {}
 ```
 
@@ -604,7 +603,7 @@ public class ReentrantLock implements Lock, java.io.Serializable {}
 
 `ReentrantLock` 默认使用非公平锁，也可以通过构造器来显式的指定使用公平锁。
 
-```
+```java
 // 传入一个 boolean 值，true 时为公平锁，false 时为非公平锁
 public ReentrantLock(boolean fair) {
     sync = fair ? new FairSync() : new NonfairSync();
@@ -628,7 +627,7 @@ JDK 提供的所有现成的 `Lock` 实现类，包括 `synchronized` 关键
 
 在下面的代码中，`method1()` 和 `method2()` 都被 `synchronized` 关键字修饰，`method1()` 调用了 `method2()`。
 
-```
+```java
 public class SynchronizedDemo {
     public synchronized void method1() {
         System.out.println("方法1");
@@ -756,7 +755,7 @@ public class SynchronizedDemo {
 
 `ReentrantReadWriteLock` 实现了 `ReadWriteLock` ，是一个可重入的读写锁，既可以保证多个线程同时读的效率，同时又可以保证有写入操作时的线程安全。
 
-```
+```java
 public class ReentrantReadWriteLock
         implements ReadWriteLock, java.io.Serializable{
 }
@@ -777,7 +776,7 @@ public interface ReadWriteLock {
 
 `ReentrantReadWriteLock` 也支持公平锁和非公平锁，默认使用非公平锁，可以通过构造器来显示的指定。
 
-```
+```java
 // 传入一个 boolean 值，true 时为公平锁，false 时为非公平锁
 public ReentrantReadWriteLock(boolean fair) {
     sync = fair ? new FairSync() : new NonfairSync();
@@ -818,7 +817,7 @@ public ReentrantReadWriteLock(boolean fair) {
 
 不同于一般的 `Lock` 类，`StampedLock` 并不是直接实现 `Lock` 或 `ReadWriteLock` 接口，而是基于 **CLH 锁** 独立实现的（AQS 也是基于这玩意）。
 
-```
+```java
 public class StampedLock implements java.io.Serializable {
 }
 ```
@@ -831,7 +830,7 @@ public class StampedLock implements java.io.Serializable {
 
 另外，`StampedLock` 还支持这三种锁在一定条件下进行相互转换 。
 
-```
+```java
 long tryConvertToWriteLock(long stamp){}
 long tryConvertToReadLock(long stamp){}
 long tryConvertToOptimisticRead(long stamp){}
@@ -839,7 +838,7 @@ long tryConvertToOptimisticRead(long stamp){}
 
 `StampedLock` 在获取锁的时候会返回一个 long 型的数据戳，该数据戳用于稍后的锁释放参数，如果返回的数据戳为 0 则表示锁获取失败。当前线程持有了锁再次获取锁还是会返回一个新的数据戳，这也是 `StampedLock` 不可重入的原因。
 
-```
+```java
 // 写锁
 public long writeLock() {
     long s, next;  // bypass acquireWrite in fully unlocked case only
