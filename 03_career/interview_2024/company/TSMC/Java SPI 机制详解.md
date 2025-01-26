@@ -304,13 +304,13 @@ public final class ServiceLoader<S> implements Iterable<S>{ xxx...}
 下面是 `load` 方法：可以发现 `load` 方法支持两种重载后的入参；
 
 ```java
+
 public static <S> ServiceLoader<S> load(Class<S> service) {
     ClassLoader cl = Thread.currentThread().getContextClassLoader();
     return ServiceLoader.load(service, cl);
 }
 
-public static <S> ServiceLoader<S> load(Class<S> service,
-                                        ClassLoader loader) {
+public static <S> ServiceLoader<S> load(Class<S> service, ClassLoader loader) {
     return new ServiceLoader<>(service, loader);
 }
 
@@ -327,7 +327,9 @@ public void reload() {
 }
 ```
 
-其解决第三方类加载的机制其实就蕴含在 `ClassLoader cl = Thread.currentThread().getContextClassLoader();` 中，`cl` 就是**线程上下文类加载器**（Thread Context ClassLoader）。这是每个线程持有的类加载器，JDK 的设计允许应用程序或容器（如 Web 应用服务器）设置这个类加载器，以便核心类库能够通过它来加载应用程序类。
+其解决第三方类加载的机制其实就蕴含在 `ClassLoader cl = Thread.currentThread().getContextClassLoader();` 中，`cl` 就是**线程上下文类加载器**（Thread Context ClassLoader）。
+
+这是每个线程持有的类加载器，JDK 的设计允许应用程序或容器（如 Web 应用服务器）设置这个类加载器，以便核心类库能够通过它来加载应用程序类。
 
 线程上下文类加载器默认情况下是应用程序类加载器（Application ClassLoader），它负责加载 classpath 上的类。当核心库需要加载应用程序提供的类时，它可以使用线程上下文类加载器来完成。这样，即使是由引导类加载器加载的核心库代码，也能够加载并使用由应用程序类加载器加载的类。
 
@@ -386,6 +388,7 @@ private boolean hasNextService() {
     }
     if (configs == null) {
         try {
+        
             //通过PREFIX（META-INF/services/）和类名 获取对应的配置文件，得到具体的实现类
             String fullName = PREFIX + service.getName();
             if (loader == null)
@@ -473,7 +476,7 @@ public class MyServiceLoader<S> {
     // 对应的接口 Class 模板
     private final Class<S> service;
 
-    // 对应实现类的 可以有多个，用 List 进行封装
+    // 对应实现类的可以有多个，用 List 进行封装
     private final List<S> providers = new ArrayList<>();
 
     // 类加载器
