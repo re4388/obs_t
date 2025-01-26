@@ -169,6 +169,7 @@
   },
   "active": "5c5e1697fc2fe5f6",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/Java 集合常见面试题总结 (上).md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "03_career/interview_2024/company/TSMC/Java 代理模式详解.md",
     "03_career/interview_2024/company/TSMC/Java 基础常见面试题总结 (下).md",
@@ -213,7 +214,6 @@
     "03_career/interview_2024/company/TSMC/ConcurrentHashMap 源码分析.md",
     "03_career/interview_2024/company/TSMC/HashMap 源码分析.md",
     "03_career/interview_2024/company/TSMC/LinkedList 源码分析.md",
-    "03_career/interview_2024/company/TSMC/ArrayList 源码分析.md",
-    "03_career/interview_2024/company/TSMC/分布式锁常见实现方案总结.md"
+    "03_career/interview_2024/company/TSMC/ArrayList 源码分析.md"
   ]
 }

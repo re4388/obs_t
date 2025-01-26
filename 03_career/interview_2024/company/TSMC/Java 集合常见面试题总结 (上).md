@@ -352,7 +352,7 @@ public boolean add(E e) {
 
 #### [Comparator 定制排序](https://javaguide.cn/java/collection/java-collection-questions-01.html#comparator-%E5%AE%9A%E5%88%B6%E6%8E%92%E5%BA%8F)
 
-```
+```java
 ArrayList<Integer> arrayList = new ArrayList<Integer>();
 arrayList.add(-1);
 arrayList.add(3);
@@ -373,6 +373,7 @@ System.out.println(arrayList);
 Collections.sort(arrayList);
 System.out.println("Collections.sort(arrayList):");
 System.out.println(arrayList);
+
 // 定制排序的用法
 Collections.sort(arrayList, new Comparator<Integer>() {
     @Override
@@ -386,24 +387,28 @@ System.out.println(arrayList);
 
 Output:
 
-```
+```java
 原始数组:
 [-1, 3, 3, -5, 7, 4, -9, -7]
+
 Collections.reverse(arrayList):
 [-7, -9, 4, 7, -5, 3, 3, -1]
+
 Collections.sort(arrayList):
 [-9, -7, -5, -1, 3, 3, 4, 7]
+
 定制排序后：
 [7, 4, 3, 3, -1, -5, -7, -9]
 ```
 
 #### [重写 compareTo 方法实现按年龄来排序](https://javaguide.cn/java/collection/java-collection-questions-01.html#%E9%87%8D%E5%86%99-compareto-%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0%E6%8C%89%E5%B9%B4%E9%BE%84%E6%9D%A5%E6%8E%92%E5%BA%8F)
 
-```
+```java
+
 // person对象没有实现Comparable接口，所以必须实现，这样才不会出错，才可以使treemap中的数据按顺序排列
 // 前面一个例子的String类已经默认实现了Comparable接口，详细可以查看String类的API文档，另外其他
 // 像Integer类等都已经实现了Comparable接口，所以不需要另外实现了
-public  class Person implements Comparable<Person> {
+public class Person implements Comparable<Person> {
     private String name;
     private int age;
 
@@ -445,13 +450,16 @@ public  class Person implements Comparable<Person> {
 }
 ```
 
-```
+```java
+
     public static void main(String[] args) {
-        TreeMap<Person, String> pdata = new TreeMap<Person, String>();
+    
+		TreeMap<Person, String> pdata = new TreeMap<Person, String>();
         pdata.put(new Person("张三", 30), "zhangsan");
         pdata.put(new Person("李四", 20), "lisi");
         pdata.put(new Person("王五", 10), "wangwu");
         pdata.put(new Person("小红", 5), "xiaohong");
+    
         // 得到key的值的同时得到key所对应的值
         Set<Person> keys = pdata.keySet();
         for (Person key : keys) {
