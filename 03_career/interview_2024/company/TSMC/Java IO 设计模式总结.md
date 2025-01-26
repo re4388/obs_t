@@ -228,8 +228,9 @@ NIO 中的文件目录监听服务基于 `WatchService` 接口和 `Watchable`
 `Watchable` 接口定义了一个用于将对象注册到 `WatchService`（监控服务） 并绑定监听事件的方法 `register` 。
 
 ```java
-public interface Path
-    extends Comparable<Path>, Iterable<Path>, Watchable{
+
+
+public interface Path extends Comparable<Path>, Iterable<Path>, Watchable {
 }
 
 public interface Watchable {
@@ -248,9 +249,10 @@ WatchService watchService = FileSystems.getDefault().newWatchService();
 
 // 初始化一个被监控文件夹的 Path 类:
 Path path = Paths.get("workingDirectory");
+
+
 // 将这个 path 对象注册到 WatchService（监控服务） 中去
-WatchKey watchKey = path.register(
-watchService, StandardWatchEventKinds...);
+WatchKey watchKey = path.register(watchService, StandardWatchEventKinds...);
 ```
 
 `Path` 类 `register` 方法的第二个参数 `events` （需要监听的事件）为可变长参数，也就是说我们可以同时监听多种事件。
@@ -267,8 +269,8 @@ WatchKey register(WatchService watcher,
 - `StandardWatchEventKinds.ENTRY_DELETE` : 文件删除。
 - `StandardWatchEventKinds.ENTRY_MODIFY` : 文件修改。
 
-`register` 方法返回 `WatchKey` 对象，通过 `WatchKey` 对象可以获取事件的具体信息比如文件目录下是创建、删除还是修改了文件、创建、删除或者修改的文件的具体名称是什么。
 
+`register` 方法返回 `WatchKey` 对象，通过 `WatchKey` 对象可以获取事件的具体信息比如文件目录下是创建、删除还是修改了文件、创建、删除或者修改的文件的具体名称是什么。
 ```java
 WatchKey key;
 while ((key = watchService.take()) != null) {
@@ -280,17 +282,14 @@ while ((key = watchService.take()) != null) {
 ```
 
 `WatchService` 内部是通过一个 daemon thread（守护线程）采用定期轮询的方式来检测文件的变化，简化后的源码如下所示。
-
 ```java
-class PollingWatchService
-    extends AbstractWatchService
-{
+class PollingWatchService extends AbstractWatchService {
+
     // 定义一个 daemon thread（守护线程）轮询检测文件变化
     private final ScheduledExecutorService scheduledExecutor;
 
     PollingWatchService() {
-        scheduledExecutor = Executors
-            .newSingleThreadScheduledExecutor(new ThreadFactory() {
+        scheduledExecutor = Executors.newSingleThreadScheduledExecutor(new ThreadFactory() {
                  @Override
                  public Thread newThread(Runnable r) {
                      Thread t = new Thread(r);
@@ -306,6 +305,7 @@ class PollingWatchService
 
         // 开启定期轮询
       Runnable thunk = new Runnable() { public void run() { poll(); }};
+      
       this.poller = scheduledExecutor
         .scheduleAtFixedRate(thunk, period, period, TimeUnit.SECONDS);
     }
