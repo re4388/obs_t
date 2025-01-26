@@ -76,7 +76,7 @@ static final int tableSizeFor(int cap) {
 
 实现 `SortedMap` 接口让 `TreeMap` 有了对集合中的元素根据键排序的能力。默认是按 key 的升序排序，不过我们也可以指定排序的比较器。示例代码如下：
 
-```
+```java
 /**
  * @author shuang.kou
  * @createTime 2020年06月15日 17:02:00
@@ -114,7 +114,7 @@ public class Person {
 
 输出:
 
-```
+```java
 person1
 person4
 person2
@@ -125,7 +125,7 @@ person3
 
 上面，我们是通过传入匿名内部类的方式实现的，你可以将代码替换成 Lambda 表达式实现的方式：
 
-```
+```java
 TreeMap<Person, String> treeMap = new TreeMap<>((person1, person2) -> {
   int num = person1.getAge() - person2.getAge();
   return Integer.compare(num, 0);
@@ -142,7 +142,7 @@ TreeMap<Person, String> treeMap = new TreeMap<>((person1, person2) -> {
 
 在 JDK1.8 中，`HashSet` 的 `add()` 方法只是简单的调用了 `HashMap` 的 `put()` 方法，并且判断了一下返回值以确保是否有重复元素。直接看一下 `HashSet` 中的源码：
 
-```
+```java
 // Returns: true if this set did not already contain the specified element
 // 返回值：当 set 中没有包含 add 的元素时返回真
 public boolean add(E e) {
@@ -152,7 +152,7 @@ public boolean add(E e) {
 
 而在 `HashMap` 的 `putVal()` 方法中也能看到如下说明：
 
-```
+```java
 // Returns : previous value, or null if none
 // 返回值：如果插入位置没有元素返回null，否则返回上一个元素
 final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
@@ -175,7 +175,7 @@ JDK1.8 之前 `HashMap` 底层是 **数组和链表** 结合在一起使用�
 
 JDK 1.8 的 hash 方法 相比于 JDK 1.7 hash 方法更加简化，但是原理不变。
 
-```
+```java
     static final int hash(Object key) {
       int h;
       // key.hashCode()：返回散列值也就是hashcode
@@ -187,7 +187,7 @@ JDK 1.8 的 hash 方法 相比于 JDK 1.7 hash 方法更加简化，但是原理
 
 对比一下 JDK1.7 的 HashMap 的 hash 方法源码.
 
-```
+```java
 static int hash(int h) {
     // This function ensures that hashCodes that differ only by
     // constant multiples at each bit position have a bounded
@@ -218,7 +218,7 @@ static int hash(int h) {
 
 链表的长度大于 8 的时候，就执行 `treeifyBin` （转换红黑树）的逻辑。
 
-```
+```java
 // 遍历链表
 for (int binCount = 0; ; ++binCount) {
     // 遍历到链表最后一个节点
@@ -239,7 +239,7 @@ for (int binCount = 0; ; ++binCount) {
 
 **2、`treeifyBin` 方法中判断是否真的转换为红黑树。**
 
-```
+```java
 final void treeifyBin(Node<K,V>[] tab, int hash) {
     int n, index; Node<K,V> e;
     // 判断当前数组的长度是否小于 64
@@ -288,7 +288,7 @@ final void treeifyBin(Node<K,V>[] tab, int hash) {
 
 这里列举一个例子：
 
-```
+```java
 假设有一个元素的哈希值为 10101100
 
 旧数组元素位置计算：
@@ -342,7 +342,7 @@ JDK 1.8 后，在 `HashMap` 中，多个键值对可能会被分配到同一�
 - 不同的线程可能在不同的时间片获得 CPU 执行的机会，当前线程 1 执行完哈希冲突判断后，由于时间片耗尽挂起。线程 2 先完成了插入操作。
 - 随后，线程 1 获得时间片，由于之前已经进行过 hash 碰撞的判断，所有此时会直接进行插入，这就导致线程 2 插入的数据被线程 1 覆盖了。
 
-```
+```java
 public V put(K key, V value) {
     return putVal(hash(key), key, value, false, true);
 }
@@ -367,7 +367,7 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 3. 随后，线程 1 获得时间片，它也将元素放入桶位中，并将 size 的值更新为 11。
 4. 线程 1、2 都执行了一次 `put` 操作，但是 `size` 的值只增加了 1，也就导致实际上只有一个元素被添加到了 `HashMap` 中。
 
-```
+```java
 public V put(K key, V value) {
     return putVal(hash(key), key, value, false, true);
 }
@@ -394,7 +394,7 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 
 当遍历不存在阻塞时，parallelStream 的性能是最低的：
 
-```
+```java
 Benchmark               Mode  Cnt     Score      Error  Units
 Test.entrySet           avgt    5   288.651 ±   10.536  ns/op
 Test.keySet             avgt    5   584.594 ±   21.431  ns/op
@@ -404,7 +404,7 @@ Test.parallelStream     avgt    5  6919.163 ± 1116.139  ns/op
 
 加入阻塞代码 `Thread.sleep(10)` 后，parallelStream 的性能才是最高的:
 
-```
+```java
 Benchmark               Mode  Cnt           Score          Error  Units
 Test.entrySet           avgt    5  1554828440.000 ± 23657748.653  ns/op
 Test.keySet             avgt    5  1550612500.000 ±  6474562.858  ns/op
@@ -446,7 +446,7 @@ JDK1.8 的 `ConcurrentHashMap` 不再是 **Segment 数组 + HashEntry 数组 
 
 `TreeNode` 是存储红黑树节点，被 `TreeBin` 包装。`TreeBin` 通过 `root` 属性维护红黑树的根结点，因为红黑树在旋转的时候，根结点可能会被它原来的子节点替换掉，在这个时间点，如果有其他线程要写这棵红黑树就会发生线程不安全问题，所以在 `ConcurrentHashMap` 中 `TreeBin` 通过 `waiter` 属性维护当前使用这棵红黑树的线程，来防止其他线程的进入。
 
-```
+```java
 static final class TreeBin<K,V> extends Node<K,V> {
         TreeNode<K,V> root;
         volatile TreeNode<K,V> first;
@@ -472,7 +472,7 @@ static final class TreeBin<K,V> extends Node<K,V> {
 
 `Segment` 继承了 `ReentrantLock`, 所以 `Segment` 是一种可重入锁，扮演锁的角色。`HashEntry` 用于存储键值对数据。
 
-```
+```java
 static class Segment<K,V> extends ReentrantLock implements Serializable {
 }
 ```
@@ -518,7 +518,7 @@ Java 8 中，锁粒度更细，`synchronized` 只锁定当前链表或红黑二
 
 如果你确实需要在 ConcurrentHashMap 中使用 null 的话，可以使用一个特殊的静态空对象来代替 null。
 
-```
+```java
 public static final Object NULL = new Object();
 ```
 
@@ -536,7 +536,7 @@ public static final Object NULL = new Object();
 
 例如，有两个线程 A 和 B 同时对 `ConcurrentHashMap` 进行复合操作，如下：
 
-```
+```java
 // 线程 A
 if (!map.containsKey(key)) {
 map.put(key, value);
@@ -562,7 +562,7 @@ map.put(key, anotherValue);
 
 上面的代码可以改写为：
 
-```
+```java
 // 线程 A
 map.putIfAbsent(key, value);
 // 线程 B
@@ -571,7 +571,7 @@ map.putIfAbsent(key, anotherValue);
 
 或者：
 
-```
+```java
 // 线程 A
 map.computeIfAbsent(key, k -> value);
 // 线程 B
@@ -590,7 +590,7 @@ map.computeIfAbsent(key, k -> anotherValue);
 
 ### [排序操作](https://javaguide.cn/java/collection/java-collection-questions-02.html#%E6%8E%92%E5%BA%8F%E6%93%8D%E4%BD%9C)
 
-```
+```java
 void reverse(List list)//反转
 void shuffle(List list)//随机排序
 void sort(List list)//按自然排序的升序排序
@@ -601,7 +601,7 @@ void rotate(List list, int distance)//旋转。当distance为正数时，将list
 
 ### [查找，替换操作](https://javaguide.cn/java/collection/java-collection-questions-02.html#%E6%9F%A5%E6%89%BE-%E6%9B%BF%E6%8D%A2%E6%93%8D%E4%BD%9C)
 
-```
+```java
 int binarySearch(List list, Object key)//对List进行二分查找，返回索引，注意List必须是有序的
 int max(Collection coll)//根据元素的自然顺序，返回最大的元素。 类比int min(Collection coll)
 int max(Collection coll, Comparator c)//根据定制排序，返回最大元素，排序规则由Comparatator类控制。类比int min(Collection coll, Comparator c)
@@ -621,7 +621,7 @@ boolean replaceAll(List list, Object oldVal, Object newVal)//用新元素替换�
 
 方法如下：
 
-```
+```java
 synchronizedCollection(Collection<T>  c) //返回指定 collection 支持的同步（线程安全的）collection。
 synchronizedList(List<T> list)//返回指定列表支持的同步（线程安全的）List。
 synchronizedMap(Map<K,V> m) //返回由指定映射支持的同步（线程安全的）Map。

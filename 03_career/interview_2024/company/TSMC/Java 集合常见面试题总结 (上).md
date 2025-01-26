@@ -548,7 +548,8 @@ Output：
 
 ### [什么是 BlockingQueue？](https://javaguide.cn/java/collection/java-collection-questions-01.html#%E4%BB%80%E4%B9%88%E6%98%AF-blockingqueue)
 
-`BlockingQueue` （阻塞队列）是一个接口，继承自 `Queue`。`BlockingQueue` 阻塞的原因是其支持当队列没有元素时一直阻塞，直到有元素；还支持如果队列已满，一直等到队列可以放入新元素时再放入。
+`BlockingQueue` （阻塞队列）是一个接口，继承自 `Queue`。
+`BlockingQueue` 阻塞的原因是其支持当队列没有元素时一直阻塞，直到有元素；还支持如果队列已满，一直等到队列可以放入新元素时再放入。
 
 ```
 public interface BlockingQueue<E> extends Queue<E> {
@@ -577,7 +578,7 @@ Java 中常用的阻塞队列实现类有以下几种：
 
 ### [ArrayBlockingQueue 和 LinkedBlockingQueue 有什么区别？](https://javaguide.cn/java/collection/java-collection-questions-01.html#arrayblockingqueue-%E5%92%8C-linkedblockingqueue-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
 
-`ArrayBlockingQueue` 和 `LinkedBlockingQueue` 是 Java 并发包中常用的两种阻塞队列实现，它们都是线程安全的。不过，不过它们之间也存在下面这些区别：
+`ArrayBlockingQueue` 和 `LinkedBlockingQueue` 是 Java 并发包中常用的两种阻塞队列实现，它们都是线程安全的。不过它们之间也存在下面这些区别：
 
 - 底层实现：`ArrayBlockingQueue` 基于数组实现，而 `LinkedBlockingQueue` 基于链表实现。
 - 是否有界：`ArrayBlockingQueue` 是有界队列，必须在创建时指定容量大小。`LinkedBlockingQueue` 创建时可以不指定容量大小，默认是 `Integer.MAX_VALUE`，也就是无界的。但也可以指定队列大小，从而成为有界的。
