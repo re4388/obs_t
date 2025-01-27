@@ -608,7 +608,6 @@ public class ReentrantLock implements Lock, java.io.Serializable {}
 ![[100_attachements/a194bdb17697784c13197c3765d1a413_MD5.png]]
 
 `ReentrantLock` 默认使用非公平锁，也可以通过构造器来显式的指定使用公平锁。
-
 ```java
 // 传入一个 boolean 值，true 时为公平锁，false 时为非公平锁
 public ReentrantLock(boolean fair) {
@@ -621,7 +620,7 @@ public ReentrantLock(boolean fair) {
 ### [公平锁和非公平锁有什么区别？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#%E5%85%AC%E5%B9%B3%E9%94%81%E5%92%8C%E9%9D%9E%E5%85%AC%E5%B9%B3%E9%94%81%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
 
 - **公平锁** : 锁被释放之后，先申请的线程先得到锁。性能较差一些，因为公平锁为了保证时间上的绝对顺序，上下文切换更频繁。
-- **非公平锁**：锁被释放之后，后申请的线程可能会先获取到锁，是随机或者按照其他优先级排序的。性能更好，但可能会导致某些线程永远无法获取到锁。
+- **非公平锁**：锁被释放之后，后申请的线程**可能会先获取到锁，是随机或者按照其他优先级排序的**。性能更好，但可能会导致某些线程永远无法获取到锁。
 
 ### [⭐️synchronized 和 ReentrantLock 有什么区别？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#%E2%AD%90%EF%B8%8Fsynchronized-%E5%92%8C-reentrantlock-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
 
@@ -635,6 +634,7 @@ JDK 提供的所有现成的 `Lock` 实现类，包括 `synchronized` 关键
 
 ```java
 public class SynchronizedDemo {
+
     public synchronized void method1() {
         System.out.println("方法1");
         method2();
@@ -668,6 +668,7 @@ public class SynchronizedDemo {
 关于 `Condition` 接口的补充：
 
 > `Condition` 是 JDK1.5 之后才有的，它具有很好的灵活性，比如可以实现多路通知功能也就是在一个 `Lock` 对象中可以创建多个 `Condition` 实例（即对象监视器），**线程对象可以注册在指定的 `Condition` 中，从而可以有选择性的进行线程通知，在调度线程上更加灵活。 在使用 `notify()/notifyAll()` 方法进行通知时，被通知的线程是由 JVM 选择的，用 `ReentrantLock` 类结合 `Condition` 实例可以实现 “选择性通知”** ，这个功能非常重要，而且是 `Condition` 接口默认提供的。而 `synchronized` 关键字就相当于整个 `Lock` 对象中只有一个 `Condition` 实例，所有的线程都注册在它一个身上。如果执行 `notifyAll()` 方法的话就会通知所有处于等待状态的线程，这样会造成很大的效率问题。而 `Condition` 实例的 `signalAll()` 方法，只会唤醒注册在该 `Condition` 实例中的所有等待线程。
+
 
 关于 **等待可中断** 的补充：
 
@@ -742,7 +743,7 @@ public class SynchronizedDemo {
 
 > **为什么需要 `tryLock(timeout)` 这个功能呢？**
 > 
-> `tryLock(timeout)` 方法尝试在指定的超时时间内获取锁。如果成功获取锁，则返回 `true`；如果在锁可用之前超时，则返回 `false`。此功能在以下几种场景中非常有用：
+> `tryLock(timeout)` 方法尝试在指定的时间内获取锁。如果成功获取锁，则返回 `true`；如果在锁可用之前超时，则返回 `false`。此功能在以下几种场景中非常有用：
 > 
 > - **防止死锁：** 在复杂的锁场景中，`tryLock(timeout)` 可以通过允许线程在合理的时间内放弃并重试来帮助防止死锁。
 > - **提高响应速度：** 防止线程无限期阻塞。
