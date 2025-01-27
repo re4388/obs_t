@@ -7,7 +7,7 @@
 
 Java 底層會調用 pthread_create 來創建線程，所以本質上 java 程序創建的線程，就是和操作系統線程是一樣的，是 1 對 1 的線程模型。
 
-![[100_attachements/0485048708be81e1dce7e9ab1c0c0ce9_MD5.webp]]
+![[IMG-小林  Java并发编程面试题-20250127091031036.webp]]
 
 ### [#](https://xiaolincoding.com/interview/juc.html#%E4%BD%BF%E7%94%A8%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%A6%81%E6%B3%A8%E6%84%8F%E5%93%AA%E4%BA%9B%E9%97%AE%E9%A2%98)使用多線程要注意哪些問題？
 

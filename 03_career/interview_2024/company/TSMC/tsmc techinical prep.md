@@ -14,6 +14,30 @@
 - [x] [[Effective Java 3rd]] 
 - [x] [[宋红康 2023 版，java 入门自学]]
 
+
+小林
+[小林coding](https://xiaolincoding.com/)
+- [ ] [[小林  Java 基礎面試題]]
+- [ ] [[小林  Java 集合面试题]]
+- [ ] [[小林  Java并发编程面试题]]
+- [ ] [[小林  Java 虛拟機面試題]]
+- [ ] [[小林  MySQL 面試題]]
+- [ ] [[小林 Spring 面试题]]
+- [ ] [[小林 Redis 面试题]]
+- [ ] [[小林 计算机网络面试题]]
+- [ ] [[小林 操作系统面试题]]
+- [ ] [[小林 数据结构与算法面试题]]
+
+
+黑馬
+- [ ] [[黑馬 基礎篇]]
+- [ ] [[黑馬 併發]]
+- [ ] [[黑馬 虛擬機]]
+- [ ] [[黑馬框架篇]]
+
+
+
+
 基礎
 - [x] [[Java 基础常见面试题总结 (上)]]
 - [x] [[Java 基础常见面试题总结 (中)]]
@@ -32,7 +56,6 @@
 - [x] [[Java 魔法类 Unsafe 详解]]
 - [x] [[Java SPI 机制详解]]
 - [x] [[Java 语法糖详解]]
-- [ ] [[黑馬 基礎篇]]
 
 IO
 - [x] [[Java IO 基础知识总结]]
@@ -65,7 +88,6 @@ IO
 - [ ] [[ThreadLocal 详解]]
 - [ ] [[CompletableFuture 详解]]
 - [ ] [[虚拟线程常见问题总结]]
-- [ ] [[黑馬 併發]]
 
 JVM
 - [x] [[Java 内存区域详解（重点）]]
@@ -76,7 +98,6 @@ JVM
 - [ ] [[最重要的JVM 参数总结]]
 - [ ] [[JDK 监控和故障处理工具总结]]
 - [ ] [[JVM线上问题排查和性能调优案例]]
-- [ ] [[黑馬 虛擬機]]
 
 
 Java 版本特性 
@@ -114,7 +135,6 @@ Java 版本特性 
 - [ ] [[Spring 中的设计模式详解]]
 - [ ] [[SpringBoot 自动装配原理详解]]
 - [ ] [[Spring 面试题]]
-- [ ] [[黑馬框架篇]]
 
 - [ ] [[分布式锁介绍]]
 - [ ] [[分布式锁常见实现方案总结]]
@@ -145,12 +165,11 @@ Java 版本特性 
 ## 併發
 - [ ] [[Java 并发编程面试题]]
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
-- [ ] [[Java 集合面试题]]
-- [ ] [[Java 基礎面試題]]
-- [ ] [[MySQL 面試題]]
-- [ ] [[Java 虛拟機面試題]]
-- [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 - [ ] [[黑馬 併發]]
+
+
+
+- [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 
 # Spring
 

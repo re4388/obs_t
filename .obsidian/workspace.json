@@ -21,21 +21,6 @@
               "icon": "lucide-file",
               "title": "Java 并发常见面试题总结（中）"
             }
-          },
-          {
-            "id": "42bff2f333eb5e9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "tsmc techinical prep"
-            }
           }
         ]
       }
@@ -185,7 +170,33 @@
   "active": "e4c80e7e81dc8a17",
   "lastOpenFiles": [
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/小林 计算机网络面试题.md",
+    "100_attachements/7c1a3f4272f5d44ac83519a5b2161072_MD5.png",
+    "100_attachements/c58f45ceaf7f7e0dc6c4563111b8f9dd_MD5.png",
+    "100_attachements/9890fb88e5369d658b56e9670bddd6fc_MD5.png",
+    "100_attachements/d8a9be0e1a66c4e09ec66508d3ceddb7_MD5.png",
+    "100_attachements/d4707d4ff3d433588d54187bcc2eab7b_MD5.png",
+    "100_attachements/2486a1cc36ca0b23d5e662deb1fcf383_MD5.png",
+    "100_attachements/6648e16d1128717165d1a31f249ca8da_MD5.png",
+    "100_attachements/8e9440237d61bd503f00b8229af99e7e_MD5.png",
+    "100_attachements/41bd0e4714b50b0bcbc18c7e0dfb6a19_MD5.png",
+    "100_attachements/39568f632ee457600531586c03256a7e_MD5.png",
+    "03_career/interview_2024/company/TSMC/小林 计算机网络面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/小林 Redis 面试题.md",
+    "03_career/interview_2024/company/TSMC/小林 Redis 面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/小林 Spring 面试题.md",
+    "03_career/interview_2024/company/TSMC/小林 Spring 面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/小林 操作系统面试题.md",
+    "03_career/interview_2024/company/TSMC/小林 操作系统面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/小林 数据结构与算法面试题.md",
+    "03_career/interview_2024/company/TSMC/小林 数据结构与算法面试题.md.edtz",
+    "03_career/interview_2024/company/TSMC/小林  MySQL 面試題.md",
+    "03_career/interview_2024/company/TSMC/小林  Java 虛拟機面試題.md",
+    "03_career/interview_2024/company/TSMC/小林  Java并发编程面试题.md",
+    "03_career/interview_2024/company/TSMC/小林  Java 集合面试题.md",
+    "03_career/interview_2024/company/TSMC/小林  Java 基礎面試題.md",
     "03_career/interview_2024/company/TSMC/Java 并发常见面试题总结（中）.md",
+    "03_career/interview_2024/company/TSMC/小林  Java并发编程面试题.md.edtz",
     "03_career/interview_2024/company/TSMC/為什麼 Java 的建構方法本身是執行緒安全的.md",
     "03_career/interview_2024/company/TSMC/為什麼 Java 的建構方法本身是執行緒安全的.md.edtz",
     "03_career/interview_2024/company/TSMC/Java 语法糖详解.md",
@@ -194,40 +205,14 @@
     "03_career/interview_2024/company/TSMC/线程上下文类加载器（Thread Context ClassLoader）.md.edtz",
     "03_career/interview_2024/company/TSMC/Spring 的 SPI (Service Provider Interface) 機制.md",
     "03_career/interview_2024/company/TSMC/Spring 的 SPI (Service Provider Interface) 機制.md.edtz",
-    "100_attachements/Pasted image 20250126202526.png",
     "03_career/interview_2024/company/TSMC/黑馬 併發.md",
     "03_career/interview_2024/company/TSMC/黑馬 基礎篇.md",
     "03_career/interview_2024/company/TSMC/Java 魔法类 Unsafe 详解.md",
-    "100_attachements/Pasted image 20250126195312.png",
-    "100_attachements/Pasted image 20250126195259.png",
     "03_career/interview_2024/company/TSMC/13 道 Java HashMap 精选面试题.md",
     "03_career/interview_2024/company/TSMC/note on source code on java hashmap.md",
-    "100_attachements/4998a3f85d73069620ede9bf653fd055_MD5.png",
-    "100_attachements/599781062463ba7bb1b2d1d090780764_MD5.png",
-    "100_attachements/4ac9229c02562e569b85375c81f1396a_MD5.png",
     "03_career/interview_2024/company/TSMC/黑馬 併發.md.edtz",
-    "100_attachements/b9d2fa73931ee2bae4473a067667c3ec_MD5.png",
-    "100_attachements/ff448e054f55368f5980c9cefda8d7e0_MD5.png",
-    "100_attachements/1c99bce7a8a0122fc2bcd1b5eef7e26e_MD5.png",
-    "100_attachements/d0fc88c1a4a960c0ea70ade76695585d_MD5.png",
-    "03_career/interview_2024/company/TSMC/黑馬 基礎篇.md.edtz",
     "03_career/interview_2024/company/TSMC/黑馬 虛擬機.md",
-    "03_career/interview_2024/company/TSMC/黑馬 虛擬機.md.edtz",
     "03_career/interview_2024/company/TSMC/黑馬框架篇.md",
-    "03_career/interview_2024/company/TSMC/黑馬框架篇.md.edtz",
-    "03_career/interview_2024/company/TSMC/《Java8 指南》中文翻译.md",
-    "03_career/interview_2024/company/TSMC/Java8 新特性实战.md",
-    "03_career/interview_2024/company/TSMC/类文件结构详解.md",
-    "03_career/interview_2024/company/TSMC/JVM 垃圾回收详解（重点）.md",
-    "03_career/interview_2024/company/TSMC/JDK 监控和故障处理工具总结.md",
-    "03_career/interview_2024/company/TSMC/最重要的JVM 参数总结.md",
-    "03_career/interview_2024/company/TSMC/类加载器详解（重点）.md",
-    "03_career/interview_2024/company/TSMC/类加载过程详解.md",
-    "03_career/interview_2024/company/TSMC/Java 内存区域详解（重点）.md",
-    "03_career/interview_2024/company/TSMC/Java NIO 核心知识总结.md",
-    "03_career/interview_2024/company/TSMC/Java IO 模型详解.md",
-    "03_career/interview_2024/company/TSMC/tsmc interview 經驗",
-    "03_career/interview_2024/company/TSMC/Java 21 新特性概览 (重要).md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 17 新特性概览（重要）.md.edtz"
+    "03_career/interview_2024/company/TSMC/《Java8 指南》中文翻译.md"
   ]
 }
