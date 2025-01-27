@@ -284,7 +284,9 @@ public class DemoPublisher {
 
 我们知道 Spring AOP 的实现是基于代理模式，但是 Spring AOP 的增强或通知 (Advice) 使用到了适配器模式，与之相关的接口是 `AdvisorAdapter` 。
 
-Advice 常用的类型有：`BeforeAdvice`（目标方法调用前，前置通知）、`AfterAdvice`（目标方法调用后，后置通知）、`AfterReturningAdvice`(目标方法执行结束后，return 之前) 等等。每个类型 Advice（通知）都有对应的拦截器:`MethodBeforeAdviceInterceptor`、`AfterReturningAdviceInterceptor`、`ThrowsAdviceInterceptor` 等等。
+Advice 常用的类型有：`BeforeAdvice`（目标方法调用前，前置通知）、`AfterAdvice`（目标方法调用后，后置通知）、`AfterReturningAdvice`(目标方法执行结束后，return 之前) 等等。
+
+每个类型 Advice（通知）都有对应的拦截器:`MethodBeforeAdviceInterceptor`、`AfterReturningAdviceInterceptor`、`ThrowsAdviceInterceptor` 等等。
 
 Spring 预定义的通知要通过对应的适配器，适配成 `MethodInterceptor` 接口 (方法拦截器) 类型的对象（如：`MethodBeforeAdviceAdapter` 通过调用 `getInterceptor` 方法，将 `MethodBeforeAdvice` 适配成 `MethodBeforeAdviceInterceptor` ）。
 
@@ -310,7 +312,9 @@ if(mappedHandler.getHandler() instanceof MultiActionController){
 
 ## [装饰者模式](https://javaguide.cn/system-design/framework/spring/spring-design-patterns-summary.html#%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F)
 
-装饰者模式可以动态地给对象添加一些额外的属性或行为。相比于使用继承，装饰者模式更加灵活。简单点儿说就是当我们需要修改原有的功能，但我们又不愿直接去修改原有的代码时，设计一个 Decorator 套在原有代码外面。其实在 JDK 中就有很多地方用到了装饰者模式，比如 `InputStream` 家族，`InputStream` 类下有 `FileInputStream` (读取文件)、`BufferedInputStream` (增加缓存，使读取文件速度大大提升) 等子类都在不修改 `InputStream` 代码的情况下扩展了它的功能。
+装饰者模式可以动态地给对象添加一些额外的属性或行为。相比于使用继承，装饰者模式更加灵活。简单点儿说就是当我们需要修改原有的功能，但我们又不愿直接去修改原有的代码时，设计一个 Decorator 套在原有代码外面。
+
+其实在 JDK 中就有很多地方用到了装饰者模式，比如 `InputStream` 家族，`InputStream` 类下有 `FileInputStream` (读取文件)、`BufferedInputStream` (增加缓存，使读取文件速度大大提升) 等子类都在不修改 `InputStream` 代码的情况下扩展了它的功能。
 
 ![[100_attachements/39bc6482ff999fd7d4cdbc79c0b0ff15_MD5.png]]
 

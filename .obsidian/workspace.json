@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/Spring 中的设计模式详解.md",
+                "file": "03_career/interview_2024/company/TSMC/IoC & AOP 详解（快速搞懂）.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spring 中的设计模式详解"
+              "title": "IoC & AOP 详解（快速搞懂）"
             }
           }
         ],
@@ -184,10 +184,10 @@
   },
   "active": "49b7c9e0052be1d1",
   "lastOpenFiles": [
-    "03_career/interview_2024/company/TSMC/使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！.md",
-    "03_career/interview_2024/company/TSMC/Spring 中的设计模式详解.md",
-    "03_career/interview_2024/company/TSMC/黑馬 基礎篇.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/Spring 中的设计模式详解.md",
+    "03_career/interview_2024/company/TSMC/使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！.md",
+    "03_career/interview_2024/company/TSMC/黑馬 基礎篇.md",
     "03_career/interview_2024/company/TSMC/黑馬 框架篇.md",
     "100_attachements/Pasted image 20250127191135.png",
     "100_attachements/IMG-使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！-20250127180453910.png",

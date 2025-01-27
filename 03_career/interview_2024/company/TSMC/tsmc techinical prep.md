@@ -137,7 +137,7 @@ Java 版本特性 
 	- [x] [10 分钟搞定 SpringBoot 如何优雅读取配置文件？](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247486181&idx=2&sn=10db0ae64ef501f96a5b0dbc4bd78786&chksm=cea2452ef9d5cc384678e456427328600971180a77e40c13936b19369672ca3e342c26e92b50&token=816772476&lang=zh_CN#rd)
 - [ ] [[IoC & AOP 详解（快速搞懂）]]
 - [ ] [[Spring 事务详解]]
-- [ ] [[Spring 中的设计模式详解]]
+- [x] [[Spring 中的设计模式详解]]
 - [ ] [[SpringBoot 自动装配原理详解]]
 - [ ] [[Spring 面试题]]
 

@@ -78,7 +78,6 @@ AOP 的目的是将横切关注点（如日志记录、事务管理、权限控�
 
 AOP 之所以叫面向切面编程，是因为它的核心思想就是将横切关注点从核心业务逻辑中分离出来，形成一个个的**切面（Aspect）**。
 
-![[100_attachements/699dd895b156da2afa630c2902fe1517_MD5.jpg]]
 
 这里顺带总结一下 AOP 关键术语（不理解也没关系，可以继续往下看）：
 
@@ -109,14 +108,16 @@ AOP 可以将横切关注点（如日志记录、事务管理、权限控制、�
 
 以日志记录为例进行介绍，假如我们需要对某些方法进行统一格式的日志记录，没有使用 AOP 技术之前，我们需要挨个写日志记录的逻辑代码，全是重复的的逻辑。
 
-```
+```java
 public CommonResponse<Object> method1() {
       // 业务逻辑
       xxService.method1();
+      
       // 省略具体的业务处理逻辑
       // 日志记录
       ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
       HttpServletRequest request = attributes.getRequest();
+      
       // 省略记录日志的具体逻辑 如：获取各种信息，写入数据库等操作...
       return CommonResponse.success();
 }
@@ -124,10 +125,12 @@ public CommonResponse<Object> method1() {
 public CommonResponse<Object> method2() {
       // 业务逻辑
       xxService.method2();
+      
       // 省略具体的业务处理逻辑
       // 日志记录
       ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
       HttpServletRequest request = attributes.getRequest();
+      
       // 省略记录日志的具体逻辑 如：获取各种信息，写入数据库等操作...
       return CommonResponse.success();
 }
@@ -136,8 +139,8 @@ public CommonResponse<Object> method2() {
 ```
 
 使用 AOP 技术之后，我们可以将日志记录的逻辑封装成一个切面，然后通过切入点和通知来指定在哪些方法需要执行日志记录的操作。
+```java
 
-```
 
 // 日志注解
 @Target({ElementType.PARAMETER,ElementType.METHOD})
@@ -155,6 +158,8 @@ public @interface Log {
      */
     MethodType methodType() default MethodType.OTHER;
 }
+
+
 
 // 日志切面
 @Component
@@ -179,14 +184,17 @@ public class LogAspect {
 
 这样的话，我们一行注解即可实现日志记录：
 
-```
-@Log(description = "method1",methodType = MethodType.INSERT)
+```java
+
+@Log(description = "method1", methodType = MethodType.INSERT)
 public CommonResponse<Object> method1() {
       // 业务逻辑
       xxService.method1();
       // 省略具体的业务处理逻辑
       return CommonResponse.success();
 }
+
+
 ```
 
 ### [AOP 的应用场景有哪些？](https://javaguide.cn/system-design/framework/spring/ioc-and-aop.html#aop-%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%9C%89%E5%93%AA%E4%BA%9B)
@@ -209,7 +217,8 @@ Spring AOP 就是基于动态代理的，如果要代理的对象，实现了某
 
 当然你也可以使用 **AspectJ** ！Spring AOP 已经集成了 AspectJ ，AspectJ 应该算的上是 Java 生态系统中最完整的 AOP 框架了。
 
-**Spring AOP 属于运行时增强，而 AspectJ 是编译时增强。** Spring AOP 基于代理 (Proxying)，而 AspectJ 基于字节码操作 (Bytecode Manipulation)。
+**Spring AOP 属于运行时增强，而 AspectJ 是编译时增强。** 
+Spring AOP 基于代理 (Proxying)，而 AspectJ 基于字节码操作 (Bytecode Manipulation)。
 
 Spring AOP 已经集成了 AspectJ ，AspectJ 应该算的上是 Java 生态系统中最完整的 AOP 框架了。AspectJ 相比于 Spring AOP 功能更加强大，但是 Spring AOP 相对来说更简单，
 
