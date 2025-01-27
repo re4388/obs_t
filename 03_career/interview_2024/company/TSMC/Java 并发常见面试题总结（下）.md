@@ -557,7 +557,7 @@ new RejectedExecutionHandler() {
 
 再提一个有意思的小问题：**线程池在提交任务前，可以提前创建线程吗？**
 
-答案是可以的！`ThreadPoolExecutor` 提供了两个方法帮助我们在提交任务之前，完成核心线程的创建，从而实现线程池预热的效果：
+答案是可以的！`ThreadPoolExecutor` 提供了两个方法帮助我们在提交任务之前，完成核心线程的创建，从而实现**线程池预热的效果**：
 
 - `prestartCoreThread()`: 启动一个线程，等待任务，如果已达到核心线程数，这个方法返回 false，否则返回 true；
 - `prestartAllCoreThreads()`: 启动所有的核心线程，并返回启动成功的核心线程数。
