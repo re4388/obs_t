@@ -700,10 +700,15 @@ public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
     private String name;
+    
     private String description;
+    
     @Enumerated(EnumType.STRING)
     private Gender gender;
+    
+    
     省略getter/setter......
 }
 ```
@@ -760,13 +765,10 @@ public class AuditSecurityConfiguration {
 ```
 
 简单介绍一下上面涉及到的一些注解：
-
 1. `@CreatedDate`: 表示该字段为创建时间字段，在这个实体被 insert 的时候，会设置值
-    
 2. `@CreatedBy` : 表示该字段为创建人，在这个实体被 insert 的时候，会设置值
-    
-    `@LastModifiedDate`、`@LastModifiedBy` 同理。
-    
+3. `@LastModifiedDate`、`@LastModifiedBy` 同理。
+
 
 `@EnableJpaAuditing`：开启 JPA 审计功能。
 
@@ -807,7 +809,6 @@ public void save() {
 我们知道 Exception 分为运行时异常 RuntimeException 和非运行时异常。在 `@Transactional` 注解中如果不配置 `rollbackFor` 属性，那么事务只会在遇到 `RuntimeException` 的时候才会回滚，加上 `rollbackFor=Exception.class`, 可以让事务在遇到非运行时异常时也回滚。
 
 `@Transactional` 注解一般可以作用在`类`或者`方法`上。
-
 - **作用于类**：当把 `@Transactional` 注解放在类上时，表示所有该类的 public 方法都配置相同的事务属性信息。
 - **作用于方法**：当类配置了 `@Transactional`，方法也配置了 `@Transactional`，方法的事务会覆盖类的事务配置信息。
 
@@ -820,7 +821,9 @@ public void save() {
 **`@JsonIgnoreProperties` 作用在类上用于过滤掉特定字段不返回或者不解析。**
 
 ```java
+
 //生成json时将userRoles属性过滤
+
 @JsonIgnoreProperties({"userRoles"})
 public class User {
 
@@ -840,6 +843,7 @@ public class User {
     private String userName;
     private String fullName;
     private String password;
+    
    //生成json时将userRoles属性过滤
     @JsonIgnore
     private List<UserRole> userRoles = new ArrayList<>();
