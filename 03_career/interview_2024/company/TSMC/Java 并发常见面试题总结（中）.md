@@ -382,7 +382,6 @@ ABA 问题是 CAS 算法最常见的问题。
 如果一个变量 V 初次读取的时候是 A 值，并且在准备赋值的时候检查到它仍然是 A 值，那我们就能说明它的值没有被其他线程修改过了吗？很明显是不能的，因为在这段时间它的值可能被改为其他值，然后又改回 A，那 CAS 操作就会误认为它从来没有被修改过。这个问题被称为 CAS 操作的 **"ABA" 问题。**
 
 ABA 问题的解决思路是在变量前面追加上**版本号或者时间戳**。JDK 1.5 以后的 `AtomicStampedReference` 类就是用来解决 ABA 问题的，其中的 `compareAndSet()` 方法就是首先检查当前引用是否等于预期引用，并且当前标志是否等于预期标志，如果全部相等，则以原子方式将该引用和该标志的值设置为给定的更新值。
-
 ```java
 public boolean compareAndSet(V   expectedReference,
                              V   newReference,
@@ -392,15 +391,16 @@ public boolean compareAndSet(V   expectedReference,
     return
         expectedReference == current.reference &&
         expectedStamp == current.stamp &&
-        ((newReference == current.reference &&
-          newStamp == current.stamp) ||
-         casPair(current, Pair.of(newReference, newStamp)));
+        (
+	    (newReference == current.reference && newStamp == current.stamp) ||
+         casPair(current, Pair.of(newReference, newStamp))
+         );
 }
 ```
 
 #### [循环时间长开销大](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#%E5%BE%AA%E7%8E%AF%E6%97%B6%E9%97%B4%E9%95%BF%E5%BC%80%E9%94%80%E5%A4%A7)
 
-CAS 经常会用到自旋操作来进行重试，也就是不成功就一直循环执行直到成功。如果长时间不成功，会给 CPU 带来非常大的执行开销。
+CAS 经常会用到自旋操作来进行重试，也就是不成功就一直循环执行直到成功。但是如果长时间不成功，会给 CPU 带来非常大的执行开销。
 
 如果 JVM 能够支持处理器提供的 `pause` 指令，那么自旋操作的效率将有所提升。`pause` 指令有两个重要作用：
 
@@ -429,9 +429,9 @@ CAS 操作仅能对单个共享变量有效。当需要操作多个共享变量�
 
 `synchronized` 关键字的使用方式主要有下面 3 种：
 
-1. 修饰实例方法
-2. 修饰静态方法
-3. 修饰代码块
+1. 修饰**实例方法**
+2. 修饰**静态方法**
+3. 修饰**代码块**
 
 **1、修饰实例方法** （锁当前对象实例）
 
@@ -455,7 +455,7 @@ synchronized static void method() {
 }
 ```
 
-静态 `synchronized` 方法和非静态 `synchronized` 方法之间的调用互斥么？不互斥！如果一个线程 A 调用一个实例对象的非静态 `synchronized` 方法，而线程 B 需要调用这个实例对象所属类的静态 `synchronized` 方法，是允许的，不会发生互斥现象，因为访问静态 `synchronized` 方法占用的锁是当前类的锁，而访问非静态 `synchronized` 方法占用的锁是当前实例对象锁。
+静态 `synchronized` 方法和非静态 `synchronized` 方法之间的调用互斥么？不互斥！如果一个线程 A 调用一个实例对象的非静态 `synchronized` 方法，而线程 B 需要调用这个实例对象所属类的静态 `synchronized` 方法，是允许的，不会发生互斥现象，因为访问静态 `synchronized` 方法占用的锁是**当前类的锁**，而访问非静态 `synchronized` 方法占用的锁是**当前实例对象锁**。
 
 **3、修饰代码块** （锁指定对象 / 类）
 
@@ -472,15 +472,18 @@ synchronized(this) {
 
 **总结：**
 
-- `synchronized` 关键字加到 `static` 静态方法和 `synchronized(class)` 代码块上都是是给 Class 类上锁；
-- `synchronized` 关键字加到实例方法上是给对象实例上锁；
+- `synchronized` 关键字加到 `static` 静态方法和 `synchronized(class)` 代码块上都是是给 **Class 类上锁**；
+- `synchronized` 关键字加到实例方法上是给**对象实例上锁**；
 - 尽量不要使用 `synchronized(String a)` 因为 JVM 中，字符串常量池具有缓存功能。
 
 ### [构造方法可以用 synchronized 修饰么？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E7%94%A8-synchronized-%E4%BF%AE%E9%A5%B0%E4%B9%88)
 
-构造方法不能使用 synchronized 关键字修饰。不过，可以在构造方法内部使用 synchronized 代码块。
+构造方法不能使用 synchronized 关键字修饰。
+不过，可以在构造方法内部使用 synchronized 代码块。
 
 另外，构造方法本身是线程安全的，但如果在构造方法中涉及到共享资源的操作，就需要采取适当的同步措施来保证整个构造过程的线程安全。
+see [[為什麼 Java 的建構方法本身是執行緒安全的]]
+- but why we need 5 way to setup singlton pattern?
 
 ### [⭐️synchronized 底层原理了解吗？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#%E2%AD%90%EF%B8%8Fsynchronized-%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86%E4%BA%86%E8%A7%A3%E5%90%97)
 
@@ -510,7 +513,7 @@ public class SynchronizedDemo {
 
 > 在 Java 虚拟机 (HotSpot) 中，Monitor 是基于 C++ 实现的，由 [ObjectMonitor](https://github.com/openjdk-mirror/jdk7u-hotspot/blob/50bdefc3afe944ca74c3093e7448d6b889cd20d1/src/share/vm/runtime/objectMonitor.cpp) 实现的。每个对象中都内置了一个 `ObjectMonitor` 对象。
 > 
-> 另外，`wait/notify` 等方法也依赖于 `monitor` 对象，这就是为什么只有在同步的块或者方法中才能调用 `wait/notify` 等方法，否则会抛出 `java.lang.IllegalMonitorStateException` 的异常的原因。
+> 另外，`wait/notify` 等方法也依赖于 `monitor` 对象，因此只有在同步的块或者方法中才能调用 `wait/notify` 等方法，否则会抛出 `java.lang.IllegalMonitorStateException` 的异常的原因。
 
 在执行 `monitorenter` 时，会尝试获取对象的锁，如果锁的计数器为 0 则表示锁可以被获取，获取后将锁计数器设为 1 也就是加 1。
 

@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Spring Boot",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -185,6 +186,8 @@
   "lastOpenFiles": [
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "03_career/interview_2024/company/TSMC/Java 并发常见面试题总结（中）.md",
+    "03_career/interview_2024/company/TSMC/為什麼 Java 的建構方法本身是執行緒安全的.md",
+    "03_career/interview_2024/company/TSMC/為什麼 Java 的建構方法本身是執行緒安全的.md.edtz",
     "03_career/interview_2024/company/TSMC/Java 语法糖详解.md",
     "03_career/interview_2024/company/TSMC/Java SPI 机制详解.md",
     "03_career/interview_2024/company/TSMC/线程上下文类加载器（Thread Context ClassLoader）.md",
@@ -223,11 +226,8 @@
     "03_career/interview_2024/company/TSMC/Java 内存区域详解（重点）.md",
     "03_career/interview_2024/company/TSMC/Java NIO 核心知识总结.md",
     "03_career/interview_2024/company/TSMC/Java IO 模型详解.md",
-    "03_career/interview_2024/company/TSMC/JVM线上问题排查和性能调优案例.md",
-    "03_career/interview_2024/company/TSMC/Java IO 设计模式总结.md",
     "03_career/interview_2024/company/TSMC/tsmc interview 經驗",
     "03_career/interview_2024/company/TSMC/Java 21 新特性概览 (重要).md.edtz",
-    "03_career/interview_2024/company/TSMC/Java 17 新特性概览（重要）.md.edtz",
-    "03_career/interview_2024/company/TSMC/《Java8 指南》中文翻译.md.edtz"
+    "03_career/interview_2024/company/TSMC/Java 17 新特性概览（重要）.md.edtz"
   ]
 }
