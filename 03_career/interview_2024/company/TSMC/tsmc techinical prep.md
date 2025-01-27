@@ -136,9 +136,9 @@ Java 版本特性 
 	- [ ] [如何在 Spring/Spring Boot 中做参数校验？你需要了解的都在这里](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247485783&idx=1&sn=a407f3b75efa17c643407daa7fb2acd6&chksm=cea2469cf9d5cf8afbcd0a8a1c9cc4294d6805b8e01bee6f76bb2884c5bc15478e91459def49&token=292197051&lang=zh_CN#rd)
 	- [x] [10 分钟搞定 SpringBoot 如何优雅读取配置文件？](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247486181&idx=2&sn=10db0ae64ef501f96a5b0dbc4bd78786&chksm=cea2452ef9d5cc384678e456427328600971180a77e40c13936b19369672ca3e342c26e92b50&token=816772476&lang=zh_CN#rd)
 - [x] [[IoC & AOP 详解（快速搞懂）]]
-- [ ] [[Spring 事务详解]]
 - [x] [[Spring 中的设计模式详解]]
-- [ ] [[SpringBoot 自动装配原理详解]]
+- [x] [[SpringBoot 自动装配原理详解]]
+- [ ] [[Spring 事务详解]]
 - [ ] [[Spring 面试题]]
 
 
@@ -172,7 +172,6 @@ Java 版本特性 
 - [ ] [GitHub - stevenli91748/ Java training projec 包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
 
 ## 併發
-- [ ] [[Java 并发编程面试题]]
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
 
 

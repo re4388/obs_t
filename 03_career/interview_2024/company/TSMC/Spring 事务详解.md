@@ -8,7 +8,7 @@
 
 我们系统的每个业务方法可能包括了多个原子性的数据库操作，比如下面的 `savePerson()` 方法中就有两个原子性的数据库操作。这些原子性的数据库操作是有依赖的，它们要么都执行，要不就都不执行。
 
-```
+```java
   public void savePerson() {
     personDao.save(person);
     personDetailDao.save(personDetail);
@@ -26,7 +26,7 @@
 
 ![[100_attachements/61d6b5723a0f8e6aeef69872701b5eba_MD5.png]]
 
-```
+```java
 public class OrdersService {
   private AccountDao accountDao;
 
@@ -85,7 +85,7 @@ public class OrdersService {
 
 使用 `TransactionTemplate` 进行编程式事务管理的示例代码如下：
 
-```
+```java
 @Autowired
 private TransactionTemplate transactionTemplate;
 public void testTransaction() {
@@ -109,7 +109,7 @@ public void testTransaction() {
 
 使用 `TransactionManager` 进行编程式事务管理的示例代码如下：
 
-```
+```java
 @Autowired
 private PlatformTransactionManager transactionManager;
 
@@ -131,7 +131,7 @@ public void testTransaction() {
 
 使用 `@Transactional` 注解进行事务管理的示例代码如下：
 
-```
+```java
 @Transactional(propagation = Propagation.REQUIRED)
 public void aMethod {
   //do something
@@ -166,7 +166,7 @@ Spring 框架中，事务管理相关最重要的 3 个接口如下：
 
 `PlatformTransactionManager` 接口中定义了三个方法：
 
-```
+```java
 package org.springframework.transaction;
 
 import org.springframework.lang.Nullable;
@@ -215,7 +215,7 @@ public interface PlatformTransactionManager {
 
 `TransactionDefinition` 接口中定义了 5 个方法以及一些表示事务属性的常量比如隔离级别、传播行为等等。
 
-```
+```java
 package org.springframework.transaction;
 
 import org.springframework.lang.Nullable;
@@ -256,7 +256,7 @@ public interface TransactionDefinition {
 
 **TransactionStatus 接口内容如下：**
 
-```
+```java
 public interface TransactionStatus{
     boolean isNewTransaction(); // 是否是新的事务
     boolean hasSavepoint(); // 是否有恢复点
@@ -278,7 +278,7 @@ public interface TransactionStatus{
 
 举个例子：我们在 A 类的 `aMethod()` 方法中调用了 B 类的 `bMethod()` 方法。这个时候就涉及到业务层方法之间互相调用的事务问题。如果我们的 `bMethod()` 如果发生异常需要回滚，如何配置事务传播行为才能让 `aMethod()` 也跟着回滚呢？这个时候就需要事务传播行为的知识了，如果你不知道的话一定要好好看一下。
 
-```
+```java
 @Service
 Class A {
     @Autowired
@@ -301,7 +301,7 @@ Class B {
 
 在 `TransactionDefinition` 定义中包括了如下几个表示传播行为的常量：
 
-```
+```java
 public interface TransactionDefinition {
     int PROPAGATION_REQUIRED = 0;
     int PROPAGATION_SUPPORTS = 1;
@@ -316,7 +316,7 @@ public interface TransactionDefinition {
 
 不过，为了方便使用，Spring 相应地定义了一个枚举类：`Propagation`
 
-```
+```java
 package org.springframework.transaction.annotation;
 
 import org.springframework.transaction.TransactionDefinition;
@@ -361,7 +361,7 @@ public enum Propagation {
 
 举个例子：如果我们上面的 `aMethod()` 和 `bMethod()` 使用的都是 `PROPAGATION_REQUIRED` 传播行为的话，两者使用的就是同一个事务，只要其中一个方法回滚，整个事务均回滚。
 
-```
+```java
 @Service
 Class A {
     @Autowired
@@ -387,7 +387,7 @@ Class B {
 
 举个例子：如果我们上面的 `bMethod()` 使用 `PROPAGATION_REQUIRES_NEW` 事务传播行为修饰，`aMethod` 还是用 `PROPAGATION_REQUIRED` 修饰的话。如果 `aMethod()` 发生异常回滚，`bMethod()` 不会跟着回滚，因为 `bMethod()` 开启了独立的事务。但是，如果 `bMethod()` 抛出了未被捕获的异常并且这个异常满足事务回滚规则的话，`aMethod()` 同样也会回滚，因为这个异常被 `aMethod()` 的事务管理机制检测到了。
 
-```
+```java
 @Service
 Class A {
     @Autowired
@@ -417,7 +417,7 @@ Class B {
 
 这里还是简单举个例子：如果 `bMethod()` 回滚的话，`aMethod()` 不会回滚。如果 `aMethod()` 回滚的话，`bMethod()` 会回滚。
 
-```
+```java
 @Service
 Class A {
     @Autowired
@@ -456,7 +456,7 @@ Class B {
 
 `TransactionDefinition` 接口中定义了五个表示隔离级别的常量：
 
-```
+```java
 public interface TransactionDefinition {
     ......
     int ISOLATION_DEFAULT = -1;
@@ -470,7 +470,7 @@ public interface TransactionDefinition {
 
 和事务传播行为那块一样，为了方便使用，Spring 也相应地定义了一个枚举类：`Isolation`
 
-```
+```java
 public enum Isolation {
 
   DEFAULT(TransactionDefinition.ISOLATION_DEFAULT),
@@ -512,7 +512,7 @@ public enum Isolation {
 
 #### [事务只读属性](https://javaguide.cn/system-design/framework/spring/spring-transaction.html#%E4%BA%8B%E5%8A%A1%E5%8F%AA%E8%AF%BB%E5%B1%9E%E6%80%A7)
 
-```
+```java
 package org.springframework.transaction;
 
 import org.springframework.lang.Nullable;
@@ -550,7 +550,7 @@ public interface TransactionDefinition {
 
 如果你想要回滚你定义的特定的异常类型的话，可以这样：
 
-```
+```java
 @Transactional(rollbackFor= MyException.class)
 ```
 
@@ -566,7 +566,7 @@ public interface TransactionDefinition {
 
 `@Transactional` 注解源码如下，里面包含了基本事务属性的配置：
 
-```
+```java
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
@@ -616,7 +616,7 @@ public @interface Transactional {
 
 🤐 多提一嘴：`createAopProxy()` 方法 决定了是使用 JDK 还是 Cglib 来做动态代理，源码如下：
 
-```
+```java
 public class DefaultAopProxyFactory implements AopProxyFactory, Serializable {
 
   @Override
@@ -652,7 +652,7 @@ public class DefaultAopProxyFactory implements AopProxyFactory, Serializable {
 
 `MyService` 类中的 `method1()` 调用 `method2()` 就会导致 `method2()` 的事务失效。
 
-```
+```java
 @Service
 public class MyService {
 
@@ -671,7 +671,7 @@ private void method1() {
 
 [issue #2091](https://github.com/Snailclimb/JavaGuide/issues/2091) 补充了一个例子：
 
-```
+```java
 @Service
 public class MyService {
 
