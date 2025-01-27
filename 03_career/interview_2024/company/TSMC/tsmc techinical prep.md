@@ -52,7 +52,7 @@ IO
 併發 
 - [x] [[Java 并发常见面试题总结（上）]]
 - [x] [[Java 并发常见面试题总结（中）]]
-- [ ] [[Java 并发常见面试题总结（下）]]
+- [x] [[Java 并发常见面试题总结（下）]]
 - [ ] [[乐观锁和悲观锁详解]]
 - [ ] [[CAS 详解]]
 - [ ] [[JMM（Java 内存模型）详解]]
@@ -122,9 +122,7 @@ Java 版本特性 
 - [ ] [[黑馬 基礎篇]]
 - [ ] [[黑馬 併發]]
 - [ ] [[黑馬 虛擬機]]
-- [ ] [[黑馬框架篇]]
-
-
+- [ ] [[黑馬 框架篇]]
 
 ---
 
@@ -159,7 +157,6 @@ Java 版本特性 
 
 ## 綜合
 - [ ] [AgeFades/AgeFades-Note · Java](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
-- [ ] [Java集合面试题 | 小林coding](https://xiaolincoding.com/interview/collections.html#hashmap%E7%9A%84put-key-val-%E5%92%8Cget-key-%E8%BF%87%E7%A8%8B)
 - [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
 - [ ] [GitHub - Java 學習地圖 via 影片](https://github.com/unidentifiable/java_learning_circuit?tab=readme-ov-file)
 - [ ] [GitHub - cosen1024/Java-Interview: 「Java面试小抄](https://github.com/cosen1024/Java-Interview/tree/main)
@@ -170,7 +167,6 @@ Java 版本特性 
 ## 併發
 - [ ] [[Java 并发编程面试题]]
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
-- [ ] [[黑馬 併發]]
 
 
 

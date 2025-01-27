@@ -1,6 +1,5 @@
 这篇文章主要是想通过一些问题，加深大家对于 Spring 的理解，所以不会涉及太多的代码！
 
-下面的很多问题我自己在使用 Spring 的过程中也并没有注意，自己也是临时查阅了很多资料和书籍补上的。网上也有一些很多关于 Spring 常见问题 / 面试题整理的文章，我感觉大部分都是互相 copy，而且很多问题也不是很好，有些回答也存在问题。所以，自己花了一周的业余时间整理了一下，希望对大家有帮助。
 
 ## [Spring 基础](https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#spring-%E5%9F%BA%E7%A1%80)
 
@@ -159,7 +158,7 @@ Spring 时代我们一般通过 XML 文件来配置 Bean，后来开发人员觉
 
 `@Bean` 注解使用示例：
 
-```
+```java
 @Configuration
 public class AppConfig {
     @Bean
@@ -172,7 +171,7 @@ public class AppConfig {
 
 上面的代码相当于下面的 xml 配置
 
-```
+```java
 <beans>
     <bean id="transferService" class="com.acme.TransferServiceImpl"/>
 </beans>
@@ -180,7 +179,7 @@ public class AppConfig {
 
 下面这个例子是通过 `@Component` 无法实现的。
 
-```
+```java
 @Bean
 public OneService getService(status) {
     case (status)  {
@@ -214,7 +213,7 @@ Spring 内置的 `@Autowired` 以及 JDK 内置的 `@Resource` 和 `@Inject
 
 这种情况下，注入方式会变为 `byName`（根据名称进行匹配），这个名称通常就是类名（首字母小写）。就比如说下面代码中的 `smsService` 就是我这里所说的名称，这样应该比较好理解了吧。
 
-```
+```java
 // smsService 就是我们上面所说的名称
 @Autowired
 private SmsService smsService;
@@ -222,7 +221,7 @@ private SmsService smsService;
 
 举个例子，`SmsService` 接口有两个实现类: `SmsServiceImpl1` 和 `SmsServiceImpl2`，且它们都已经被 Spring 容器所管理。
 
-```
+```java
 // 报错，byName 和 byType 都无法匹配到 bean
 @Autowired
 private SmsService smsService;
@@ -242,7 +241,7 @@ private SmsService smsService;
 
 `@Resource` 有两个比较重要且日常开发常用的属性：`name`（名称）、`type`（类型）。
 
-```
+```java
 public @interface Resource {
     String name() default "";
     Class<?> type() default Object.class;
@@ -251,7 +250,7 @@ public @interface Resource {
 
 如果仅指定 `name` 属性则注入方式为 `byName`，如果仅指定 `type` 属性则注入方式为 `byType`，如果同时指定 `name` 和 `type` 属性（不建议这么做）则注入方式为 `byType`+`byName`。
 
-```
+```java
 // 报错，byName 和 byType 都无法匹配到 bean
 @Resource
 private SmsService smsService;
@@ -280,7 +279,7 @@ private SmsService smsService;
 
 构造函数注入示例：
 
-```
+```java
 @Service
 public class UserService {
 
@@ -296,7 +295,7 @@ public class UserService {
 
 Setter 注入示例：
 
-```
+```java
 @Service
 public class UserService {
 
@@ -314,7 +313,7 @@ public class UserService {
 
 Field 注入示例：
 
-```
+```java
 @Service
 public class UserService {
 
@@ -357,13 +356,13 @@ Spring 中 Bean 的作用域通常有下面几种：
 
 xml 方式：
 
-```
+```java
 <bean id="..." class="..." scope="singleton"></bean>
 ```
 
 注解方式：
 
-```
+```java
 @Bean
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public Person personPrototype() {
@@ -381,7 +380,7 @@ prototype 作用域下，每次获取都会创建一个新的 bean 实例，不�
 
 有状态 Bean 示例：
 
-```
+```java
 // 定义了一个购物车类，其中包含一个保存用户的购物车里商品的 List
 @Component
 public class ShoppingCart {
@@ -401,7 +400,7 @@ public class ShoppingCart {
 
 无状态 Bean 示例：
 
-```
+```java
 // 定义了一个用户服务，它仅包含业务逻辑而不保存任何状态。
 @Component
 public class UserService {
@@ -421,7 +420,7 @@ public class UserService {
 
 这里以 `ThreadLocal` 为例，演示一下 `ThreadLocal` 保存用户登录信息的场景：
 
-```
+```java
 public class UserThreadLocal {
 
     private UserThreadLocal() {}
@@ -461,7 +460,7 @@ public class UserThreadLocal {
 
 `AbstractAutowireCapableBeanFactory` 的 `doCreateBean()` 方法中能看到依次执行了这 4 个阶段：
 
-```
+```java
 protected Object doCreateBean(final String beanName, final RootBeanDefinition mbd, final @Nullable Object[] args)
     throws BeanCreationException {
 
@@ -498,7 +497,7 @@ Spring 中提供的 `Aware` 接口主要有：
 
 `BeanPostProcessor` 接口是 Spring 为修改 Bean 提供的强大扩展点。
 
-```
+```java
 public interface BeanPostProcessor {
 
 	// 初始化前置处理
@@ -519,7 +518,7 @@ public interface BeanPostProcessor {
 
 `InitializingBean` 和 `init-method` 是 Spring 为 Bean 初始化提供的扩展点。
 
-```
+```java
 public interface InitializingBean {
  // 初始化逻辑
 	void afterPropertiesSet() throws Exception;
@@ -528,7 +527,7 @@ public interface InitializingBean {
 
 指定 `init-method` 方法，指定初始化方法：
 
-```
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -595,7 +594,7 @@ Spring AOP 已经集成了 AspectJ ，AspectJ 应该算的上是 Java 生态系�
 
 1、通常使用 `@Order` 注解直接定义切面顺序
 
-```
+```java
 // 值越小优先级越高
 @Order(3)
 @Component
@@ -605,7 +604,7 @@ public class LoggingAspect implements Ordered {
 
 **2、实现 `Ordered` 接口重写 `getOrder` 方法。**
 
-```
+```java
 @Component
 @Aspect
 public class LoggingAspect implements Ordered {
@@ -704,7 +703,7 @@ MVC 是一种设计模式，Spring MVC 是一款很优秀的 MVC 框架。Spring
 
 推荐使用注解的方式统一异常处理，具体会使用到 `@ControllerAdvice` + `@ExceptionHandler` 这两个注解 。
 
-```
+```java
 @ControllerAdvice
 @ResponseBody
 public class GlobalExceptionHandler {
@@ -725,7 +724,7 @@ public class GlobalExceptionHandler {
 
 `ExceptionHandlerMethodResolver` 中 `getMappedMethod` 方法决定了异常具体被哪个被 `@ExceptionHandler` 注解修饰的方法处理异常。
 
-```
+```java
 @Nullable
   private Method getMappedMethod(Class<? extends Throwable> exceptionType) {
     List<Class<? extends Throwable>> matches = new ArrayList<>();
@@ -769,7 +768,7 @@ public class GlobalExceptionHandler {
 
 循环依赖是指 Bean 对象循环引用，是两个或多个 Bean 之间相互持有对方的引用，例如 CircularDependencyA → CircularDependencyB → CircularDependencyA。
 
-```
+```java
 @Component
 public class CircularDependencyA {
     @Autowired
@@ -785,7 +784,7 @@ public class CircularDependencyB {
 
 单个对象的自我依赖也会出现循环依赖，但这种概率极低，属于是代码编写错误。
 
-```
+```java
 @Component
 public class CircularDependencyA {
     @Autowired
@@ -797,7 +796,7 @@ Spring 框架通过使用三级缓存来解决这个问题，确保即使在循�
 
 Spring 中的三级缓存其实就是三个 Map，如下：
 
-```
+```java
 // 一级缓存
 /** Cache of singleton objects: bean name to bean instance. */
 private final Map<String, Object> singletonObjects = new ConcurrentHashMap<>(256);
@@ -825,7 +824,7 @@ private final Map<String, ObjectFactory<?>> singletonFactories = new HashMap<>(1
 
 在三级缓存中存储的是 `ObjectFacoty` ：
 
-```
+```java
 public interface ObjectFactory<T> {
     T getObject() throws BeansException;
 }
@@ -833,7 +832,7 @@ public interface ObjectFactory<T> {
 
 Spring 在创建 Bean 的时候，如果允许循环依赖的话，Spring 就会将刚刚实例化完成，但是属性还没有初始化完的 Bean 对象给提前暴露出去，这里通过 `addSingletonFactory` 方法，向三级缓存中添加一个 `ObjectFactory` 对象：
 
-```
+```java
 // AbstractAutowireCapableBeanFactory # doCreateBean #
 public abstract class AbstractAutowireCapableBeanFactory ... {
 	protected Object doCreateBean(...) {
@@ -881,14 +880,14 @@ Spring Boot 2.2 新增了**全局懒加载属性**，开启后全局 bean 被设
 
 配置文件配置全局懒加载：
 
-```
+```java
 #默认false
 spring.main.lazy-initialization=true
 ```
 
 编码的方式设置全局懒加载：
 
-```
+```java
 SpringApplication springApplication=new SpringApplication(Start.class);
 springApplication.setLazyInitialization(false);
 springApplication.run(args);
@@ -966,7 +965,7 @@ SpringBoot 2.6.x 以后，如果你不想重构循环依赖的代码的话，也
 
 和事务传播行为这块一样，为了方便使用，Spring 也相应地定义了一个枚举类：`Isolation`
 
-```
+```java
 public enum Isolation {
 
     DEFAULT(TransactionDefinition.ISOLATION_DEFAULT),
@@ -1008,7 +1007,7 @@ public enum Isolation {
 
 如果想要修改默认的回滚策略，可以使用 `@Transactional` 注解的 `rollbackFor` 和 `noRollbackFor` 属性来指定哪些异常需要回滚，哪些异常不需要回滚。例如，如果想要让所有的异常都回滚事务，可以使用如下的注解：
 
-```
+```java
 @Transactional(rollbackFor = Exception.class)
 public void someMethod() {
 // some business logic
@@ -1017,7 +1016,7 @@ public void someMethod() {
 
 如果想要让某些特定的异常不回滚事务，可以使用如下的注解：
 
-```
+```java
 @Transactional(noRollbackFor = CustomException.class)
 public void someMethod() {
 // some business logic
@@ -1032,7 +1031,7 @@ JPA 重要的是实战，这里仅对小部分知识点进行总结。
 
 假如我们有下面一个类：
 
-```
+```java
 @Entity(name="USER")
 public class User {
 
@@ -1054,7 +1053,7 @@ public class User {
 
 如果我们想让 `secrect` 这个字段不被持久化，也就是不被数据库存储怎么办？我们可以采用下面几种方法：
 
-```
+```java
 static String transient1; // not persistent because of static
 final String transient2 = "Satish"; // not persistent because of final
 transient String transient3; // not persistent because of transient
@@ -1068,7 +1067,7 @@ String transient4; // not persistent because of @Transient
 
 审计功能主要是帮助我们记录数据库操作的具体行为比如某条记录是谁创建的、什么时间创建的、最后修改人是谁、最后修改时间是什么时候。
 
-```
+```java
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -1143,7 +1142,7 @@ Spring Security 提供了多种加密算法的实现，开箱即用，非常方�
 
 `PasswordEncoder` 接口一共也就 3 个必须实现的方法。
 
-```
+```java
 public interface PasswordEncoder {
     // 加密也就是对原始密码进行编码
     String encode(CharSequence var1);

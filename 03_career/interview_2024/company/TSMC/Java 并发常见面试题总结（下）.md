@@ -959,21 +959,23 @@ Semaphore 的使用简单，我们这里假设有 N (N>5) 个线程来获取 `S
 ```java
 // 初始共享资源数量
 final Semaphore semaphore = new Semaphore(5);
+
 // 获取1个许可
 semaphore.acquire();
+
 // 释放1个许可
 semaphore.release();
 ```
 
 当初始的资源个数为 1 的时候，`Semaphore` 退化为排他锁。
 
-`Semaphore` 有两种模式：。
+	`Semaphore` 有两种模式：。
 
 - **公平模式：** 调用 `acquire()` 方法的顺序就是获取许可证的顺序，遵循 FIFO；
 - **非公平模式：** 抢占式的。
 
-`Semaphore` 对应的两个构造方法如下：
 
+`Semaphore` 对应的两个构造方法如下：
 ```java
 public Semaphore(int permits) {
     sync = new NonfairSync(permits);
@@ -992,7 +994,9 @@ public Semaphore(int permits, boolean fair) {
 
 `Semaphore` 是共享锁的一种实现，它默认构造 AQS 的 `state` 值为 `permits`，你可以将 `permits` 的值理解为许可证的数量，只有拿到许可证的线程才能执行。
 
-调用 `semaphore.acquire()` ，线程尝试获取许可证，如果 `state >= 0` 的话，则表示可以获取成功。如果获取成功的话，使用 CAS 操作去修改 `state` 的值 `state=state-1`。如果 `state<0` 的话，则表示许可证数量不足。此时会创建一个 Node 节点加入阻塞队列，挂起当前线程。
+调用 `semaphore.acquire()` ，线程尝试获取许可证
+如果 `state >= 0` 的话，则表示可以获取成功。如果获取成功的话，使用 CAS 操作去修改 `state` 的值 `state=state-1`。
+如果 `state<0` 的话，则表示许可证数量不足。此时会创建一个 Node 节点加入阻塞队列，挂起当前线程。
 
 ```java
 /**
@@ -1001,11 +1005,12 @@ public Semaphore(int permits, boolean fair) {
 public void acquire() throws InterruptedException {
     sync.acquireSharedInterruptibly(1);
 }
+
+
 /**
  * 共享模式下获取许可证，获取成功则返回，失败则加入阻塞队列，挂起线程
  */
-public final void acquireSharedInterruptibly(int arg)
-    throws InterruptedException {
+public final void acquireSharedInterruptibly(int arg) throws InterruptedException {
     if (Thread.interrupted())
       throw new InterruptedException();
         // 尝试获取许可证，arg为获取许可证个数，当可用许可证数减当前获取的许可证数结果小于0,则创建一个节点加入阻塞队列，挂起当前线程。
@@ -1038,11 +1043,14 @@ public final boolean releaseShared(int arg) {
 
 `CountDownLatch` 允许 `count` 个线程阻塞在一个地方，直至所有线程的任务都执行完毕。
 
-`CountDownLatch` 是一次性的，计数器的值只能在构造方法中初始化一次，之后没有任何机制再次对其设置值，当 `CountDownLatch` 使用完毕后，它不能再次被使用。
+`CountDownLatch` 是一次性的，计数器的值只能在构造方法中初始化一次，之后没有任何机制可再次对其设置，当 `CountDownLatch` 使用完毕后，它不能再次被使用。
 
 ### [CountDownLatch 的原理是什么？](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#countdownlatch-%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88)
 
-`CountDownLatch` 是共享锁的一种实现，它默认构造 AQS 的 `state` 值为 `count`。当线程使用 `countDown()` 方法时，其实使用了 `tryReleaseShared` 方法以 CAS 的操作来减少 `state`, 直至 `state` 为 0 。当调用 `await()` 方法的时候，如果 `state` 不为 0，那就证明任务还没有执行完毕，`await()` 方法就会一直阻塞，也就是说 `await()` 方法之后的语句不会被执行。直到 `count` 个线程调用了 `countDown()` 使 state 值被减为 0，或者调用 `await()` 的线程被中断，该线程才会从阻塞中被唤醒，`await()` 方法之后的语句得到执行。
+`CountDownLatch` 是共享锁的一种实现，它默认构造 AQS 的 `state` 值为 `count`。
+当线程使用 `countDown()` 方法时，其实使用了 `tryReleaseShared` 方法以 CAS 的操作来减少 `state`, 直至 `state` 为 0 。
+
+当调用 `await()` 方法的时候，如果 `state` 不为 0，那就证明任务还没有执行完毕，`await()` 方法就会一直阻塞，也就是说 `await()` 方法之后的语句不会被执行。直到 `count` 个线程调用了 `countDown()` 使 state 值被减为 0，或者调用 `await()` 的线程被中断，该线程才会从阻塞中被唤醒，`await()` 方法之后的语句得到执行。
 
 ### [用过 CountDownLatch 么？什么场景下用的？](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#%E7%94%A8%E8%BF%87-countdownlatch-%E4%B9%88-%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%94%A8%E7%9A%84)
 
@@ -1060,10 +1068,14 @@ public class CountDownLatchExample1 {
     private static final int threadCount = 6;
 
     public static void main(String[] args) throws InterruptedException {
+    
         // 创建一个具有固定线程数量的线程池对象（推荐使用构造方法创建）
         ExecutorService threadPool = Executors.newFixedThreadPool(10);
+        
         final CountDownLatch countDownLatch = new CountDownLatch(threadCount);
+        
         for (int i = 0; i < threadCount; i++) {
+        
             final int threadnum = i;
             threadPool.execute(() -> {
                 try {
@@ -1078,7 +1090,11 @@ public class CountDownLatchExample1 {
 
             });
         }
+
+		// 调用 `CountDownLatch` 对象的 `await()` 方法
+		// 直到所有文件读取完之后，才会接着执行后面的逻辑
         countDownLatch.await();
+        
         threadPool.shutdown();
         System.out.println("finish");
     }
@@ -1090,39 +1106,53 @@ public class CountDownLatchExample1 {
 可以使用 `CompletableFuture` 类来改进！Java8 的 `CompletableFuture` 提供了很多对多线程友好的方法，使用它可以很方便地为我们编写多线程程序，什么异步、串行、并行或者等待所有线程执行完任务什么的都非常方便。
 
 ```java
+
 CompletableFuture<Void> task1 =
     CompletableFuture.supplyAsync(()->{
         //自定义业务操作
     });
+
+
 ......
+
 CompletableFuture<Void> task6 =
     CompletableFuture.supplyAsync(()->{
     //自定义业务操作
     });
+
 ......
-CompletableFuture<Void> headerFuture=CompletableFuture.allOf(task1,.....,task6);
+CompletableFuture<Void> allFuture=CompletableFuture.allOf(task1,.....,task6);
+
 
 try {
-    headerFuture.join();
+    allFuture.join();
 } catch (Exception ex) {
     //......
 }
+
+
 System.out.println("all done. ");
 ```
 
 上面的代码还可以继续优化，当任务过多的时候，把每一个 task 都列出来不太现实，可以考虑通过循环来添加任务。
 
 ```java
-//文件夹位置
+
+// 靜態方法，可以將一組元素轉換為列表
 List<String> filePaths = Arrays.asList(...)
-// 异步处理所有文件
+
+
 List<CompletableFuture<String>> fileFutures = filePaths.stream()
-    .map(filePath -> doSomeThing(filePath))
-    .collect(Collectors.toList());
-// 将他们合并起来
+    .map(filePath -> doSomeThing(filePath)) // 這個方法應該返回一個 `CompletableFuture<String>`。這意味著doSomeThing對每個文件路徑的處理都是非同步的。
+    .collect(Collectors.toList()); // 將處理結果收集到一個列表中，這個列表包含了所有的 `CompletableFuture<String>` 對象
+    
+
+
 CompletableFuture<Void> allFutures = CompletableFuture.allOf(
+	// 將 `fileFutures` 列表轉換為數組，以便傳遞給 `allOf` 方法
     fileFutures.toArray(new CompletableFuture[fileFutures.size()])
 );
+
 ```
 
 ### [CyclicBarrier 有什么用？](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#cyclicbarrier-%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8)
@@ -1161,7 +1191,7 @@ public CyclicBarrier(int parties, Runnable barrierAction) {
 }
 ```
 
-其中，`parties` 就代表了有拦截的线程的数量，当拦截的线程数量达到这个值的时候就打开栅栏，让所有线程通过。
+其中，**`parties` 就代表了有拦截的线程的数量，当拦截的线程数量达到这个值的时候就打开栅栏，让所有线程通过。**
 
 2、当调用 `CyclicBarrier` 对象调用 `await()` 方法时，实际上调用的是 `dowait(false, 0L)` 方法。 `await()` 方法就像树立起一个栅栏的行为一样，将线程挡住了，当拦住的线程数量达到 `parties` 的值时，栅栏才会打开，线程才得以通过执行。
 
