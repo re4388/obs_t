@@ -1,8 +1,3 @@
-“JDK 中用到了哪些设计模式？Spring 中用到了哪些设计模式？” 这两个问题，在面试中比较常见。
-
-我在网上搜索了一下关于 Spring 中设计模式的讲解几乎都是千篇一律，而且大部分都年代久远。所以，花了几天时间自己总结了一下。
-
-由于我的个人能力有限，文中如有任何错误各位都可以指出。另外，文章篇幅有限，对于设计模式以及一些源码的解读我只是一笔带过，这篇文章的主要目的是回顾一下 Spring 中的设计模式。
 
 ## [控制反转 (IoC) 和依赖注入 (DI)](https://javaguide.cn/system-design/framework/spring/spring-design-patterns-summary.html#%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E5%92%8C%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di)
 
@@ -39,12 +34,13 @@ Spring 使用工厂模式可以通过 `BeanFactory` 或 `ApplicationContext`�
 
 Example:
 
-```
+```java
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class App {
   public static void main(String[] args) {
+  
     ApplicationContext context = new FileSystemXmlApplicationContext(
         "C:/work/IOC Containers/springframework.applicationcontext/src/main/resources/bean-factory-config.xml");
 
@@ -75,7 +71,7 @@ Spring 通过 `ConcurrentHashMap` 实现单例注册表的特殊方式实现�
 
 Spring 实现单例的核心代码如下：
 
-```
+```java
 // 通过 ConcurrentHashMap（线程安全） 实现单例注册表
 private final Map<String, Object> singletonObjects = new ConcurrentHashMap<String, Object>(64);
 
@@ -125,7 +121,7 @@ public Object getSingleton(String beanName, ObjectFactory<?> singletonFactory) {
 
 **Spring AOP 就是基于动态代理的**，如果要代理的对象，实现了某个接口，那么 Spring AOP 会使用 **JDK Proxy** 去创建代理对象，而对于没有实现接口的对象，就无法使用 JDK Proxy 去进行代理了，这时候 Spring AOP 会使用 **Cglib** 生成一个被代理对象的子类来作为代理，如下图所示：
 
-![[100_attachements/fbc67ad9273b65e63f7cbdb910bd0b48_MD5.jpg]]
+![[Pasted image 20250127191135.png]]
 
 当然，你也可以使用 AspectJ ,Spring AOP 已经集成了 AspectJ ，AspectJ 应该算的上是 Java 生态系统中最完整的 AOP 框架了。
 
@@ -143,7 +139,7 @@ Spring AOP 已经集成了 AspectJ ，AspectJ 应该算的上是 Java 生态系�
 
 模板方法模式是一种行为设计模式，它定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。 模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤的实现方式。
 
-```
+```java
 public abstract class Template {
     //这是我们的模板方法
     public final void TemplateMethod(){
@@ -200,7 +196,7 @@ Spring 中默认存在以下事件，他们都是对 `ApplicationContextEvent`�
 
 `ApplicationListener` 充当了事件监听者角色，它是一个接口，里面只定义了一个 `onApplicationEvent()` 方法来处理 `ApplicationEvent`。`ApplicationListener` 接口类源码如下，可以看出接口定义看出接口中的事件只要实现了 `ApplicationEvent` 就可以了。所以，在 Spring 中我们只要实现 `ApplicationListener` 接口的 `onApplicationEvent()` 方法即可完成监听事件
 
-```
+```java
 package org.springframework.context;
 import java.util.EventListener;
 @FunctionalInterface
@@ -213,7 +209,7 @@ public interface ApplicationListener<E extends ApplicationEvent> extends EventLi
 
 `ApplicationEventPublisher` 充当了事件的发布者，它也是一个接口。
 
-```
+```java
 @FunctionalInterface
 public interface ApplicationEventPublisher {
     default void publishEvent(ApplicationEvent event) {
@@ -234,7 +230,7 @@ public interface ApplicationEventPublisher {
 
 Example:
 
-```
+```java
 // 定义一个事件,继承自ApplicationEvent并且写相应的构造函数
 public class DemoEvent extends ApplicationEvent{
     private static final long serialVersionUID = 1L;
@@ -299,7 +295,7 @@ Spring 预定义的通知要通过对应的适配器，适配成 `MethodInterce
 
 Spring MVC 中的 `Controller` 种类众多，不同类型的 `Controller` 通过不同的方法来对请求进行处理。如果不利用适配器模式的话，`DispatcherServlet` 直接获取对应类型的 `Controller`，需要的自行来判断，像下面这段代码一样：
 
-```
+```java
 if(mappedHandler.getHandler() instanceof MultiActionController){
    ((MultiActionController)mappedHandler.getHandler()).xxx
 }else if(mappedHandler.getHandler() instanceof XXX){
