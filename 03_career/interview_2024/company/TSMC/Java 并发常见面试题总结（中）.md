@@ -321,9 +321,11 @@ private static final long valueOffset;
 
 static {
     try {
+    
         // 获取“value”字段在AtomicInteger类中的内存偏移量
         valueOffset = unsafe.objectFieldOffset
-            (AtomicInteger.class.getDeclaredField("value"));
+        (AtomicInteger.class.getDeclaredField("value"));
+        
     } catch (Exception ex) { throw new Error(ex); }
 }
 // 确保“value”字段的可见性
