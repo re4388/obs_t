@@ -69,14 +69,16 @@ public class App {
 
 Spring 通过 `ConcurrentHashMap` 实现单例注册表的特殊方式实现单例模式。
 
-Spring 实现单例的核心代码如下：
 
+Spring 实现单例的核心代码如下：
 ```java
+
 // 通过 ConcurrentHashMap（线程安全） 实现单例注册表
 private final Map<String, Object> singletonObjects = new ConcurrentHashMap<String, Object>(64);
 
 public Object getSingleton(String beanName, ObjectFactory<?> singletonFactory) {
         Assert.notNull(beanName, "'beanName' must not be null");
+        
         synchronized (this.singletonObjects) {
             // 检查缓存中是否存在实例
             Object singletonObject = this.singletonObjects.get(beanName);
@@ -92,11 +94,11 @@ public Object getSingleton(String beanName, ObjectFactory<?> singletonFactory) {
             return (singletonObject != NULL_OBJECT ? singletonObject : null);
         }
     }
+    
     //将对象添加到单例注册表
     protected void addSingleton(String beanName, Object singletonObject) {
             synchronized (this.singletonObjects) {
                 this.singletonObjects.put(beanName, (singletonObject != null ? singletonObject : NULL_OBJECT));
-
             }
         }
 }
