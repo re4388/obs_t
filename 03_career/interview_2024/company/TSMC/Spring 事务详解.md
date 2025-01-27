@@ -177,8 +177,10 @@ import org.springframework.lang.Nullable;
 public interface PlatformTransactionManager {
     //获得事务
     TransactionStatus getTransaction(@Nullable TransactionDefinition var1) throws TransactionException;
+    
     //提交事务
     void commit(TransactionStatus var1) throws TransactionException;
+    
     //回滚事务
     void rollback(TransactionStatus var1) throws TransactionException;
 }
@@ -224,6 +226,7 @@ package org.springframework.transaction;
 import org.springframework.lang.Nullable;
 
 public interface TransactionDefinition {
+
     int PROPAGATION_REQUIRED = 0;
     int PROPAGATION_SUPPORTS = 1;
     int PROPAGATION_MANDATORY = 2;
@@ -231,18 +234,24 @@ public interface TransactionDefinition {
     int PROPAGATION_NOT_SUPPORTED = 4;
     int PROPAGATION_NEVER = 5;
     int PROPAGATION_NESTED = 6;
+    
     int ISOLATION_DEFAULT = -1;
     int ISOLATION_READ_UNCOMMITTED = 1;
     int ISOLATION_READ_COMMITTED = 2;
     int ISOLATION_REPEATABLE_READ = 4;
     int ISOLATION_SERIALIZABLE = 8;
+    
     int TIMEOUT_DEFAULT = -1;
+    
     // 返回事务的传播行为，默认值为 REQUIRED。
     int getPropagationBehavior();
+    
     //返回事务的隔离级别，默认值是 DEFAULT
     int getIsolationLevel();
+    
     // 返回事务的超时时间，默认值为-1。如果超过该时间限制但事务还没有完成，则自动回滚事务。
     int getTimeout();
+    
     // 返回是否为只读事务，默认值为 false
     boolean isReadOnly();
 
@@ -253,7 +262,8 @@ public interface TransactionDefinition {
 
 #### [TransactionStatus: 事务状态](https://javaguide.cn/system-design/framework/spring/spring-transaction.html#transactionstatus-%E4%BA%8B%E5%8A%A1%E7%8A%B6%E6%80%81)
 
-`TransactionStatus` 接口用来记录事务的状态 该接口定义了一组方法，用来获取或判断事务的相应状态信息。
+`TransactionStatus` 接口用来记录事务的状态 
+该接口定义了一组方法，用来获取或判断事务的相应状态信息。
 
 `PlatformTransactionManager.getTransaction(…)` 方法返回一个 `TransactionStatus` 对象。
 
@@ -262,10 +272,10 @@ public interface TransactionDefinition {
 ```java
 public interface TransactionStatus{
     boolean isNewTransaction(); // 是否是新的事务
-    boolean hasSavepoint(); // 是否有恢复点
-    void setRollbackOnly();  // 设置为只回滚
-    boolean isRollbackOnly(); // 是否为只回滚
-    boolean isCompleted; // 是否已完成
+    boolean hasSavepoint();     // 是否有恢复点
+    void setRollbackOnly();     // 设置为只回滚
+    boolean isRollbackOnly();   // 是否为只回滚
+    boolean isCompleted;        // 是否已完成
 }
 ```
 
