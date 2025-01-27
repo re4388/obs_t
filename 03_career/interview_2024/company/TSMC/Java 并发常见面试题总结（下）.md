@@ -838,6 +838,7 @@ CompletableFuture<Void> futureT1 = CompletableFuture.runAsync(() -> {
     // 模拟耗时操作
     ThreadUtil.sleep(1000);
 });
+
 // T2
 CompletableFuture<Void> futureT2 = CompletableFuture.runAsync(() -> {
     System.out.println("T2 is executing. Current time：" + DateUtil.now());
@@ -846,13 +847,13 @@ CompletableFuture<Void> futureT2 = CompletableFuture.runAsync(() -> {
 
 // 使用allOf()方法合并T1和T2的CompletableFuture，等待它们都完成
 CompletableFuture<Void> bothCompleted = CompletableFuture.allOf(futureT1, futureT2);
+
 // 当T1和T2都完成后，执行T3
 bothCompleted.thenRunAsync(() -> System.out.println("T3 is executing after T1 and T2 have completed.Current time：" + DateUtil.now()));
 // 等待所有任务完成，验证效果
 ThreadUtil.sleep(3000);
 ```
 
-通过 `CompletableFuture` 的 `allOf()` 这个静态方法来并行运行 T1 和 T2 。当 T1 和
 
 ### [⭐️使用 CompletableFuture，有一个任务失败，如何处理异常？](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#%E2%AD%90%EF%B8%8F%E4%BD%BF%E7%94%A8-completablefuture-%E6%9C%89%E4%B8%80%E4%B8%AA%E4%BB%BB%E5%8A%A1%E5%A4%B1%E8%B4%A5-%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E5%BC%82%E5%B8%B8)
 
