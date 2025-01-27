@@ -120,13 +120,12 @@ Spring Boot 只是简化了配置，如果你需要构建 MVC 架构的 Web 程�
 Spring 时代我们一般通过 XML 文件来配置 Bean，后来开发人员觉得 XML 文件来配置不太好，于是 SpringBoot 注解配置就慢慢开始流行起来。
 
 相关阅读：
-
 - [IoC 源码阅读](https://javadoop.com/post/spring-ioc)
 - [IoC & AOP 详解（快速搞懂）](https://javaguide.cn/system-design/framework/spring/ioc-and-aop.html)
 
 ### [什么是 Spring Bean？](https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#%E4%BB%80%E4%B9%88%E6%98%AF-spring-bean)
 
-简单来说，Bean 代指的就是那些被 IoC 容器所管理的对象。
+简单来说，**Bean 代指的就是那些被 IoC 容器所管理的对象**。
 
 我们需要告诉 IoC 容器帮助我们管理哪些对象，这个是通过配置元数据来定义的。配置元数据可以是 XML 文件、注解或者 Java 配置类。
 
