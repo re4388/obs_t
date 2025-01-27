@@ -270,8 +270,8 @@ private SmsService smsServiceImpl1;
 private SmsService smsService;
 ```
 
-简单总结一下：
 
+简单总结一下：
 - `@Autowired` 是 Spring 提供的注解，`@Resource` 是 JDK 提供的注解。
 - `Autowired` 默认的注入方式为 `byType`（根据类型进行匹配），`@Resource` 默认注入方式为 `byName`（根据名称进行匹配）。
 - 当一个接口存在多个实现类的情况下，`@Autowired` 和 `@Resource` 都需要通过名称才能正确匹配到对应的 Bean。`Autowired` 可以通过 `@Qualifier` 注解来显式指定名称，`@Resource` 可以通过 `name` 属性来显式指定名称。
@@ -292,7 +292,8 @@ private SmsService smsService;
 public class UserService {
 
     private final UserRepository userRepository;
-
+    
+	@Autowired
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
@@ -348,6 +349,7 @@ Spring 官方有对这个问题的回答：[https://docs.spring.io/spring-framew
 构造函数注入适合处理**必需的依赖项**，而 **Setter 注入** 则更适合**可选的依赖项**，这些依赖项可以有默认值或在对象生命周期中动态设置。虽然 `@Autowired` 可以用于 Setter 方法来处理必需的依赖项，但构造函数注入仍然是更好的选择。
 
 在某些情况下（例如第三方类不提供 Setter 方法），构造函数注入可能是**唯一的选择**。
+
 
 ### [Bean 的作用域有哪些？](https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#bean-%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%9C%89%E5%93%AA%E4%BA%9B)
 
