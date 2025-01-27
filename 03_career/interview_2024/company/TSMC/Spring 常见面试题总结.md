@@ -145,14 +145,16 @@ Spring 时代我们一般通过 XML 文件来配置 Bean，后来开发人员觉
 ### [将一个类声明为 Bean 的注解有哪些？](https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#%E5%B0%86%E4%B8%80%E4%B8%AA%E7%B1%BB%E5%A3%B0%E6%98%8E%E4%B8%BA-bean-%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%9C%89%E5%93%AA%E4%BA%9B)
 
 - `@Component`：通用的注解，可标注任意类为 `Spring` 组件。如果一个 Bean 不知道属于哪个层，可以使用 `@Component` 注解标注。
-- `@Repository` : 对应持久层即 Dao 层，主要用于数据库相关操作。
-- `@Service` : 对应服务层，主要涉及一些复杂的逻辑，需要用到 Dao 层。
 - `@Controller` : 对应 Spring MVC 控制层，主要用于接受用户请求并调用 `Service` 层返回数据给前端页面。
+- `@Service` : 对应服务层，主要涉及一些复杂的逻辑，需要用到 Dao 层。
+- `@Repository` : 对应持久层即 Dao 层，主要用于数据库相关操作。
 
 ### [@Component 和 @Bean 的区别是什么？](https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#component-%E5%92%8C-bean-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88)
 
 - `@Component` 注解作用于类，而 `@Bean` 注解作用于方法。
-- `@Component` 通常是通过类路径扫描来自动侦测以及自动装配到 Spring 容器中（我们可以使用 `@ComponentScan` 注解定义要扫描的路径从中找出标识了需要装配的类自动装配到 Spring 的 bean 容器中）。`@Bean` 注解通常是我们在标有该注解的方法中定义产生这个 bean,`@Bean` 告诉了 Spring 这是某个类的实例，当我需要用它的时候还给我。
+- `@Component` 通常是通过类路径扫描来自动侦测以及自动装配到 Spring 容器中
+	- 我们可以使用 `@ComponentScan` 注解定义要扫描的路径从中找出标识了需要装配的类自动装配到 Spring 的 bean 容器中。
+- `@Bean` 注解通常是我们在标有该注解的方法中定义产生这个 bean, `@Bean` 告诉了 Spring 这是某个类的实例，当我需要用它的时候还给我。
 - `@Bean` 注解比 `@Component` 注解的自定义性更强，而且很多地方我们只能通过 `@Bean` 注解来注册 bean。比如当我们引用第三方库中的类需要装配到 `Spring` 容器时，则只能通过 `@Bean` 来实现。
 
 `@Bean` 注解使用示例：
@@ -219,14 +221,17 @@ private SmsService smsService;
 ```
 
 举个例子，`SmsService` 接口有两个实现类: `SmsServiceImpl1` 和 `SmsServiceImpl2`，且它们都已经被 Spring 容器所管理。
-
 ```java
+
 // 报错，byName 和 byType 都无法匹配到 bean
 @Autowired
 private SmsService smsService;
+
+
 // 正确注入 SmsServiceImpl1 对象对应的 bean
 @Autowired
 private SmsService smsServiceImpl1;
+
 // 正确注入  SmsServiceImpl1 对象对应的 bean
 // smsServiceImpl1 就是我们上面所说的名称
 @Autowired
@@ -253,9 +258,13 @@ public @interface Resource {
 // 报错，byName 和 byType 都无法匹配到 bean
 @Resource
 private SmsService smsService;
+
+
 // 正确注入 SmsServiceImpl1 对象对应的 bean
 @Resource
 private SmsService smsServiceImpl1;
+
+
 // 正确注入 SmsServiceImpl1 对象对应的 bean（比较推荐这种方式）
 @Resource(name = "smsServiceImpl1")
 private SmsService smsService;
