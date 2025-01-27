@@ -100,7 +100,9 @@ ThreadLocalMap(ThreadLocal<?> firstKey, Object firstValue) {
 
 `ThreadLocal` 内存泄漏的根本原因在于其内部实现机制。
 
-通过上面的内容我们已经知道：每个线程维护一个名为 `ThreadLocalMap` 的 map。 当你使用 `ThreadLocal` 存储值时，实际上是将值存储在当前线程的 `ThreadLocalMap` 中，其中 `ThreadLocal` 实例本身作为 key，而你要存储的值作为 value。
+通过上面的内容我们已经知道：
+每个线程维护一个名为 `ThreadLocalMap` 的 map。 
+当你使用 `ThreadLocal` 存储值时，实际上是将值存储在当前线程的 `ThreadLocalMap` 中，其中 `ThreadLocal` 实例本身作为 key，而你要存储的值作为 value。
 
 `ThreadLocalMap` 的 `key` 和 `value` 引用机制：
 
@@ -122,7 +124,6 @@ static class Entry extends WeakReference<ThreadLocal<?>> {
 当 `ThreadLocal` 实例失去强引用后，其对应的 value 仍然存在于 `ThreadLocalMap` 中，因为 `Entry` 对象强引用了它。如果线程持续存活（例如线程池中的线程），`ThreadLocalMap` 也会一直存在，导致 key 为 `null` 的 entry 无法被垃圾回收，机会造成内存泄漏。
 
 也就是说，内存泄漏的发生需要同时满足两个条件：
-
 1. `ThreadLocal` 实例不再被强引用；
 2. 线程持续存活，导致 `ThreadLocalMap` 长期存在。
 
