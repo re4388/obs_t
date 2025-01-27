@@ -1,6 +1,5 @@
 > 作者：[Miki-byte-1024](https://github.com/Miki-byte-1024) & [Snailclimb](https://github.com/Snailclimb)
 
-每次问到 Spring Boot， 面试官非常喜欢问这个问题：“讲述一下 SpringBoot 自动装配原理？”。
 
 我觉得我们可以从以下几个方面回答：
 
@@ -16,7 +15,7 @@
 
 举个例子。没有 Spring Boot 的时候，我们写一个 RestFul Web 服务，还首先需要进行如下配置。
 
-```
+```java
 @Configuration
 public class RESTConfiguration
 {
@@ -36,7 +35,7 @@ public class RESTConfiguration
 
 `spring-servlet.xml`
 
-```
+```java
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
     xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -56,7 +55,7 @@ public class RESTConfiguration
 
 但是，Spring Boot 项目，我们只需要添加相关依赖，无需配置，通过启动下面的 `main` 方法即可。
 
-```
+```java
 @SpringBootApplication
 public class DemoApplication {
     public static void main(String[] args) {
@@ -78,7 +77,7 @@ public class DemoApplication {
 
 没有 Spring Boot 的情况下，如果我们需要引入第三方依赖，需要手动配置，非常麻烦。但是，Spring Boot 中，我们直接引入一个 starter 即可。比如你想要在项目中使用 redis 的话，直接在项目中引入对应的 starter 即可。
 
-```
+```java
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -93,7 +92,7 @@ public class DemoApplication {
 
 我们先看一下 SpringBoot 的核心注解 `SpringBootApplication` 。
 
-```
+```java
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
@@ -127,7 +126,7 @@ public @interface SpringBootConfiguration {
 
 `EnableAutoConfiguration` 只是一个简单地注解，自动装配核心功能的实现实际是通过 `AutoConfigurationImportSelector` 类。
 
-```
+```java
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
@@ -149,7 +148,7 @@ public @interface EnableAutoConfiguration {
 
 `AutoConfigurationImportSelector` 类的继承体系如下：
 
-```
+```java
 public class AutoConfigurationImportSelector implements DeferredImportSelector, BeanClassLoaderAware, ResourceLoaderAware, BeanFactoryAware, EnvironmentAware, Ordered {
 
 }
@@ -165,7 +164,7 @@ public interface ImportSelector {
 
 可以看出，`AutoConfigurationImportSelector` 类实现了 `ImportSelector` 接口，也就实现了这个接口中的 `selectImports` 方法，该方法主要用于**获取所有符合条件的类的全限定类名，这些类需要被加载到 IoC 容器中**。
 
-```
+```java
 private static final String[] NO_IMPORTS = new String[0];
 
 public String[] selectImports(AnnotationMetadata annotationMetadata) {
@@ -189,7 +188,7 @@ public String[] selectImports(AnnotationMetadata annotationMetadata) {
 
 现在我们结合 `getAutoConfigurationEntry()` 的源码来详细分析一下：
 
-```
+```java
 private static final AutoConfigurationEntry EMPTY_ENTRY = new AutoConfigurationEntry();
 
 AutoConfigurationEntry getAutoConfigurationEntry(AutoConfigurationMetadata autoConfigurationMetadata, AnnotationMetadata annotationMetadata) {
@@ -257,7 +256,7 @@ spring-boot/spring-boot-project/spring-boot-autoconfigure/src/main/resources/MET
 
 因为，这一步有经历了一遍筛选，`@ConditionalOnXXX` 中的所有条件都满足，该类才会生效。
 
-```
+```java
 @Configuration
 // 检查相关的类：RabbitTemplate 和 Channel是否存在
 // 存在才会加载
