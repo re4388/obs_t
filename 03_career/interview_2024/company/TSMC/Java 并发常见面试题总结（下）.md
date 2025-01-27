@@ -705,7 +705,7 @@ CPU 密集型简单理解就是利用 CPU 计算能力的任务比如你在内�
 
 假如我们需要实现一个优先级任务线程池的话，那可以考虑使用 `PriorityBlockingQueue` （优先级阻塞队列）作为任务队列（`ThreadPoolExecutor` 的构造函数有一个 `workQueue` 参数可以传入任务队列）。
 
-![[100_attachements/7b17118a2efa3a5810929ecc938e8d2f_MD5.jpg]]
+![[Pasted image 20250127134728.png]]
 
 `PriorityBlockingQueue` 是一个支持优先级的无界阻塞队列，可以看作是线程安全的 `PriorityQueue`，两者底层都是使用小顶堆形式的二叉堆，即值最小的元素优先出队。不过，`PriorityQueue` 不支持阻塞操作。
 
@@ -751,16 +751,18 @@ public interface Future<V> {
     // 取消任务执行
     // 成功取消返回 true，否则返回 false
     boolean cancel(boolean mayInterruptIfRunning);
+
     // 判断任务是否被取消
     boolean isCancelled();
-    // 判断任务是否已经执行完成
+
+	// 判断任务是否已经执行完成
     boolean isDone();
+    
     // 获取任务执行结果
     V get() throws InterruptedException, ExecutionException;
+    
     // 指定时间内没有返回计算结果就抛出 TimeOutException 异常
-    V get(long timeout, TimeUnit unit)
-
-        throws InterruptedException, ExecutionException, TimeoutExceptio
+    V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutExceptio
 
 }
 ```

@@ -14,8 +14,6 @@
 
 
 
-
-
 基礎
 - [x] [[Java 基础常见面试题总结 (上)]]
 - [x] [[Java 基础常见面试题总结 (中)]]
@@ -81,18 +79,18 @@ JVM
 Java 版本特性 
  - [ ] [[Java8 新特性实战]]
  - [ ] [[《Java8 指南》中文翻译]]
-[[Java 9 新特性概览]]
-[[Java 10 新特性概览]]
-[[Java 11 新特性概览]]
-[[Java 12 & 13 新特性概览]]
-[[Java 14 & 15 新特性概览]]
-[[Java 16 新特性概览]]
+- [ ] [[Java 9 新特性概览]]
+- [ ] [[Java 10 新特性概览]]
+- [ ] [[Java 11 新特性概览]]
+- [ ] [[Java 12 & 13 新特性概览]]
+- [ ] [[Java 14 & 15 新特性概览]]
+- [ ] [[Java 16 新特性概览]]
 - [ ] [[Java 17 新特性概览（重要）]]
-[[Java 18 新特性概览]]
-[[Java 19 新特性概览]]
-[[Java 20 新特性概览]]
+- [ ] [[Java 18 新特性概览]]
+- [ ] [[Java 19 新特性概览]]
+- [ ] [[Java 20 新特性概览]]
 - [ ] [[Java 21 新特性概览 (重要)]]
-[[Java 22 & 23 新特性概览]]
+- [ ] [[Java 22 & 23 新特性概览]]
 
 - [ ] [[Maven 核心概念总结]]
 - [ ] [[Maven 最佳实践]]
@@ -144,7 +142,10 @@ Java 版本特性 
 - [ ] [[分布式锁常见实现方案总结]]
 
 可以找更多看  via [SpringBoot 常见面试题总结 - Google 搜尋](https://www.google.com/search?q=SpringBoot+%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93&rlz=1C5CHFA_enTW1035TW1035&oq=SpringBoot+%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMgYIAhBFGDzSAQcyNDhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
-- 
+
+
+
+
 
 
 
@@ -194,23 +195,22 @@ Java 版本特性 
 
 
 认证授权
-[[认证授权基础概念详解]]
-[[JWT 基础概念详解]]
-[[JWT 身份认证优缺点分析]]
-[[SSO 单点登录详解]]
-[[权限系统设计详解]]
+- [ ] [[认证授权基础概念详解]]
+- [ ] [[JWT 基础概念详解]]
+- [ ] [[JWT 身份认证优缺点分析]]
+- [ ] [[SSO 单点登录详解]]
+- [ ] [[权限系统设计详解]]
 
   
 数据安全
-[[常见加密算法总结]]
-[[敏感词过滤方案总结]]
-[[数据脱敏方案总结]]
-[[Java 定时任务详解]]
-[[Web 实时消息推送详解]]
+- [ ] [[常见加密算法总结]]
+- [ ] [[敏感词过滤方案总结]]
+- [ ] [[数据脱敏方案总结]]
+- [ ] [[Java 定时任务详解]]
+- [ ] [[Web 实时消息推送详解]]
+
 
 # Spring
-
-
 
 ## 尚硅谷 SpringBoot3 零基础教程
 - [001、SpringBoot3 课程简介 - YouTube](https://www.youtube.com/watch?v=TAgd4Xbqudc&list=PLmOn9nNkQxJEeIH75s5pdTUnCo9-xOc7c)
