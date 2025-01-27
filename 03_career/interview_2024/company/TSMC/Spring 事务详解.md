@@ -1,4 +1,3 @@
-前段时间答应读者的 **Spring 事务** 分析总结终于来了。这部分内容比较重要，不论是对于工作还是面试，但是网上比较好的参考资料比较少。
 
 ## [什么是事务？](https://javaguide.cn/system-design/framework/spring/spring-transaction.html#%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E5%8A%A1)
 
@@ -37,12 +36,14 @@ public class OrdersService {
   @Transactional(propagation = Propagation.REQUIRED,
                 isolation = Isolation.DEFAULT, readOnly = false, timeout = -1)
   public void accountMoney() {
+  
     //小红账户多1000
     accountDao.addMoney(1000,xiaohong);
     //模拟突然出现的异常，比如银行中可能为突然停电等等
     //如果没有配置事务管理的话会造成，小红账户多了1000而小明账户没有少钱
     int i = 10 / 0;
-    //小王账户少1000
+  
+	//小王账户少1000
     accountDao.reduceMoney(1000,xiaoming);
   }
 }
@@ -63,7 +64,7 @@ public class OrdersService {
 
 另外，DDIA 也就是 [《Designing Data-Intensive Application（数据密集型应用系统设计）》](https://book.douban.com/subject/30329536/) 的作者在他的这本书中如是说：
 
-> Atomicity, isolation, and durability are properties of the database, whereas consis‐ tency (in the ACID sense) is a property of the application. The application may rely on the database’s atomicity and isolation properties in order to achieve consistency, but it’s not up to the database alone.
+> Atomicity, isolation, and durability are properties of the database, whereas consistency (in the ACID sense) is a property of the application. The application may rely on the database’s atomicity and isolation properties in order to achieve consistency, but it’s not up to the database alone.
 > 
 > 翻译过来的意思是：原子性，隔离性和持久性是数据库的属性，而一致性（在 ACID 意义上）是应用程序的属性。应用可能依赖数据库的原子性和隔离属性来实现一致性，但这并不仅取决于数据库。因此，字母 C 不属于 ACID 。
 
@@ -75,7 +76,7 @@ public class OrdersService {
 
 这里再多提一下一个非常重要的知识点：**MySQL 怎么保证原子性的？**
 
-我们知道如果想要保证事务的原子性，就需要在异常发生时，对已经执行的操作进行**回滚**，在 MySQL 中，恢复机制是通过 **回滚日志（undo log）** 实现的，所有事务进行的修改都会先记录到这个回滚日志中，然后再执行相关的操作。如果执行过程中遇到异常的话，我们直接利用 **回滚日志** 中的信息将数据回滚到修改之前的样子即可！并且，回滚日志会先于数据持久化到磁盘上。这样就保证了即使遇到数据库突然宕机等情况，当用户再次启动数据库的时候，数据库还能够通过查询回滚日志来回滚之前未完成的事务。
+我们知道如果想要保证事务的原子性，就需要在异常发生时，对已经执行的操作进行**回滚**，在 MySQL 中，恢复机制是通过 **回滚日志（undo log）** 实现的，所有事务进行的修改都会先记录到这个回滚日志中，然后再执行相关的操作。如果执行过程中遇到异常的话，我们直接利用 **回滚日志** 中的信息将数据回滚到修改之前的样子即可！并且，**回滚日志会先于数据持久化到磁盘上**。这样就保证了即使遇到数据库突然宕机等情况，当用户再次启动数据库的时候，数据库还能够通过查询回滚日志来回滚之前未完成的事务。
 
 ### [Spring 支持两种方式的事务管理](https://javaguide.cn/system-design/framework/spring/spring-transaction.html#spring-%E6%94%AF%E6%8C%81%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%E7%9A%84%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86)
 
@@ -91,6 +92,7 @@ private TransactionTemplate transactionTemplate;
 public void testTransaction() {
 
         transactionTemplate.execute(new TransactionCallbackWithoutResult() {
+        
             @Override
             protected void doInTransactionWithoutResult(TransactionStatus transactionStatus) {
 
@@ -116,6 +118,7 @@ private PlatformTransactionManager transactionManager;
 public void testTransaction() {
 
   TransactionStatus status = transactionManager.getTransaction(new DefaultTransactionDefinition());
+  
           try {
                // ....  业务代码
               transactionManager.commit(status);

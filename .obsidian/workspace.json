@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+                "file": "03_career/interview_2024/company/TSMC/Spring 事务详解.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tsmc techinical prep"
+              "title": "Spring 事务详解"
             }
           }
         ],
@@ -184,8 +184,12 @@
   },
   "active": "49b7c9e0052be1d1",
   "lastOpenFiles": [
-    "03_career/interview_2024/company/TSMC/Java 定时任务详解.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/MySQL 常见面试题总结.md",
+    "03_career/interview_2024/company/TSMC/SSO 单点登录详解.md",
+    "03_career/interview_2024/company/TSMC/数据脱敏方案总结.md",
+    "03_career/interview_2024/company/TSMC/Web 实时消息推送详解.md",
+    "03_career/interview_2024/company/TSMC/Java 定时任务详解.md",
     "03_career/interview_2024/company/TSMC/MySQL 高性能优化规范建议总结.md",
     "03_career/interview_2024/company/TSMC/SQL 语句在 MySQL 中的执行过程.md",
     "30_程式語言/Effective Java 3rd.md",
@@ -212,10 +216,6 @@
     "03_career/interview_2024/company/TSMC/SpringBoot 处理异常的几种常见姿势.md.edtz",
     "03_career/interview_2024/company/TSMC/一文搞懂如何在 Spring Boot 正确中使用 JPA.md",
     "03_career/interview_2024/company/TSMC/一文搞懂如何在 Spring Boot 正确中使用 JPA.md.edtz",
-    "03_career/interview_2024/company/TSMC/Spring&SpringBoot 常用注解总结.md",
-    "03_career/interview_2024/company/TSMC/Spring 常见面试题总结.md",
-    "03_career/interview_2024/company/TSMC/最重要的JVM 参数总结.md",
-    "03_career/interview_2024/company/TSMC/乐观锁和悲观锁详解.md",
     "100_attachements/Pasted image 20250127134728.png",
     "100_attachements/b58b22f3de505f01af4e6ba57af2572f_MD5.png",
     "100_attachements/b7fcbcf3493b6e6443d42fd456995693_MD5.png",
