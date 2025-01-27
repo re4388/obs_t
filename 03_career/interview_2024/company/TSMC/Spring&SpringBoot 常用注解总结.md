@@ -118,7 +118,6 @@ public Person personSingleton() {
 #### [2.5. `@Configuration`](https://javaguide.cn/system-design/framework/spring/spring-common-annotations.html#_2-5-configuration)
 
 一般用来声明配置类，可以使用 `@Component` 注解替代，不过使用 `@Configuration` 注解声明配置类更加语义化。
-
 ```java
 @Configuration
 public class AppConfig {
@@ -306,6 +305,7 @@ String wuhan2020;
 通过 `@ConfigurationProperties` 读取配置信息并与 bean 绑定。
 
 ```java
+
 @Component
 @ConfigurationProperties(prefix = "library")
 class LibraryProperties {
@@ -323,6 +323,8 @@ class LibraryProperties {
   省略getter/setter
   ......
 }
+
+
 ```
 
 你可以像使用普通的 Spring bean 一样，将其注入到类中使用。
