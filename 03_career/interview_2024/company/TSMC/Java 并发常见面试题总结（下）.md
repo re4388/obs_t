@@ -131,7 +131,7 @@ static class Entry extends WeakReference<ThreadLocal<?>> {
 
 **如何避免内存泄漏的发生？**
 
-1. 在使用完 `ThreadLocal` 后，务必调用 `remove()` 方法。 这是最安全和最推荐的做法。 `remove()` 方法会从 `ThreadLocalMap` 中显式地移除对应的 entry，彻底解决内存泄漏的风险。 即使将 `ThreadLocal` 定义为 `static final`，也强烈建议在每次使用后调用 `remove()`。
+1. **在使用完 `ThreadLocal` 后，务必调用 `remove()` 方法。 这是最安全和最推荐的做法。** `remove()` 方法会从 `ThreadLocalMap` 中显式地移除对应的 entry，彻底解决内存泄漏的风险。 即使将 `ThreadLocal` 定义为 `static final`，也强烈建议在每次使用后调用 `remove()`。
 2. 在线程池等线程复用的场景下，使用 `try-finally` 块可以确保即使发生异常，`remove()` 方法也一定会被执行。
 
 ### [如何跨线程传递 ThreadLocal 的值？](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#%E5%A6%82%E4%BD%95%E8%B7%A8%E7%BA%BF%E7%A8%8B%E4%BC%A0%E9%80%92-threadlocal-%E7%9A%84%E5%80%BC)
