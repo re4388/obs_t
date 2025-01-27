@@ -185,6 +185,12 @@
   "lastOpenFiles": [
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "03_career/interview_2024/company/TSMC/Spring 常见面试题总结.md",
+    "03_career/interview_2024/company/TSMC/Spring 面试题.md",
+    "03_career/interview_2024/company/TSMC/SpringBoot 自动装配原理详解.md",
+    "03_career/interview_2024/company/TSMC/Spring 中的设计模式详解.md",
+    "03_career/interview_2024/company/TSMC/Spring 事务详解.md",
+    "03_career/interview_2024/company/TSMC/IoC & AOP 详解（快速搞懂）.md",
+    "03_career/interview_2024/company/TSMC/Spring&SpringBoot 常用注解总结.md",
     "03_career/interview_2024/company/TSMC/黑馬 框架篇.md",
     "03_career/interview_2024/company/TSMC/最重要的JVM 参数总结.md",
     "03_career/interview_2024/company/TSMC/乐观锁和悲观锁详解.md",
@@ -222,12 +228,6 @@
     "12_Backend/docker/_docker_idx.md",
     "12_Backend/msg_queue/kafka_intro.md",
     "12_Backend/msg_queue/消息队列基础知识总结.md",
-    "12_Backend/msg_queue/Kafka 常见问题总结.md",
-    "12_Backend/docker/Docker 核心概念总结.md",
-    "12_Backend/docker/Docker 实战.md",
-    "12_Backend/docker/docker 安全性.md",
-    "03_career/interview_2024/company/TSMC/MySQL 隐式转换造成索引失效.md",
-    "03_career/interview_2024/company/TSMC/MySQL 日期类型选择建议.md",
-    "03_career/interview_2024/company/TSMC/MySQL 自增主键一定是连续的吗.md"
+    "12_Backend/msg_queue/Kafka 常见问题总结.md"
   ]
 }

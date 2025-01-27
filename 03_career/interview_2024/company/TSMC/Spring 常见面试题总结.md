@@ -391,10 +391,11 @@ prototype 作用域下，每次获取都会创建一个新的 bean 实例，不�
 有状态 Bean 示例：
 
 ```java
-// 定义了一个购物车类，其中包含一个保存用户的购物车里商品的 List
+
+// 定义了一个购物车类，其中包含一个用户购物车里商品的 List
 @Component
 public class ShoppingCart {
-    private List<String> items = new ArrayList<>();
+    private List<String> items = new ArrayList<>(); // 有状态
 
     public void addItem(String item) {
         items.add(item);
@@ -411,6 +412,8 @@ public class ShoppingCart {
 无状态 Bean 示例：
 
 ```java
+
+
 // 定义了一个用户服务，它仅包含业务逻辑而不保存任何状态。
 @Component
 public class UserService {
@@ -471,8 +474,8 @@ public class UserThreadLocal {
 `AbstractAutowireCapableBeanFactory` 的 `doCreateBean()` 方法中能看到依次执行了这 4 个阶段：
 
 ```java
-protected Object doCreateBean(final String beanName, final RootBeanDefinition mbd, final @Nullable Object[] args)
-    throws BeanCreationException {
+protected Object doCreateBean(final String beanName, final RootBeanDefinition mbd, final @Nullable Object[] args) throws BeanCreationException 
+{
 
     // 1. 创建 Bean 的实例
     BeanWrapper instanceWrapper = null;
@@ -506,7 +509,7 @@ Spring 中提供的 `Aware` 接口主要有：
 3. `BeanFactoryAware`：注入当前 `BeanFactory` 容器的引用。
 
 `BeanPostProcessor` 接口是 Spring 为修改 Bean 提供的强大扩展点。
-
+  
 ```java
 public interface BeanPostProcessor {
 
@@ -530,7 +533,7 @@ public interface BeanPostProcessor {
 
 ```java
 public interface InitializingBean {
- // 初始化逻辑
+    // 初始化逻辑
 	void afterPropertiesSet() throws Exception;
 }
 ```
@@ -572,15 +575,15 @@ Spring AOP 就是基于动态代理的，如果要代理的对象，实现了某
 
 AOP 切面编程涉及到的一些专业术语：
 
-|术语|含义|
-|---|---|
-|目标 (Target)|被通知的对象|
-|代理 (Proxy)|向目标对象应用通知之后创建的代理对象|
-|连接点 (JoinPoint)|目标对象的所属类中，定义的所有方法均为连接点|
-|切入点 (Pointcut)|被切面拦截 / 增强的连接点（切入点一定是连接点，连接点不一定是切入点）|
-|通知 (Advice)|增强的逻辑 / 代码，也即拦截到目标对象的连接点之后要做的事情|
-|切面 (Aspect)|切入点 (Pointcut)+ 通知 (Advice)|
-|Weaving (织入)|将通知应用到目标对象，进而生成代理对象的过程动作|
+| 术语              | 含义                                   |
+| --------------- | ------------------------------------ |
+| 目标 (Target)     | 被通知的对象                               |
+| 代理 (Proxy)      | 向目标对象应用通知之后创建的代理对象                   |
+| 连接点 (JoinPoint) | 目标对象的所属类中，定义的所有方法均为连接点               |
+| 切入点 (Pointcut)  | 被切面拦截 / 增强的连接点（切入点一定是连接点，连接点不一定是切入点） |
+| 通知 (Advice)     | 增强的逻辑 / 代码，也即拦截到目标对象的连接点之后要做的事情      |
+| 切面 (Aspect)     | 切入点 (Pointcut)+ 通知 (Advice)          |
+| Weaving (织入)    | 将通知应用到目标对象，进而生成代理对象的过程动作             |
 
 ### [Spring AOP 和 AspectJ AOP 有什么区别？](https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#spring-aop-%E5%92%8C-aspectj-aop-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
 
