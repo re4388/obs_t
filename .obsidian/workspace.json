@@ -37,7 +37,8 @@
               "title": "tsmc techinical prep"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,13 +182,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e4c80e7e81dc8a17",
+  "active": "49b7c9e0052be1d1",
   "lastOpenFiles": [
+    "03_career/interview_2024/company/TSMC/使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！.md",
     "100_attachements/IMG-使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！-20250127180453910.png",
     "100_attachements/a620d59aa1baffc930776a2536315918_MD5.png",
     "03_career/interview_2024/company/TSMC/使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！.md.edtz",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "03_career/interview_2024/company/TSMC/使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！.md",
     "03_career/interview_2024/company/TSMC/SpringBoot 处理异常的几种常见姿势.md",
     "03_career/interview_2024/company/TSMC/SpringBoot 处理异常的几种常见姿势.md.edtz",
     "03_career/interview_2024/company/TSMC/一文搞懂如何在 Spring Boot 正确中使用 JPA.md",
@@ -212,7 +213,6 @@
     "100_attachements/bac564128a9ceebfe62b8ae4bf7064e9_MD5.png",
     "100_attachements/cd5d1ae6aef47c84e7bdb01af5b72a71_MD5.png",
     "100_attachements/c09083f6b5c0ccb5134c36dca21f93d1_MD5.png",
-    "100_attachements/7ac54e5802a98c8ea71902e38464836f_MD5.gif",
     "03_career/interview_2024/company/TSMC/Web 实时消息推送详解.md.edtz",
     "03_career/interview_2024/company/TSMC/Java 定时任务详解.md",
     "03_career/interview_2024/company/TSMC/Java 定时任务详解.md.edtz",
