@@ -128,7 +128,7 @@ Java 版本特性 
 
 
 ## Spring
-- [ ] [[Spring 常见面试题总结]]
+- [x] [[Spring 常见面试题总结]]
 - [ ] [[Spring&SpringBoot 常用注解总结]]
 - [ ] [[IoC & AOP 详解（快速搞懂）]]
 - [ ] [[Spring 事务详解]]

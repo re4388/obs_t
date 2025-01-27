@@ -958,25 +958,20 @@ SpringBoot 2.6.x 以后，如果你不想重构循环依赖的代码的话，也
 正确的事务传播行为可能的值如下:
 
 **1.`TransactionDefinition.PROPAGATION_REQUIRED`**
-
 使用的最多的一个事务传播行为，我们平时经常使用的 `@Transactional` 注解默认使用就是这个事务传播行为。如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新的事务。
 
 **`2.TransactionDefinition.PROPAGATION_REQUIRES_NEW`**
-
 创建一个新的事务，如果当前存在事务，则把当前事务挂起。也就是说不管外部方法是否开启事务，`Propagation.REQUIRES_NEW` 修饰的内部方法会新开启自己的事务，且开启的事务相互独立，互不干扰。
 
 **3.`TransactionDefinition.PROPAGATION_NESTED`**
-
 如果当前存在事务，则创建一个事务作为当前事务的嵌套事务来运行；如果当前没有事务，则该取值等价于 `TransactionDefinition.PROPAGATION_REQUIRED`。
 
 **4.`TransactionDefinition.PROPAGATION_MANDATORY`**
-
 如果当前存在事务，则加入该事务；如果当前没有事务，则抛出异常。（mandatory：强制性）
-
 这个使用的很少。
 
-若是错误的配置以下 3 种事务传播行为，事务将不会发生回滚：
 
+若是错误的配置以下 3 种事务传播行为，事务将不会发生回滚：
 - **`TransactionDefinition.PROPAGATION_SUPPORTS`**: 如果当前存在事务，则加入该事务；如果当前没有事务，则以非事务的方式继续运行。
 - **`TransactionDefinition.PROPAGATION_NOT_SUPPORTED`**: 以非事务方式运行，如果当前存在事务，则把当前事务挂起。
 - **`TransactionDefinition.PROPAGATION_NEVER`**: 以非事务方式运行，如果当前存在事务，则抛出异常。
@@ -1025,8 +1020,9 @@ public enum Isolation {
 
 ![[100_attachements/14c60d894dc68157ab017c3bbb29ed2d_MD5.png]]
 
-如果想要修改默认的回滚策略，可以使用 `@Transactional` 注解的 `rollbackFor` 和 `noRollbackFor` 属性来指定哪些异常需要回滚，哪些异常不需要回滚。例如，如果想要让所有的异常都回滚事务，可以使用如下的注解：
+如果想要修改默认的回滚策略，可以使用 `@Transactional` 注解的 `rollbackFor` 和 `noRollbackFor` 属性来指定哪些异常需要回滚，哪些异常不需要回滚。
 
+例如，如果想要让所有的异常都回滚事务，可以使用如下的注解：
 ```java
 @Transactional(rollbackFor = Exception.class)
 public void someMethod() {
@@ -1035,7 +1031,6 @@ public void someMethod() {
 ```
 
 如果想要让某些特定的异常不回滚事务，可以使用如下的注解：
-
 ```java
 @Transactional(noRollbackFor = CustomException.class)
 public void someMethod() {
@@ -1067,16 +1062,22 @@ public class User {
     private String password;
 
     private String secrect;
-
 }
 ```
 
 如果我们想让 `secrect` 这个字段不被持久化，也就是不被数据库存储怎么办？我们可以采用下面几种方法：
 
 ```java
+
 static String transient1; // not persistent because of static
+
+
 final String transient2 = "Satish"; // not persistent because of final
+
+
 transient String transient3; // not persistent because of transient
+
+
 @Transient
 String transient4; // not persistent because of @Transient
 ```
@@ -1116,9 +1117,7 @@ public abstract class AbstractAuditBase {
 ```
 
 - `@CreatedDate`: 表示该字段为创建时间字段，在这个实体被 insert 的时候，会设置值
-    
 - `@CreatedBy` : 表示该字段为创建人，在这个实体被 insert 的时候，会设置值
-    
     `@LastModifiedDate`、`@LastModifiedBy` 同理。
     
 

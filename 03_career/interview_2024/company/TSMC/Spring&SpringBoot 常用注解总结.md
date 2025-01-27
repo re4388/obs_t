@@ -14,7 +14,7 @@
 
 _Guide：这个注解是 Spring Boot 项目的基石，创建 SpringBoot 项目之后会默认在主类加上。_
 
-```
+```java
 @SpringBootApplication
 public class SpringSecurityJwtGuideApplication {
       public static void main(java.lang.String[] args) {
@@ -25,7 +25,7 @@ public class SpringSecurityJwtGuideApplication {
 
 我们可以把 `@SpringBootApplication` 看作是 `@Configuration`、`@EnableAutoConfiguration`、`@ComponentScan` 注解的集合。
 
-```
+```java
 package org.springframework.boot.autoconfigure;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
@@ -62,7 +62,7 @@ public @interface SpringBootConfiguration {
 
 自动导入对象到类中，被注入进的类同样要被 Spring 容器管理比如：Service 类注入到 Controller 类中。
 
-```
+```java
 @Service
 public class UserService {
   ......
@@ -100,7 +100,7 @@ _Guide：现在都是前后端分离，说实话我已经很久没有用过 `@C
 
 声明 Spring Bean 的作用域，使用方法:
 
-```
+```java
 @Bean
 @Scope("singleton")
 public Person personSingleton() {
@@ -119,7 +119,7 @@ public Person personSingleton() {
 
 一般用来声明配置类，可以使用 `@Component` 注解替代，不过使用 `@Configuration` 注解声明配置类更加语义化。
 
-```
+```java
 @Configuration
 public class AppConfig {
     @Bean
@@ -144,7 +144,7 @@ public class AppConfig {
 
 `@GetMapping("users")` 等价于 `@RequestMapping(value="/users",method=RequestMethod.GET)`
 
-```
+```java
 @GetMapping("/users")
 public ResponseEntity<List<User>> getAllUsers() {
  return userRepository.findAll();
@@ -157,7 +157,7 @@ public ResponseEntity<List<User>> getAllUsers() {
 
 关于 `@RequestBody` 注解的使用，在下面的 “前后端传值” 这块会讲到。
 
-```
+```java
 @PostMapping("/users")
 public ResponseEntity<User> createUser(@Valid @RequestBody UserCreateRequest userCreateRequest) {
  return userRepository.save(userCreateRequest);
@@ -168,7 +168,7 @@ public ResponseEntity<User> createUser(@Valid @RequestBody UserCreateRequest use
 
 `@PutMapping("/users/{userId}")` 等价于 `@RequestMapping(value="/users/{userId}",method=RequestMethod.PUT)`
 
-```
+```java
 @PutMapping("/users/{userId}")
 public ResponseEntity<User> updateUser(@PathVariable(value = "userId") Long userId,
   @Valid @RequestBody UserUpdateRequest userUpdateRequest) {
@@ -180,7 +180,7 @@ public ResponseEntity<User> updateUser(@PathVariable(value = "userId") Long user
 
 `@DeleteMapping("/users/{userId}")` 等价于 `@RequestMapping(value="/users/{userId}",method=RequestMethod.DELETE)`
 
-```
+```java
 @DeleteMapping("/users/{userId}")
 public ResponseEntity deleteUser(@PathVariable(value = "userId") Long userId){
   ......
@@ -191,7 +191,7 @@ public ResponseEntity deleteUser(@PathVariable(value = "userId") Long userId){
 
 一般实际项目中，我们都是 PUT 不够用了之后才用 PATCH 请求去更新数据。
 
-```
+```java
   @PatchMapping("/profile")
   public ResponseEntity updateStudent(@RequestBody StudentUpdateRequest studentUpdateRequest) {
         studentRepository.updateDetail(studentUpdateRequest);
@@ -209,7 +209,7 @@ public ResponseEntity deleteUser(@PathVariable(value = "userId") Long userId){
 
 举个简单的例子：
 
-```
+```java
 @GetMapping("/klasses/{klassId}/teachers")
 public List<Teacher> getKlassRelatedTeachers(
          @PathVariable("klassId") Long klassId,
@@ -230,7 +230,7 @@ public List<Teacher> getKlassRelatedTeachers(
 
 我们有一个注册的接口：
 
-```
+```java
 @PostMapping("/sign-up")
 public ResponseEntity signUp(@RequestBody @Valid UserRegisterRequest userRegisterRequest) {
   userService.save(userRegisterRequest);
@@ -240,7 +240,7 @@ public ResponseEntity signUp(@RequestBody @Valid UserRegisterRequest userRegiste
 
 `UserRegisterRequest` 对象：
 
-```
+```java
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -256,7 +256,7 @@ public class UserRegisterRequest {
 
 我们发送 post 请求到这个接口，并且 body 携带 JSON 数据：
 
-```
+```java
 { "userName": "coder", "fullName": "shuangkou", "password": "123456" }
 ```
 
@@ -274,7 +274,7 @@ public class UserRegisterRequest {
 
 我们的数据源 `application.yml` 内容如下：
 
-```
+```yaml
 wuhan2020: 2020年初武汉爆发了新型冠状病毒，疫情严重，但是，我相信一切都会过去！武汉加油！中国加油！
 
 my-profile:
@@ -296,7 +296,7 @@ library:
 
 使用 `@Value("${property}")` 读取比较简单的配置信息：
 
-```
+```java
 @Value("${wuhan2020}")
 String wuhan2020;
 ```
@@ -305,7 +305,7 @@ String wuhan2020;
 
 通过 `@ConfigurationProperties` 读取配置信息并与 bean 绑定。
 
-```
+```java
 @Component
 @ConfigurationProperties(prefix = "library")
 class LibraryProperties {
@@ -331,7 +331,7 @@ class LibraryProperties {
 
 `@PropertySource` 读取指定 properties 文件
 
-```
+```java
 @Component
 @PropertySource("classpath:website.properties")
 
@@ -390,7 +390,7 @@ SpringBoot 项目的 spring-boot-starter-web 依赖中已经有 hibernate-valida
 
 #### [6.2. 验证请求体 (RequestBody)](https://javaguide.cn/system-design/framework/spring/spring-common-annotations.html#_6-2-%E9%AA%8C%E8%AF%81%E8%AF%B7%E6%B1%82%E4%BD%93-requestbody)
 
-```
+```java
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -416,7 +416,7 @@ public class Person {
 
 我们在需要验证的参数上加上了 `@Valid` 注解，如果验证失败，它将抛出 `MethodArgumentNotValidException`。
 
-```
+```java
 @RestController
 @RequestMapping("/api")
 public class PersonController {
@@ -432,7 +432,7 @@ public class PersonController {
 
 **一定一定不要忘记在类上加上 `@Validated` 注解了，这个参数可以告诉 Spring 去校验方法参数。**
 
-```
+```java
 @RestController
 @RequestMapping("/api")
 @Validated
@@ -458,7 +458,7 @@ public class PersonController {
 
 如何使用呢？拿我们在第 5 节参数校验这块来举例子。如果方法参数不对的话就会抛出 `MethodArgumentNotValidException`，我们来处理这个异常。
 
-```
+```java
 @ControllerAdvice
 @ResponseBody
 public class GlobalExceptionHandler {
@@ -486,7 +486,7 @@ public class GlobalExceptionHandler {
 
 `@Table` 设置表名
 
-```
+```java
 @Entity
 @Table(name = "role")
 public class Role {
@@ -507,7 +507,7 @@ public class Role {
 
 **1. 通过 `@GeneratedValue` 直接使用 JPA 内置提供的四种主键生成策略来指定主键生成策略。**
 
-```
+```java
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
@@ -517,7 +517,7 @@ JPA 使用枚举定义了 4 种常见的主键生成策略，如下：
 
 _Guide：枚举替代常量的一种用法_
 
-```
+```java
 public enum GenerationType {
 
     /**
@@ -546,7 +546,7 @@ public enum GenerationType {
 
 `@GeneratedValue` 注解默认使用的策略是 `GenerationType.AUTO`
 
-```
+```java
 public @interface GeneratedValue {
 
     GenerationType strategy() default AUTO;
@@ -558,7 +558,7 @@ public @interface GeneratedValue {
 
 **2. 通过 `@GenericGenerator` 声明一个主键策略，然后 `@GeneratedValue` 使用这个策略**
 
-```
+```java
 @Id
 @GeneratedValue(generator = "IdentityIdGenerator")
 @GenericGenerator(name = "IdentityIdGenerator", strategy = "identity")
@@ -567,7 +567,7 @@ private Long id;
 
 等价于：
 
-```
+```java
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
@@ -575,7 +575,7 @@ private Long id;
 
 jpa 提供的主键生成策略有如下几种：
 
-```
+```java
 public class DefaultIdentifierGeneratorFactory
     implements MutableIdentifierGeneratorFactory, Serializable, ServiceRegistryAwareService {
 
@@ -616,14 +616,14 @@ public class DefaultIdentifierGeneratorFactory
 
 设置属性 userName 对应的数据库字段名为 user_name，长度为 32，非空
 
-```
+```java
 @Column(name = "user_name", nullable = false, length=32)
 private String userName;
 ```
 
 设置字段类型并且加默认值，这个还是挺常用的。
 
-```
+```java
 @Column(columnDefinition = "tinyint(1) default 1")
 private Boolean enabled;
 ```
@@ -634,7 +634,7 @@ private Boolean enabled;
 
 如果我们想让 `secrect` 这个字段不被持久化，可以使用 `@Transient` 关键字声明。
 
-```
+```java
 @Entity(name="USER")
 public class User {
 
@@ -647,7 +647,7 @@ public class User {
 
 除了 `@Transient` 关键字声明， 还可以采用下面几种方法：
 
-```
+```java
 static String secrect; // not persistent because of static
 final String secrect = "Satish"; // not persistent because of final
 transient String secrect; // not persistent because of transient
@@ -659,14 +659,14 @@ transient String secrect; // not persistent because of transient
 
 `@Lob`: 声明某个字段为大字段。
 
-```
+```java
 @Lob
 private String content;
 ```
 
 更详细的声明：
 
-```
+```java
 @Lob
 //指定 Lob 类型数据的获取策略， FetchType.EAGER 表示非延迟加载，而 FetchType.LAZY 表示延迟加载 ；
 @Basic(fetch = FetchType.EAGER)
@@ -679,7 +679,7 @@ private String content;
 
 可以使用枚举类型的字段，不过枚举字段要用 `@Enumerated` 注解修饰。
 
-```
+```java
 public enum Gender {
     MALE("男性"),
     FEMALE("女性");
@@ -691,7 +691,7 @@ public enum Gender {
 }
 ```
 
-```
+```java
 @Entity
 @Table(name = "role")
 public class Role {
@@ -712,7 +712,7 @@ public class Role {
 
 只要继承了 `AbstractAuditBase` 的类都会默认加上下面四个字段。
 
-```
+```java
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -742,7 +742,7 @@ public abstract class AbstractAuditBase {
 
 我们对应的审计功能对应地配置类可能是下面这样的（Spring Security 项目）:
 
-```
+```java
 
 @Configuration
 @EnableJpaAuditing
@@ -772,7 +772,7 @@ public class AuditSecurityConfiguration {
 
 `@Modifying` 注解提示 JPA 该操作是修改操作，注意还要配合 `@Transactional` 注解使用。
 
-```
+```java
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
 
@@ -795,7 +795,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 
 在要开启事务的方法上使用 `@Transactional` 注解即可！
 
-```
+```java
 @Transactional(rollbackFor = Exception.class)
 public void save() {
   ......
@@ -817,7 +817,7 @@ public void save() {
 
 **`@JsonIgnoreProperties` 作用在类上用于过滤掉特定字段不返回或者不解析。**
 
-```
+```java
 //生成json时将userRoles属性过滤
 @JsonIgnoreProperties({"userRoles"})
 public class User {
@@ -831,7 +831,7 @@ public class User {
 
 **`@JsonIgnore` 一般用于类的属性上，作用和上面的 `@JsonIgnoreProperties` 一样。**
 
-```
+```java
 
 public class User {
 
@@ -850,14 +850,14 @@ public class User {
 
 比如：
 
-```
+```java
 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone="GMT")
 private Date date;
 ```
 
 #### [10.3. 扁平化对象](https://javaguide.cn/system-design/framework/spring/spring-common-annotations.html#_10-3-%E6%89%81%E5%B9%B3%E5%8C%96%E5%AF%B9%E8%B1%A1)
 
-```
+```java
 @Getter
 @Setter
 @ToString
@@ -884,7 +884,7 @@ public class Account {
 
 未扁平化之前：
 
-```
+```java
 {
   "location": {
     "provinceName": "湖北",
@@ -899,7 +899,7 @@ public class Account {
 
 使用 `@JsonUnwrapped` 扁平对象之后：
 
-```
+```java
 @Getter
 @Setter
 @ToString
@@ -912,7 +912,7 @@ public class Account {
 }
 ```
 
-```
+```java
 {
   "provinceName": "湖北",
   "countyName": "武汉",
@@ -925,7 +925,7 @@ public class Account {
 
 **`@ActiveProfiles` 一般作用于测试类上， 用于声明生效的 Spring 配置文件。**
 
-```
+```java
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @ActiveProfiles("test")
 @Slf4j
@@ -940,7 +940,7 @@ public abstract class TestBase {
 
 **`@WithMockUser` Spring Security 提供的，用来模拟一个真实用户，并且可以赋予权限。**
 
-```
+```java
     @Test
     @Transactional
     @WithMockUser(username = "user-id-18163138155", authorities = "ROLE_TEACHER")
