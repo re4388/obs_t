@@ -175,6 +175,39 @@ Java 版本特性 
 
 - [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 
+
+## MySQL
+- [ ] [[MySQL 常见面试题总结]]
+- [ ] [[MySQL 高性能优化规范建议总结]]
+- [ ] [[MySQL 索引详解]]
+- [ ] [[MySQL 三大日志详解]]
+- [ ] [[MySQL 事务隔离级别详解]]
+- [ ] [[InnoDB 存储引擎对 MVCC 的实现]]
+- [ ] [[SQL 语句在 MySQL 中的执行过程]]
+- [ ] [[MySQL 查询缓存详解]]
+- [ ] [[MySQL 执行计划分析]]
+- [ ] [[MySQL 自增主键一定是连续的吗]]
+- [ ] [[MySQL 日期类型选择建议]]
+- [ ] [[MySQL 隐式转换造成索引失效]]
+
+
+
+
+认证授权
+[[认证授权基础概念详解]]
+[[JWT 基础概念详解]]
+[[JWT 身份认证优缺点分析]]
+[[SSO 单点登录详解]]
+[[权限系统设计详解]]
+
+  
+数据安全
+[[常见加密算法总结]]
+[[敏感词过滤方案总结]]
+[[数据脱敏方案总结]]
+[[Java 定时任务详解]]
+[[Web 实时消息推送详解]]
+
 # Spring
 
 

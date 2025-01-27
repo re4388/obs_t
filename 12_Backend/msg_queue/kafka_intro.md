@@ -1,3 +1,7 @@
+
+- [ ] [[消息队列基础知识总结]]
+- [ ] [[Kafka 常见问题总结]]
+
 related
 - [Postgres Replication to kafka connect](https://hackmd.io/2Yq4sDK7QiuVadfdjcFSzw)
 

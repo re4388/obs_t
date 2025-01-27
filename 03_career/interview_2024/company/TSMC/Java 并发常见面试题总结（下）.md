@@ -160,13 +160,16 @@ class Thread implements Runnable {
 
 **如何完成 `ThreadLocal` 值的传递？**
 
-通过改造 `Thread` 类的构造方法来实现，在创建 `Thread` 线程时，拿到父线程的 `inheritableThreadLocals` 变量赋值给子线程即可。相关代码如下：
+通过改造 `Thread` 类的构造方法来实现，在创建 `Thread` 线程时，拿到父线程的 `inheritableThreadLocals` 变量赋值给子线程即可。
 
+相关代码如下：
 ```java
 // Thread 的构造方法会调用 init() 方法
 private void init(/* ... */) {
 	// 1、获取父线程
     Thread parent = currentThread();
+
+
     // 2、将父线程的 inheritableThreadLocals 赋值给子线程
     if (inheritThreadLocals && parent.inheritableThreadLocals != null)
         this.inheritableThreadLocals =
@@ -181,14 +184,11 @@ JDK 默认没有支持线程池场景下 `ThreadLocal` 值传递的功能，�
 阿里巴巴无法改动 JDK 的源码，因此他内部通过 **装饰器模式** 在原有的功能上做增强，以此来实现线程池场景下的 `ThreadLocal` 值传递。
 
 TTL 改造的地方有两处：
-
 - 实现自定义的 `Thread` ，在 `run()` 方法内部做 `ThreadLocal` 变量的赋值操作。
-    
 - 基于 **线程池** 进行装饰，在 `execute()` 方法中，不提交 JDK 内部的 `Thread` ，而是提交自定义的 `Thread` 。
     
 
 如果想要查看相关源码，可以引入 Maven 依赖进行下载。
-
 ```java
 <dependency>
     <groupId>com.alibaba</groupId>
@@ -198,7 +198,6 @@ TTL 改造的地方有两处：
 ```
 
 #### [应用场景](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF)
-
 1. **压测流量标记**： 在压测场景中，使用 `ThreadLocal` 存储压测标记，用于区分压测流量和真实流量。如果标记丢失，可能导致压测流量被错误地当成线上流量处理。
 2. **上下文传递**：在分布式系统中，传递链路追踪信息（如 Trace ID）或用户上下文信息。
 
@@ -206,7 +205,8 @@ TTL 改造的地方有两处：
 
 ### [什么是线程池？](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E7%A8%8B%E6%B1%A0)
 
-顾名思义，线程池就是管理一系列线程的资源池。当有任务要处理时，直接从线程池中获取线程来处理，处理完之后线程并不会立即被销毁，而是等待下一个任务。
+顾名思义，线程池就是管理一系列线程的资源池。
+当有任务要处理时，直接从线程池中获取线程来处理，处理完之后线程并不会立即被销毁，而是等待下一个任务。
 
 ### [⭐️为什么要用线程池？](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#%E2%AD%90%EF%B8%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E7%BA%BF%E7%A8%8B%E6%B1%A0)
 
@@ -251,9 +251,9 @@ TTL 改造的地方有两处：
 
 `Executors` 返回线程池对象的弊端如下：
 
-- `FixedThreadPool` 和 `SingleThreadExecutor`: 使用的是有界阻塞队列是 `LinkedBlockingQueue` ，其任务队列的最大长度为 `Integer.MAX_VALUE` ，可能堆积大量的请求，从而导致 OOM。
-- `CachedThreadPool`: 使用的是同步队列 `SynchronousQueue`, 允许创建的线程数量为 `Integer.MAX_VALUE` ，如果任务数量过多且执行速度较慢，可能会创建大量的线程，从而导致 OOM。
-- `ScheduledThreadPool` 和 `SingleThreadScheduledExecutor` : 使用的无界的延迟阻塞队列 `DelayedWorkQueue` ，任务队列最大长度为 `Integer.MAX_VALUE` ，可能堆积大量的请求，从而导致 OOM。
+- `FixedThreadPool` 和 `SingleThreadExecutor`: 使用的是有界阻塞队列是 `LinkedBlockingQueue` ，**其任务队列的最大长度为 `Integer.MAX_VALUE` ，可能堆积大量的请求**，从而导致 OOM。
+- `CachedThreadPool`: 使用的是同步队列 `SynchronousQueue`, **允许创建的线程数量为 `Integer.MAX_VALUE` ，如果任务数量过多且执行速度较慢，可能会创建大量的线程**，从而导致 OOM。
+- `ScheduledThreadPool` 和 `SingleThreadScheduledExecutor` : **使用的无界的延迟阻塞队列 `DelayedWorkQueue` ，任务队列最大长度为 `Integer.MAX_VALUE`** ，可能堆积大量的请求，从而导致 OOM。
 
 ```java
 // 有界队列 LinkedBlockingQueue
