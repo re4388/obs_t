@@ -15,6 +15,7 @@ public class ThreadLocalExample {
     private static ThreadLocal<Integer> threadLocal = ThreadLocal.withInitial(() -> 0);
 
     public static void main(String[] args) {
+    
         Runnable task = () -> {
             int value = threadLocal.get();
             value += 1;
@@ -47,22 +48,29 @@ public class Thread implements Runnable {
 }
 ```
 
-从上面 `Thread` 类 源代码可以看出 `Thread` 类中有一个 `threadLocals` 和 一个 `inheritableThreadLocals` 变量，它们都是 `ThreadLocalMap` 类型的变量，我们可以把 `ThreadLocalMap` 理解为 `ThreadLocal` 类实现的定制化的 `HashMap`。默认情况下这两个变量都是 null，只有当前线程调用 `ThreadLocal` 类的 `set` 或 `get` 方法时才创建它们，实际上调用这两个方法的时候，我们调用的是 `ThreadLocalMap` 类对应的 `get()`、`set()` 方法。
+从上面 `Thread` 类 源代码可以看出 `Thread` 类中有一个 `threadLocals` 和 一个 `inheritableThreadLocals` 变量，它们都是 `ThreadLocalMap` 类型的变量，我们可以把 `ThreadLocalMap` 理解为 `ThreadLocal` 类实现的定制化的 `HashMap`。
+
+默认情况下这两个变量都是 null，只有当前线程调用 `ThreadLocal` 类的 `set` 或 `get` 方法时才创建它们，实际上调用这两个方法的时候，我们调用的是 `ThreadLocalMap` 类对应的 `get()`、`set()` 方法。
 
 `ThreadLocal` 类的 `set()` 方法
-
 ```java
+
+
 public void set(T value) {
     //获取当前请求的线程
     Thread t = Thread.currentThread();
+    
     //取出 Thread 类内部的 threadLocals 变量(哈希表结构)
     ThreadLocalMap map = getMap(t);
+    
     if (map != null)
         // 将需要存储的值放入到这个哈希表中
         map.set(this, value);
     else
         createMap(t, value);
 }
+
+
 ThreadLocalMap getMap(Thread t) {
     return t.threadLocals;
 }
