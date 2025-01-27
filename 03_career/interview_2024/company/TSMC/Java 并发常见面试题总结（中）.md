@@ -739,6 +739,10 @@ public class SynchronizedDemo {
 > lock count :0
 > ```
 
+
+
+
+
 关于 **支持超时** 的补充：
 
 > **为什么需要 `tryLock(timeout)` 这个功能呢？**
@@ -772,10 +776,12 @@ public interface ReadWriteLock {
 }
 ```
 
-- 一般锁进行并发控制的规则：读读互斥、读写互斥、写写互斥。
-- 读写锁进行并发控制的规则：读读不互斥、读写互斥、写写互斥（只有读读不互斥）。
+- 一般锁进行并发控制的规则：读读互斥、读写互斥、写写互斥。（全部都互斥）。
+- 读写锁进行并发控制的规则：读读不互斥、读写互斥、写写互斥（只要有寫就互斥）。
 
-`ReentrantReadWriteLock` 其实是两把锁，一把是 `WriteLock` (写锁)，一把是 `ReadLock`（读锁） 。读锁是共享锁，写锁是独占锁。读锁可以被同时读，可以同时被多个线程持有，而写锁最多只能同时被一个线程持有。
+`ReentrantReadWriteLock` 其实是两把锁，一把是 `WriteLock` (写锁)，一把是 `ReadLock`（读锁） 。
+读锁是共享锁，写锁是独占锁。
+读锁可以被同时读，可以同时被多个线程持有，而写锁最多只能同时被一个线程持有。
 
 和 `ReentrantLock` 一样，`ReentrantReadWriteLock` 底层也是基于 AQS 实现的。
 
@@ -794,7 +800,7 @@ public ReentrantReadWriteLock(boolean fair) {
 
 ### [ReentrantReadWriteLock 适合什么场景？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#reentrantreadwritelock-%E9%80%82%E5%90%88%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF)
 
-由于 `ReentrantReadWriteLock` 既可以保证多个线程同时读的效率，同时又可以保证有写入操作时的线程安全。因此，在读多写少的情况下，使用 `ReentrantReadWriteLock` 能够明显提升系统性能。
+由于 `ReentrantReadWriteLock` 既可以保证多个线程同时读的效率，同时又可以保证有写入操作时的线程安全。因此，**在读多写少的情况下**，使用 `ReentrantReadWriteLock` 能够明显提升系统性能。
 
 ### [共享锁和独占锁有什么区别？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#%E5%85%B1%E4%BA%AB%E9%94%81%E5%92%8C%E7%8B%AC%E5%8D%A0%E9%94%81%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
 
@@ -822,7 +828,7 @@ public ReentrantReadWriteLock(boolean fair) {
 
 `StampedLock` 是 JDK 1.8 引入的性能更好的读写锁，不可重入且不支持条件变量 `Condition`。
 
-不同于一般的 `Lock` 类，`StampedLock` 并不是直接实现 `Lock` 或 `ReadWriteLock` 接口，而是基于 **CLH 锁** 独立实现的（AQS 也是基于这玩意）。
+不同于一般的 `Lock` 类，`StampedLock` 并不是直接实现 `Lock` 或 `ReadWriteLock` 接口，而是基于 **CLH 锁** 独立实现的（AQS 也是基于**CLH 锁**）。
 
 ```java
 public class StampedLock implements java.io.Serializable {
@@ -843,7 +849,9 @@ long tryConvertToReadLock(long stamp){}
 long tryConvertToOptimisticRead(long stamp){}
 ```
 
-`StampedLock` 在获取锁的时候会返回一个 long 型的数据戳，该数据戳用于稍后的锁释放参数，如果返回的数据戳为 0 则表示锁获取失败。当前线程持有了锁再次获取锁还是会返回一个新的数据戳，这也是 `StampedLock` 不可重入的原因。
+`StampedLock` 在获取锁的时候会返回一个 long 型的数据戳，该数据戳用于稍后的锁释放参数，如果返回的数据戳为 0 则表示锁获取失败。
+
+当前线程持有了锁再次获取锁还是会返回一个新的数据戳，这也是 `StampedLock` 不可重入的原因。
 
 ```java
 // 写锁
@@ -869,11 +877,11 @@ public long tryOptimisticRead() {
 
 ### [StampedLock 的性能为什么更好？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#stampedlock-%E7%9A%84%E6%80%A7%E8%83%BD%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%B4%E5%A5%BD)
 
-相比于传统读写锁多出来的乐观读是 `StampedLock` 比 `ReadWriteLock` 性能更好的关键原因。`StampedLock` 的乐观读允许一个写线程获取写锁，所以不会导致所有写线程阻塞，也就是当读多写少的时候，写线程有机会获取写锁，减少了线程饥饿的问题，吞吐量大大提高。
+相比于传统读写锁多出来的乐观读是 `StampedLock` 比 `ReadWriteLock` 性能更好的关键原因。`StampedLock` 的乐观读**允许一个写线程获取写锁，所以不会导致所有写线程阻塞，也就是当读多写少的时候，写线程有机会获取写锁，减少了线程饥饿的问题**，吞吐量大大提高。
 
 ### [StampedLock 适合什么场景？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#stampedlock-%E9%80%82%E5%90%88%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF)
 
-和 `ReentrantReadWriteLock` 一样，`StampedLock` 同样适合读多写少的业务场景，可以作为 `ReentrantReadWriteLock` 的替代品，性能更好。
+和 `ReentrantReadWriteLock` 一样，`StampedLock` 同样**适合读多写少**的业务场景，可以作为 `ReentrantReadWriteLock` 的替代品，性能更好。
 
 不过，需要注意的是 `StampedLock` 不可重入，不支持条件变量 `Condition`，对中断操作支持也不友好（使用不当容易导致 CPU 飙升）。如果你需要用到 `ReentrantLock` 的一些高级性能，就不太建议使用 `StampedLock` 了。
 
@@ -881,7 +889,7 @@ public long tryOptimisticRead() {
 
 ### [StampedLock 的底层原理了解吗？](https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html#stampedlock-%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86%E4%BA%86%E8%A7%A3%E5%90%97)
 
-`StampedLock` 不是直接实现 `Lock` 或 `ReadWriteLock` 接口，而是基于 **CLH 锁** 实现的（AQS 也是基于这玩意），CLH 锁是对自旋锁的一种改良，是一种隐式的链表队列。`StampedLock` 通过 CLH 队列进行线程的管理，通过同步状态值 `state` 来表示锁的状态和类型。
+`StampedLock` 不是直接实现 `Lock` 或 `ReadWriteLock` 接口，而是基于 CLH 锁 实现的（AQS 也是基于 CLH 锁），CLH 锁是对自旋锁的一种改良，是一种隐式的链表队列。`StampedLock` 通过 CLH 队列进行线程的管理，通过同步状态值 `state` 来表示锁的状态和类型。
 
 `StampedLock` 的原理和 AQS 原理比较类似，这里就不详细介绍了，感兴趣的可以看看下面这两篇文章：
 

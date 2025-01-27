@@ -10,7 +10,7 @@ JDK 中提供的 `ThreadLocal` 类正是为了解决这个问题。**`ThreadLo
 
 举个简单的例子：假设有两个人去宝屋收集宝物。如果他们共用一个袋子，必然会产生争执；但如果每个人都有一个独立的袋子，就不会有这个问题。如果将这两个人比作线程，那么 `ThreadLocal` 就是用来避免这两个线程竞争同一个资源的方法。
 
-```
+```java
 public class ThreadLocalExample {
     private static ThreadLocal<Integer> threadLocal = ThreadLocal.withInitial(() -> 0);
 
@@ -35,7 +35,7 @@ public class ThreadLocalExample {
 
 从 `Thread` 类源代码入手。
 
-```
+```java
 public class Thread implements Runnable {
     //......
     //与此线程有关的ThreadLocal值。由ThreadLocal类维护
@@ -51,7 +51,7 @@ public class Thread implements Runnable {
 
 `ThreadLocal` 类的 `set()` 方法
 
-```
+```java
 public void set(T value) {
     //获取当前请求的线程
     Thread t = Thread.currentThread();
@@ -72,7 +72,7 @@ ThreadLocalMap getMap(Thread t) {
 
 **每个 `Thread` 中都具备一个 `ThreadLocalMap`，而 `ThreadLocalMap` 可以存储以 `ThreadLocal` 为 key ，Object 对象为 value 的键值对。**
 
-```
+```java
 ThreadLocalMap(ThreadLocal<?> firstKey, Object firstValue) {
     //......
 }
@@ -99,7 +99,7 @@ ThreadLocalMap(ThreadLocal<?> firstKey, Object firstValue) {
 - **key 是弱引用**：`ThreadLocalMap` 中的 key 是 `ThreadLocal` 的弱引用 (`WeakReference<ThreadLocal<?>>`)。 这意味着，如果 `ThreadLocal` 实例不再被任何强引用指向，垃圾回收器会在下次 GC 时回收该实例，导致 `ThreadLocalMap` 中对应的 key 变为 `null`。
 - **value 是强引用**：`ThreadLocalMap` 中的 value 是强引用。 即使 key 被回收（变为 `null`），value 仍然存在于 `ThreadLocalMap` 中，被强引用，不会被回收。
 
-```
+```java
 static class Entry extends WeakReference<ThreadLocal<?>> {
     /** The value associated with this ThreadLocal. */
     Object value;
@@ -142,7 +142,7 @@ static class Entry extends WeakReference<ThreadLocal<?>> {
 
 在 `Thread` 类中添加了一个新的 `ThreadLocalMap` ，命名为 `inheritableThreadLocals` ，该变量用于存储需要跨线程传递的 `ThreadLocal` 值。如下：
 
-```
+```java
 class Thread implements Runnable {
     ThreadLocal.ThreadLocalMap threadLocals = null;
     ThreadLocal.ThreadLocalMap inheritableThreadLocals = null;
@@ -153,7 +153,7 @@ class Thread implements Runnable {
 
 通过改造 `Thread` 类的构造方法来实现，在创建 `Thread` 线程时，拿到父线程的 `inheritableThreadLocals` 变量赋值给子线程即可。相关代码如下：
 
-```
+```java
 // Thread 的构造方法会调用 init() 方法
 private void init(/* ... */) {
 	// 1、获取父线程
@@ -180,7 +180,7 @@ TTL 改造的地方有两处：
 
 如果想要查看相关源码，可以引入 Maven 依赖进行下载。
 
-```
+```java
 <dependency>
     <groupId>com.alibaba</groupId>
     <artifactId>transmittable-thread-local</artifactId>
@@ -246,7 +246,7 @@ TTL 改造的地方有两处：
 - `CachedThreadPool`: 使用的是同步队列 `SynchronousQueue`, 允许创建的线程数量为 `Integer.MAX_VALUE` ，如果任务数量过多且执行速度较慢，可能会创建大量的线程，从而导致 OOM。
 - `ScheduledThreadPool` 和 `SingleThreadScheduledExecutor` : 使用的无界的延迟阻塞队列 `DelayedWorkQueue` ，任务队列最大长度为 `Integer.MAX_VALUE` ，可能堆积大量的请求，从而导致 OOM。
 
-```
+```java
 // 有界队列 LinkedBlockingQueue
 public static ExecutorService newFixedThreadPool(int nThreads) {
 
@@ -280,7 +280,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize) {
 
 ### [⭐️线程池常见参数有哪些？如何解释？](https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html#%E2%AD%90%EF%B8%8F%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%B8%B8%E8%A7%81%E5%8F%82%E6%95%B0%E6%9C%89%E5%93%AA%E4%BA%9B-%E5%A6%82%E4%BD%95%E8%A7%A3%E9%87%8A)
 
-```
+```java
     /**
      * 用给定的初始参数创建一个新的ThreadPoolExecutor。
      */
@@ -329,7 +329,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize) {
 
 `ThreadPoolExecutor` 默认不会回收核心线程，即使它们已经空闲了。这是为了减少创建线程的开销，因为核心线程通常是要长期保持活跃的。但是，如果线程池是被用于周期性使用的场景，且频率不高（周期之间有明显的空闲时间），可以考虑将 `allowCoreThreadTimeOut(boolean value)` 方法的参数设置为 `true`，这样就会回收空闲（时间间隔由 `keepAliveTime` 指定）的核心线程了。
 
-```
+```java
 public void allowCoreThreadTimeOut(boolean value) {
     // 核心线程的 keepAliveTime 必须大于 0 才能启用超时机制
     if (value && keepAliveTime <= 0) {
@@ -357,7 +357,7 @@ public void allowCoreThreadTimeOut(boolean value) {
 
 举个例子：Spring 通过 `ThreadPoolTaskExecutor` 或者我们直接通过 `ThreadPoolExecutor` 的构造函数创建线程池的时候，当我们不指定 `RejectedExecutionHandler` 拒绝策略来配置线程池的时候，默认使用的是 `AbortPolicy`。在这种拒绝策略下，如果队列满了，`ThreadPoolExecutor` 将抛出 `RejectedExecutionException` 异常来拒绝新来的任务 ，这代表你将丢失对这个任务的处理。如果不想丢弃任务的话，可以使用 `CallerRunsPolicy`。`CallerRunsPolicy` 和其他的几个策略不同，它既不会抛弃任务，也不会抛出异常，而是将任务回退给调用者，使用调用者的线程来执行任务。
 
-```
+```java
 public static class CallerRunsPolicy implements RejectedExecutionHandler {
 
         public CallerRunsPolicy() { }
@@ -377,7 +377,7 @@ public static class CallerRunsPolicy implements RejectedExecutionHandler {
 
 这里我们再来结合 `CallerRunsPolicy` 的源码来看看：
 
-```
+```java
 public static class CallerRunsPolicy implements RejectedExecutionHandler {
 
         public CallerRunsPolicy() { }
@@ -403,7 +403,7 @@ public static class CallerRunsPolicy implements RejectedExecutionHandler {
 
 这里简单举一个例子，该线程池限定了最大线程数为 2，阻塞队列大小为 1 (这意味着第 4 个任务就会走到拒绝策略)，`ThreadUtil` 为 Hutool 提供的工具类：
 
-```
+```java
 public class ThreadPoolTest {
 
     private static final Logger log = LoggerFactory.getLogger(ThreadPoolTest.class);
@@ -456,7 +456,7 @@ public class ThreadPoolTest {
 
 输出：
 
-```
+```java
 18:19:48.203 INFO  [pool-1-thread-1] c.j.concurrent.ThreadPoolTest - 核心线程执行第一个任务
 18:19:48.203 INFO  [pool-1-thread-2] c.j.concurrent.ThreadPoolTest - 非核心线程处理第三个任务
 18:19:48.203 INFO  [main] c.j.concurrent.ThreadPoolTest - 主线程处理第四个任务
@@ -491,7 +491,7 @@ public class ThreadPoolTest {
 
 当然，对于这个问题，我们也可以参考其他主流框架的做法，以 Netty 为例，它的拒绝策略则是直接创建一个线程池以外的线程处理这些任务，为了保证任务的实时处理，这种做法可能需要良好的硬件设备且临时创建的线程无法做到准确的监控：
 
-```
+```java
 private static final class NewThreadRunsPolicy implements RejectedExecutionHandler {
     NewThreadRunsPolicy() {
         super();
@@ -511,7 +511,7 @@ private static final class NewThreadRunsPolicy implements RejectedExecutionHandl
 
 ActiveMQ 则是尝试在指定的时效内尽可能的争取将任务入队，以保证最大交付：
 
-```
+```java
 new RejectedExecutionHandler() {
                 @Override
                 public void rejectedExecution(final Runnable r, final ThreadPoolExecutor executor) {
@@ -576,7 +576,7 @@ new RejectedExecutionHandler() {
 
 **1、利用 guava 的 `ThreadFactoryBuilder`**
 
-```
+```java
 ThreadFactory threadFactory = new ThreadFactoryBuilder()
                         .setNameFormat(threadNamePrefix + "-%d")
                         .setDaemon(true).build();
@@ -585,7 +585,7 @@ ExecutorService threadPool = new ThreadPoolExecutor(corePoolSize, maximumPoolSiz
 
 **2、自己实现 `ThreadFactory`。**
 
-```
+```java
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -736,7 +736,7 @@ CPU 密集型简单理解就是利用 CPU 计算能力的任务比如你在内�
 - 判断任务是否已经执行完成；
 - 获取任务执行结果。
 
-```
+```java
 // V 代表了Future执行的任务返回值的类型
 public interface Future<V> {
     // 取消任务执行
@@ -764,7 +764,7 @@ public interface Future<V> {
 
 `FutureTask` 提供了 `Future` 接口的基本实现，常用来封装 `Callable` 和 `Runnable`，具有取消任务、查看任务是否执行完成以及获取任务执行结果的方法。`ExecutorService.submit()` 方法返回的其实就是 `Future` 的实现类 `FutureTask` 。
 
-```
+```java
 <T> Future<T> submit(Callable<T> task);
 Future<?> submit(Runnable task);
 ```
@@ -775,7 +775,7 @@ Future<?> submit(Runnable task);
 
 `FutureTask` 有两个构造函数，可传入 `Callable` 或者 `Runnable` 对象。实际上，传入 `Runnable` 对象也会在方法内部转换为 `Callable` 对象。
 
-```
+```java
 public FutureTask(Callable<V> callable) {
     if (callable == null)
         throw new NullPointerException();
@@ -799,7 +799,7 @@ Java 8 才被引入 `CompletableFuture` 类可以解决 `Future` 的这些�
 
 下面我们来简单看看 `CompletableFuture` 类的定义。
 
-```
+```java
 public class CompletableFuture<T> implements Future<T>, CompletionStage<T> {
 }
 ```
@@ -820,7 +820,7 @@ public class CompletableFuture<T> implements Future<T>, CompletionStage<T> {
 
 代码如下（这里为了简化代码，用到了 Hutool 的线程工具类 `ThreadUtil` 和日期时间工具类 `DateUtil`）：
 
-```
+```java
 // T1
 CompletableFuture<Void> futureT1 = CompletableFuture.runAsync(() -> {
     System.out.println("T1 is executing. Current time：" + DateUtil.now());
@@ -867,7 +867,7 @@ ThreadUtil.sleep(3000);
 - 资源控制：根据任务特性调整线程池大小和队列类型，优化性能表现。
 - 异常处理：通过自定义 `ThreadFactory` 更好地处理线程中的异常情况。
 
-```
+```java
 private ThreadPoolExecutor executor = new ThreadPoolExecutor(10, 10,
         0L, TimeUnit.MILLISECONDS,
         new LinkedBlockingQueue<Runnable>());
@@ -887,7 +887,7 @@ AQS 的全称为 `AbstractQueuedSynchronizer` ，翻译过来的意思就是�
 
 AQS 就是一个抽象类，主要用来构建锁和同步器。
 
-```
+```java
 public abstract class AbstractQueuedSynchronizer extends AbstractOwnableSynchronizer implements java.io.Serializable {
 }
 ```
@@ -912,14 +912,14 @@ AQS 使用 **int 成员变量 `state` 表示同步状态**，通过内置的�
 
 `state` 变量由 `volatile` 修饰，用于展示当前临界资源的获锁情况。
 
-```
+```java
 // 共享变量，使用volatile修饰保证线程可见性
 private volatile int state;
 ```
 
 另外，状态信息 `state` 可以通过 `protected` 类型的 `getState()`、`setState()` 和 `compareAndSetState()` 进行操作。并且，这几个方法都是 `final` 修饰的，在子类中无法被重写。
 
-```
+```java
 //返回同步状态的当前值
 protected final int getState() {
      return state;
@@ -944,7 +944,7 @@ protected final boolean compareAndSetState(int expect, int update) {
 
 Semaphore 的使用简单，我们这里假设有 N (N>5) 个线程来获取 `Semaphore` 中的共享资源，下面的代码表示同一时刻 N 个线程中只有 5 个线程能获取到共享资源，其他线程都会阻塞，只有获取到共享资源的线程才能执行。等到有线程释放了共享资源，其他阻塞的线程才能获取到。
 
-```
+```java
 // 初始共享资源数量
 final Semaphore semaphore = new Semaphore(5);
 // 获取1个许可
@@ -962,7 +962,7 @@ semaphore.release();
 
 `Semaphore` 对应的两个构造方法如下：
 
-```
+```java
 public Semaphore(int permits) {
     sync = new NonfairSync(permits);
 }
@@ -982,7 +982,7 @@ public Semaphore(int permits, boolean fair) {
 
 调用 `semaphore.acquire()` ，线程尝试获取许可证，如果 `state >= 0` 的话，则表示可以获取成功。如果获取成功的话，使用 CAS 操作去修改 `state` 的值 `state=state-1`。如果 `state<0` 的话，则表示许可证数量不足。此时会创建一个 Node 节点加入阻塞队列，挂起当前线程。
 
-```
+```java
 /**
  *  获取1个许可证
  */
@@ -1004,7 +1004,7 @@ public final void acquireSharedInterruptibly(int arg)
 
 调用 `semaphore.release();` ，线程尝试释放许可证，并使用 CAS 操作去修改 `state` 的值 `state=state+1`。释放许可证成功之后，同时会唤醒同步队列中的一个线程。被唤醒的线程会重新尝试去修改 `state` 的值 `state=state-1` ，如果 `state>=0` 则获取令牌成功，否则重新进入阻塞队列，挂起线程。
 
-```
+```java
 // 释放一个许可证
 public void release() {
     sync.releaseShared(1);
@@ -1042,7 +1042,7 @@ public final boolean releaseShared(int arg) {
 
 伪代码是下面这样的：
 
-```
+```java
 public class CountDownLatchExample1 {
     // 处理文件的数量
     private static final int threadCount = 6;
@@ -1077,7 +1077,7 @@ public class CountDownLatchExample1 {
 
 可以使用 `CompletableFuture` 类来改进！Java8 的 `CompletableFuture` 提供了很多对多线程友好的方法，使用它可以很方便地为我们编写多线程程序，什么异步、串行、并行或者等待所有线程执行完任务什么的都非常方便。
 
-```
+```java
 CompletableFuture<Void> task1 =
     CompletableFuture.supplyAsync(()->{
         //自定义业务操作
@@ -1100,7 +1100,7 @@ System.out.println("all done. ");
 
 上面的代码还可以继续优化，当任务过多的时候，把每一个 task 都列出来不太现实，可以考虑通过循环来添加任务。
 
-```
+```java
 //文件夹位置
 List<String> filePaths = Arrays.asList(...)
 // 异步处理所有文件
@@ -1125,7 +1125,7 @@ CompletableFuture<Void> allFutures = CompletableFuture.allOf(
 
 `CyclicBarrier` 内部通过一个 `count` 变量作为计数器，`count` 的初始值为 `parties` 属性的初始化值，每当一个线程到了栅栏这里了，那么就将计数器减 1。如果 count 值为 0 了，表示这是这一代最后一个线程到达栅栏，就尝试执行我们构造方法中输入的任务。
 
-```
+```java
 //每次拦截的线程数
 private final int parties;
 //计数器
@@ -1136,7 +1136,7 @@ private int count;
 
 1、`CyclicBarrier` 默认的构造方法是 `CyclicBarrier(int parties)`，其参数表示屏障拦截的线程数量，每个线程调用 `await()` 方法告诉 `CyclicBarrier` 我已经到达了屏障，然后当前线程被阻塞。
 
-```
+```java
 public CyclicBarrier(int parties) {
     this(parties, null);
 }
@@ -1153,7 +1153,7 @@ public CyclicBarrier(int parties, Runnable barrierAction) {
 
 2、当调用 `CyclicBarrier` 对象调用 `await()` 方法时，实际上调用的是 `dowait(false, 0L)` 方法。 `await()` 方法就像树立起一个栅栏的行为一样，将线程挡住了，当拦住的线程数量达到 `parties` 的值时，栅栏才会打开，线程才得以通过执行。
 
-```
+```java
 public int await() throws InterruptedException, BrokenBarrierException {
   try {
       return dowait(false, 0L);
@@ -1165,7 +1165,7 @@ public int await() throws InterruptedException, BrokenBarrierException {
 
 `dowait(false, 0L)` 方法源码分析如下：
 
-```
+```java
     // 当线程数量或者请求数量达到 count 时 await 之后的方法才会被执行。上面的示例中 count 的值就为 5。
     private int count;
     /**

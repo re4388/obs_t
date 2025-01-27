@@ -1,11 +1,9 @@
-
 # 整體準備大方向
 - Java
 - Kotlin
 - k8s
 - window 系統上手
 	- 用那台小白好了, 搞工具，讓我跟 mac 之間可以連動
-
 
 #  文字類
 
@@ -14,26 +12,6 @@
 - [x] [[Effective Java 3rd]] 
 - [x] [[宋红康 2023 版，java 入门自学]]
 
-
-小林
-[小林coding](https://xiaolincoding.com/)
-- [ ] [[小林  Java 基礎面試題]]
-- [ ] [[小林  Java 集合面试题]]
-- [ ] [[小林  Java并发编程面试题]]
-- [ ] [[小林  Java 虛拟機面試題]]
-- [ ] [[小林  MySQL 面試題]]
-- [ ] [[小林 Spring 面试题]]
-- [ ] [[小林 Redis 面试题]]
-- [ ] [[小林 计算机网络面试题]]
-- [ ] [[小林 操作系统面试题]]
-- [ ] [[小林 数据结构与算法面试题]]
-
-
-黑馬
-- [ ] [[黑馬 基礎篇]]
-- [ ] [[黑馬 併發]]
-- [ ] [[黑馬 虛擬機]]
-- [ ] [[黑馬框架篇]]
 
 
 
@@ -75,7 +53,7 @@ IO
 
 併發 
 - [x] [[Java 并发常见面试题总结（上）]]
-- [ ] [[Java 并发常见面试题总结（中）]]
+- [x] [[Java 并发常见面试题总结（中）]]
 - [ ] [[Java 并发常见面试题总结（下）]]
 - [ ] [[乐观锁和悲观锁详解]]
 - [ ] [[CAS 详解]]
@@ -124,6 +102,32 @@ Java 版本特性 
 - [ ] [java_面试指北 PDF 版本（最新）](https://github.com/re4388/java_interview_guide_PDF)
 
 - [ ] [awesome-idea: IntelliJ IDEA 使用指南 | 必备插件推荐 | 插件开发入门 | 重构小技巧 | 源码阅读技巧。](https://gitee.com/SnailClimb/awesome-idea#/SnailClimb/awesome-idea/blob/main/./docs/tips/source-code-reading-skills.md)
+
+
+
+
+小林
+[小林coding](https://xiaolincoding.com/)
+- [ ] [[小林  Java 基礎面試題]]
+- [ ] [[小林  Java 集合面试题]]
+- [ ] [[小林  Java并发编程面试题]]
+- [ ] [[小林  Java 虛拟機面試題]]
+- [ ] [[小林  MySQL 面試題]]
+- [ ] [[小林 Spring 面试题]]
+- [ ] [[小林 Redis 面试题]]
+- [ ] [[小林 计算机网络面试题]]
+- [ ] [[小林 操作系统面试题]]
+- [ ] [[小林 数据结构与算法面试题]]
+
+
+黑馬
+- [ ] [[黑馬 基礎篇]]
+- [ ] [[黑馬 併發]]
+- [ ] [[黑馬 虛擬機]]
+- [ ] [[黑馬框架篇]]
+
+
+
 ---
 
 
