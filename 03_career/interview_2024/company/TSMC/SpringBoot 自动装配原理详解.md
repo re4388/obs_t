@@ -48,6 +48,7 @@ public class RESTConfiguration
 
     <!-- JSON Support -->
     <bean name="viewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+    
     <bean name="jsonTemplate" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>
 
 </beans>
@@ -168,13 +169,16 @@ public interface ImportSelector {
 private static final String[] NO_IMPORTS = new String[0];
 
 public String[] selectImports(AnnotationMetadata annotationMetadata) {
+
         // <1>.判断自动装配开关是否打开
         if (!this.isEnabled(annotationMetadata)) {
             return NO_IMPORTS;
         } else {
           //<2>.获取所有需要装配的bean
             AutoConfigurationMetadata autoConfigurationMetadata = AutoConfigurationMetadataLoader.loadMetadata(this.beanClassLoader);
+            
             AutoConfigurationImportSelector.AutoConfigurationEntry autoConfigurationEntry = this.getAutoConfigurationEntry(autoConfigurationMetadata, annotationMetadata);
+            
             return StringUtils.toStringArray(autoConfigurationEntry.getConfigurations());
         }
     }
@@ -198,11 +202,14 @@ AutoConfigurationEntry getAutoConfigurationEntry(AutoConfigurationMetadata autoC
         } else {
             //<2>.
             AnnotationAttributes attributes = this.getAttributes(annotationMetadata);
+            
             //<3>.
             List<String> configurations = this.getCandidateConfigurations(annotationMetadata, attributes);
             //<4>.
+            
             configurations = this.removeDuplicates(configurations);
             Set<String> exclusions = this.getExclusions(annotationMetadata, attributes);
+            
             this.checkExcludedClasses(configurations, exclusions);
             configurations.removeAll(exclusions);
             configurations = this.filter(configurations, autoConfigurationMetadata);
