@@ -109,7 +109,6 @@ public Object getSingleton(String beanName, ObjectFactory<?> singletonFactory) {
 大部分时候我们并没有在项目中使用多线程，所以很少有人会关注这个问题。单例 Bean 存在线程问题，主要是因为当多个线程操作同一个对象的时候是存在资源竞争的。
 
 常见的有两种解决办法：
-
 1. 在 Bean 中尽量避免定义可变的成员变量。
 2. 在类中定义一个 `ThreadLocal` 成员变量，将需要的可变成员变量保存在 `ThreadLocal` 中（推荐的一种方式）。
 
