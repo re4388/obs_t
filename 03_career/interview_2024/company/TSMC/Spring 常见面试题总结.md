@@ -740,13 +740,17 @@ public class GlobalExceptionHandler {
 ```java
 @Nullable
   private Method getMappedMethod(Class<? extends Throwable> exceptionType) {
+  
     List<Class<? extends Throwable>> matches = new ArrayList<>();
-    //找到可以处理的所有异常信息。mappedMethods 中存放了异常和处理异常的方法的对应关系
+    
+    // 找到可以处理的所有异常信息。
+    // mappedMethods 中存放了异常和处理异常的方法的对应关系
     for (Class<? extends Throwable> mappedException : this.mappedMethods.keySet()) {
       if (mappedException.isAssignableFrom(exceptionType)) {
         matches.add(mappedException);
       }
     }
+    
     // 不为空说明有方法处理异常
     if (!matches.isEmpty()) {
       // 按照匹配程度从小到大排序
@@ -825,7 +829,7 @@ private final Map<String, ObjectFactory<?>> singletonFactories = new HashMap<>(1
 
 简单来说，Spring 的三级缓存包括：
 
-1. **一级缓存（singletonObjects）**：存放最终形态的 Bean（已经实例化、属性填充、初始化），单例池，为 “Spring 的单例属性” ⽽⽣。一般情况我们获取 Bean 都是从这里获取的，但是并不是所有的 Bean 都在单例池里面，例如原型 Bean 就不在里面。
+1. **一级缓存（singletonObjects）**：存放最终形态的 Bean（已经实例化、属性填充、初始化）的单例池，为 “Spring 的单例属性” ⽽⽣。一般情况我们获取 Bean 都是从这里获取的，但是并不是所有的 Bean 都在单例池里面，例如原型 Bean 就不在里面。
 2. **二级缓存（earlySingletonObjects）**：存放过渡 Bean（半成品，尚未属性填充），也就是三级缓存中 `ObjectFactory` 产生的对象，与三级缓存配合使用的，可以防止 AOP 的情况下，每次调用 `ObjectFactory#getObject()` 都是会产生新的代理对象的。
 3. **三级缓存（singletonFactories）**：存放 `ObjectFactory`，`ObjectFactory` 的 `getObject()` 方法（最终调用的是 `getEarlyBeanReference()` 方法）可以生成原始 Bean 对象或者代理对象（如果 Bean 被 AOP 切面代理）。三级缓存只会对单例 Bean 生效。
 
