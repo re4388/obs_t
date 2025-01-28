@@ -16,14 +16,15 @@ MySQL 为我们提供了 `EXPLAIN` 命令，来获取执行计划的相关信�
 
 `EXPLAIN` 执行计划支持 `SELECT`、`DELETE`、`INSERT`、`REPLACE` 以及 `UPDATE` 语句。我们一般多用于分析 `SELECT` 查询语句，使用起来非常简单，语法如下：
 
-```
+```sql
 EXPLAIN + SELECT 查询语句；
 ```
 
 我们简单来看下一条查询语句的执行计划：
 
-```
+```sql
 mysql> explain SELECT * FROM dept_emp WHERE emp_no IN (SELECT emp_no FROM dept_emp GROUP BY emp_no HAVING COUNT(emp_no)>1);
+
 +----+-------------+----------+------------+-------+-----------------+---------+---------+------+--------+----------+-------------+
 | id | select_type | table    | partitions | type  | possible_keys   | key     | key_len | ref  | rows   | filtered | Extra       |
 +----+-------------+----------+------------+-------+-----------------+---------+---------+------+--------+----------+-------------+
@@ -97,15 +98,19 @@ system > const > eq_ref > ref > fulltext > ref_or_null > index_merge > unique_su
 
 ### [possible_keys](https://javaguide.cn/database/mysql/mysql-query-execution-plan.html#possible-keys)
 
-possible_keys 列表示 MySQL 执行查询时可能用到的索引。如果这一列为 NULL ，则表示没有可能用到的索引；这种情况下，需要检查 WHERE 语句中所使用的的列，看是否可以通过给这些列中某个或多个添加索引的方法来提高查询性能。
+possible_keys 列表示 MySQL 执行查询时可能用到的索引。
+如果这一列为 NULL ，则表示没有可能用到的索引；这种情况下，需要检查 WHERE 语句中所使用的的列，看是否可以通过给这些列中某个或多个添加索引的方法来提高查询性能。
 
 ### [key（重要）](https://javaguide.cn/database/mysql/mysql-query-execution-plan.html#key-%E9%87%8D%E8%A6%81)
 
-key 列表示 MySQL 实际使用到的索引。如果为 NULL，则表示未用到索引。
+key 列表示 MySQL 实际使用到的索引。
+如果为 NULL，则表示未用到索引。
 
 ### [key_len](https://javaguide.cn/database/mysql/mysql-query-execution-plan.html#key-len)
 
-key_len 列表示 MySQL 实际使用的索引的最大长度；当使用到联合索引时，有可能是多个列的长度和。在满足需求的前提下越短越好。如果 key 列显示 NULL ，则 key_len 列也显示 NULL 。
+key_len 列表示 MySQL 实际使用的索引的最大长度；当使用到联合索引时，有可能是多个列的长度和。
+在满足需求的前提下越短越好。
+如果 key 列显示 NULL ，则 key_len 列也显示 NULL 。
 
 ### [rows](https://javaguide.cn/database/mysql/mysql-query-execution-plan.html#rows)
 
