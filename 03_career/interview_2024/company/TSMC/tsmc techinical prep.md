@@ -128,8 +128,10 @@ Java 版本特性 
 ## MySQL
 - [x] [[MySQL 常见面试题总结]]
 - [x] [[MySQL 高性能优化规范建议总结]]
+	- [x] [聊聊数据库建表的 15 个小技巧](https://mp.weixin.qq.com/s/NM-aHaW6TXrnO6la6Jfl5A)
 	- [ ] [技术同学必会的 MySQL 设计规约，都是惨痛的教训](https://mp.weixin.qq.com/s/XC8e5iuQtfsrEOERffEZ-Q)
-	- [ ] [聊聊数据库建表的 15 个小技巧](https://mp.weixin.qq.com/s/NM-aHaW6TXrnO6la6Jfl5A)
+	- [ ] [明明加了唯一索引，为什么还是产生重复数据？](https://mp.weixin.qq.com/s?__biz=MzkwNjMwMTgzMQ==&mid=2247497090&idx=1&sn=53b81535a9815853382c3a4bff8c844b&chksm=c0e82d6af79fa47ccfece23a8b0ad46ef6c647f1d2f961823eed181732c47e250ed0cbcfe6fd&token=1169141359&lang=zh_CN&scene=21#wechat_redirect)
+	- [ ] [聊聊索引失效的 10 种场景，太坑了](https://mp.weixin.qq.com/s?__biz=MzkwNjMwMTgzMQ==&mid=2247491626&idx=1&sn=18fc949c06f04fe8f4c29b6fc5c66f9c&chksm=c0e838c2f79fb1d45c6f9b2ab188bb4663414690bab0718a7d46beb875e6b83e5e67ec27d2ff&token=660773166&lang=zh_CN&scene=21#wechat_redirect)
 - [ ] [[MySQL 索引详解]]
 - [x] [[介紹 MySQL 的 binlog, redo log, undo log]]
 - [ ] [[MySQL 事务隔离级别详解]]
@@ -218,7 +220,7 @@ Java 版本特性 
 ## 併發
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
 
-- [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
+- [ ] [toBeBetterJavaer/debug-skill](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 
 
 # Spring
