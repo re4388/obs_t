@@ -8,11 +8,8 @@
 #  文字類
 
 ## Java
-
 - [x] [[Effective Java 3rd]] 
 - [x] [[宋红康 2023 版，java 入门自学]]
-
-
 
 基礎
 - [x] [[Java 基础常见面试题总结 (上)]]
@@ -127,6 +124,55 @@ Java 版本特性 
 ---
 
 
+
+## MySQL
+- [x] [[MySQL 常见面试题总结]]
+- [x] [[MySQL 高性能优化规范建议总结]]
+	- [ ] [技术同学必会的 MySQL 设计规约，都是惨痛的教训](https://mp.weixin.qq.com/s/XC8e5iuQtfsrEOERffEZ-Q)
+	- [ ] [聊聊数据库建表的 15 个小技巧](https://mp.weixin.qq.com/s/NM-aHaW6TXrnO6la6Jfl5A)
+- [ ] [[MySQL 索引详解]]
+- [x] [[介紹 MySQL 的 binlog, redo log, undo log]]
+- [ ] [[MySQL 事务隔离级别详解]]
+- [ ] [[InnoDB 存储引擎对 MVCC 的实现]]
+- [ ] [[SQL 语句在 MySQL 中的执行过程]]
+- [ ] [[MySQL 查询缓存详解]]
+- [ ] [[MySQL 执行计划分析]]
+- [ ] [[MySQL 自增主键一定是连续的吗]]
+- [ ] [[MySQL 日期类型选择建议]]
+- [ ] [[MySQL 隐式转换造成索引失效]]
+- [ ] [[读写分离和分库分表详解]]
+- [ ] [[深度分页介绍及优化建议]]
+- [x] [[数据冷热分离详解]]
+- [ ] slow quey check
+	- [ ] [Mysql 找出执行慢的 SQL](https://open.alipay.com/portal/forum/post/129601074)
+	- [ ] [MySQL慢查询日志总结 - 潇湘隐者 - 博客园](https://www.cnblogs.com/kerrycode/p/5593204.html)
+- [ ] [一树一溪的 MySQL 系列教程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg3NTc3NjM4Nw==&action=getalbum&album_id=2372043523518300162&scene=173&from_msgid=2247484308&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+- [ ] [Yes 的 MySQL 系列教程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkxNTE3NjQ3MA==&action=getalbum&album_id=1903249596194095112&scene=173&from_msgid=2247490365&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+- [ ] [写完这篇 我的 SQL 优化能力直接进入新层次 - 变成派大星 - 2022](https://juejin.cn/post/7161964571853815822)
+- [ ] [两万字详解！InnoDB 锁专题！ - 捡田螺的小男孩 - 2022](https://juejin.cn/post/7094049650428084232)
+- [ ] [MySQL 的自增主键一定是连续的吗？ - 飞天小牛肉 - 2022](https://mp.weixin.qq.com/s/qci10h9rJx_COZbHV3aygQ)
+- [ ] [深入理解 MySQL 索引底层原理 - 腾讯技术工程 - 2020](https://zhuanlan.zhihu.com/p/113917726)
+
+
+认证授权
+- [ ] [[认证授权基础概念详解]]
+- [ ] [[JWT 基础概念详解]]
+- [ ] [[JWT 身份认证优缺点分析]]
+- [ ] [[SSO 单点登录详解]]
+- [ ] [[权限系统设计详解]]
+
+  
+数据安全
+- [ ] [[常见加密算法总结]]
+- [ ] [[敏感词过滤方案总结]]
+- [ ] [[数据脱敏方案总结]]
+- [x] [[Java 定时任务详解]]
+- [ ] [[Web 实时消息推送详解]]
+
+
+
+---
+
 ## Spring
 - [x] [[Spring 常见面试题总结]]
 - [x] [[Spring&SpringBoot 常用注解总结]]
@@ -144,16 +190,14 @@ Java 版本特性 
 
 可以找更多看  via [SpringBoot 常见面试题总结 - Google 搜尋](https://www.google.com/search?q=SpringBoot+%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93&rlz=1C5CHFA_enTW1035TW1035&oq=SpringBoot+%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMgYIAhBFGDzSAQcyNDhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
 
-
-
----
-
-
 - [ ] [[分布式锁介绍]]
 - [ ] [[分布式锁常见实现方案总结]]
 
 
 
+---
+
+## Spring example
 - [GitHub - wuyouzhuguli/SpringAll](https://github.com/wuyouzhuguli/SpringAll?tab=readme-ov-file)
 - [GitHub - yudaocode/SpringBoot-Labs](https://github.com/yudaocode/SpringBoot-Labs?tab=readme-ov-file)  題取碼:coke
 - [Spring核心知识点详解 思维导图模板\_ProcessOn思维导图、流程图](https://www.processon.com/view/6618a261e0d53b487ae69c7a)
@@ -174,44 +218,7 @@ Java 版本特性 
 ## 併發
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
 
-
-
 - [ ] try this IDEA debug skill [toBeBetterJavaer/docs/src/ide/4-debug-skill.md at master · itwanger/toBeBetterJavaer · GitHub](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
-
-
-## MySQL
-- [x] [[MySQL 高性能优化规范建议总结]]
-	- [ ] [技术同学必会的 MySQL 设计规约，都是惨痛的教训](https://mp.weixin.qq.com/s/XC8e5iuQtfsrEOERffEZ-Q)
-	- [ ] [聊聊数据库建表的 15 个小技巧](https://mp.weixin.qq.com/s/NM-aHaW6TXrnO6la6Jfl5A)
-- [ ] [[MySQL 常见面试题总结]]
-- [ ] [[MySQL 索引详解]]
-- [ ] [[MySQL 三大日志详解]]
-- [ ] [[MySQL 事务隔离级别详解]]
-- [ ] [[InnoDB 存储引擎对 MVCC 的实现]]
-- [ ] [[SQL 语句在 MySQL 中的执行过程]]
-- [ ] [[MySQL 查询缓存详解]]
-- [ ] [[MySQL 执行计划分析]]
-- [ ] [[MySQL 自增主键一定是连续的吗]]
-- [ ] [[MySQL 日期类型选择建议]]
-- [ ] [[MySQL 隐式转换造成索引失效]]
-
-
-
-
-认证授权
-- [ ] [[认证授权基础概念详解]]
-- [ ] [[JWT 基础概念详解]]
-- [ ] [[JWT 身份认证优缺点分析]]
-- [ ] [[SSO 单点登录详解]]
-- [ ] [[权限系统设计详解]]
-
-  
-数据安全
-- [ ] [[常见加密算法总结]]
-- [ ] [[敏感词过滤方案总结]]
-- [ ] [[数据脱敏方案总结]]
-- [ ] [[Java 定时任务详解]]
-- [ ] [[Web 实时消息推送详解]]
 
 
 # Spring

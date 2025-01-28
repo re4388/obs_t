@@ -22,22 +22,31 @@
 
 `java.util.Timer` 是 JDK 1.3 开始就已经支持的一种定时任务的实现方式。
 
-`Timer` 内部使用一个叫做 `TaskQueue` 的类存放定时任务，它是一个基于最小堆实现的优先级队列。`TaskQueue` 会按照任务距离下一次执行时间的大小将任务排序，保证在堆顶的任务最先执行。这样在需要执行任务时，每次只需要取出堆顶的任务运行即可！
+`Timer` 内部使用一个叫做 `TaskQueue` 的类存放定时任务，它是一个基于最小堆(mini Heap)实现的优先级队列。`TaskQueue` 会按照任务距离下一次执行时间的大小将任务排序，保证在堆顶的任务最先执行。这样在需要执行任务时，每次只需要取出堆顶的任务运行即可！
 
 `Timer` 使用起来比较简单，通过下面的方式我们就能创建一个 1s 之后执行的定时任务。
 
-```
+```java
+
+
 // 示例代码：
 TimerTask task = new TimerTask() {
     public void run() {
-        System.out.println("当前时间: " + new Date() + "n" +
-                "线程名称: " + Thread.currentThread().getName());
+        System.out.println(
+		        "当前时间: " + new Date() + "n" +
+                "线程名称: " + Thread.currentThread().getName()
+        );
     }
 };
-System.out.println("当前时间: " + new Date() + "n" +
-        "线程名称: " + Thread.currentThread().getName());
+
+
+System.out.println(
+		"当前时间: " + new Date() + "n" +
+        "线程名称: " + Thread.currentThread().getName()
+);
+
 Timer timer = new Timer("Timer");
-long delay = 1000L;
+long delay = 1000L; // unit is ms
 timer.schedule(task, delay);
 
 
@@ -50,7 +59,7 @@ timer.schedule(task, delay);
 
 `Timer` 类上的有一段注释是这样写的：
 
-```
+```java
  * This class does not offer real-time guarantees: it schedules
  * tasks using the <tt>Object.wait(long)</tt> method.
  *Java 5.0 introduced the {@code java.util.concurrent} package and
@@ -74,9 +83,10 @@ timer.schedule(task, delay);
 
 ![[100_attachements/cf5c43e9cd6902eae2122f300d727bbc_MD5.png]]
 
-`ScheduledThreadPoolExecutor` 本身就是一个线程池，支持任务并发执行。并且，其内部使用 `DelayedWorkQueue` 作为任务队列。
+`ScheduledThreadPoolExecutor` 本身就是一个线程池，支持任务并发执行。
+内部使用 `DelayedWorkQueue` 作为任务队列。
 
-```
+```java
 // 示例代码：
 TimerTask repeatedTask = new TimerTask() {
     @SneakyThrows
@@ -85,14 +95,28 @@ TimerTask repeatedTask = new TimerTask() {
                 "线程名称: " + Thread.currentThread().getName());
     }
 };
+
 System.out.println("当前时间: " + new Date() + "n" +
         "线程名称: " + Thread.currentThread().getName());
+        
 ScheduledExecutorService executor = Executors.newScheduledThreadPool(3);
+
 long delay  = 1000L;
 long period = 1000L;
-executor.scheduleAtFixedRate(repeatedTask, delay, period, TimeUnit.MILLISECONDS);
-Thread.sleep(delay + period * 5);
+
+
+executor.scheduleAtFixedRate(
+	repeatedTask, 
+	delay, 
+	period, 
+	TimeUnit.MILLISECONDS
+);
+
+Thread.sleep(delay + period * 5); // 讓上面跑完，才可以看到效果
+
 executor.shutdown();
+
+
 //输出：
 当前时间: Fri May 28 15:40:46 CST 2021n线程名称: main
 当前时间: Fri May 28 15:40:47 CST 2021n线程名称: pool-1-thread-1
@@ -103,23 +127,30 @@ executor.shutdown();
 当前时间: Fri May 28 15:40:52 CST 2021n线程名称: pool-1-thread-2
 ```
 
-不论是使用 `Timer` 还是 `ScheduledExecutorService` 都无法使用 Cron 表达式指定任务执行的具体时间。
+不過，不论是使用 `Timer` 还是 `ScheduledExecutorService` 都无法使用 Cron 表达式指定任务执行的具体时间。
 
 ### [DelayQueue](https://javaguide.cn/system-design/schedule-task.html#delayqueue)
 
-`DelayQueue` 是 JUC 包 (`java.util.concurrent)` 为我们提供的延迟队列，用于实现延时任务比如订单下单 15 分钟未支付直接取消。它是 `BlockingQueue` 的一种，底层是一个基于 `PriorityQueue` 实现的一个无界队列，是线程安全的。关于 `PriorityQueue` 可以参考笔者编写的这篇文章：[PriorityQueue 源码分析](https://javaguide.cn/java/collection/priorityqueue-source-code.html) 。
+`DelayQueue` 是 JUC 包 (`java.util.concurrent)` 为我们提供的延迟队列，用于实现延时任务比如订单下单 15 分钟未支付直接取消。
+
+它是 `BlockingQueue` 的一种，底层是一个基于 `PriorityQueue` 实现的一个无界队列，是线程安全的。关于 `PriorityQueue` 可以参考笔者编写的这篇文章：[PriorityQueue 源码分析](https://javaguide.cn/java/collection/priorityqueue-source-code.html) 。
 
 ![[100_attachements/8872002763864704.png]]
 
-`DelayQueue` 和 `Timer/TimerTask` 都可以用于实现定时任务调度，但是它们的实现方式不同。`DelayQueue` 是基于优先级队列和堆排序算法实现的，可以实现多个任务按照时间先后顺序执行；而 `Timer/TimerTask` 是基于单线程实现的，只能按照任务的执行顺序依次执行，如果某个任务执行时间过长，会影响其他任务的执行。另外，`DelayQueue` 还支持动态添加和移除任务，而 `Timer/TimerTask` 只能在创建时指定任务。
+`DelayQueue` 和 `Timer/TimerTask` 都可以用于实现定时任务调度，但是它们的实现方式不同。`DelayQueue` 是基于优先级队列和堆排序算法实现的，可以实现多个任务按照时间先后顺序执行；而 **`Timer/TimerTask` 是基于单线程实现的，只能按照任务的执行顺序依次执行，如果某个任务执行时间过长，会影响其他任务的执行。**
+
+另外，`DelayQueue` 还支持动态添加和移除任务，而 `Timer/TimerTask` 只能在创建时指定任务。
 
 关于 `DelayQueue` 的详细介绍，请参考我写的这篇文章：[`DelayQueue` 源码分析](https://javaguide.cn/java/collection/delayqueue-source-code.html)。
+
+
+---
 
 ### [Spring Task](https://javaguide.cn/system-design/schedule-task.html#spring-task)
 
 我们直接通过 Spring 提供的 `@Scheduled` 注解即可定义定时任务，非常方便！
 
-```
+```java
 /**
  * cron：使用Cron表达式。　每分钟的1，2秒运行
  */
@@ -144,6 +175,8 @@ Spring Task 底层是基于 JDK 的 `ScheduledThreadPoolExecutor` 线程池来
 
 ### [时间轮](https://javaguide.cn/system-design/schedule-task.html#%E6%97%B6%E9%97%B4%E8%BD%AE)
 
+TimingWheel
+
 Kafka、Dubbo、ZooKeeper、Netty、Caffeine、Akka 中都有对时间轮的实现。
 
 时间轮简单来说就是一个环形的队列（底层一般基于数组实现），队列中的每一个元素（时间格）都可以存放一个定时任务列表。
@@ -162,7 +195,8 @@ Kafka、Dubbo、ZooKeeper、Netty、Caffeine、Akka 中都有对时间轮的实�
 
 ![[100_attachements/e9ffdecb1d58c760d9b29ced9374c13a_MD5.png]]
 
-上图的时间轮 (ms -> s)，第 1 层的时间精度为 1 ，第 2 层的时间精度为 20 ，第 3 层的时间精度为 400。假如我们需要添加一个 350s 后执行的任务 A 的话（当前时间是 0s），这个任务会被放在第 2 层（因为第二层的时间跨度为 20*20=400>350）的第 350/20=17 个时间格子。
+上图的时间轮 (ms -> s)，第 1 层的时间精度为 1 ，第 2 层的时间精度为 20 ，第 3 层的时间精度为 400。
+假如我们需要添加一个 350s 后执行的任务 A 的话（当前时间是 0s），这个任务会被放在第 2 层（因为第二层的时间跨度为 20 * 20=400 > 350）的第 350/20 = 17 个时间格子。
 
 当第一层转了 17 圈之后，时间过去了 340s ，第 2 层的指针此时来到第 17 个时间格子。此时，第 2 层第 17 个格子的任务会被移动到第 1 层。
 
@@ -170,7 +204,7 @@ Kafka、Dubbo、ZooKeeper、Netty、Caffeine、Akka 中都有对时间轮的实�
 
 这里在层与层之间的移动也叫做时间轮的升降级。参考手表来理解就好！
 
-**时间轮比较适合任务数量比较多的定时任务场景，它的任务写入和执行的时间复杂度都是 0（1）。**
+**why use 时间轮? 适合任务数量比较多的定时任务场景，任务写入和执行的时间复杂度都是 O(1)。**
 
 ## [分布式定时任务](https://javaguide.cn/system-design/schedule-task.html#%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1)
 
@@ -180,6 +214,8 @@ Redis 是可以用来做延时任务的，基于 Redis 实现延时任务的功�
 
 1. Redis 过期事件监听
 2. Redisson 内置的延时队列
+
+BUT -> [领导：谁再用redis过期监听实现关闭订单，立马滚蛋！ - -Finley- - 博客园](https://www.cnblogs.com/Finley/p/16395466.html)
 
 这部分内容的详细介绍我放在了[《后端面试高频系统设计 & 场景题》](https://javaguide.cn/zhuanlan/back-end-interview-high-frequency-system-design-and-scenario-questions.html)中，有需要的同学可以进入星球后阅读学习。篇幅太多，这里就不重复分享了。
 
@@ -227,12 +263,12 @@ ElasticJob 当当网开源的一个面向互联网生态和海量任务的分布
 
 ElasticJob-Lite 和 ElasticJob-Cloud 两者的对比如下：
 
-||ElasticJob-Lite|ElasticJob-Cloud|
-|---|---|---|
-|无中心化|是|否|
-|资源分配|不支持|支持|
-|作业模式|常驻|常驻 + 瞬时|
-|部署依赖|ZooKeeper|ZooKeeper + Mesos|
+|      | ElasticJob-Lite | ElasticJob-Cloud  |
+| ---- | --------------- | ----------------- |
+| 无中心化 | 是               | 否                 |
+| 资源分配 | 不支持             | 支持                |
+| 作业模式 | 常驻              | 常驻 + 瞬时           |
+| 部署依赖 | ZooKeeper       | ZooKeeper + Mesos |
 
 `ElasticJob` 支持任务在分布式场景下的分片和高可用、任务可视化管理等功能。
 
@@ -246,17 +282,28 @@ ElasticJob-Lite 的架构设计如下图所示：
 
 Elastic-Job 中的定时调度都是由执行器自行触发，这种设计也被称为去中心化设计（调度和处理都是执行器单独完成）。
 
-```
+```java
+
 @Component
-@ElasticJobConf(name = "dayJob", cron = "0/10 * * * * ?", shardingTotalCount = 2,
-        shardingItemParameters = "0=AAAA,1=BBBB", description = "简单任务", failover = true)
+@ElasticJobConf(
+	name = "dayJob", 
+	cron = "0/10 * * * * ?", 
+	shardingTotalCount = 2,
+    shardingItemParameters = "0=AAAA,1=BBBB", 
+    description = "简单任务", 
+    failover = true
+)
 public class TestJob implements SimpleJob {
     @Override
     public void execute(ShardingContext shardingContext) {
-        log.info("TestJob任务名：【{}】, 片数：【{}】, param=【{}】", shardingContext.getJobName(), shardingContext.getShardingTotalCount(),
-                shardingContext.getShardingParameter());
+        log.info("TestJob任务名：【{}】, 片数：【{}】, param=【{}】", 
+        shardingContext.getJobName(), 
+        shardingContext.getShardingTotalCount(),
+		shardingContext.getShardingParameter());
     }
 }
+
+
 ```
 
 **相关地址：**
@@ -298,9 +345,9 @@ public class TestJob implements SimpleJob {
 
 不要被 `XXL-JOB` 的架构图给吓着了，实际上，我们要用 `XXL-JOB` 的话，只需要重写 `IJobHandler` 自定义任务执行逻辑就可以了，非常易用！
 
-```
-@JobHandler(value="myApiJobHandler")
+```java
 @Component
+@JobHandler(value="myApiJobHandler")
 public class MyApiJobHandler extends IJobHandler {
 
     @Override
@@ -313,7 +360,7 @@ public class MyApiJobHandler extends IJobHandler {
 
 还可以直接基于注解定义任务。
 
-```
+```java
 @XxlJob("myAnnotationJobHandler")
 public ReturnT<String> myAnnotationJobHandler(String param) throws Exception {
   //......
@@ -343,7 +390,7 @@ public ReturnT<String> myAnnotationJobHandler(String param) throws Exception {
 
 由于 SchedulerX 属于人民币产品，我这里就不过多介绍。PowerJob 官方也对比过其和 QuartZ、XXL-JOB 以及 SchedulerX。
 
-||QuartZ|xxl-job|SchedulerX 2.0|PowerJob|
+|QuartZ|xxl-job|SchedulerX 2.0|PowerJob|
 |---|---|---|---|---|
 |定时类型|CRON|CRON|CRON、固定频率、固定延迟、OpenAPI|**CRON、固定频率、固定延迟、OpenAPI**|
 |任务类型|内置 Java|内置 Java、GLUE Java、Shell、Python 等脚本|内置 Java、外置 Java（FatJar）、Shell、Python 等脚本|**内置 Java、外置 Java（容器）、Shell、Python 等脚本**|

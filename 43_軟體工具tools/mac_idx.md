@@ -1,6 +1,10 @@
 [[arc - browser]]
 
 
+chrome go up and down setting
+![[Pasted image 20250128112544.png]]
+
+
 
 cleanShotX shotkey bk
 ![[CleanShot 2025-01-23 at 10.41.09@2x.png]]

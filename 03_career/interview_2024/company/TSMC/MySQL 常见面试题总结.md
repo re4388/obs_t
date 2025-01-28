@@ -401,7 +401,6 @@ MySQL 日志常见的面试题有：
 上诉问题的答案可以在[《Java 面试指北》(付费)](https://javaguide.cn/zhuanlan/java-mian-shi-zhi-bei.html) 的 **「技术面试题篇」** 中找到。
 
 or see
-- [x] [[介紹 MySQL 的 binlog, redo log, undo log]]
 - [ ] [MySQL ⽇志（Redolog Undolog Binlog）](https://chenxinyi.top/2022/07/19/MySQL%E2%BD%87%E5%BF%97%EF%BC%88Redolog%20Undolog%20Binlog%EF%BC%89/)
 
 ## [MySQL 事务](https://javaguide.cn/database/mysql/mysql-questions-01.html#mysql-%E4%BA%8B%E5%8A%A1)
