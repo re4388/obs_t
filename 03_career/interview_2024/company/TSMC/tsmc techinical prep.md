@@ -180,7 +180,7 @@ Java 版本特性 
 
 
 ## MySQL
-- [ ] [[MySQL 高性能优化规范建议总结]]
+- [x] [[MySQL 高性能优化规范建议总结]]
 	- [ ] [技术同学必会的 MySQL 设计规约，都是惨痛的教训](https://mp.weixin.qq.com/s/XC8e5iuQtfsrEOERffEZ-Q)
 	- [ ] [聊聊数据库建表的 15 个小技巧](https://mp.weixin.qq.com/s/NM-aHaW6TXrnO6la6Jfl5A)
 - [ ] [[MySQL 常见面试题总结]]

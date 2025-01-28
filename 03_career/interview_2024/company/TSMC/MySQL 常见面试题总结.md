@@ -50,15 +50,22 @@ MySQL 主要具有下面这些优点：
 4. 开箱即用，操作简单，维护成本低。
 5. 兼容性好，支持常见的操作系统，支持多种开发语言。
 6. 社区活跃，生态完善。
-7. 事务支持优秀， InnoDB 存储引擎默认使用 REPEATABLE-READ 并不会有任何性能损失，并且，InnoDB 实现的 REPEATABLE-READ 隔离级别其实是可以解决幻读问题发生的。
-8. 支持分库分表、读写分离、高可用。
+7. 事务支持优秀， InnoDB 存储引擎默认使用 REPEATABLE-READ 并不会有任何性能损失，**并且，InnoDB 实现的 REPEATABLE-READ 隔离级别其实是可以解决幻读问题发生的**。???? how and really??
+8. 支持分库分表、读写分离、高可用。 how ???
 
 ## [MySQL 字段类型](https://javaguide.cn/database/mysql/mysql-questions-01.html#mysql-%E5%AD%97%E6%AE%B5%E7%B1%BB%E5%9E%8B)
 
 MySQL 字段类型可以简单分为三大类：
 
-- **数值类型**：整型（TINYINT、SMALLINT、MEDIUMINT、INT 和 BIGINT）、浮点型（FLOAT 和 DOUBLE）、定点型（DECIMAL）
-- **字符串类型**：CHAR、VARCHAR、TINYTEXT、TEXT、MEDIUMTEXT、LONGTEXT、TINYBLOB、BLOB、MEDIUMBLOB 和 LONGBLOB 等，最常用的是 CHAR 和 VARCHAR。
+- **数值类型**：
+	- 整型（TINYINT、SMALLINT、MEDIUMINT、INT 和 BIGINT）
+	- 浮点型（FLOAT 和 DOUBLE）
+	- 定点型（DECIMAL）
+- **字符串类型**：
+	- CHAR、VARCHAR
+	- TINYTEXT、TEXT、MEDIUMTEXT、LONGTEXT、TINYBLOB
+	- BLOB、MEDIUMBLOB 和 LONGBLOB 等
+	- 最常用的是 CHAR 和 VARCHAR。
 - **日期时间类型**：YEAR、TIME、DATE、DATETIME 和 TIMESTAMP 等。
 
 下面这张图不是我画的，忘记是从哪里保存下来的了，总结的还蛮不错的。
