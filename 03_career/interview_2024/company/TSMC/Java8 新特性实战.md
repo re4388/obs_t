@@ -15,7 +15,7 @@ interface 的设计初衷是面向抽象，提高扩展性。这也留有一点�
 
 我们来看一个实际的例子。
 
-```
+```java
 public interface InterfaceNew {
     static void sm() {
         System.out.println("interface提供的方式实现");
@@ -43,7 +43,7 @@ public interface InterfaceNew1 {
 
 如果有一个类既实现了 `InterfaceNew` 接口又实现了 `InterfaceNew1` 接口，它们都有 `def()`，并且 `InterfaceNew` 接口和 `InterfaceNew1` 接口没有继承关系的话，这时就必须重写 `def()`。不然的话，编译的时候就会报错。
 
-```
+```java
 public class InterfaceNewImpl implements InterfaceNew , InterfaceNew1{
     public static void main(String[] args) {
         InterfaceNewImpl interfaceNew = new InterfaceNewImpl();
@@ -113,7 +113,7 @@ public class InterfaceNewImpl implements InterfaceNew , InterfaceNew1{
 
 **1.`Runnable` 接口**
 
-```
+```java
 new Thread(new Runnable() {
             @Override
             public void run() {
@@ -126,7 +126,7 @@ new Thread(() -> System.out.println("It's a lambda function!")).start();
 
 **2.`Comparator` 接口**
 
-```
+```java
 List<Integer> strings = Arrays.asList(1, 2, 3);
 
 Collections.sort(strings, new Comparator<Integer>() {
@@ -144,7 +144,7 @@ Collections.sort(strings, comparator);
 
 **3.`Listener` 接口**
 
-```
+```java
 JButton button = new JButton();
 button.addItemListener(new ItemListener() {
 @Override
@@ -160,7 +160,7 @@ button.addItemListener(e -> e.getItem());
 
 上面的 3 个例子是我们在开发过程中最常见的，从中也能体会到 Lambda 带来的便捷与清爽。它只保留实际用到的代码，把无用代码全部省略。那它对接口有没有要求呢？我们发现这些匿名内部类只重写了接口的一个方法，当然也只有一个方法须要重写。这就是我们上文提到的**函数式接口**，也就是说只要方法的参数是函数式接口都可以用 Lambda 表达式。
 
-```
+```java
 @FunctionalInterface
 public interface Comparator<T>{}
 
@@ -170,7 +170,7 @@ public interface Runnable{}
 
 我们自定义一个函数式接口
 
-```
+```java
 @FunctionalInterface
 public interface LambdaInterface {
  void f();
@@ -189,7 +189,7 @@ public class LambdaClass {
 
 #### [集合迭代](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E9%9B%86%E5%90%88%E8%BF%AD%E4%BB%A3)
 
-```
+```java
 void lamndaFor() {
         List<String> strings = Arrays.asList("1", "2", "3");
         //传统foreach
@@ -210,7 +210,7 @@ void lamndaFor() {
 
 Java 8 允许使用 `::` 关键字来传递方法或者构造函数引用，无论如何，表达式返回的类型必须是 functional-interface。
 
-```
+```java
 public class LambdaClassSuper {
     LambdaInterface sf(){
         return null;
@@ -245,7 +245,7 @@ public class LambdaClass extends LambdaClassSuper {
 
 #### [访问变量](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E8%AE%BF%E9%97%AE%E5%8F%98%E9%87%8F)
 
-```
+```java
 int i = 0;
 Collections.sort(strings, (Integer o1, Integer o2) -> o1 - i);
 //i =3;
@@ -270,7 +270,7 @@ java 新增了 `java.util.stream` 包，它和之前的流大同小异。之�
 
 接下来我们看 `java.util.stream.Stream` 常用方法
 
-```
+```java
 /**
 * 返回一个串行流
 */
@@ -374,7 +374,7 @@ public static <T> Stream<T> concat(Stream<? extends T> a, Stream<? extends T> b)
 
 本文列出 `Stream` 具有代表性的方法之使用，更多的使用方法还是要看 Api。
 
-```
+```java
 @Test
 public void test() {
   List<String> strings = Arrays.asList("abc", "def", "gkh", "abc");
@@ -434,7 +434,7 @@ public void test() {
 
 我们下面分解一下 `filter` 方法。
 
-```
+```java
 @Test
 public void laziness(){
   List<String> strings = Arrays.asList("abc", "def", "gkh", "abc");
@@ -461,7 +461,7 @@ Predicate.test 执行
 
 上面都是串行 `Stream` 的实例。并行 `parallelStream` 在使用方法上和串行一样。主要区别是 `parallelStream` 可多线程执行，是基于 ForkJoin 框架实现的，有时间大家可以了解一下 `ForkJoin` 框架和 `ForkJoinPool`。这里可以简单的理解它是通过线程池来实现的，这样就会涉及到线程安全，线程消耗等问题。下面我们通过代码来体验一下并行流的多线程执行。
 
-```
+```java
 @Test
 public void parallelStreamTest(){
    List<Integer> numbers = Arrays.asList(1, 2, 5, 4);
@@ -511,7 +511,7 @@ ForkJoinPool.commonPool-worker-9>>2
 
 假设有一个 `Zoo` 类，里面有个属性 `Dog`，需求要获取 `Dog` 的 `age`。
 
-```
+```java
 class Zoo {
    private Dog dog;
 }
@@ -523,7 +523,7 @@ class Dog {
 
 传统解决 NPE 的办法如下：
 
-```
+```java
 Zoo zoo = getZoo();
 if(zoo != null){
    Dog dog = zoo.getDog();
@@ -538,7 +538,7 @@ if(zoo != null){
 
 `Optional` 是这样的实现的：
 
-```
+```java
 Optional.ofNullable(zoo).map(o -> o.getDog()).map(d -> d.getAge()).ifPresent(age ->
     System.out.println(age)
 );
@@ -550,7 +550,7 @@ Optional.ofNullable(zoo).map(o -> o.getDog()).map(d -> d.getAge()).ifPresent(age
 
 上例中 `Optional.ofNullable` 是其中一种创建 Optional 的方式。我们先看一下它的含义和其他创建 Optional 的源码方法。
 
-```
+```java
 /**
 * Common instance for {@code empty()}. 全局EMPTY对象
 */
@@ -604,7 +604,7 @@ public static <T> T requireNonNull(T obj) {
 
 在实际应用场景中，如果 `map` 返回的是数组，那么最后得到的是一个二维数组，使用 `flatMap` 就是为了将这个二维数组展平变成一个一维数组。
 
-```
+```java
 public class MapAndFlatMapExample {
     public static void main(String[] args) {
         List<String[]> listOfArrays = Arrays.asList(
@@ -632,7 +632,7 @@ public class MapAndFlatMapExample {
 
 运行结果:
 
-```
+```java
 Using map:
 [[APPLE, BANANA, CHERRY], [ORANGE, GRAPE, PEAR], [KIWI, MELON, PINEAPPLE]]
 
@@ -646,7 +646,7 @@ Using flatMap:
 
 下面是一个对比的示例代码：
 
-```
+```java
 public static void main(String[] args) {
         int userId = 1;
 
@@ -683,7 +683,7 @@ public static void main(String[] args) {
 
 ### [判断 value 是否为 null](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E5%88%A4%E6%96%AD-value-%E6%98%AF%E5%90%A6%E4%B8%BA-null)
 
-```
+```java
 /**
 * value是否为null
 */
@@ -701,7 +701,7 @@ public void ifPresent(Consumer<? super T> consumer) {
 
 ### [获取 value](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E8%8E%B7%E5%8F%96-value)
 
-```
+```java
 /**
 * Return the value if present, otherwise invoke {@code other} and return
 * the result of that invocation.
@@ -741,7 +741,7 @@ public T get() {
 
 ### [过滤值](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E8%BF%87%E6%BB%A4%E5%80%BC)
 
-```
+```java
 /**
 * 1. 如果是empty返回empty
 * 2. predicate.test(value)==true 返回this，否则返回empty
@@ -759,7 +759,7 @@ public Optional<T> filter(Predicate<? super T> predicate) {
 
 看完 `Optional` 源码，`Optional` 的方法真的非常简单，值得注意的是如果坚决不想看见 `NPE`，就不要用 `of()`、 `get()`、`flatMap(..)`。最后再综合用一下 `Optional` 的高频方法。
 
-```
+```java
 Optional.ofNullable(zoo).map(o -> o.getDog()).map(d -> d.getAge()).filter(v->v==1).orElse(3);
 ```
 
@@ -778,7 +778,7 @@ Optional.ofNullable(zoo).map(o -> o.getDog()).map(d -> d.getAge()).filter(v->v==
 
 `java.util.Date` 既包含日期又包含时间，而 `java.time` 把它们进行了分离
 
-```
+```java
 LocalDateTime.class //日期+时间 format: yyyy-MM-ddTHH:mm:ss.SSS
 LocalDate.class //日期 format: yyyy-MM-dd
 LocalTime.class //时间 format: HH:mm:ss
@@ -788,7 +788,7 @@ LocalTime.class //时间 format: HH:mm:ss
 
 **Java 8 之前:**
 
-```
+```java
 public void oldFormat(){
     Date now = new Date();
     //format yyyy-MM-dd
@@ -810,7 +810,7 @@ public void oldFormat(){
 
 **Java 8 之后:**
 
-```
+```java
 public void newFormat(){
     //format yyyy-MM-dd
     LocalDate date = LocalDate.now();
@@ -832,7 +832,7 @@ public void newFormat(){
 
 **Java 8 之前:**
 
-```
+```java
 //已弃用
 Date date = new Date("2021-01-26");
 //替换为
@@ -842,7 +842,7 @@ Date date1 = sdf.parse("2021-01-26");
 
 **Java 8 之后:**
 
-```
+```java
 LocalDate date = LocalDate.of(2021, 1, 26);
 LocalDate.parse("2021-01-26");
 
@@ -861,7 +861,7 @@ LocalTime.parse("12:12:22");
 
 **Java 8 之前:**
 
-```
+```java
 public void afterDay(){
      //一周后的日期
      SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd");
@@ -885,7 +885,7 @@ public void afterDay(){
 
 **Java 8 之后:**
 
-```
+```java
 public void pushWeek(){
      //一周后的日期
      LocalDate localDate = LocalDate.now();
@@ -918,7 +918,7 @@ public void pushWeek(){
 
 **Java 8 之前:**
 
-```
+```java
 public void getDay() {
 
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
@@ -947,7 +947,7 @@ public void getDay() {
 
 **Java 8 之后:**
 
-```
+```java
 public void getDayNew() {
     LocalDate today = LocalDate.now();
     //获取当前月第一天：
@@ -981,7 +981,7 @@ public void getDayNew() {
 
 `java.util.Date` 对象实质上存的是 1970 年 1 月 1 日 0 点（ GMT）至 Date 对象所表示时刻所经过的毫秒数。也就是说不管在哪个时区 new Date，它记录的毫秒数都一样，和时区无关。但在使用上应该把它转换成当地时间，这就涉及到了时间的国际化。`java.util.Date` 本身并不支持国际化，需要借助 `TimeZone`。
 
-```
+```java
 //北京时间：Wed Jan 27 14:05:29 CST 2021
 Date date = new Date();
 
@@ -1002,7 +1002,7 @@ System.out.println(date);
 
 在新特性中引入了 `java.time.ZonedDateTime` 来表示带时区的时间。它可以看成是 `LocalDateTime + ZoneId`。
 
-```
+```java
 //当前时区时间
 ZonedDateTime zonedDateTime = ZonedDateTime.now();
 System.out.println("当前时区时间: " + zonedDateTime);

@@ -11,7 +11,7 @@ Java 8 使我们能够通过使用 `default` 关键字向接口添加非抽象
 
 第一个例子：
 
-```
+```java
 interface Formula{
 
     double calculate(int a);
@@ -25,7 +25,7 @@ interface Formula{
 
 Formula 接口中除了抽象方法计算接口公式还定义了默认方法 `sqrt`。 实现该接口的类只需要实现抽象方法 `calculate`。 默认方法 `sqrt` 可以直接使用。当然你也可以直接通过接口创建对象，然后实现接口中的默认方法就可以了，我们通过代码演示一下这种方式。
 
-```
+```java
 public class Main {
 
   public static void main(String[] args) {
@@ -53,7 +53,7 @@ formula 是作为匿名对象实现的。该代码非常容易理解，6 行代�
 
 首先看看在老版本的 Java 中是如何排列字符串的：
 
-```
+```java
 List<String> names = Arrays.asList("peter", "anna", "mike", "xenia");
 
 Collections.sort(names, new Comparator<String>() {
@@ -68,7 +68,7 @@ Collections.sort(names, new Comparator<String>() {
 
 在 Java 8 中你就没必要使用这种传统的匿名对象的方式了，Java 8 提供了更简洁的语法，lambda 表达式：
 
-```
+```java
 Collections.sort(names, (String a, String b) -> {
     return b.compareTo(a);
 });
@@ -76,13 +76,13 @@ Collections.sort(names, (String a, String b) -> {
 
 可以看出，代码变得更短且更具有可读性，但是实际上还可以写得更短：
 
-```
+```java
 Collections.sort(names, (String a, String b) -> b.compareTo(a));
 ```
 
 对于函数体只有一行代码的，你可以去掉大括号 {} 以及 return 关键字，但是你还可以写得更短点：
 
-```
+```java
 names.sort((a, b) -> b.compareTo(a));
 ```
 
@@ -98,14 +98,14 @@ Java 语言设计者们投入了大量精力来思考如何使现有的函数友
 
 示例：
 
-```
+```java
 @FunctionalInterface
 public interface Converter<F, T> {
   T convert(F from);
 }
 ```
 
-```
+```java
     // TODO 将数字字符串转换为整数类型
     Converter<String, Integer> converter = (from) -> Integer.valueOf(from);
     Integer converted = converter.convert("123");
@@ -118,7 +118,7 @@ public interface Converter<F, T> {
 
 前一节中的代码还可以通过静态方法引用来表示：
 
-```
+```java
     Converter<String, Integer> converter = Integer::valueOf;
     Integer converted = converter.convert("123");
     System.out.println(converted.getClass());   //class java.lang.Integer
@@ -126,7 +126,7 @@ public interface Converter<F, T> {
 
 Java 8 允许您通过`::` 关键字传递方法或构造函数的引用。 上面的示例显示了如何引用静态方法。 但我们也可以引用对象方法：
 
-```
+```java
 class Something {
     String startsWith(String s) {
         return String.valueOf(s.charAt(0));
@@ -134,7 +134,7 @@ class Something {
 }
 ```
 
-```
+```java
 Something something = new Something();
 Converter<String, String> converter = something::startsWith;
 String converted = converter.convert("Java");
@@ -143,7 +143,7 @@ System.out.println(converted);    // "J"
 
 接下来看看构造函数是如何使用`::` 关键字来引用的，首先我们定义一个包含多个构造函数的简单类：
 
-```
+```java
 class Person {
     String firstName;
     String lastName;
@@ -159,7 +159,7 @@ class Person {
 
 接下来我们指定一个用来创建 Person 对象的对象工厂接口：
 
-```
+```java
 interface PersonFactory<P extends Person> {
     P create(String firstName, String lastName);
 }
@@ -167,7 +167,7 @@ interface PersonFactory<P extends Person> {
 
 这里我们使用构造函数引用来将他们关联起来，而不是手动实现一个完整的工厂：
 
-```
+```java
 PersonFactory<Person> personFactory = Person::new;
 Person person = personFactory.create("Peter", "Parker");
 ```
@@ -180,7 +180,7 @@ Person person = personFactory.create("Peter", "Parker");
 
 我们可以直接在 lambda 表达式中访问外部的局部变量：
 
-```
+```java
 final int num = 1;
 Converter<Integer, String> stringConverter =
         (from) -> String.valueOf(from + num);
@@ -190,7 +190,7 @@ stringConverter.convert(2);     // 3
 
 但是和匿名对象不同的是，这里的变量 num 可以不用声明为 final，该代码同样正确：
 
-```
+```java
 int num = 1;
 Converter<Integer, String> stringConverter =
         (from) -> String.valueOf(from + num);
@@ -200,7 +200,7 @@ stringConverter.convert(2);     // 3
 
 不过这里的 num 必须不可被后面的代码修改（即隐性的具有 final 的语义），例如下面的就无法编译：
 
-```
+```java
 int num = 1;
 Converter<Integer, String> stringConverter =
         (from) -> String.valueOf(from + num);
@@ -211,7 +211,7 @@ num = 3;//在lambda表达式中试图修改num同样是不允许的。
 
 与局部变量相比，我们在 lambda 表达式中对实例字段和静态变量都有读写访问权限。 该行为和匿名对象是一致的。
 
-```
+```java
 class Lambda4 {
     static int outerStaticNum;
     int outerNum;
@@ -236,7 +236,7 @@ class Lambda4 {
 
 无法从 lambda 表达式中访问默认方法，故以下代码无法编译：
 
-```
+```java
 Formula formula = (a) -> sqrt(a * 100);
 ```
 
@@ -252,7 +252,7 @@ Predicate 接口是只有一个参数的返回布尔类型值的 **断言型**�
 
 **译者注：** Predicate 接口源码如下
 
-```
+```java
 package java.util.function;
 import java.util.Objects;
 
@@ -286,8 +286,8 @@ public interface Predicate<T> {
 
 示例：
 
-```
-Predicate<String> predicate = (s) -> s.length() > 0;
+```java
+predicate<String> predicate = (s) -> s.length() > 0;
 
 predicate.test("foo");              // true
 predicate.negate().test("foo");     // false
@@ -305,7 +305,7 @@ Function 接口接受一个参数并生成结果。默认方法可用于将多�
 
 **译者注：** Function 接口源码如下
 
-```
+```java
 
 package java.util.function;
 
@@ -333,7 +333,7 @@ public interface Function<T, R> {
 }
 ```
 
-```
+```java
 Function<String, Integer> toInteger = Integer::valueOf;
 Function<String, String> backToString = toInteger.andThen(String::valueOf);
 backToString.apply("123");     // "123"
@@ -343,8 +343,8 @@ backToString.apply("123");     // "123"
 
 Supplier 接口产生给定泛型类型的结果。 与 Function 接口不同，Supplier 接口不接受参数。
 
-```
-Supplier<Person> personSupplier = Person::new;
+```java
+supplier<Person> personSupplier = Person::new;
 personSupplier.get();   // new Person
 ```
 
@@ -352,7 +352,7 @@ personSupplier.get();   // new Person
 
 Consumer 接口表示要对单个输入参数执行的操作。
 
-```
+```java
 Consumer<Person> greeter = (p) -> System.out.println("Hello, " + p.firstName);
 greeter.accept(new Person("Luke", "Skywalker"));
 ```
@@ -361,7 +361,7 @@ greeter.accept(new Person("Luke", "Skywalker"));
 
 Comparator 是老 Java 中的经典接口， Java 8 在此之上添加了多种默认方法：
 
-```
+```java
 Comparator<Person> comparator = (p1, p2) -> p1.firstName.compareTo(p2.firstName);
 
 Person p1 = new Person("John", "Doe");
@@ -379,7 +379,7 @@ Optional 是一个简单的容器，其值可能是 null 或者不是 null。在
 
 译者注：示例中每个方法的作用已经添加。
 
-```
+```java
 //of()：为非null的值创建一个Optional
 Optional<String> optional = Optional.of("bam");
 // isPresent()：如果值存在返回true，否则返回false
@@ -400,7 +400,7 @@ optional.ifPresent((s) -> System.out.println(s.charAt(0)));     // "b"
 
 首先看看 Stream 是怎么用，首先创建实例代码需要用到的数据 List：
 
-```
+```java
 List<String> stringList = new ArrayList<>();
 stringList.add("ddd2");
 stringList.add("aaa2");
@@ -418,7 +418,7 @@ Java 8 扩展了集合类，可以通过 Collection.stream () 或者 Collection.
 
 过滤通过一个 predicate 接口来过滤并只保留符合条件的元素，该操作属于**中间操作**，所以我们可以在过滤后的结果来应用其他 Stream 操作（比如 forEach）。forEach 需要一个函数来对过滤后的元素依次执行。forEach 是一个最终操作，所以我们不能在 forEach 之后来执行其他 Stream 操作。
 
-```
+```java
         // 测试 Filter(过滤)
         stringList
                 .stream()
@@ -432,7 +432,7 @@ forEach 是为 Lambda 而设计的，保持了最紧凑的风格。而且 Lambda
 
 排序是一个 **中间操作**，返回的是排序好后的 Stream。**如果你不指定一个自定义的 Comparator 则会使用默认排序。**
 
-```
+```java
         // 测试 Sort (排序)
         stringList
                 .stream()
@@ -443,7 +443,7 @@ forEach 是为 Lambda 而设计的，保持了最紧凑的风格。而且 Lambda
 
 需要注意的是，排序只创建了一个排列好后的 Stream，而不会影响原有的数据源，排序之后原数据 stringList 是不会被修改的：
 
-```
+```java
     System.out.println(stringList);// ddd2, aaa2, bbb1, aaa1, bbb3, ccc, bbb2, ddd1
 ```
 
@@ -453,7 +453,7 @@ forEach 是为 Lambda 而设计的，保持了最紧凑的风格。而且 Lambda
 
 下面的示例展示了将字符串转换为大写字符串。你也可以通过 map 来将对象转换成其他类型，map 返回的 Stream 类型是根据你 map 传递进去的函数的返回值决定的。
 
-```
+```java
         // 测试 Map 操作
         stringList
                 .stream()
@@ -466,7 +466,7 @@ forEach 是为 Lambda 而设计的，保持了最紧凑的风格。而且 Lambda
 
 Stream 提供了多种匹配操作，允许检测指定的 Predicate 是否匹配整个 Stream。所有的匹配操作都是 **最终操作** ，并返回一个 boolean 类型的值。
 
-```
+```java
         // 测试 Match (匹配)操作
         boolean anyStartsWithA =
                 stringList
@@ -493,7 +493,7 @@ Stream 提供了多种匹配操作，允许检测指定的 Predicate 是否匹�
 
 计数是一个 **最终操作**，返回 Stream 中元素的个数，**返回值类型是 long**。
 
-```
+```java
       //测试 Count (计数)操作
         long startsWithB =
                 stringList
@@ -507,7 +507,7 @@ Stream 提供了多种匹配操作，允许检测指定的 Predicate 是否匹�
 
 这是一个 **最终操作** ，允许通过指定的函数来将 stream 中的多个元素规约为一个元素，规约后的结果是通过 Optional 接口表示的：
 
-```
+```java
         //测试 Reduce (规约)操作
         Optional<String> reduced =
                 stringList
@@ -520,7 +520,7 @@ Stream 提供了多种匹配操作，允许检测指定的 Predicate 是否匹�
 
 **译者注：** 这个方法的主要作用是把 Stream 元素组合起来。它提供一个起始值（种子），然后依照运算规则（BinaryOperator），和前面 Stream 的第一个、第二个、第 n 个元素组合。从这个意义上说，字符串拼接、数值的 sum、min、max、average 都是特殊的 reduce。例如 Stream 的 sum 就相当于 `Integer sum = integers.reduce(0, (a, b) -> a+b);` 也有没有起始值的情况，这时会把 Stream 的前面两个元素组合起来，返回的是 Optional。
 
-```
+```java
 // 字符串连接，concat = "ABCD"
 String concat = Stream.of("A", "B", "C", "D").reduce("", String::concat);
 // 求最小值，minValue = -3.0
@@ -545,7 +545,7 @@ concat = Stream.of("a", "B", "c", "D", "e", "F").
 
 首先我们创建一个没有重复元素的大表：
 
-```
+```java
 int max = 1000000;
 List<String> values = new ArrayList<>(max);
 for (int i = 0; i < max; i++) {
@@ -558,7 +558,7 @@ for (int i = 0; i < max; i++) {
 
 ### [Sequential Sort (串行排序)](https://javaguide.cn/java/new-features/java8-tutorial-translate.html#sequential-sort-%E4%B8%B2%E8%A1%8C%E6%8E%92%E5%BA%8F)
 
-```
+```java
 //串行排序
 long t0 = System.nanoTime();
 long count = values.stream().sorted().count();
@@ -570,14 +570,13 @@ long millis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
 System.out.println(String.format("sequential sort took: %d ms", millis));
 ```
 
-```
-1000000
+```java
 sequential sort took: 709 ms//串行排序所用的时间
 ```
 
 ### [Parallel Sort (并行排序)](https://javaguide.cn/java/new-features/java8-tutorial-translate.html#parallel-sort-%E5%B9%B6%E8%A1%8C%E6%8E%92%E5%BA%8F)
 
-```
+```java
 //并行排序
 long t0 = System.nanoTime();
 
@@ -590,8 +589,7 @@ long millis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
 System.out.println(String.format("parallel sort took: %d ms", millis));
 ```
 
-```
-1000000
+```java
 parallel sort took: 475 ms//并行排序所用的时间
 ```
 
@@ -603,7 +601,7 @@ parallel sort took: 475 ms//并行排序所用的时间
 
 此外，Maps 支持各种新的和有用的方法来执行常见任务。
 
-```
+```java
 Map<Integer, String> map = new HashMap<>();
 
 for (int i = 0; i < 10; i++) {
@@ -617,8 +615,8 @@ map.forEach((id, val) -> System.out.println(val));//val0 val1 val2 val3 val4 val
 
 此示例显示如何使用函数在 map 上计算代码：
 
-```
-map.computeIfPresent(3, (num, val) -> val + num);
+```java
+Map.computeIfPresent(3, (num, val) -> val + num);
 map.get(3);             // val33
 
 map.computeIfPresent(9, (num, val) -> null);
@@ -633,7 +631,7 @@ map.get(3);             // val33
 
 接下来展示如何在 Map 里删除一个键值全都匹配的项：
 
-```
+```java
 map.remove(3, "val3");
 map.get(3);             // val33
 map.remove(3, "val33");
@@ -642,13 +640,13 @@ map.get(3);             // null
 
 另外一个有用的方法：
 
-```
+```java
 map.getOrDefault(42, "not found");  // not found
 ```
 
 对 Map 的元素做合并也变得很容易了：
 
-```
+```java
 map.merge(9, "val9", (value, newValue) -> value.concat(newValue));
 map.get(9);             // val9
 map.merge(9, "concat", (value, newValue) -> value.concat(newValue));
@@ -674,7 +672,7 @@ Java 8 在 `java.time` 包下包含一个全新的日期和时间 API。新的
 
 Clock 类提供了访问当前日期和时间的方法，Clock 是时区敏感的，可以用来取代 `System.currentTimeMillis()` 来获取当前的微秒数。某一个特定的时间点也可以使用 `Instant` 类来表示，`Instant` 类也可以用来创建旧版本的 `java.util.Date` 对象。
 
-```
+```java
 Clock clock = Clock.systemDefaultZone();
 long millis = clock.millis();
 System.out.println(millis);//1552379579043
@@ -688,7 +686,7 @@ System.out.println(legacyDate);//Tue Mar 12 16:32:59 CST 2019
 
 在新 API 中时区使用 ZoneId 来表示。时区可以很方便的使用静态方法 of 来获取到。 抽象类 `ZoneId`（在 `java.time` 包中）表示一个区域标识符。 它有一个名为 `getAvailableZoneIds` 的静态方法，它返回所有区域标识符。
 
-```
+```java
 //输出所有区域标识符
 System.out.println(ZoneId.getAvailableZoneIds());
 
@@ -702,7 +700,7 @@ System.out.println(zone2.getRules());// ZoneRules[currentStandardOffset=-03:00]
 
 LocalTime 定义了一个没有时区信息的时间，例如 晚上 10 点或者 17:30:15。下面的例子使用前面代码创建的时区创建了两个本地时间。之后比较时间并以小时和分钟为单位计算两个时间的时间差：
 
-```
+```java
 LocalTime now1 = LocalTime.now(zone1);
 LocalTime now2 = LocalTime.now(zone2);
 System.out.println(now1.isBefore(now2));  // false
@@ -716,7 +714,7 @@ System.out.println(minutesBetween);     // -239
 
 LocalTime 提供了多种工厂方法来简化对象的创建，包括解析时间字符串.
 
-```
+```java
 LocalTime late = LocalTime.of(23, 59, 59);
 System.out.println(late);       // 23:59:59
 DateTimeFormatter germanFormatter =
@@ -732,7 +730,7 @@ System.out.println(leetTime);   // 13:37
 
 LocalDate 表示了一个确切的日期，比如 2014-03-11。该对象值是不可变的，用起来和 LocalTime 基本一致。下面的例子展示了如何给 Date 对象加减天 / 月 / 年。另外要注意的是这些对象是不可变的，操作返回的总是一个新实例。
 
-```
+```java
 LocalDate today = LocalDate.now();//获取现在的日期
 System.out.println("今天的日期: "+today);//2019-03-12
 LocalDate tomorrow = today.plus(1, ChronoUnit.DAYS);
@@ -746,7 +744,7 @@ System.out.println("今天是周几:"+dayOfWeek);//TUESDAY
 
 从字符串解析一个 LocalDate 类型和解析 LocalTime 一样简单，下面是使用 `DateTimeFormatter` 解析字符串的例子：
 
-```
+```java
     String str1 = "2014==04==12 01时06分09秒";
         // 根据需要解析的日期、时间字符串定义解析所用的格式器
         DateTimeFormatter fomatter1 = DateTimeFormatter
@@ -764,7 +762,7 @@ System.out.println("今天是周几:"+dayOfWeek);//TUESDAY
 
 再来看一个使用 `DateTimeFormatter` 格式化日期的示例
 
-```
+```java
 LocalDateTime rightNow=LocalDateTime.now();
 String date=DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(rightNow);
 System.out.println(date);//2019-03-12T16:26:48.29
@@ -776,7 +774,7 @@ System.out.println(formatter.format(rightNow));//2019-03-12 16:26:48
 
 跨年导致日期显示错误示例：
 
-```
+```java
 LocalDateTime rightNow = LocalDateTime.of(2020, 12, 31, 12, 0, 0);
 String date= DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(rightNow);
 // 2020-12-31T12:00:00
@@ -798,7 +796,7 @@ System.out.println(formatterOfYyyy.format(rightNow));
 
 LocalDateTime 同时表示了时间和日期，相当于前两节内容合并到一个对象上了。LocalDateTime 和 LocalTime 还有 LocalDate 一样，都是不可变的。LocalDateTime 提供了一些能访问具体字段的方法。
 
-```
+```java
 LocalDateTime sylvester = LocalDateTime.of(2014, Month.DECEMBER, 31, 23, 59, 59);
 
 DayOfWeek dayOfWeek = sylvester.getDayOfWeek();
@@ -813,7 +811,7 @@ System.out.println(minuteOfDay);    // 1439
 
 只要附加上时区信息，就可以将其转换为一个时间点 Instant 对象，Instant 时间点对象可以很容易的转换为老式的 `java.util.Date`。
 
-```
+```java
 Instant instant = sylvester
         .atZone(ZoneId.systemDefault())
         .toInstant();
@@ -824,7 +822,7 @@ System.out.println(legacyDate);     // Wed Dec 31 23:59:59 CET 2014
 
 格式化 LocalDateTime 和格式化时间和日期一样的，除了使用预定义好的格式外，我们也可以自己定义格式：
 
-```
+```java
 DateTimeFormatter formatter =
     DateTimeFormatter
         .ofPattern("MMM dd, yyyy - HH:mm");
@@ -841,7 +839,7 @@ System.out.println(string);     // Nov 03, 2014 - 07:13
 在 Java 8 中支持多重注解了，先看个例子来理解一下是什么意思。  
 首先定义一个包装类 Hints 注解用来放置一组具体的 Hint 注解：
 
-```
+```java
 @Retention(RetentionPolicy.RUNTIME)
 @interface Hints {
     Hint[] value();
@@ -856,7 +854,7 @@ Java 8 允许我们把同一个类型的注解使用多次，只需要给该注�
 
 例 1: 使用包装类当容器来存多个注解（老方法）
 
-```
+```java
 @Hints({@Hint("hint1"), @Hint("hint2")})
 class Person {}
 ```
@@ -871,7 +869,7 @@ class Person {}
 
 第二个例子里 java 编译器会隐性的帮你定义好 @Hints 注解，了解这一点有助于你用反射来获取这些信息：
 
-```
+```java
 Hint hint = Person.class.getAnnotation(Hint.class);
 System.out.println(hint);                   // null
 Hints hints1 = Person.class.getAnnotation(Hints.class);
@@ -884,7 +882,7 @@ System.out.println(hints2.length);          // 2
 即便我们没有在 `Person` 类上定义 `@Hints` 注解，我们还是可以通过 `getAnnotation(Hints.class)` 来获取 `@Hints` 注解，更加方便的方法是使用 `getAnnotationsByType` 可以直接获取到所有的 `@Hint` 注解。  
 另外 Java 8 的注解还增加到两种新的 target 上了：
 
-```
+```java
 @Target({ElementType.TYPE_PARAMETER, ElementType.TYPE_USE})
 @interface MyAnnotation {}
 ```
