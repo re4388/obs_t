@@ -367,7 +367,7 @@ set global  query_cache_type=1;
 set global  query_cache_size=600000;
 ```
 
-查询缓存会在同样的查询条件和数据情况下，直接返回缓存中的结果。但需要注意的是，查询缓存的匹配条件非常严格，任何细微的差异都会导致缓存无法命中。这里的查询条件包括查询语句本身、当前使用的数据库、以及其他可能影响结果的因素，如客户端协议版本号等。
+查询缓存会在同样的查询条件和数据情况下，直接返回缓存中的结果。**但需要注意的是，查询缓存的匹配条件非常严格，任何细微的差异都会导致缓存无法命中**。这里的查询条件包括查询语句本身、当前使用的数据库、以及其他可能影响结果的因素，如客户端协议版本号等。
 
 **查询缓存不命中的情况：**
 
@@ -399,6 +399,11 @@ MySQL 日志常见的面试题有：
 - ……
 
 上诉问题的答案可以在[《Java 面试指北》(付费)](https://javaguide.cn/zhuanlan/java-mian-shi-zhi-bei.html) 的 **「技术面试题篇」** 中找到。
+
+or see
+- [ ] [MySQL ⽇志（Redolog Undolog Binlog）](https://chenxinyi.top/2022/07/19/MySQL%E2%BD%87%E5%BF%97%EF%BC%88Redolog%20Undolog%20Binlog%EF%BC%89/)
+- [ ] [undo log 与 redo log 原理分析](https://zhuanlan.zhihu.com/p/35574452)
+
 
 ![[100_attachements/18e5b3e320190c471b09547f989da158_MD5.png]]
 

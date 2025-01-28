@@ -184,8 +184,11 @@
   "active": "e4c80e7e81dc8a17",
   "lastOpenFiles": [
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "03_career/interview_2024/company/TSMC/MySQL 索引详解.md",
+    "11_db/mySQL idx.md",
     "03_career/interview_2024/company/TSMC/MySQL 常见面试题总结.md",
+    "03_career/interview_2024/company/TSMC/eded.md",
+    "03_career/interview_2024/company/TSMC/eded.md.edtz",
+    "03_career/interview_2024/company/TSMC/MySQL 索引详解.md",
     "03_career/interview_2024/company/TSMC/使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！.md",
     "03_career/interview_2024/company/TSMC/MySQL 高性能优化规范建议总结.md",
     "03_career/interview_2024/company/TSMC/Spring 事务详解.md",
@@ -207,12 +210,10 @@
     "03_career/interview_2024/company/TSMC/IoC & AOP 详解（快速搞懂）.md",
     "03_career/interview_2024/company/TSMC/Spring 中的设计模式详解.md",
     "03_career/interview_2024/company/TSMC/黑馬 基礎篇.md",
-    "03_career/interview_2024/company/TSMC/黑馬 框架篇.md",
     "100_attachements/Pasted image 20250127191135.png",
     "100_attachements/IMG-使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！-20250127180453910.png",
     "100_attachements/a620d59aa1baffc930776a2536315918_MD5.png",
     "03_career/interview_2024/company/TSMC/使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！.md.edtz",
-    "03_career/interview_2024/company/TSMC/SpringBoot 处理异常的几种常见姿势.md",
     "03_career/interview_2024/company/TSMC/SpringBoot 处理异常的几种常见姿势.md.edtz",
     "03_career/interview_2024/company/TSMC/一文搞懂如何在 Spring Boot 正确中使用 JPA.md.edtz",
     "100_attachements/Pasted image 20250127134728.png",
@@ -227,7 +228,6 @@
     "03_career/interview_2024/company/TSMC/数据脱敏方案总结.md.edtz",
     "03_career/interview_2024/company/TSMC/敏感词过滤方案总结.md.edtz",
     "03_career/interview_2024/company/TSMC/常见加密算法总结.md.edtz",
-    "03_career/interview_2024/company/TSMC/权限系统设计详解.md.edtz",
-    "03_career/interview_2024/company/TSMC/SSO 单点登录详解.md.edtz"
+    "03_career/interview_2024/company/TSMC/权限系统设计详解.md.edtz"
   ]
 }
