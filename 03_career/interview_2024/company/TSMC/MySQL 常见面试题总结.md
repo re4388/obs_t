@@ -86,9 +86,12 @@ MySQL 中的整数类型可以使用可选的 UNSIGNED 属性来表示不允许�
 
 ### [CHAR 和 VARCHAR 的区别是什么？](https://javaguide.cn/database/mysql/mysql-questions-01.html#char-%E5%92%8C-varchar-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88)
 
-CHAR 和 VARCHAR 是最常用到的字符串类型，两者的主要区别在于：**CHAR 是定长字符串，VARCHAR 是变长字符串。**
+CHAR 和 VARCHAR 是最常用到的字符串类型，两者的主要区别在于：
+**CHAR 是定长字符串
+VARCHAR 是变长字符串。**
 
-CHAR 在存储时会在右边填充空格以达到指定的长度，检索时会去掉空格；VARCHAR 在存储时需要使用 1 或 2 个额外字节记录字符串的长度，检索时不需要处理。
+CHAR 在存储时会在右边填充空格以达到指定的长度，检索时会去掉空格；
+VARCHAR 在存储时需要使用 1 或 2 个额外字节记录字符串的长度，检索时不需要处理。
 
 CHAR 更适合存储长度较短或者长度都差不多的字符串，例如 Bcrypt 算法、MD5 算法加密后的密码、身份证号码。VARCHAR 类型适合存储长度不确定或者差异较大的字符串，例如用户昵称、文章标题等。
 
@@ -98,9 +101,9 @@ CHAR (M) 和 VARCHAR (M) 的 M 都代表能够保存的字符数的最大值，�
 
 VARCHAR (100) 和 VARCHAR (10) 都是变长类型，表示能存储最多 100 个字符和 10 个字符。因此，VARCHAR (100) 可以满足更大范围的字符存储需求，有更好的业务拓展性。而 VARCHAR (10) 存储超过 10 个字符时，就需要修改表结构才可以。
 
-虽说 VARCHAR (100) 和 VARCHAR (10) 能存储的字符范围不同，但二者存储相同的字符串，所占用磁盘的存储空间其实是一样的，这也是很多人容易误解的一点。
+**虽说 VARCHAR (100) 和 VARCHAR (10) 能存储的字符范围不同，但二者存储相同的字符串，所占用磁盘的存储空间其实是一样的，这也是很多人容易误解的一点。**
 
-不过，VARCHAR (100) 会消耗更多的内存。这是因为 VARCHAR 类型在内存中操作时，通常会分配固定大小的内存块来保存值，即使用字符类型中定义的长度。例如在进行排序的时候，VARCHAR (100) 是按照 100 这个长度来进行的，也就会消耗更多内存。
+**不过，VARCHAR (100) 会消耗更多的内存**。这是因为 VARCHAR 类型在内存中操作时，通常会分配固定大小的内存块来保存值，即使用字符类型中定义的长度。例如在进行排序的时候，VARCHAR (100) 是按照 100 这个长度来进行的，也就会消耗更多内存。
 
 ### [DECIMAL 和 FLOAT/DOUBLE 的区别是什么？](https://javaguide.cn/database/mysql/mysql-questions-01.html#decimal-%E5%92%8C-float-double-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88)
 
@@ -130,7 +133,8 @@ BLOB 类型主要用于存储二进制大对象，例如图片、音视频等文
 |MEDIUMBLOB|0-16MB|二进制形式的长文本数据|
 |LONGBLOB|0-4GB|二进制形式的极大文本数据|
 
-在日常开发中，很少使用 TEXT 类型，但偶尔会用到，而 BLOB 类型则基本不常用。如果预期长度范围可以通过 VARCHAR 来满足，建议避免使用 TEXT。
+**如果预期长度范围可以通过 VARCHAR 来满足，建议避免使用 TEXT。**
+在日常开发中，很少使用 TEXT 类型，但偶尔会用到，而 BLOB 类型则基本不常用。
 
 数据库规范通常不推荐使用 BLOB 和 TEXT 类型，这两种类型具有一些缺点和限制，例如：
 
@@ -153,20 +157,22 @@ TIMESTAMP 只需要使用 4 个字节的存储空间，但是 DATETIME 需要耗
 
 关于两者的详细对比，请参考我写的 [MySQL 时间类型数据存储建议](https://javaguide.cn/database/mysql/some-thoughts-on-database-storage-time.html)。
 
-### [NULL 和 '' 的区别是什么？](https://javaguide.cn/database/mysql/mysql-questions-01.html#null-%E5%92%8C-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88)
+### [NULL 和 '' (空字符串) 的区别是什么？](https://javaguide.cn/database/mysql/mysql-questions-01.html#null-%E5%92%8C-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88)
 
 `NULL` 跟 `''`(空字符串) 是两个完全不一样的值，区别如下：
 
-- `NULL` 代表一个不确定的值，就算是两个 `NULL`, 它俩也不一定相等。例如，`SELECT NULL=NULL` 的结果为 false，但是在我们使用 `DISTINCT`,`GROUP BY`,`ORDER BY` 时，`NULL` 又被认为是相等的。
-- `''` 的长度是 0，是不占用空间的，而 `NULL` 是需要占用空间的。
-- `NULL` 会影响聚合函数的结果。例如，`SUM`、`AVG`、`MIN`、`MAX` 等聚合函数会忽略 `NULL` 值。 `COUNT` 的处理方式取决于参数的类型。如果参数是 `*`(`COUNT(*)`)，则会统计所有的记录数，包括 `NULL` 值；如果参数是某个字段名 (`COUNT(列名)`)，则会忽略 `NULL` 值，只统计非空值的个数。
+- `NULL` 代表**一个不确定的值**，就算是两个 `NULL`, 它俩也不一定相等。例如，`SELECT NULL=NULL` 的结果为 false，但是在我们使用 `DISTINCT`,`GROUP BY`,`ORDER BY` 时，`NULL` 又被认为是相等的。
+- `''` 的长度是 0，是不占用空间的，而 **`NULL` 是需要占用空间的**。
+- `NULL` 会影响聚合函数的结果。
+	- 例如，`SUM`、`AVG`、`MIN`、`MAX` 等聚合函数会忽略 `NULL` 值。 
+	- `COUNT` 的处理方式取决于参数的类型。如果参数是 `*`(`COUNT(*)`)，则会统计所有的记录数，包括 `NULL` 值；如果参数是某个字段名 (`COUNT(列名)`)，则会忽略 `NULL` 值，只统计非空值的个数。
 - 查询 `NULL` 值时，必须使用 `IS NULL` 或 `IS NOT NULLl` 来判断，而不能使用 =、!=、 <、> 之类的比较运算符。而`''` 是可以使用这些比较运算符的。
 
 看了上面的介绍之后，相信你对另外一个高频面试题：“为什么 MySQL 不建议使用 `NULL` 作为列默认值？” 也有了答案。
 
 ### [Boolean 类型如何表示？](https://javaguide.cn/database/mysql/mysql-questions-01.html#boolean-%E7%B1%BB%E5%9E%8B%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA)
 
-MySQL 中没有专门的布尔类型，而是用 TINYINT (1) 类型来表示布尔值。TINYINT (1) 类型可以存储 0 或 1，分别对应 false 或 true。
+**MySQL 中没有专门的布尔类型，而是用 TINYINT (1) 类型来表示布尔值**。TINYINT (1) 类型可以存储 0 或 1，分别对应 false 或 true。
 
 ## [MySQL 基础架构](https://javaguide.cn/database/mysql/mysql-questions-01.html#mysql-%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84)
 
