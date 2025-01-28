@@ -60,7 +60,7 @@ IO
 - [ ] [[Atomic 原子类总结]]
 - [ ] [[ThreadLocal 详解]]
 - [ ] [[CompletableFuture 详解]]
-- [ ] [[虚拟线程常见问题总结]]
+- [x] [[虚拟线程常见问题总结]]
 
 JVM
 - [x] [[Java 内存区域详解（重点）]]
