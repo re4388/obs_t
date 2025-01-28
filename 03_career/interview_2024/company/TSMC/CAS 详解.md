@@ -10,7 +10,7 @@
 
 `sun.misc` 包下的 `Unsafe` 类提供了 `compareAndSwapObject`、`compareAndSwapInt`、`compareAndSwapLong` 方法来实现的对 `Object`、`int`、`long` 类型的 CAS 操作：
 
-```
+```java
 /**
  * 以原子方式更新对象字段的值。
  *
@@ -51,18 +51,21 @@ Atomic 类依赖于 CAS 乐观锁来保证其方法的原子性，而不需要�
 
 `AtomicInteger` 核心源码如下：
 
-```
+```java
 // 获取 Unsafe 实例
 private static final Unsafe unsafe = Unsafe.getUnsafe();
 private static final long valueOffset;
 
 static {
     try {
+        
         // 获取“value”字段在AtomicInteger类中的内存偏移量
         valueOffset = unsafe.objectFieldOffset
-            (AtomicInteger.class.getDeclaredField("value"));
+        (AtomicInteger.class.getDeclaredField("value"));
+        
     } catch (Exception ex) { throw new Error(ex); }
 }
+
 // 确保“value”字段的可见性
 private volatile int value;
 
@@ -91,7 +94,7 @@ public final int getAndDecrement() {
 
 `Unsafe#getAndAddInt` 源码：
 
-```
+```java
 // 原子地获取并增加整数值
 public final int getAndAddInt(Object o, long offset, int delta) {
     int v;
@@ -118,7 +121,7 @@ ABA 问题是 CAS 算法最常见的问题。
 
 ABA 问题的解决思路是在变量前面追加上**版本号或者时间戳**。JDK 1.5 以后的 `AtomicStampedReference` 类就是用来解决 ABA 问题的，其中的 `compareAndSet()` 方法就是首先检查当前引用是否等于预期引用，并且当前标志是否等于预期标志，如果全部相等，则以原子方式将该引用和该标志的值设置为给定的更新值。
 
-```
+```java
 public boolean compareAndSet(V   expectedReference,
                              V   newReference,
                              int expectedStamp,
