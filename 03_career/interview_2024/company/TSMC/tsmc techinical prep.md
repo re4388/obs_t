@@ -46,7 +46,9 @@ IO
 - [ ] [[ArrayBlockingQueue 源码分析]]
 - [ ] [[DelayQueue 源码分析]]
 
-併發 
+
+### 併發
+
 - [x] [[Java 并发常见面试题总结（上）]]
 - [x] [[Java 并发常见面试题总结（中）]]
 - [x] [[Java 并发常见面试题总结（下）]]
@@ -61,6 +63,15 @@ IO
 - [ ] [[ThreadLocal 详解]]
 - [ ] [[CompletableFuture 详解]]
 - [x] [[虚拟线程常见问题总结]]
+
+- [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
+	- [ ] ...
+	- [ ] [[2. CompletableFuture.md]]
+	- [ ] [[4. LockSupport与线程中断.md]]
+	- [ ] ...
+
+
+
 
 JVM
 - [x] [[Java 内存区域详解（重点）]]
@@ -217,12 +228,6 @@ Java 版本特性 
 - [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
 - [ ] [GitHub - stevenli91748/ Java training projec 包括Java的各种核心知识](https://github.com/stevenli91748/JAVA-Architecture?tab=readme-ov-file)
 
-## 併發
-- [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
-	- [ ] ...
-	- [ ] [[2. CompletableFuture.md]]
-	- [ ] [[4. LockSupport与线程中断.md]]
-	- [ ] ...
 
 - [ ] [toBeBetterJavaer/debug-skill](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 

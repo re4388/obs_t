@@ -34,7 +34,7 @@
 - 判断任务是否已经执行完成；
 - 获取任务执行结果。
 
-```
+```java
 // V 代表了Future执行的任务返回值的类型
 public interface Future<V> {
     // 取消任务执行
@@ -64,7 +64,7 @@ Java 8 才被引入 `CompletableFuture` 类可以解决 `Future` 的这些�
 
 下面我们来简单看看 `CompletableFuture` 类的定义。
 
-```
+```java
 public class CompletableFuture<T> implements Future<T>, CompletionStage<T> {
 }
 ```
@@ -114,20 +114,20 @@ public class CompletableFuture<T> implements Future<T>, CompletionStage<T> {
 
 我们通过创建了一个结果值类型为 `RpcResponse<Object>` 的 `CompletableFuture`，你可以把 `resultFuture` 看作是异步运算结果的载体。
 
-```
+```java
 CompletableFuture<RpcResponse<Object>> resultFuture = new CompletableFuture<>();
 ```
 
 假设在未来的某个时刻，我们得到了最终的结果。这时，我们可以调用 `complete()` 方法为其传入结果，这表示 `resultFuture` 已经被完成了。
 
-```
+```java
 // complete() 方法只能调用一次，后续调用将被忽略。
 resultFuture.complete(rpcResponse);
 ```
 
 你可以通过 `isDone()` 方法来检查是否已经完成。
 
-```
+```java
 public boolean isDone() {
     return result != null;
 }
@@ -135,20 +135,20 @@ public boolean isDone() {
 
 获取异步计算的结果也非常简单，直接调用 `get()` 方法即可。调用 `get()` 方法的线程会阻塞直到 `CompletableFuture` 完成运算。
 
-```
+```java
 rpcResponse = completableFuture.get();
 ```
 
 如果你已经知道计算的结果的话，可以使用静态方法 `completedFuture()` 来创建 `CompletableFuture` 。
 
-```
+```java
 CompletableFuture<String> future = CompletableFuture.completedFuture("hello!");
 assertEquals("hello!", future.get());
 ```
 
 `completedFuture()` 方法底层调用的是带参数的 new 方法，只不过，这个方法不对外暴露。
 
-```
+```java
 public static <U> CompletableFuture<U> completedFuture(U value) {
     return new CompletableFuture<U>((value == null) ? NIL : value);
 }
@@ -158,7 +158,7 @@ public static <U> CompletableFuture<U> completedFuture(U value) {
 
 这两个方法可以帮助我们封装计算逻辑。
 
-```
+```java
 static <U> CompletableFuture<U> supplyAsync(Supplier<U> supplier);
 // 使用自定义线程池(推荐)
 static <U> CompletableFuture<U> supplyAsync(Supplier<U> supplier, Executor executor);
@@ -169,7 +169,7 @@ static CompletableFuture<Void> runAsync(Runnable runnable, Executor executor);
 
 `runAsync()` 方法接受的参数是 `Runnable` ，这是一个函数式接口，不允许返回值。当你需要异步操作且不关心返回结果的时候可以使用 `runAsync()` 方法。
 
-```
+```java
 @FunctionalInterface
 public interface Runnable {
     public abstract void run();
@@ -178,7 +178,7 @@ public interface Runnable {
 
 `supplyAsync()` 方法接受的参数是 `Supplier<U>` ，这也是一个函数式接口，`U` 是返回结果值的类型。
 
-```
+```java
 @FunctionalInterface
 public interface Supplier<T> {
 
@@ -193,7 +193,7 @@ public interface Supplier<T> {
 
 当你需要异步操作且关心返回结果的时候，可以使用 `supplyAsync()` 方法。
 
-```
+```java
 CompletableFuture<Void> future = CompletableFuture.runAsync(() -> System.out.println("hello!"));
 future.get();// 输出 "hello!"
 CompletableFuture<String> future2 = CompletableFuture.supplyAsync(() -> "hello!");
@@ -211,7 +211,7 @@ assertEquals("hello!", future2.get());
 
 `thenApply()` 方法接受一个 `Function` 实例，用它来处理结果。
 
-```
+```java
 // 沿用上一个任务的线程池
 public <U> CompletableFuture<U> thenApply(
     Function<? super T,? extends U> fn) {
@@ -232,7 +232,7 @@ public <U> CompletableFuture<U> thenApplyAsync(
 
 `thenApply()` 方法使用示例如下：
 
-```
+```java
 CompletableFuture<String> future = CompletableFuture.completedFuture("hello!")
         .thenApply(s -> s + "world!");
 assertEquals("hello!world!", future.get());
@@ -243,7 +243,7 @@ assertEquals("hello!world!", future.get());
 
 你还可以进行 **流式调用**：
 
-```
+```java
 CompletableFuture<String> future = CompletableFuture.completedFuture("hello!")
         .thenApply(s -> s + "world!").thenApply(s -> s + "nice!");
 assertEquals("hello!world!nice!", future.get());
@@ -253,7 +253,7 @@ assertEquals("hello!world!nice!", future.get());
 
 `thenAccept()` 方法的参数是 `Consumer<? super T>` 。
 
-```
+```java
 public CompletableFuture<Void> thenAccept(Consumer<? super T> action) {
     return uniAcceptStage(null, action);
 }
@@ -270,7 +270,7 @@ public CompletableFuture<Void> thenAcceptAsync(Consumer<? super T> action,
 
 顾名思义，`Consumer` 属于消费型接口，它可以接收 1 个输入对象然后进行 “消费”。
 
-```
+```java
 @FunctionalInterface
 public interface Consumer<T> {
 
@@ -285,7 +285,7 @@ public interface Consumer<T> {
 
 `thenRun()` 的方法是的参数是 `Runnable` 。
 
-```
+```java
 public CompletableFuture<Void> thenRun(Runnable action) {
     return uniRunStage(null, action);
 }
@@ -302,7 +302,7 @@ public CompletableFuture<Void> thenRunAsync(Runnable action,
 
 `thenAccept()` 和 `thenRun()` 使用示例如下：
 
-```
+```java
 CompletableFuture.completedFuture("hello!")
         .thenApply(s -> s + "world!").thenApply(s -> s + "nice!").thenAccept(System.out::println);//hello!world!nice!
 
@@ -312,7 +312,7 @@ CompletableFuture.completedFuture("hello!")
 
 `whenComplete()` 的方法的参数是 `BiConsumer<? super T, ? super Throwable>` 。
 
-```
+```java
 public CompletableFuture<T> whenComplete(
     BiConsumer<? super T, ? super Throwable> action) {
     return uniWhenCompleteStage(null, action);
@@ -332,7 +332,7 @@ public CompletableFuture<T> whenCompleteAsync(
 
 相对于 `Consumer` ， `BiConsumer` 可以接收 2 个输入对象然后进行 “消费”。
 
-```
+```java
 @FunctionalInterface
 public interface BiConsumer<T, U> {
     void accept(T t, U u);
@@ -350,7 +350,7 @@ public interface BiConsumer<T, U> {
 
 `whenComplete()` 使用示例如下：
 
-```
+```java
 CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> "hello!")
         .whenComplete((res, ex) -> {
             // res 代表返回的结果
@@ -366,7 +366,7 @@ assertEquals("hello!", future.get());
 
 你可以通过 `handle()` 方法来处理任务执行过程中可能出现的抛出异常的情况。
 
-```
+```java
 public <U> CompletableFuture<U> handle(
     BiFunction<? super T, Throwable, ? extends U> fn) {
     return uniHandleStage(null, fn);
@@ -385,7 +385,7 @@ public <U> CompletableFuture<U> handleAsync(
 
 示例代码如下：
 
-```
+```java
 CompletableFuture<String> future
         = CompletableFuture.supplyAsync(() -> {
     if (true) {
@@ -402,7 +402,7 @@ assertEquals("world!", future.get());
 
 你还可以通过 `exceptionally()` 方法来处理异常情况。
 
-```
+```java
 CompletableFuture<String> future
         = CompletableFuture.supplyAsync(() -> {
     if (true) {
@@ -418,7 +418,7 @@ assertEquals("world!", future.get());
 
 如果你想让 `CompletableFuture` 的结果就是异常的话，可以使用 `completeExceptionally()` 方法为其赋值。
 
-```
+```java
 CompletableFuture<String> completableFuture = new CompletableFuture<>();
 // ...
 completableFuture.completeExceptionally(
@@ -431,7 +431,7 @@ completableFuture.get(); // ExecutionException
 
 你可以使用 `thenCompose()` 按顺序链接两个 `CompletableFuture` 对象，实现异步的任务链。它的作用是将前一个任务的返回结果作为下一个任务的输入参数，从而形成一个依赖关系。
 
-```
+```java
 public <U> CompletableFuture<U> thenCompose(
     Function<? super T, ? extends CompletionStage<U>> fn) {
     return uniComposeStage(null, fn);
@@ -451,7 +451,7 @@ public <U> CompletableFuture<U> thenComposeAsync(
 
 `thenCompose()` 方法会使用示例如下：
 
-```
+```java
 CompletableFuture<String> future
         = CompletableFuture.supplyAsync(() -> "hello!")
         .thenCompose(s -> CompletableFuture.supplyAsync(() -> s + "world!"));
@@ -462,25 +462,61 @@ assertEquals("hello!world!", future.get());
 
 和 `thenCompose()` 方法类似的还有 `thenCombine()` 方法， 它同样可以组合两个 `CompletableFuture` 对象。
 
-```
+```java
 CompletableFuture<String> completableFuture
         = CompletableFuture.supplyAsync(() -> "hello!")
-        .thenCombine(CompletableFuture.supplyAsync(
-                () -> "world!"), (s1, s2) -> s1 + s2)
-        .thenCompose(s -> CompletableFuture.supplyAsync(() -> s + "nice!"));
+        .thenCombine(
+	        CompletableFuture.supplyAsync(
+		        () -> "world!"), 
+		        (s1, s2) -> s1 + s2
+		)
+        .thenCompose(
+	        s -> CompletableFuture.supplyAsync(() -> s + "nice!")
+	    );
 assertEquals("hello!world!nice!", completableFuture.get());
 ```
+
+
 
 **那 `thenCompose()` 和 `thenCombine()` 有什么区别呢？**
 
 - `thenCompose()` 可以链接两个 `CompletableFuture` 对象，并将前一个任务的返回结果作为下一个任务的参数，它们之间存在着先后顺序。
 - `thenCombine()` 会在两个任务都执行完成后，把两个任务的结果合并。两个任务是并行执行的，它们之间并没有先后依赖顺序。
 
+
+```java
+
+    public <U,V> CompletableFuture<V> thenCombine
+	    (
+	        CompletionStage<? extends U> other,
+	        BiFunction<? super T,? super U,? extends V> fn
+        ) {
+        return biApplyStage(null, other, fn);
+    }
+
+    public <U,V> CompletableFuture<V> thenCombineAsync(
+        CompletionStage<? extends U> other,
+        BiFunction<? super T,? super U,? extends V> fn) {
+        return biApplyStage(defaultExecutor(), other, fn);
+    }
+
+    public <U,V> CompletableFuture<V> thenCombineAsync(
+        CompletionStage<? extends U> other,
+        BiFunction<? super T,? super U,? extends V> fn, Executor executor) {
+        return biApplyStage(screenExecutor(executor), other, fn);
+    }
+
+
+
+```
+
+
+
 除了 `thenCompose()` 和 `thenCombine()` 之外， 还有一些其他的组合 `CompletableFuture` 的方法用于实现不同的效果，满足不同的业务需求。
 
 例如，如果我们想要实现 task1 和 task2 中的任意一个任务执行完后就执行 task3 的话，可以使用 `acceptEither()`。
 
-```
+```java
 public CompletableFuture<Void> acceptEither(
     CompletionStage<? extends T> other, Consumer<? super T> action) {
     return orAcceptStage(null, other, action);
@@ -494,7 +530,7 @@ public CompletableFuture<Void> acceptEitherAsync(
 
 简单举一个例子：
 
-```
+```java
 CompletableFuture<String> task = CompletableFuture.supplyAsync(() -> {
     System.out.println("任务1开始执行，当前时间：" + System.currentTimeMillis());
     try {
@@ -532,7 +568,7 @@ try {
 
 输出：
 
-```
+```java
 任务1开始执行，当前时间：1695088058520
 任务2开始执行，当前时间：1695088058521
 任务1执行完毕，当前时间：1695088059023
