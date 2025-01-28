@@ -63,6 +63,7 @@ public final int getAndIncrement()//获取当前的值，并自增
 public final int getAndDecrement() //获取当前的值，并自减
 public final int getAndAdd(int delta) //获取当前的值，并加上预期的值
 boolean compareAndSet(int expect, int update) //如果输入的数值等于预期值，则以原子方式将该值设置为输入值（update）
+
 public final void lazySet(int newValue)//最终设置为newValue, lazySet 提供了一种比 set 方法更弱的语义，可能导致其他线程在之后的一小段时间内还是可以读到旧的值，但可能更高效。
 ```
 
@@ -191,6 +192,7 @@ Index 0: 8 Index 1: 2 Index 2: 3 Index 3: 4 Index 4: 5 Index 5: 6
 - `AtomicReference`：引用类型原子类
 - `AtomicStampedReference`：原子更新带有版本号的引用类型。该类将整数值与引用关联起来，可用于解决原子的更新数据和数据的版本号，可以解决使用 CAS 进行原子更新时可能出现的 ABA 问题。
 - `AtomicMarkableReference`：原子更新带有标记的引用类型。该类将 boolean 标记与引用关联起来，~~也可以解决使用 CAS 进行原子更新时可能出现的 ABA 问题。~~
+see [[when we use Java AtomicMarkableReference]]
 
 上面三个类提供的方法几乎相同，所以我们这里以 `AtomicReference` 为例子来介绍。
 
