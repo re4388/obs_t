@@ -591,7 +591,9 @@ public static <T> T requireNonNull(T obj) {
 }
 ```
 
-`ofNullable` 方法和 `of` 方法唯一区别就是当 value 为 null 时，`ofNullable` 返回的是 `EMPTY`，of 会抛出 `NullPointerException` 异常。如果需要把 `NullPointerException` 暴漏出来就用 `of`，否则就用 `ofNullable`。
+`ofNullable` 方法和 `of` 方法唯一区别就是当 value 为 null 时，`ofNullable` 返回的是 `EMPTY`，of 会抛出 `NullPointerException` 异常。
+
+So, 如果需要把 `NullPointerException` 暴漏出来就用 `of`，否则就用 `ofNullable`。
 
 **`map()` 和 `flatMap()` 有什么区别的？**
 
@@ -601,7 +603,9 @@ public static <T> T requireNonNull(T obj) {
 
 ```java
 public class MapAndFlatMapExample {
+
     public static void main(String[] args) {
+    
         List<String[]> listOfArrays = Arrays.asList(
                 new String[]{"apple", "banana", "cherry"},
                 new String[]{"orange", "grape", "pear"},
@@ -609,14 +613,20 @@ public class MapAndFlatMapExample {
         );
 
         List<String[]> mapResult = listOfArrays.stream()
-                .map(array -> Arrays.stream(array).map(String::toUpperCase).toArray(String[]::new))
-                .collect(Collectors.toList());
+                .map
+                (
+                array -> Arrays.stream(array)  // List -> Stream
+                .map(String::toUpperCase)      // toUpperCase
+                .toArray(String[]::new)        // to String[]
+                )
+                .collect(Collectors.toList()); // Stream -> List
 
         System.out.println("Using map:");
         mapResult.forEach(arrays-> System.out.println(Arrays.toString(arrays)));
 
         List<String> flatMapResult = listOfArrays.stream()
-                .flatMap(array -> Arrays.stream(array).map(String::toUpperCase))
+                .flatMap(array -> Arrays.stream(array)
+                .map(String::toUpperCase))
                 .collect(Collectors.toList());
 
         System.out.println("Using flatMap:");
@@ -640,7 +650,6 @@ Using flatMap:
 在 `Optional` 里面，当使用 `map()` 时，如果映射函数返回的是一个普通值，它会将这个值包装在一个新的 `Optional` 中。而使用 `flatMap` 时，如果映射函数返回的是一个 `Optional`，它会将这个返回的 `Optional` 展平，不再包装成嵌套的 `Optional`。
 
 下面是一个对比的示例代码：
-
 ```java
 public static void main(String[] args) {
         int userId = 1;
@@ -674,7 +683,7 @@ public static void main(String[] args) {
     }
 ```
 
-在 `Stream` 和 `Optional` 中正确使用 `flatMap` 可以减少很多不必要的代码。
+結論：在 `Stream` 和 `Optional` 中正确使用 `flatMap` 可以减少很多不必要的代码。
 
 ### [判断 value 是否为 null](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E5%88%A4%E6%96%AD-value-%E6%98%AF%E5%90%A6%E4%B8%BA-null)
 
@@ -692,6 +701,33 @@ public void ifPresent(Consumer<? super T> consumer) {
    if (value != null)
     consumer.accept(value);
 }
+```
+
+
+```java
+
+import java.util.Optional;
+
+public class OptionalExample {
+    public static void main(String[] args) {
+        // 創建一個包含值的 Optional
+        Optional<String> optionalValue = Optional.ofNullable("Hello, World!");
+
+        // 使用 ifPresent 方法
+        optionalValue.ifPresent(value -> {
+            System.out.println("Value is present: " + value);
+        });
+
+        // 創建一個不包含值的 Optional
+        Optional<String> emptyOptional = Optional.ofNullable(null);
+
+        // 使用 ifPresent 方法，這裡不會執行任何操作
+        emptyOptional.ifPresent(value -> {
+            System.out.println("This will not be printed.");
+        });
+    }
+}
+
 ```
 
 ### [获取 value](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E8%8E%B7%E5%8F%96-value)
@@ -734,6 +770,35 @@ public T get() {
 }
 ```
 
+
+```java
+
+import java.util.Optional;
+import java.util.function.Supplier;
+
+public class OptionalExample {
+    public static void main(String[] args) {
+        // 創建一個空的 Optional
+        Optional<String> optionalValue = Optional.ofNullable(null);
+
+        // 使用 orElseGet 方法提供替代值
+        String result = optionalValue.orElseGet(() -> "Default Value");
+        System.out.println(result); // 輸出 "Default Value"
+
+        // 創建一個包含值的 Optional
+        Optional<String> anotherOptionalValue = Optional.of("Hello, World!");
+
+        // 使用 orElseGet 方法，這裡不會執行 Supplier
+        String anotherResult = anotherOptionalValue.orElseGet(() -> "Default Value");
+        System.out.println(anotherResult); // 輸出 "Hello, World!"
+    }
+}
+
+
+```
+
+
+
 ### [过滤值](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E8%BF%87%E6%BB%A4%E5%80%BC)
 
 ```java
@@ -755,13 +820,15 @@ public Optional<T> filter(Predicate<? super T> predicate) {
 看完 `Optional` 源码，`Optional` 的方法真的非常简单，值得注意的是如果坚决不想看见 `NPE`，就不要用 `of()`、 `get()`、`flatMap(..)`。最后再综合用一下 `Optional` 的高频方法。
 
 ```java
-Optional.ofNullable(zoo).map(o -> o.getDog()).map(d -> d.getAge()).filter(v->v==1).orElse(3);
+Optional.ofNullable(zoo)
+	.map(o -> o.getDog())
+	.map(d -> d.getAge())
+	.filter(v->v==1).orElse(3);
 ```
 
 ## [Date-Time API](https://javaguide.cn/java/new-features/java8-common-new-features.html#date-time-api)
 
-这是对 `java.util.Date` 强有力的补充，解决了 Date 类的大部分痛点：
-
+这是对 `java.util.Date` 强有力的补充，解决了 Date 类的問題：
 1. 非线程安全
 2. 时区处理麻烦
 3. 各种格式化、和时间计算繁琐
@@ -774,9 +841,12 @@ Optional.ofNullable(zoo).map(o -> o.getDog()).map(d -> d.getAge()).filter(v->v==
 `java.util.Date` 既包含日期又包含时间，而 `java.time` 把它们进行了分离
 
 ```java
-LocalDateTime.class //日期+时间 format: yyyy-MM-ddTHH:mm:ss.SSS
-LocalDate.class //日期 format: yyyy-MM-dd
-LocalTime.class //时间 format: HH:mm:ss
+
+LocalDateTime.class   // 日期+时间 format: yyyy-MM-ddTHH:mm:ss.SSS
+LocalDate.class       // 日期 format: yyyy-MM-dd
+LocalTime.class       // 时间 format: HH:mm:ss
+
+
 ```
 
 ### [格式化](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E6%A0%BC%E5%BC%8F%E5%8C%96)
@@ -785,7 +855,9 @@ LocalTime.class //时间 format: HH:mm:ss
 
 ```java
 public void oldFormat(){
+    
     Date now = new Date();
+    
     //format yyyy-MM-dd
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     String date  = sdf.format(now);
@@ -830,6 +902,7 @@ public void newFormat(){
 ```java
 //已弃用
 Date date = new Date("2021-01-26");
+
 //替换为
 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 Date date1 = sdf.parse("2021-01-26");
@@ -882,8 +955,11 @@ public void afterDay(){
 
 ```java
 public void pushWeek(){
-     //一周后的日期
+
      LocalDate localDate = LocalDate.now();
+     
+     //一周后的日期
+     
      //方法1
      LocalDate after = localDate.plus(1, ChronoUnit.WEEKS);
      //方法2
@@ -898,12 +974,13 @@ public void pushWeek(){
                 + period.getYears() + "年"
                 + period.getMonths() + "月"
                 + period.getDays() + "天");
-   //打印结果是 “date1 到 date2 相隔：0年9月27天”
+   
+     //打印结果是 “date1 到 date2 相隔：0年9月27天”
      //这里period.getDays()得到的天是抛去年月以外的天数，并不是总天数
      //如果要获取纯粹的总天数应该用下面的方法
      long day = date2.toEpochDay() - date1.toEpochDay();
-     System.out.println(date1 + "和" + date2 + "相差" + day + "天");
-     //打印结果：2021-02-26和2021-12-23相差300天
+     System.out.println(date1 + " 和 " + date2 + " 相差 " + day + " 天");
+     //打印结果：2021-02-26 和 2021-12-23 相差 300 天
 }
 ```
 
@@ -944,17 +1021,25 @@ public void getDay() {
 
 ```java
 public void getDayNew() {
+    
     LocalDate today = LocalDate.now();
+    
     //获取当前月第一天：
     LocalDate firstDayOfThisMonth = today.with(TemporalAdjusters.firstDayOfMonth());
+    
     // 取本月最后一天
     LocalDate lastDayOfThisMonth = today.with(TemporalAdjusters.lastDayOfMonth());
+    
     //取下一天：
     LocalDate nextDay = lastDayOfThisMonth.plusDays(1);
+    
     //当年最后一天
     LocalDate lastday = today.with(TemporalAdjusters.lastDayOfYear());
+    
     //2021年最后一个周日，如果用Calendar是不得烦死。
-    LocalDate lastMondayOf2021 = LocalDate.parse("2021-12-31").with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY));
+    LocalDate lastMondayOf2021 = LocalDate
+	    .parse("2021-12 31")
+	    .with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY));
 }
 ```
 
@@ -972,15 +1057,17 @@ public void getDayNew() {
 
 ### [时区](https://javaguide.cn/java/new-features/java8-common-new-features.html#%E6%97%B6%E5%8C%BA)
 
-> 时区：正式的时区划分为每隔经度 15° 划分一个时区，全球共 24 个时区，每个时区相差 1 小时。但为了行政上的方便，常将 1 个国家或 1 个省份划在一起，比如我国幅员宽广，大概横跨 5 个时区，实际上只用东八时区的标准时即北京时间为准。
+> 时区：正式的时区划分为每隔经度 15° 划分一个时区，全球共 24 个时区，每个时区相差 1 小时。但为了行政上的方便，常将 1 个国家或 1 个省份划在一起，比如我国幅员宽广，大概横跨 5 个时区，但实际上只用东八时区的标准时即北京时间为准。
 
-`java.util.Date` 对象实质上存的是 1970 年 1 月 1 日 0 点（ GMT）至 Date 对象所表示时刻所经过的毫秒数。也就是说不管在哪个时区 new Date，它记录的毫秒数都一样，和时区无关。但在使用上应该把它转换成当地时间，这就涉及到了时间的国际化。`java.util.Date` 本身并不支持国际化，需要借助 `TimeZone`。
+`java.util.Date` 对象实质上存的是 1970 年 1 月 1 日 0 点（ GMT）至 Date 对象所表示时刻所经过的毫秒数。
+也就是说不管在哪个时区 new Date，它记录的毫秒数都一样，和时区无关。但在使用上应该把它转换成当地时间，这就涉及到了时间的国际化。`java.util.Date` 本身并不支持国际化，需要借助 `TimeZone`。
 
 ```java
 //北京时间：Wed Jan 27 14:05:29 CST 2021
 Date date = new Date();
 
 SimpleDateFormat bjSdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
 //北京时区
 bjSdf.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"));
 System.out.println("毫秒数:" + date.getTime() + ", 北京时间:" + bjSdf.format(date));
@@ -995,7 +1082,8 @@ System.out.println(date);
 //Wed Jan 27 14:05:29 CST 2021
 ```
 
-在新特性中引入了 `java.time.ZonedDateTime` 来表示带时区的时间。它可以看成是 `LocalDateTime + ZoneId`。
+在新特性中引入了 `java.time.ZonedDateTime` 来表示带时区的时间。
+它可以看成是 `LocalDateTime + ZoneId`。
 
 ```java
 //当前时区时间

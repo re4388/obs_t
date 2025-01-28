@@ -74,7 +74,7 @@ JVM
 
 
 Java 版本特性 
- - [ ] [[Java8 新特性实战]]
+ - [x] [[Java8 新特性实战]]
  - [ ] [[《Java8 指南》中文翻译]]
 - [ ] [[Java 9 新特性概览]]
 - [ ] [[Java 10 新特性概览]]
@@ -219,6 +219,10 @@ Java 版本特性 
 
 ## 併發
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
+	- [ ] ...
+	- [ ] [[2. CompletableFuture.md]]
+	- [ ] [[4. LockSupport与线程中断.md]]
+	- [ ] ...
 
 - [ ] [toBeBetterJavaer/debug-skill](https://github.com/itwanger/toBeBetterJavaer/blob/master/docs/src/ide/4-debug-skill.md)
 
