@@ -56,7 +56,7 @@
 
 **`AtomicInteger` 类常用方法** ：
 
-```
+```java
 public final int get() //获取当前的值
 public final int getAndSet(int newValue)//获取当前的值，并设置新的值
 public final int getAndIncrement()//获取当前的值，并自增
@@ -68,7 +68,7 @@ public final void lazySet(int newValue)//最终设置为newValue, lazySet 提供
 
 **`AtomicInteger` 类使用示例** :
 
-```
+```java
 // 初始化 AtomicInteger 对象，初始值为 0
 AtomicInteger atomicInt = new AtomicInteger(0);
 
@@ -99,7 +99,7 @@ System.out.println("After lazySet, atomicInt: " + atomicInt);
 
 输出：
 
-```
+```java
 tempValue: 0; atomicInt: 3
 tempValue: 3; atomicInt: 4
 tempValue: 4; atomicInt: 9
@@ -120,7 +120,7 @@ After lazySet, atomicInt: 15
 
 **`AtomicIntegerArray` 类常用方法**：
 
-```
+```java
 public final int get(int i) //获取 index=i 位置元素的值
 public final int getAndSet(int i, int newValue)//返回 index=i 位置的当前的值，并将其设置为新值：newValue
 public final int getAndIncrement(int i)//获取 index=i 位置元素的值，并让该位置的元素自增
@@ -132,7 +132,7 @@ public final void lazySet(int i, int newValue)//最终 将index=i 位置的元�
 
 **`AtomicIntegerArray` 类使用示例** :
 
-```
+```java
 int[] nums = {1, 2, 3, 4, 5, 6};
 // 创建 AtomicIntegerArray
 AtomicIntegerArray atomicArray = new AtomicIntegerArray(nums);
@@ -170,7 +170,7 @@ for (int j = 0; j < atomicArray.length(); j++) {
 
 输出：
 
-```
+```java
 Initial values in AtomicIntegerArray:
 Index 0: 1 Index 1: 2 Index 2: 3 Index 3: 4 Index 4: 5 Index 5: 6
 After getAndSet(0, 2):
@@ -196,7 +196,7 @@ Index 0: 8 Index 1: 2 Index 2: 3 Index 3: 4 Index 4: 5 Index 5: 6
 
 **`AtomicReference` 类使用示例** :
 
-```
+```java
 // Person 类
 class Person {
     private String name;
@@ -229,7 +229,7 @@ System.out.println("Final Person: " + ar.get().toString());
 
 输出：
 
-```
+```java
 Initial Person: Person{name='SnailClimb', age=22}
 Updated Person: Person{name='Daisy', age=20}
 Second Update Success: true
@@ -238,7 +238,7 @@ Final Person: Person{name='John', age=30}
 
 **`AtomicStampedReference` 类使用示例** :
 
-```
+```java
 // 创建一个 AtomicStampedReference 对象，初始值为 "SnailClimb"，初始版本号为 1
 AtomicStampedReference<String> asr = new AtomicStampedReference<>("SnailClimb", 1);
 
@@ -273,7 +273,7 @@ System.out.println("Final Reference: " + finalRef + ", Final Stamp: " + finalSta
 
 输出结果如下：
 
-```
+```java
 Initial Reference: SnailClimb, Initial Stamp: 1
 Update Success: true
 Updated Reference: Daisy, Updated Stamp: 2
@@ -283,7 +283,7 @@ Final Reference: Daisy, Final Stamp: 2
 
 **`AtomicMarkableReference` 类使用示例** :
 
-```
+```java
 // 创建一个 AtomicMarkableReference 对象，初始值为 "SnailClimb"，初始标记为 false
 AtomicMarkableReference<String> amr = new AtomicMarkableReference<>("SnailClimb", false);
 
@@ -318,7 +318,7 @@ System.out.println("Final Reference: " + finalRef + ", Final Mark: " + finalMark
 
 输出结果如下：
 
-```
+```java
 Initial Reference: SnailClimb, Initial Mark: false
 Update Success: true
 Updated Reference: Daisy, Updated Mark: true
@@ -340,7 +340,7 @@ Final Reference: Daisy, Final Mark: true
 
 **`AtomicIntegerFieldUpdater` 类使用示例** :
 
-```
+```java
 // Person 类
 class Person {
     private String name;
@@ -376,7 +376,7 @@ System.out.println("Final Person: " + person);
 
 输出结果：
 
-```
+```java
 Initial Person: Name: SnailClimb, Age: 22
 After Increment: Name: SnailClimb, Age: 23
 After Adding 5: Name: SnailClimb, Age: 28
