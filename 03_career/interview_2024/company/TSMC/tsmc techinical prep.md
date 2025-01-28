@@ -138,7 +138,7 @@ Java 版本特性 
 - [x] [[IoC & AOP 详解（快速搞懂）]]
 - [x] [[Spring 中的设计模式详解]]
 - [x] [[SpringBoot 自动装配原理详解]]
-- [ ] [[Spring 事务详解]]
+- [x] [[Spring 事务详解]]
 - [ ] [[Spring 面试题]]
 
 
@@ -180,8 +180,10 @@ Java 版本特性 
 
 
 ## MySQL
-- [ ] [[MySQL 常见面试题总结]]
 - [ ] [[MySQL 高性能优化规范建议总结]]
+	- [ ] [技术同学必会的 MySQL 设计规约，都是惨痛的教训](https://mp.weixin.qq.com/s/XC8e5iuQtfsrEOERffEZ-Q)
+	- [ ] [聊聊数据库建表的 15 个小技巧](https://mp.weixin.qq.com/s/NM-aHaW6TXrnO6la6Jfl5A)
+- [ ] [[MySQL 常见面试题总结]]
 - [ ] [[MySQL 索引详解]]
 - [ ] [[MySQL 三大日志详解]]
 - [ ] [[MySQL 事务隔离级别详解]]
