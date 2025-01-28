@@ -186,10 +186,17 @@ rows 列表示根据表统计信息及选用情况，大致估算出找到所需
 ![[Pasted image 20250128204825.png]]
 
 
+-  **Impossible WHERE**:表示 WHERE 子句的结果总是 false 且无法查到任意行。
+![[Pasted image 20250128205851.png]]
 
 
 
 - **Using join buffer (Block Nested Loop)**：连表查询的方式，表示当被驱动表的没有使用索引的时候，MySQL 会先将驱动表读出来放到 join buffer 中，再遍历被驱动表与驱动表进行查询。
+![[Pasted image 20250128205926.png]]
+
+- **`Using join buffer (Batched Key Access)`**
+连表查询的方式，与 `Using join buffer (Block Nested Loop)` 类似。
+
 
 这里提醒下，当 Extra 列包含 Using filesort 或 Using temporary 时，MySQL 的性能可能会存在问题，需要尽可能避免。
 
