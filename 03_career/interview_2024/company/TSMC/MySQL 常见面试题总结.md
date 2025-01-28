@@ -263,7 +263,7 @@ MySQL 5.5 版本之后，InnoDB 是 MySQL 的默认存储引擎。
 
 言归正传！咱们下面还是来简单对比一下两者：
 
-**1、是否支持行级锁**
+**1、是否支持行级锁  (row-level locking)**
 
 MyISAM 只有表级锁 (table-level locking)，而 InnoDB 支持行级锁 (row-level locking) 和表级锁，默认为行级锁。
 
