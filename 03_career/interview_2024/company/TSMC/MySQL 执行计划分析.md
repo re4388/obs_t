@@ -88,13 +88,55 @@ system > const > eq_ref > ref > fulltext > ref_or_null > index_merge > unique_su
 常见的几种类型具体含义如下：
 
 - **system**：如果表使用的引擎对于表行数统计是精确的（如：MyISAM），且表中只有一行记录的情况下，访问方法是 system ，是 const 的一种特例。
+
+
+
 - **const**：表中最多只有一行匹配的记录，一次查询就可以找到，常用于使用主键或唯一索引的所有字段作为查询条件。
+![[Pasted image 20250128204129.png]]
+
+
+
 - **eq_ref**：当连表查询时，前一张表的行在当前这张表中只有一行与之对应。是除了 system 与 const 之外最好的 join 方式，常用于使用主键或唯一索引的所有字段作为连表条件。
+![[Pasted image 20250128204204.png]]
+
+
+
 - **ref**：使用普通索引作为查询条件，查询结果可能找到多个符合条件的行。
+![[Pasted image 20250128204305.png]]
+
+
 - **index_merge**：当查询条件使用了多个索引时，表示开启了 Index Merge 优化，此时执行计划中的 key 列列出了使用到的索引。
+![[Pasted image 20250128204357.png]]
+
+
+- **unique_subquery**: 替代了 eq_ref。在一些使用 IN 子查询中，使用唯一索引 ，例如。
+```sql
+value IN (SELECT primary_key FROM single_table WHERE some_expr)
+
+```
+
+
+
+- - **index_subquery**: 与 unique_subquery 类似，在 IN 子查询中，使用普通索引，例如：
+```sql
+
+value IN (SELECT key_column FROM single_table WHERE some_expr)
+
+```
+
+
+
 - **range**：对索引列进行范围查询，执行计划中的 key 列表示哪个索引被使用了。
+![[Pasted image 20250128204614.png]]
+
+
 - **index**：查询遍历了整棵索引树，与 ALL 类似，只不过扫描的是索引，而索引一般在内存中，速度更快。
+![[Pasted image 20250128204632.png]]
+
+
 - **ALL**：全表扫描。
+![[Pasted image 20250128204645.png]]
+
 
 ### [possible_keys](https://javaguide.cn/database/mysql/mysql-query-execution-plan.html#possible-keys)
 
@@ -121,10 +163,32 @@ rows 列表示根据表统计信息及选用情况，大致估算出找到所需
 这列包含了 MySQL 解析查询的额外信息，通过这些信息，可以更准确的理解 MySQL 到底是如何执行查询的。常见的值如下：
 
 - **Using filesort**：在排序时使用了外部的索引排序，没有用到表内索引进行排序。
+![[Pasted image 20250128204706.png]]
+
+
+
+
 - **Using temporary**：MySQL 需要创建临时表来存储查询的结果，常见于 ORDER BY 和 GROUP BY。
+![[Pasted image 20250128204725.png]]
+对于这种情况，可以优化 GROUP BY：
+![[Pasted image 20250128204742.png]]
+
+
 - **Using index**：表明查询使用了覆盖索引，不用回表，查询效率非常高。
+![[Pasted image 20250128204755.png]]
+
+
+
 - **Using index condition**：表示查询优化器选择使用了索引条件下推这个特性。
-- **Using where**：表明查询使用了 WHERE 子句进行条件过滤。一般在没有使用到索引的时候会出现。
+
+
+- **Using where**：表明查询使用了 WHERE 子句进行条件过滤。一般在没有使用到索引的时候会出现。需要注意的是如果不是特意进行全表扫描，例如 select * from member，那么如果 Extra 中没有 Using where，且 type 列的值是 ALL 或者 index，则表示查询中有错误，需要排查。
+![[Pasted image 20250128204825.png]]
+
+
+
+
+
 - **Using join buffer (Block Nested Loop)**：连表查询的方式，表示当被驱动表的没有使用索引的时候，MySQL 会先将驱动表读出来放到 join buffer 中，再遍历被驱动表与驱动表进行查询。
 
 这里提醒下，当 Extra 列包含 Using filesort 或 Using temporary 时，MySQL 的性能可能会存在问题，需要尽可能避免。
