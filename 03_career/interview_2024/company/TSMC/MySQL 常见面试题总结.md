@@ -402,7 +402,7 @@ MySQL 日志常见的面试题有：
 
 or see
 - [ ] [MySQL ⽇志（Redolog Undolog Binlog）](https://chenxinyi.top/2022/07/19/MySQL%E2%BD%87%E5%BF%97%EF%BC%88Redolog%20Undolog%20Binlog%EF%BC%89/)
-- [ ] [undo log 与 redo log 原理分析](https://zhuanlan.zhihu.com/p/35574452)
+- [ ] [[介紹 MySQL 的 binlog, redo log, undo log]]
 
 
 ![[100_attachements/18e5b3e320190c471b09547f989da158_MD5.png]]
