@@ -120,22 +120,33 @@ Java 内存模型的抽象示意图如下：
 - ……
 
 ### [Java 内存区域和 JMM 有何区别？](https://javaguide.cn/java/concurrent/jmm.html#java-%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F%E5%92%8C-jmm-%E6%9C%89%E4%BD%95%E5%8C%BA%E5%88%AB)
-
-这是一个比较常见的问题，很多初学者非常容易搞混。 **Java 内存区域和内存模型是完全不一样的两个东西**：
-
-- JVM 内存结构和 Java 虚拟机的运行时区域相关，定义了 JVM 在运行时如何分区存储程序数据，就比如说堆主要用于存放对象实例。
-- Java 内存模型和 Java 的并发编程相关，抽象了线程和主内存之间的关系就比如说线程之间的共享变量必须存储在主内存中，规定了从 Java 源代码到 CPU 可执行指令的这个转化过程要遵守哪些和并发相关的原则和规范，其主要目的是为了简化多线程编程，增强程序可移植性的。
+是完全不一样的两个东西
+- JVM 内存结构 -> about heap, stack
+- Java 内存模型 -> about  并发编程
+	- 抽象了线程和主内存之间的关系
+	- 比如说线程之间的共享变量必须存储在主内存中，规定了从 Java 源代码到 CPU 可执行指令的这个转化过程要遵守哪些和并发相关的原则和规范
+	- 主要是为了简化多线程编程，增强程序可移植性的。
 
 ### [happens-before 原则是什么？](https://javaguide.cn/java/concurrent/jmm.html#happens-before-%E5%8E%9F%E5%88%99%E6%98%AF%E4%BB%80%E4%B9%88)
 
-happens-before 这个概念最早诞生于 Leslie Lamport 于 1978 年发表的论文[《Time，Clocks and the Ordering of Events in a Distributed System》](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)。在这篇论文中，Leslie Lamport 提出了[逻辑时钟](https://writings.sh/post/logical-clocks)的概念，这也成了第一个逻辑时钟算法 。在分布式环境中，通过一系列规则来定义逻辑时钟的变化，从而能通过逻辑时钟来对分布式系统中的事件的先后顺序进行判断。**逻辑时钟并不度量时间本身，仅区分事件发生的前后顺序，其本质就是定义了一种 happens-before 关系。**
+happens-before 这个概念最早诞生于 Leslie Lamport 于 1978 年发表的论文[《Time，Clocks and the Ordering of Events in a Distributed System》](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)。
+
+在这篇论文中，Leslie Lamport 提出了[逻辑时钟](https://writings.sh/post/logical-clocks)的概念，这也成了第一个逻辑时钟算法 。
+
+在分布式环境中，通过一系列规则来定义逻辑时钟的变化，从而能通过"逻辑时钟"来对分布式系统中的"事件先后顺序"进行判断。
+
+**逻辑时钟并不度量时间本身，仅区分事件发生的前后顺序，其本质就是定义了一种 happens-before 关系。**
 
 上面提到的 happens-before 这个概念诞生的背景并不是重点，简单了解即可。
 
 JSR 133 引入了 happens-before 这个概念来描述两个操作之间的内存可见性。
 
-**为什么需要 happens-before 原则？** happens-before 原则的诞生是为了程序员和编译器、处理器之间的平衡。程序员追求的是易于理解和编程的强内存模型，遵守既定规则编码即可。编译器和处理器追求的是较少约束的弱内存模型，让它们尽己所能地去优化性能，让性能最大化。happens-before 原则的设计思想其实非常简单：
+**为什么需要 happens-before 原则？** happens-before 原则的诞生是为了程序员和编译器、处理器之间的平衡。
 
+程序员追求                 ->  易于理解和编程的强内存模型，遵守既定规则编码即可。
+编译器和处理器追求  ->  较少约束的弱内存模型，让它们尽己所能地去优化性能，让性能最大化。
+
+happens-before 原则的设计思想其实非常简单：
 - 为了对编译器和处理器的约束尽可能少，只要不改变程序的执行结果（单线程程序和正确执行的多线程程序），编译器和处理器怎么进行重排序优化都行。
 - 对于会改变程序执行结果的重排序，JMM 要求编译器和处理器必须禁止这种重排序。
 
@@ -189,27 +200,20 @@ happens-before 与 JMM 的关系用《Java 并发编程的艺术》这本书中�
 ### [原子性](https://javaguide.cn/java/concurrent/jmm.html#%E5%8E%9F%E5%AD%90%E6%80%A7)
 
 一次操作或者多次操作，要么所有的操作全部都得到执行并且不会受到任何因素的干扰而中断，要么都不执行。
-
 在 Java 中，可以借助 `synchronized`、各种 `Lock` 以及各种原子类实现原子性。
-
 `synchronized` 和各种 `Lock` 可以保证任一时刻只有一个线程访问该代码块，因此可以保障原子性。各种原子类是利用 CAS (compare and swap) 操作（可能也会用到 `volatile` 或者 `final` 关键字）来保证原子操作。
 
 ### [可见性](https://javaguide.cn/java/concurrent/jmm.html#%E5%8F%AF%E8%A7%81%E6%80%A7)
 
 当一个线程对共享变量进行了修改，那么另外的线程都是立即可以看到修改后的最新值。
-
 在 Java 中，可以借助 `synchronized`、`volatile` 以及各种 `Lock` 实现可见性。
-
 如果我们将变量声明为 `volatile` ，这就指示 JVM，这个变量是共享且不稳定的，每次使用它都到主存中进行读取。
 
 ### [有序性](https://javaguide.cn/java/concurrent/jmm.html#%E6%9C%89%E5%BA%8F%E6%80%A7)
 
 由于指令重排序问题，代码的执行顺序未必就是编写代码时候的顺序。
-
 我们上面讲重排序的时候也提到过：
-
 > **指令重排序可以保证串行语义一致，但是没有义务保证多线程间的语义也一致** ，所以在多线程下，指令重排序可能会导致一些问题。
-
 在 Java 中，`volatile` 关键字可以禁止指令进行重排序优化。
 
 ## [总结](https://javaguide.cn/java/concurrent/jmm.html#%E6%80%BB%E7%BB%93)
