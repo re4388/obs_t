@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/cosen1024_Java-Interview.md",
+                "file": "03_career/interview_2024/company/TSMC/Spring Boot 面试题彙整.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cosen1024_Java-Interview"
+              "title": "Spring Boot 面试题彙整"
             }
           },
           {
@@ -162,7 +162,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 380.5
+    "width": 380.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,9 +184,13 @@
   },
   "active": "e4c80e7e81dc8a17",
   "lastOpenFiles": [
-    "03_career/interview_2024/company/TSMC/cosen1024_Java-Interview.md.edtz",
+    "100_attachements/Pasted image 20250129120854.png",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "03_career/interview_2024/company/TSMC/Spring Boot 面试题彙整.md",
+    "03_career/interview_2024/company/TSMC/Spring Boot 面试题彙整.md.edtz",
+    "03_career/interview_2024/company/TSMC/Spring 面试题.md",
     "03_career/interview_2024/company/TSMC/cosen1024_Java-Interview.md",
+    "03_career/interview_2024/company/TSMC/cosen1024_Java-Interview.md.edtz",
     "12_Backend/k8s/k8s_idx.md",
     "12_Backend/第一方 cookie vs 第三方 cookie.md",
     "12_Backend/msg_queue/kafka_index.md",
@@ -219,15 +224,11 @@
     "03_career/interview_2024/company/TSMC/Java8 新特性实战.md",
     "03_career/interview_2024/company/TSMC/MySQL 执行计划分析.md",
     "03_career/interview_2024/company/TSMC/分布式锁介绍.md",
-    "03_career/interview_2024/company/TSMC/敏感词过滤方案总结.md",
-    "03_career/interview_2024/company/TSMC/常见加密算法总结.md",
     "03_career/interview_2024/company/TSMC/when we use Java AtomicMarkableReference.md.edtz",
     "03_career/interview_2024/company/TSMC/读写分离和分库分表详解.md.edtz",
     "03_career/interview_2024/company/TSMC/深度分页介绍及优化建议.md.edtz",
     "03_career/interview_2024/company/TSMC/数据冷热分离详解.md.edtz",
     "03_career/interview_2024/company/TSMC/介紹 MySQL 的 binlog, redo log, undo log.md.edtz",
-    "03_career/interview_2024/company/TSMC/undo log 与 redo log 原理分析.md.edtz",
-    "03_career/interview_2024/company/TSMC/使用枚举简单封装一个优雅的 Spring Boot 全局异常处理！.md.edtz",
-    "03_career/interview_2024/company/TSMC/SpringBoot 处理异常的几种常见姿势.md.edtz"
+    "03_career/interview_2024/company/TSMC/undo log 与 redo log 原理分析.md.edtz"
   ]
 }

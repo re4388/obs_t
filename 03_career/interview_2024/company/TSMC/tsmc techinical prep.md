@@ -202,7 +202,7 @@ JVM
 - [x] [[Spring 中的设计模式详解]]
 - [x] [[SpringBoot 自动装配原理详解]]
 - [x] [[Spring 事务详解]]
-- [ ] [[cosen1024_Java-Interview]]
+- [x] [[Spring Boot 面试题彙整]]
 - [ ] [[Spring 面试题]]
 
 
