@@ -14,6 +14,8 @@ related:
 
 
 - [二十一分鐘略懂 Kubernetes (以及 Helm) - YouTube](https://www.youtube.com/watch?v=RUjcGn2YeVo&list=WL&index=76)
+- [[why use k8s?  orchestration?]]
+
 
 
 # 輕量 k8s
@@ -27,8 +29,7 @@ related:
 - can hosted as cluster -> can use in prod
 	- zero down-time, fault-tolrant, scale
 
-
-
+---
 
 # 尚硅谷 K8s
 - yt [01 尚硅谷 Kubernetes课程内容介绍 - YouTube](https://www.youtube.com/watch?v=W3V-VgTjDjo&list=PLmOn9nNkQxJHYUm2zkuf9_7XJJT8kzAph)
