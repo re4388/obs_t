@@ -8,7 +8,7 @@ Maven 遵循标准目录结构来保持项目之间的一致性。遵循这种�
 
 Maven 项目的标准目录结构如下：
 
-```
+```java
 src/
   main/
     java/
@@ -26,13 +26,13 @@ pom.xml
 
 这只是一个最简单的 Maven 项目目录示例。实际项目中，我们还会根据项目规范去做进一步的细分。
 
-## [指定 Maven 编译器插件](https://javaguide.cn/tools/maven/maven-best-practices.html#%E6%8C%87%E5%AE%9A-maven-%E7%BC%96%E8%AF%91%E5%99%A8%E6%8F%92%E4%BB%B6)
+## [指定 Maven JDK 编译器](https://javaguide.cn/tools/maven/maven-best-practices.html#%E6%8C%87%E5%AE%9A-maven-%E7%BC%96%E8%AF%91%E5%99%A8%E6%8F%92%E4%BB%B6)
 
 默认情况下，Maven 使用 Java5 编译我们的项目。要使用不同的 JDK 版本，请在 `pom.xml` 文件中配置 Maven 编译器插件。
 
 例如，如果你想要使用 Java8 来编译你的项目，你可以在 `<build>` 标签下添加以下的代码片段：
 
-```
+```html
 <build>
   <plugins>
     <plugin>
@@ -52,18 +52,24 @@ pom.xml
 
 ## [有效管理依赖关系](https://javaguide.cn/tools/maven/maven-best-practices.html#%E6%9C%89%E6%95%88%E7%AE%A1%E7%90%86%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB)
 
-Maven 的依赖管理系统是其最强大的功能之一。在顶层 pom 文件中，通过标签 `dependencyManagement` 定义公共的依赖关系，这有助于避免冲突并确保所有模块使用相同版本的依赖项。
+Maven 的依赖管理系统是其最强大的功能之一。
 
-例如，假设我们有一个父模块和两个子模块 A 和 B，我们想要在所有模块中使用 JUnit 5.7.2 作为测试框架。我们可以在父模块的 `pom.xml` 文件中使用 `<dependencyManagement>` 标签来定义 JUnit 的版本：
+**在顶层 pom 文件中，通过标签 `dependencyManagement` 定义公共的依赖关系**，
+这有助于避免冲突并确保所有模块使用相同版本的依赖项。
 
-```
+例如，假设我们有一个父模块和两个子模块 A 和 B，我们想要在所有模块中使用 JUnit 5.7.2 作为测试框架。
+**我们可以在父模块的 `pom.xml` 文件中使用 `<dependencyManagement>` 标签来定义 JUnit 的版本**：
+
+```html
 <dependencyManagement>
   <dependencies>
     <dependency>
+      
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
       <version>5.7.2</version>
       <scope>test</scope>
+      
     </dependency>
   </dependencies>
 </dependencyManagement>
@@ -71,22 +77,26 @@ Maven 的依赖管理系统是其最强大的功能之一。在顶层 pom 文件
 
 在子模块 A 和 B 的 `pom.xml` 文件中，我们只需要引用 JUnit 的 `groupId` 和 `artifactId` 即可:
 
-```
+```html
 <dependencies>
   <dependency>
+    
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter</artifactId>
+    
   </dependency>
 </dependencies>
 ```
 
 ## [针对不同环境使用配置文件](https://javaguide.cn/tools/maven/maven-best-practices.html#%E9%92%88%E5%AF%B9%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 
-Maven 配置文件允许我们配置不同环境的构建设置，例如开发、测试和生产。在 `pom.xml` 文件中定义配置文件并使用命令行参数激活它们：
+Maven 配置文件允许我们配置不同环境的构建设置，例如开发、测试和生产。
 
-```
+在 `pom.xml` 文件中定义配置文件并使用命令行参数激活它们：
+```html
 <profiles>
-  <profile>
+
+<profile>
     <id>development</id>
     <activation>
       <activeByDefault>true</activeByDefault>
@@ -95,16 +105,18 @@ Maven 配置文件允许我们配置不同环境的构建设置，例如开发�
       <environment>dev</environment>
     </properties>
   </profile>
-  <profile>
+
+<profile>
     <id>production</id>
     <properties>
       <environment>prod</environment>
     </properties>
   </profile>
+
 </profiles>
 ```
 
-使用命令行激活配置文件：
+使用命令行激活配置文件 `-P`：
 
 ```
 mvn clean install -P production
@@ -118,7 +130,7 @@ mvn clean install -P production
 - 使用注释来描述特定依赖项或插件的用途。
 - 将插件和依赖项的版本号保留在 `<properties>` 标签内以便于管理。
 
-```
+```html
 <properties>
   <junit.version>5.7.0</junit.version>
   <mockito.version>3.9.0</mockito.version>
@@ -141,13 +153,16 @@ Maven Wrapper 可以确保构建过程使用正确的 Maven 版本，非常方�
 mvn wrapper:wrapper
 ```
 
-此命令会在我们的项目中生成 Maven Wrapper 文件。现在我们可以使用 `./mvnw` （或 Windows 上的 `./mvnw.cmd`）而不是 `mvn` 来执行 Maven 命令。
+此命令会在我们的项目中生成 Maven Wrapper 文件。
+
+现在我们可以使用 `./mvnw` （或 Windows 上的 `./mvnw.cmd`）而不是 `mvn` 来执行 Maven 命令。
 
 ## [通过持续集成实现构建自动化](https://javaguide.cn/tools/maven/maven-best-practices.html#%E9%80%9A%E8%BF%87%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E6%9E%84%E5%BB%BA%E8%87%AA%E5%8A%A8%E5%8C%96)
 
-将 Maven 项目与持续集成 (CI) 系统（例如 Jenkins 或 GitHub Actions）集成，可确保自动构建、测试和部署我们的代码。CI 有助于及早发现问题并在整个团队中提供一致的构建流程。以下是 Maven 项目的简单 GitHub Actions 工作流程示例：
+将 Maven 项目与持续集成 (CI) 系统（例如 Jenkins 或 GitHub Actions）集成，可确保自动构建、测试和部署我们的代码。
+CI 有助于及早发现问题并在整个团队中提供一致的构建流程。以下是 Maven 项目的简单 GitHub Actions 工作流程示例：
 
-```
+```yml
 name: Java CI with Maven
 
 on: [push]
@@ -183,35 +198,40 @@ jobs:
 - ……
 
 jacoco-maven-plugin 使用示例：
-
-```
+```html
 <build>
   <plugins>
     <plugin>
+      
       <groupId>org.jacoco</groupId>
       <artifactId>jacoco-maven-plugin</artifactId>
       <version>0.8.8</version>
+      
       <executions>
+      
         <execution>
           <goals>
             <goal>prepare-agent</goal>
           </goals>
         </execution>
-        <execution>
+    
+		<execution>
           <id>generate-code-coverage-report</id>
           <phase>test</phase>
           <goals>
             <goal>report</goal>
           </goals>
         </execution>
+
+        
       </executions>
     </plugin>
+    
   </plugins>
 </build>
 ```
 
 如果这些已有的插件无法满足我们的需求，我们还可以自定义插件。
-
 探索可用的插件并在 `pom.xml` 文件中配置它们以增强我们的开发过程。
 
 ## [总结](https://javaguide.cn/tools/maven/maven-best-practices.html#%E6%80%BB%E7%BB%93)

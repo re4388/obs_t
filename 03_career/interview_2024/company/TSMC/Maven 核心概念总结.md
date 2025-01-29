@@ -143,16 +143,14 @@ Maven 在遇到这种问题的时候，会遵循 **路径最短优先** 和 *
 解决这个问题的过程也被称为 **Maven 依赖调解** 。
 
 **路径最短优先**
-
 ```
-依赖链路一：A -> B -> C -> X(1.0) // dist = 3
-依赖链路二：A -> D -> X(2.0) // dist = 2
+依赖链路一：A -> B -> C -> X(1.0)   // dist = 3
+依赖链路二：A -> D -> X(2.0)        // dist = 2
 ```
+**依赖链路二的路径最短，因此，X (2.0) 会被解析使用。**
 
-依赖链路二的路径最短，因此，X (2.0) 会被解析使用。
 
 不过，你也可以发现。路径最短优先原则并不是通用的，像下面这种路径长度相等的情况就不能单单通过其解决了：
-
 ```
 依赖链路一：A -> B -> X(1.0) // dist = 2
 依赖链路二：A -> D -> X(2.0) // dist = 2
@@ -163,10 +161,10 @@ Maven 在遇到这种问题的时候，会遵循 **路径最短优先** 和 *
 依赖调解第一原则不能解决所有问题，比如这样的依赖关系：A->B->Y (1.0)、A-> C->Y (2.0)，Y (1.0) 和 Y (2.0) 的依赖路径长度是一样的，都为 2。Maven 定义了依赖调解的第二原则：
 
 **声明顺序优先**
+在依赖路径长度相等的前提下，**在 `pom.xml` 中依赖声明的顺序决定了谁会被解析使用，顺序最前的那个依赖优胜。**
+该例中，如果 B 的依赖声明在 D 之前，那么 X (1.0) 就会被解析使用。
 
-在依赖路径长度相等的前提下，在 `pom.xml` 中依赖声明的顺序决定了谁会被解析使用，顺序最前的那个依赖优胜。该例中，如果 B 的依赖声明在 D 之前，那么 X (1.0) 就会被解析使用。
-
-```
+```html
 <!-- A pom.xml -->
 <dependencies>
     ...
@@ -189,13 +187,14 @@ Maven 在遇到这种问题的时候，会遵循 **路径最短优先** 和 *
 
 根据路径最短优先原则，X (1.0) 会被解析使用，也就是说实际用的是 1.0 版本的 X。
 
-但是！！！这会一些问题：如果 C 依赖用到了 1.5 版本的 X 中才有的一个类，运行项目就会报 `NoClassDefFoundError` 错误。如果 C 依赖用到了 1.5 版本的 X 中才有的一个方法，运行项目就会报 `NoSuchMethodError` 错误。
-
+**这会一些问题：如果 C 依赖用到了 1.5 版本的 X 中才有的一个类，运行项目就会报 `NoClassDefFoundError` 错误。**
+**如果 C 依赖用到了 1.5 版本的 X 中才有的一个方法，运行项目就会报 `NoSuchMethodError` 错误。**
 现在知道为什么你的 Maven 项目总是会报 `NoClassDefFoundError` 和 `NoSuchMethodError` 错误了吧？
 
-**如何解决呢？** 我们可以通过 `exclusion` 标签手动将 X (1.0) 给排除。
+**如何解决呢？** 
+使用 `exclusion` 标签手动将 X (1.0) 给排除。
 
-```
+```html
 <dependency>
     ......
     <exclusions>
@@ -207,7 +206,7 @@ Maven 在遇到这种问题的时候，会遵循 **路径最短优先** 和 *
 </dependency>
 ```
 
-一般我们在解决依赖冲突的时候，都会优先保留版本较高的。这是因为大部分 jar 在升级的时候都会做到向下兼容。
+**一般我们在解决依赖冲突的时候，都会优先保留版本较高的。这是因为大部分 jar 在升级的时候都会做到向下兼容。**
 
 如果高版本修改了低版本的一些类或者方法的话，这个时候就不能直接保留高版本了，而是应该考虑优化上层依赖，比如升级上层依赖的版本。
 
@@ -218,7 +217,8 @@ Maven 在遇到这种问题的时候，会遵循 **路径最短优先** 和 *
 依赖链路二：A -> D -> X(1.0) // dist = 2
 ```
 
-我们保留了 1.5 版本的 X，但是这个版本的 X 删除了 1.0 版本中的某些类。这个时候，我们可以考虑升级 D 的版本到一个 X 兼容的版本。
+我们保留了 1.5 版本的 X，但是这个版本的 X 删除了 1.0 版本中的某些类。
+这个时候，我们可以考虑升级 D 的版本到一个 X 兼容的版本。
 
 ## [Maven 仓库](https://javaguide.cn/tools/maven/maven-core-concepts.html#maven-%E4%BB%93%E5%BA%93)
 
@@ -231,7 +231,7 @@ Maven 仓库分为：
 - **本地仓库**：运行 Maven 的计算机上的一个目录，它缓存远程下载的构件并包含尚未发布的临时构件。`settings.xml` 文件中可以看到 Maven 的本地仓库路径配置，默认本地仓库路径是在 `${user.home}/.m2/repository`。
 - **远程仓库**：官方或者其他组织维护的 Maven 仓库。
 
-Maven 远程仓库可以分为：
+远程仓库可以分为：
 
 - **中央仓库**：这个仓库是由 Maven 社区来维护的，里面存放了绝大多数开源软件的包，并且是作为 Maven 的默认配置，不需要开发者额外配置。另外为了方便查询，还提供了一个[查询地址](https://search.maven.org/)，开发者可以通过这个地址更快的搜索需要构件的坐标。
 - **私服**：私服是一种特殊的远程 Maven 仓库，它是架设在局域网内的仓库服务，私服一般被配置为互联网远程仓库的镜像，供局域网内的 Maven 用户使用。
@@ -265,13 +265,14 @@ mvn 阶段 [阶段2] ...[阶段n]
 
 `default` 生命周期是在没有任何关联插件的情况下定义的，是 Maven 的主要生命周期，用于构建应用程序，共包含 23 个阶段。
 
-```
+```html
 <phases>
   <!-- 验证项目是否正确，并且所有必要的信息可用于完成构建过程 -->
   <phase>validate</phase>
   <!-- 建立初始化状态，例如设置属性 -->
   <phase>initialize</phase>
   <!-- 生成要包含在编译阶段的源代码 -->
+
   <phase>generate-sources</phase>
   <!-- 处理源代码 -->
   <phase>process-sources</phase>
@@ -279,12 +280,13 @@ mvn 阶段 [阶段2] ...[阶段n]
   <phase>generate-resources</phase>
   <!-- 将资源复制并处理到目标目录中，为打包阶段做好准备。 -->
   <phase>process-resources</phase>
-  <!-- 编译项目的源代码  -->
+<!-- 编译项目的源代码  -->
   <phase>compile</phase>
   <!-- 对编译生成的文件进行后处理，例如对 Java 类进行字节码增强/优化 -->
   <phase>process-classes</phase>
   <!-- 生成要包含在编译阶段的任何测试源代码 -->
-  <phase>generate-test-sources</phase>
+
+<phase>generate-test-sources</phase>
   <!-- 处理测试源代码 -->
   <phase>process-test-sources</phase>
   <!-- 生成要包含在编译阶段的测试源代码 -->
@@ -297,7 +299,9 @@ mvn 阶段 [阶段2] ...[阶段n]
   <phase>process-test-classes</phase>
   <!-- 使用合适的单元测试框架（Junit 就是其中之一）运行测试 -->
   <phase>test</phase>
-  <!-- 在实际打包之前，执行任何的必要的操作为打包做准备 -->
+
+
+<!-- 在实际打包之前，执行任何的必要的操作为打包做准备 -->
   <phase>prepare-package</phase>
   <!-- 获取已编译的代码并将其打包成可分发的格式，例如 JAR、WAR 或 EAR 文件 -->
   <phase>package</phase>
@@ -313,10 +317,12 @@ mvn 阶段 [阶段2] ...[阶段n]
   <phase>install</phase>
   <!-- 将最终的项目包复制到远程仓库中与其他开发者和项目共享 -->
   <phase>deploy</phase>
+
+
 </phases>
 ```
 
-根据前面提到的阶段间依赖关系理论，当我们执行 `mvn test` 命令的时候，会执行从 validate 到 test 的所有阶段，这也就解释了为什么执行测试的时候，项目的代码能够自动编译。
+**根据前面提到的阶段间依赖关系理论，当我们执行 `mvn test` 命令的时候，会执行从 validate 到 test 的所有阶段**，这也就解释了为什么执行测试的时候，项目的代码能够自动编译。
 
 ### [clean 生命周期](https://javaguide.cn/tools/maven/maven-core-concepts.html#clean-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F)
 
@@ -326,7 +332,7 @@ clean 生命周期的目的是清理项目，共包含 3 个阶段：
 2. clean
 3. post-clean
 
-```
+```html
 <phases>
   <!--  执行一些需要在clean之前完成的工作 -->
   <phase>pre-clean</phase>
@@ -335,11 +341,15 @@ clean 生命周期的目的是清理项目，共包含 3 个阶段：
   <!--  执行一些需要在clean之后立刻完成的工作 -->
   <phase>post-clean</phase>
 </phases>
+
+
 <default-phases>
   <clean>
     org.apache.maven.plugins:maven-clean-plugin:2.5:clean
   </clean>
 </default-phases>
+
+
 ```
 
 根据前面提到的阶段间依赖关系理论，当我们执行 `mvn clean` 的时候，会执行 clean 生命周期中的 pre-clean 和 clean 阶段。
@@ -353,7 +363,7 @@ site 生命周期的目的是建立和发布项目站点，共包含 4 个阶段
 3. post-site
 4. site-deploy
 
-```
+```html
 <phases>
   <!--  执行一些需要在生成站点文档之前完成的工作 -->
   <phase>pre-site</phase>
@@ -361,9 +371,13 @@ site 生命周期的目的是建立和发布项目站点，共包含 4 个阶段
   <phase>site</phase>
   <!--  执行一些需要在生成站点文档之后完成的工作，并且为部署做准备 -->
   <phase>post-site</phase>
-  <!--  将生成的站点文档部署到特定的服务器上 -->
+
+<!--  将生成的站点文档部署到特定的服务器上 -->
   <phase>site-deploy</phase>
+
 </phases>
+
+
 <default-phases>
   <site>
     org.apache.maven.plugins:maven-site-plugin:3.3:site
@@ -372,6 +386,9 @@ site 生命周期的目的是建立和发布项目站点，共包含 4 个阶段
     org.apache.maven.plugins:maven-site-plugin:3.3:deploy
   </site-deploy>
 </default-phases>
+
+
+
 ```
 
 Maven 能够基于 `pom.xml` 所包含的信息，自动生成一个友好的站点，方便团队交流和发布项目信息。
@@ -388,7 +405,7 @@ Maven 本质上是一个插件执行框架，所有的执行过程，都是由�
 
 jacoco-maven-plugin 使用示例：
 
-```
+```html
 <build>
   <plugins>
     <plugin>
@@ -416,14 +433,16 @@ jacoco-maven-plugin 使用示例：
 
 你可以将 Maven 插件理解为一组任务的集合，用户可以通过命令行直接运行指定插件的任务，也可以将插件任务挂载到构建生命周期，随着生命周期运行。
 
-Maven 插件被分为下面两种类型：
+Maven plugins 被分为下面两种类型：
 
 - **Build plugins**：在构建时执行。
 - **Reporting plugins**：在网站生成过程中执行。
 
 ## [Maven 多模块管理](https://javaguide.cn/tools/maven/maven-core-concepts.html#maven-%E5%A4%9A%E6%A8%A1%E5%9D%97%E7%AE%A1%E7%90%86)
 
-多模块管理简单地来说就是将一个项目分为多个模块，每个模块只负责单一的功能实现。直观的表现就是一个 Maven 项目中不止有一个 `pom.xml` 文件，会在不同的目录中有多个 `pom.xml` 文件，进而实现多模块管理。
+多模块管理简单地来说就是将一个项目分为多个模块，每个模块只负责单一的功能实现。
+
+直观的表现就是一个 Maven 项目中不止有一个 `pom.xml` 文件，会在不同的目录中有多个 `pom.xml` 文件，进而实现多模块管理。
 
 多模块管理除了可以更加便于项目开发和管理，还有如下好处：
 
@@ -432,7 +451,11 @@ Maven 插件被分为下面两种类型：
 3. 每个模块都可以是自解释的（通过模块名或者模块文档）；
 4. 模块还规范了代码边界的划分，开发者很容易通过模块确定自己所负责的内容。
 
-多模块管理下，会有一个父模块，其他的都是子模块。父模块通常只有一个 `pom.xml`，没有其他内容。父模块的 `pom.xml` 一般只定义了各个依赖的版本号、包含哪些子模块以及插件有哪些。不过，要注意的是，如果依赖只在某个子项目中使用，则可以在子项目的 pom.xml 中直接引入，防止父 pom 的过于臃肿。
+多模块管理下，会有一个父模块，其他的都是子模块。
+
+父模块通常只有一个 `pom.xml`，没有其他内容。父模块的 `pom.xml` 一般只定义了各个依赖的版本号、包含哪些子模块以及插件有哪些。
+
+不过，要注意的是，如果依赖只在某个子项目中使用，则可以只在子项目的 pom.xml 中直接引入，防止父 pom 的过于臃肿。
 
 如下图所示，Dubbo 项目就被分成了多个子模块比如 dubbo-common（公共逻辑模块）、dubbo-remoting（远程通讯模块）、dubbo-rpc（远程调用模块）。
 

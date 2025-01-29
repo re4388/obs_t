@@ -106,13 +106,13 @@ JVM
 - [ ] [[JVM线上问题排查和性能调优案例]]
 
 
-- [ ] [[Maven 核心概念总结]]
-- [ ] [[Maven 最佳实践]]
+- [x] [[Maven 核心概念总结]]
+- [x] [[Maven 最佳实践]]
+
 
 
 
 - [ ] [java_面试指北 PDF 版本（最新）](https://github.com/re4388/java_interview_guide_PDF)
-
 - [ ] [awesome-idea: IntelliJ IDEA 使用指南 | 必备插件推荐 | 插件开发入门 | 重构小技巧 | 源码阅读技巧。](https://gitee.com/SnailClimb/awesome-idea#/SnailClimb/awesome-idea/blob/main/./docs/tips/source-code-reading-skills.md)
 
 
