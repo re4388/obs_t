@@ -36,6 +36,26 @@ IO
 - [x] [[Java IO 模型详解]]
 - [x] [[Java NIO 核心知识总结]]
 
+
+
+Java 版本特性 
+ - [x] [[Java8 新特性实战]]
+ - [ ] [[《Java8 指南》中文翻译]]
+- [ ] [[Java 9 新特性概览]]
+- [ ] [[Java 10 新特性概览]]
+- [ ] [[Java 11 新特性概览]]
+- [ ] [[Java 12 & 13 新特性概览]]
+- [ ] [[Java 14 & 15 新特性概览]]
+- [ ] [[Java 16 新特性概览]]
+- [ ] [[Java 17 新特性概览（重要）]]
+- [ ] [[Java 18 新特性概览]]
+- [ ] [[Java 19 新特性概览]]
+- [ ] [[Java 20 新特性概览]]
+- [ ] [[Java 21 新特性概览 (重要)]]
+- [ ] [[Java 22 & 23 新特性概览]]
+
+
+
 源碼解讀
 - [ ] [[ArrayList 源码分析]]
 - [ ] [[LinkedList 源码分析]]
@@ -61,16 +81,16 @@ IO
 - [ ] [[Java 常见并发容器总结]]
 - [ ] [[AQS 详解]]
 - [ ] [[ThreadLocal 详解]]
-- [ ] [[CompletableFuture 详解]]
+- [x] [[CompletableFuture 详解]]
+	- [ ] [CompletableFuture原理与实践-外卖商家端API的异步化 - 美团技术团队](https://tech.meituan.com/2022/05/12/principles-and-practices-of-completablefuture.html)
+	- [ ] [这篇文章介绍了 RocketMQ 对 `CompletableFuture` 的应用](https://mp.weixin.qq.com/s/32Ak-WFLynQfpn0Cg0N-0A)
+	- [ ] [京东的  asyncTool  这个并发框架，里面大量使用到了 `CompletableFuture`](https://gitee.com/jd-platform-opensource/asyncTool)
 - [x] [[虚拟线程常见问题总结]]
-
 - [ ] [GitHub - Weiguanghao918/NOTE\_JUC: 从理论到实战的JUC进阶教程](https://github.com/Weiguanghao918/NOTE_JUC)
 	- [ ] ...
 	- [ ] [[2. CompletableFuture.md]]
 	- [ ] [[4. LockSupport与线程中断.md]]
 	- [ ] ...
-
-
 
 
 JVM
@@ -84,22 +104,6 @@ JVM
 - [ ] [[JVM线上问题排查和性能调优案例]]
 
 
-Java 版本特性 
- - [x] [[Java8 新特性实战]]
- - [ ] [[《Java8 指南》中文翻译]]
-- [ ] [[Java 9 新特性概览]]
-- [ ] [[Java 10 新特性概览]]
-- [ ] [[Java 11 新特性概览]]
-- [ ] [[Java 12 & 13 新特性概览]]
-- [ ] [[Java 14 & 15 新特性概览]]
-- [ ] [[Java 16 新特性概览]]
-- [ ] [[Java 17 新特性概览（重要）]]
-- [ ] [[Java 18 新特性概览]]
-- [ ] [[Java 19 新特性概览]]
-- [ ] [[Java 20 新特性概览]]
-- [ ] [[Java 21 新特性概览 (重要)]]
-- [ ] [[Java 22 & 23 新特性概览]]
-
 - [ ] [[Maven 核心概念总结]]
 - [ ] [[Maven 最佳实践]]
 
@@ -108,8 +112,6 @@ Java 版本特性 
 - [ ] [java_面试指北 PDF 版本（最新）](https://github.com/re4388/java_interview_guide_PDF)
 
 - [ ] [awesome-idea: IntelliJ IDEA 使用指南 | 必备插件推荐 | 插件开发入门 | 重构小技巧 | 源码阅读技巧。](https://gitee.com/SnailClimb/awesome-idea#/SnailClimb/awesome-idea/blob/main/./docs/tips/source-code-reading-skills.md)
-
-
 
 
 小林
@@ -154,7 +156,7 @@ Java 版本特性 
 - [ ] [[MySQL 日期类型选择建议]]
 - [ ] [[MySQL 隐式转换造成索引失效]]
 - [ ] [[读写分离和分库分表详解]]
-- [ ] [[深度分页介绍及优化建议]]
+- [x] [[深度分页介绍及优化建议]]
 - [x] [[数据冷热分离详解]]
 - [ ] slow quey check
 	- [ ] [Mysql 找出执行慢的 SQL](https://open.alipay.com/portal/forum/post/129601074)
@@ -2699,8 +2701,6 @@ Spring Framework 中文文档PDF
 
 ## 尚硅谷 K8s
 - yt [01 尚硅谷 Kubernetes课程内容介绍 - YouTube](https://www.youtube.com/watch?v=W3V-VgTjDjo&list=PLmOn9nNkQxJHYUm2zkuf9_7XJJT8kzAph)
-- 筆記
-	- [(转) Kubernetes | 【尚硅谷】Kubernetes（k8s）入门到实战教程丨全新升级完整版 | Zkeq の Coding 日志](https://icodeq.com/2023/dc7861e5c7bd/index.html)
 - code
 	- [LearningNotes/K8S at master · moxi624/LearningNotes · GitHub](https://github.com/moxi624/LearningNotes/tree/master/K8S)
 

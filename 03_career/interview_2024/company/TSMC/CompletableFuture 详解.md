@@ -351,7 +351,8 @@ public interface BiConsumer<T, U> {
 `whenComplete()` 使用示例如下：
 
 ```java
-CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> "hello!")
+CompletableFuture<String> future = CompletableFuture
+		.supplyAsync(() -> "hello!")
         .whenComplete((res, ex) -> {
             // res 代表返回的结果
             // ex 的类型为 Throwable ，代表抛出的异常
@@ -359,6 +360,7 @@ CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> "hello!")
             // 这里没有抛出异常所有为 null
             assertNull(ex);
         });
+
 assertEquals("hello!", future.get());
 ```
 
@@ -531,7 +533,7 @@ public CompletableFuture<Void> acceptEitherAsync(
 简单举一个例子：
 
 ```java
-CompletableFuture<String> task = CompletableFuture.supplyAsync(() -> {
+CompletableFuture<String> task1 = CompletableFuture.supplyAsync(() -> {
     System.out.println("任务1开始执行，当前时间：" + System.currentTimeMillis());
     try {
         Thread.sleep(500);
@@ -553,7 +555,7 @@ CompletableFuture<String> task2 = CompletableFuture.supplyAsync(() -> {
     return "task2";
 });
 
-task.acceptEitherAsync(task2, (res) -> {
+task1.acceptEitherAsync(task2, (res) -> {
     System.out.println("任务3开始执行，当前时间：" + System.currentTimeMillis());
     System.out.println("上一个任务的结果为：" + res);
 });
@@ -589,24 +591,28 @@ try {
 
 示例代码如下：
 
-```
+```java
+
 CompletableFuture<Void> task1 =
   CompletableFuture.supplyAsync(()->{
     //自定义业务操作
   });
+
 ......
 CompletableFuture<Void> task6 =
   CompletableFuture.supplyAsync(()->{
     //自定义业务操作
   });
 ......
- CompletableFuture<Void> headerFuture=CompletableFuture.allOf(task1,.....,task6);
 
-  try {
+CompletableFuture<Void> headerFuture=CompletableFuture.allOf(task1,.....,task6);
+
+try {
     headerFuture.join();
-  } catch (Exception ex) {
+} catch (Exception ex) {
     ......
-  }
+}
+
 System.out.println("all done. ");
 ```
 
@@ -614,8 +620,11 @@ System.out.println("all done. ");
 
 **`allOf()` 方法会等到所有的 `CompletableFuture` 都运行完成之后再返回**
 
-```
+```java
+
+
 Random rand = new Random();
+
 CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> {
     try {
         Thread.sleep(1000 + rand.nextInt(1000));
@@ -626,6 +635,8 @@ CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> {
     }
     return "abc";
 });
+
+
 CompletableFuture<String> future2 = CompletableFuture.supplyAsync(() -> {
     try {
         Thread.sleep(1000 + rand.nextInt(1000));
@@ -640,10 +651,13 @@ CompletableFuture<String> future2 = CompletableFuture.supplyAsync(() -> {
 
 调用 `join()` 可以让程序等 `future1` 和 `future2` 都运行完了之后再继续执行。
 
-```
+```java
 CompletableFuture<Void> completableFuture = CompletableFuture.allOf(future1, future2);
+
 completableFuture.join();
+
 assertTrue(completableFuture.isDone());
+
 System.out.println("all futures done...");
 ```
 
@@ -657,7 +671,7 @@ all futures done...
 
 **`anyOf()` 方法不会等待所有的 `CompletableFuture` 都运行完成之后再返回，只要有一个执行完成即可！**
 
-```
+```java
 CompletableFuture<Object> f = CompletableFuture.anyOf(future1, future2);
 System.out.println(f.get());
 ```
@@ -680,8 +694,9 @@ abc
 
 ### [使用自定义线程池](https://javaguide.cn/java/concurrent/completablefuture-intro.html#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BA%BF%E7%A8%8B%E6%B1%A0)
 
-我们上面的代码示例中，为了方便，都没有选择自定义线程池。实际项目中，这是不可取的。
+**我们上面的代码示例中，为了方便，都没有选择自定义线程池。实际项目中，这是不可取的。** 
 
+Why?
 `CompletableFuture` 默认使用全局共享的 `ForkJoinPool.commonPool()` 作为执行器，所有未指定执行器的异步任务都会使用该线程池。这意味着应用程序、多个库或框架（如 Spring、第三方库）若都依赖 `CompletableFuture`，默认情况下它们都会共享同一个线程池。
 
 虽然 `ForkJoinPool` 效率很高，但当同时提交大量任务时，可能会导致资源竞争和线程饥饿，进而影响系统性能。
@@ -692,8 +707,9 @@ abc
 - **资源控制**：根据任务特性调整线程池大小和队列类型，优化性能表现。
 - **异常处理**：通过自定义 `ThreadFactory` 更好地处理线程中的异常情况。
 
-```
-private ThreadPoolExecutor executor = new ThreadPoolExecutor(10, 10,
+```java
+private ThreadPoolExecutor executor = new ThreadPoolExecutor(
+		10, 10,
         0L, TimeUnit.MILLISECONDS,
         new LinkedBlockingQueue<Runnable>());
 
@@ -706,7 +722,7 @@ CompletableFuture.runAsync(() -> {
 
 `CompletableFuture` 的 `get()` 方法是阻塞的，尽量避免使用。如果必须要使用的话，需要添加超时时间，否则可能会导致主线程一直等待，无法执行其他任务。
 
-```
+```java
     CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {
         try {
             Thread.sleep(10_000);
