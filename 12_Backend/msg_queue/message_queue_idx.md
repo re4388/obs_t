@@ -4,7 +4,7 @@
 - [[when use Request Response，when use Pub Sub]]
 - [[發佈订阅 (Publish-Subscribe) 模式有什么缺点]]
 - kafka
-	- [[kafka_intro]]
+	- [[kafka_index]]
 	- [[Kafka vs other message queue]]
 	- [[kafka 是如何處理消息顺序问题？]]
 - bull queue

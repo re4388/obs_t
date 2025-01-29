@@ -19,7 +19,7 @@
 	- 適合需要即時性較強的應用
 
 
-see [[kafka_intro]]
+see [[kafka_index]]
 
 
 

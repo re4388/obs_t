@@ -2,12 +2,120 @@
 - [ ] [[消息队列基础知识总结]]
 - [ ] [[Kafka 常见问题总结]]
 
+
+
+
+
 related
 - [Postgres Replication to kafka connect](https://hackmd.io/2Yq4sDK7QiuVadfdjcFSzw)
 
 
 - [x] kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
 	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
+
+
+## Kafka
+- [x] Kafka [(843) 【2022版】01 尚硅谷 Kafka 课程简介 - YouTube](https://www.youtube.com/watch?v=0vd0b9CH6so&list=PLmOn9nNkQxJHTVxt3wxWXyheQPLlh-9T6)
+	- 筆記 [GitHub - re4388/Kafka\_Demo01: 【尚硅谷】2022版Kafka3.x教程（从入门到调优，深入全面）](https://github.com/re4388/Kafka_Demo01)
+01_尚硅谷_Kafka_课程简介
+02_尚硅谷_Kafka_概述_定义
+03_尚硅谷_Kafka_概述_消息队列应用场景
+04_尚硅谷_Kafka_概述_消息队列两种模式
+05_尚硅谷_Kafka_概述_基础架构
+06_尚硅谷_Kafka_入门_安装 Kafka
+07_尚硅谷_Kafka_入门_启动停止脚本
+08_尚硅谷_Kafka_入门_Topic 命令
+09_尚硅谷_Kafka_入门_命令行操作
+10_尚硅谷_Kafka_生产者_原理
+11_尚硅谷_Kafka_生产者_异步发送
+12_尚硅谷_Kafka_生产者_回调异步发送
+13_尚硅谷_Kafka_生产者_同步发送
+14_尚硅谷_Kafka_生产者_分区
+15_尚硅谷_Kafka_生产者_分区策略
+16_尚硅谷_Kafka_生产者_自定义分区
+17_尚硅谷_Kafka_生产者_提高生产者吞吐量
+18_尚硅谷_Kafka_生产者_数据可靠
+19_尚硅谷_Kafka_生产者_数据重复
+20_尚硅谷_Kafka_生产者_数据有序
+21_尚硅谷_Kafka_生产者_数据乱序
+22_尚硅谷_Kafka_Broker_ZK 存储
+23_尚硅谷_Kafka_Broker_工作原理
+24_尚硅谷_Kafka_Broker_上下线
+25_尚硅谷_Kafka_Broker_服役新节点（上）
+26_尚硅谷_Kafka_Broker_服役新节点（下）
+27_尚硅谷_Kafka_Broker_退役旧节点
+28_尚硅谷_Kafka_每日回顾（上）
+29_尚硅谷_Kafka_每日回顾（下）
+30_尚硅谷_Kafka_Broker_副本基本信息
+31_尚硅谷_Kafka_Broker_Leader 选举
+32_尚硅谷_Kafka_Broker_Follower 故障
+33_尚硅谷_Kafka_Broker_Leader 故障
+34_尚硅谷_Kafka_Broker_分区副本分配
+35_尚硅谷_Kafka_Broker_手动调整分区副本分配
+36_尚硅谷_Kafka_Broker_LeaderPartition 负载平衡
+37_尚硅谷_Kafka_Broker_增加副本因子
+38_尚硅谷_Kafka_Broker_文件存储机制
+39_尚硅谷_Kafka_Broker_文件清除策略
+40_尚硅谷_Kafka_Broker_高效读写
+41_尚硅谷_Kafka_消费者_消费方式
+42_尚硅谷_Kafka_消费者_消费者总体工作流程
+43_尚硅谷_Kafka_消费者_消费者组工作原理
+44_尚硅谷_Kafka_消费者_消费者组初始化
+45_尚硅谷_Kafka_消费者_消费者组详细消费流程
+46_尚硅谷_Kafka_消费者_消费一个主题
+47_尚硅谷_Kafka_消费者_消费一个分区
+48_尚硅谷_Kafka_消费者_消费者组案例
+49_尚硅谷_Kafka_消费者_Range 分配
+50_尚硅谷_Kafka_消费者_Roundrobin
+51_尚硅谷_Kafka_消费者_Sticky
+52_尚硅谷_Kafka_消费者_offset 保存位置
+53_尚硅谷_Kafka_消费者_自动 offset
+54_尚硅谷_Kafka_消费者_手动 offser
+55_尚硅谷_Kafka_消费者_指定 offset
+56_尚硅谷_Kafka_消费者_按照时间消费
+57_尚硅谷_Kafka_消费者_消费者事务
+58_尚硅谷_Kafka_消费者_数据积压
+59_尚硅谷_Kafka_每日回顾（上）
+60_尚硅谷_Kafka_每日回顾（下）
+61_尚硅谷_Kafka_监控_MySQL 环境准备
+62_尚硅谷_Kafka_监控_Kafka 环境准备
+63_尚硅谷_Kafka_监控_Kafka-Eagle 安装
+64_尚硅谷_Kafka_监控_Kafka-Eagle 监控页面
+65_尚硅谷_Kafka_Kraft 模式
+66_尚硅谷_Kafka_集成_Flume 环境准备
+67_尚硅谷_Kafka_集成_Flume 生产者
+68_尚硅谷_Kafka_集成_Flume 消费者
+69_尚硅谷_Kafka_集成_Flink 生产者
+70_尚硅谷_Kafka_集成_Flink 消费者
+71_尚硅谷_Kafka_集成_SpringBoot 生产者
+72_尚硅谷_Kafka_集成_SpringBoot 消费者
+73_尚硅谷_Kafka_集成_Spark 生产者
+74_尚硅谷_Kafka_集成_Spark 消费者
+75_尚硅谷_Kafka_调优_内容简介
+76_尚硅谷_Kafka_调优_硬件选择
+77_尚硅谷_Kafka_调优_生产者调优
+78_尚硅谷_Kafka_调优_Broker 调优
+79_尚硅谷_Kafka_调优_消费者调优
+80_尚硅谷_Kafka_调优_总体调优
+81_尚硅谷_Kafka_调优_生产者压力测试
+82_尚硅谷_Kafka_调优_消费者压力测试
+83_尚硅谷_Kafka_源码_环境准备
+84_尚硅谷_Kafka_源码_生产者原理回顾
+85_尚硅谷_Kafka_源码_生产者初始化
+86_尚硅谷_Kafka_源码_生产者发送数据到缓存
+87_尚硅谷_Kafka_源码_生产者 Sender 线程
+88_尚硅谷_Kafka_源码_消费者原理回顾
+89_尚硅谷_Kafka_源码_消费者初始化
+90_尚硅谷_Kafka_源码_消费者订阅主题
+91_尚硅谷_Kafka_源码_消费总体流程
+92_尚硅谷_Kafka_源码_消费者组初始化流程
+93_尚硅谷_Kafka_源码_消费者组拉取和处理数据
+94_尚硅谷_Kafka_源码_消费者 Offset 提交
+95_尚硅谷_Kafka_源码_服务器端源码
+96_尚硅谷_Kafka_课程结束
+
+
+
 
 
 # code example
@@ -17,19 +125,19 @@ related
 
 
 不受控制的微服務互相依賴, like below
-![[IMG-kafka_intro-20241106184859031.png|637]]
+![[IMG-kafka_index-20250129090601558.png|637]]
 
 
 為了解決服務到服務和持久性儲存排列日益複雜的問題，他們選擇開發一個可以作為事實來源的單一平台
 這個平台，要可以作為公司內部的中樞神經系統 - 資料流向、處理 / 轉換並被其他下游系統（資料倉儲、索引、微服務等）使用的地方
 因此，它的要求就是要可以負載大吞吐量（每秒數百萬條訊息），同時持久儲存大量資料（TB）
-![[IMG-kafka_intro-20241106184859189.png|677]]
+![[IMG-kafka_index-20250129090601734.png|677]]
 
 
 ## patition
 系統中的資料儲存在 topic 
 主題的基本資料結構是 log, 一種按順序儲存記錄的簡單有序資料結構。
-![[IMG-kafka_intro-20241106184859317.png]]
+![[IMG-kafka_index-20250129090601904.png]]
 
 它是不可變的，並且具有 O (1) 寫入和讀取（只要它們來自尾部或頭部）。
 因此，日誌越大，存取資料的速度就不會降低，這對於並發讀取來說非常有效率。
@@ -49,9 +157,9 @@ PS: OS 有進行很多 線性操作的優化。 see [原文](https://highscalabi
 - partition的數量跟你想要消費的吞吐量有關
 - 如果你要10g 的吞吐量，如果一個broker的負載有2g, 那你要5個 brorker，考慮 共兩個replica, 需要10個 broker
 - msg 寫入某個partition後，還會 replicate 到其他幾個 node -> 高可用
-![[IMG-kafka_intro-20241106184859447.png|896]]
+![[IMG-kafka_index-20250129090602049.png|896]]
 
-![[IMG-kafka_intro-20241106184859531.png]]
+![[IMG-kafka_index-20250129090602181.png]]
 - **批次處理 (Batch)** -> 減少網路傳輸次數，每一次都會有固定的 overhead
 	- 首先 Kafka 將多個訊息打包成批次進行傳輸，而不是單個傳輸訊息。
 	- 批次處理可以減少網路開銷，提高吞吐量。
