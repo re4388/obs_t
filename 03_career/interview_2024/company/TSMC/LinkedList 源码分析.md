@@ -26,7 +26,7 @@
 
 `LinkedList` 的类定义如下：
 
-```
+```java
 public class LinkedList<E>
     extends AbstractSequentialList<E>
     implements List<E>, Deque<E>, Cloneable, java.io.Serializable
@@ -50,7 +50,7 @@ public class LinkedList<E>
 
 `LinkedList` 中的元素是通过 `Node` 定义的：
 
-```
+```java
 private static class Node<E> {
     E item;// 节点值
     Node<E> next; // 指向的下一个节点（后继节点）
@@ -69,7 +69,7 @@ private static class Node<E> {
 
 `LinkedList` 中有一个无参构造函数和一个有参构造函数。
 
-```
+```java
 // 创建一个空的链表对象
 public LinkedList() {
 }
@@ -92,7 +92,7 @@ public LinkedList(Collection<? extends E> c) {
 - `add(E e)`：用于在 `LinkedList` 的尾部插入元素，即将新元素作为链表的最后一个元素，时间复杂度为 O (1)。
 - `add(int index, E element)`: 用于在指定位置插入元素。这种插入方式需要先移动到指定位置，再修改指定节点的指针完成插入 / 删除，因此需要移动平均 n/4 个元素，时间复杂度为 O (n)。
 
-```
+```java
 // 在链表尾部插入元素
 public boolean add(E e) {
     linkLast(e);
@@ -162,7 +162,7 @@ void linkBefore(E e, Node<E> succ) {
 2. `getLast()`：获取链表的最后一个元素。
 3. `get(int index)`：获取链表指定位置的元素。
 
-```
+```java
 // 获取链表的第一个元素
 public E getFirst() {
     final Node<E> f = first;
@@ -190,7 +190,7 @@ public E get(int index) {
 
 这里的核心在于 `node(int index)` 这个方法：
 
-```
+```java
 // 返回指定下标的非空节点
 Node<E> node(int index) {
     // 断言下标未越界
@@ -225,7 +225,7 @@ Node<E> node(int index) {
 4. `remove(int index)`：删除指定索引处的元素，并返回该元素的值。
 5. `void clear()`：移除此链表中的所有元素。
 
-```
+```java
 // 删除并返回链表的第一个元素
 public E removeFirst() {
     final Node<E> f = first;
@@ -274,7 +274,7 @@ public E remove(int index) {
 
 这里的核心在于 `unlink(Node<E> x)` 这个方法：
 
-```
+```java
 E unlink(Node<E> x) {
     // 断言 x 不为 null
     // assert x != null;
@@ -334,7 +334,7 @@ E unlink(Node<E> x) {
 
 推荐使用 `for-each` 循环来遍历 `LinkedList` 中的元素， `for-each` 循环最终会转换成迭代器形式。
 
-```
+```java
 LinkedList<String> list = new LinkedList<>();
 list.add("apple");
 list.add("banana");
@@ -347,7 +347,7 @@ for (String fruit : list) {
 
 `LinkedList` 的遍历的核心就是它的迭代器的实现。
 
-```
+```java
 // 双向迭代器
 private class ListItr implements ListIterator<E> {
     // 表示上一次调用 next() 或 previous() 方法时经过的节点；
@@ -366,7 +366,7 @@ private class ListItr implements ListIterator<E> {
 
 我们先来看下从头到尾方向的迭代：
 
-```
+```java
 // 判断还有没有下一个节点
 public boolean hasNext() {
     // 判断下一个节点的下标是否小于链表的大小，如果是则表示还有下一个元素可以遍历
@@ -390,7 +390,7 @@ public E next() {
 
 再来看一下从尾到头方向的迭代：
 
-```
+```java
 // 判断是否还有前一个节点
 public boolean hasPrevious() {
     return nextIndex > 0;
@@ -412,7 +412,7 @@ public E previous() {
 
 如果需要删除或插入元素，也可以使用迭代器进行操作。
 
-```
+```java
 LinkedList<String> list = new LinkedList<>();
 list.add("apple");
 list.add(null);
@@ -428,7 +428,7 @@ for (String fruit : list) {
 
 迭代器对应的移除元素的方法如下：
 
-```
+```java
 // 从列表中删除上次被返回的元素
 public void remove() {
     // 检查是否在迭代过程中链表被修改
@@ -456,7 +456,7 @@ public void remove() {
 
 代码：
 
-```
+```java
 // 创建 LinkedList 对象
 LinkedList<String> list = new LinkedList<>();
 
@@ -497,7 +497,7 @@ System.out.println("清空后的链表：" + list);
 
 输出：
 
-```
+```java
 索引为 2 的元素：banana
 链表内容：[apple, orange, banana, grape]
 链表内容：[orange, banana, grape]

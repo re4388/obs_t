@@ -4,7 +4,7 @@
 
 `ArrayList` 继承于 `AbstractList` ，实现了 `List`, `RandomAccess`, `Cloneable`, `java.io.Serializable` 这些接口。
 
-```
+```java
 
 public class ArrayList<E> extends AbstractList<E>
         implements List<E>, RandomAccess, Cloneable, java.io.Serializable{
@@ -30,7 +30,7 @@ public class ArrayList<E> extends AbstractList<E>
 
 示例代码：
 
-```
+```java
 ArrayList<String> listOfStrings = new ArrayList<>();
 listOfStrings.add(null);
 listOfStrings.add("java");
@@ -39,7 +39,7 @@ System.out.println(listOfStrings);
 
 输出：
 
-```
+```java
 [null, java]
 ```
 
@@ -57,7 +57,7 @@ System.out.println(listOfStrings);
 
 这里以 JDK1.8 为例，分析一下 `ArrayList` 的底层源码。
 
-```
+```java
 public class ArrayList<E> extends AbstractList<E>
         implements List<E>, RandomAccess, Cloneable, java.io.Serializable {
     private static final long serialVersionUID = 8683452581122892189L;
@@ -573,7 +573,7 @@ public class ArrayList<E> extends AbstractList<E>
 
 ArrayList 有三种方式来初始化，构造方法源码如下（JDK8）：
 
-```
+```java
 /**
  * 默认初始容量大小
  */
@@ -631,7 +631,7 @@ public ArrayList(Collection<? extends E> c) {
 
 #### [add 方法](https://javaguide.cn/java/collection/arraylist-source-code.html#add-%E6%96%B9%E6%B3%95)
 
-```
+```java
 /**
 * 将指定的元素追加到此列表的末尾。
 */
@@ -648,7 +648,7 @@ public boolean add(E e) {
 
 `ensureCapacityInternal` 方法的源码如下：
 
-```
+```java
 // 根据给定的最小容量和当前数组元素来计算所需容量。
 private static int calculateCapacity(Object[] elementData, int minCapacity) {
     // 如果当前数组元素为空数组（初始情况），返回默认容量和最小容量中的较大值作为所需容量
@@ -667,7 +667,7 @@ private void ensureCapacityInternal(int minCapacity) {
 
 `ensureCapacityInternal` 方法非常简单，内部直接调用了 `ensureExplicitCapacity` 方法：
 
-```
+```java
 //判断是否需要扩容
 private void ensureExplicitCapacity(int minCapacity) {
     modCount++;
@@ -688,7 +688,7 @@ private void ensureExplicitCapacity(int minCapacity) {
 
 #### [grow 方法](https://javaguide.cn/java/collection/arraylist-source-code.html#grow-%E6%96%B9%E6%B3%95)
 
-```
+```java
 /**
  * 要分配的最大数组大小
  */
@@ -738,7 +738,7 @@ private void grow(int minCapacity) {
 
 从上面 `grow()` 方法源码我们知道：如果新容量大于 `MAX_ARRAY_SIZE`, 进入 (执行) `hugeCapacity()` 方法来比较 `minCapacity` 和 `MAX_ARRAY_SIZE`，如果 `minCapacity` 大于最大容量，则新容量则为 `Integer.MAX_VALUE`，否则，新容量大小则为 `MAX_ARRAY_SIZE` 即为 `Integer.MAX_VALUE - 8`。
 
-```
+```java
 private static int hugeCapacity(int minCapacity) {
     if (minCapacity < 0) // overflow
         throw new OutOfMemoryError();
@@ -760,7 +760,7 @@ private static int hugeCapacity(int minCapacity) {
 
 源码：
 
-```
+```java
     // 我们发现 arraycopy 是一个 native 方法,接下来我们解释一下各个参数的具体意义
     /**
     *   复制数组
@@ -777,7 +777,7 @@ private static int hugeCapacity(int minCapacity) {
 
 场景：
 
-```
+```java
     /**
      * 在此列表中的指定位置插入指定的元素。
      *先调用 rangeCheckForAdd 对index进行界限检查；然后调用 ensureCapacityInternal 方法保证capacity足够大；
@@ -797,7 +797,7 @@ private static int hugeCapacity(int minCapacity) {
 
 我们写一个简单的方法测试以下：
 
-```
+```java
 public class ArraycopyTest {
 
   public static void main(String[] args) {
@@ -819,7 +819,7 @@ public class ArraycopyTest {
 
 结果：
 
-```
+```java
 0 1 99 2 3 0 0 0 0 0
 ```
 
@@ -827,7 +827,7 @@ public class ArraycopyTest {
 
 源码：
 
-```
+```java
     public static int[] copyOf(int[] original, int newLength) {
       // 申请一个新的数组
         int[] copy = new int[newLength];
@@ -840,7 +840,7 @@ public class ArraycopyTest {
 
 场景：
 
-```
+```java
    /**
      以正确的顺序返回一个包含此列表中所有元素的数组（从第一个到最后一个元素）; 返回的数组的运行时类型是指定数组的运行时类型。
      */
@@ -852,7 +852,7 @@ public class ArraycopyTest {
 
 个人觉得使用 `Arrays.copyOf()` 方法主要是为了给原有数组扩容，测试代码如下：
 
-```
+```java
 public class ArrayscopyOfTest {
 
   public static void main(String[] args) {
@@ -868,7 +868,7 @@ public class ArrayscopyOfTest {
 
 结果：
 
-```
+```java
 10
 ```
 
@@ -886,7 +886,7 @@ public class ArrayscopyOfTest {
 
 `ArrayList` 源码中有一个 `ensureCapacity` 方法不知道大家注意到没有，这个方法 `ArrayList` 内部没有被调用过，所以很显然是提供给用户调用的，那么这个方法有什么作用呢？
 
-```
+```java
     /**
     如有必要，增加此 ArrayList 实例的容量，以确保它至少可以容纳由minimum capacity参数指定的元素数。
      *
@@ -910,7 +910,7 @@ public class ArrayscopyOfTest {
 
 我们通过下面的代码实际测试以下这个方法的效果：
 
-```
+```java
 public class EnsureCapacityTest {
   public static void main(String[] args) {
     ArrayList<Object> list = new ArrayList<Object>();
@@ -928,11 +928,11 @@ public class EnsureCapacityTest {
 
 运行结果：
 
-```
+```java
 使用ensureCapacity方法前：2158
 ```
 
-```
+```java
 public class EnsureCapacityTest {
     public static void main(String[] args) {
         ArrayList<Object> list = new ArrayList<Object>();
@@ -950,7 +950,7 @@ public class EnsureCapacityTest {
 
 运行结果：
 
-```
+```java
 使用ensureCapacity方法后：1773
 ```
 

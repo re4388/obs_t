@@ -41,14 +41,14 @@
 
 `ThreadPoolExecutor` 类描述:
 
-```
+```java
 //AbstractExecutorService实现了ExecutorService接口
 public class ThreadPoolExecutor extends AbstractExecutorService
 ```
 
 `ScheduledThreadPoolExecutor` 类描述:
 
-```
+```java
 //ScheduledExecutorService继承ExecutorService接口
 public class ScheduledThreadPoolExecutor
         extends ThreadPoolExecutor
@@ -78,7 +78,7 @@ public class ScheduledThreadPoolExecutor
 
 `ThreadPoolExecutor` 类中提供的四个构造方法。我们来看最长的那个，其余三个都是在这个构造方法的基础上产生（其他几个构造方法说白点都是给定某些默认参数的构造方法比如默认制定拒绝策略是什么）。
 
-```
+```java
     /**
      * 用给定的初始参数创建一个新的ThreadPoolExecutor。
      */
@@ -138,7 +138,7 @@ public class ScheduledThreadPoolExecutor
 
 举个例子：Spring 通过 `ThreadPoolTaskExecutor` 或者我们直接通过 `ThreadPoolExecutor` 的构造函数创建线程池的时候，当我们不指定 `RejectedExecutionHandler` 拒绝策略来配置线程池的时候，默认使用的是 `AbortPolicy`。在这种拒绝策略下，如果队列满了，`ThreadPoolExecutor` 将抛出 `RejectedExecutionException` 异常来拒绝新来的任务 ，这代表你将丢失对这个任务的处理。如果不想丢弃任务的话，可以使用 `CallerRunsPolicy`。`CallerRunsPolicy` 和其他的几个策略不同，它既不会抛弃任务，也不会抛出异常，而是将任务回退给调用者，使用调用者的线程来执行任务
 
-```
+```java
 public static class CallerRunsPolicy implements RejectedExecutionHandler {
 
         public CallerRunsPolicy() { }
@@ -179,7 +179,7 @@ public static class CallerRunsPolicy implements RejectedExecutionHandler {
 - `CachedThreadPool`: 使用的是同步队列 `SynchronousQueue`, 允许创建的线程数量为 `Integer.MAX_VALUE` ，如果任务数量过多且执行速度较慢，可能会创建大量的线程，从而导致 OOM。
 - `ScheduledThreadPool` 和 `SingleThreadScheduledExecutor`: 使用的无界的延迟阻塞队列 `DelayedWorkQueue`，任务队列最大长度为 `Integer.MAX_VALUE`, 可能堆积大量的请求，从而导致 OOM。
 
-```
+```java
 // 无界队列 LinkedBlockingQueue
 public static ExecutorService newFixedThreadPool(int nThreads) {
 
@@ -231,7 +231,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize) {
 
 `MyRunnable.java`
 
-```
+```java
 import java.util.Date;
 
 /**
@@ -272,7 +272,7 @@ public class MyRunnable implements Runnable {
 
 `ThreadPoolExecutorDemo.java`
 
-```
+```java
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -321,7 +321,7 @@ public class ThreadPoolExecutorDemo {
 
 **输出结构**：
 
-```
+```java
 pool-1-thread-3 Start. Time = Sun Apr 12 11:14:37 CST 2020
 pool-1-thread-5 Start. Time = Sun Apr 12 11:14:37 CST 2020
 pool-1-thread-2 Start. Time = Sun Apr 12 11:14:37 CST 2020
@@ -355,7 +355,7 @@ Finished all threads  // 任务全部执行完了才会跳出来，因为executo
 
 这个方法非常重要，下面我们来看看它的源码：
 
-```
+```java
    // 存放线程池的运行状态 (runState) 和线程池内有效线程的数量 (workerCount)
    private final AtomicInteger ctl = new AtomicInteger(ctlOf(RUNNING, 0));
 
@@ -410,7 +410,7 @@ Finished all threads  // 任务全部执行完了才会跳出来，因为executo
 
 在 `execute` 方法中，多次调用 `addWorker` 方法。`addWorker` 这个方法主要用来创建新的工作线程，如果返回 true 说明创建和启动工作线程成功，否则的话返回的就是 false。
 
-```
+```java
     // 全局锁，并发操作必备
     private final ReentrantLock mainLock = new ReentrantLock();
     // 跟踪线程池的最大大小，只有在持有全局锁mainLock的前提下才能访问此集合
@@ -531,7 +531,7 @@ Finished all threads  // 任务全部执行完了才会跳出来，因为executo
 
 `Runnable.java`
 
-```
+```java
 @FunctionalInterface
 public interface Runnable {
    /**
@@ -543,7 +543,7 @@ public interface Runnable {
 
 `Callable.java`
 
-```
+```java
 @FunctionalInterface
 public interface Callable<V> {
     /**
@@ -564,7 +564,7 @@ public interface Callable<V> {
 
 示例 1：使用 `get()` 方法获取返回值。
 
-```
+```java
 // 这里只是为了演示使用，推荐使用 `ThreadPoolExecutor` 构造方法来创建线程池。
 ExecutorService executorService = Executors.newFixedThreadPool(3);
 
@@ -584,13 +584,13 @@ executorService.shutdown();
 
 输出：
 
-```
+```java
 abc
 ```
 
 示例 2：使用 `get（long timeout，TimeUnit unit）`方法获取返回值。
 
-```
+```java
 ExecutorService executorService = Executors.newFixedThreadPool(3);
 
 Future<String> submit = executorService.submit(() -> {
@@ -609,7 +609,7 @@ executorService.shutdown();
 
 输出：
 
-```
+```java
 Exception in thread "main" java.util.concurrent.TimeoutException
   at java.util.concurrent.FutureTask.get(FutureTask.java:205)
 ```
@@ -632,7 +632,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
 
 `FixedThreadPool` 被称为可重用固定线程数的线程池。通过 `Executors` 类中的相关源代码来看一下相关实现：
 
-```
+```java
    /**
      * 创建一个可重用固定数量线程的线程池
      */
@@ -646,7 +646,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
 
 另外还有一个 `FixedThreadPool` 的实现方法，和上面的类似，所以这里不多做阐述：
 
-```
+```java
     public static ExecutorService newFixedThreadPool(int nThreads) {
         return new ThreadPoolExecutor(nThreads, nThreads,
                                       0L, TimeUnit.MILLISECONDS,
@@ -662,7 +662,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
 
 `FixedThreadPool` 的 `execute()` 方法运行示意图（该图片来源：《Java 并发编程的艺术》）：
 
-![[100_attachements/69700f22f2f2a0488c82d5e2464307e0_MD5.jpg]]
+![[Pasted image 20250129143602.png]]
 
 **上图说明：**
 
@@ -685,7 +685,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
 
 `SingleThreadExecutor` 是只有一个线程的线程池。下面看看 **SingleThreadExecutor 的实现：**
 
-```
+```java
    /**
      *返回只有一个线程的线程池
      */
@@ -698,7 +698,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
     }
 ```
 
-```
+```java
    public static ExecutorService newSingleThreadExecutor() {
         return new FinalizableDelegatedExecutorService
             (new ThreadPoolExecutor(1, 1,
@@ -713,7 +713,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
 
 `SingleThreadExecutor` 的运行示意图（该图片来源：《Java 并发编程的艺术》）：
 
-![[100_attachements/492f8df6790380520068b3544557918b_MD5.jpg]]
+![[Pasted image 20250129143633.png]]
 
 **上图说明** :
 
@@ -731,7 +731,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
 
 `CachedThreadPool` 是一个会根据需要创建新线程的线程池。下面通过源码来看看 `CachedThreadPool` 的实现：
 
-```
+```java
     /**
      * 创建一个线程池，根据需要创建新线程，但会在先前构建的线程可用时重用它。
      */
@@ -743,7 +743,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
     }
 ```
 
-```
+```java
     public static ExecutorService newCachedThreadPool() {
         return new ThreadPoolExecutor(0, Integer.MAX_VALUE,
                                       60L, TimeUnit.SECONDS,
@@ -757,7 +757,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
 
 `CachedThreadPool` 的 `execute()` 方法的执行示意图（该图片来源：《Java 并发编程的艺术》）：
 
-![[100_attachements/4d1db49ce3cdcc46512212f750f0ed5e_MD5.jpg]]
+![[Pasted image 20250129143701.png]]
 
 **上图说明：**
 
@@ -774,7 +774,7 @@ Exception in thread "main" java.util.concurrent.TimeoutException
 
 `ScheduledThreadPool` 用来在给定的延迟后运行任务或者定期执行任务。这个在实际项目中基本不会被用到，也不推荐使用，大家只需要简单了解一下即可。
 
-```
+```java
 public static ScheduledExecutorService newScheduledThreadPool(int corePoolSize) {
     return new ScheduledThreadPoolExecutor(corePoolSize);
 }
@@ -790,7 +790,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize) {
 
 `ScheduledThreadPoolExecutor` 继承了 `ThreadPoolExecutor`，所以创建 `ScheduledThreadExecutor` 本质也是创建一个 `ThreadPoolExecutor` 线程池，只是传入的参数不相同。
 
-```
+```java
 public class ScheduledThreadPoolExecutor
         extends ThreadPoolExecutor
         implements ScheduledExecutorService

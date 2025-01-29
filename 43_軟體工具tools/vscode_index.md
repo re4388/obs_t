@@ -7,6 +7,19 @@
 ---
 
 
+批次 update code block to java block
+```
+
+(```)\n(.)
+
+$1java\n$2
+
+
+```
+
+
+
+
 
 用很久的 dark mode : 
 `"workbench.colorTheme": "Atom One Dark",`

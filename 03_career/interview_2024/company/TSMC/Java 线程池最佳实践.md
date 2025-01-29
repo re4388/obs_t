@@ -27,7 +27,7 @@
 
 下面是一个简单的 Demo。`printThreadPoolStatus()` 会每隔一秒打印出线程池的线程数、活跃线程数、完成的任务数、以及队列中的任务数。
 
-```
+```java
 /**
  * 打印线程池的状态
  *
@@ -74,7 +74,7 @@ public static void printThreadPoolStatus(ThreadPoolExecutor threadPool) {
 
 **1、利用 guava 的 `ThreadFactoryBuilder`**
 
-```
+```java
 ThreadFactory threadFactory = new ThreadFactoryBuilder()
                         .setNameFormat(threadNamePrefix + "-%d")
                         .setDaemon(true).build();
@@ -83,7 +83,7 @@ ExecutorService threadPool = new ThreadPoolExecutor(corePoolSize, maximumPoolSiz
 
 **2、自己实现 `ThreadFactory`。**
 
-```
+```java
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -206,7 +206,7 @@ IO 密集型任务下，几乎全是线程等待时间，从理论上来说，�
 
 在调用 `awaitTermination()` 方法时，应该设置合理的超时时间，以避免程序长时间阻塞而导致性能问题。另外。由于线程池中的任务可能会被取消或抛出异常，因此在使用 `awaitTermination()` 方法时还需要进行异常处理。`awaitTermination()` 方法会抛出 `InterruptedException` 异常，需要捕获并处理该异常，以避免程序崩溃或者无法正常退出。
 
-```
+```java
 // ...
 // 关闭线程池
 executor.shutdown();
@@ -233,7 +233,7 @@ try {
 
 线程池是可以复用的，一定不要频繁创建线程池比如一个用户请求到了就单独创建一个线程池。
 
-```
+```java
 @GetMapping("wrong")
 public String wrong() throws InterruptedException {
     // 自定义线程池
@@ -253,7 +253,7 @@ public String wrong() throws InterruptedException {
 
 使用 Spring 内部线程池时，一定要手动自定义线程池，配置合理的参数，不然会出现生产问题（一个请求创建一个线程）。
 
-```
+```java
 @Configuration
 @EnableAsync
 public class ThreadPoolExecutorConfig {
@@ -284,7 +284,7 @@ public class ThreadPoolExecutorConfig {
 
 当然了，你可以将 Tomcat 设置为单线程处理任务。不过，这并不合适，会严重影响其处理任务的速度。
 
-```
+```java
 server.tomcat.max-threads=1
 ```
 
