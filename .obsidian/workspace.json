@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/JMM（Java 内存模型）详解.md",
+                "file": "03_career/interview_2024/company/TSMC/Java 线程池详解.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JMM（Java 内存模型）详解"
+              "title": "Java 线程池详解"
             }
           },
           {
