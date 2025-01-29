@@ -11,6 +11,8 @@
 - [x] [[Effective Java 3rd]] 
 - [x] [[宋红康 2023 版，java 入门自学]]
 
+
+[GitHub - Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
 基礎
 - [x] [[Java 基础常见面试题总结 (上)]]
 - [x] [[Java 基础常见面试题总结 (中)]]
@@ -200,6 +202,7 @@ JVM
 - [x] [[Spring 中的设计模式详解]]
 - [x] [[SpringBoot 自动装配原理详解]]
 - [x] [[Spring 事务详解]]
+- [ ] [[cosen1024_Java-Interview]]
 - [ ] [[Spring 面试题]]
 
 
@@ -223,8 +226,7 @@ JVM
 
 ## 綜合
 - [ ] [AgeFades/AgeFades-Note · Java](https://github.com/AgeFades/AgeFades-Note/tree/master/Java)
-- [ ] [GitHub - Snailclimb/JavaGuide: 「Java学习+面试指南」](https://github.com/Snailclimb/JavaGuide?tab=readme-ov-file)
-- [ ] [GitHub - Java 學習地圖 via 影片](https://github.com/unidentifiable/java_learning_circuit?tab=readme-ov-file)
+- [ ] [GitHub - Java 影片學習地圖](https://github.com/unidentifiable/java_learning_circuit?tab=readme-ov-file)
 - [ ] [GitHub - cosen1024/Java-Interview: 「Java面试小抄](https://github.com/cosen1024/Java-Interview/tree/main)
 - [ ] [GitHub - itwanger/toBeBetterJavaer: 一份通俗易懂、风趣幽默的Java学习指南](https://github.com/itwanger/toBeBetterJavaer?tab=readme-ov-file)
 - [ ] [GitHub - hello-java-maker/JavaInterview: 【Java面试+Java后端技术学习指南】](https://github.com/hello-java-maker/JavaInterview)
