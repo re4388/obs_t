@@ -52,7 +52,7 @@
 
 **配置信息示例**：
 
-```
+```java
 <project>
     <dependencies>
         <dependency>
@@ -107,12 +107,15 @@ Maven 的依赖范围如下：
 
 **1、对于 Maven 而言，同一个 groupId 同一个 artifactId 下，只能使用一个 version。**
 
-```
+```html
+
 <dependency>
     <groupId>in.hocg.boot</groupId>
     <artifactId>mybatis-plus-spring-boot-starter</artifactId>
     <version>1.0.48</version>
 </dependency>
+
+
 <!-- 只会使用 1.0.49 这个版本的依赖 -->
 <dependency>
     <groupId>in.hocg.boot</groupId>
@@ -136,7 +139,8 @@ Maven 的依赖范围如下：
 
 **哪个版本的 X 会被 Maven 解析使用呢？**
 
-Maven 在遇到这种问题的时候，会遵循 **路径最短优先** 和 **声明顺序优先** 两大原则。解决这个问题的过程也被称为 **Maven 依赖调解** 。
+Maven 在遇到这种问题的时候，会遵循 **路径最短优先** 和 **声明顺序优先** 两大原则。
+解决这个问题的过程也被称为 **Maven 依赖调解** 。
 
 **路径最短优先**
 
