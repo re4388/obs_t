@@ -41,7 +41,9 @@ C:\Users\SnailClimb>jps -l
 
 ### [`jstat`: 监视虚拟机各种运行状态信息](https://javaguide.cn/java/jvm/jdk-monitoring-and-troubleshooting-tools.html#jstat-%E7%9B%91%E8%A7%86%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%90%84%E7%A7%8D%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81%E4%BF%A1%E6%81%AF)
 
-jstat（JVM Statistics Monitoring Tool） 使用于监视虚拟机各种运行状态信息的命令行工具。 它可以显示本地或者远程（需要远程主机提供 RMI 支持）虚拟机进程中的类信息、内存、垃圾收集、JIT 编译等运行数据，在没有 GUI，只提供了纯文本控制台环境的服务器上，它将是运行期间定位虚拟机性能问题的首选工具。
+jstat（JVM Statistics Monitoring Tool） 使用于监视虚拟机各种运行状态信息的命令行工具。 
+
+它可以显示本地或者远程（需要远程主机提供 RMI 支持）虚拟机进程中的类信息、内存、垃圾收集、JIT 编译等运行数据，在没有 GUI，只提供了纯文本控制台环境的服务器上，它将是运行期间定位虚拟机性能问题的首选工具。
 
 **`jstat` 命令使用格式：**
 
@@ -49,7 +51,9 @@ jstat（JVM Statistics Monitoring Tool） 使用于监视虚拟机各种运行�
 jstat -<option> [-t] [-h<lines>] <vmid> [<interval> [<count>]]
 ```
 
-比如 `jstat -gc -h3 31736 1000 10` 表示分析进程 id 为 31736 的 gc 情况，每隔 1000ms 打印一次记录，打印 10 次停止，每 3 行后打印指标头部。
+比如 `jstat -gc -h3 31736 1000 10` 
+表示分析进程 id 为 31736 的 gc 情况
+每隔 1000ms 打印一次记录，打印 10 次停止，每 3 行后打印指标头部。
 
 **常见的 option 如下：**
 
@@ -136,7 +140,7 @@ Server is ready.
 
 **下面是一个线程死锁的代码。我们下面会通过 `jstack` 命令进行死锁检查，输出死锁信息，找到发生死锁的线程。**
 
-```
+```java
 public class DeadLockDemo {
     private static Object resource1 = new Object();//资源 1
     private static Object resource2 = new Object();//资源 2
@@ -188,7 +192,7 @@ Thread[线程 2,5,main]waiting get resource1
 
 **通过 `jstack` 命令分析：**
 
-```
+```java
 C:\Users\SnailClimb>jps
 13792 KotlinCompileDaemon
 7360 NettyClient2
