@@ -1,7 +1,6 @@
 [[Java_idx]]
-£
 
-- [[尚硅谷-juc-高并发]]
+- [[尚硅谷-juc-高并发 note]]
 	- [尚硅谷JUC并发编程课程笔记总结\_尚硅谷juc笔记-CSDN博客](https://blog.csdn.net/qq_59366033/article/details/132391455)
 
 

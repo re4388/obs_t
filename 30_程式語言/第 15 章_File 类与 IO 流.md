@@ -1,4 +1,4 @@
-[[尚硅谷 Java 入门教程 2023]]
+[[宋红康 2023 版，java 入门自学]]
 [](https://github.com/re4388/atguigu-java/tree/main/%E7%AC%AC15%E7%AB%A0_File%E7%B1%BB%E4%B8%8EIO%E6%B5%81#%E7%AC%AC15%E7%AB%A0_file%E7%B1%BB%E4%B8%8Eio%E6%B5%81)
 
 讲师：尚硅谷 - 宋红康（江湖人称：康师傅）

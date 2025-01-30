@@ -4,7 +4,7 @@
 
 
 - [ ] 1. [test-config](https://github.com/re4388/test-config/tree/master)
-	- 去抓這個檔案來看 VIP-Mysql 索引优化实战一.pdf
+	- 上面這個repo有這個file可看：VIP-Mysql 索引优化实战一.pdf
 
 
 

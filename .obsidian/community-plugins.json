@@ -16,12 +16,11 @@
   "obsidian-auto-link-title",
   "hotkey-helper",
   "image-converter",
-  "obsidian-editor-shortcuts",
   "obsidian-local-images-plus",
   "obsidian-plantuml",
-  "remember-cursor-position",
   "edit-history",
   "codeblock-customizer",
   "obsidian-git",
-  "obsidian-quiet-outline"
+  "obsidian-quiet-outline",
+  "obsidian-editor-shortcuts"
 ]

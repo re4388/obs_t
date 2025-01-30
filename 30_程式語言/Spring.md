@@ -1,63 +1,6 @@
 
-## Spring6：尚硅谷Spring零基础入门到进阶
-- bilibli: [尚硅谷Spring零基础入门到进阶，一套搞定spring6全套视频教程（源码级讲解）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1kR4y1b7Qc/?spm_id_from=333.788.comment.all.click)
-- yt: [01 尚硅谷 Spring6框架 课程简介 - YouTube](https://www.youtube.com/watch?v=Yv-Y-buMlO4&list=PLmOn9nNkQxJFtUb-e4-Pm8aGnkLr16lBg)
-- code
-	- [GitHub - re4388/Spring6](https://github.com/re4388/Spring6)
-- 筆記
-	- [Spring6《学习笔记(22版尚硅谷)》-CSDN博客](https://blog.csdn.net/weixin_44981126/article/details/130967125)
-	- [Spring | 友人的编程指南](https://www.codermast.com/spring-series/spring/)
-		- [GitHub - re4388/CoderMast-Notes](https://github.com/re4388/CoderMast-Notes)
 
 
-## SpringMVC：尚硅谷】SpringMVC教程丨一套快速上手spring mvc
-- yt: [(843) 01 尚硅谷 SpringMVC 课程介绍 - YouTube](https://www.youtube.com/watch?v=pS5HrZuvXLc&list=PLmOn9nNkQxJE3V_Eev79ao-g3a6BplSQG)
-	- bilibili: [【尚硅谷】SpringMVC教程丨一套快速上手spring mvc\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ry4y1574R/?spm_id_from=333.788.comment.all.click)
-- 筆記：[LearningNotes/K8S at master · moxi624/LearningNotes · GitHub](https://github.com/moxi624/LearningNotes/tree/master/K8S)
-
-
-
-
-
-## 楊博超 MyBatis+Spring+SpringMVC+SSM
-- yt  [【SSM】00 课程介绍 - YouTube](https://www.youtube.com/watch?v=dYOeluPbr-U&list=PLmOn9nNkQxJFbsU4Qz8CdRiVM4Qs3ci75)
-	- [【尚硅谷】SSM框架全套教程， 楊博超 MyBatis+Spring+SpringMVC+SSM整合一套通关\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ya411S7aT/?spm_id_from=333.1387.search.video_card.click&vd_source=c1191139db7aee736d31e75ebc6029d0)
-	- note
-		- D:\projects\java\ssm_楊博超\SSM整合.pdf
-
-
-
-# Spring boot
-
-
-### 【尚硅谷】SpringBoot3 零基础教程
-- [001、SpringBoot3 课程简介 - YouTube](https://www.youtube.com/watch?v=TAgd4Xbqudc&list=PLmOn9nNkQxJEeIH75s5pdTUnCo9-xOc7c)
-- [筆記 SpringBoot3全栈指南](https://www.yuque.com/leifengyang/springboot3)
-- code [GitHub  雷丰阳 尚硅谷SpringBoot3零基础教程](https://github.com/re4388/atguigu-spring-boot-3)
-- /Users/re4388/project/personal/lang/java/atguigu-spring-boot-3
-
-
-
-
-
-- [ ] 有能力看官網來實作東西
-
-- [ ] 下面可以 review 一下
-- **在 [Spring Boot 中文社区](https://springboot.io/) 发帖寻求帮助**。
-- 尝试查阅 [How-to 手册](https://springdoc.cn/spring-boot/howto.html#howto)。 那里有常见的问题解决方案。
-- 学习 Spring 的基本知识。Spring Boot 建立在许多其他 Spring 项目之上。请查看 Spring 官方网站 [spring.io](https://spring.io/) ，那里有大量的参考文档。如果你刚开始使用 Spring，可以试试其中的一个指南。
-- 遇到问题，可以在 [stackoverflow.com](https://stackoverflow.com/) 上提问，记得要标识 [`spring-boot`](https://stackoverflow.com/tags/spring-boot) 标签，我们会看到的。
-- 遇到 BUG，可以在 [`github.com/spring-projects/spring-boot/issues`](https://github.com/spring-projects/spring-boot/issues) 报告。
-
-
-- [ ] spring boot tx 要如何處理
-
-
-Spring Boot 中文文档PDF
-链接: https://pan.baidu.com/s/1koHUv1acXGc_0ZJdVyQo3w?pwd=hsxe   提取码: hsxe
-
-Spring Framework 中文文档PDF
-链接: https://pan.baidu.com/s/18DbxdITEIaXQroOdJXXILg?pwd=p2fe    提取码: p2fe
 
 
 
@@ -90,26 +33,12 @@ Spring Framework 中文文档PDF
 
 # Spring Secutiry
 
-## 尚硅谷 雷神 SpringSecurity
-- [(836) 01 尚硅谷 SpringSecurity 课程介绍 - YouTube](https://www.youtube.com/watch?v=_2v7C9wBH1M&list=PLmOn9nNkQxJEnBjOMEXPLRjoTRNvhHIl2&index=1)
-	- code
-		- [shuhongfan/SpringSecurity_Demo03: 尚硅谷 SpringSecurity 框架教程（spring security 源码剖析从入门到精通）](https://github.com/shuhongfan/SpringSecurity_Demo03)
-	- check source code /Users/re4388/project/personal/lang/java/SpringSecurity_Demo03
-	- check pdf -> see book
-	- [ ] [Spring Security 介紹 - HackMD](https://hackmd.io/@_PtoT9O9TUSKocZJdzQ7ew/H1XWLrwin)
 
 
-
-- [ ] 有能力 go thru docurment
-	- [ ] [Spring Security :: Spring Security](https://docs.spring.io/spring-security/reference/index.html)
 
 
 # Spring Reactive
-### SpringBoot3响应式编程
-- [(837) 【SpringBoot3响应式编程】01 响应式编程 课程介绍 - YouTube](https://www.youtube.com/watch?v=miCNCdcmTE8&list=PLmOn9nNkQxJGZOf_WLh7FYNKXg44qLPg7)
-	- [reactor-programming: 响应式编程直播代码案例](https://gitee.com/leifengyang/reactor-programming)
-	- [响应式编程全套](https://www.yuque.com/leifengyang/springboot3/rg4wqgdbg8mfv04q)
-	- /Users/re4388/project/personal/lang/java/reactor-programming-master
+
 
 - [ ] Spring WebFlux
 	- [ ] [一文弄懂 Spring WebFlux 的来龙去脉 - 知乎](https://zhuanlan.zhihu.com/p/559158740)
@@ -185,46 +114,6 @@ Spring Framework 中文文档PDF
 
 
 
-- [x]  [新手工程師的程式教室 on Spring Boot](https://chikuwa-tech-study.blogspot.com/)
-	- [x] [【Redis】在 Spring Boot 使用 Redis Template 實現快取](https://chikuwa-tech-study.blogspot.com/2023/04/redis-template-in-spring-boot.html)
-	- [x] [【Spring Boot】第 17.1 課－初探 Spring Security 的認證與授權 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-authentication-and-authorization.html)
-	- [x] [【Spring Boot】第 17.2 課－在 Spring Security 整合資料庫進行認證 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2023/11/spring-boot-security-authentication-integrating-with-mongodb-database.html)
-	- [x] [【Spring Boot】第17.3課－在 Spring Security 使用 HTTP Basic 認證](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-security-http-basic-authentication.html)
-	- [x] [【Spring Boot】第17.4課－從 Security Context 取得 API 存取方的認證資訊 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2023/11/spring-boot-security-context-authentication-info.html)
-	- [x] [【Spring Boot】第 17.5 課－將 Spring Security 與 JWT 結合，實作登入 API #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-implement-login-api-with-jwt.html)
-	- [x] [【Spring Boot】第 17.6 課－實作 Spring Security 的認證 Filter（以 JWT 為例）#2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-implement-authentication-filter-with-jwt.html)
-	- [x] [【Spring Boot】第 20 課－切面導向程式設計（AOP）](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-aop-introduction.html)
-	- [x] [【Spring Boot】第 21 課－使用 Mockito 進行單元測試](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-mockito-unit-test.html)
-	- [x] [【Spring Boot】第 22.1 課－使用 RestTemplate 存取外部 API #2023 年更新](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-resttemplate.html)
-	- [x] [【Spring Boot】第22.2課－RestTemplate 串接第三方服務實例](https://chikuwa-tech-study.blogspot.com/2023/10/spring-boot-resttemplate-third-party-api-practice.html)
-	- [x] [【Spring Boot】第 23 課－利用 Swagger 產生 API 文件](https://chikuwa-tech-study.blogspot.com/2021/07/spring-boot-swagger-openapi-documentation.html)
-	- [x] [【Spring Boot】第 24 課－使用 Controller Advice 處理例外與 query string](https://chikuwa-tech-study.blogspot.com/2023/02/spring-boot-controller-advice-handle-exception-and-query-string.html)
-	- [x] [【Spring Boot】第 25 課－定時任務排程](https://chikuwa-tech-study.blogspot.com/2023/03/spring-boot-scheduled-task-incl-dymanically.html)
-	- [x] [【Spring Boot】第 26 課－使用快取並整合 Redis 來優化效能](https://chikuwa-tech-study.blogspot.com/2023/08/spring-boot-using-cache-and-redis.html)
-	- [x] [【Spring Boot】第 6 課－元件的控制反轉、依賴注入與多型呼叫 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-bean-ioc-di-and-polymorphism.html)
-	- [x] [【Spring Boot】第 7.1 課－MongoDB 介紹與準備資料庫環境 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mongodb-introduction-and-setup.html)
-	- [x] [【Spring Boot】第7.2課－使用 Spring Data 存取 MongoDB 資料庫，進行基本 CRUD 操作](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-data-mongodb-repository-crud.html)
-	- [x] [【Spring Boot】第7.3課－在 MongoRepository 定義查詢條件與排序方式 #2024 年更新](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mongo-repository-customize-query.html)
-	- [x] [【Spring Boot】第 8.1 課－準備 MySQL 資料庫與認識 Spring Data JPA](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-setup-mysql-and-introduce-jpa.html)
-	- [x] [【Spring Boot】第8.2課－使用 JPA 設計實體類別與 MySQL 資料表欄位](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-mysql-column-definition-with-jpa.html)
-	- [x] [【Spring Boot】第 8.3 課－使用 JPA Repository 存取 MySQL 資料庫](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-mysql-using-jpa-repository.html)
-	- [x] [【Spring Boot】第 8.4 課－使用 JPA 配置資料表關聯（以一對一關聯為例）](https://chikuwa-tech-study.blogspot.com/2024/05/spring-boot-jpa-one-to-one-relationship.html)
-	- [x] [【Spring Boot】第8.5課－使用 JPA 建立一對多關聯，並配置雙向關聯](https://chikuwa-tech-study.blogspot.com/2024/06/spring-boot-jpa-one-to-many-relationship-and-bidirectional-association.html)
-	- [x] [【Spring Boot】第8.6課－使用 JPA 建立多對多關聯，並配置中間表](https://chikuwa-tech-study.blogspot.com/2024/06/spring-boot-jpa-many-to-many-relationship-and-intermediary-table.html)
-	- [x] [【Spring Boot】第9課－MockMvc 整合測試（一）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mockmvc-integration-test-1.html)
-	- [x] [【Spring Boot】第 10 課－MockMvc 整合測試（二）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-mockmvc-integration-test-2.html)
-	- [x] [【Spring Boot】第 11 課－驗證 request body 的請求資料](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-request-body-validation.html)
-	- [x] [【Spring Boot】第12課－使用 Jackson 控制回傳的 JSON 欄位](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-jackson-annotation-basic.html)
-	- [x] [【Spring Boot】第 14 課－自行控制元件的建立方式](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-construct-bean-programmatically.html)
-	- [x] [【Spring Boot】第15課－元件的作用範圍（scope）](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-bean-scope.html)
-	- [x] [【Spring Boot】第 16 課－使用 Filter 擷取請求與回應](https://chikuwa-tech-study.blogspot.com/2021/05/spring-boot-filter-request-and-response.html)
 
-
-- [x] [誤打誤撞學了Spring Boot 還當了後端工程師 :: 2021 iThome 鐵人賽](https://ithelp.ithome.com.tw/users/20140728/ironman/4245)
-	- [x] [Day 24 - Spring Security (一) 基本概念與流程 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10279271)
-	- [x] [Day 25 - Spring Security (二) UserDetailsService - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280133)
-	- [x] [Day 26 - Spring Security (三) DaoAuthenticationProvider - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280353)
-	- [x] [Day 27 - Spring Security (四) JWT - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280355)
-	- [x] [Day 28 - Spring Security (五) JwtAuthenticationProvider - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10280356)
 
 

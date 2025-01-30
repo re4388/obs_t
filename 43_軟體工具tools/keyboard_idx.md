@@ -23,10 +23,15 @@ alt+w  (wrap) - surround with
 ctrl+g -> generate 
 ctrl+p -> parameter info
 
+debug
+alt+f1  step over
+alt+f2 force step in 
+alt+f3 resune program
+
 
 
 f1: search everything
-alt+2: go to class
+
 alt+s: find in file
 
 
@@ -34,7 +39,6 @@ alt + backspace: delete to word start
 ctrl + backspace: delete to line start
 
 ## 還可以利用的
-alt+w
 alt+y
 
 
@@ -85,7 +89,8 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 - ``` show all window in the same app
 - 1
     - show project side bar
-
+- 2: 
+	- go to class
 - 3, show terminal, show script in dataGrip
 - 4,  jump to matching bracket
 - 5, 不好按 NO USE
@@ -110,12 +115,11 @@ Ctrl + Shift + Esc：快速開啟工作管理員
     - win10: alt+a
 - z
     - toggle folding
-
 - w
     - google search via keyboard mastro (改用 raycast 的 google search, 因為有還有提示和歷史紀錄)
     - space + alt → Kit
     - shift+ctrl+space → raycast
-    - no use now
+    - IDEA/ wrap around
 - s
     - IDE search text in file
     - win10/idea → find in files
@@ -134,6 +138,7 @@ Ctrl + Shift + Esc：快速開啟工作管理員
 - c
     - console.log below (intelliJ use 套件 logit, vscode use `print it`)
     - win10, idea, 晚點設定，可以先勤勞一點
+    - no use for now
 
 - r
     - go to usage, go to reference
@@ -259,6 +264,56 @@ use below chrome extension to help
 ## mac keyboard software
 [[karabinar]]
 mac use shift to micmic ctrl+space to toggle input source(輸入法) -> [\[Mac\] macOS 中英文輸入切換 & 設定成跟 Windows 一樣用 Shift 切換教學 – OneJar 的隧道](https://www.onejar99.com/mac-keyboard-en-zh-switch-by-karabiner-elements/) -> 然後有小調整一下
+
+
+example
+```bash
+
+
+cd ~/.config/karabiner/assets/complex_modifications
+vim remapRShift.json
+
+
+
+{
+  "title": "R_Shift to Ctrl+Space",
+  "rules": [
+    {
+      "description": "Change R_Shift to control + space to switch EN/ZH",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_shift",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+[GitHub - JoshuaManuel/Karabiner-Elements-Key-List: A reference list of keys recognized by Karabiner Elements](https://github.com/JoshuaManuel/Karabiner-Elements-Key-List)
+
 
 
 

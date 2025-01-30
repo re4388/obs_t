@@ -1,8 +1,5 @@
 
 
-
-
-
 ---
 
 
@@ -12,48 +9,14 @@
 # current vid
 
 
-事務
-https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9MIR&index=45
-
-
-# todo
-
-
-2025_01_01_16_22_43
-- [ ] 尚硅谷
-	- [ ] 看完 Java 
-	- [ ] 看 sping boot
 
 
 ---
 
-
 - [ ] 參考阿里巴巴開發手冊
 - [ ] 看 5 個 real word Java project (後端 focus)
-- [ ] [新手工程師的程式教室 - rabbitMQ 系列](https://chikuwa-tech-study.blogspot.com/search/label/RabbitMQ)
-	- [ ] [【RabbitMQ】認識訊息佇列並導入到 Spring Boot](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-introduction-and-setup-in-spring-boot.html)
-	- [ ] [【RabbitMQ】在 Spring Boot 實作 Simple 與 Worker 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-simple-and-worker-pattern-in-spring-boot.html.html)
-	- [ ] [【RabbitMQ】在 Spring Boot 實作 Fanout 與 Direct 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-fanout-and-direct-pattern-in-spring-boot.html)
-	- [ ] [【RabbitMQ】在 Spring Boot 實作 Routing 與 Topic 模式](https://chikuwa-tech-study.blogspot.com/2023/10/rabbitmq-impl-routing-and-topic-pattern-in-spring-boot.html)
-- [ ] [新手工程師的程式教室 Elastic Search](https://chikuwa-tech-study.blogspot.com/search/label/ElasticSearch)
-	- [ ] [【Elasticsearch】用途介紹與在 Windows Docker Desktop 上安裝](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-introduction-and-install.html)
-	- [ ] [【Elasticsearch】透過 REST API 進行 CRUD 操作](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-crud-rest-api.html)
-	- [ ] [【Elasticsearch】使用 DSL 撰寫查詢條件](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-query-dsl-and-logical-condition.html)
-	- [ ] [【Elasticsearch】使用 function score 在查詢時評分](https://chikuwa-tech-study.blogspot.com/2022/08/elasticsearch-function-score.html)
-	- [ ] [【Elasticsearch】導入到 Spring Boot 並實作 CRUD](https://chikuwa-tech-study.blogspot.com/2022/10/elasticsearch-integrate-spring-boot-and-impl-crud.html)
-	- [ ] [【Elasticsearch】使用 Java API Client 實作查詢條件與搜尋](https://chikuwa-tech-study.blogspot.com/2022/10/elasticsearch-java-api-client-search-and-query-condition.html)
-	- [ ] [【Elasticsearch】使用 Java API Client 實作 function score](https://chikuwa-tech-study.blogspot.com/2022/09/elasticsearch-java-api-client-function-score.html)
 
-- [ ] 每天至少 3~5 個 effetive Java review [[Effective Java 3rd]]
-- 3 Java leetcode per day
-	- [ ] 2024_12_26
-- cocurrent 初步理解
-	- [ ] 看 OCP study guide 
-		- [ ] 看 thread
-	- [ ] [(834) 【尚硅谷】【2021最新版】跳槽大厂必备技术之JUC高并发编程 - YouTube](https://www.youtube.com/playlist?list=PLmOn9nNkQxJGuxM62QOkUwD_zroNZj-a7)
-	- [ ] 看完 cocurrent 那三章
-	- [ ] 開始慢慢看 結成號的那個
-	- [ ] skim 一下 cocurrent 的大綱，盤算下一步
+
 - [ ] [[Day1] Reactive Programming 簡介與前言 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10264411)
 	- [x] [[Day1] Reactive Programming 簡介與前言 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10264411)
 	- [ ] [[Day 0] Reactive Programming 資料來源 - iT 邦幫忙：：一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10264448)
@@ -74,33 +37,21 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 - [ ] [xuchengsheng/spring-reading: 涵盖了 Spring 框架的核心概念和关键功能的說明](https://github.com/xuchengsheng/spring-reading?tab=readme-ov-file)
 
 
-
 # cocurrency
-
 - [[Java cocurrency]]
-
-
-
-
 
 
 # Spring
 - [[Spring]]
 
-
-
 # Java Basic
 
 
 
-## 【尚硅谷】Java NIO 详细教程
-- [【尚硅谷】Java NIO 详细教程（一套带你掌握 IO API/javanio）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1E64y1h7Z4/?vd_source=c1191139db7aee736d31e75ebc6029d0)
-- 筆記 /Users/re4388/project/personal/lang/java/NIO_Demo01
-- [GitHub - re4388/NIO\_Demo01: 【尚硅谷】Java NIO详细教程（一套带你掌握IO API/javanio）](https://github.com/re4388/NIO_Demo01)
-
+[[Java 的動態代理 Proxy.newProxyInstance()]]
 
 ## 課程
-- [[尚硅谷 Java 入门教程 2023]]
+- [[宋红康 2023 版，java 入门自学]]
 
 
 ==
@@ -115,7 +66,6 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 - [[使用静态成员类来定义一个描述计算器支持的操作的枚举类型]]
 - [[Varargs Methods in Java]]
 - [[如何在 Java 中創建類型安全的異構容器]]
-- [[what is non-reifiable type and reifiable type in Java?]]
 - [[what is asSubclass in Java]]
 - [[Java - removeRange 受保護方法]]
 - [[default methods for interfaces in Java]]
@@ -255,10 +205,6 @@ https://www.youtube.com/watch?v=K-cf4moPVTQ&list=PLmOn9nNkQxJF-fc4G_qDR7OWgBEOV9
 
 
 [(836) 【Java面试】01 教程简介 - YouTube](https://www.youtube.com/watch?v=gYgxjVBr3lw&list=PLmOn9nNkQxJFiQl2pYJ7q3bI3cde854zV)
-
-
-
-
 
 
 

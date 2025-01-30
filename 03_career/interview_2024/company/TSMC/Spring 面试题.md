@@ -23,7 +23,7 @@ Spring IoC 和 AOP 區别：
 - 通過 IOC 容器管理對象的依賴關系，然後通過 AOP 將橫切關注點統一切入到需要的業務邏輯中。
 - 使用 IOC 容器管理 Service 層和 DAO 層的依賴關系，然後通過 AOP 在 Service 層實現事務管理、日志記錄等橫切功能，使得業務邏輯更加清晰和可維護。
 
-### [#](https://xiaolincoding.com/interview/spring.html#spring%E7%9A%84aop%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B)Spring 的 aop 介紹一下
+### [#](https://xiaolincoding.com/interview/spring.html#spring%E7%9A%84aop%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B)Spring 的 AOP 介紹一下
 
 Spring AOP 是 Spring 框架中的一個重要模塊，用於實現面向切面編程。
 
@@ -69,7 +69,7 @@ Spring AOP 支持兩種動态代理：
 - **基於 JDK 的動态代理**：使用 java.lang.reflect.Proxy 類和 java.lang.reflect.InvocationHandler 接口實現。這種方式需要代理的類實現一個或多個接口。
 - **基於 CGLIB 的動态代理**：當被代理的類沒有實現接口時，Spring 會使用 CGLIB 庫生成一個被代理類的子類作為代理。CGLIB（Code Generation Library）是一個第三方代碼生成庫，通過繼承方式實現代理。
 
-### [#](https://xiaolincoding.com/interview/spring.html#%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3springioc)怎麽理解 SpringIoc？
+### [#](https://xiaolincoding.com/interview/spring.html#%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3springioc)怎麽理解 Spring IOC？
 
 **IOC**：Inversion Of Control，即控制反轉，是一種設計思想。在傳統的 Java SE 程序設計中，我們直接在對象内部通過 new 的方式來創建對象，是程序主動創建依賴對象；
 

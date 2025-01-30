@@ -5,7 +5,7 @@
 - 如果應用本身就需要低延遲 -> 可以使用 p2p see [see msg and integration pattern](https://www.notion.so/nture4388/nodeJS_design_pattern_book-f1a5791080ef48a5a736a13182bd04e1?pvs=4#170548d5288b46b0addbe68b77e60a0f)
 - related: 
 	- [[mqtt 如何避免量太大而造成的消息傳遞的延遲過高的問題]]
-	- [[kafka_intro#kafka 因為量太大時，造成消息傳遞延遲，如何解決？]]
+	- [[kafka_index#kafka 因為量太大時，造成消息傳遞延遲，如何解決？]]
 
 
 ### 2. **复杂的消息处理**导致系统变得难以维护和调试
