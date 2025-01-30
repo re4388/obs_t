@@ -168,7 +168,7 @@ JAVA 支持两种特殊用途的 引用类型：一种称为枚举类型的类�
 - [[Item 80 Executor、task、streams 优于於 threads]]
 - [[Item 81 concurrency utilities 优于 wait 和 notify]]
 - [[Item 82 文档应包含线程安全属性]]
-- [[Item 83 明智地使用"延迟初始化"]]
+- [[Item 83 明智地使用延迟初始化]]
 - [[Item 84 不要依赖线程调度器]]
 
 
@@ -186,7 +186,7 @@ JAVA 支持两种特殊用途的 引用类型：一种称为枚举类型的类�
 - [[Item 87 考虑使用自定义序列化形式]]
 - [[Item 88 防御性地编写 readObject 方法]]
 - [[Item 89 对于实例控制，枚举类型优于 readResolve]]
-- [[Item 90 考虑以 "序列化代理" 代替 "序列化实例"]]
+- [[Item 90 考虑以 序列化代理 代替 序列化实例  ]]
 
 
 
