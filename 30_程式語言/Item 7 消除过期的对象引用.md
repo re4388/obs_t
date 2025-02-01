@@ -8,7 +8,7 @@ Consider the following simple stack implementation:
 
 考虑以下简单的堆栈实现：
 
-```
+```java
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
@@ -60,7 +60,7 @@ The fix for this sort of problem is simple: null out references once they become
 
 解决这类问题的方法很简单：一旦引用过时，就将置空。在我们的 Stack 类中，对某个项的引用一旦从堆栈中弹出就会过时。pop 方法的正确版本如下：
 
-```
+```java
 public Object pop() {
     if (size == 0)
         throw new EmptyStackException();
@@ -97,6 +97,7 @@ More commonly, the useful lifetime of a cache entry is less well defined, with e
 **A third common source of memory leaks is listeners and other callbacks.** If you implement an API where clients register callbacks but don’t deregister them explicitly, they will accumulate unless you take some action. One way to ensure that callbacks are garbage collected promptly is to store only weak references to them, for instance, by storing them only as keys in a WeakHashMap.
 
 **内存泄漏的第三个常见来源是侦听器和其他回调。** 如果你实现了一个 API，其中客户端注册回调，但不显式取消它们，除非你采取一些行动，否则它们将累积。确保回调被及时地垃圾收集的一种方法是仅存储对它们的弱引用，例如，将它们作为键存储在 WeakHashMap 中。
+[[使用 WeakHashMap 實作 callback 避免 mem leak]]
 
 Because memory leaks typically do not manifest themselves as obvious failures, they may remain present in a system for years. They are typically discovered only as a result of careful code inspection or with the aid of a debugging tool known as a heap profiler. Therefore, it is very desirable to learn to anticipate problems like this before they occur and prevent them from happening.
 
