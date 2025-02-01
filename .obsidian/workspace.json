@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_程式語言/Item 13 谨慎地重写 clone 方法.md",
+                "file": "30_程式語言/Item 14 考虑实现 Comparable 接口.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Item 13 谨慎地重写 clone 方法"
+              "title": "Item 14 考虑实现 Comparable 接口"
             }
           },
           {
@@ -199,10 +199,11 @@
   },
   "active": "72bfbe501e8d5d50",
   "lastOpenFiles": [
-    "30_程式語言/getClass () 方法 in Java.md",
-    "30_程式語言/Item 13 谨慎地重写 clone 方法.md",
-    "30_程式語言/Cloneable 接口 in Java.md",
     "30_程式語言/Effective Java 3rd.md",
+    "30_程式語言/Item 14 考虑实现 Comparable 接口.md",
+    "30_程式語言/Item 13 谨慎地重写 clone 方法.md",
+    "30_程式語言/getClass () 方法 in Java.md",
+    "30_程式語言/Cloneable 接口 in Java.md",
     "30_程式語言/Item 12 始终覆盖 toString 方法.md",
     "30_程式語言/Item 11 重写 equals 方法时同时也要重写 hashcode 方法.md",
     "30_程式語言/Item 10 覆盖 equals 方法时应遵守的约定.md",
@@ -224,7 +225,6 @@
     "30_程式語言/使用工廠模式、Supplier<T> 介面和有界通配符類型來實現依賴注入.md",
     "30_程式語言/使用工廠模式、Supplier<T> 介面和有界通配符類型來實現依賴注入 1.md",
     "30_程式語言/Item 4 使用私有构造方法來讓類非实例化.md",
-    "30_程式語言/Item 4 使用私有构造方法來讓類非实例化 v0.md",
     "30_程式語言/服務提供者框架 (Service Provider Framewor和 靜態工廠的關係.md.edtz",
     "30_程式語言/Item 90 考虑以 序列化代理 代替 序列化实例.md.edtz",
     "30_程式語言/Item 83 明智地使用延迟初始化.md.edtz",
