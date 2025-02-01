@@ -7,14 +7,14 @@
 - [[Item 6 避免创建不必要的对象]]
 - [[Item 7 消除过期的对象引用]]
 - [[Item 8 避免使用 Finalizer 和 Cleaner 机制]]
-- [[Item 9 使用 try-with-resources 语句替代 try-finally 语句]] toReview
-
-
-第一版的筆記(重點概念擷取，但不夠完整)
-- [[Item 9 使用 try-with-resources 语句替代 try-finally 语句 v0]] toReview
+- [[Item 9 使用 try-with-resources 语句替代 try-finally 语句]]
 
 ## **3 Methods common to all objects**
-虽然 Object 是一个具体的类，但它主要是为继承而设计的。它的所有非 final 方法 (equals、hashCode、 toString、clone 和 finalize) 都有清晰的通用约定( general contracts)，因为它们被设计为被子类重写。任何类都有 义务重写这些方法，以遵从他们的通用约定;如果不这样做，将会阻止其他依赖于约定的类 (例如 HashMap 和 HashSet) 与此类一起正常工作。本章论述何时以及如何重写 类的非 final 的方法。这一章省略了 finalize 方法，因为它在条目 8 中进行 了讨论。 方法虽然不是 Object 中的方法，因为具有很多的相似性，所以也在这里讨论。
+- 虽然 Object 是一个具体的类，但它主要是为继承而设计的。
+- 它的所有非 final 方法 (equals、hashCode、 toString、clone 和 finalize) 都有清晰的通用约定( general contracts)，因为它们被设计为被子类重写。
+- 任何类都有义务重写这些方法，以遵从他们的通用约定
+- 如果不这样做，将会阻止其他依赖于约定的类 (例如 HashMap 和 HashSet) 与此类一起正常工作。
+- 本章论述何时以及如何重写类的非 final 的方法。这一章省略了 finalize 方法，因为它在条目 8 中进行了讨论。 方法虽然不是 Object 中的方法，因为具有很多的相似性，所以也在这里讨论。
 - [[Item 10 覆盖 equals 方法时应遵守的约定]]
 - [[Item 11 重写 equals 方法时同时也要重写 hashcode 方法]]
 - [[Item 12 始终覆盖 toString 方法]]
