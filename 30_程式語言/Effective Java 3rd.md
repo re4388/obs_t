@@ -3,7 +3,7 @@
 - [[Item 2 当构造方法参数过多时使用 builder 模式]]
 - [[Item 3 使用私有构造方法或枚类实现 Singleton 属性]]
 - [[Item 4 使用私有构造方法來讓類非实例化]]
-- [[Item 5 使用依赖注入取代硬连接资源(hardwiring resources)]] toReview
+- [[Item 5 使用依赖注入取代硬连接资源(hardwiring resources)]]
 - [[Item 6 避免创建不必要的对象]] toReview
 - [[Item 7 消除过期的对象引用]] toReview
 - [[Item 8 避免使用 Finalizer 和 Cleaner 机制]] toReview
@@ -11,8 +11,6 @@
 
 
 第一版的筆記(重點概念擷取，但不夠完整)
-- [[Item 4 使用私有构造方法來讓類非实例化 v0]] toReview
-- [[Item 5 使用依赖注入取代硬连接资源(hardwiring resources) v0]] toReview
 - [[Item 6 避免创建不必要的对象 v0]] toReview
 - [[Item 7 消除过期的对象引用 v0]] toReview
 - [[Item 8 避免使用 Finalizer 和 Cleaner 机制 v0]] toReview
