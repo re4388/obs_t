@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_程式語言/Item 12 始终覆盖 toString 方法.md",
+                "file": "30_程式語言/Item 13 谨慎地重写 clone 方法.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Item 12 始终覆盖 toString 方法"
+              "title": "Item 13 谨慎地重写 clone 方法"
             }
           },
           {
@@ -200,6 +200,7 @@
   "active": "72bfbe501e8d5d50",
   "lastOpenFiles": [
     "30_程式語言/Effective Java 3rd.md",
+    "30_程式語言/Item 12 始终覆盖 toString 方法.md",
     "30_程式語言/Item 11 重写 equals 方法时同时也要重写 hashcode 方法.md",
     "30_程式語言/Item 10 覆盖 equals 方法时应遵守的约定.md",
     "30_程式語言/Item 9 使用 try-with-resources 语句替代 try-finally 语句 v0.md",
@@ -224,7 +225,6 @@
     "30_程式語言/Item 3 使用私有构造方法或枚类实现 Singleton 属性 v0.md",
     "30_程式語言/Item 3 使用私有构造方法或枚类实现 Singleton 属性.md",
     "30_程式語言/Item 2 当构造方法参数过多时使用 builder 模式 v0.md",
-    "30_程式語言/Item 2 当构造方法参数过多时使用 builder 模式.md",
     "30_程式語言/服務提供者框架 (Service Provider Framewor和 靜態工廠的關係.md.edtz",
     "30_程式語言/Item 90 考虑以 序列化代理 代替 序列化实例.md.edtz",
     "30_程式語言/Item 83 明智地使用延迟初始化.md.edtz",
