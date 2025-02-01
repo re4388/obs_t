@@ -6,12 +6,11 @@
 - [[Item 5 使用依赖注入取代硬连接资源(hardwiring resources)]]
 - [[Item 6 避免创建不必要的对象]]
 - [[Item 7 消除过期的对象引用]]
-- [[Item 8 避免使用 Finalizer 和 Cleaner 机制]] toReview
+- [[Item 8 避免使用 Finalizer 和 Cleaner 机制]]
 - [[Item 9 使用 try-with-resources 语句替代 try-finally 语句]] toReview
 
 
 第一版的筆記(重點概念擷取，但不夠完整)
-- [[Item 8 避免使用 Finalizer 和 Cleaner 机制 v0]] toReview
 - [[Item 9 使用 try-with-resources 语句替代 try-finally 语句 v0]] toReview
 
 ## **3 Methods common to all objects**
