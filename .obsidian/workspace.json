@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_程式語言/Item 1 考虑使用静态工厂方法替代构造方法.md",
+                "file": "30_程式語言/Item 2 当构造方法参数过多时使用 builder 模式 v0.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Item 1 考虑使用静态工厂方法替代构造方法"
+              "title": "Item 2 当构造方法参数过多时使用 builder 模式 v0"
             }
           },
           {
@@ -105,7 +105,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -198,8 +199,13 @@
   },
   "active": "72bfbe501e8d5d50",
   "lastOpenFiles": [
+    "30_程式語言/Spring.md",
+    "30_程式語言/Item 2 当构造方法参数过多时使用 builder 模式 v0.md",
     "30_程式語言/Effective Java 3rd.md",
+    "30_程式語言/Item 1 考虑使用静态工厂方法替代构造方法 v0.md",
     "30_程式語言/Item 1 考虑使用静态工厂方法替代构造方法.md",
+    "30_程式語言/服務提供者框架 (Service Provider Framewor和 靜態工廠的關係.md",
+    "30_程式語言/服務提供者框架 (Service Provider Framewor和 靜態工廠的關係.md.edtz",
     "30_程式語言/Item 90 考虑以 序列化代理 代替 序列化实例.md.edtz",
     "30_程式語言/Item 90 考虑以 序列化代理 代替 序列化实例.md",
     "30_程式語言/Item 83 明智地使用延迟初始化.md.edtz",
@@ -222,13 +228,9 @@
     "03_career/interview_2024/company/TSMC/黑馬 併發.md",
     "03_career/interview_2024/company/TSMC/权限系统设计详解.md",
     "12_Backend/k8s/k8s_idx.md",
-    "03_career/interview_2024/company/TSMC/LinkedList 源码分析.md",
-    "03_career/interview_2024/company/TSMC/ArrayList 源码分析.md",
     "100_attachements/Pasted image 20250129143701.png",
     "100_attachements/Pasted image 20250129143633.png",
     "100_attachements/Pasted image 20250129143602.png",
-    "03_career/interview_2024/company/TSMC/JMM（Java 内存模型）详解.md",
-    "12_Backend/k8s/k3s_idx.md",
     "100_attachements/Pasted image 20250129120854.png",
     "03_career/interview_2024/company/TSMC/Spring Boot 面试题彙整.md.edtz",
     "03_career/interview_2024/company/TSMC/cosen1024_Java-Interview.md.edtz",
@@ -242,7 +244,6 @@
     "03_career/interview_2024/company/TSMC/4. LockSupport与线程中断.md.md.edtz",
     "03_career/interview_2024/company/TSMC/when we use Java AtomicMarkableReference.md.edtz",
     "03_career/interview_2024/company/TSMC/读写分离和分库分表详解.md.edtz",
-    "03_career/interview_2024/company/TSMC/深度分页介绍及优化建议.md.edtz",
-    "03_career/interview_2024/company/TSMC/数据冷热分离详解.md.edtz"
+    "03_career/interview_2024/company/TSMC/深度分页介绍及优化建议.md.edtz"
   ]
 }

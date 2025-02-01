@@ -11,7 +11,6 @@
 
 
 第一版的筆記(重點概念擷取，但不夠完整)
-- [[Item 1 考虑使用静态工厂方法替代构造方法 v0]] toReview
 - [[Item 2 当构造方法参数过多时使用 builder 模式 v0 ]] toReview
 - [[Item 3 使用私有构造方法或枚类实现 Singleton 属性 v0]] toReview
 - [[Item 3 使用私有构造方法或枚类实现 Singleton 属性 v0]] toReview

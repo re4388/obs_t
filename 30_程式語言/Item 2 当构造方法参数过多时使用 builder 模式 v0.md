@@ -50,7 +50,13 @@ NutritionFacts cocaCola = new NutritionFacts(240, 8, 100, 0, 35, 27);
 
 ```
 
-简而言之，可伸缩构造方法模式是有效的，但是当有很多参数时，很难编写客户端代码，而且很难读懂它。读者 不知道这些值是什么意思，并且必须仔细地计算参数才能找到答案。一长串相同类型的参数可能会导致一些细微的 bug。如果客户端意外地反转了两个这样的参数，编译器并不会抱怨，但是程序在运行时会出现错误行为 (条目 51)
+简而言之，可伸缩构造方法模式是有效的，但是当有很多参数时，很难编写客户端代码，而且很难读懂它。
+
+读者 不知道这些值是什么意思，并且必须仔细地计算参数才能找到答案。
+
+一长串相同类型的参数可能会导致一些细微的 bug。
+
+如果客户端意外地反转了两个这样的参数，编译器并不会抱怨，但是程序在运行时会出现错误行为 (条目 51)
 
 
 
@@ -109,7 +115,9 @@ cocaCola.setCarbohydrate(27);
 
 ```
 
-不幸的是，JavaBeans 模式本身有严重的缺陷。由于构造方法在多次调用中被分割，所以在构造过程中 JavaBean 可能处于不一致的状态。该类没有通过检查构造参数参数的有效性来执行一致性的选项。在不一致的状态下尝试使用 对象可能会导致与包含 bug 的代码大相径庭的错误，因此很难调试。一个相关的缺点是，JavaBeans 模式排除了让类 不可变的可能性 (条目 17)，并且需要在程序员的部分增加工作以确保线程安全。
+不幸的是，JavaBeans 模式本身有严重的缺陷。**由于构造方法在多次调用中被分割，所以在构造过程中 JavaBean 可能处于不一致的状态。** 该类没有通过检查构造参数参数的有效性来执行一致性的选项。在不一致的状态下尝试使用 对象可能会导致与包含 bug 的代码大相径庭的错误，因此很难调试。一个相关的缺点是，JavaBeans 模式排除了让类 不可变的可能性 (条目 17)，并且需要在程序员的部分增加工作以确保线程安全。
+
+
 当它的构造完成时，手动“冻结”对象，并且不允许它在解冻之前使用，可以减少这些缺点，但是这种变体在实践 中很难使用并且很少使用。 而且，在运行时会导致错误，因为编译器无法确保程序员在使用对象之前调用 freeze 方法。
 
 
@@ -131,11 +139,15 @@ public class NutritionFacts {
       // Required parameters
       private final int servingSize;
       private final int servings;
+      
       // Optional parameters - initialized to default values
       private int calories = 0;
       private int fat = 0;
       private int sodium = 0;
       private int carbohydrate = 0;
+
+
+
 
       public Builder(int servingSize, int servings) {
          this.servingSize = servingSize;
@@ -197,9 +209,13 @@ Builder 模式非常适合类层次结构。 使用平行层次的 builder，每
 import java.util.EnumSet;
 import java.util.Objects;
 import java.util.Set;
+
+
 public abstract class Pizza {
     public enum Topping {HAM, MUSHROOM, ONION, PEPPER, SAUSAGE}
     final Set<Topping> toppings;
+    
+    
     abstract static class Builder<T extends Builder<T>> {
         EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
         public T addTopping(Topping topping) {
@@ -210,9 +226,11 @@ public abstract class Pizza {
         // Subclasses must override this method to return "this"
         protected abstract T self();
     }
+    
     Pizza(Builder<?> builder) {
         toppings = builder.toppings.clone(); // See Item 50
-} }
+    } 
+}
 
 ```
 
@@ -286,7 +304,9 @@ public class Calzone extends Pizza {
 
 ```
 
-请注意，每个子类 builder 中的 方法被声明为返回正确的子类: NyPizza.Builder 的 build 方法 返回 NyPizza ，而 中的 build 方法返回   。 这种技术，其一个子类的方法被声 明为返回在超类中声明的返回类型的子类型，称为协变返回类型 ( covariant return typing)。 它允许客户端使用这些 builder，而不需要强制转换。
+请注意，每个子类 builder 中的 方法被声明为返回正确的子类: NyPizza.Builder 的 build 方法 返回 NyPizza ，而 中的 build 方法返回   。 
+
+这种技术，其一个子类的方法被声 明为返回在超类中声明的返回类型的子类型，称为协变返回类型 ( covariant return typing)。 它允许客户端使用这些 builder，而不需要强制转换。
 
 
 这些“分层 builder”的客户端代码基本上与简单的 NutritionFacts builder 的代码相同。为了简洁起见,下面显 示的示例客户端代码假设枚举常量的静态导入:
@@ -295,6 +315,7 @@ public class Calzone extends Pizza {
 
 NyPizza pizza = new NyPizza.Builder(SMALL)
         .addTopping(SAUSAGE).addTopping(ONION).build();
+        
 Calzone calzone = new Calzone.Builder()
         .addTopping(HAM).sauceInside().build();
 
@@ -310,4 +331,4 @@ Builder 模式非常灵活。 单个 builder 可以重复使用来构建多个�
 Builder 模式也有缺点。为了创建对象，首先必须创建它的 builder。虽然创建这个 builder 的成本在实践中不太可 能被注意到，但在性能关键的情况下可能会出现问题。而且，builder 模式比伸缩构造方法模式更冗长，因此只有在 有足够的参数时才值得使用它，比如四个或更多。但是请记住，如果希望在将来添加更多的参数。但是，如果从构造 方法或静态工厂开始，并切换到 builder，当类演化到参数数量失控的时候，过时的构造方法或静态工厂就会面临尴 尬的处境。因此，所以，最好从一开始就创建一个 builder。
 
 
-总而言之，当设计类的构造方法或静态工厂的参数超过几个时，Builder 模式是一个不错的选择，特别是如果许 多参数是可选的或相同类型的。客户端代码比使用伸缩构造方法(telescoping constructors)更容易读写，并且 builder 比 JavaBeans 更安全。
+总而言之，当设计类的构造方法或静态工厂的参数超过几个时，Builder 模式是一个不错的选择，特别是如果许多参数是可选的或相同类型的。客户端代码比使用伸缩构造方法(telescoping constructors)更容易读写，并且 builder 比 JavaBeans 更安全。
