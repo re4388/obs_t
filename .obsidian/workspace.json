@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_程式語言/Item15 使类和成员的可访问性最小化.md",
+                "file": "30_程式語言/Effective Java 3rd.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Item15 使类和成员的可访问性最小化"
+              "title": "Effective Java 3rd"
             }
           },
           {
@@ -199,8 +199,8 @@
   },
   "active": "72bfbe501e8d5d50",
   "lastOpenFiles": [
-    "30_程式語言/Effective Java 3rd.md",
     "30_程式語言/Item15 使类和成员的可访问性最小化.md",
+    "30_程式語言/Effective Java 3rd.md",
     "30_程式語言/Item 14 考虑实现 Comparable 接口.md",
     "30_程式語言/Item 13 谨慎地重写 clone 方法.md",
     "30_程式語言/getClass () 方法 in Java.md",
