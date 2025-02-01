@@ -1,8 +1,8 @@
 ## **2 Creating and Destroying Object**
-- [[Item 1 考虑使用静态工厂方法替代构造方法]] toReview
-- [[Item 2 当构造方法参数过多时使用 builder 模式]] toReview
-- [[Item 3 使用私有构造方法或枚类实现 Singleton 属性]] toReview
-- [[Item 4 使用私有构造方法來讓類非实例化]] toReview
+- [[Item 1 考虑使用静态工厂方法替代构造方法]]
+- [[Item 2 当构造方法参数过多时使用 builder 模式]]
+- [[Item 3 使用私有构造方法或枚类实现 Singleton 属性]]
+- [[Item 4 使用私有构造方法來讓類非实例化]]
 - [[Item 5 使用依赖注入取代硬连接资源(hardwiring resources)]] toReview
 - [[Item 6 避免创建不必要的对象]] toReview
 - [[Item 7 消除过期的对象引用]] toReview
@@ -11,9 +11,6 @@
 
 
 第一版的筆記(重點概念擷取，但不夠完整)
-- [[Item 2 当构造方法参数过多时使用 builder 模式 v0 ]] toReview
-- [[Item 3 使用私有构造方法或枚类实现 Singleton 属性 v0]] toReview
-- [[Item 3 使用私有构造方法或枚类实现 Singleton 属性 v0]] toReview
 - [[Item 4 使用私有构造方法來讓類非实例化 v0]] toReview
 - [[Item 5 使用依赖注入取代硬连接资源(hardwiring resources) v0]] toReview
 - [[Item 6 避免创建不必要的对象 v0]] toReview
