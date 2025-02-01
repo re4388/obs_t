@@ -127,20 +127,20 @@ public final class CaseInsensitiveString {
 
     public CaseInsensitiveString(String s) {
         this.s = Objects.requireNonNull(s);
-}
+	}
 
-// Broken - violates symmetry!
-@Override
-public boolean equals(Object o) {
-    if (o instanceof CaseInsensitiveString)
-    return s.equalsIgnoreCase(((CaseInsensitiveString) o).s);
-
-    if (o instanceof String) // One-way interoperability!
-        // 問題在 String 中的 equals 方法对不区分大小写的字符串不知情。因此，`s.equals(cis)` 返回 false
-        return s.equalsIgnoreCase((String) o); 
-
-    return false;
-    } ... // Remainder omitted
+	// Broken - violates symmetry!
+	@Override
+	public boolean equals(Object o) {
+	    if (o instanceof CaseInsensitiveString)
+		    return s.equalsIgnoreCase(((CaseInsensitiveString) o).s);
+	
+	    if (o instanceof String) // One-way interoperability!
+	        // 問題在 String 中的 equals 方法对不区分大小写的字符串不知情。因此，`s.equals(cis)` 返回 false
+	        return s.equalsIgnoreCase((String) o); 
+	
+	    return false;
+	} ... // Remainder omitted
 }
 ```
 
