@@ -168,10 +168,16 @@
   },
   "active": "96beaaa3bc4ada50",
   "lastOpenFiles": [
+    "30_程式語言/Spring.md",
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "43_軟體工具tools/win_idx.md",
+    "30_程式語言/Java_idx.md",
+    "00_inbox/log_personal.md",
+    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
+    "43_軟體工具tools/keyboard_idx.md",
     "30_程式語言/服務提供者框架 (Service Provider Framewor和 靜態工廠的關係.md.edtz",
     "30_程式語言/服務提供者框架 (Service Provider Framewor和 靜態工廠的關係.md",
     "03_career/interview_2024/company/TSMC/小林 数据结构与算法面试题.md",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "12_Backend/k8s/k8s_idx.md",
     "43_軟體工具tools/vscode_index.md",
     "30_程式語言/Item 90 考虑以 序列化代理 代替 序列化实例.md",
@@ -191,11 +197,6 @@
     "03_career/interview_2024/company/TSMC/Java 线程池最佳实践.md",
     "03_career/interview_2024/company/TSMC/小林  MySQL 面試題.md",
     "03_career/interview_2024/company/TSMC/黑馬 框架篇.md",
-    "03_career/interview_2024/company/TSMC/黑馬 虛擬機.md",
-    "03_career/interview_2024/company/TSMC/黑馬 併發.md",
-    "03_career/interview_2024/company/TSMC/权限系统设计详解.md",
-    "03_career/interview_2024/company/TSMC/LinkedList 源码分析.md",
-    "03_career/interview_2024/company/TSMC/ArrayList 源码分析.md",
     "100_attachements/Pasted image 20250129143701.png",
     "100_attachements/Pasted image 20250129143633.png",
     "100_attachements/Pasted image 20250129143602.png",
@@ -212,7 +213,6 @@
     "03_career/interview_2024/company/TSMC/4. LockSupport与线程中断.md.md.edtz",
     "03_career/interview_2024/company/TSMC/when we use Java AtomicMarkableReference.md.edtz",
     "03_career/interview_2024/company/TSMC/读写分离和分库分表详解.md.edtz",
-    "03_career/interview_2024/company/TSMC/深度分页介绍及优化建议.md.edtz",
-    "03_career/interview_2024/company/TSMC/数据冷热分离详解.md.edtz"
+    "03_career/interview_2024/company/TSMC/深度分页介绍及优化建议.md.edtz"
   ]
 }

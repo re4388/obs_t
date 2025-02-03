@@ -1,9 +1,6 @@
 
 
 
-
-
-
 ## bug
 
 [[autohotkey  - capslock]]
