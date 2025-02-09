@@ -15,14 +15,36 @@
               "state": {
                 "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "tsmc techinical prep"
             }
+          },
+          {
+            "id": "9bcfa42741b2abdb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,11 +184,10 @@
       "templater-obsidian:Templater": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
       "edit-history:Open edit history": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96beaaa3bc4ada50",
+  "active": "9bcfa42741b2abdb",
   "lastOpenFiles": [
     "30_程式語言/Spring.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
