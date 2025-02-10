@@ -9,6 +9,9 @@
 
 
 
+---
+
+
 相關 ref:
 - [keyboard layout - Map capslock to control in Windows 10 - Super User](https://superuser.com/questions/949385/map-capslock-to-control-in-windows-10)
 - [試著把 Caps Lock 當成 Ctrl 使用吧 — Jimmy Lin’s Blog](https://jmln.tw/blog/2020-02-05-caps-lock-as-ctrl.html)

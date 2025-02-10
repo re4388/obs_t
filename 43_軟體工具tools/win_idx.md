@@ -1,10 +1,9 @@
 
 
 
-## bug
+## use caps lock map to ctrl
 
 [[autohotkey  - capslock]]
-
 
 
 ## powershell
@@ -19,10 +18,8 @@ linux 的 `source`, 在 win變成是 `. $profile`
 
 # app
 
-
-see this [Do This IMMEDIATELY After Installing Windows 11 - YouTube](https://www.youtube.com/watch?v=mc4d7ewuqiM)
-
-[God Mode gives you instant access to your favorite Windows setting, and here's how to use it](https://www.xda-developers.com/how-to-enable-god-mode-windows-11-what-is-it/)
+- see this [Do This IMMEDIATELY After Installing Windows 11 - YouTube](https://www.youtube.com/watch?v=mc4d7ewuqiM)
+- [God Mode gives you instant access to your favorite Windows setting, and here's how to use it](https://www.xda-developers.com/how-to-enable-god-mode-windows-11-what-is-it/)
 
 
 magicPods
