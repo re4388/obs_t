@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+                "file": "43_軟體工具tools/win_idx.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "tsmc techinical prep"
+              "title": "win_idx"
             }
           },
           {
@@ -43,8 +43,7 @@
               "title": "Release Notes 1.8.4"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,12 +187,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9bcfa42741b2abdb",
+  "active": "96beaaa3bc4ada50",
   "lastOpenFiles": [
-    "43_軟體工具tools/win_idx.md",
     "43_軟體工具tools/autohotkey  - capslock.md",
-    "30_程式語言/Spring.md",
+    "43_軟體工具tools/win_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "30_程式語言/Spring.md",
     "30_程式語言/Java_idx.md",
     "00_inbox/log_personal.md",
     "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",

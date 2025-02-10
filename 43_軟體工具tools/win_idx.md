@@ -3,7 +3,7 @@
 
 ## use caps lock map to ctrl
 
-[[autohotkey  - capslock]]
+[[autohotkey  - capslock]] -> [Ctrl2cap - Sysinternals | Microsoft Learn](https://learn.microsoft.com/en-us/sysinternals/downloads/ctrl2cap)
 
 
 ## powershell
