@@ -1,1 +1,0 @@
-https://gntuedutw-my.sharepoint.com/personal/pinweihu_g_ntu_edu_tw/_layouts/15/Doc.aspx?sourcedoc={a88670ed-912a-4dea-99d3-9f2788012a3a}&action=edit&wd=target%28On%20Life.one%7C1d94000e-6c27-e549-80b2-547bb0cec17b%2FArt%20of%20no%20giving%20the%20fuck%20%2C%20key%20lines%20-%7C4a3775ac-2065-6c4d-b80f-10ded1c0b6ac%2F%29&wdorigin=NavigationUrl

@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "96beaaa3bc4ada50",
+            "id": "9bcfa42741b2abdb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java 7 引入的 Fork/Join 框架.md",
+                "file": "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,19 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Join 框架"
-            }
-          },
-          {
-            "id": "9bcfa42741b2abdb",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
+              "title": "tsmc prep onboard"
             }
           }
         ]
@@ -187,53 +175,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96beaaa3bc4ada50",
+  "active": "d8b22b195ec1de2d",
   "lastOpenFiles": [
-    "43_軟體工具tools/win_idx.md",
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
-    "43_軟體工具tools/autohotkey  - capslock.md",
-    "30_程式語言/Spring.md",
-    "30_程式語言/Java_idx.md",
-    "00_inbox/log_personal.md",
-    "03_career/interview_2024/company/TSMC/tsmc prep onboard.md",
-    "43_軟體工具tools/keyboard_idx.md",
-    "30_程式語言/服務提供者框架 (Service Provider Framewor和 靜態工廠的關係.md.edtz",
-    "30_程式語言/服務提供者框架 (Service Provider Framewor和 靜態工廠的關係.md",
-    "03_career/interview_2024/company/TSMC/小林 数据结构与算法面试题.md",
-    "12_Backend/k8s/k8s_idx.md",
-    "43_軟體工具tools/vscode_index.md",
-    "30_程式語言/Item 90 考虑以 序列化代理 代替 序列化实例.md",
-    "30_程式語言/Item 90 考虑以 序列化代理 代替 序列化实例.md.edtz",
-    "30_程式語言/Effective Java 3rd.md",
-    "30_程式語言/Item 83 明智地使用延迟初始化.md",
-    "30_程式語言/Item 83 明智地使用延迟初始化.md.edtz",
-    "30_程式語言/Item 83 明智地使用\"延迟初始化\".md",
-    "30_程式語言/Item 90 考虑以 \"序列化代理\" 代替 \"序列化实例\".md",
-    "03_career/interview_2024/company/TSMC/《Java8 指南》中文翻译.md",
-    "12_Backend/k8s/why use k8s?  orchestration?.md",
-    "03_career/interview_2024/company/TSMC/Java 线程池详解.md",
-    "03_career/interview_2024/company/TSMC/黑馬 基礎篇.md",
-    "03_career/interview_2024/company/TSMC/Maven 最佳实践.md",
-    "03_career/interview_2024/company/TSMC/Maven 核心概念总结.md",
-    "03_career/interview_2024/company/TSMC/Java 常见并发容器总结.md",
-    "03_career/interview_2024/company/TSMC/Java 线程池最佳实践.md",
-    "03_career/interview_2024/company/TSMC/小林  MySQL 面試題.md",
+    "03_career/interview_2023/後端準備重點提醒.md.edtz",
+    "03_career/interview_2023/面試準備資源.md.edtz",
+    "03_career/interview_2023/面試準備資源.md",
+    "03_career/interview_2023/後端準備重點提醒.md",
+    "03_career/interview_2023/他人面試經驗, 建議.md.edtz",
+    "03_career/interview_2023/他人面試經驗, 建議.md",
+    "03_career/interview_2023/wemo面試談有趣架構.md.edtz",
+    "03_career/interview_2023/wemo面試談有趣架構.md",
+    "03_career/interview_2023/view sonic.md.edtz",
+    "03_career/interview_2023/view sonic.md",
+    "03_career/interview_2023/talk salaray.md.edtz",
+    "03_career/interview_2023/talk salaray.md",
+    "03_career/interview_2023/remote work consideation.md.edtz",
+    "03_career/interview_2023/resume.md.edtz",
+    "03_career/interview_2023/behavior interview.md.edtz",
+    "03_career/interview_2023/resume.md",
+    "03_career/interview_2023/remote work consideation.md",
+    "03_career/interview_2023/interview_2023_idx.md",
+    "03_career/interview_2023/Zeppelin.md.edtz",
+    "03_career/interview_2023/Yun Yun (Charleen) Lan  paypay 和 樂天海外工作.md.edtz",
+    "03_career/interview_2023/behavior interview.md",
+    "03_career/interview_2023/Zeppelin.md",
+    "03_career/interview_2023/Yun Yun (Charleen) Lan  paypay 和 樂天海外工作.md",
+    "03_career/interview_2023/West pharmacy Asia mgf.md",
+    "03_career/interview_2023/Thingnario 慧景科技.md",
+    "03_career/interview_2023/Shopline 商線科技有限公司  (Senior) Node.js Engineer.md",
+    "03_career/interview_2023/Quesiton to ask before interview.md",
+    "03_career/interview_2023/Oursky.md",
+    "03_career/interview_2023/Netspoke.md",
+    "03_career/interview_2023/Noodoe 拓連科技 onex 車能網.md",
+    "03_career/interview_2023/H2 Inc tech interview exp.md",
+    "03_career/interview_2023/Google.md",
+    "03_career/interview_2023/Glints.md",
+    "03_career/interview_2023/FAYA.md",
+    "03_career/interview_2023/EXPO.md",
+    "03_career/interview_2023/Bubbleye 大眼科技有限公司.md",
     "100_attachements/Pasted image 20250129143701.png",
     "100_attachements/Pasted image 20250129143633.png",
     "100_attachements/Pasted image 20250129143602.png",
     "100_attachements/Pasted image 20250129120854.png",
-    "03_career/interview_2024/company/TSMC/Spring Boot 面试题彙整.md.edtz",
-    "03_career/interview_2024/company/TSMC/cosen1024_Java-Interview.md.edtz",
     "100_attachements/e9780b32f8ee24329dd20a3d8ded6d2f_MD5.png",
     "100_attachements/7b1ec4058a13df92bc8a4de56ee46003_MD5.png",
     "100_attachements/ff167482650f85d689021e2e07c09913_MD5.png",
     "100_attachements/14d970d75d28c66d6e5fe105bd457afc_MD5.png",
     "100_attachements/61a634c52fd8dcced1cec8ee2a11f703_MD5.png",
-    "100_attachements/b395f26b9d8e9e1404ea8249d3210388_MD5.png",
-    "03_career/interview_2024/company/TSMC/2. CompletableFuture.md.md.edtz",
-    "03_career/interview_2024/company/TSMC/4. LockSupport与线程中断.md.md.edtz",
-    "03_career/interview_2024/company/TSMC/when we use Java AtomicMarkableReference.md.edtz",
-    "03_career/interview_2024/company/TSMC/读写分离和分库分表详解.md.edtz",
-    "03_career/interview_2024/company/TSMC/深度分页介绍及优化建议.md.edtz"
+    "100_attachements/b395f26b9d8e9e1404ea8249d3210388_MD5.png"
   ]
 }

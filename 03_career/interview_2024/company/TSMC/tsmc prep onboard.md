@@ -38,8 +38,6 @@
 
 
 
-![[CleanShot 2024-12-16 at 14.50.22.png]]
-![[CleanShot 2024-12-16 at 14.50.35.png]]
 
 other
 - [x]  1/3(五) 下午 堯睿 meeting  -> ask, 如果你買公司股票公司會補助你 15%，買的上限為薪水的 20%，每個月固定扣款?
@@ -133,12 +131,9 @@ R123232729
 
 
 
-# archive
-![[IMG-tsmc prep onboard-20241216144323294.png|786]]
 
 
 
-![[IMG-tsmc prep onboard-20241216144323387.png]]
 
 
 ---
