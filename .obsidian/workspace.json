@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "43_軟體工具tools/win_idx.md",
+                "file": "Java 7 引入的 Fork/Join 框架.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "win_idx"
+              "title": "Join 框架"
             }
           },
           {
@@ -149,8 +149,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -178,19 +178,19 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-importer:Open Importer": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "templater-obsidian:Templater": false,
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
       "edit-history:Open edit history": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "96beaaa3bc4ada50",
   "lastOpenFiles": [
-    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/win_idx.md",
+    "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
     "43_軟體工具tools/autohotkey  - capslock.md",
     "30_程式語言/Spring.md",
     "30_程式語言/Java_idx.md",
