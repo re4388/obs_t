@@ -62,7 +62,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -95,8 +96,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -189,9 +189,9 @@
   },
   "active": "96beaaa3bc4ada50",
   "lastOpenFiles": [
-    "43_軟體工具tools/autohotkey  - capslock.md",
-    "43_軟體工具tools/win_idx.md",
     "03_career/interview_2024/company/TSMC/tsmc techinical prep.md",
+    "43_軟體工具tools/win_idx.md",
+    "43_軟體工具tools/autohotkey  - capslock.md",
     "30_程式語言/Spring.md",
     "30_程式語言/Java_idx.md",
     "00_inbox/log_personal.md",
